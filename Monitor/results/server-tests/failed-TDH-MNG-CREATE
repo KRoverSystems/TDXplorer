@@ -1,0 +1,31 @@
+1.Issuing TDH_MNG_CREATE with invalid RDX: 0x8000
+//
+2025-04-01T19:43:17.783394+08:00 DXH-104-059 kernel: kernel_agent: kvm __seamcall(): TDH_MNG_CREATE ------------------------------------ 
+2025-04-01T19:43:17.783396+08:00 DXH-104-059 kernel: kernel_agent: RCX: to add tdr page pa: 0x27b771000
+2025-04-01T19:43:17.783397+08:00 DXH-104-059 kernel: kernel_agent: RDX: td hkid: 33
+2025-04-01T19:43:17.783399+08:00 DXH-104-059 kernel: kernel_agent: Modified RDX: td hkid: 32768
+2025-04-01T19:43:17.783401+08:00 DXH-104-059 kernel: kernel_agent: last seamcall:0x9
+
+
+Module's return code logged by VMM
+2025-04-01T19:43:17.785325+08:00 DXH-104-059 kernel: ---[ end trace 0000000000000000 ]---
+2025-04-01T19:43:17.785328+08:00 DXH-104-059 kernel: SEAMCALL (0x0000000000000009) failed: 0xc000010000000002
+
+2.Issuing TDH_MNG_CREATE with invalid RDX: 0x0
+//
+2025-04-01T20:04:49.509089+08:00 DXH-104-059 kernel: kernel_agent: kvm __seamcall(): TDH_MNG_CREATE ------------------------------------ 
+2025-04-01T20:04:49.509092+08:00 DXH-104-059 kernel: kernel_agent: RCX: to add tdr page pa: 0x27b2b1000
+2025-04-01T20:04:49.509093+08:00 DXH-104-059 kernel: kernel_agent: RDX: td hkid: 33
+2025-04-01T20:04:49.509095+08:00 DXH-104-059 kernel: kernel_agent: Modified RDX: td hkid: 0
+2025-04-01T20:04:49.509096+08:00 DXH-104-059 kernel: kernel_agent: last seamcall:0x9
+
+2025-04-01T20:04:49.509099+08:00 DXH-104-059 kernel: SEAMCALL (0x0000000000000009) failed: 0xc000010000000002
+
+
+3.Using Module's keyID for a TD
+2025-04-01T21:05:50.369198+08:00 DXH-104-059 kernel: kernel_agent: kvm __seamcall(): TDH_MNG_CREATE ------------------------------------ 
+2025-04-01T21:05:50.369200+08:00 DXH-104-059 kernel: kernel_agent: RCX: to add tdr page pa: 0x283722000
+2025-04-01T21:05:50.369202+08:00 DXH-104-059 kernel: kernel_agent: RDX: td hkid: 33
+2025-04-01T21:05:50.369204+08:00 DXH-104-059 kernel: kernel_agent: Modified RDX: td hkid: 32
+2025-04-01T21:05:50.369205+08:00 DXH-104-059 kernel: kernel_agent: last seamcall:0x9
+2025-04-01T21:05:50.369208+08:00 DXH-104-059 kernel: SEAMCALL (0x0000000000000009) failed: 0xc000082000000000

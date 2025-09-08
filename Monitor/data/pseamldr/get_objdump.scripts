@@ -1,0 +1,21 @@
+#to generate the pseamldr.so.objdump
+#expected format of an output line
+<offset>:\t<instruction><dpsce/s><operands>\n
+
+#do not provide the raw ins in the objdump
+#skip function start lines
+#    eg:    00000000000001a0 <rsa_verify_signature>:
+#remove blank lines
+#remove the line in objdump containing "pseamldr.so:     file format elf64-x86-64"
+#remove the line in objdump containing "Disassembly of section .text:"
+#remove the leading spaces of the selected line
+
+objdump -d --no-show-raw-insn pseamldr.so \
+    | grep -v ">:" \
+    | grep -v -e '^[[:space:]]*$' \
+    | grep -v "pseamldr.so" \
+    | grep -v "Disassembly" \
+    | sed -e 's/^[ \t]*//' 
+
+#to check the intructions which were not disassembled by objdump: seamops, seamret, movdir64b
+objdump -d pseamldr.so | grep data16 | sed -e 's/^[ \t]*//'

@@ -1,0 +1,46 @@
+/*system configurations 0: off 1:on*/
+#define MOVDIR64B_EMULATION 1
+#define XGETBV_EMULATION 1
+#define ALLOW_TDX_SINGLE_STEPPING 1
+#define TURN_ON_INSTRUCTION_TRACER 0
+#define DETECT_SPECIFIC_KHOLE_MAPPING 1
+
+#define TURN_ON_MONITOR_LOGS 1
+#define TURN_ON_TDXCALL_LOGS 1
+#define TURN_ON_INSTRUMENTATION_LOG 0
+#define TURN_ON_NP_SEAMLDR_LOGS 0
+#define TURN_ON_INTERPRETER_MGR_LOGS 0
+
+#define TDH_SERVTD_BIND_ENABLE 1
+#define TD_BIND 1 /*1 bind*/
+#define TD_PREBIND 2 /*2 prebind*/
+#define SERVTD_BIND_TYPE TD_PREBIND
+
+// #define TURN_ON_SEEDED_SE_TESTS 0
+#define TURN_ON_SINGLE_CALL_EXEC_MODE 1
+#define TURN_ON_SYMBOLIC_EXECUTION 1
+
+/*interpreter configs*/
+#define TURN_ON_PATH_EXPLORATION 0
+#define TURN_ON_LOG_TRACE 1
+
+/*faithfullness test1*/ 
+/*keep TURN_ON_SINGLE_CALL_EXEC_MODE on*/
+#define DO_ARTF_TEST1 0
+#define TURN_ON_ARTF_TEST1_SYM_ANALYSIS 0
+#define TURN_ON_ARTF_TEST1_REPLAY 0
+
+/*faithfullness test2*/ 
+/*turn off TURN_ON_SINGLE_CALL_EXEC_MODE*/
+#define DO_ARTF_TEST2 0
+
+/*native execution perf*/
+#define TURN_ON_CALL_TIME_MEASUREMENT 0
+
+/*get special instructions*/
+#define GET_SPECIAL_INSTRUCTIONS 0
+
+/*get setup stats/perf*/
+#define TURN_ON_MOD_INSTALL_TIME_MEASUREMENT 0
+#define TURN_ON_PLATFORM_INIT_TIME_MEASUREMENT 0
+#define TURN_ON_TD_CREATION_TIME_MEASUREMENT 0

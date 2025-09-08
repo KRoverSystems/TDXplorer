@@ -1,0 +1,675 @@
+#include <string>
+#include "Analyze.h"
+#include <asm/ptrace.h>
+#include "VMState.h"
+#include "HistoryTree.h"
+#include "thinctrl.h"
+#include "common_idata.h"
+// #include "com.h" /*from seam manager*/
+#include "seam.h"
+#include "pageManager.h"
+#include "tdx_local_data.h"
+#include <cstring>
+
+struct iData *tdx_sp_ins;
+
+using namespace std;
+using namespace Dyninst;
+using namespace ParseAPI;
+using namespace InstructionAPI;
+
+extern bool endCurrentPath;
+extern PATH_END_RSN endCurrentPathReason;
+extern struct servReq *sreq;
+
+struct MacReg*  m_regs;
+std::map<ulong, ulong> seam_va_pa_map;
+std::map<ulong, ulong> seam_pa_va_map;
+std::map<ulong /*buf base*/, ulong /*conc adr from seeded*/> sym_buf_bases;
+
+int             dispatch_count = 0;
+int is_se = 0;
+
+uint8_t sym_buffer[4096];
+#define PTE_TO_PA_MASK		0xfffffff000UL
+#define PG_SZ_4K            0x1000UL
+#define PTE_PRESENT_MASK    0x1
+
+bool epml5_mapped_once = false;
+ulong updated_sept_page_seam_va = 0;
+ulong td_sept_page_seam_va[5];
+
+bool is_epte_defined = false;
+
+ulong last_path = 0;
+int scall_failed_count = 0; 
+
+ulong lp_keyhole_va_base;
+ulong lp_khole_edit_base_va;
+
+int sym_buf_count = 1;
+ulong tdx_call_ret_adr = 0;
+bool path_to_end_at_next_ins  = false;
+
+KVExprPtr pte_expr(nullptr);
+
+CAnalyze::CAnalyze(VMState *VM, EveMeta* meta) {
+    m_VM = VM;
+    execData = new ExecData;
+    execData->insn_count = 0; 
+    execData->is_next_ins_seamret = false;
+    execData->current_path = 0;
+
+    execData->last_conc_exprptr = NULL;
+    execData->last_conc_ins_count = 0;
+
+    execProfile = new ExecProfile;
+    execProfile->executionMode = 0; /*DEFAULT, single pat hseeded*/
+    execProfile->terminationMode = 0; /*DEFAULT, terminate at stack balance, function return*/
+    execProfile->terminate_ins_count = 0;
+
+}
+
+CAnalyze::~CAnalyze() {
+}
+
+void CAnalyze::setExecProfileSinglePath(){
+    std::cout << "setExecProfileSinglePath" << std::endl;
+    execProfile->executionMode = EXEC_MD_SINGLE_PATH_SEDED;
+    execProfile->terminationMode = END_AT_ANA_REQUEST;
+    execProfile->startIncCount = 0;
+}
+
+void CAnalyze::setExecProfileMultiPath(){
+    std::cout << "setExecProfileMultiPath" << std::endl;
+    execProfile->executionMode = EXEC_MD_START_PATH_SEARCH_AT_INS_COUNT;
+    // execProfile->startRip = rip;
+    // execProfile->startIncCount = 2089;
+    execProfile->startIncCount = 0;
+    
+    // execProfile->terminationMode = END_AT_GIVEN_INS_COUNT;
+    // execProfile->terminate_ins_count = 100;
+}   
+
+ulong CAnalyze::getSeedFromMemory(ulong adr){
+
+    bool res;
+    MemValue mv;
+
+    mv.size = 8;
+    mv.addr = adr;
+    mv.bsym = false;
+    mv.isSymList = false;
+
+    res = m_VM->readMemory (mv);
+    assert(res);
+    assert(!mv.bsym);
+
+    return mv.i64;
+}
+
+ulong CAnalyze::findKeyHoleVa(ulong pa){
+
+    // ulong lp_khole_edit_base_va = sreq->khole_edit_start_seam_va + sreq->current_lp*8*128;
+    int lp_keyhole_idx = 0;
+    bool res;
+    MemValue mv;
+    ulong seam_va = 0;
+    ulong khole_pte;
+
+    if(pa == 0x0){
+        return 0;
+    }
+
+    while(lp_keyhole_idx < 128){
+
+        khole_pte = *(ulong *)(lp_khole_edit_base_va + lp_keyhole_idx*8);
+        // std::cout << "khole_pte:0x" << khole_pte << std::endl;
+
+        if((khole_pte & PTE_PRESENT_MASK) && ((khole_pte & PTE_TO_PA_MASK) == pa)){
+                seam_va = keyholeIdxToVa(lp_keyhole_idx, pa);
+                // std::cout << "sEPTE: 0x" << std::hex << khole_pte << std::endl;
+                // std::cout << "seam_va: 0x" << std::hex << seam_va << std::endl;
+                return seam_va;
+        }
+
+        lp_keyhole_idx++;
+    }
+
+
+    std::cout << "end\n";
+    return seam_va;
+}
+
+ulong CAnalyze::keyholeIdxToVa(int khole_idx, ulong pa){
+
+    ulong seam_va = lp_keyhole_va_base + khole_idx*(PG_SZ_4K);
+    seam_pa_va_map.insert({pa, seam_va});
+    seam_va_pa_map.insert({seam_va, pa});
+    std::cout << "pa: 0x" << std::hex << pa << "\t seam va: 0x" << seam_va << std::endl;
+
+    return seam_va;
+}
+
+bool CAnalyze::validateKholeEditRange(ulong adr){
+    if((adr < lp_khole_edit_base_va) || (adr) >= (lp_khole_edit_base_va + 128*8)){
+        std::cout << "key hole edit access out off range for current LP !" << std::endl;
+        assert(0);
+    }
+    return false;
+}
+
+bool CAnalyze::isKholeEditAddress(ulong adr){
+    std::cout << "adr: 0x" << std::hex << adr << std::endl;
+    if((adr >> 63) != 1){ /*khole edit mapping in the lower half of 48bit adr space*/
+        std::cout << "khole-edit adr: 0x" << std::hex << adr << std::endl;
+        return true;
+    }
+    return false;
+}
+
+bool CAnalyze::validateKholeRange(ulong adr){
+
+    if((adr < lp_keyhole_va_base) || (adr >= (lp_keyhole_va_base + PG_SZ_4K*128))){
+        std::cout << "khole access, out of LP khole renge" << std::endl;
+        assert(0);
+    }
+    return false;
+}
+
+bool CAnalyze::isKholeAddress(ulong adr){
+
+    if((adr >= sreq->khole_start) && (adr < sreq->mod_data_rgn_start)){
+        std::cout << "khole access: 0x" << std::hex << adr << std::endl;
+        return true;
+    }
+    return false;
+}
+
+bool CAnalyze::isModuleLibSymAccess(ulong adr){
+    
+    if((adr >= sreq->mod_code_rgn_start) && (adr < sreq->mod_stack_rgn_start)){
+        std::cout << "Module lib symbol access: 0x" << std::hex << adr << std::endl;
+        return true;
+    }
+    return false;
+}
+
+bool CAnalyze::findMapedKholes(){
+
+    // updated_sept_page_seam_va = findKeyHoleVa(sreq->updated_sept_page);
+    // td_epml5_seam_va = findKeyHoleVa(sreq->td_epml5_pa);
+    // td_epml4_seam_va = findKeyHoleVa(sreq->td_epml4_pa);
+    // td_epdpt_seam_va = findKeyHoleVa(sreq->td_epdpt_pa);
+    // td_epd_seam_va = findKeyHoleVa(sreq->td_epd_pa);
+    // td_ept_seam_va = findKeyHoleVa(sreq->td_ept_pa);
+
+    td_sept_page_seam_va[4] = findKeyHoleVa(sreq->td_epml5_pa);
+    td_sept_page_seam_va[3] = findKeyHoleVa(sreq->td_epml4_pa);
+    td_sept_page_seam_va[2] = findKeyHoleVa(sreq->td_epdpt_pa);
+    td_sept_page_seam_va[1] = findKeyHoleVa(sreq->td_epd_pa);    
+
+    std::cout << "td_epml5_seam_va\t:0x" << std::hex << td_sept_page_seam_va[4] << std::endl;
+    std::cout << "td_epml4_seam_va\t:0x" << std::hex << td_sept_page_seam_va[3] << std::endl;
+    std::cout << "td_epdpt_seam_va\t:0x" << std::hex << td_sept_page_seam_va[2] << std::endl;
+    std::cout << "td_epd_seam_va\t:0x" << std::hex << td_sept_page_seam_va[1] << std::endl;
+    // std::cout << "td_ept_seam_va\t:0x" << std::hex << td_ept_seam_va << std::endl;
+
+    return true;
+
+}
+
+
+/*---sanitiy checks and post processing --------------------------------------------------------------------------------START*/
+void CAnalyze::doEndOfPathChecks(int scall_status){
+
+    std::cout << "doEndOfPAthChecks ....................." << std::endl;
+    std::set<unsigned long> sym_range;
+    std::string s_name = "gpa_B4_7";
+    
+    switch (scall_status)
+    {
+        case PATH_CALLRET_WITH_STATUS_FAIL: /*scall fail*/
+        {
+                
+        }break;
+        case PATH_CALLRET_WITH_STATUS_SUCCESS: /*scall success*/
+        {
+            /*Solving the path constraint iteratively to get the full range of ePTE idx.
+            We do not need this as this is a bruite force technique.
+            sym_range = a_EFlagsMgr->SolveConstraint(a_EFlagsMgr->m_Constraint, s_name);
+
+            std::cout << "range of ept_idx: ";
+            for (unsigned long val: sym_range){
+                std::cout << std::hex << ((val >> 16) & 0x1ff) << ", ";
+            }
+            std::cout << std::endl;*/
+        } break;
+        default:
+            break;
+    }
+    
+    /*Checking for all modified data can tell us which regions have been changed. But since we do not 
+    know what those memory objects are, given a modified address we can not reason
+    m_Thin->m_PM->checkModifiedData();*/
+
+    /*check sEPT data, symbolic buffer----------*/
+    if(updated_sept_page_seam_va != 0){
+        std::cout << "checking sEPT page symbolic buffer contents ..." << std::endl;
+        int sept_idx = 0;
+        bool res;
+
+        MemValue mv2 ;
+        mv2.size = 8 ;
+
+        /*read the exact 8 byte block that is expected to be modified*/
+        mv2.addr = updated_sept_page_seam_va;
+        mv2.bsym = false;
+        mv2.isSymList = false;
+
+        res = m_VM->readMemory (mv2);
+        assert(res);
+        if(mv2.bsym){
+            assert(mv2.expr);
+            std::cout << "Update expected sEPTE: ";
+            mv2.expr->print();
+            std::cout << std::endl;
+        }
+        else{
+            std::cout << "Update expected sEPTE: 0x" << std::hex << mv2.i64 << std::endl;
+        }
+
+        /*check sEPT data, symbolic buffer*/
+        while(sept_idx < 512){
+            mv2.bsym = false;
+            mv2.addr = updated_sept_page_seam_va + 8*sept_idx;
+            // mv2.isSymList = false ;  ???
+            res = m_VM->readMemory (mv2);
+            assert(res);
+            if(mv2.bsym){
+                assert(mv2.expr);
+                std::cout << "buffer offset: 0x" << std::hex << sept_idx*8; 
+                std::cout << " 8 byte block: ";
+                mv2.expr->print();
+                std::cout << std::endl;
+            }
+            
+            sept_idx +=1;
+        }
+    }
+
+
+    // assert(scall_failed_count <= 1);
+
+}
+/*---sanitiy checks and post processing ----------------------------------------------------------------------------------END*/
+
+void CAnalyze::endOfPathJobs(int scall_status){ //analysis at the end of each path
+
+        path_to_end_at_next_ins = false;
+        // td_pml5_seam_va_1 = 0;
+        // td_pml5_seam_va_2 = 0;
+        // td_pml5_seam_va = 0;
+        epml5_mapped_once = false;
+        updated_sept_page_seam_va = 0;
+        is_epte_defined = false;
+        last_path = execData->current_path;
+        sym_buf_count = 1;
+
+        seam_va_pa_map.clear();
+        seam_pa_va_map.clear();
+        sym_buf_bases.clear();
+}
+
+ulong CAnalyze::getKholePte(ulong rip){
+
+    ulong pte;
+    uint reg_idx;
+
+    std::cout << "khe-ins: 0x" << sreq->keyhole_edit_ins_adr[0] << " 0x" << sreq->keyhole_edit_ins_adr[1] << std::endl;
+    // assert(0);
+    // if(eff_rip == 0xffffa00000009a9c){
+    if(rip == sreq->keyhole_edit_ins_adr[0]){
+        pte = m_regs->regs.rdx;
+        reg_idx = x86_64::rdx;
+        std::cout << "pte-x: 0x" << std::hex << pte << std::endl;
+    }
+    // else if(eff_rip == 0xffffa00000009d68){
+    else if(rip == sreq->keyhole_edit_ins_adr[1]){
+        pte = m_regs->regs.rsi;
+        reg_idx = x86_64::rsi;
+        std::cout << "pte-y: 0x" << std::hex << pte << std::endl;
+    }
+    else{
+        assert(0);
+    }
+
+    //check if reg is symbolic
+    bool res;
+    RegValue rv;
+    rv.indx = reg_idx;
+    rv.size = 8;
+    rv.isSymList = false;
+    res = m_VM->readRegister(rv);
+    assert(res);
+    
+    if(rv.bsym){
+        assert(rv.expr);
+        std::cout << "keyhole pte is symbolic" << std::endl;
+        pte_expr = rv.expr;
+        pte = m_VM->m_EFlagsMgr->ConcretizeExpression(rv.expr);
+    }
+
+    return pte;
+}
+
+
+
+
+//-----Analyzer Begins here -----------------------------------------------------------------------------------------------------------
+ulong map_pa_ret = 0;
+ulong map_pa_addr = 0;
+ulong keyid_pa_in = 0;
+ulong mapping_type_in = 0;
+ulong mapping_permission_in = 0;
+tdxmod_keyhole_state_t *khs;
+std::map<int, KVExprPtr> s_keyhole_keyid_pa_sym_map;
+std::map<int, KVExprPtr> s_keyhole_ref_sym_map;
+std::map<int, KVExprPtr> e_keyhole_keyid_pa_sym_map;
+std::map<int, KVExprPtr> e_keyhole_ref_sym_map;
+
+int CAnalyze::onEndOfInsExec(){ //analysis at the end of each instruction
+    if(m_regs->regs.rip == map_pa_ret){
+        
+        std::cout << "at map_pa_ret():0x" << std::endl; 
+        endCurrentPath = true;
+        assert(endCurrentPathReason == PATH_NONE);
+        endCurrentPathReason = PATH_FUNCTION_RET;
+    }
+    if(endCurrentPath){
+        std::cout << "\n##End of cur path" << std::endl;
+        std::cout << "\npath constraints : " << std::endl;
+        a_EFlagsMgr->PrintConstraint();
+        std::cout << std::endl;
+        onPathEnd();
+    }
+    return 0;
+}
+
+int CAnalyze::onBeforeCIESIE(){
+    return 0;
+} 
+
+KVExprPtr CAnalyze::readSymMem(unsigned long addr, ulong size, ulong &val){
+    MemValue mv ;
+    mv.addr = addr;
+    mv.size = size;
+    mv.isSymList = false ;
+    bool res = m_VM->readMemory(mv);
+    assert(res);
+    if(mv.bsym){
+        assert(mv.expr);
+        return mv.expr;
+    }
+    else{
+        val = mv.i64;
+        return NULL;
+    }
+}
+
+int CAnalyze::onPathEnd(){
+    unsigned long hkid_pa_mapped;
+    bool is_new_mapping = false;
+    int idx;
+    bool is_ref_c_concrete = false;
+    bool is_ref_c_unmodified;
+    bool is_ref_c_increased_by_one;
+    int ref_c_modified_khole_count = 0;
+    ulong conc_val;
+    int modified_ref_c_idx = -1;
+
+    if(m_regs->regs.rip == map_pa_ret){
+
+        std::cout << "\nEnd of cur path ...." << std::endl; //just to support post processing
+        std::cout << "\npath constraints : " << std::endl;
+        hkid_pa_mapped = sreq->last_khole_pte & (HKID_MASK | PTE_TO_PA_MASK);
+        sreq->last_khole_pte = 0;
+        std::cout << "hkid_pa_mapped: 0x" << std::hex << hkid_pa_mapped << std::endl;
+        std::cout << "keyid_pa_in: 0x" << std::hex << keyid_pa_in << std::endl;
+        if(hkid_pa_mapped == keyid_pa_in){
+            std::cout << "\nEnd of cur path .... AT FUNCTION RET: NEW MAPPING" << std::endl; //just to support post processing
+            is_new_mapping = true;
+            std::cout << "new keyhole mapped for keyid+pa" << std::endl;
+        }
+        else{
+            std::cout << "\nEnd of cur path .... AT FUNCTION RET: EXISTING MAPPING" << std::endl; //just to support post processing
+            std::cout << "existing keyhole mapping used for keyid+pa" << std::endl;
+
+        }
+
+        idx = 0; //fill end expr maps and analyze
+        while(idx < 128){
+            std::cout << "-------------------khole idx: " << std::dec << idx << std::endl;
+            KVExprPtr keyid_pa_sym = readSymMem((ulong)&khs->keyhole_array[idx].mapped_pa, 8, conc_val);
+            
+            KVExprPtr c;
+            if(keyid_pa_sym == NULL){ //we do not expect the keyid_pa to be updated. can skip this. ?
+                c.reset(new ConstExpr(conc_val, 8, 0));
+                e_keyhole_keyid_pa_sym_map[idx] = c;
+            }
+            else{
+                e_keyhole_keyid_pa_sym_map[idx] = keyid_pa_sym;
+            }
+
+            KVExprPtr ref_c_sym = readSymMem((ulong)&khs->keyhole_array[idx].ref_count, 8, conc_val);
+            KVExprPtr c0;
+            KVExprPtr e0 = NULL;
+            KVExprPtr e1 = NULL;
+            KVExprPtr c4;
+            KVExprPtr e5;
+            KVExprPtr e6;
+            if(ref_c_sym == NULL){ //if the end_ref_c is concrete
+                if(is_new_mapping){
+
+                    if(conc_val != 1){ //if end_ref_c is concrete, it must be 1
+                        std::cout << "ERROR: if ref count is concrete, it must be 1" << std::endl;
+                        assert(0);
+                    }
+                    std::cout << "OK: if ref count is modified to a concrete value: 1" << std::endl;
+                    is_ref_c_concrete = true;
+                    is_ref_c_unmodified = false;
+                    ref_c_modified_khole_count++;
+                    modified_ref_c_idx = idx;
+                    c0.reset(new ConstExpr(conc_val, 8, 0));
+                    e_keyhole_ref_sym_map[idx] = c0;
+                }
+                else{
+                    std::cout << "ERROR: ref count can not be concrete (1), if not a new mapping" << std::endl;
+                    assert(0);
+                }
+            }
+            else{  //if the end_ref_c is symbolic,  check if (start_ref_c = end_ref_c)
+                e_keyhole_ref_sym_map[idx] = ref_c_sym;
+                e0.reset(new SubExpr(s_keyhole_ref_sym_map[idx], e_keyhole_ref_sym_map[idx]));
+                e1.reset(new EqualExpr(e0));
+
+                std::set<KVExprPtr> tmp_constraint1;
+                tmp_constraint1.insert(e1);
+                std::cout << "Expression to evaluate: "; //ref_c_start = ref_c_end   >> true if unmodified
+                e1->print();
+                std::cout << std::endl;
+    
+                is_ref_c_unmodified = a_EFlagsMgr->m_Z3Handler->Z3ConstraintChecking(tmp_constraint1);
+                std::cout << "initial expr: ";
+                s_keyhole_ref_sym_map[idx]->print();
+                std::cout << "\tend expr: ";
+                e_keyhole_ref_sym_map[idx]->print();
+                std::cout << "\tis_ref_c_unmodified: " << is_ref_c_unmodified << std::endl;
+            }
+
+            KVExprPtr c1 = NULL;
+            KVExprPtr e2 = NULL;
+            KVExprPtr e3 = NULL;
+            KVExprPtr e4 = NULL;
+            if(!is_ref_c_unmodified && !is_ref_c_concrete){   //if modified but not to a concrete value. (We've already handled the conc scenario above)
+                ref_c_modified_khole_count++;
+                modified_ref_c_idx = idx;
+                ulong expected_ref_c_increase = 1; //now check if increased by exactly 1
+                c1.reset(new ConstExpr(expected_ref_c_increase,8,0));
+                e2.reset(new AddExpr(s_keyhole_ref_sym_map[idx], c1));
+                e3.reset(new SubExpr(e_keyhole_ref_sym_map[idx], e2));
+                e4.reset(new EqualExpr(e3));
+                std::cout << "Expression to evaluate: ";  //ref_c_end = ref_c_start + 1    >> true if correctly modified
+                e4->print();
+                std::cout << std::endl;
+                std::set<KVExprPtr> tmp_constraint2;
+                tmp_constraint2.insert(e4);
+                is_ref_c_increased_by_one = a_EFlagsMgr->m_Z3Handler->Z3ConstraintChecking(tmp_constraint2);  //is only increased by 1
+
+                if(!is_ref_c_increased_by_one){
+                    std::cout << "ERROR: incorrect increase in ref count" << std::endl;
+                    assert(0);
+                }
+                else{
+                    std::cout << "OK: correct increase in ref count" << std::endl;
+                }
+            }
+            else{
+                std::cout << "OK: no increase in ref count" << std::endl;
+            }
+            idx++;
+        }
+        assert(ref_c_modified_khole_count == 1); //there should only be one ref_c modification
+        std::cout << std::endl;
+
+        assert(modified_ref_c_idx != -1);
+        KVExprPtr a0 = NULL;
+        KVExprPtr b0 = NULL;
+        KVExprPtr b1 = NULL;
+        a0.reset(new ConstExpr(keyid_pa_in, 8, 0));
+        b0.reset(new SubExpr(s_keyhole_keyid_pa_sym_map[modified_ref_c_idx], a0));
+        b1.reset(new DistinctExpr(b0));
+        std::set<KVExprPtr> tmp_constraint3;
+        tmp_constraint3.insert(a_EFlagsMgr->m_Constraint.begin(), a_EFlagsMgr->m_Constraint.end());
+        tmp_constraint3.insert(b1);
+
+        if(!a_EFlagsMgr->m_Z3Handler->Z3ConstraintChecking(tmp_constraint3)){
+            if(!is_new_mapping){ //if an existing mapping has been used, ok
+                std::cout << "OK: correct keyhole has been incremented" << std::endl;
+            }
+            else{ //not a new mapping
+                if((mapping_permission_in != khs->keyhole_array[modified_ref_c_idx].is_writable) ||
+                    (mapping_type_in != khs->keyhole_array[modified_ref_c_idx].is_wb_memtype))
+                {
+                    std::cout << "OK: correct keyhole (not in the cache), has been incremented1" << std::endl;
+                }
+                else{
+                    std::cout << "ERROR: correct keyhole has not been incremented1" << std::endl;
+                }
+            }
+        }
+        else{
+            if(is_new_mapping){ //if an existing mapping has been used, ok
+                std::cout << "OK: correct keyhole (not in the cache), has been incremented2" << std::endl;
+            }
+            else{
+                std::cout << "ERROR: correct keyhole has not been incremented2" << std::endl;
+            }
+        }
+
+        ulong expected_va = lp_keyhole_va_base + 4096*modified_ref_c_idx; //now check if the resultant VA is consistant with the keyhole index
+        std::cout << "expected_va: 0x" << std::hex << expected_va << " returned va: 0x" << m_regs->regs.rax << std::endl;
+        if(m_regs->regs.rax != expected_va){
+            std::cout << "ERROR: returned va does not match the expected" << std::endl;
+            assert(0);
+        }
+        else{
+            std::cout << "OK: returned va does match the expected" << std::endl;
+        }
+        e_keyhole_ref_sym_map.clear();
+    }
+    else{
+        std::cout << "error path" << std::endl;
+        std::cout << "\nEnd of cur path .... error" << std::endl; //just to support post processing
+        std::cout << "\npath constraints : " << std::endl;
+        a_EFlagsMgr->PrintConstraint();
+        std::cout << "last constraint : " << std::endl;
+        a_EFlagsMgr->last_constraint->print();
+    }
+    return 0;
+}
+
+int CAnalyze::analyztsHub(int anaPoint) { //analysis of KRover's SE by analyzer goes through this hub
+
+    switch(anaPoint){
+        case ON_END_OF_INS_EXEC:
+        {
+            return CAnalyze::onEndOfInsExec();
+        }   break;
+        case ON_BFR_CIE_OR_SIE:
+        {
+            return CAnalyze::onBeforeCIESIE();
+            break;
+        }
+        case ON_PATH_END:
+        {
+            return CAnalyze::onPathEnd();
+            break;
+        }
+        default:
+            break;
+    }
+    return 0;
+}
+
+bool CAnalyze::beginAnalysis(ulong addr) { //Analysis start
+
+    m_regs = (struct MacReg*)m_VM->getPTRegs();
+    ulong conc_mem_val;
+
+    lp_keyhole_va_base = sreq->khole_start_seam_va + sreq->current_lp*(PG_SZ_4K * 128);
+    lp_khole_edit_base_va = sreq->khole_edit_start_seam_va + sreq->current_lp*8*128;
+    execData->start_rsp = m_regs->regs.rsp;
+    keyid_pa_in = m_regs->regs.rdi;
+    mapping_permission_in = m_regs->regs.rsi;
+    mapping_type_in = m_regs->regs.rdx;
+    map_pa_ret = *(ulong *)(m_regs->regs.rsp);
+
+    khs = (tdxmod_keyhole_state_t *)sreq->khole_state_seam_va;
+    int idx = 0;
+    std::string sym_hkid_pa_prefix = "pa_";
+    std::string sym_ref_c_prefix = "r_";
+    while(idx < 128){
+        std::string sym_str = sym_hkid_pa_prefix + std::to_string(idx);
+        const char* sym_hkid_pa = sym_str.c_str();
+        m_VM->createSYMemObject((ulong)&khs->keyhole_array[idx].mapped_pa, 8, 1, 1, khs->keyhole_array[idx].mapped_pa, sym_hkid_pa);
+
+        KVExprPtr keyid_pa_sym = readSymMem((ulong)&khs->keyhole_array[idx].mapped_pa, 8, conc_mem_val);
+        s_keyhole_keyid_pa_sym_map[idx] = keyid_pa_sym;
+
+        sym_str = sym_ref_c_prefix + std::to_string(idx);
+        const char* sym_ref_ct = sym_str.c_str();
+        m_VM->createSYMemObject((ulong)&khs->keyhole_array[idx].ref_count, 8, 1, 1, khs->keyhole_array[idx].ref_count, sym_ref_ct);
+
+        KVExprPtr ref_c_sym = readSymMem((ulong)&khs->keyhole_array[idx].ref_count, 8, conc_mem_val);
+        s_keyhole_ref_sym_map[idx] = ref_c_sym;
+        idx++;
+    }
+    setExecProfileMultiPath();
+    dispatch_count++;
+
+    return m_Thin->processFunction(addr);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+

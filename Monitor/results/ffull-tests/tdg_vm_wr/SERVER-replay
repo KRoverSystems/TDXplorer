@@ -1,0 +1,23 @@
+2025-06-30T05:16:54.527653+00:00 tdx-guest kernel: kernel_agent: TD_AGENT------------------------
+2025-06-30T05:16:54.527700+00:00 tdx-guest kernel: kernel_agent: TDG_VM_WR-------------------------
+2025-06-30T05:16:54.527705+00:00 tdx-guest kernel: kernel_agent: tdcall leaf version: 0x10000
+2025-06-30T05:16:54.527707+00:00 tdx-guest kernel: kernel_agent: rcx: 0x0
+2025-06-30T05:16:54.527709+00:00 tdx-guest kernel: kernel_agent: field id: 0x9110000300000010
+2025-06-30T05:16:54.527711+00:00 tdx-guest kernel: kernel_agent: TDCALL RET: 0xc000010000000000
+2025-06-30T05:16:54.527712+00:00 tdx-guest kernel: kernel_agent: R8: contents if successful 0x1
+2025-06-30T05:17:46.356736+00:00 tdx-guest kernel: Exiting module
+2025-06-30T05:17:49.611875+00:00 tdx-guest kernel: kernel_agent: TD_AGENT------------------------
+2025-06-30T05:17:49.611945+00:00 tdx-guest kernel: kernel_agent: TDG_VM_WR-------------------------
+2025-06-30T05:17:49.611948+00:00 tdx-guest kernel: kernel_agent: tdcall leaf version: 0x0
+2025-06-30T05:17:49.611950+00:00 tdx-guest kernel: kernel_agent: rcx: 0x1
+2025-06-30T05:17:49.611952+00:00 tdx-guest kernel: kernel_agent: field id: 0x9110000300000010
+2025-06-30T05:17:49.611954+00:00 tdx-guest kernel: kernel_agent: TDCALL RET: 0xc000010000000001
+2025-06-30T05:17:49.611956+00:00 tdx-guest kernel: kernel_agent: R8: contents if successful 0x0
+2025-06-30T05:18:12.677892+00:00 tdx-guest kernel: Exiting module
+2025-06-30T05:18:18.439224+00:00 tdx-guest kernel: kernel_agent: TD_AGENT------------------------
+2025-06-30T05:18:18.439299+00:00 tdx-guest kernel: kernel_agent: TDG_VM_WR-------------------------
+2025-06-30T05:18:18.439304+00:00 tdx-guest kernel: kernel_agent: tdcall leaf version: 0x0
+2025-06-30T05:18:18.439307+00:00 tdx-guest kernel: kernel_agent: rcx: 0x0
+2025-06-30T05:18:18.439309+00:00 tdx-guest kernel: kernel_agent: field id: 0x9110000300000010
+2025-06-30T05:18:18.439310+00:00 tdx-guest kernel: kernel_agent: TDCALL RET: 0x0
+2025-06-30T05:18:18.439313+00:00 tdx-guest kernel: kernel_agent: R8: contents if successful 0x0

@@ -1,0 +1,1550 @@
+########## 0000 SEAMCALL SEAMLDR_INSTALL SEAMRET status: 0 SUCCESS -----------------
+pseamldr cr3:0x6002000
+fsbase:0xffffb003ffff0000 gsbase:0xffffb00300000000
+--
+########## 0001 SEAMCALL SEAMLDR_INSTALL SEAMRET status: 0 SUCCESS -----------------
+pseamldr cr3:0x6002000
+fsbase:0xffffb003ffff0000 gsbase:0xffffb00300000000
+--
+########## 0002 SEAMCALL SEAMLDR_INSTALL SEAMRET status: 0 SUCCESS -----------------
+pseamldr cr3:0x6002000
+fsbase:0xffffb003ffff0000 gsbase:0xffffb00300000000
+--
+########## 0003 SEAMCALL SEAMLDR_INSTALL SEAMRET status: 0 SUCCESS -----------------
+here
+Fusing tdx sw PDPT with s_smulator PML4, pml4 idx: 64
+--
+########## 0004 SEAMCALL TDH_SYS_INIT SEAMRET status: 0 SUCCESS -----------------
+tdx call: 35
+########## issuing SEAMCALL TDH_SYS_LP_INIT ----------------------------------------
+########## 0005 SEAMCALL TDH_SYS_LP_INIT SEAMRET status: 0 SUCCESS -----------------
+tdx call: 35
+########## issuing SEAMCALL TDH_SYS_LP_INIT ----------------------------------------
+########## 0006 SEAMCALL TDH_SYS_LP_INIT SEAMRET status: 0 SUCCESS -----------------
+tdx call: 35
+########## issuing SEAMCALL TDH_SYS_LP_INIT ----------------------------------------
+########## 0007 SEAMCALL TDH_SYS_LP_INIT SEAMRET status: 0 SUCCESS -----------------
+tdx call: 35
+########## issuing SEAMCALL TDH_SYS_LP_INIT ----------------------------------------
+########## 0008 SEAMCALL TDH_SYS_LP_INIT SEAMRET status: 0 SUCCESS -----------------
+hhkid: 32
+tdx call: 45
+--
+########## 0009 SEAMCALL TDH_SYS_CONFIG SEAMRET status: 0 SUCCESS -----------------
+tdx call: 31
+########## issuing SEAMCALL TDH_SYS_KEY_CONFIG ----------------------------------------
+########## 0010 SEAMCALL TDH_SYS_KEY_CONFIG SEAMRET status: 0 SUCCESS -----------------
+tdx call: 36
+########## issuing SEAMCALL TDH_SYS_TDMR_INIT ----------------------------------------
+########## 0011 SEAMCALL TDH_SYS_TDMR_INIT SEAMRET status: 0 SUCCESS -----------------
+tdx call: 36
+########## issuing SEAMCALL TDH_SYS_TDMR_INIT ----------------------------------------
+########## 0012 SEAMCALL TDH_SYS_TDMR_INIT SEAMRET status: 0 SUCCESS -----------------
+tdx call: 36
+########## issuing SEAMCALL TDH_SYS_TDMR_INIT ----------------------------------------
+########## 0013 SEAMCALL TDH_SYS_TDMR_INIT SEAMRET status: 0 SUCCESS -----------------
+tdx call: 36
+########## issuing SEAMCALL TDH_SYS_TDMR_INIT ----------------------------------------
+########## 0014 SEAMCALL TDH_SYS_TDMR_INIT SEAMRET status: 0 SUCCESS -----------------
+tdx call: 36
+########## issuing SEAMCALL TDH_SYS_TDMR_INIT ----------------------------------------
+########## 0015 SEAMCALL TDH_SYS_TDMR_INIT SEAMRET status: 0 SUCCESS -----------------
+tdx call: 36
+########## issuing SEAMCALL TDH_SYS_TDMR_INIT ----------------------------------------
+########## 0016 SEAMCALL TDH_SYS_TDMR_INIT SEAMRET status: 0 SUCCESS -----------------
+tdx call: 36
+########## issuing SEAMCALL TDH_SYS_TDMR_INIT ----------------------------------------
+########## 0017 SEAMCALL TDH_SYS_TDMR_INIT SEAMRET status: 0 SUCCESS -----------------
+tdx call: 36
+########## issuing SEAMCALL TDH_SYS_TDMR_INIT ----------------------------------------
+########## 0018 SEAMCALL TDH_SYS_TDMR_INIT SEAMRET status: 0 SUCCESS -----------------
+tdx call: 36
+########## issuing SEAMCALL TDH_SYS_TDMR_INIT ----------------------------------------
+########## 0019 SEAMCALL TDH_SYS_TDMR_INIT SEAMRET status: 0 SUCCESS -----------------
+tdx call: 36
+########## issuing SEAMCALL TDH_SYS_TDMR_INIT ----------------------------------------
+########## 0020 SEAMCALL TDH_SYS_TDMR_INIT SEAMRET status: 0 SUCCESS -----------------
+tdx call: 36
+########## issuing SEAMCALL TDH_SYS_TDMR_INIT ----------------------------------------
+########## 0021 SEAMCALL TDH_SYS_TDMR_INIT SEAMRET status: 0 SUCCESS -----------------
+tdx call: 36
+########## issuing SEAMCALL TDH_SYS_TDMR_INIT ----------------------------------------
+########## 0022 SEAMCALL TDH_SYS_TDMR_INIT SEAMRET status: 0 SUCCESS -----------------
+tdx call: 36
+########## issuing SEAMCALL TDH_SYS_TDMR_INIT ----------------------------------------
+########## 0023 SEAMCALL TDH_SYS_TDMR_INIT SEAMRET status: 0 SUCCESS -----------------
+tdx call: 36
+########## issuing SEAMCALL TDH_SYS_TDMR_INIT ----------------------------------------
+########## 0024 SEAMCALL TDH_SYS_TDMR_INIT SEAMRET status: 0 SUCCESS -----------------
+tdx call: 36
+########## issuing SEAMCALL TDH_SYS_TDMR_INIT ----------------------------------------
+########## 0025 SEAMCALL TDH_SYS_TDMR_INIT SEAMRET status: 0 SUCCESS -----------------
+tdx call: 36
+########## issuing SEAMCALL TDH_SYS_TDMR_INIT ----------------------------------------
+########## 0026 SEAMCALL TDH_SYS_TDMR_INIT SEAMRET status: 0 SUCCESS -----------------
+tdx call: 36
+########## issuing SEAMCALL TDH_SYS_TDMR_INIT ----------------------------------------
+########## 0027 SEAMCALL TDH_SYS_TDMR_INIT SEAMRET status: 0 SUCCESS -----------------
+tdx call: 36
+########## issuing SEAMCALL TDH_SYS_TDMR_INIT ----------------------------------------
+########## 0028 SEAMCALL TDH_SYS_TDMR_INIT SEAMRET status: 0 SUCCESS -----------------
+tdx call: 36
+########## issuing SEAMCALL TDH_SYS_TDMR_INIT ----------------------------------------
+########## 0029 SEAMCALL TDH_SYS_TDMR_INIT SEAMRET status: 0 SUCCESS -----------------
+tdx call: 36
+########## issuing SEAMCALL TDH_SYS_TDMR_INIT ----------------------------------------
+########## 0030 SEAMCALL TDH_SYS_TDMR_INIT SEAMRET status: 0 SUCCESS -----------------
+tdx call: 36
+########## issuing SEAMCALL TDH_SYS_TDMR_INIT ----------------------------------------
+########## 0031 SEAMCALL TDH_SYS_TDMR_INIT SEAMRET status: 0 SUCCESS -----------------
+tdx call: 36
+########## issuing SEAMCALL TDH_SYS_TDMR_INIT ----------------------------------------
+########## 0032 SEAMCALL TDH_SYS_TDMR_INIT SEAMRET status: 0 SUCCESS -----------------
+tdx call: 36
+########## issuing SEAMCALL TDH_SYS_TDMR_INIT ----------------------------------------
+########## 0033 SEAMCALL TDH_SYS_TDMR_INIT SEAMRET status: 0 SUCCESS -----------------
+tdx call: 36
+########## issuing SEAMCALL TDH_SYS_TDMR_INIT ----------------------------------------
+########## 0034 SEAMCALL TDH_SYS_TDMR_INIT SEAMRET status: 0 SUCCESS -----------------
+tdx call: 36
+########## issuing SEAMCALL TDH_SYS_TDMR_INIT ----------------------------------------
+########## 0035 SEAMCALL TDH_SYS_TDMR_INIT SEAMRET status: 0 SUCCESS -----------------
+tdx call: 36
+########## issuing SEAMCALL TDH_SYS_TDMR_INIT ----------------------------------------
+########## 0036 SEAMCALL TDH_SYS_TDMR_INIT SEAMRET status: 0 SUCCESS -----------------
+tdx call: 36
+########## issuing SEAMCALL TDH_SYS_TDMR_INIT ----------------------------------------
+########## 0037 SEAMCALL TDH_SYS_TDMR_INIT SEAMRET status: 0 SUCCESS -----------------
+tdx call: 36
+########## issuing SEAMCALL TDH_SYS_TDMR_INIT ----------------------------------------
+########## 0038 SEAMCALL TDH_SYS_TDMR_INIT SEAMRET status: 0 SUCCESS -----------------
+tdx call: 36
+########## issuing SEAMCALL TDH_SYS_TDMR_INIT ----------------------------------------
+########## 0039 SEAMCALL TDH_SYS_TDMR_INIT SEAMRET status: 0 SUCCESS -----------------
+tdx call: 36
+########## issuing SEAMCALL TDH_SYS_TDMR_INIT ----------------------------------------
+########## 0040 SEAMCALL TDH_SYS_TDMR_INIT SEAMRET status: 0 SUCCESS -----------------
+tdx call: 36
+########## issuing SEAMCALL TDH_SYS_TDMR_INIT ----------------------------------------
+########## 0041 SEAMCALL TDH_SYS_TDMR_INIT SEAMRET status: 0 SUCCESS -----------------
+tdx call: 36
+########## issuing SEAMCALL TDH_SYS_TDMR_INIT ----------------------------------------
+########## 0042 SEAMCALL TDH_SYS_TDMR_INIT SEAMRET status: 0 SUCCESS -----------------
+tdx call: 36
+########## issuing SEAMCALL TDH_SYS_TDMR_INIT ----------------------------------------
+########## 0043 SEAMCALL TDH_SYS_TDMR_INIT SEAMRET status: 0 SUCCESS -----------------
+tdx call: 36
+########## issuing SEAMCALL TDH_SYS_TDMR_INIT ----------------------------------------
+########## 0044 SEAMCALL TDH_SYS_TDMR_INIT SEAMRET status: 0 SUCCESS -----------------
+tdx call: 36
+########## issuing SEAMCALL TDH_SYS_TDMR_INIT ----------------------------------------
+########## 0045 SEAMCALL TDH_SYS_TDMR_INIT SEAMRET status: 0 SUCCESS -----------------
+tdx call: 36
+########## issuing SEAMCALL TDH_SYS_TDMR_INIT ----------------------------------------
+########## 0046 SEAMCALL TDH_SYS_TDMR_INIT SEAMRET status: 0 SUCCESS -----------------
+tdx call: 36
+########## issuing SEAMCALL TDH_SYS_TDMR_INIT ----------------------------------------
+########## 0047 SEAMCALL TDH_SYS_TDMR_INIT SEAMRET status: 0 SUCCESS -----------------
+tdx call: 36
+########## issuing SEAMCALL TDH_SYS_TDMR_INIT ----------------------------------------
+########## 0048 SEAMCALL TDH_SYS_TDMR_INIT SEAMRET status: 0 SUCCESS -----------------
+tdx call: 36
+########## issuing SEAMCALL TDH_SYS_TDMR_INIT ----------------------------------------
+########## 0049 SEAMCALL TDH_SYS_TDMR_INIT SEAMRET status: 0 SUCCESS -----------------
+tdx call: 36
+########## issuing SEAMCALL TDH_SYS_TDMR_INIT ----------------------------------------
+########## 0050 SEAMCALL TDH_SYS_TDMR_INIT SEAMRET status: 0 SUCCESS -----------------
+tdx call: 36
+########## issuing SEAMCALL TDH_SYS_TDMR_INIT ----------------------------------------
+########## 0051 SEAMCALL TDH_SYS_TDMR_INIT SEAMRET status: 0 SUCCESS -----------------
+tdx call: 36
+########## issuing SEAMCALL TDH_SYS_TDMR_INIT ----------------------------------------
+########## 0052 SEAMCALL TDH_SYS_TDMR_INIT SEAMRET status: 0 SUCCESS -----------------
+tdx call: 36
+########## issuing SEAMCALL TDH_SYS_TDMR_INIT ----------------------------------------
+########## 0053 SEAMCALL TDH_SYS_TDMR_INIT SEAMRET status: 0 SUCCESS -----------------
+tdx call: 36
+########## issuing SEAMCALL TDH_SYS_TDMR_INIT ----------------------------------------
+########## 0054 SEAMCALL TDH_SYS_TDMR_INIT SEAMRET status: 0 SUCCESS -----------------
+tdx call: 36
+########## issuing SEAMCALL TDH_SYS_TDMR_INIT ----------------------------------------
+########## 0055 SEAMCALL TDH_SYS_TDMR_INIT SEAMRET status: 0 SUCCESS -----------------
+tdx call: 36
+########## issuing SEAMCALL TDH_SYS_TDMR_INIT ----------------------------------------
+########## 0056 SEAMCALL TDH_SYS_TDMR_INIT SEAMRET status: 0 SUCCESS -----------------
+tdx call: 36
+########## issuing SEAMCALL TDH_SYS_TDMR_INIT ----------------------------------------
+########## 0057 SEAMCALL TDH_SYS_TDMR_INIT SEAMRET status: 0 SUCCESS -----------------
+tdx call: 36
+########## issuing SEAMCALL TDH_SYS_TDMR_INIT ----------------------------------------
+########## 0058 SEAMCALL TDH_SYS_TDMR_INIT SEAMRET status: 0 SUCCESS -----------------
+tdx call: 36
+########## issuing SEAMCALL TDH_SYS_TDMR_INIT ----------------------------------------
+########## 0059 SEAMCALL TDH_SYS_TDMR_INIT SEAMRET status: 0 SUCCESS -----------------
+tdx call: 36
+########## issuing SEAMCALL TDH_SYS_TDMR_INIT ----------------------------------------
+########## 0060 SEAMCALL TDH_SYS_TDMR_INIT SEAMRET status: 0 SUCCESS -----------------
+tdx call: 36
+########## issuing SEAMCALL TDH_SYS_TDMR_INIT ----------------------------------------
+########## 0061 SEAMCALL TDH_SYS_TDMR_INIT SEAMRET status: 0 SUCCESS -----------------
+tdx call: 36
+########## issuing SEAMCALL TDH_SYS_TDMR_INIT ----------------------------------------
+########## 0062 SEAMCALL TDH_SYS_TDMR_INIT SEAMRET status: 0 SUCCESS -----------------
+tdx call: 36
+########## issuing SEAMCALL TDH_SYS_TDMR_INIT ----------------------------------------
+########## 0063 SEAMCALL TDH_SYS_TDMR_INIT SEAMRET status: 0 SUCCESS -----------------
+tdx call: 36
+########## issuing SEAMCALL TDH_SYS_TDMR_INIT ----------------------------------------
+########## 0064 SEAMCALL TDH_SYS_TDMR_INIT SEAMRET status: 0 SUCCESS -----------------
+tdx call: 36
+########## issuing SEAMCALL TDH_SYS_TDMR_INIT ----------------------------------------
+########## 0065 SEAMCALL TDH_SYS_TDMR_INIT SEAMRET status: 0 SUCCESS -----------------
+tdx call: 36
+########## issuing SEAMCALL TDH_SYS_TDMR_INIT ----------------------------------------
+########## 0066 SEAMCALL TDH_SYS_TDMR_INIT SEAMRET status: 0 SUCCESS -----------------
+tdx call: 36
+########## issuing SEAMCALL TDH_SYS_TDMR_INIT ----------------------------------------
+########## 0067 SEAMCALL TDH_SYS_TDMR_INIT SEAMRET status: 0 SUCCESS -----------------
+tdx call: 36
+########## issuing SEAMCALL TDH_SYS_TDMR_INIT ----------------------------------------
+########## 0068 SEAMCALL TDH_SYS_TDMR_INIT SEAMRET status: 0 SUCCESS -----------------
+tdx call: 36
+########## issuing SEAMCALL TDH_SYS_TDMR_INIT ----------------------------------------
+########## 0069 SEAMCALL TDH_SYS_TDMR_INIT SEAMRET status: 0 SUCCESS -----------------
+tdx call: 36
+########## issuing SEAMCALL TDH_SYS_TDMR_INIT ----------------------------------------
+########## 0070 SEAMCALL TDH_SYS_TDMR_INIT SEAMRET status: 0 SUCCESS -----------------
+tdx call: 36
+########## issuing SEAMCALL TDH_SYS_TDMR_INIT ----------------------------------------
+########## 0071 SEAMCALL TDH_SYS_TDMR_INIT SEAMRET status: 0 SUCCESS -----------------
+tdx call: 36
+########## issuing SEAMCALL TDH_SYS_TDMR_INIT ----------------------------------------
+########## 0072 SEAMCALL TDH_SYS_TDMR_INIT SEAMRET status: 0 SUCCESS -----------------
+tdx call: 36
+########## issuing SEAMCALL TDH_SYS_TDMR_INIT ----------------------------------------
+########## 0073 SEAMCALL TDH_SYS_TDMR_INIT SEAMRET status: 0 SUCCESS -----------------
+tdx call: 36
+########## issuing SEAMCALL TDH_SYS_TDMR_INIT ----------------------------------------
+########## 0074 SEAMCALL TDH_SYS_TDMR_INIT SEAMRET status: 0 SUCCESS -----------------
+tdx call: 36
+########## issuing SEAMCALL TDH_SYS_TDMR_INIT ----------------------------------------
+########## 0075 SEAMCALL TDH_SYS_TDMR_INIT SEAMRET status: 0 SUCCESS -----------------
+tdx call: 36
+########## issuing SEAMCALL TDH_SYS_TDMR_INIT ----------------------------------------
+########## 0076 SEAMCALL TDH_SYS_TDMR_INIT SEAMRET status: 0 SUCCESS -----------------
+tdx call: 36
+########## issuing SEAMCALL TDH_SYS_TDMR_INIT ----------------------------------------
+########## 0077 SEAMCALL TDH_SYS_TDMR_INIT SEAMRET status: 0 SUCCESS -----------------
+tdx call: 36
+########## issuing SEAMCALL TDH_SYS_TDMR_INIT ----------------------------------------
+########## 0078 SEAMCALL TDH_SYS_TDMR_INIT SEAMRET status: 0 SUCCESS -----------------
+tdx call: 36
+########## issuing SEAMCALL TDH_SYS_TDMR_INIT ----------------------------------------
+########## 0079 SEAMCALL TDH_SYS_TDMR_INIT SEAMRET status: 0 SUCCESS -----------------
+tdx call: 36
+########## issuing SEAMCALL TDH_SYS_TDMR_INIT ----------------------------------------
+########## 0080 SEAMCALL TDH_SYS_TDMR_INIT SEAMRET status: 0 SUCCESS -----------------
+tdx call: 36
+########## issuing SEAMCALL TDH_SYS_TDMR_INIT ----------------------------------------
+########## 0081 SEAMCALL TDH_SYS_TDMR_INIT SEAMRET status: 0 SUCCESS -----------------
+tdx call: 36
+########## issuing SEAMCALL TDH_SYS_TDMR_INIT ----------------------------------------
+########## 0082 SEAMCALL TDH_SYS_TDMR_INIT SEAMRET status: 0 SUCCESS -----------------
+tdx call: 36
+########## issuing SEAMCALL TDH_SYS_TDMR_INIT ----------------------------------------
+########## 0083 SEAMCALL TDH_SYS_TDMR_INIT SEAMRET status: 0 SUCCESS -----------------
+tdx call: 36
+########## issuing SEAMCALL TDH_SYS_TDMR_INIT ----------------------------------------
+########## 0084 SEAMCALL TDH_SYS_TDMR_INIT SEAMRET status: 0 SUCCESS -----------------
+tdx call: 36
+########## issuing SEAMCALL TDH_SYS_TDMR_INIT ----------------------------------------
+########## 0085 SEAMCALL TDH_SYS_TDMR_INIT SEAMRET status: 0 SUCCESS -----------------
+tdx call: 36
+########## issuing SEAMCALL TDH_SYS_TDMR_INIT ----------------------------------------
+########## 0086 SEAMCALL TDH_SYS_TDMR_INIT SEAMRET status: 0 SUCCESS -----------------
+tdx call: 36
+########## issuing SEAMCALL TDH_SYS_TDMR_INIT ----------------------------------------
+########## 0087 SEAMCALL TDH_SYS_TDMR_INIT SEAMRET status: 0 SUCCESS -----------------
+tdx call: 36
+########## issuing SEAMCALL TDH_SYS_TDMR_INIT ----------------------------------------
+########## 0088 SEAMCALL TDH_SYS_TDMR_INIT SEAMRET status: 0 SUCCESS -----------------
+tdx call: 36
+########## issuing SEAMCALL TDH_SYS_TDMR_INIT ----------------------------------------
+########## 0089 SEAMCALL TDH_SYS_TDMR_INIT SEAMRET status: 0 SUCCESS -----------------
+tdx call: 36
+########## issuing SEAMCALL TDH_SYS_TDMR_INIT ----------------------------------------
+########## 0090 SEAMCALL TDH_SYS_TDMR_INIT SEAMRET status: 0 SUCCESS -----------------
+tdx call: 36
+########## issuing SEAMCALL TDH_SYS_TDMR_INIT ----------------------------------------
+########## 0091 SEAMCALL TDH_SYS_TDMR_INIT SEAMRET status: 0 SUCCESS -----------------
+tdx call: 36
+########## issuing SEAMCALL TDH_SYS_TDMR_INIT ----------------------------------------
+########## 0092 SEAMCALL TDH_SYS_TDMR_INIT SEAMRET status: 0 SUCCESS -----------------
+tdx call: 36
+########## issuing SEAMCALL TDH_SYS_TDMR_INIT ----------------------------------------
+########## 0093 SEAMCALL TDH_SYS_TDMR_INIT SEAMRET status: 0 SUCCESS -----------------
+tdx call: 36
+########## issuing SEAMCALL TDH_SYS_TDMR_INIT ----------------------------------------
+########## 0094 SEAMCALL TDH_SYS_TDMR_INIT SEAMRET status: 0 SUCCESS -----------------
+tdx call: 36
+########## issuing SEAMCALL TDH_SYS_TDMR_INIT ----------------------------------------
+########## 0095 SEAMCALL TDH_SYS_TDMR_INIT SEAMRET status: 0 SUCCESS -----------------
+tdx call: 36
+########## issuing SEAMCALL TDH_SYS_TDMR_INIT ----------------------------------------
+########## 0096 SEAMCALL TDH_SYS_TDMR_INIT SEAMRET status: 0 SUCCESS -----------------
+tdx call: 36
+########## issuing SEAMCALL TDH_SYS_TDMR_INIT ----------------------------------------
+########## 0097 SEAMCALL TDH_SYS_TDMR_INIT SEAMRET status: 0 SUCCESS -----------------
+tdx call: 36
+########## issuing SEAMCALL TDH_SYS_TDMR_INIT ----------------------------------------
+########## 0098 SEAMCALL TDH_SYS_TDMR_INIT SEAMRET status: 0 SUCCESS -----------------
+tdx call: 36
+########## issuing SEAMCALL TDH_SYS_TDMR_INIT ----------------------------------------
+########## 0099 SEAMCALL TDH_SYS_TDMR_INIT SEAMRET status: 0 SUCCESS -----------------
+tdx call: 36
+########## issuing SEAMCALL TDH_SYS_TDMR_INIT ----------------------------------------
+########## 0100 SEAMCALL TDH_SYS_TDMR_INIT SEAMRET status: 0 SUCCESS -----------------
+tdx call: 36
+########## issuing SEAMCALL TDH_SYS_TDMR_INIT ----------------------------------------
+########## 0101 SEAMCALL TDH_SYS_TDMR_INIT SEAMRET status: 0 SUCCESS -----------------
+tdx call: 36
+########## issuing SEAMCALL TDH_SYS_TDMR_INIT ----------------------------------------
+########## 0102 SEAMCALL TDH_SYS_TDMR_INIT SEAMRET status: 0 SUCCESS -----------------
+tdx call: 36
+########## issuing SEAMCALL TDH_SYS_TDMR_INIT ----------------------------------------
+########## 0103 SEAMCALL TDH_SYS_TDMR_INIT SEAMRET status: 0 SUCCESS -----------------
+tdx call: 36
+########## issuing SEAMCALL TDH_SYS_TDMR_INIT ----------------------------------------
+########## 0104 SEAMCALL TDH_SYS_TDMR_INIT SEAMRET status: 0 SUCCESS -----------------
+tdx call: 36
+########## issuing SEAMCALL TDH_SYS_TDMR_INIT ----------------------------------------
+########## 0105 SEAMCALL TDH_SYS_TDMR_INIT SEAMRET status: 0 SUCCESS -----------------
+tdx call: 36
+########## issuing SEAMCALL TDH_SYS_TDMR_INIT ----------------------------------------
+########## 0106 SEAMCALL TDH_SYS_TDMR_INIT SEAMRET status: 0 SUCCESS -----------------
+tdx call: 36
+########## issuing SEAMCALL TDH_SYS_TDMR_INIT ----------------------------------------
+########## 0107 SEAMCALL TDH_SYS_TDMR_INIT SEAMRET status: 0 SUCCESS -----------------
+tdx call: 36
+########## issuing SEAMCALL TDH_SYS_TDMR_INIT ----------------------------------------
+########## 0108 SEAMCALL TDH_SYS_TDMR_INIT SEAMRET status: 0 SUCCESS -----------------
+tdx call: 36
+########## issuing SEAMCALL TDH_SYS_TDMR_INIT ----------------------------------------
+########## 0109 SEAMCALL TDH_SYS_TDMR_INIT SEAMRET status: 0 SUCCESS -----------------
+tdx call: 36
+########## issuing SEAMCALL TDH_SYS_TDMR_INIT ----------------------------------------
+########## 0110 SEAMCALL TDH_SYS_TDMR_INIT SEAMRET status: 0 SUCCESS -----------------
+tdx call: 36
+########## issuing SEAMCALL TDH_SYS_TDMR_INIT ----------------------------------------
+########## 0111 SEAMCALL TDH_SYS_TDMR_INIT SEAMRET status: 0 SUCCESS -----------------
+tdx call: 36
+########## issuing SEAMCALL TDH_SYS_TDMR_INIT ----------------------------------------
+########## 0112 SEAMCALL TDH_SYS_TDMR_INIT SEAMRET status: 0 SUCCESS -----------------
+tdx call: 36
+########## issuing SEAMCALL TDH_SYS_TDMR_INIT ----------------------------------------
+########## 0113 SEAMCALL TDH_SYS_TDMR_INIT SEAMRET status: 0 SUCCESS -----------------
+tdx call: 36
+########## issuing SEAMCALL TDH_SYS_TDMR_INIT ----------------------------------------
+########## 0114 SEAMCALL TDH_SYS_TDMR_INIT SEAMRET status: 0 SUCCESS -----------------
+tdx call: 36
+########## issuing SEAMCALL TDH_SYS_TDMR_INIT ----------------------------------------
+########## 0115 SEAMCALL TDH_SYS_TDMR_INIT SEAMRET status: 0 SUCCESS -----------------
+tdx call: 36
+########## issuing SEAMCALL TDH_SYS_TDMR_INIT ----------------------------------------
+########## 0116 SEAMCALL TDH_SYS_TDMR_INIT SEAMRET status: 0 SUCCESS -----------------
+tdx call: 36
+########## issuing SEAMCALL TDH_SYS_TDMR_INIT ----------------------------------------
+########## 0117 SEAMCALL TDH_SYS_TDMR_INIT SEAMRET status: 0 SUCCESS -----------------
+tdx call: 36
+########## issuing SEAMCALL TDH_SYS_TDMR_INIT ----------------------------------------
+########## 0118 SEAMCALL TDH_SYS_TDMR_INIT SEAMRET status: 0 SUCCESS -----------------
+tdx call: 36
+########## issuing SEAMCALL TDH_SYS_TDMR_INIT ----------------------------------------
+########## 0119 SEAMCALL TDH_SYS_TDMR_INIT SEAMRET status: 0 SUCCESS -----------------
+tdx call: 36
+########## issuing SEAMCALL TDH_SYS_TDMR_INIT ----------------------------------------
+########## 0120 SEAMCALL TDH_SYS_TDMR_INIT SEAMRET status: 0 SUCCESS -----------------
+tdx call: 36
+########## issuing SEAMCALL TDH_SYS_TDMR_INIT ----------------------------------------
+########## 0121 SEAMCALL TDH_SYS_TDMR_INIT SEAMRET status: 0 SUCCESS -----------------
+tdx call: 36
+########## issuing SEAMCALL TDH_SYS_TDMR_INIT ----------------------------------------
+########## 0122 SEAMCALL TDH_SYS_TDMR_INIT SEAMRET status: 0 SUCCESS -----------------
+tdx call: 36
+########## issuing SEAMCALL TDH_SYS_TDMR_INIT ----------------------------------------
+########## 0123 SEAMCALL TDH_SYS_TDMR_INIT SEAMRET status: 0 SUCCESS -----------------
+tdx call: 36
+########## issuing SEAMCALL TDH_SYS_TDMR_INIT ----------------------------------------
+########## 0124 SEAMCALL TDH_SYS_TDMR_INIT SEAMRET status: 0 SUCCESS -----------------
+tdx call: 36
+########## issuing SEAMCALL TDH_SYS_TDMR_INIT ----------------------------------------
+########## 0125 SEAMCALL TDH_SYS_TDMR_INIT SEAMRET status: 0 SUCCESS -----------------
+tdx call: 36
+########## issuing SEAMCALL TDH_SYS_TDMR_INIT ----------------------------------------
+########## 0126 SEAMCALL TDH_SYS_TDMR_INIT SEAMRET status: 0 SUCCESS -----------------
+tdx call: 36
+########## issuing SEAMCALL TDH_SYS_TDMR_INIT ----------------------------------------
+########## 0127 SEAMCALL TDH_SYS_TDMR_INIT SEAMRET status: 0 SUCCESS -----------------
+tdx call: 36
+########## issuing SEAMCALL TDH_SYS_TDMR_INIT ----------------------------------------
+########## 0128 SEAMCALL TDH_SYS_TDMR_INIT SEAMRET status: 0 SUCCESS -----------------
+tdx call: 36
+########## issuing SEAMCALL TDH_SYS_TDMR_INIT ----------------------------------------
+########## 0129 SEAMCALL TDH_SYS_TDMR_INIT SEAMRET status: 0 SUCCESS -----------------
+tdx call: 36
+########## issuing SEAMCALL TDH_SYS_TDMR_INIT ----------------------------------------
+########## 0130 SEAMCALL TDH_SYS_TDMR_INIT SEAMRET status: 0 SUCCESS -----------------
+tdx call: 36
+########## issuing SEAMCALL TDH_SYS_TDMR_INIT ----------------------------------------
+########## 0131 SEAMCALL TDH_SYS_TDMR_INIT SEAMRET status: 0 SUCCESS -----------------
+tdx call: 36
+########## issuing SEAMCALL TDH_SYS_TDMR_INIT ----------------------------------------
+########## 0132 SEAMCALL TDH_SYS_TDMR_INIT SEAMRET status: 0 SUCCESS -----------------
+tdx call: 36
+########## issuing SEAMCALL TDH_SYS_TDMR_INIT ----------------------------------------
+########## 0133 SEAMCALL TDH_SYS_TDMR_INIT SEAMRET status: 0 SUCCESS -----------------
+tdx call: 36
+########## issuing SEAMCALL TDH_SYS_TDMR_INIT ----------------------------------------
+########## 0134 SEAMCALL TDH_SYS_TDMR_INIT SEAMRET status: 0 SUCCESS -----------------
+tdx call: 36
+########## issuing SEAMCALL TDH_SYS_TDMR_INIT ----------------------------------------
+########## 0135 SEAMCALL TDH_SYS_TDMR_INIT SEAMRET status: 0 SUCCESS -----------------
+tdx call: 36
+########## issuing SEAMCALL TDH_SYS_TDMR_INIT ----------------------------------------
+########## 0136 SEAMCALL TDH_SYS_TDMR_INIT SEAMRET status: 0 SUCCESS -----------------
+tdx call: 36
+########## issuing SEAMCALL TDH_SYS_TDMR_INIT ----------------------------------------
+########## 0137 SEAMCALL TDH_SYS_TDMR_INIT SEAMRET status: 0 SUCCESS -----------------
+tdx call: 36
+########## issuing SEAMCALL TDH_SYS_TDMR_INIT ----------------------------------------
+########## 0138 SEAMCALL TDH_SYS_TDMR_INIT SEAMRET status: 0 SUCCESS -----------------
+tdx call: 36
+########## issuing SEAMCALL TDH_SYS_TDMR_INIT ----------------------------------------
+########## 0139 SEAMCALL TDH_SYS_TDMR_INIT SEAMRET status: 0 SUCCESS -----------------
+tdx call: 36
+########## issuing SEAMCALL TDH_SYS_TDMR_INIT ----------------------------------------
+########## 0140 SEAMCALL TDH_SYS_TDMR_INIT SEAMRET status: 0 SUCCESS -----------------
+tdx call: 36
+########## issuing SEAMCALL TDH_SYS_TDMR_INIT ----------------------------------------
+########## 0141 SEAMCALL TDH_SYS_TDMR_INIT SEAMRET status: 0 SUCCESS -----------------
+tdx call: 36
+########## issuing SEAMCALL TDH_SYS_TDMR_INIT ----------------------------------------
+########## 0142 SEAMCALL TDH_SYS_TDMR_INIT SEAMRET status: 0 SUCCESS -----------------
+tdx call: 36
+########## issuing SEAMCALL TDH_SYS_TDMR_INIT ----------------------------------------
+########## 0143 SEAMCALL TDH_SYS_TDMR_INIT SEAMRET status: 0 SUCCESS -----------------
+tdx call: 36
+########## issuing SEAMCALL TDH_SYS_TDMR_INIT ----------------------------------------
+########## 0144 SEAMCALL TDH_SYS_TDMR_INIT SEAMRET status: 0 SUCCESS -----------------
+tdx call: 36
+########## issuing SEAMCALL TDH_SYS_TDMR_INIT ----------------------------------------
+########## 0145 SEAMCALL TDH_SYS_TDMR_INIT SEAMRET status: 0 SUCCESS -----------------
+tdx call: 36
+########## issuing SEAMCALL TDH_SYS_TDMR_INIT ----------------------------------------
+########## 0146 SEAMCALL TDH_SYS_TDMR_INIT SEAMRET status: 0 SUCCESS -----------------
+tdx call: 36
+########## issuing SEAMCALL TDH_SYS_TDMR_INIT ----------------------------------------
+########## 0147 SEAMCALL TDH_SYS_TDMR_INIT SEAMRET status: 0 SUCCESS -----------------
+tdx call: 36
+########## issuing SEAMCALL TDH_SYS_TDMR_INIT ----------------------------------------
+########## 0148 SEAMCALL TDH_SYS_TDMR_INIT SEAMRET status: 0 SUCCESS -----------------
+tdx call: 36
+########## issuing SEAMCALL TDH_SYS_TDMR_INIT ----------------------------------------
+########## 0149 SEAMCALL TDH_SYS_TDMR_INIT SEAMRET status: 0 SUCCESS -----------------
+tdx call: 36
+########## issuing SEAMCALL TDH_SYS_TDMR_INIT ----------------------------------------
+########## 0150 SEAMCALL TDH_SYS_TDMR_INIT SEAMRET status: 0 SUCCESS -----------------
+tdx call: 36
+########## issuing SEAMCALL TDH_SYS_TDMR_INIT ----------------------------------------
+########## 0151 SEAMCALL TDH_SYS_TDMR_INIT SEAMRET status: 0 SUCCESS -----------------
+tdx call: 36
+########## issuing SEAMCALL TDH_SYS_TDMR_INIT ----------------------------------------
+########## 0152 SEAMCALL TDH_SYS_TDMR_INIT SEAMRET status: 0 SUCCESS -----------------
+tdx call: 36
+########## issuing SEAMCALL TDH_SYS_TDMR_INIT ----------------------------------------
+########## 0153 SEAMCALL TDH_SYS_TDMR_INIT SEAMRET status: 0 SUCCESS -----------------
+tdx call: 36
+########## issuing SEAMCALL TDH_SYS_TDMR_INIT ----------------------------------------
+########## 0154 SEAMCALL TDH_SYS_TDMR_INIT SEAMRET status: 0 SUCCESS -----------------
+tdx call: 36
+########## issuing SEAMCALL TDH_SYS_TDMR_INIT ----------------------------------------
+########## 0155 SEAMCALL TDH_SYS_TDMR_INIT SEAMRET status: 0 SUCCESS -----------------
+tdx call: 36
+########## issuing SEAMCALL TDH_SYS_TDMR_INIT ----------------------------------------
+########## 0156 SEAMCALL TDH_SYS_TDMR_INIT SEAMRET status: 0 SUCCESS -----------------
+tdx call: 36
+########## issuing SEAMCALL TDH_SYS_TDMR_INIT ----------------------------------------
+########## 0157 SEAMCALL TDH_SYS_TDMR_INIT SEAMRET status: 0 SUCCESS -----------------
+tdx call: 36
+########## issuing SEAMCALL TDH_SYS_TDMR_INIT ----------------------------------------
+########## 0158 SEAMCALL TDH_SYS_TDMR_INIT SEAMRET status: 0 SUCCESS -----------------
+tdx call: 36
+########## issuing SEAMCALL TDH_SYS_TDMR_INIT ----------------------------------------
+########## 0159 SEAMCALL TDH_SYS_TDMR_INIT SEAMRET status: 0 SUCCESS -----------------
+tdx call: 36
+########## issuing SEAMCALL TDH_SYS_TDMR_INIT ----------------------------------------
+########## 0160 SEAMCALL TDH_SYS_TDMR_INIT SEAMRET status: 0 SUCCESS -----------------
+tdx call: 36
+########## issuing SEAMCALL TDH_SYS_TDMR_INIT ----------------------------------------
+########## 0161 SEAMCALL TDH_SYS_TDMR_INIT SEAMRET status: 0 SUCCESS -----------------
+tdx call: 36
+########## issuing SEAMCALL TDH_SYS_TDMR_INIT ----------------------------------------
+########## 0162 SEAMCALL TDH_SYS_TDMR_INIT SEAMRET status: 0 SUCCESS -----------------
+tdx call: 36
+########## issuing SEAMCALL TDH_SYS_TDMR_INIT ----------------------------------------
+########## 0163 SEAMCALL TDH_SYS_TDMR_INIT SEAMRET status: 0 SUCCESS -----------------
+tdx call: 36
+########## issuing SEAMCALL TDH_SYS_TDMR_INIT ----------------------------------------
+########## 0164 SEAMCALL TDH_SYS_TDMR_INIT SEAMRET status: 0 SUCCESS -----------------
+tdx call: 36
+########## issuing SEAMCALL TDH_SYS_TDMR_INIT ----------------------------------------
+########## 0165 SEAMCALL TDH_SYS_TDMR_INIT SEAMRET status: 0 SUCCESS -----------------
+tdx call: 36
+########## issuing SEAMCALL TDH_SYS_TDMR_INIT ----------------------------------------
+########## 0166 SEAMCALL TDH_SYS_TDMR_INIT SEAMRET status: 0 SUCCESS -----------------
+tdx call: 36
+########## issuing SEAMCALL TDH_SYS_TDMR_INIT ----------------------------------------
+########## 0167 SEAMCALL TDH_SYS_TDMR_INIT SEAMRET status: 0 SUCCESS -----------------
+tdx call: 36
+########## issuing SEAMCALL TDH_SYS_TDMR_INIT ----------------------------------------
+########## 0168 SEAMCALL TDH_SYS_TDMR_INIT SEAMRET status: 0 SUCCESS -----------------
+tdx call: 36
+########## issuing SEAMCALL TDH_SYS_TDMR_INIT ----------------------------------------
+########## 0169 SEAMCALL TDH_SYS_TDMR_INIT SEAMRET status: 0 SUCCESS -----------------
+tdx call: 36
+########## issuing SEAMCALL TDH_SYS_TDMR_INIT ----------------------------------------
+########## 0170 SEAMCALL TDH_SYS_TDMR_INIT SEAMRET status: 0 SUCCESS -----------------
+tdx call: 36
+########## issuing SEAMCALL TDH_SYS_TDMR_INIT ----------------------------------------
+########## 0171 SEAMCALL TDH_SYS_TDMR_INIT SEAMRET status: 0 SUCCESS -----------------
+tdx call: 36
+########## issuing SEAMCALL TDH_SYS_TDMR_INIT ----------------------------------------
+########## 0172 SEAMCALL TDH_SYS_TDMR_INIT SEAMRET status: 0 SUCCESS -----------------
+tdx call: 36
+########## issuing SEAMCALL TDH_SYS_TDMR_INIT ----------------------------------------
+########## 0173 SEAMCALL TDH_SYS_TDMR_INIT SEAMRET status: 0 SUCCESS -----------------
+tdx call: 36
+########## issuing SEAMCALL TDH_SYS_TDMR_INIT ----------------------------------------
+########## 0174 SEAMCALL TDH_SYS_TDMR_INIT SEAMRET status: 0 SUCCESS -----------------
+tdx call: 36
+########## issuing SEAMCALL TDH_SYS_TDMR_INIT ----------------------------------------
+########## 0175 SEAMCALL TDH_SYS_TDMR_INIT SEAMRET status: 0 SUCCESS -----------------
+tdx call: 36
+########## issuing SEAMCALL TDH_SYS_TDMR_INIT ----------------------------------------
+########## 0176 SEAMCALL TDH_SYS_TDMR_INIT SEAMRET status: 0 SUCCESS -----------------
+tdx call: 36
+########## issuing SEAMCALL TDH_SYS_TDMR_INIT ----------------------------------------
+########## 0177 SEAMCALL TDH_SYS_TDMR_INIT SEAMRET status: 0 SUCCESS -----------------
+tdx call: 36
+########## issuing SEAMCALL TDH_SYS_TDMR_INIT ----------------------------------------
+########## 0178 SEAMCALL TDH_SYS_TDMR_INIT SEAMRET status: 0 SUCCESS -----------------
+tdx call: 36
+########## issuing SEAMCALL TDH_SYS_TDMR_INIT ----------------------------------------
+########## 0179 SEAMCALL TDH_SYS_TDMR_INIT SEAMRET status: 0 SUCCESS -----------------
+tdx call: 36
+########## issuing SEAMCALL TDH_SYS_TDMR_INIT ----------------------------------------
+########## 0180 SEAMCALL TDH_SYS_TDMR_INIT SEAMRET status: 0 SUCCESS -----------------
+tdx call: 36
+########## issuing SEAMCALL TDH_SYS_TDMR_INIT ----------------------------------------
+########## 0181 SEAMCALL TDH_SYS_TDMR_INIT SEAMRET status: 0 SUCCESS -----------------
+tdx call: 36
+########## issuing SEAMCALL TDH_SYS_TDMR_INIT ----------------------------------------
+########## 0182 SEAMCALL TDH_SYS_TDMR_INIT SEAMRET status: 0 SUCCESS -----------------
+tdx call: 36
+########## issuing SEAMCALL TDH_SYS_TDMR_INIT ----------------------------------------
+########## 0183 SEAMCALL TDH_SYS_TDMR_INIT SEAMRET status: 0 SUCCESS -----------------
+tdx call: 36
+########## issuing SEAMCALL TDH_SYS_TDMR_INIT ----------------------------------------
+########## 0184 SEAMCALL TDH_SYS_TDMR_INIT SEAMRET status: 0 SUCCESS -----------------
+tdx call: 36
+########## issuing SEAMCALL TDH_SYS_TDMR_INIT ----------------------------------------
+########## 0185 SEAMCALL TDH_SYS_TDMR_INIT SEAMRET status: 0 SUCCESS -----------------
+tdx call: 36
+########## issuing SEAMCALL TDH_SYS_TDMR_INIT ----------------------------------------
+########## 0186 SEAMCALL TDH_SYS_TDMR_INIT SEAMRET status: 0 SUCCESS -----------------
+tdx call: 36
+########## issuing SEAMCALL TDH_SYS_TDMR_INIT ----------------------------------------
+########## 0187 SEAMCALL TDH_SYS_TDMR_INIT SEAMRET status: 0 SUCCESS -----------------
+tdx call: 36
+########## issuing SEAMCALL TDH_SYS_TDMR_INIT ----------------------------------------
+########## 0188 SEAMCALL TDH_SYS_TDMR_INIT SEAMRET status: 0 SUCCESS -----------------
+tdx call: 36
+########## issuing SEAMCALL TDH_SYS_TDMR_INIT ----------------------------------------
+########## 0189 SEAMCALL TDH_SYS_TDMR_INIT SEAMRET status: 0 SUCCESS -----------------
+tdx call: 36
+########## issuing SEAMCALL TDH_SYS_TDMR_INIT ----------------------------------------
+########## 0190 SEAMCALL TDH_SYS_TDMR_INIT SEAMRET status: 0 SUCCESS -----------------
+tdx call: 36
+########## issuing SEAMCALL TDH_SYS_TDMR_INIT ----------------------------------------
+########## 0191 SEAMCALL TDH_SYS_TDMR_INIT SEAMRET status: 0 SUCCESS -----------------
+tdx call: 36
+########## issuing SEAMCALL TDH_SYS_TDMR_INIT ----------------------------------------
+########## 0192 SEAMCALL TDH_SYS_TDMR_INIT SEAMRET status: 0 SUCCESS -----------------
+tdx call: 36
+########## issuing SEAMCALL TDH_SYS_TDMR_INIT ----------------------------------------
+########## 0193 SEAMCALL TDH_SYS_TDMR_INIT SEAMRET status: 0 SUCCESS -----------------
+tdx call: 36
+########## issuing SEAMCALL TDH_SYS_TDMR_INIT ----------------------------------------
+########## 0194 SEAMCALL TDH_SYS_TDMR_INIT SEAMRET status: 0 SUCCESS -----------------
+tdx call: 36
+########## issuing SEAMCALL TDH_SYS_TDMR_INIT ----------------------------------------
+########## 0195 SEAMCALL TDH_SYS_TDMR_INIT SEAMRET status: 0 SUCCESS -----------------
+tdx call: 36
+########## issuing SEAMCALL TDH_SYS_TDMR_INIT ----------------------------------------
+########## 0196 SEAMCALL TDH_SYS_TDMR_INIT SEAMRET status: 0 SUCCESS -----------------
+tdx call: 36
+########## issuing SEAMCALL TDH_SYS_TDMR_INIT ----------------------------------------
+########## 0197 SEAMCALL TDH_SYS_TDMR_INIT SEAMRET status: 0 SUCCESS -----------------
+tdx call: 36
+########## issuing SEAMCALL TDH_SYS_TDMR_INIT ----------------------------------------
+########## 0198 SEAMCALL TDH_SYS_TDMR_INIT SEAMRET status: 0 SUCCESS -----------------
+tdx call: 36
+########## issuing SEAMCALL TDH_SYS_TDMR_INIT ----------------------------------------
+########## 0199 SEAMCALL TDH_SYS_TDMR_INIT SEAMRET status: 0 SUCCESS -----------------
+tdx call: 36
+########## issuing SEAMCALL TDH_SYS_TDMR_INIT ----------------------------------------
+########## 0200 SEAMCALL TDH_SYS_TDMR_INIT SEAMRET status: 0 SUCCESS -----------------
+tdx call: 36
+########## issuing SEAMCALL TDH_SYS_TDMR_INIT ----------------------------------------
+########## 0201 SEAMCALL TDH_SYS_TDMR_INIT SEAMRET status: 0 SUCCESS -----------------
+tdx call: 36
+########## issuing SEAMCALL TDH_SYS_TDMR_INIT ----------------------------------------
+########## 0202 SEAMCALL TDH_SYS_TDMR_INIT SEAMRET status: 0 SUCCESS -----------------
+tdx call: 36
+########## issuing SEAMCALL TDH_SYS_TDMR_INIT ----------------------------------------
+########## 0203 SEAMCALL TDH_SYS_TDMR_INIT SEAMRET status: 0 SUCCESS -----------------
+tdx call: 36
+########## issuing SEAMCALL TDH_SYS_TDMR_INIT ----------------------------------------
+########## 0204 SEAMCALL TDH_SYS_TDMR_INIT SEAMRET status: 0 SUCCESS -----------------
+tdx call: 36
+########## issuing SEAMCALL TDH_SYS_TDMR_INIT ----------------------------------------
+########## 0205 SEAMCALL TDH_SYS_TDMR_INIT SEAMRET status: 0 SUCCESS -----------------
+tdx call: 36
+########## issuing SEAMCALL TDH_SYS_TDMR_INIT ----------------------------------------
+########## 0206 SEAMCALL TDH_SYS_TDMR_INIT SEAMRET status: 0 SUCCESS -----------------
+tdx call: 36
+########## issuing SEAMCALL TDH_SYS_TDMR_INIT ----------------------------------------
+########## 0207 SEAMCALL TDH_SYS_TDMR_INIT SEAMRET status: 0 SUCCESS -----------------
+tdx call: 36
+########## issuing SEAMCALL TDH_SYS_TDMR_INIT ----------------------------------------
+########## 0208 SEAMCALL TDH_SYS_TDMR_INIT SEAMRET status: 0 SUCCESS -----------------
+tdx call: 36
+########## issuing SEAMCALL TDH_SYS_TDMR_INIT ----------------------------------------
+########## 0209 SEAMCALL TDH_SYS_TDMR_INIT SEAMRET status: 0 SUCCESS -----------------
+tdx call: 36
+########## issuing SEAMCALL TDH_SYS_TDMR_INIT ----------------------------------------
+########## 0210 SEAMCALL TDH_SYS_TDMR_INIT SEAMRET status: 0 SUCCESS -----------------
+tdx call: 36
+########## issuing SEAMCALL TDH_SYS_TDMR_INIT ----------------------------------------
+########## 0211 SEAMCALL TDH_SYS_TDMR_INIT SEAMRET status: 0 SUCCESS -----------------
+tdx call: 36
+########## issuing SEAMCALL TDH_SYS_TDMR_INIT ----------------------------------------
+########## 0212 SEAMCALL TDH_SYS_TDMR_INIT SEAMRET status: 0 SUCCESS -----------------
+tdx call: 36
+########## issuing SEAMCALL TDH_SYS_TDMR_INIT ----------------------------------------
+########## 0213 SEAMCALL TDH_SYS_TDMR_INIT SEAMRET status: 0 SUCCESS -----------------
+tdx call: 36
+########## issuing SEAMCALL TDH_SYS_TDMR_INIT ----------------------------------------
+########## 0214 SEAMCALL TDH_SYS_TDMR_INIT SEAMRET status: 0 SUCCESS -----------------
+tdx call: 36
+########## issuing SEAMCALL TDH_SYS_TDMR_INIT ----------------------------------------
+########## 0215 SEAMCALL TDH_SYS_TDMR_INIT SEAMRET status: 0 SUCCESS -----------------
+tdx call: 36
+########## issuing SEAMCALL TDH_SYS_TDMR_INIT ----------------------------------------
+########## 0216 SEAMCALL TDH_SYS_TDMR_INIT SEAMRET status: 0 SUCCESS -----------------
+tdx call: 36
+########## issuing SEAMCALL TDH_SYS_TDMR_INIT ----------------------------------------
+########## 0217 SEAMCALL TDH_SYS_TDMR_INIT SEAMRET status: 0 SUCCESS -----------------
+tdx call: 36
+########## issuing SEAMCALL TDH_SYS_TDMR_INIT ----------------------------------------
+########## 0218 SEAMCALL TDH_SYS_TDMR_INIT SEAMRET status: 0 SUCCESS -----------------
+tdx call: 36
+########## issuing SEAMCALL TDH_SYS_TDMR_INIT ----------------------------------------
+########## 0219 SEAMCALL TDH_SYS_TDMR_INIT SEAMRET status: 0 SUCCESS -----------------
+tdx call: 36
+########## issuing SEAMCALL TDH_SYS_TDMR_INIT ----------------------------------------
+########## 0220 SEAMCALL TDH_SYS_TDMR_INIT SEAMRET status: 0 SUCCESS -----------------
+tdx call: 36
+########## issuing SEAMCALL TDH_SYS_TDMR_INIT ----------------------------------------
+########## 0221 SEAMCALL TDH_SYS_TDMR_INIT SEAMRET status: 0 SUCCESS -----------------
+tdx call: 36
+########## issuing SEAMCALL TDH_SYS_TDMR_INIT ----------------------------------------
+########## 0222 SEAMCALL TDH_SYS_TDMR_INIT SEAMRET status: 0 SUCCESS -----------------
+tdx call: 36
+########## issuing SEAMCALL TDH_SYS_TDMR_INIT ----------------------------------------
+########## 0223 SEAMCALL TDH_SYS_TDMR_INIT SEAMRET status: 0 SUCCESS -----------------
+tdx call: 36
+########## issuing SEAMCALL TDH_SYS_TDMR_INIT ----------------------------------------
+########## 0224 SEAMCALL TDH_SYS_TDMR_INIT SEAMRET status: 0 SUCCESS -----------------
+tdx call: 36
+########## issuing SEAMCALL TDH_SYS_TDMR_INIT ----------------------------------------
+########## 0225 SEAMCALL TDH_SYS_TDMR_INIT SEAMRET status: 0 SUCCESS -----------------
+tdx call: 36
+########## issuing SEAMCALL TDH_SYS_TDMR_INIT ----------------------------------------
+########## 0226 SEAMCALL TDH_SYS_TDMR_INIT SEAMRET status: 0 SUCCESS -----------------
+tdx call: 36
+########## issuing SEAMCALL TDH_SYS_TDMR_INIT ----------------------------------------
+########## 0227 SEAMCALL TDH_SYS_TDMR_INIT SEAMRET status: 0 SUCCESS -----------------
+tdx call: 36
+########## issuing SEAMCALL TDH_SYS_TDMR_INIT ----------------------------------------
+########## 0228 SEAMCALL TDH_SYS_TDMR_INIT SEAMRET status: 0 SUCCESS -----------------
+tdx call: 36
+########## issuing SEAMCALL TDH_SYS_TDMR_INIT ----------------------------------------
+########## 0229 SEAMCALL TDH_SYS_TDMR_INIT SEAMRET status: 0 SUCCESS -----------------
+tdx call: 36
+########## issuing SEAMCALL TDH_SYS_TDMR_INIT ----------------------------------------
+########## 0230 SEAMCALL TDH_SYS_TDMR_INIT SEAMRET status: 0 SUCCESS -----------------
+tdx call: 36
+########## issuing SEAMCALL TDH_SYS_TDMR_INIT ----------------------------------------
+########## 0231 SEAMCALL TDH_SYS_TDMR_INIT SEAMRET status: 0 SUCCESS -----------------
+tdx call: 36
+########## issuing SEAMCALL TDH_SYS_TDMR_INIT ----------------------------------------
+########## 0232 SEAMCALL TDH_SYS_TDMR_INIT SEAMRET status: 0 SUCCESS -----------------
+tdx call: 36
+########## issuing SEAMCALL TDH_SYS_TDMR_INIT ----------------------------------------
+########## 0233 SEAMCALL TDH_SYS_TDMR_INIT SEAMRET status: 0 SUCCESS -----------------
+tdx call: 36
+########## issuing SEAMCALL TDH_SYS_TDMR_INIT ----------------------------------------
+########## 0234 SEAMCALL TDH_SYS_TDMR_INIT SEAMRET status: 0 SUCCESS -----------------
+tdx call: 36
+########## issuing SEAMCALL TDH_SYS_TDMR_INIT ----------------------------------------
+########## 0235 SEAMCALL TDH_SYS_TDMR_INIT SEAMRET status: 0 SUCCESS -----------------
+tdx call: 36
+########## issuing SEAMCALL TDH_SYS_TDMR_INIT ----------------------------------------
+########## 0236 SEAMCALL TDH_SYS_TDMR_INIT SEAMRET status: 0 SUCCESS -----------------
+tdx call: 36
+########## issuing SEAMCALL TDH_SYS_TDMR_INIT ----------------------------------------
+########## 0237 SEAMCALL TDH_SYS_TDMR_INIT SEAMRET status: 0 SUCCESS -----------------
+tdx call: 36
+########## issuing SEAMCALL TDH_SYS_TDMR_INIT ----------------------------------------
+########## 0238 SEAMCALL TDH_SYS_TDMR_INIT SEAMRET status: 0 SUCCESS -----------------
+tdx call: 36
+########## issuing SEAMCALL TDH_SYS_TDMR_INIT ----------------------------------------
+########## 0239 SEAMCALL TDH_SYS_TDMR_INIT SEAMRET status: 0 SUCCESS -----------------
+tdx call: 36
+########## issuing SEAMCALL TDH_SYS_TDMR_INIT ----------------------------------------
+########## 0240 SEAMCALL TDH_SYS_TDMR_INIT SEAMRET status: 0 SUCCESS -----------------
+tdx call: 36
+########## issuing SEAMCALL TDH_SYS_TDMR_INIT ----------------------------------------
+########## 0241 SEAMCALL TDH_SYS_TDMR_INIT SEAMRET status: 0 SUCCESS -----------------
+tdx call: 36
+########## issuing SEAMCALL TDH_SYS_TDMR_INIT ----------------------------------------
+########## 0242 SEAMCALL TDH_SYS_TDMR_INIT SEAMRET status: 0 SUCCESS -----------------
+tdx call: 36
+########## issuing SEAMCALL TDH_SYS_TDMR_INIT ----------------------------------------
+########## 0243 SEAMCALL TDH_SYS_TDMR_INIT SEAMRET status: 0 SUCCESS -----------------
+tdx call: 36
+########## issuing SEAMCALL TDH_SYS_TDMR_INIT ----------------------------------------
+########## 0244 SEAMCALL TDH_SYS_TDMR_INIT SEAMRET status: 0 SUCCESS -----------------
+tdx call: 36
+########## issuing SEAMCALL TDH_SYS_TDMR_INIT ----------------------------------------
+########## 0245 SEAMCALL TDH_SYS_TDMR_INIT SEAMRET status: 0 SUCCESS -----------------
+tdx call: 36
+########## issuing SEAMCALL TDH_SYS_TDMR_INIT ----------------------------------------
+########## 0246 SEAMCALL TDH_SYS_TDMR_INIT SEAMRET status: 0 SUCCESS -----------------
+tdx call: 36
+########## issuing SEAMCALL TDH_SYS_TDMR_INIT ----------------------------------------
+########## 0247 SEAMCALL TDH_SYS_TDMR_INIT SEAMRET status: 0 SUCCESS -----------------
+tdx call: 36
+########## issuing SEAMCALL TDH_SYS_TDMR_INIT ----------------------------------------
+########## 0248 SEAMCALL TDH_SYS_TDMR_INIT SEAMRET status: 0 SUCCESS -----------------
+tdx call: 36
+########## issuing SEAMCALL TDH_SYS_TDMR_INIT ----------------------------------------
+########## 0249 SEAMCALL TDH_SYS_TDMR_INIT SEAMRET status: 0 SUCCESS -----------------
+tdx call: 36
+########## issuing SEAMCALL TDH_SYS_TDMR_INIT ----------------------------------------
+########## 0250 SEAMCALL TDH_SYS_TDMR_INIT SEAMRET status: 0 SUCCESS -----------------
+tdx call: 36
+########## issuing SEAMCALL TDH_SYS_TDMR_INIT ----------------------------------------
+########## 0251 SEAMCALL TDH_SYS_TDMR_INIT SEAMRET status: 0 SUCCESS -----------------
+tdx call: 36
+########## issuing SEAMCALL TDH_SYS_TDMR_INIT ----------------------------------------
+########## 0252 SEAMCALL TDH_SYS_TDMR_INIT SEAMRET status: 0 SUCCESS -----------------
+tdx call: 36
+########## issuing SEAMCALL TDH_SYS_TDMR_INIT ----------------------------------------
+########## 0253 SEAMCALL TDH_SYS_TDMR_INIT SEAMRET status: 0 SUCCESS -----------------
+tdx call: 36
+########## issuing SEAMCALL TDH_SYS_TDMR_INIT ----------------------------------------
+########## 0254 SEAMCALL TDH_SYS_TDMR_INIT SEAMRET status: 0 SUCCESS -----------------
+tdx call: 36
+########## issuing SEAMCALL TDH_SYS_TDMR_INIT ----------------------------------------
+########## 0255 SEAMCALL TDH_SYS_TDMR_INIT SEAMRET status: 0 SUCCESS -----------------
+tdx call: 36
+########## issuing SEAMCALL TDH_SYS_TDMR_INIT ----------------------------------------
+########## 0256 SEAMCALL TDH_SYS_TDMR_INIT SEAMRET status: 0 SUCCESS -----------------
+tdx call: 36
+########## issuing SEAMCALL TDH_SYS_TDMR_INIT ----------------------------------------
+########## 0257 SEAMCALL TDH_SYS_TDMR_INIT SEAMRET status: 0 SUCCESS -----------------
+tdx call: 36
+########## issuing SEAMCALL TDH_SYS_TDMR_INIT ----------------------------------------
+########## 0258 SEAMCALL TDH_SYS_TDMR_INIT SEAMRET status: 0 SUCCESS -----------------
+tdx call: 36
+########## issuing SEAMCALL TDH_SYS_TDMR_INIT ----------------------------------------
+########## 0259 SEAMCALL TDH_SYS_TDMR_INIT SEAMRET status: 0 SUCCESS -----------------
+tdx call: 36
+########## issuing SEAMCALL TDH_SYS_TDMR_INIT ----------------------------------------
+########## 0260 SEAMCALL TDH_SYS_TDMR_INIT SEAMRET status: 0 SUCCESS -----------------
+tdx call: 36
+########## issuing SEAMCALL TDH_SYS_TDMR_INIT ----------------------------------------
+########## 0261 SEAMCALL TDH_SYS_TDMR_INIT SEAMRET status: 0 SUCCESS -----------------
+tdx call: 36
+########## issuing SEAMCALL TDH_SYS_TDMR_INIT ----------------------------------------
+########## 0262 SEAMCALL TDH_SYS_TDMR_INIT SEAMRET status: 0 SUCCESS -----------------
+tdx call: 36
+########## issuing SEAMCALL TDH_SYS_TDMR_INIT ----------------------------------------
+########## 0263 SEAMCALL TDH_SYS_TDMR_INIT SEAMRET status: 0 SUCCESS -----------------
+tdx call: 36
+########## issuing SEAMCALL TDH_SYS_TDMR_INIT ----------------------------------------
+########## 0264 SEAMCALL TDH_SYS_TDMR_INIT SEAMRET status: 0 SUCCESS -----------------
+tdx call: 36
+########## issuing SEAMCALL TDH_SYS_TDMR_INIT ----------------------------------------
+########## 0265 SEAMCALL TDH_SYS_TDMR_INIT SEAMRET status: 0 SUCCESS -----------------
+tdx call: 36
+########## issuing SEAMCALL TDH_SYS_TDMR_INIT ----------------------------------------
+########## 0266 SEAMCALL TDH_SYS_TDMR_INIT SEAMRET status: 0 SUCCESS -----------------
+com->tdmr_next_avl_p pa:0x40000000
+0 com->sreq.secPages[page_idx].raw: 0x40000400
+--
+########## 0267 SEAMCALL TDH_MNG_CREATE SEAMRET status: 0 SUCCESS -----------------
+tdx call: 8
+########## issuing SEAMCALL TDH_MNG_KEY_CONFIG ----------------------------------------
+########## 0268 SEAMCALL TDH_MNG_KEY_CONFIG SEAMRET status: 0 SUCCESS -----------------
+com->tdmr_next_avl_p pa:0x40001000
+1 com->sreq.secPages[page_idx].raw: 0x40001000
+--
+########## 0269 SEAMCALL TDH_MNG_ADDCX SEAMRET status: 0 SUCCESS -----------------
+com->tdmr_next_avl_p pa:0x40002000
+2 com->sreq.secPages[page_idx].raw: 0x40002000
+--
+########## 0270 SEAMCALL TDH_MNG_ADDCX SEAMRET status: 0 SUCCESS -----------------
+com->tdmr_next_avl_p pa:0x40003000
+3 com->sreq.secPages[page_idx].raw: 0x40003000
+--
+########## 0271 SEAMCALL TDH_MNG_ADDCX SEAMRET status: 0 SUCCESS -----------------
+com->tdmr_next_avl_p pa:0x40004000
+4 com->sreq.secPages[page_idx].raw: 0x40004000
+--
+########## 0272 SEAMCALL TDH_MNG_ADDCX SEAMRET status: 0 SUCCESS -----------------
+com->tdmr_next_avl_p pa:0x40005000
+5 com->sreq.secPages[page_idx].raw: 0x40005000
+--
+########## 0273 SEAMCALL TDH_MNG_ADDCX SEAMRET status: 0 SUCCESS -----------------
+com->tdmr_next_avl_p pa:0x40006000
+6 com->sreq.secPages[page_idx].raw: 0x40006000
+--
+########## 0274 SEAMCALL TDH_MNG_ADDCX SEAMRET status: 0 SUCCESS -----------------
+tdx call: 32
+########## issuing SEAMCALL TDH_SYS_INFO ----------------------------------------
+########## 0275 SEAMCALL TDH_SYS_INFO SEAMRET status: 0 SUCCESS -----------------
+tdx call: 21
+########## issuing SEAMCALL TDH_MNG_INIT ----------------------------------------
+########## 0276 SEAMCALL TDH_MNG_INIT SEAMRET status: 0 SUCCESS -----------------
+com->tdmr_next_avl_pa tdvps:40007000
+com->tdmr_next_avl_p pa:0x40007000
+--
+########## 0277 SEAMCALL TDH_VP_CREATE SEAMRET status: 0 SUCCESS -----------------
+tdvps pa: 40007000
+com->tdmr_next_avl_pa:40008000
+--
+########## 0278 SEAMCALL TDH_VP_ADDCX SEAMRET status: 0 SUCCESS -----------------
+com->tdmr_next_avl_pa:40009000
+com->tdmr_next_avl_p pa:0x40009000
+--
+########## 0279 SEAMCALL TDH_VP_ADDCX SEAMRET status: 0 SUCCESS -----------------
+com->tdmr_next_avl_pa:4000a000
+com->tdmr_next_avl_p pa:0x4000a000
+--
+########## 0280 SEAMCALL TDH_VP_ADDCX SEAMRET status: 0 SUCCESS -----------------
+com->tdmr_next_avl_pa:4000b000
+com->tdmr_next_avl_p pa:0x4000b000
+--
+########## 0281 SEAMCALL TDH_VP_ADDCX SEAMRET status: 0 SUCCESS -----------------
+com->tdmr_next_avl_pa:4000c000
+com->tdmr_next_avl_p pa:0x4000c000
+--
+########## 0282 SEAMCALL TDH_VP_ADDCX SEAMRET status: 0 SUCCESS -----------------
+com->tdmr_next_avl_pa:4000d000
+com->tdmr_next_avl_p pa:0x4000d000
+--
+########## 0283 SEAMCALL TDH_VP_ADDCX SEAMRET status: 0 SUCCESS -----------------
+com->tdmr_next_avl_pa:4000e000
+com->tdmr_next_avl_p pa:0x4000e000
+--
+########## 0284 SEAMCALL TDH_VP_ADDCX SEAMRET status: 0 SUCCESS -----------------
+com->tdmr_next_avl_pa:4000f000
+com->tdmr_next_avl_p pa:0x4000f000
+--
+########## 0285 SEAMCALL TDH_VP_ADDCX SEAMRET status: 0 SUCCESS -----------------
+com->tdmr_next_avl_pa:40010000
+com->tdmr_next_avl_p pa:0x40010000
+--
+########## 0286 SEAMCALL TDH_VP_ADDCX SEAMRET status: 0 SUCCESS -----------------
+com->tdmr_next_avl_pa:40011000
+com->tdmr_next_avl_p pa:0x40011000
+--
+########## 0287 SEAMCALL TDH_VP_ADDCX SEAMRET status: 0 SUCCESS -----------------
+com->tdmr_next_avl_pa:40012000
+com->tdmr_next_avl_p pa:0x40012000
+--
+########## 0288 SEAMCALL TDH_VP_ADDCX SEAMRET status: 0 SUCCESS -----------------
+com->tdmr_next_avl_pa:40013000
+com->tdmr_next_avl_p pa:0x40013000
+--
+########## 0289 SEAMCALL TDH_VP_ADDCX SEAMRET status: 0 SUCCESS -----------------
+com->tdmr_next_avl_pa:40014000
+com->tdmr_next_avl_p pa:0x40014000
+--
+########## 0290 SEAMCALL TDH_VP_ADDCX SEAMRET status: 0 SUCCESS -----------------
+com->tdmr_next_avl_pa:40015000
+com->tdmr_next_avl_p pa:0x40015000
+--
+########## 0291 SEAMCALL TDH_VP_ADDCX SEAMRET status: 0 SUCCESS -----------------
+tdx call: 22
+########## issuing SEAMCALL TDH_VP_INIT ----------------------------------------
+########## 0292 SEAMCALL TDH_VP_INIT SEAMRET status: 0 SUCCESS -----------------
+com->tdmr_next_avl_p pa:0x40016000
+22 com->sreq.secPages[page_idx].raw: 0x40016000
+--
+########## 0293 SEAMCALL TDH_MEM_SEPT_ADD SEAMRET status: 0 SUCCESS -----------------
+R8: ffffffffffffffff
+com->tdmr_next_avl_p pa:0x40017000
+--
+########## 0294 SEAMCALL TDH_MEM_SEPT_ADD SEAMRET status: 0 SUCCESS -----------------
+R8: ffffffffffffffff
+com->tdmr_next_avl_p pa:0x40018000
+--
+########## 0295 SEAMCALL TDH_MEM_SEPT_ADD SEAMRET status: 0 SUCCESS -----------------
+R8: ffffffffffffffff
+gpa start:0x0
+--
+########## 0296 SEAMCALL TDH_MEM_SEPT_ADD SEAMRET status: 0 SUCCESS -----------------
+R8: ffffffffffffffff
+com->tdmr_next_avl_p pa:0x4001a000
+--
+########## 0297 SEAMCALL TDH_MEM_PAGE_ADD SEAMRET status: 0 SUCCESS -----------------
+com->tdmr_next_avl_p pa:0x4001b000
+27 com->sreq.secPages[page_idx].raw: 0x4001b000
+--
+########## 0298 SEAMCALL TDH_MEM_PAGE_ADD SEAMRET status: 0 SUCCESS -----------------
+com->tdmr_next_avl_p pa:0x4001c000
+28 com->sreq.secPages[page_idx].raw: 0x4001c000
+--
+########## 0299 SEAMCALL TDH_MEM_PAGE_ADD SEAMRET status: 0 SUCCESS -----------------
+com->tdmr_next_avl_p pa:0x4001d000
+29 com->sreq.secPages[page_idx].raw: 0x4001d000
+--
+########## 0300 SEAMCALL TDH_MEM_PAGE_ADD SEAMRET status: 0 SUCCESS -----------------
+tdx call: 16
+########## issuing SEAMCALL TDH_MR_EXTEND ----------------------------------------
+########## 0301 SEAMCALL TDH_MR_EXTEND SEAMRET status: 0 SUCCESS -----------------
+tdx call: 16
+########## issuing SEAMCALL TDH_MR_EXTEND ----------------------------------------
+########## 0302 SEAMCALL TDH_MR_EXTEND SEAMRET status: 0 SUCCESS -----------------
+tdx call: 16
+########## issuing SEAMCALL TDH_MR_EXTEND ----------------------------------------
+########## 0303 SEAMCALL TDH_MR_EXTEND SEAMRET status: 0 SUCCESS -----------------
+tdx call: 16
+########## issuing SEAMCALL TDH_MR_EXTEND ----------------------------------------
+########## 0304 SEAMCALL TDH_MR_EXTEND SEAMRET status: 0 SUCCESS -----------------
+tdx call: 16
+########## issuing SEAMCALL TDH_MR_EXTEND ----------------------------------------
+########## 0305 SEAMCALL TDH_MR_EXTEND SEAMRET status: 0 SUCCESS -----------------
+tdx call: 16
+########## issuing SEAMCALL TDH_MR_EXTEND ----------------------------------------
+########## 0306 SEAMCALL TDH_MR_EXTEND SEAMRET status: 0 SUCCESS -----------------
+tdx call: 16
+########## issuing SEAMCALL TDH_MR_EXTEND ----------------------------------------
+########## 0307 SEAMCALL TDH_MR_EXTEND SEAMRET status: 0 SUCCESS -----------------
+tdx call: 16
+########## issuing SEAMCALL TDH_MR_EXTEND ----------------------------------------
+########## 0308 SEAMCALL TDH_MR_EXTEND SEAMRET status: 0 SUCCESS -----------------
+tdx call: 16
+########## issuing SEAMCALL TDH_MR_EXTEND ----------------------------------------
+########## 0309 SEAMCALL TDH_MR_EXTEND SEAMRET status: 0 SUCCESS -----------------
+tdx call: 16
+########## issuing SEAMCALL TDH_MR_EXTEND ----------------------------------------
+########## 0310 SEAMCALL TDH_MR_EXTEND SEAMRET status: 0 SUCCESS -----------------
+tdx call: 16
+########## issuing SEAMCALL TDH_MR_EXTEND ----------------------------------------
+########## 0311 SEAMCALL TDH_MR_EXTEND SEAMRET status: 0 SUCCESS -----------------
+tdx call: 16
+########## issuing SEAMCALL TDH_MR_EXTEND ----------------------------------------
+########## 0312 SEAMCALL TDH_MR_EXTEND SEAMRET status: 0 SUCCESS -----------------
+tdx call: 16
+########## issuing SEAMCALL TDH_MR_EXTEND ----------------------------------------
+########## 0313 SEAMCALL TDH_MR_EXTEND SEAMRET status: 0 SUCCESS -----------------
+tdx call: 16
+########## issuing SEAMCALL TDH_MR_EXTEND ----------------------------------------
+########## 0314 SEAMCALL TDH_MR_EXTEND SEAMRET status: 0 SUCCESS -----------------
+tdx call: 16
+########## issuing SEAMCALL TDH_MR_EXTEND ----------------------------------------
+########## 0315 SEAMCALL TDH_MR_EXTEND SEAMRET status: 0 SUCCESS -----------------
+tdx call: 16
+########## issuing SEAMCALL TDH_MR_EXTEND ----------------------------------------
+########## 0316 SEAMCALL TDH_MR_EXTEND SEAMRET status: 0 SUCCESS -----------------
+tdx call: 16
+########## issuing SEAMCALL TDH_MR_EXTEND ----------------------------------------
+########## 0317 SEAMCALL TDH_MR_EXTEND SEAMRET status: 0 SUCCESS -----------------
+tdx call: 16
+########## issuing SEAMCALL TDH_MR_EXTEND ----------------------------------------
+########## 0318 SEAMCALL TDH_MR_EXTEND SEAMRET status: 0 SUCCESS -----------------
+tdx call: 16
+########## issuing SEAMCALL TDH_MR_EXTEND ----------------------------------------
+########## 0319 SEAMCALL TDH_MR_EXTEND SEAMRET status: 0 SUCCESS -----------------
+tdx call: 16
+########## issuing SEAMCALL TDH_MR_EXTEND ----------------------------------------
+########## 0320 SEAMCALL TDH_MR_EXTEND SEAMRET status: 0 SUCCESS -----------------
+tdx call: 16
+########## issuing SEAMCALL TDH_MR_EXTEND ----------------------------------------
+########## 0321 SEAMCALL TDH_MR_EXTEND SEAMRET status: 0 SUCCESS -----------------
+tdx call: 16
+########## issuing SEAMCALL TDH_MR_EXTEND ----------------------------------------
+########## 0322 SEAMCALL TDH_MR_EXTEND SEAMRET status: 0 SUCCESS -----------------
+tdx call: 16
+########## issuing SEAMCALL TDH_MR_EXTEND ----------------------------------------
+########## 0323 SEAMCALL TDH_MR_EXTEND SEAMRET status: 0 SUCCESS -----------------
+tdx call: 16
+########## issuing SEAMCALL TDH_MR_EXTEND ----------------------------------------
+########## 0324 SEAMCALL TDH_MR_EXTEND SEAMRET status: 0 SUCCESS -----------------
+tdx call: 16
+########## issuing SEAMCALL TDH_MR_EXTEND ----------------------------------------
+########## 0325 SEAMCALL TDH_MR_EXTEND SEAMRET status: 0 SUCCESS -----------------
+tdx call: 16
+########## issuing SEAMCALL TDH_MR_EXTEND ----------------------------------------
+########## 0326 SEAMCALL TDH_MR_EXTEND SEAMRET status: 0 SUCCESS -----------------
+tdx call: 16
+########## issuing SEAMCALL TDH_MR_EXTEND ----------------------------------------
+########## 0327 SEAMCALL TDH_MR_EXTEND SEAMRET status: 0 SUCCESS -----------------
+tdx call: 16
+########## issuing SEAMCALL TDH_MR_EXTEND ----------------------------------------
+########## 0328 SEAMCALL TDH_MR_EXTEND SEAMRET status: 0 SUCCESS -----------------
+tdx call: 16
+########## issuing SEAMCALL TDH_MR_EXTEND ----------------------------------------
+########## 0329 SEAMCALL TDH_MR_EXTEND SEAMRET status: 0 SUCCESS -----------------
+tdx call: 16
+########## issuing SEAMCALL TDH_MR_EXTEND ----------------------------------------
+########## 0330 SEAMCALL TDH_MR_EXTEND SEAMRET status: 0 SUCCESS -----------------
+tdx call: 16
+########## issuing SEAMCALL TDH_MR_EXTEND ----------------------------------------
+########## 0331 SEAMCALL TDH_MR_EXTEND SEAMRET status: 0 SUCCESS -----------------
+tdx call: 16
+########## issuing SEAMCALL TDH_MR_EXTEND ----------------------------------------
+########## 0332 SEAMCALL TDH_MR_EXTEND SEAMRET status: 0 SUCCESS -----------------
+tdx call: 16
+########## issuing SEAMCALL TDH_MR_EXTEND ----------------------------------------
+########## 0333 SEAMCALL TDH_MR_EXTEND SEAMRET status: 0 SUCCESS -----------------
+tdx call: 16
+########## issuing SEAMCALL TDH_MR_EXTEND ----------------------------------------
+########## 0334 SEAMCALL TDH_MR_EXTEND SEAMRET status: 0 SUCCESS -----------------
+tdx call: 16
+########## issuing SEAMCALL TDH_MR_EXTEND ----------------------------------------
+########## 0335 SEAMCALL TDH_MR_EXTEND SEAMRET status: 0 SUCCESS -----------------
+tdx call: 16
+########## issuing SEAMCALL TDH_MR_EXTEND ----------------------------------------
+########## 0336 SEAMCALL TDH_MR_EXTEND SEAMRET status: 0 SUCCESS -----------------
+tdx call: 16
+########## issuing SEAMCALL TDH_MR_EXTEND ----------------------------------------
+########## 0337 SEAMCALL TDH_MR_EXTEND SEAMRET status: 0 SUCCESS -----------------
+tdx call: 16
+########## issuing SEAMCALL TDH_MR_EXTEND ----------------------------------------
+########## 0338 SEAMCALL TDH_MR_EXTEND SEAMRET status: 0 SUCCESS -----------------
+tdx call: 16
+########## issuing SEAMCALL TDH_MR_EXTEND ----------------------------------------
+########## 0339 SEAMCALL TDH_MR_EXTEND SEAMRET status: 0 SUCCESS -----------------
+tdx call: 16
+########## issuing SEAMCALL TDH_MR_EXTEND ----------------------------------------
+########## 0340 SEAMCALL TDH_MR_EXTEND SEAMRET status: 0 SUCCESS -----------------
+tdx call: 16
+########## issuing SEAMCALL TDH_MR_EXTEND ----------------------------------------
+########## 0341 SEAMCALL TDH_MR_EXTEND SEAMRET status: 0 SUCCESS -----------------
+tdx call: 16
+########## issuing SEAMCALL TDH_MR_EXTEND ----------------------------------------
+########## 0342 SEAMCALL TDH_MR_EXTEND SEAMRET status: 0 SUCCESS -----------------
+tdx call: 16
+########## issuing SEAMCALL TDH_MR_EXTEND ----------------------------------------
+########## 0343 SEAMCALL TDH_MR_EXTEND SEAMRET status: 0 SUCCESS -----------------
+tdx call: 16
+########## issuing SEAMCALL TDH_MR_EXTEND ----------------------------------------
+########## 0344 SEAMCALL TDH_MR_EXTEND SEAMRET status: 0 SUCCESS -----------------
+tdx call: 16
+########## issuing SEAMCALL TDH_MR_EXTEND ----------------------------------------
+########## 0345 SEAMCALL TDH_MR_EXTEND SEAMRET status: 0 SUCCESS -----------------
+tdx call: 16
+########## issuing SEAMCALL TDH_MR_EXTEND ----------------------------------------
+########## 0346 SEAMCALL TDH_MR_EXTEND SEAMRET status: 0 SUCCESS -----------------
+tdx call: 16
+########## issuing SEAMCALL TDH_MR_EXTEND ----------------------------------------
+########## 0347 SEAMCALL TDH_MR_EXTEND SEAMRET status: 0 SUCCESS -----------------
+tdx call: 16
+########## issuing SEAMCALL TDH_MR_EXTEND ----------------------------------------
+########## 0348 SEAMCALL TDH_MR_EXTEND SEAMRET status: 0 SUCCESS -----------------
+tdx call: 16
+########## issuing SEAMCALL TDH_MR_EXTEND ----------------------------------------
+########## 0349 SEAMCALL TDH_MR_EXTEND SEAMRET status: 0 SUCCESS -----------------
+tdx call: 16
+########## issuing SEAMCALL TDH_MR_EXTEND ----------------------------------------
+########## 0350 SEAMCALL TDH_MR_EXTEND SEAMRET status: 0 SUCCESS -----------------
+tdx call: 16
+########## issuing SEAMCALL TDH_MR_EXTEND ----------------------------------------
+########## 0351 SEAMCALL TDH_MR_EXTEND SEAMRET status: 0 SUCCESS -----------------
+tdx call: 16
+########## issuing SEAMCALL TDH_MR_EXTEND ----------------------------------------
+########## 0352 SEAMCALL TDH_MR_EXTEND SEAMRET status: 0 SUCCESS -----------------
+tdx call: 16
+########## issuing SEAMCALL TDH_MR_EXTEND ----------------------------------------
+########## 0353 SEAMCALL TDH_MR_EXTEND SEAMRET status: 0 SUCCESS -----------------
+tdx call: 16
+########## issuing SEAMCALL TDH_MR_EXTEND ----------------------------------------
+########## 0354 SEAMCALL TDH_MR_EXTEND SEAMRET status: 0 SUCCESS -----------------
+tdx call: 16
+########## issuing SEAMCALL TDH_MR_EXTEND ----------------------------------------
+########## 0355 SEAMCALL TDH_MR_EXTEND SEAMRET status: 0 SUCCESS -----------------
+tdx call: 16
+########## issuing SEAMCALL TDH_MR_EXTEND ----------------------------------------
+########## 0356 SEAMCALL TDH_MR_EXTEND SEAMRET status: 0 SUCCESS -----------------
+tdx call: 16
+########## issuing SEAMCALL TDH_MR_EXTEND ----------------------------------------
+########## 0357 SEAMCALL TDH_MR_EXTEND SEAMRET status: 0 SUCCESS -----------------
+tdx call: 16
+########## issuing SEAMCALL TDH_MR_EXTEND ----------------------------------------
+########## 0358 SEAMCALL TDH_MR_EXTEND SEAMRET status: 0 SUCCESS -----------------
+tdx call: 16
+########## issuing SEAMCALL TDH_MR_EXTEND ----------------------------------------
+########## 0359 SEAMCALL TDH_MR_EXTEND SEAMRET status: 0 SUCCESS -----------------
+tdx call: 16
+########## issuing SEAMCALL TDH_MR_EXTEND ----------------------------------------
+########## 0360 SEAMCALL TDH_MR_EXTEND SEAMRET status: 0 SUCCESS -----------------
+tdx call: 16
+########## issuing SEAMCALL TDH_MR_EXTEND ----------------------------------------
+########## 0361 SEAMCALL TDH_MR_EXTEND SEAMRET status: 0 SUCCESS -----------------
+tdx call: 16
+########## issuing SEAMCALL TDH_MR_EXTEND ----------------------------------------
+########## 0362 SEAMCALL TDH_MR_EXTEND SEAMRET status: 0 SUCCESS -----------------
+tdx call: 16
+########## issuing SEAMCALL TDH_MR_EXTEND ----------------------------------------
+########## 0363 SEAMCALL TDH_MR_EXTEND SEAMRET status: 0 SUCCESS -----------------
+tdx call: 16
+########## issuing SEAMCALL TDH_MR_EXTEND ----------------------------------------
+########## 0364 SEAMCALL TDH_MR_EXTEND SEAMRET status: 0 SUCCESS -----------------
+tdx call: 17
+########## issuing SEAMCALL TDH_MR_FINALIZE ----------------------------------------
+########## 0365 SEAMCALL TDH_MR_FINALIZE SEAMRET status: 0 SUCCESS -----------------
+com->tdmr_next_avl_p pa:0x4001e000
+30 com->sreq.secPages[page_idx].raw: 0x4001e401
+--
+
+########## 0366 SEAMCALL TDH_MNG_CREATE SEAMRET status: 0 SUCCESS -----------------
+############# TD 1 LEFECYCLE STATE: TD_HKID_ASSIGNED
+tdx call: 8
+--
+########## 0367 SEAMCALL TDH_MNG_KEY_CONFIG SEAMRET status: 0 SUCCESS -----------------
+############# TD 1 LEFECYCLE STATE: TD_KEYS_CONFIGURED
+com->tdmr_next_avl_p pa:0x4001f000
+--
+########## 0368 SEAMCALL TDH_MNG_ADDCX SEAMRET status: 0 SUCCESS -----------------
+############# TD 1 LEFECYCLE STATE: TD_KEYS_CONFIGURED
+############# TD 1 OP STATE: OP_STATE_UNINITIALIZED
+--
+########## 0369 SEAMCALL TDH_MNG_ADDCX SEAMRET status: 0 SUCCESS -----------------
+############# TD 1 LEFECYCLE STATE: TD_KEYS_CONFIGURED
+############# TD 1 OP STATE: OP_STATE_UNINITIALIZED
+--
+########## 0370 SEAMCALL TDH_MNG_ADDCX SEAMRET status: 0 SUCCESS -----------------
+############# TD 1 LEFECYCLE STATE: TD_KEYS_CONFIGURED
+############# TD 1 OP STATE: OP_STATE_UNINITIALIZED
+--
+########## 0371 SEAMCALL TDH_MNG_ADDCX SEAMRET status: 0 SUCCESS -----------------
+############# TD 1 LEFECYCLE STATE: TD_KEYS_CONFIGURED
+############# TD 1 OP STATE: OP_STATE_UNINITIALIZED
+--
+########## 0372 SEAMCALL TDH_MNG_ADDCX SEAMRET status: 0 SUCCESS -----------------
+############# TD 1 LEFECYCLE STATE: TD_KEYS_CONFIGURED
+############# TD 1 OP STATE: OP_STATE_UNINITIALIZED
+--
+########## 0373 SEAMCALL TDH_MNG_ADDCX SEAMRET status: 0 SUCCESS -----------------
+############# TD 1 LEFECYCLE STATE: TD_KEYS_CONFIGURED
+############# TD 1 OP STATE: OP_STATE_UNINITIALIZED
+--
+########## 0374 SEAMCALL TDH_SYS_INFO SEAMRET status: 0 SUCCESS -----------------
+############# TD 1 LEFECYCLE STATE: TD_KEYS_CONFIGURED
+############# TD 1 OP STATE: OP_STATE_UNINITIALIZED
+--
+########## 0375 SEAMCALL TDH_MNG_INIT SEAMRET status: 0 SUCCESS -----------------
+############# TD 1 LEFECYCLE STATE: TD_KEYS_CONFIGURED
+############# TD 1 OP STATE: OP_STATE_INITIALIZED
+--
+########## 0376 SEAMCALL TDH_VP_CREATE SEAMRET status: 0 SUCCESS -----------------
+############# TD 1 LEFECYCLE STATE: TD_KEYS_CONFIGURED
+############# TD 1 OP STATE: OP_STATE_INITIALIZED
+--
+########## 0377 SEAMCALL TDH_VP_ADDCX SEAMRET status: 0 SUCCESS -----------------
+############# TD 1 LEFECYCLE STATE: TD_KEYS_CONFIGURED
+############# TD 1 OP STATE: OP_STATE_INITIALIZED
+--
+########## 0378 SEAMCALL TDH_VP_ADDCX SEAMRET status: 0 SUCCESS -----------------
+############# TD 1 LEFECYCLE STATE: TD_KEYS_CONFIGURED
+############# TD 1 OP STATE: OP_STATE_INITIALIZED
+--
+########## 0379 SEAMCALL TDH_VP_ADDCX SEAMRET status: 0 SUCCESS -----------------
+############# TD 1 LEFECYCLE STATE: TD_KEYS_CONFIGURED
+############# TD 1 OP STATE: OP_STATE_INITIALIZED
+--
+########## 0380 SEAMCALL TDH_VP_ADDCX SEAMRET status: 0 SUCCESS -----------------
+############# TD 1 LEFECYCLE STATE: TD_KEYS_CONFIGURED
+############# TD 1 OP STATE: OP_STATE_INITIALIZED
+--
+########## 0381 SEAMCALL TDH_VP_ADDCX SEAMRET status: 0 SUCCESS -----------------
+############# TD 1 LEFECYCLE STATE: TD_KEYS_CONFIGURED
+############# TD 1 OP STATE: OP_STATE_INITIALIZED
+--
+########## 0382 SEAMCALL TDH_VP_ADDCX SEAMRET status: 0 SUCCESS -----------------
+############# TD 1 LEFECYCLE STATE: TD_KEYS_CONFIGURED
+############# TD 1 OP STATE: OP_STATE_INITIALIZED
+--
+########## 0383 SEAMCALL TDH_VP_ADDCX SEAMRET status: 0 SUCCESS -----------------
+############# TD 1 LEFECYCLE STATE: TD_KEYS_CONFIGURED
+############# TD 1 OP STATE: OP_STATE_INITIALIZED
+--
+########## 0384 SEAMCALL TDH_VP_ADDCX SEAMRET status: 0 SUCCESS -----------------
+############# TD 1 LEFECYCLE STATE: TD_KEYS_CONFIGURED
+############# TD 1 OP STATE: OP_STATE_INITIALIZED
+--
+########## 0385 SEAMCALL TDH_VP_ADDCX SEAMRET status: 0 SUCCESS -----------------
+############# TD 1 LEFECYCLE STATE: TD_KEYS_CONFIGURED
+############# TD 1 OP STATE: OP_STATE_INITIALIZED
+--
+########## 0386 SEAMCALL TDH_VP_ADDCX SEAMRET status: 0 SUCCESS -----------------
+############# TD 1 LEFECYCLE STATE: TD_KEYS_CONFIGURED
+############# TD 1 OP STATE: OP_STATE_INITIALIZED
+--
+########## 0387 SEAMCALL TDH_VP_ADDCX SEAMRET status: 0 SUCCESS -----------------
+############# TD 1 LEFECYCLE STATE: TD_KEYS_CONFIGURED
+############# TD 1 OP STATE: OP_STATE_INITIALIZED
+--
+########## 0388 SEAMCALL TDH_VP_ADDCX SEAMRET status: 0 SUCCESS -----------------
+############# TD 1 LEFECYCLE STATE: TD_KEYS_CONFIGURED
+############# TD 1 OP STATE: OP_STATE_INITIALIZED
+--
+########## 0389 SEAMCALL TDH_VP_ADDCX SEAMRET status: 0 SUCCESS -----------------
+############# TD 1 LEFECYCLE STATE: TD_KEYS_CONFIGURED
+############# TD 1 OP STATE: OP_STATE_INITIALIZED
+--
+########## 0390 SEAMCALL TDH_VP_ADDCX SEAMRET status: 0 SUCCESS -----------------
+############# TD 1 LEFECYCLE STATE: TD_KEYS_CONFIGURED
+############# TD 1 OP STATE: OP_STATE_INITIALIZED
+--
+########## 0391 SEAMCALL TDH_VP_INIT SEAMRET status: 0 SUCCESS -----------------
+############# TD 1 LEFECYCLE STATE: TD_KEYS_CONFIGURED
+############# TD 1 OP STATE: OP_STATE_INITIALIZED
+--
+########## 0392 SEAMCALL TDH_MEM_SEPT_ADD SEAMRET status: 0 SUCCESS -----------------
+############# TD 1 LEFECYCLE STATE: TD_KEYS_CONFIGURED
+############# TD 1 OP STATE: OP_STATE_INITIALIZED
+--
+########## 0393 SEAMCALL TDH_MEM_SEPT_ADD SEAMRET status: 0 SUCCESS -----------------
+############# TD 1 LEFECYCLE STATE: TD_KEYS_CONFIGURED
+############# TD 1 OP STATE: OP_STATE_INITIALIZED
+--
+########## 0394 SEAMCALL TDH_MEM_SEPT_ADD SEAMRET status: 0 SUCCESS -----------------
+############# TD 1 LEFECYCLE STATE: TD_KEYS_CONFIGURED
+############# TD 1 OP STATE: OP_STATE_INITIALIZED
+--
+########## 0395 SEAMCALL TDH_MEM_SEPT_ADD SEAMRET status: 0 SUCCESS -----------------
+############# TD 1 LEFECYCLE STATE: TD_KEYS_CONFIGURED
+############# TD 1 OP STATE: OP_STATE_INITIALIZED
+--
+########## 0396 SEAMCALL TDH_MEM_PAGE_ADD SEAMRET status: 0 SUCCESS -----------------
+############# TD 1 LEFECYCLE STATE: TD_KEYS_CONFIGURED
+############# TD 1 OP STATE: OP_STATE_INITIALIZED
+--
+########## 0397 SEAMCALL TDH_MEM_PAGE_ADD SEAMRET status: 0 SUCCESS -----------------
+############# TD 1 LEFECYCLE STATE: TD_KEYS_CONFIGURED
+############# TD 1 OP STATE: OP_STATE_INITIALIZED
+--
+########## 0398 SEAMCALL TDH_MEM_PAGE_ADD SEAMRET status: 0 SUCCESS -----------------
+############# TD 1 LEFECYCLE STATE: TD_KEYS_CONFIGURED
+############# TD 1 OP STATE: OP_STATE_INITIALIZED
+--
+########## 0399 SEAMCALL TDH_MEM_PAGE_ADD SEAMRET status: 0 SUCCESS -----------------
+############# TD 1 LEFECYCLE STATE: TD_KEYS_CONFIGURED
+############# TD 1 OP STATE: OP_STATE_INITIALIZED
+--
+########## 0400 SEAMCALL TDH_MR_EXTEND SEAMRET status: 0 SUCCESS -----------------
+############# TD 1 LEFECYCLE STATE: TD_KEYS_CONFIGURED
+############# TD 1 OP STATE: OP_STATE_INITIALIZED
+--
+########## 0401 SEAMCALL TDH_MR_EXTEND SEAMRET status: 0 SUCCESS -----------------
+############# TD 1 LEFECYCLE STATE: TD_KEYS_CONFIGURED
+############# TD 1 OP STATE: OP_STATE_INITIALIZED
+--
+########## 0402 SEAMCALL TDH_MR_EXTEND SEAMRET status: 0 SUCCESS -----------------
+############# TD 1 LEFECYCLE STATE: TD_KEYS_CONFIGURED
+############# TD 1 OP STATE: OP_STATE_INITIALIZED
+--
+########## 0403 SEAMCALL TDH_MR_EXTEND SEAMRET status: 0 SUCCESS -----------------
+############# TD 1 LEFECYCLE STATE: TD_KEYS_CONFIGURED
+############# TD 1 OP STATE: OP_STATE_INITIALIZED
+--
+########## 0404 SEAMCALL TDH_MR_EXTEND SEAMRET status: 0 SUCCESS -----------------
+############# TD 1 LEFECYCLE STATE: TD_KEYS_CONFIGURED
+############# TD 1 OP STATE: OP_STATE_INITIALIZED
+--
+########## 0405 SEAMCALL TDH_MR_EXTEND SEAMRET status: 0 SUCCESS -----------------
+############# TD 1 LEFECYCLE STATE: TD_KEYS_CONFIGURED
+############# TD 1 OP STATE: OP_STATE_INITIALIZED
+--
+########## 0406 SEAMCALL TDH_MR_EXTEND SEAMRET status: 0 SUCCESS -----------------
+############# TD 1 LEFECYCLE STATE: TD_KEYS_CONFIGURED
+############# TD 1 OP STATE: OP_STATE_INITIALIZED
+--
+########## 0407 SEAMCALL TDH_MR_EXTEND SEAMRET status: 0 SUCCESS -----------------
+############# TD 1 LEFECYCLE STATE: TD_KEYS_CONFIGURED
+############# TD 1 OP STATE: OP_STATE_INITIALIZED
+--
+########## 0408 SEAMCALL TDH_MR_EXTEND SEAMRET status: 0 SUCCESS -----------------
+############# TD 1 LEFECYCLE STATE: TD_KEYS_CONFIGURED
+############# TD 1 OP STATE: OP_STATE_INITIALIZED
+--
+########## 0409 SEAMCALL TDH_MR_EXTEND SEAMRET status: 0 SUCCESS -----------------
+############# TD 1 LEFECYCLE STATE: TD_KEYS_CONFIGURED
+############# TD 1 OP STATE: OP_STATE_INITIALIZED
+--
+########## 0410 SEAMCALL TDH_MR_EXTEND SEAMRET status: 0 SUCCESS -----------------
+############# TD 1 LEFECYCLE STATE: TD_KEYS_CONFIGURED
+############# TD 1 OP STATE: OP_STATE_INITIALIZED
+--
+########## 0411 SEAMCALL TDH_MR_EXTEND SEAMRET status: 0 SUCCESS -----------------
+############# TD 1 LEFECYCLE STATE: TD_KEYS_CONFIGURED
+############# TD 1 OP STATE: OP_STATE_INITIALIZED
+--
+########## 0412 SEAMCALL TDH_MR_EXTEND SEAMRET status: 0 SUCCESS -----------------
+############# TD 1 LEFECYCLE STATE: TD_KEYS_CONFIGURED
+############# TD 1 OP STATE: OP_STATE_INITIALIZED
+--
+########## 0413 SEAMCALL TDH_MR_EXTEND SEAMRET status: 0 SUCCESS -----------------
+############# TD 1 LEFECYCLE STATE: TD_KEYS_CONFIGURED
+############# TD 1 OP STATE: OP_STATE_INITIALIZED
+--
+########## 0414 SEAMCALL TDH_MR_EXTEND SEAMRET status: 0 SUCCESS -----------------
+############# TD 1 LEFECYCLE STATE: TD_KEYS_CONFIGURED
+############# TD 1 OP STATE: OP_STATE_INITIALIZED
+--
+########## 0415 SEAMCALL TDH_MR_EXTEND SEAMRET status: 0 SUCCESS -----------------
+############# TD 1 LEFECYCLE STATE: TD_KEYS_CONFIGURED
+############# TD 1 OP STATE: OP_STATE_INITIALIZED
+--
+########## 0416 SEAMCALL TDH_MR_EXTEND SEAMRET status: 0 SUCCESS -----------------
+############# TD 1 LEFECYCLE STATE: TD_KEYS_CONFIGURED
+############# TD 1 OP STATE: OP_STATE_INITIALIZED
+--
+########## 0417 SEAMCALL TDH_MR_EXTEND SEAMRET status: 0 SUCCESS -----------------
+############# TD 1 LEFECYCLE STATE: TD_KEYS_CONFIGURED
+############# TD 1 OP STATE: OP_STATE_INITIALIZED
+--
+########## 0418 SEAMCALL TDH_MR_EXTEND SEAMRET status: 0 SUCCESS -----------------
+############# TD 1 LEFECYCLE STATE: TD_KEYS_CONFIGURED
+############# TD 1 OP STATE: OP_STATE_INITIALIZED
+--
+########## 0419 SEAMCALL TDH_MR_EXTEND SEAMRET status: 0 SUCCESS -----------------
+############# TD 1 LEFECYCLE STATE: TD_KEYS_CONFIGURED
+############# TD 1 OP STATE: OP_STATE_INITIALIZED
+--
+########## 0420 SEAMCALL TDH_MR_EXTEND SEAMRET status: 0 SUCCESS -----------------
+############# TD 1 LEFECYCLE STATE: TD_KEYS_CONFIGURED
+############# TD 1 OP STATE: OP_STATE_INITIALIZED
+--
+########## 0421 SEAMCALL TDH_MR_EXTEND SEAMRET status: 0 SUCCESS -----------------
+############# TD 1 LEFECYCLE STATE: TD_KEYS_CONFIGURED
+############# TD 1 OP STATE: OP_STATE_INITIALIZED
+--
+########## 0422 SEAMCALL TDH_MR_EXTEND SEAMRET status: 0 SUCCESS -----------------
+############# TD 1 LEFECYCLE STATE: TD_KEYS_CONFIGURED
+############# TD 1 OP STATE: OP_STATE_INITIALIZED
+--
+########## 0423 SEAMCALL TDH_MR_EXTEND SEAMRET status: 0 SUCCESS -----------------
+############# TD 1 LEFECYCLE STATE: TD_KEYS_CONFIGURED
+############# TD 1 OP STATE: OP_STATE_INITIALIZED
+--
+########## 0424 SEAMCALL TDH_MR_EXTEND SEAMRET status: 0 SUCCESS -----------------
+############# TD 1 LEFECYCLE STATE: TD_KEYS_CONFIGURED
+############# TD 1 OP STATE: OP_STATE_INITIALIZED
+--
+########## 0425 SEAMCALL TDH_MR_EXTEND SEAMRET status: 0 SUCCESS -----------------
+############# TD 1 LEFECYCLE STATE: TD_KEYS_CONFIGURED
+############# TD 1 OP STATE: OP_STATE_INITIALIZED
+--
+########## 0426 SEAMCALL TDH_MR_EXTEND SEAMRET status: 0 SUCCESS -----------------
+############# TD 1 LEFECYCLE STATE: TD_KEYS_CONFIGURED
+############# TD 1 OP STATE: OP_STATE_INITIALIZED
+--
+########## 0427 SEAMCALL TDH_MR_EXTEND SEAMRET status: 0 SUCCESS -----------------
+############# TD 1 LEFECYCLE STATE: TD_KEYS_CONFIGURED
+############# TD 1 OP STATE: OP_STATE_INITIALIZED
+--
+########## 0428 SEAMCALL TDH_MR_EXTEND SEAMRET status: 0 SUCCESS -----------------
+############# TD 1 LEFECYCLE STATE: TD_KEYS_CONFIGURED
+############# TD 1 OP STATE: OP_STATE_INITIALIZED
+--
+########## 0429 SEAMCALL TDH_MR_EXTEND SEAMRET status: 0 SUCCESS -----------------
+############# TD 1 LEFECYCLE STATE: TD_KEYS_CONFIGURED
+############# TD 1 OP STATE: OP_STATE_INITIALIZED
+--
+########## 0430 SEAMCALL TDH_MR_EXTEND SEAMRET status: 0 SUCCESS -----------------
+############# TD 1 LEFECYCLE STATE: TD_KEYS_CONFIGURED
+############# TD 1 OP STATE: OP_STATE_INITIALIZED
+--
+########## 0431 SEAMCALL TDH_MR_EXTEND SEAMRET status: 0 SUCCESS -----------------
+############# TD 1 LEFECYCLE STATE: TD_KEYS_CONFIGURED
+############# TD 1 OP STATE: OP_STATE_INITIALIZED
+--
+########## 0432 SEAMCALL TDH_MR_EXTEND SEAMRET status: 0 SUCCESS -----------------
+############# TD 1 LEFECYCLE STATE: TD_KEYS_CONFIGURED
+############# TD 1 OP STATE: OP_STATE_INITIALIZED
+--
+########## 0433 SEAMCALL TDH_MR_EXTEND SEAMRET status: 0 SUCCESS -----------------
+############# TD 1 LEFECYCLE STATE: TD_KEYS_CONFIGURED
+############# TD 1 OP STATE: OP_STATE_INITIALIZED
+--
+########## 0434 SEAMCALL TDH_MR_EXTEND SEAMRET status: 0 SUCCESS -----------------
+############# TD 1 LEFECYCLE STATE: TD_KEYS_CONFIGURED
+############# TD 1 OP STATE: OP_STATE_INITIALIZED
+--
+########## 0435 SEAMCALL TDH_MR_EXTEND SEAMRET status: 0 SUCCESS -----------------
+############# TD 1 LEFECYCLE STATE: TD_KEYS_CONFIGURED
+############# TD 1 OP STATE: OP_STATE_INITIALIZED
+--
+########## 0436 SEAMCALL TDH_MR_EXTEND SEAMRET status: 0 SUCCESS -----------------
+############# TD 1 LEFECYCLE STATE: TD_KEYS_CONFIGURED
+############# TD 1 OP STATE: OP_STATE_INITIALIZED
+--
+########## 0437 SEAMCALL TDH_MR_EXTEND SEAMRET status: 0 SUCCESS -----------------
+############# TD 1 LEFECYCLE STATE: TD_KEYS_CONFIGURED
+############# TD 1 OP STATE: OP_STATE_INITIALIZED
+--
+########## 0438 SEAMCALL TDH_MR_EXTEND SEAMRET status: 0 SUCCESS -----------------
+############# TD 1 LEFECYCLE STATE: TD_KEYS_CONFIGURED
+############# TD 1 OP STATE: OP_STATE_INITIALIZED
+--
+########## 0439 SEAMCALL TDH_MR_EXTEND SEAMRET status: 0 SUCCESS -----------------
+############# TD 1 LEFECYCLE STATE: TD_KEYS_CONFIGURED
+############# TD 1 OP STATE: OP_STATE_INITIALIZED
+--
+########## 0440 SEAMCALL TDH_MR_EXTEND SEAMRET status: 0 SUCCESS -----------------
+############# TD 1 LEFECYCLE STATE: TD_KEYS_CONFIGURED
+############# TD 1 OP STATE: OP_STATE_INITIALIZED
+--
+########## 0441 SEAMCALL TDH_MR_EXTEND SEAMRET status: 0 SUCCESS -----------------
+############# TD 1 LEFECYCLE STATE: TD_KEYS_CONFIGURED
+############# TD 1 OP STATE: OP_STATE_INITIALIZED
+--
+########## 0442 SEAMCALL TDH_MR_EXTEND SEAMRET status: 0 SUCCESS -----------------
+############# TD 1 LEFECYCLE STATE: TD_KEYS_CONFIGURED
+############# TD 1 OP STATE: OP_STATE_INITIALIZED
+--
+########## 0443 SEAMCALL TDH_MR_EXTEND SEAMRET status: 0 SUCCESS -----------------
+############# TD 1 LEFECYCLE STATE: TD_KEYS_CONFIGURED
+############# TD 1 OP STATE: OP_STATE_INITIALIZED
+--
+########## 0444 SEAMCALL TDH_MR_EXTEND SEAMRET status: 0 SUCCESS -----------------
+############# TD 1 LEFECYCLE STATE: TD_KEYS_CONFIGURED
+############# TD 1 OP STATE: OP_STATE_INITIALIZED
+--
+########## 0445 SEAMCALL TDH_MR_EXTEND SEAMRET status: 0 SUCCESS -----------------
+############# TD 1 LEFECYCLE STATE: TD_KEYS_CONFIGURED
+############# TD 1 OP STATE: OP_STATE_INITIALIZED
+--
+########## 0446 SEAMCALL TDH_MR_EXTEND SEAMRET status: 0 SUCCESS -----------------
+############# TD 1 LEFECYCLE STATE: TD_KEYS_CONFIGURED
+############# TD 1 OP STATE: OP_STATE_INITIALIZED
+--
+########## 0447 SEAMCALL TDH_MR_EXTEND SEAMRET status: 0 SUCCESS -----------------
+############# TD 1 LEFECYCLE STATE: TD_KEYS_CONFIGURED
+############# TD 1 OP STATE: OP_STATE_INITIALIZED
+--
+########## 0448 SEAMCALL TDH_MR_EXTEND SEAMRET status: 0 SUCCESS -----------------
+############# TD 1 LEFECYCLE STATE: TD_KEYS_CONFIGURED
+############# TD 1 OP STATE: OP_STATE_INITIALIZED
+--
+########## 0449 SEAMCALL TDH_MR_EXTEND SEAMRET status: 0 SUCCESS -----------------
+############# TD 1 LEFECYCLE STATE: TD_KEYS_CONFIGURED
+############# TD 1 OP STATE: OP_STATE_INITIALIZED
+--
+########## 0450 SEAMCALL TDH_MR_EXTEND SEAMRET status: 0 SUCCESS -----------------
+############# TD 1 LEFECYCLE STATE: TD_KEYS_CONFIGURED
+############# TD 1 OP STATE: OP_STATE_INITIALIZED
+--
+########## 0451 SEAMCALL TDH_MR_EXTEND SEAMRET status: 0 SUCCESS -----------------
+############# TD 1 LEFECYCLE STATE: TD_KEYS_CONFIGURED
+############# TD 1 OP STATE: OP_STATE_INITIALIZED
+--
+########## 0452 SEAMCALL TDH_MR_EXTEND SEAMRET status: 0 SUCCESS -----------------
+############# TD 1 LEFECYCLE STATE: TD_KEYS_CONFIGURED
+############# TD 1 OP STATE: OP_STATE_INITIALIZED
+--
+########## 0453 SEAMCALL TDH_MR_EXTEND SEAMRET status: 0 SUCCESS -----------------
+############# TD 1 LEFECYCLE STATE: TD_KEYS_CONFIGURED
+############# TD 1 OP STATE: OP_STATE_INITIALIZED
+--
+########## 0454 SEAMCALL TDH_MR_EXTEND SEAMRET status: 0 SUCCESS -----------------
+############# TD 1 LEFECYCLE STATE: TD_KEYS_CONFIGURED
+############# TD 1 OP STATE: OP_STATE_INITIALIZED
+--
+########## 0455 SEAMCALL TDH_MR_EXTEND SEAMRET status: 0 SUCCESS -----------------
+############# TD 1 LEFECYCLE STATE: TD_KEYS_CONFIGURED
+############# TD 1 OP STATE: OP_STATE_INITIALIZED
+--
+########## 0456 SEAMCALL TDH_MR_EXTEND SEAMRET status: 0 SUCCESS -----------------
+############# TD 1 LEFECYCLE STATE: TD_KEYS_CONFIGURED
+############# TD 1 OP STATE: OP_STATE_INITIALIZED
+--
+########## 0457 SEAMCALL TDH_MR_EXTEND SEAMRET status: 0 SUCCESS -----------------
+############# TD 1 LEFECYCLE STATE: TD_KEYS_CONFIGURED
+############# TD 1 OP STATE: OP_STATE_INITIALIZED
+--
+########## 0458 SEAMCALL TDH_MR_EXTEND SEAMRET status: 0 SUCCESS -----------------
+############# TD 1 LEFECYCLE STATE: TD_KEYS_CONFIGURED
+############# TD 1 OP STATE: OP_STATE_INITIALIZED
+--
+########## 0459 SEAMCALL TDH_MR_EXTEND SEAMRET status: 0 SUCCESS -----------------
+############# TD 1 LEFECYCLE STATE: TD_KEYS_CONFIGURED
+############# TD 1 OP STATE: OP_STATE_INITIALIZED
+--
+########## 0460 SEAMCALL TDH_MR_EXTEND SEAMRET status: 0 SUCCESS -----------------
+############# TD 1 LEFECYCLE STATE: TD_KEYS_CONFIGURED
+############# TD 1 OP STATE: OP_STATE_INITIALIZED
+--
+########## 0461 SEAMCALL TDH_MR_EXTEND SEAMRET status: 0 SUCCESS -----------------
+############# TD 1 LEFECYCLE STATE: TD_KEYS_CONFIGURED
+############# TD 1 OP STATE: OP_STATE_INITIALIZED
+--
+########## 0462 SEAMCALL TDH_MR_EXTEND SEAMRET status: 0 SUCCESS -----------------
+############# TD 1 LEFECYCLE STATE: TD_KEYS_CONFIGURED
+############# TD 1 OP STATE: OP_STATE_INITIALIZED
+--
+########## 0463 SEAMCALL TDH_MR_EXTEND SEAMRET status: 0 SUCCESS -----------------
+############# TD 1 LEFECYCLE STATE: TD_KEYS_CONFIGURED
+############# TD 1 OP STATE: OP_STATE_INITIALIZED
+--
+########## 0464 SEAMCALL TDH_MR_FINALIZE SEAMRET status: 0 SUCCESS -----------------
+############# TD 1 LEFECYCLE STATE: TD_KEYS_CONFIGURED
+############# TD 1 OP STATE: OP_STATE_RUNNABLE
+--
+########## 0465 SEAMCALL TDH_MEM_SEPT_ADD SEAMRET status: 0 SUCCESS -----------------
+com->tdmr_next_avl_p pa:0x4003d000
+61 com->sreq.secPages[page_idx].raw: 0x4003d000
+--
+########## 0466 SEAMCALL TDH_MEM_SEPT_ADD SEAMRET status: 0 SUCCESS -----------------
+com->tdmr_next_avl_p pa:0x4003e000
+62 com->sreq.secPages[page_idx].raw: 0x4003e000
+--
+########## 0467 SEAMCALL TDH_MEM_SEPT_ADD SEAMRET status: 0 SUCCESS -----------------
+com->tdmr_next_avl_p pa:0x4003f000
+63 com->sreq.secPages[page_idx].raw: 0x4003f000
+--
+########## 0468 SEAMCALL TDH_MEM_SEPT_ADD SEAMRET status: 0 SUCCESS -----------------
+
+Run td: 0
+--
+########## 0469 SEAMCALL TDH_MNG_RD SEAMRET status: 0 SUCCESS -----------------
+RDX: 8110000300000002
+R8: 21

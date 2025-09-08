@@ -1,0 +1,5367 @@
+starting a new path: 41
+bPath_explore2: 1
+bkp_pg_count 3
+idx 2 seam_pg_va: 0x200100000000
+restoring : 0x7fffe7c55000 to : 0x200100000000 bkp_pg_count 2
+idx 1 seam_pg_va: 0xffffa00300020000
+restoring : 0x7fffe7c54000 to : 0xffffa00300020000 bkp_pg_count 1
+idx 0 seam_pg_va: 0xffffa0010003f000
+restoring : 0x7fffe7c53000 to : 0xffffa0010003f000 bkp_pg_count 0
+key hole pages restored : 0
+non key hole pages restored : 3
+
+ins:0 rip:0xffffa00000009b30 in:REP nop %edx
+
+ins:1 rip:0xffffa00000009b34 in:push %rbp
+ seam_va: 0xffffa0010003fdb0 seam_pg_va: 0xffffa0010003f000
+next backp idx: 0 backing up on to: 0x7fffe7c53000
+BackupPg Constructor: seam_pg_va = 0xffffa0010003f000
+map size: 1
+dispatching for NIE
+rax: 40004000 rbx: 40004000 rcx: 2e rdx: ffffffffff000 rdi: 8400040004000 
+rsi: 1 r8: ffffa0010003fea0 r9: 0 r10: ffffa0010003ff8f r11: 0 
+r12: 21 r13: ffffa0010003fea0 r14: 4 r15: 1000000000000 rip: ffffa00000009b35 
+rsp: ffffa0010003fdb0 rbp: ffffa0010003fe50 rflgs: 106 
+here1
+here3
+here4
+
+ins:2 rip:0xffffa00000009b35 in:mov %rsp,%rbp
+dispatching for NIE
+rax: 40004000 rbx: 40004000 rcx: 2e rdx: ffffffffff000 rdi: 8400040004000 
+rsi: 1 r8: ffffa0010003fea0 r9: 0 r10: ffffa0010003ff8f r11: 0 
+r12: 21 r13: ffffa0010003fea0 r14: 4 r15: 1000000000000 rip: ffffa00000009b38 
+rsp: ffffa0010003fdb0 rbp: ffffa0010003fdb0 rflgs: 106 
+here1
+here3
+here4
+
+ins:3 rip:0xffffa00000009b38 in:and $0xfffffff0,%rsp
+dispatching for NIE
+rax: 40004000 rbx: 40004000 rcx: 2e rdx: ffffffffff000 rdi: 8400040004000 
+rsi: 1 r8: ffffa0010003fea0 r9: 0 r10: ffffa0010003ff8f r11: 0 
+r12: 21 r13: ffffa0010003fea0 r14: 4 r15: 1000000000000 rip: ffffa00000009b3c 
+rsp: ffffa0010003fdb0 rbp: ffffa0010003fdb0 rflgs: 182 
+here1
+here3
+here4
+
+ins:4 rip:0xffffa00000009b3c in:mov $0x1,%edx
+dispatching for NIE
+rax: 40004000 rbx: 40004000 rcx: 2e rdx: 1 rdi: 8400040004000 
+rsi: 1 r8: ffffa0010003fea0 r9: 0 r10: ffffa0010003ff8f r11: 0 
+r12: 21 r13: ffffa0010003fea0 r14: 4 r15: 1000000000000 rip: ffffa00000009b41 
+rsp: ffffa0010003fdb0 rbp: ffffa0010003fdb0 rflgs: 182 
+here1
+here3
+here4
+
+ins:5 rip:0xffffa00000009b41 in:call 0xfffffaaf(%rip)
+rsp_at_dispatchCall: ffffa0010003fdb0
+rip at call0: ffffa00000009b46
+rax: 40004000 rbx: 40004000 rcx: 2e rdx: 1 rdi: 8400040004000 
+rsi: 1 r8: ffffa0010003fea0 r9: 0 r10: ffffa0010003ff8f r11: 0 
+r12: 21 r13: ffffa0010003fea0 r14: 4 r15: 1000000000000 rip: ffffa000000095f0 
+rsp: ffffa0010003fda8 rbp: ffffa0010003fdb0 rflgs: 182 
+here1
+here3
+here4
+
+ins:6 rip:0xffffa000000095f0 in:push %rbp
+ seam_va: 0xffffa0010003fda0 seam_pg_va: 0xffffa0010003f000
+already backed up
+dispatching for NIE
+rax: 40004000 rbx: 40004000 rcx: 2e rdx: 1 rdi: 8400040004000 
+rsi: 1 r8: ffffa0010003fea0 r9: 0 r10: ffffa0010003ff8f r11: 0 
+r12: 21 r13: ffffa0010003fea0 r14: 4 r15: 1000000000000 rip: ffffa000000095f1 
+rsp: ffffa0010003fda0 rbp: ffffa0010003fdb0 rflgs: 182 
+here1
+here3
+here4
+
+ins:7 rip:0xffffa000000095f1 in:mov %rsp,%rbp
+dispatching for NIE
+rax: 40004000 rbx: 40004000 rcx: 2e rdx: 1 rdi: 8400040004000 
+rsi: 1 r8: ffffa0010003fea0 r9: 0 r10: ffffa0010003ff8f r11: 0 
+r12: 21 r13: ffffa0010003fea0 r14: 4 r15: 1000000000000 rip: ffffa000000095f4 
+rsp: ffffa0010003fda0 rbp: ffffa0010003fda0 rflgs: 182 
+here1
+here3
+here4
+
+ins:8 rip:0xffffa000000095f4 in:push %r15
+ seam_va: 0xffffa0010003fd98 seam_pg_va: 0xffffa0010003f000
+already backed up
+dispatching for NIE
+rax: 40004000 rbx: 40004000 rcx: 2e rdx: 1 rdi: 8400040004000 
+rsi: 1 r8: ffffa0010003fea0 r9: 0 r10: ffffa0010003ff8f r11: 0 
+r12: 21 r13: ffffa0010003fea0 r14: 4 r15: 1000000000000 rip: ffffa000000095f6 
+rsp: ffffa0010003fd98 rbp: ffffa0010003fda0 rflgs: 182 
+here1
+here3
+here4
+
+ins:9 rip:0xffffa000000095f6 in:push %r14
+ seam_va: 0xffffa0010003fd90 seam_pg_va: 0xffffa0010003f000
+already backed up
+dispatching for NIE
+rax: 40004000 rbx: 40004000 rcx: 2e rdx: 1 rdi: 8400040004000 
+rsi: 1 r8: ffffa0010003fea0 r9: 0 r10: ffffa0010003ff8f r11: 0 
+r12: 21 r13: ffffa0010003fea0 r14: 4 r15: 1000000000000 rip: ffffa000000095f8 
+rsp: ffffa0010003fd90 rbp: ffffa0010003fda0 rflgs: 182 
+here1
+here3
+here4
+
+ins:10 rip:0xffffa000000095f8 in:push %r13
+ seam_va: 0xffffa0010003fd88 seam_pg_va: 0xffffa0010003f000
+already backed up
+dispatching for NIE
+rax: 40004000 rbx: 40004000 rcx: 2e rdx: 1 rdi: 8400040004000 
+rsi: 1 r8: ffffa0010003fea0 r9: 0 r10: ffffa0010003ff8f r11: 0 
+r12: 21 r13: ffffa0010003fea0 r14: 4 r15: 1000000000000 rip: ffffa000000095fa 
+rsp: ffffa0010003fd88 rbp: ffffa0010003fda0 rflgs: 182 
+here1
+here3
+here4
+
+ins:11 rip:0xffffa000000095fa in:push %r12
+ seam_va: 0xffffa0010003fd80 seam_pg_va: 0xffffa0010003f000
+already backed up
+dispatching for NIE
+rax: 40004000 rbx: 40004000 rcx: 2e rdx: 1 rdi: 8400040004000 
+rsi: 1 r8: ffffa0010003fea0 r9: 0 r10: ffffa0010003ff8f r11: 0 
+r12: 21 r13: ffffa0010003fea0 r14: 4 r15: 1000000000000 rip: ffffa000000095fc 
+rsp: ffffa0010003fd80 rbp: ffffa0010003fda0 rflgs: 182 
+here1
+here3
+here4
+
+ins:12 rip:0xffffa000000095fc in:push %rbx
+ seam_va: 0xffffa0010003fd78 seam_pg_va: 0xffffa0010003f000
+already backed up
+dispatching for NIE
+rax: 40004000 rbx: 40004000 rcx: 2e rdx: 1 rdi: 8400040004000 
+rsi: 1 r8: ffffa0010003fea0 r9: 0 r10: ffffa0010003ff8f r11: 0 
+r12: 21 r13: ffffa0010003fea0 r14: 4 r15: 1000000000000 rip: ffffa000000095fd 
+rsp: ffffa0010003fd78 rbp: ffffa0010003fda0 rflgs: 182 
+here1
+here3
+here4
+
+ins:13 rip:0xffffa000000095fd in:and $0xfffffff0,%rsp
+dispatching for NIE
+rax: 40004000 rbx: 40004000 rcx: 2e rdx: 1 rdi: 8400040004000 
+rsi: 1 r8: ffffa0010003fea0 r9: 0 r10: ffffa0010003ff8f r11: 0 
+r12: 21 r13: ffffa0010003fea0 r14: 4 r15: 1000000000000 rip: ffffa00000009601 
+rsp: ffffa0010003fd70 rbp: ffffa0010003fda0 rflgs: 182 
+here1
+here3
+here4
+
+ins:14 rip:0xffffa00000009601 in:sub $0x50,%rsp
+dispatching for NIE
+rax: 40004000 rbx: 40004000 rcx: 2e rdx: 1 rdi: 8400040004000 
+rsi: 1 r8: ffffa0010003fea0 r9: 0 r10: ffffa0010003ff8f r11: 0 
+r12: 21 r13: ffffa0010003fea0 r14: 4 r15: 1000000000000 rip: ffffa00000009605 
+rsp: ffffa0010003fd20 rbp: ffffa0010003fda0 rflgs: 182 
+here1
+here3
+here4
+
+ins:15 rip:0xffffa00000009605 in:mov %rdi,%r11
+dispatching for NIE
+rax: 40004000 rbx: 40004000 rcx: 2e rdx: 1 rdi: 8400040004000 
+rsi: 1 r8: ffffa0010003fea0 r9: 0 r10: ffffa0010003ff8f r11: 8400040004000 
+r12: 21 r13: ffffa0010003fea0 r14: 4 r15: 1000000000000 rip: ffffa00000009608 
+rsp: ffffa0010003fd20 rbp: ffffa0010003fda0 rflgs: 182 
+here1
+here3
+here4
+
+ins:16 rip:0xffffa00000009608 in:mov $0xf6e,%rbx
+dispatching for NIE
+rax: 40004000 rbx: ffffa00300020000 rcx: 2e rdx: 1 rdi: 8400040004000 
+rsi: 1 r8: ffffa0010003fea0 r9: 0 r10: ffffa0010003ff8f r11: 8400040004000 
+r12: 21 r13: ffffa0010003fea0 r14: 4 r15: 1000000000000 rip: ffffa00000009611 
+rsp: ffffa0010003fd20 rbp: ffffa0010003fda0 rflgs: 182 
+here1
+here3
+here4
+
+ins:17 rip:0xffffa00000009611 in:cmp $0x1,%esi
+dispatching for NIE
+rax: 40004000 rbx: ffffa00300020000 rcx: 2e rdx: 1 rdi: 8400040004000 
+rsi: 1 r8: ffffa0010003fea0 r9: 0 r10: ffffa0010003ff8f r11: 8400040004000 
+r12: 21 r13: ffffa0010003fea0 r14: 4 r15: 1000000000000 rip: ffffa00000009614 
+rsp: ffffa0010003fd20 rbp: ffffa0010003fda0 rflgs: 146 
+here1
+here3
+here4
+
+ins:18 rip:0xffffa00000009614 in:setz %r13b
+dispatching for NIE
+rax: 40004000 rbx: ffffa00300020000 rcx: 2e rdx: 1 rdi: 8400040004000 
+rsi: 1 r8: ffffa0010003fea0 r9: 0 r10: ffffa0010003ff8f r11: 8400040004000 
+r12: 21 r13: ffffa0010003fe01 r14: 4 r15: 1000000000000 rip: ffffa00000009618 
+rsp: ffffa0010003fd20 rbp: ffffa0010003fda0 rflgs: 146 
+here1
+here3
+here4
+
+ins:19 rip:0xffffa00000009618 in:mov %rdi,%r15
+dispatching for NIE
+rax: 40004000 rbx: ffffa00300020000 rcx: 2e rdx: 1 rdi: 8400040004000 
+rsi: 1 r8: ffffa0010003fea0 r9: 0 r10: ffffa0010003ff8f r11: 8400040004000 
+r12: 21 r13: ffffa0010003fe01 r14: 4 r15: 8400040004000 rip: ffffa0000000961b 
+rsp: ffffa0010003fd20 rbp: ffffa0010003fda0 rflgs: 146 
+here1
+here3
+here4
+
+ins:20 rip:0xffffa0000000961b in:and $0xfffff000,%r15
+dispatching for NIE
+rax: 40004000 rbx: ffffa00300020000 rcx: 2e rdx: 1 rdi: 8400040004000 
+rsi: 1 r8: ffffa0010003fea0 r9: 0 r10: ffffa0010003ff8f r11: 8400040004000 
+r12: 21 r13: ffffa0010003fe01 r14: 4 r15: 8400040004000 rip: ffffa00000009622 
+rsp: ffffa0010003fd20 rbp: ffffa0010003fda0 rflgs: 106 
+here1
+here3
+here4
+
+ins:21 rip:0xffffa00000009622 in:mov %rdi,%rax
+dispatching for NIE
+rax: 8400040004000 rbx: ffffa00300020000 rcx: 2e rdx: 1 rdi: 8400040004000 
+rsi: 1 r8: ffffa0010003fea0 r9: 0 r10: ffffa0010003ff8f r11: 8400040004000 
+r12: 21 r13: ffffa0010003fe01 r14: 4 r15: 8400040004000 rip: ffffa00000009625 
+rsp: ffffa0010003fd20 rbp: ffffa0010003fda0 rflgs: 106 
+here1
+here3
+here4
+
+ins:22 rip:0xffffa00000009625 in:shr $0x20,%rax
+dispatching for NIE
+rax: 84000 rbx: ffffa00300020000 rcx: 2e rdx: 1 rdi: 8400040004000 
+rsi: 1 r8: ffffa0010003fea0 r9: 0 r10: ffffa0010003ff8f r11: 8400040004000 
+r12: 21 r13: ffffa0010003fe01 r14: 4 r15: 8400040004000 rip: ffffa00000009629 
+rsp: ffffa0010003fd20 rbp: ffffa0010003fda0 rflgs: 106 
+here1
+here3
+here4
+
+ins:23 rip:0xffffa00000009629 in:mov %r11d,%ecx
+dispatching for NIE
+rax: 84000 rbx: ffffa00300020000 rcx: 40004000 rdx: 1 rdi: 8400040004000 
+rsi: 1 r8: ffffa0010003fea0 r9: 0 r10: ffffa0010003ff8f r11: 8400040004000 
+r12: 21 r13: ffffa0010003fe01 r14: 4 r15: 8400040004000 rip: ffffa0000000962c 
+rsp: ffffa0010003fd20 rbp: ffffa0010003fda0 rflgs: 106 
+here1
+here3
+here4
+
+ins:24 rip:0xffffa0000000962c in:shr $0x10,%ecx
+dispatching for NIE
+rax: 84000 rbx: ffffa00300020000 rcx: 4000 rdx: 1 rdi: 8400040004000 
+rsi: 1 r8: ffffa0010003fea0 r9: 0 r10: ffffa0010003ff8f r11: 8400040004000 
+r12: 21 r13: ffffa0010003fe01 r14: 4 r15: 8400040004000 rip: ffffa0000000962f 
+rsp: ffffa0010003fd20 rbp: ffffa0010003fda0 rflgs: 106 
+here1
+here3
+here4
+
+ins:25 rip:0xffffa0000000962f in:xor %eax,%ecx
+dispatching for NIE
+rax: 84000 rbx: ffffa00300020000 rcx: 80000 rdx: 1 rdi: 8400040004000 
+rsi: 1 r8: ffffa0010003fea0 r9: 0 r10: ffffa0010003ff8f r11: 8400040004000 
+r12: 21 r13: ffffa0010003fe01 r14: 4 r15: 8400040004000 rip: ffffa00000009631 
+rsp: ffffa0010003fd20 rbp: ffffa0010003fda0 rflgs: 106 
+here1
+here3
+here4
+
+ins:26 rip:0xffffa00000009631 in:mov %rdi,%r12
+dispatching for NIE
+rax: 84000 rbx: ffffa00300020000 rcx: 80000 rdx: 1 rdi: 8400040004000 
+rsi: 1 r8: ffffa0010003fea0 r9: 0 r10: ffffa0010003ff8f r11: 8400040004000 
+r12: 8400040004000 r13: ffffa0010003fe01 r14: 4 r15: 8400040004000 rip: ffffa00000009634 
+rsp: ffffa0010003fd20 rbp: ffffa0010003fda0 rflgs: 106 
+here1
+here3
+here4
+
+ins:27 rip:0xffffa00000009634 in:shr $0x30,%r12
+dispatching for NIE
+rax: 84000 rbx: ffffa00300020000 rcx: 80000 rdx: 1 rdi: 8400040004000 
+rsi: 1 r8: ffffa0010003fea0 r9: 0 r10: ffffa0010003ff8f r11: 8400040004000 
+r12: 8 r13: ffffa0010003fe01 r14: 4 r15: 8400040004000 rip: ffffa00000009638 
+rsp: ffffa0010003fd20 rbp: ffffa0010003fda0 rflgs: 102 
+here1
+here3
+here4
+
+ins:28 rip:0xffffa00000009638 in:xor %ecx,%r12d
+dispatching for NIE
+rax: 84000 rbx: ffffa00300020000 rcx: 80000 rdx: 1 rdi: 8400040004000 
+rsi: 1 r8: ffffa0010003fea0 r9: 0 r10: ffffa0010003ff8f r11: 8400040004000 
+r12: 80008 r13: ffffa0010003fe01 r14: 4 r15: 8400040004000 rip: ffffa0000000963b 
+rsp: ffffa0010003fd20 rbp: ffffa0010003fda0 rflgs: 102 
+here1
+here3
+here4
+
+ins:29 rip:0xffffa0000000963b in:and $0x7f,%r12d
+dispatching for NIE
+rax: 84000 rbx: ffffa00300020000 rcx: 80000 rdx: 1 rdi: 8400040004000 
+rsi: 1 r8: ffffa0010003fea0 r9: 0 r10: ffffa0010003ff8f r11: 8400040004000 
+r12: 8 r13: ffffa0010003fe01 r14: 4 r15: 8400040004000 rip: ffffa0000000963f 
+rsp: ffffa0010003fd20 rbp: ffffa0010003fda0 rflgs: 102 
+here1
+here3
+here4
+
+ins:30 rip:0xffffa0000000963f in:movzx 0xe62(%rbx,%r12,2),%r14d
+dispatching for NIE
+rax: 84000 rbx: ffffa00300020000 rcx: 80000 rdx: 1 rdi: 8400040004000 
+rsi: 1 r8: ffffa0010003fea0 r9: 0 r10: ffffa0010003ff8f r11: 8400040004000 
+r12: 8 r13: ffffa0010003fe01 r14: 2a r15: 8400040004000 rip: ffffa00000009648 
+rsp: ffffa0010003fd20 rbp: ffffa0010003fda0 rflgs: 102 
+here1
+here3
+here4
+
+ins:31 rip:0xffffa00000009648 in:cmp $0xff,%r14w
+dispatching for NIE
+rax: 84000 rbx: ffffa00300020000 rcx: 80000 rdx: 1 rdi: 8400040004000 
+rsi: 1 r8: ffffa0010003fea0 r9: 0 r10: ffffa0010003ff8f r11: 8400040004000 
+r12: 8 r13: ffffa0010003fe01 r14: 2a r15: 8400040004000 rip: ffffa0000000964d 
+rsp: ffffa0010003fd20 rbp: ffffa0010003fda0 rflgs: 117 
+here1
+here3
+here4
+
+ins:32 rip:0xffffa0000000964d in:jnz 0x23(%rip)
+updateJCCDecision 
+rax: 84000 rbx: ffffa00300020000 rcx: 80000 rdx: 1 rdi: 8400040004000 
+rsi: 1 r8: ffffa0010003fea0 r9: 0 r10: ffffa0010003ff8f r11: 8400040004000 
+r12: 8 r13: ffffa0010003fe01 r14: 2a r15: 8400040004000 rip: ffffa00000009670 
+rsp: ffffa0010003fd20 rbp: ffffa0010003fda0 rflgs: 117 
+here1
+here3
+here4
+
+ins:33 rip:0xffffa00000009670 in:movzx %r14w,%eax
+dispatching for NIE
+rax: 2a rbx: ffffa00300020000 rcx: 80000 rdx: 1 rdi: 8400040004000 
+rsi: 1 r8: ffffa0010003fea0 r9: 0 r10: ffffa0010003ff8f r11: 8400040004000 
+r12: 8 r13: ffffa0010003fe01 r14: 2a r15: 8400040004000 rip: ffffa00000009674 
+rsp: ffffa0010003fd20 rbp: ffffa0010003fda0 rflgs: 117 
+here1
+here3
+here4
+
+ins:34 rip:0xffffa00000009674 in:lea 0x0(%rax,%rax,4),%rax
+dispatching for NIE
+rax: d2 rbx: ffffa00300020000 rcx: 80000 rdx: 1 rdi: 8400040004000 
+rsi: 1 r8: ffffa0010003fea0 r9: 0 r10: ffffa0010003ff8f r11: 8400040004000 
+r12: 8 r13: ffffa0010003fe01 r14: 2a r15: 8400040004000 rip: ffffa00000009678 
+rsp: ffffa0010003fd20 rbp: ffffa0010003fda0 rflgs: 117 
+here1
+here3
+here4
+
+ins:35 rip:0xffffa00000009678 in:lea 0x0(%rax,%rax,4),%rax
+dispatching for NIE
+rax: 41a rbx: ffffa00300020000 rcx: 80000 rdx: 1 rdi: 8400040004000 
+rsi: 1 r8: ffffa0010003fea0 r9: 0 r10: ffffa0010003ff8f r11: 8400040004000 
+r12: 8 r13: ffffa0010003fe01 r14: 2a r15: 8400040004000 rip: ffffa0000000967c 
+rsp: ffffa0010003fd20 rbp: ffffa0010003fda0 rflgs: 117 
+here1
+here3
+here4
+
+ins:36 rip:0xffffa0000000967c in:cmp %r15,0x1e2(%rbx,%rax,1)
+sym mem ...
+dispatching for SIE
+ok3
+src : pa_42
+
+dst : 8400040004000 dst sz: 0x8
+dst aft sign extend : 8400040004000
+rax: 41a rbx: ffffa00300020000 rcx: 80000 rdx: 1 rdi: 8400040004000 
+rsi: 1 r8: ffffa0010003fea0 r9: 0 r10: ffffa0010003ff8f r11: 8400040004000 
+r12: 8 r13: ffffa0010003fe01 r14: 2a r15: 8400040004000 rip: ffffa00000009684 
+rsp: ffffa0010003fd20 rbp: ffffa0010003fda0 rflgs: 117 
+here1
+here3
+here4
+
+ins:37 rip:0xffffa00000009684 in:jnz 0xffffffdc(%rip)
+updateJCCDecision 
+debug_log c_BranchInsn : rip :0xffffa00000009684  insn count: 26
+branches ffffa00000009660 ffffa00000009686
+New_constraint:Distinct(Sub(pa_42,0x8400040004000))
+BtoTake ffffa00000009660
+debug_log Sym branch in path explore: bExecute: 1
+rax: 41a rbx: ffffa00300020000 rcx: 80000 rdx: 1 rdi: 8400040004000 
+rsi: 1 r8: ffffa0010003fea0 r9: 0 r10: ffffa0010003ff8f r11: 8400040004000 
+r12: 8 r13: ffffa0010003fe01 r14: 2a r15: 8400040004000 rip: ffffa00000009660 
+rsp: ffffa0010003fd20 rbp: ffffa0010003fda0 rflgs: 117 
+here1
+here3
+here4
+
+ins:38 rip:0xffffa00000009660 in:movzx 0x1ee(%rbx,%rax,1),%r14d
+dispatching for NIE
+rax: 41a rbx: ffffa00300020000 rcx: 80000 rdx: 1 rdi: 8400040004000 
+rsi: 1 r8: ffffa0010003fea0 r9: 0 r10: ffffa0010003ff8f r11: 8400040004000 
+r12: 8 r13: ffffa0010003fe01 r14: 1b r15: 8400040004000 rip: ffffa00000009669 
+rsp: ffffa0010003fd20 rbp: ffffa0010003fda0 rflgs: 117 
+here1
+here3
+here4
+
+ins:39 rip:0xffffa00000009669 in:cmp $0xff,%r14w
+dispatching for NIE
+rax: 41a rbx: ffffa00300020000 rcx: 80000 rdx: 1 rdi: 8400040004000 
+rsi: 1 r8: ffffa0010003fea0 r9: 0 r10: ffffa0010003ff8f r11: 8400040004000 
+r12: 8 r13: ffffa0010003fe01 r14: 1b r15: 8400040004000 rip: ffffa0000000966e 
+rsp: ffffa0010003fd20 rbp: ffffa0010003fda0 rflgs: 113 
+here1
+here3
+here4
+
+ins:40 rip:0xffffa0000000966e in:jz 0x2d(%rip)
+updateJCCDecision 
+rax: 41a rbx: ffffa00300020000 rcx: 80000 rdx: 1 rdi: 8400040004000 
+rsi: 1 r8: ffffa0010003fea0 r9: 0 r10: ffffa0010003ff8f r11: 8400040004000 
+r12: 8 r13: ffffa0010003fe01 r14: 1b r15: 8400040004000 rip: ffffa00000009670 
+rsp: ffffa0010003fd20 rbp: ffffa0010003fda0 rflgs: 113 
+here1
+here3
+here4
+
+ins:41 rip:0xffffa00000009670 in:movzx %r14w,%eax
+dispatching for NIE
+rax: 1b rbx: ffffa00300020000 rcx: 80000 rdx: 1 rdi: 8400040004000 
+rsi: 1 r8: ffffa0010003fea0 r9: 0 r10: ffffa0010003ff8f r11: 8400040004000 
+r12: 8 r13: ffffa0010003fe01 r14: 1b r15: 8400040004000 rip: ffffa00000009674 
+rsp: ffffa0010003fd20 rbp: ffffa0010003fda0 rflgs: 113 
+here1
+here3
+here4
+
+ins:42 rip:0xffffa00000009674 in:lea 0x0(%rax,%rax,4),%rax
+dispatching for NIE
+rax: 87 rbx: ffffa00300020000 rcx: 80000 rdx: 1 rdi: 8400040004000 
+rsi: 1 r8: ffffa0010003fea0 r9: 0 r10: ffffa0010003ff8f r11: 8400040004000 
+r12: 8 r13: ffffa0010003fe01 r14: 1b r15: 8400040004000 rip: ffffa00000009678 
+rsp: ffffa0010003fd20 rbp: ffffa0010003fda0 rflgs: 113 
+here1
+here3
+here4
+
+ins:43 rip:0xffffa00000009678 in:lea 0x0(%rax,%rax,4),%rax
+dispatching for NIE
+rax: 2a3 rbx: ffffa00300020000 rcx: 80000 rdx: 1 rdi: 8400040004000 
+rsi: 1 r8: ffffa0010003fea0 r9: 0 r10: ffffa0010003ff8f r11: 8400040004000 
+r12: 8 r13: ffffa0010003fe01 r14: 1b r15: 8400040004000 rip: ffffa0000000967c 
+rsp: ffffa0010003fd20 rbp: ffffa0010003fda0 rflgs: 113 
+here1
+here3
+here4
+
+ins:44 rip:0xffffa0000000967c in:cmp %r15,0x1e2(%rbx,%rax,1)
+sym mem ...
+dispatching for SIE
+ok3
+src : pa_27
+
+dst : 8400040004000 dst sz: 0x8
+dst aft sign extend : 8400040004000
+rax: 2a3 rbx: ffffa00300020000 rcx: 80000 rdx: 1 rdi: 8400040004000 
+rsi: 1 r8: ffffa0010003fea0 r9: 0 r10: ffffa0010003ff8f r11: 8400040004000 
+r12: 8 r13: ffffa0010003fe01 r14: 1b r15: 8400040004000 rip: ffffa00000009684 
+rsp: ffffa0010003fd20 rbp: ffffa0010003fda0 rflgs: 113 
+here1
+here3
+here4
+
+ins:45 rip:0xffffa00000009684 in:jnz 0xffffffdc(%rip)
+updateJCCDecision 
+debug_log c_BranchInsn : rip :0xffffa00000009684  insn count: 2e
+branches ffffa00000009660 ffffa00000009686
+New_constraint:Distinct(Sub(pa_27,0x8400040004000))
+BtoTake ffffa00000009660
+debug_log Sym branch in path explore: bExecute: 1
+rax: 2a3 rbx: ffffa00300020000 rcx: 80000 rdx: 1 rdi: 8400040004000 
+rsi: 1 r8: ffffa0010003fea0 r9: 0 r10: ffffa0010003ff8f r11: 8400040004000 
+r12: 8 r13: ffffa0010003fe01 r14: 1b r15: 8400040004000 rip: ffffa00000009660 
+rsp: ffffa0010003fd20 rbp: ffffa0010003fda0 rflgs: 113 
+here1
+here3
+here4
+
+ins:46 rip:0xffffa00000009660 in:movzx 0x1ee(%rbx,%rax,1),%r14d
+dispatching for NIE
+rax: 2a3 rbx: ffffa00300020000 rcx: 80000 rdx: 1 rdi: 8400040004000 
+rsi: 1 r8: ffffa0010003fea0 r9: 0 r10: ffffa0010003ff8f r11: 8400040004000 
+r12: 8 r13: ffffa0010003fe01 r14: 1a r15: 8400040004000 rip: ffffa00000009669 
+rsp: ffffa0010003fd20 rbp: ffffa0010003fda0 rflgs: 113 
+here1
+here3
+here4
+
+ins:47 rip:0xffffa00000009669 in:cmp $0xff,%r14w
+dispatching for NIE
+rax: 2a3 rbx: ffffa00300020000 rcx: 80000 rdx: 1 rdi: 8400040004000 
+rsi: 1 r8: ffffa0010003fea0 r9: 0 r10: ffffa0010003ff8f r11: 8400040004000 
+r12: 8 r13: ffffa0010003fe01 r14: 1a r15: 8400040004000 rip: ffffa0000000966e 
+rsp: ffffa0010003fd20 rbp: ffffa0010003fda0 rflgs: 117 
+here1
+here3
+here4
+
+ins:48 rip:0xffffa0000000966e in:jz 0x2d(%rip)
+updateJCCDecision 
+rax: 2a3 rbx: ffffa00300020000 rcx: 80000 rdx: 1 rdi: 8400040004000 
+rsi: 1 r8: ffffa0010003fea0 r9: 0 r10: ffffa0010003ff8f r11: 8400040004000 
+r12: 8 r13: ffffa0010003fe01 r14: 1a r15: 8400040004000 rip: ffffa00000009670 
+rsp: ffffa0010003fd20 rbp: ffffa0010003fda0 rflgs: 117 
+here1
+here3
+here4
+
+ins:49 rip:0xffffa00000009670 in:movzx %r14w,%eax
+dispatching for NIE
+rax: 1a rbx: ffffa00300020000 rcx: 80000 rdx: 1 rdi: 8400040004000 
+rsi: 1 r8: ffffa0010003fea0 r9: 0 r10: ffffa0010003ff8f r11: 8400040004000 
+r12: 8 r13: ffffa0010003fe01 r14: 1a r15: 8400040004000 rip: ffffa00000009674 
+rsp: ffffa0010003fd20 rbp: ffffa0010003fda0 rflgs: 117 
+here1
+here3
+here4
+
+ins:50 rip:0xffffa00000009674 in:lea 0x0(%rax,%rax,4),%rax
+dispatching for NIE
+rax: 82 rbx: ffffa00300020000 rcx: 80000 rdx: 1 rdi: 8400040004000 
+rsi: 1 r8: ffffa0010003fea0 r9: 0 r10: ffffa0010003ff8f r11: 8400040004000 
+r12: 8 r13: ffffa0010003fe01 r14: 1a r15: 8400040004000 rip: ffffa00000009678 
+rsp: ffffa0010003fd20 rbp: ffffa0010003fda0 rflgs: 117 
+here1
+here3
+here4
+
+ins:51 rip:0xffffa00000009678 in:lea 0x0(%rax,%rax,4),%rax
+dispatching for NIE
+rax: 28a rbx: ffffa00300020000 rcx: 80000 rdx: 1 rdi: 8400040004000 
+rsi: 1 r8: ffffa0010003fea0 r9: 0 r10: ffffa0010003ff8f r11: 8400040004000 
+r12: 8 r13: ffffa0010003fe01 r14: 1a r15: 8400040004000 rip: ffffa0000000967c 
+rsp: ffffa0010003fd20 rbp: ffffa0010003fda0 rflgs: 117 
+here1
+here3
+here4
+
+ins:52 rip:0xffffa0000000967c in:cmp %r15,0x1e2(%rbx,%rax,1)
+sym mem ...
+dispatching for SIE
+ok3
+src : pa_26
+
+dst : 8400040004000 dst sz: 0x8
+dst aft sign extend : 8400040004000
+rax: 28a rbx: ffffa00300020000 rcx: 80000 rdx: 1 rdi: 8400040004000 
+rsi: 1 r8: ffffa0010003fea0 r9: 0 r10: ffffa0010003ff8f r11: 8400040004000 
+r12: 8 r13: ffffa0010003fe01 r14: 1a r15: 8400040004000 rip: ffffa00000009684 
+rsp: ffffa0010003fd20 rbp: ffffa0010003fda0 rflgs: 117 
+here1
+here3
+here4
+
+ins:53 rip:0xffffa00000009684 in:jnz 0xffffffdc(%rip)
+updateJCCDecision 
+debug_log c_BranchInsn : rip :0xffffa00000009684  insn count: 36
+branches ffffa00000009660 ffffa00000009686
+New_constraint:Distinct(Sub(pa_26,0x8400040004000))
+BtoTake ffffa00000009660
+debug_log Sym branch in path explore: bExecute: 1
+rax: 28a rbx: ffffa00300020000 rcx: 80000 rdx: 1 rdi: 8400040004000 
+rsi: 1 r8: ffffa0010003fea0 r9: 0 r10: ffffa0010003ff8f r11: 8400040004000 
+r12: 8 r13: ffffa0010003fe01 r14: 1a r15: 8400040004000 rip: ffffa00000009660 
+rsp: ffffa0010003fd20 rbp: ffffa0010003fda0 rflgs: 117 
+here1
+here3
+here4
+
+ins:54 rip:0xffffa00000009660 in:movzx 0x1ee(%rbx,%rax,1),%r14d
+dispatching for NIE
+rax: 28a rbx: ffffa00300020000 rcx: 80000 rdx: 1 rdi: 8400040004000 
+rsi: 1 r8: ffffa0010003fea0 r9: 0 r10: ffffa0010003ff8f r11: 8400040004000 
+r12: 8 r13: ffffa0010003fe01 r14: 19 r15: 8400040004000 rip: ffffa00000009669 
+rsp: ffffa0010003fd20 rbp: ffffa0010003fda0 rflgs: 117 
+here1
+here3
+here4
+
+ins:55 rip:0xffffa00000009669 in:cmp $0xff,%r14w
+dispatching for NIE
+rax: 28a rbx: ffffa00300020000 rcx: 80000 rdx: 1 rdi: 8400040004000 
+rsi: 1 r8: ffffa0010003fea0 r9: 0 r10: ffffa0010003ff8f r11: 8400040004000 
+r12: 8 r13: ffffa0010003fe01 r14: 19 r15: 8400040004000 rip: ffffa0000000966e 
+rsp: ffffa0010003fd20 rbp: ffffa0010003fda0 rflgs: 113 
+here1
+here3
+here4
+
+ins:56 rip:0xffffa0000000966e in:jz 0x2d(%rip)
+updateJCCDecision 
+rax: 28a rbx: ffffa00300020000 rcx: 80000 rdx: 1 rdi: 8400040004000 
+rsi: 1 r8: ffffa0010003fea0 r9: 0 r10: ffffa0010003ff8f r11: 8400040004000 
+r12: 8 r13: ffffa0010003fe01 r14: 19 r15: 8400040004000 rip: ffffa00000009670 
+rsp: ffffa0010003fd20 rbp: ffffa0010003fda0 rflgs: 113 
+here1
+here3
+here4
+
+ins:57 rip:0xffffa00000009670 in:movzx %r14w,%eax
+dispatching for NIE
+rax: 19 rbx: ffffa00300020000 rcx: 80000 rdx: 1 rdi: 8400040004000 
+rsi: 1 r8: ffffa0010003fea0 r9: 0 r10: ffffa0010003ff8f r11: 8400040004000 
+r12: 8 r13: ffffa0010003fe01 r14: 19 r15: 8400040004000 rip: ffffa00000009674 
+rsp: ffffa0010003fd20 rbp: ffffa0010003fda0 rflgs: 113 
+here1
+here3
+here4
+
+ins:58 rip:0xffffa00000009674 in:lea 0x0(%rax,%rax,4),%rax
+dispatching for NIE
+rax: 7d rbx: ffffa00300020000 rcx: 80000 rdx: 1 rdi: 8400040004000 
+rsi: 1 r8: ffffa0010003fea0 r9: 0 r10: ffffa0010003ff8f r11: 8400040004000 
+r12: 8 r13: ffffa0010003fe01 r14: 19 r15: 8400040004000 rip: ffffa00000009678 
+rsp: ffffa0010003fd20 rbp: ffffa0010003fda0 rflgs: 113 
+here1
+here3
+here4
+
+ins:59 rip:0xffffa00000009678 in:lea 0x0(%rax,%rax,4),%rax
+dispatching for NIE
+rax: 271 rbx: ffffa00300020000 rcx: 80000 rdx: 1 rdi: 8400040004000 
+rsi: 1 r8: ffffa0010003fea0 r9: 0 r10: ffffa0010003ff8f r11: 8400040004000 
+r12: 8 r13: ffffa0010003fe01 r14: 19 r15: 8400040004000 rip: ffffa0000000967c 
+rsp: ffffa0010003fd20 rbp: ffffa0010003fda0 rflgs: 113 
+here1
+here3
+here4
+
+ins:60 rip:0xffffa0000000967c in:cmp %r15,0x1e2(%rbx,%rax,1)
+sym mem ...
+dispatching for SIE
+ok3
+src : pa_25
+
+dst : 8400040004000 dst sz: 0x8
+dst aft sign extend : 8400040004000
+rax: 271 rbx: ffffa00300020000 rcx: 80000 rdx: 1 rdi: 8400040004000 
+rsi: 1 r8: ffffa0010003fea0 r9: 0 r10: ffffa0010003ff8f r11: 8400040004000 
+r12: 8 r13: ffffa0010003fe01 r14: 19 r15: 8400040004000 rip: ffffa00000009684 
+rsp: ffffa0010003fd20 rbp: ffffa0010003fda0 rflgs: 113 
+here1
+here3
+here4
+
+ins:61 rip:0xffffa00000009684 in:jnz 0xffffffdc(%rip)
+updateJCCDecision 
+debug_log c_BranchInsn : rip :0xffffa00000009684  insn count: 3e
+branches ffffa00000009660 ffffa00000009686
+New_constraint:Distinct(Sub(pa_25,0x8400040004000))
+BtoTake ffffa00000009660
+debug_log Sym branch in path explore: bExecute: 1
+rax: 271 rbx: ffffa00300020000 rcx: 80000 rdx: 1 rdi: 8400040004000 
+rsi: 1 r8: ffffa0010003fea0 r9: 0 r10: ffffa0010003ff8f r11: 8400040004000 
+r12: 8 r13: ffffa0010003fe01 r14: 19 r15: 8400040004000 rip: ffffa00000009660 
+rsp: ffffa0010003fd20 rbp: ffffa0010003fda0 rflgs: 113 
+here1
+here3
+here4
+
+ins:62 rip:0xffffa00000009660 in:movzx 0x1ee(%rbx,%rax,1),%r14d
+dispatching for NIE
+rax: 271 rbx: ffffa00300020000 rcx: 80000 rdx: 1 rdi: 8400040004000 
+rsi: 1 r8: ffffa0010003fea0 r9: 0 r10: ffffa0010003ff8f r11: 8400040004000 
+r12: 8 r13: ffffa0010003fe01 r14: 18 r15: 8400040004000 rip: ffffa00000009669 
+rsp: ffffa0010003fd20 rbp: ffffa0010003fda0 rflgs: 113 
+here1
+here3
+here4
+
+ins:63 rip:0xffffa00000009669 in:cmp $0xff,%r14w
+dispatching for NIE
+rax: 271 rbx: ffffa00300020000 rcx: 80000 rdx: 1 rdi: 8400040004000 
+rsi: 1 r8: ffffa0010003fea0 r9: 0 r10: ffffa0010003ff8f r11: 8400040004000 
+r12: 8 r13: ffffa0010003fe01 r14: 18 r15: 8400040004000 rip: ffffa0000000966e 
+rsp: ffffa0010003fd20 rbp: ffffa0010003fda0 rflgs: 113 
+here1
+here3
+here4
+
+ins:64 rip:0xffffa0000000966e in:jz 0x2d(%rip)
+updateJCCDecision 
+rax: 271 rbx: ffffa00300020000 rcx: 80000 rdx: 1 rdi: 8400040004000 
+rsi: 1 r8: ffffa0010003fea0 r9: 0 r10: ffffa0010003ff8f r11: 8400040004000 
+r12: 8 r13: ffffa0010003fe01 r14: 18 r15: 8400040004000 rip: ffffa00000009670 
+rsp: ffffa0010003fd20 rbp: ffffa0010003fda0 rflgs: 113 
+here1
+here3
+here4
+
+ins:65 rip:0xffffa00000009670 in:movzx %r14w,%eax
+dispatching for NIE
+rax: 18 rbx: ffffa00300020000 rcx: 80000 rdx: 1 rdi: 8400040004000 
+rsi: 1 r8: ffffa0010003fea0 r9: 0 r10: ffffa0010003ff8f r11: 8400040004000 
+r12: 8 r13: ffffa0010003fe01 r14: 18 r15: 8400040004000 rip: ffffa00000009674 
+rsp: ffffa0010003fd20 rbp: ffffa0010003fda0 rflgs: 113 
+here1
+here3
+here4
+
+ins:66 rip:0xffffa00000009674 in:lea 0x0(%rax,%rax,4),%rax
+dispatching for NIE
+rax: 78 rbx: ffffa00300020000 rcx: 80000 rdx: 1 rdi: 8400040004000 
+rsi: 1 r8: ffffa0010003fea0 r9: 0 r10: ffffa0010003ff8f r11: 8400040004000 
+r12: 8 r13: ffffa0010003fe01 r14: 18 r15: 8400040004000 rip: ffffa00000009678 
+rsp: ffffa0010003fd20 rbp: ffffa0010003fda0 rflgs: 113 
+here1
+here3
+here4
+
+ins:67 rip:0xffffa00000009678 in:lea 0x0(%rax,%rax,4),%rax
+dispatching for NIE
+rax: 258 rbx: ffffa00300020000 rcx: 80000 rdx: 1 rdi: 8400040004000 
+rsi: 1 r8: ffffa0010003fea0 r9: 0 r10: ffffa0010003ff8f r11: 8400040004000 
+r12: 8 r13: ffffa0010003fe01 r14: 18 r15: 8400040004000 rip: ffffa0000000967c 
+rsp: ffffa0010003fd20 rbp: ffffa0010003fda0 rflgs: 113 
+here1
+here3
+here4
+
+ins:68 rip:0xffffa0000000967c in:cmp %r15,0x1e2(%rbx,%rax,1)
+sym mem ...
+dispatching for SIE
+ok3
+src : pa_24
+
+dst : 8400040004000 dst sz: 0x8
+dst aft sign extend : 8400040004000
+rax: 258 rbx: ffffa00300020000 rcx: 80000 rdx: 1 rdi: 8400040004000 
+rsi: 1 r8: ffffa0010003fea0 r9: 0 r10: ffffa0010003ff8f r11: 8400040004000 
+r12: 8 r13: ffffa0010003fe01 r14: 18 r15: 8400040004000 rip: ffffa00000009684 
+rsp: ffffa0010003fd20 rbp: ffffa0010003fda0 rflgs: 113 
+here1
+here3
+here4
+
+ins:69 rip:0xffffa00000009684 in:jnz 0xffffffdc(%rip)
+updateJCCDecision 
+debug_log c_BranchInsn : rip :0xffffa00000009684  insn count: 46
+branches ffffa00000009660 ffffa00000009686
+New_constraint:Distinct(Sub(pa_24,0x8400040004000))
+BtoTake ffffa00000009660
+debug_log Sym branch in path explore: bExecute: 1
+rax: 258 rbx: ffffa00300020000 rcx: 80000 rdx: 1 rdi: 8400040004000 
+rsi: 1 r8: ffffa0010003fea0 r9: 0 r10: ffffa0010003ff8f r11: 8400040004000 
+r12: 8 r13: ffffa0010003fe01 r14: 18 r15: 8400040004000 rip: ffffa00000009660 
+rsp: ffffa0010003fd20 rbp: ffffa0010003fda0 rflgs: 113 
+here1
+here3
+here4
+
+ins:70 rip:0xffffa00000009660 in:movzx 0x1ee(%rbx,%rax,1),%r14d
+dispatching for NIE
+rax: 258 rbx: ffffa00300020000 rcx: 80000 rdx: 1 rdi: 8400040004000 
+rsi: 1 r8: ffffa0010003fea0 r9: 0 r10: ffffa0010003ff8f r11: 8400040004000 
+r12: 8 r13: ffffa0010003fe01 r14: 17 r15: 8400040004000 rip: ffffa00000009669 
+rsp: ffffa0010003fd20 rbp: ffffa0010003fda0 rflgs: 113 
+here1
+here3
+here4
+
+ins:71 rip:0xffffa00000009669 in:cmp $0xff,%r14w
+dispatching for NIE
+rax: 258 rbx: ffffa00300020000 rcx: 80000 rdx: 1 rdi: 8400040004000 
+rsi: 1 r8: ffffa0010003fea0 r9: 0 r10: ffffa0010003ff8f r11: 8400040004000 
+r12: 8 r13: ffffa0010003fe01 r14: 17 r15: 8400040004000 rip: ffffa0000000966e 
+rsp: ffffa0010003fd20 rbp: ffffa0010003fda0 rflgs: 117 
+here1
+here3
+here4
+
+ins:72 rip:0xffffa0000000966e in:jz 0x2d(%rip)
+updateJCCDecision 
+rax: 258 rbx: ffffa00300020000 rcx: 80000 rdx: 1 rdi: 8400040004000 
+rsi: 1 r8: ffffa0010003fea0 r9: 0 r10: ffffa0010003ff8f r11: 8400040004000 
+r12: 8 r13: ffffa0010003fe01 r14: 17 r15: 8400040004000 rip: ffffa00000009670 
+rsp: ffffa0010003fd20 rbp: ffffa0010003fda0 rflgs: 117 
+here1
+here3
+here4
+
+ins:73 rip:0xffffa00000009670 in:movzx %r14w,%eax
+dispatching for NIE
+rax: 17 rbx: ffffa00300020000 rcx: 80000 rdx: 1 rdi: 8400040004000 
+rsi: 1 r8: ffffa0010003fea0 r9: 0 r10: ffffa0010003ff8f r11: 8400040004000 
+r12: 8 r13: ffffa0010003fe01 r14: 17 r15: 8400040004000 rip: ffffa00000009674 
+rsp: ffffa0010003fd20 rbp: ffffa0010003fda0 rflgs: 117 
+here1
+here3
+here4
+
+ins:74 rip:0xffffa00000009674 in:lea 0x0(%rax,%rax,4),%rax
+dispatching for NIE
+rax: 73 rbx: ffffa00300020000 rcx: 80000 rdx: 1 rdi: 8400040004000 
+rsi: 1 r8: ffffa0010003fea0 r9: 0 r10: ffffa0010003ff8f r11: 8400040004000 
+r12: 8 r13: ffffa0010003fe01 r14: 17 r15: 8400040004000 rip: ffffa00000009678 
+rsp: ffffa0010003fd20 rbp: ffffa0010003fda0 rflgs: 117 
+here1
+here3
+here4
+
+ins:75 rip:0xffffa00000009678 in:lea 0x0(%rax,%rax,4),%rax
+dispatching for NIE
+rax: 23f rbx: ffffa00300020000 rcx: 80000 rdx: 1 rdi: 8400040004000 
+rsi: 1 r8: ffffa0010003fea0 r9: 0 r10: ffffa0010003ff8f r11: 8400040004000 
+r12: 8 r13: ffffa0010003fe01 r14: 17 r15: 8400040004000 rip: ffffa0000000967c 
+rsp: ffffa0010003fd20 rbp: ffffa0010003fda0 rflgs: 117 
+here1
+here3
+here4
+
+ins:76 rip:0xffffa0000000967c in:cmp %r15,0x1e2(%rbx,%rax,1)
+sym mem ...
+dispatching for SIE
+ok3
+src : pa_23
+
+dst : 8400040004000 dst sz: 0x8
+dst aft sign extend : 8400040004000
+rax: 23f rbx: ffffa00300020000 rcx: 80000 rdx: 1 rdi: 8400040004000 
+rsi: 1 r8: ffffa0010003fea0 r9: 0 r10: ffffa0010003ff8f r11: 8400040004000 
+r12: 8 r13: ffffa0010003fe01 r14: 17 r15: 8400040004000 rip: ffffa00000009684 
+rsp: ffffa0010003fd20 rbp: ffffa0010003fda0 rflgs: 117 
+here1
+here3
+here4
+
+ins:77 rip:0xffffa00000009684 in:jnz 0xffffffdc(%rip)
+updateJCCDecision 
+debug_log c_BranchInsn : rip :0xffffa00000009684  insn count: 4e
+branches ffffa00000009660 ffffa00000009686
+New_constraint:Distinct(Sub(pa_23,0x8400040004000))
+BtoTake ffffa00000009660
+debug_log Sym branch in path explore: bExecute: 1
+rax: 23f rbx: ffffa00300020000 rcx: 80000 rdx: 1 rdi: 8400040004000 
+rsi: 1 r8: ffffa0010003fea0 r9: 0 r10: ffffa0010003ff8f r11: 8400040004000 
+r12: 8 r13: ffffa0010003fe01 r14: 17 r15: 8400040004000 rip: ffffa00000009660 
+rsp: ffffa0010003fd20 rbp: ffffa0010003fda0 rflgs: 117 
+here1
+here3
+here4
+
+ins:78 rip:0xffffa00000009660 in:movzx 0x1ee(%rbx,%rax,1),%r14d
+dispatching for NIE
+rax: 23f rbx: ffffa00300020000 rcx: 80000 rdx: 1 rdi: 8400040004000 
+rsi: 1 r8: ffffa0010003fea0 r9: 0 r10: ffffa0010003ff8f r11: 8400040004000 
+r12: 8 r13: ffffa0010003fe01 r14: 16 r15: 8400040004000 rip: ffffa00000009669 
+rsp: ffffa0010003fd20 rbp: ffffa0010003fda0 rflgs: 117 
+here1
+here3
+here4
+
+ins:79 rip:0xffffa00000009669 in:cmp $0xff,%r14w
+dispatching for NIE
+rax: 23f rbx: ffffa00300020000 rcx: 80000 rdx: 1 rdi: 8400040004000 
+rsi: 1 r8: ffffa0010003fea0 r9: 0 r10: ffffa0010003ff8f r11: 8400040004000 
+r12: 8 r13: ffffa0010003fe01 r14: 16 r15: 8400040004000 rip: ffffa0000000966e 
+rsp: ffffa0010003fd20 rbp: ffffa0010003fda0 rflgs: 117 
+here1
+here3
+here4
+
+ins:80 rip:0xffffa0000000966e in:jz 0x2d(%rip)
+updateJCCDecision 
+rax: 23f rbx: ffffa00300020000 rcx: 80000 rdx: 1 rdi: 8400040004000 
+rsi: 1 r8: ffffa0010003fea0 r9: 0 r10: ffffa0010003ff8f r11: 8400040004000 
+r12: 8 r13: ffffa0010003fe01 r14: 16 r15: 8400040004000 rip: ffffa00000009670 
+rsp: ffffa0010003fd20 rbp: ffffa0010003fda0 rflgs: 117 
+here1
+here3
+here4
+
+ins:81 rip:0xffffa00000009670 in:movzx %r14w,%eax
+dispatching for NIE
+rax: 16 rbx: ffffa00300020000 rcx: 80000 rdx: 1 rdi: 8400040004000 
+rsi: 1 r8: ffffa0010003fea0 r9: 0 r10: ffffa0010003ff8f r11: 8400040004000 
+r12: 8 r13: ffffa0010003fe01 r14: 16 r15: 8400040004000 rip: ffffa00000009674 
+rsp: ffffa0010003fd20 rbp: ffffa0010003fda0 rflgs: 117 
+here1
+here3
+here4
+
+ins:82 rip:0xffffa00000009674 in:lea 0x0(%rax,%rax,4),%rax
+dispatching for NIE
+rax: 6e rbx: ffffa00300020000 rcx: 80000 rdx: 1 rdi: 8400040004000 
+rsi: 1 r8: ffffa0010003fea0 r9: 0 r10: ffffa0010003ff8f r11: 8400040004000 
+r12: 8 r13: ffffa0010003fe01 r14: 16 r15: 8400040004000 rip: ffffa00000009678 
+rsp: ffffa0010003fd20 rbp: ffffa0010003fda0 rflgs: 117 
+here1
+here3
+here4
+
+ins:83 rip:0xffffa00000009678 in:lea 0x0(%rax,%rax,4),%rax
+dispatching for NIE
+rax: 226 rbx: ffffa00300020000 rcx: 80000 rdx: 1 rdi: 8400040004000 
+rsi: 1 r8: ffffa0010003fea0 r9: 0 r10: ffffa0010003ff8f r11: 8400040004000 
+r12: 8 r13: ffffa0010003fe01 r14: 16 r15: 8400040004000 rip: ffffa0000000967c 
+rsp: ffffa0010003fd20 rbp: ffffa0010003fda0 rflgs: 117 
+here1
+here3
+here4
+
+ins:84 rip:0xffffa0000000967c in:cmp %r15,0x1e2(%rbx,%rax,1)
+sym mem ...
+dispatching for SIE
+ok3
+src : pa_22
+
+dst : 8400040004000 dst sz: 0x8
+dst aft sign extend : 8400040004000
+rax: 226 rbx: ffffa00300020000 rcx: 80000 rdx: 1 rdi: 8400040004000 
+rsi: 1 r8: ffffa0010003fea0 r9: 0 r10: ffffa0010003ff8f r11: 8400040004000 
+r12: 8 r13: ffffa0010003fe01 r14: 16 r15: 8400040004000 rip: ffffa00000009684 
+rsp: ffffa0010003fd20 rbp: ffffa0010003fda0 rflgs: 117 
+here1
+here3
+here4
+
+ins:85 rip:0xffffa00000009684 in:jnz 0xffffffdc(%rip)
+updateJCCDecision 
+debug_log c_BranchInsn : rip :0xffffa00000009684  insn count: 56
+branches ffffa00000009660 ffffa00000009686
+New_constraint:Distinct(Sub(pa_22,0x8400040004000))
+BtoTake ffffa00000009660
+debug_log Sym branch in path explore: bExecute: 1
+rax: 226 rbx: ffffa00300020000 rcx: 80000 rdx: 1 rdi: 8400040004000 
+rsi: 1 r8: ffffa0010003fea0 r9: 0 r10: ffffa0010003ff8f r11: 8400040004000 
+r12: 8 r13: ffffa0010003fe01 r14: 16 r15: 8400040004000 rip: ffffa00000009660 
+rsp: ffffa0010003fd20 rbp: ffffa0010003fda0 rflgs: 117 
+here1
+here3
+here4
+
+ins:86 rip:0xffffa00000009660 in:movzx 0x1ee(%rbx,%rax,1),%r14d
+dispatching for NIE
+rax: 226 rbx: ffffa00300020000 rcx: 80000 rdx: 1 rdi: 8400040004000 
+rsi: 1 r8: ffffa0010003fea0 r9: 0 r10: ffffa0010003ff8f r11: 8400040004000 
+r12: 8 r13: ffffa0010003fe01 r14: 15 r15: 8400040004000 rip: ffffa00000009669 
+rsp: ffffa0010003fd20 rbp: ffffa0010003fda0 rflgs: 117 
+here1
+here3
+here4
+
+ins:87 rip:0xffffa00000009669 in:cmp $0xff,%r14w
+dispatching for NIE
+rax: 226 rbx: ffffa00300020000 rcx: 80000 rdx: 1 rdi: 8400040004000 
+rsi: 1 r8: ffffa0010003fea0 r9: 0 r10: ffffa0010003ff8f r11: 8400040004000 
+r12: 8 r13: ffffa0010003fe01 r14: 15 r15: 8400040004000 rip: ffffa0000000966e 
+rsp: ffffa0010003fd20 rbp: ffffa0010003fda0 rflgs: 113 
+here1
+here3
+here4
+
+ins:88 rip:0xffffa0000000966e in:jz 0x2d(%rip)
+updateJCCDecision 
+rax: 226 rbx: ffffa00300020000 rcx: 80000 rdx: 1 rdi: 8400040004000 
+rsi: 1 r8: ffffa0010003fea0 r9: 0 r10: ffffa0010003ff8f r11: 8400040004000 
+r12: 8 r13: ffffa0010003fe01 r14: 15 r15: 8400040004000 rip: ffffa00000009670 
+rsp: ffffa0010003fd20 rbp: ffffa0010003fda0 rflgs: 113 
+here1
+here3
+here4
+
+ins:89 rip:0xffffa00000009670 in:movzx %r14w,%eax
+dispatching for NIE
+rax: 15 rbx: ffffa00300020000 rcx: 80000 rdx: 1 rdi: 8400040004000 
+rsi: 1 r8: ffffa0010003fea0 r9: 0 r10: ffffa0010003ff8f r11: 8400040004000 
+r12: 8 r13: ffffa0010003fe01 r14: 15 r15: 8400040004000 rip: ffffa00000009674 
+rsp: ffffa0010003fd20 rbp: ffffa0010003fda0 rflgs: 113 
+here1
+here3
+here4
+
+ins:90 rip:0xffffa00000009674 in:lea 0x0(%rax,%rax,4),%rax
+dispatching for NIE
+rax: 69 rbx: ffffa00300020000 rcx: 80000 rdx: 1 rdi: 8400040004000 
+rsi: 1 r8: ffffa0010003fea0 r9: 0 r10: ffffa0010003ff8f r11: 8400040004000 
+r12: 8 r13: ffffa0010003fe01 r14: 15 r15: 8400040004000 rip: ffffa00000009678 
+rsp: ffffa0010003fd20 rbp: ffffa0010003fda0 rflgs: 113 
+here1
+here3
+here4
+
+ins:91 rip:0xffffa00000009678 in:lea 0x0(%rax,%rax,4),%rax
+dispatching for NIE
+rax: 20d rbx: ffffa00300020000 rcx: 80000 rdx: 1 rdi: 8400040004000 
+rsi: 1 r8: ffffa0010003fea0 r9: 0 r10: ffffa0010003ff8f r11: 8400040004000 
+r12: 8 r13: ffffa0010003fe01 r14: 15 r15: 8400040004000 rip: ffffa0000000967c 
+rsp: ffffa0010003fd20 rbp: ffffa0010003fda0 rflgs: 113 
+here1
+here3
+here4
+
+ins:92 rip:0xffffa0000000967c in:cmp %r15,0x1e2(%rbx,%rax,1)
+sym mem ...
+dispatching for SIE
+ok3
+src : pa_21
+
+dst : 8400040004000 dst sz: 0x8
+dst aft sign extend : 8400040004000
+rax: 20d rbx: ffffa00300020000 rcx: 80000 rdx: 1 rdi: 8400040004000 
+rsi: 1 r8: ffffa0010003fea0 r9: 0 r10: ffffa0010003ff8f r11: 8400040004000 
+r12: 8 r13: ffffa0010003fe01 r14: 15 r15: 8400040004000 rip: ffffa00000009684 
+rsp: ffffa0010003fd20 rbp: ffffa0010003fda0 rflgs: 113 
+here1
+here3
+here4
+
+ins:93 rip:0xffffa00000009684 in:jnz 0xffffffdc(%rip)
+updateJCCDecision 
+debug_log c_BranchInsn : rip :0xffffa00000009684  insn count: 5e
+branches ffffa00000009660 ffffa00000009686
+New_constraint:Distinct(Sub(pa_21,0x8400040004000))
+BtoTake ffffa00000009660
+debug_log Sym branch in path explore: bExecute: 1
+rax: 20d rbx: ffffa00300020000 rcx: 80000 rdx: 1 rdi: 8400040004000 
+rsi: 1 r8: ffffa0010003fea0 r9: 0 r10: ffffa0010003ff8f r11: 8400040004000 
+r12: 8 r13: ffffa0010003fe01 r14: 15 r15: 8400040004000 rip: ffffa00000009660 
+rsp: ffffa0010003fd20 rbp: ffffa0010003fda0 rflgs: 113 
+here1
+here3
+here4
+
+ins:94 rip:0xffffa00000009660 in:movzx 0x1ee(%rbx,%rax,1),%r14d
+dispatching for NIE
+rax: 20d rbx: ffffa00300020000 rcx: 80000 rdx: 1 rdi: 8400040004000 
+rsi: 1 r8: ffffa0010003fea0 r9: 0 r10: ffffa0010003ff8f r11: 8400040004000 
+r12: 8 r13: ffffa0010003fe01 r14: 14 r15: 8400040004000 rip: ffffa00000009669 
+rsp: ffffa0010003fd20 rbp: ffffa0010003fda0 rflgs: 113 
+here1
+here3
+here4
+
+ins:95 rip:0xffffa00000009669 in:cmp $0xff,%r14w
+dispatching for NIE
+rax: 20d rbx: ffffa00300020000 rcx: 80000 rdx: 1 rdi: 8400040004000 
+rsi: 1 r8: ffffa0010003fea0 r9: 0 r10: ffffa0010003ff8f r11: 8400040004000 
+r12: 8 r13: ffffa0010003fe01 r14: 14 r15: 8400040004000 rip: ffffa0000000966e 
+rsp: ffffa0010003fd20 rbp: ffffa0010003fda0 rflgs: 113 
+here1
+here3
+here4
+
+ins:96 rip:0xffffa0000000966e in:jz 0x2d(%rip)
+updateJCCDecision 
+rax: 20d rbx: ffffa00300020000 rcx: 80000 rdx: 1 rdi: 8400040004000 
+rsi: 1 r8: ffffa0010003fea0 r9: 0 r10: ffffa0010003ff8f r11: 8400040004000 
+r12: 8 r13: ffffa0010003fe01 r14: 14 r15: 8400040004000 rip: ffffa00000009670 
+rsp: ffffa0010003fd20 rbp: ffffa0010003fda0 rflgs: 113 
+here1
+here3
+here4
+
+ins:97 rip:0xffffa00000009670 in:movzx %r14w,%eax
+dispatching for NIE
+rax: 14 rbx: ffffa00300020000 rcx: 80000 rdx: 1 rdi: 8400040004000 
+rsi: 1 r8: ffffa0010003fea0 r9: 0 r10: ffffa0010003ff8f r11: 8400040004000 
+r12: 8 r13: ffffa0010003fe01 r14: 14 r15: 8400040004000 rip: ffffa00000009674 
+rsp: ffffa0010003fd20 rbp: ffffa0010003fda0 rflgs: 113 
+here1
+here3
+here4
+
+ins:98 rip:0xffffa00000009674 in:lea 0x0(%rax,%rax,4),%rax
+dispatching for NIE
+rax: 64 rbx: ffffa00300020000 rcx: 80000 rdx: 1 rdi: 8400040004000 
+rsi: 1 r8: ffffa0010003fea0 r9: 0 r10: ffffa0010003ff8f r11: 8400040004000 
+r12: 8 r13: ffffa0010003fe01 r14: 14 r15: 8400040004000 rip: ffffa00000009678 
+rsp: ffffa0010003fd20 rbp: ffffa0010003fda0 rflgs: 113 
+here1
+here3
+here4
+
+ins:99 rip:0xffffa00000009678 in:lea 0x0(%rax,%rax,4),%rax
+dispatching for NIE
+rax: 1f4 rbx: ffffa00300020000 rcx: 80000 rdx: 1 rdi: 8400040004000 
+rsi: 1 r8: ffffa0010003fea0 r9: 0 r10: ffffa0010003ff8f r11: 8400040004000 
+r12: 8 r13: ffffa0010003fe01 r14: 14 r15: 8400040004000 rip: ffffa0000000967c 
+rsp: ffffa0010003fd20 rbp: ffffa0010003fda0 rflgs: 113 
+here1
+here3
+here4
+
+ins:100 rip:0xffffa0000000967c in:cmp %r15,0x1e2(%rbx,%rax,1)
+sym mem ...
+dispatching for SIE
+ok3
+src : pa_20
+
+dst : 8400040004000 dst sz: 0x8
+dst aft sign extend : 8400040004000
+rax: 1f4 rbx: ffffa00300020000 rcx: 80000 rdx: 1 rdi: 8400040004000 
+rsi: 1 r8: ffffa0010003fea0 r9: 0 r10: ffffa0010003ff8f r11: 8400040004000 
+r12: 8 r13: ffffa0010003fe01 r14: 14 r15: 8400040004000 rip: ffffa00000009684 
+rsp: ffffa0010003fd20 rbp: ffffa0010003fda0 rflgs: 113 
+here1
+here3
+here4
+
+ins:101 rip:0xffffa00000009684 in:jnz 0xffffffdc(%rip)
+updateJCCDecision 
+debug_log c_BranchInsn : rip :0xffffa00000009684  insn count: 66
+branches ffffa00000009660 ffffa00000009686
+New_constraint:Distinct(Sub(pa_20,0x8400040004000))
+BtoTake ffffa00000009660
+debug_log Sym branch in path explore: bExecute: 1
+rax: 1f4 rbx: ffffa00300020000 rcx: 80000 rdx: 1 rdi: 8400040004000 
+rsi: 1 r8: ffffa0010003fea0 r9: 0 r10: ffffa0010003ff8f r11: 8400040004000 
+r12: 8 r13: ffffa0010003fe01 r14: 14 r15: 8400040004000 rip: ffffa00000009660 
+rsp: ffffa0010003fd20 rbp: ffffa0010003fda0 rflgs: 113 
+here1
+here3
+here4
+
+ins:102 rip:0xffffa00000009660 in:movzx 0x1ee(%rbx,%rax,1),%r14d
+dispatching for NIE
+rax: 1f4 rbx: ffffa00300020000 rcx: 80000 rdx: 1 rdi: 8400040004000 
+rsi: 1 r8: ffffa0010003fea0 r9: 0 r10: ffffa0010003ff8f r11: 8400040004000 
+r12: 8 r13: ffffa0010003fe01 r14: 13 r15: 8400040004000 rip: ffffa00000009669 
+rsp: ffffa0010003fd20 rbp: ffffa0010003fda0 rflgs: 113 
+here1
+here3
+here4
+
+ins:103 rip:0xffffa00000009669 in:cmp $0xff,%r14w
+dispatching for NIE
+rax: 1f4 rbx: ffffa00300020000 rcx: 80000 rdx: 1 rdi: 8400040004000 
+rsi: 1 r8: ffffa0010003fea0 r9: 0 r10: ffffa0010003ff8f r11: 8400040004000 
+r12: 8 r13: ffffa0010003fe01 r14: 13 r15: 8400040004000 rip: ffffa0000000966e 
+rsp: ffffa0010003fd20 rbp: ffffa0010003fda0 rflgs: 117 
+here1
+here3
+here4
+
+ins:104 rip:0xffffa0000000966e in:jz 0x2d(%rip)
+updateJCCDecision 
+rax: 1f4 rbx: ffffa00300020000 rcx: 80000 rdx: 1 rdi: 8400040004000 
+rsi: 1 r8: ffffa0010003fea0 r9: 0 r10: ffffa0010003ff8f r11: 8400040004000 
+r12: 8 r13: ffffa0010003fe01 r14: 13 r15: 8400040004000 rip: ffffa00000009670 
+rsp: ffffa0010003fd20 rbp: ffffa0010003fda0 rflgs: 117 
+here1
+here3
+here4
+
+ins:105 rip:0xffffa00000009670 in:movzx %r14w,%eax
+dispatching for NIE
+rax: 13 rbx: ffffa00300020000 rcx: 80000 rdx: 1 rdi: 8400040004000 
+rsi: 1 r8: ffffa0010003fea0 r9: 0 r10: ffffa0010003ff8f r11: 8400040004000 
+r12: 8 r13: ffffa0010003fe01 r14: 13 r15: 8400040004000 rip: ffffa00000009674 
+rsp: ffffa0010003fd20 rbp: ffffa0010003fda0 rflgs: 117 
+here1
+here3
+here4
+
+ins:106 rip:0xffffa00000009674 in:lea 0x0(%rax,%rax,4),%rax
+dispatching for NIE
+rax: 5f rbx: ffffa00300020000 rcx: 80000 rdx: 1 rdi: 8400040004000 
+rsi: 1 r8: ffffa0010003fea0 r9: 0 r10: ffffa0010003ff8f r11: 8400040004000 
+r12: 8 r13: ffffa0010003fe01 r14: 13 r15: 8400040004000 rip: ffffa00000009678 
+rsp: ffffa0010003fd20 rbp: ffffa0010003fda0 rflgs: 117 
+here1
+here3
+here4
+
+ins:107 rip:0xffffa00000009678 in:lea 0x0(%rax,%rax,4),%rax
+dispatching for NIE
+rax: 1db rbx: ffffa00300020000 rcx: 80000 rdx: 1 rdi: 8400040004000 
+rsi: 1 r8: ffffa0010003fea0 r9: 0 r10: ffffa0010003ff8f r11: 8400040004000 
+r12: 8 r13: ffffa0010003fe01 r14: 13 r15: 8400040004000 rip: ffffa0000000967c 
+rsp: ffffa0010003fd20 rbp: ffffa0010003fda0 rflgs: 117 
+here1
+here3
+here4
+
+ins:108 rip:0xffffa0000000967c in:cmp %r15,0x1e2(%rbx,%rax,1)
+sym mem ...
+dispatching for SIE
+ok3
+src : pa_19
+
+dst : 8400040004000 dst sz: 0x8
+dst aft sign extend : 8400040004000
+rax: 1db rbx: ffffa00300020000 rcx: 80000 rdx: 1 rdi: 8400040004000 
+rsi: 1 r8: ffffa0010003fea0 r9: 0 r10: ffffa0010003ff8f r11: 8400040004000 
+r12: 8 r13: ffffa0010003fe01 r14: 13 r15: 8400040004000 rip: ffffa00000009684 
+rsp: ffffa0010003fd20 rbp: ffffa0010003fda0 rflgs: 117 
+here1
+here3
+here4
+
+ins:109 rip:0xffffa00000009684 in:jnz 0xffffffdc(%rip)
+updateJCCDecision 
+debug_log c_BranchInsn : rip :0xffffa00000009684  insn count: 6e
+branches ffffa00000009660 ffffa00000009686
+New_constraint:Distinct(Sub(pa_19,0x8400040004000))
+BtoTake ffffa00000009660
+debug_log Sym branch in path explore: bExecute: 1
+rax: 1db rbx: ffffa00300020000 rcx: 80000 rdx: 1 rdi: 8400040004000 
+rsi: 1 r8: ffffa0010003fea0 r9: 0 r10: ffffa0010003ff8f r11: 8400040004000 
+r12: 8 r13: ffffa0010003fe01 r14: 13 r15: 8400040004000 rip: ffffa00000009660 
+rsp: ffffa0010003fd20 rbp: ffffa0010003fda0 rflgs: 117 
+here1
+here3
+here4
+
+ins:110 rip:0xffffa00000009660 in:movzx 0x1ee(%rbx,%rax,1),%r14d
+dispatching for NIE
+rax: 1db rbx: ffffa00300020000 rcx: 80000 rdx: 1 rdi: 8400040004000 
+rsi: 1 r8: ffffa0010003fea0 r9: 0 r10: ffffa0010003ff8f r11: 8400040004000 
+r12: 8 r13: ffffa0010003fe01 r14: 12 r15: 8400040004000 rip: ffffa00000009669 
+rsp: ffffa0010003fd20 rbp: ffffa0010003fda0 rflgs: 117 
+here1
+here3
+here4
+
+ins:111 rip:0xffffa00000009669 in:cmp $0xff,%r14w
+dispatching for NIE
+rax: 1db rbx: ffffa00300020000 rcx: 80000 rdx: 1 rdi: 8400040004000 
+rsi: 1 r8: ffffa0010003fea0 r9: 0 r10: ffffa0010003ff8f r11: 8400040004000 
+r12: 8 r13: ffffa0010003fe01 r14: 12 r15: 8400040004000 rip: ffffa0000000966e 
+rsp: ffffa0010003fd20 rbp: ffffa0010003fda0 rflgs: 113 
+here1
+here3
+here4
+
+ins:112 rip:0xffffa0000000966e in:jz 0x2d(%rip)
+updateJCCDecision 
+rax: 1db rbx: ffffa00300020000 rcx: 80000 rdx: 1 rdi: 8400040004000 
+rsi: 1 r8: ffffa0010003fea0 r9: 0 r10: ffffa0010003ff8f r11: 8400040004000 
+r12: 8 r13: ffffa0010003fe01 r14: 12 r15: 8400040004000 rip: ffffa00000009670 
+rsp: ffffa0010003fd20 rbp: ffffa0010003fda0 rflgs: 113 
+here1
+here3
+here4
+
+ins:113 rip:0xffffa00000009670 in:movzx %r14w,%eax
+dispatching for NIE
+rax: 12 rbx: ffffa00300020000 rcx: 80000 rdx: 1 rdi: 8400040004000 
+rsi: 1 r8: ffffa0010003fea0 r9: 0 r10: ffffa0010003ff8f r11: 8400040004000 
+r12: 8 r13: ffffa0010003fe01 r14: 12 r15: 8400040004000 rip: ffffa00000009674 
+rsp: ffffa0010003fd20 rbp: ffffa0010003fda0 rflgs: 113 
+here1
+here3
+here4
+
+ins:114 rip:0xffffa00000009674 in:lea 0x0(%rax,%rax,4),%rax
+dispatching for NIE
+rax: 5a rbx: ffffa00300020000 rcx: 80000 rdx: 1 rdi: 8400040004000 
+rsi: 1 r8: ffffa0010003fea0 r9: 0 r10: ffffa0010003ff8f r11: 8400040004000 
+r12: 8 r13: ffffa0010003fe01 r14: 12 r15: 8400040004000 rip: ffffa00000009678 
+rsp: ffffa0010003fd20 rbp: ffffa0010003fda0 rflgs: 113 
+here1
+here3
+here4
+
+ins:115 rip:0xffffa00000009678 in:lea 0x0(%rax,%rax,4),%rax
+dispatching for NIE
+rax: 1c2 rbx: ffffa00300020000 rcx: 80000 rdx: 1 rdi: 8400040004000 
+rsi: 1 r8: ffffa0010003fea0 r9: 0 r10: ffffa0010003ff8f r11: 8400040004000 
+r12: 8 r13: ffffa0010003fe01 r14: 12 r15: 8400040004000 rip: ffffa0000000967c 
+rsp: ffffa0010003fd20 rbp: ffffa0010003fda0 rflgs: 113 
+here1
+here3
+here4
+
+ins:116 rip:0xffffa0000000967c in:cmp %r15,0x1e2(%rbx,%rax,1)
+sym mem ...
+dispatching for SIE
+ok3
+src : pa_18
+
+dst : 8400040004000 dst sz: 0x8
+dst aft sign extend : 8400040004000
+rax: 1c2 rbx: ffffa00300020000 rcx: 80000 rdx: 1 rdi: 8400040004000 
+rsi: 1 r8: ffffa0010003fea0 r9: 0 r10: ffffa0010003ff8f r11: 8400040004000 
+r12: 8 r13: ffffa0010003fe01 r14: 12 r15: 8400040004000 rip: ffffa00000009684 
+rsp: ffffa0010003fd20 rbp: ffffa0010003fda0 rflgs: 113 
+here1
+here3
+here4
+
+ins:117 rip:0xffffa00000009684 in:jnz 0xffffffdc(%rip)
+updateJCCDecision 
+debug_log c_BranchInsn : rip :0xffffa00000009684  insn count: 76
+branches ffffa00000009660 ffffa00000009686
+New_constraint:LNot(Distinct(Sub(pa_18,0x8400040004000)))
+BtoTake ffffa00000009686
+debug_log Sym branch in path explore: bExecute: 0
+rax: 1c2 rbx: ffffa00300020000 rcx: 80000 rdx: 1 rdi: 8400040004000 
+rsi: 1 r8: ffffa0010003fea0 r9: 0 r10: ffffa0010003ff8f r11: 8400040004000 
+r12: 8 r13: ffffa0010003fe01 r14: 12 r15: 8400040004000 rip: ffffa00000009686 
+rsp: ffffa0010003fd20 rbp: ffffa0010003fda0 rflgs: 153 
+here1
+here3
+here4
+
+ins:118 rip:0xffffa00000009686 in:cmp %r13b,0x1f1(%rbx,%rax,1)
+dispatching for NIE
+rax: 1c2 rbx: ffffa00300020000 rcx: 80000 rdx: 1 rdi: 8400040004000 
+rsi: 1 r8: ffffa0010003fea0 r9: 0 r10: ffffa0010003ff8f r11: 8400040004000 
+r12: 8 r13: ffffa0010003fe01 r14: 12 r15: 8400040004000 rip: ffffa0000000968e 
+rsp: ffffa0010003fd20 rbp: ffffa0010003fda0 rflgs: 197 
+here1
+here3
+here4
+
+ins:119 rip:0xffffa0000000968e in:jnz 0xffffffd2(%rip)
+updateJCCDecision 
+rax: 1c2 rbx: ffffa00300020000 rcx: 80000 rdx: 1 rdi: 8400040004000 
+rsi: 1 r8: ffffa0010003fea0 r9: 0 r10: ffffa0010003ff8f r11: 8400040004000 
+r12: 8 r13: ffffa0010003fe01 r14: 12 r15: 8400040004000 rip: ffffa00000009660 
+rsp: ffffa0010003fd20 rbp: ffffa0010003fda0 rflgs: 197 
+here1
+here3
+here4
+
+ins:120 rip:0xffffa00000009660 in:movzx 0x1ee(%rbx,%rax,1),%r14d
+dispatching for NIE
+rax: 1c2 rbx: ffffa00300020000 rcx: 80000 rdx: 1 rdi: 8400040004000 
+rsi: 1 r8: ffffa0010003fea0 r9: 0 r10: ffffa0010003ff8f r11: 8400040004000 
+r12: 8 r13: ffffa0010003fe01 r14: e r15: 8400040004000 rip: ffffa00000009669 
+rsp: ffffa0010003fd20 rbp: ffffa0010003fda0 rflgs: 197 
+here1
+here3
+here4
+
+ins:121 rip:0xffffa00000009669 in:cmp $0xff,%r14w
+dispatching for NIE
+rax: 1c2 rbx: ffffa00300020000 rcx: 80000 rdx: 1 rdi: 8400040004000 
+rsi: 1 r8: ffffa0010003fea0 r9: 0 r10: ffffa0010003ff8f r11: 8400040004000 
+r12: 8 r13: ffffa0010003fe01 r14: e r15: 8400040004000 rip: ffffa0000000966e 
+rsp: ffffa0010003fd20 rbp: ffffa0010003fda0 rflgs: 117 
+here1
+here3
+here4
+
+ins:122 rip:0xffffa0000000966e in:jz 0x2d(%rip)
+updateJCCDecision 
+rax: 1c2 rbx: ffffa00300020000 rcx: 80000 rdx: 1 rdi: 8400040004000 
+rsi: 1 r8: ffffa0010003fea0 r9: 0 r10: ffffa0010003ff8f r11: 8400040004000 
+r12: 8 r13: ffffa0010003fe01 r14: e r15: 8400040004000 rip: ffffa00000009670 
+rsp: ffffa0010003fd20 rbp: ffffa0010003fda0 rflgs: 117 
+here1
+here3
+here4
+
+ins:123 rip:0xffffa00000009670 in:movzx %r14w,%eax
+dispatching for NIE
+rax: e rbx: ffffa00300020000 rcx: 80000 rdx: 1 rdi: 8400040004000 
+rsi: 1 r8: ffffa0010003fea0 r9: 0 r10: ffffa0010003ff8f r11: 8400040004000 
+r12: 8 r13: ffffa0010003fe01 r14: e r15: 8400040004000 rip: ffffa00000009674 
+rsp: ffffa0010003fd20 rbp: ffffa0010003fda0 rflgs: 117 
+here1
+here3
+here4
+
+ins:124 rip:0xffffa00000009674 in:lea 0x0(%rax,%rax,4),%rax
+dispatching for NIE
+rax: 46 rbx: ffffa00300020000 rcx: 80000 rdx: 1 rdi: 8400040004000 
+rsi: 1 r8: ffffa0010003fea0 r9: 0 r10: ffffa0010003ff8f r11: 8400040004000 
+r12: 8 r13: ffffa0010003fe01 r14: e r15: 8400040004000 rip: ffffa00000009678 
+rsp: ffffa0010003fd20 rbp: ffffa0010003fda0 rflgs: 117 
+here1
+here3
+here4
+
+ins:125 rip:0xffffa00000009678 in:lea 0x0(%rax,%rax,4),%rax
+dispatching for NIE
+rax: 15e rbx: ffffa00300020000 rcx: 80000 rdx: 1 rdi: 8400040004000 
+rsi: 1 r8: ffffa0010003fea0 r9: 0 r10: ffffa0010003ff8f r11: 8400040004000 
+r12: 8 r13: ffffa0010003fe01 r14: e r15: 8400040004000 rip: ffffa0000000967c 
+rsp: ffffa0010003fd20 rbp: ffffa0010003fda0 rflgs: 117 
+here1
+here3
+here4
+
+ins:126 rip:0xffffa0000000967c in:cmp %r15,0x1e2(%rbx,%rax,1)
+sym mem ...
+dispatching for SIE
+ok3
+src : pa_14
+
+dst : 8400040004000 dst sz: 0x8
+dst aft sign extend : 8400040004000
+rax: 15e rbx: ffffa00300020000 rcx: 80000 rdx: 1 rdi: 8400040004000 
+rsi: 1 r8: ffffa0010003fea0 r9: 0 r10: ffffa0010003ff8f r11: 8400040004000 
+r12: 8 r13: ffffa0010003fe01 r14: e r15: 8400040004000 rip: ffffa00000009684 
+rsp: ffffa0010003fd20 rbp: ffffa0010003fda0 rflgs: 117 
+here1
+here3
+here4
+
+ins:127 rip:0xffffa00000009684 in:jnz 0xffffffdc(%rip)
+updateJCCDecision 
+debug_log c_BranchInsn : rip :0xffffa00000009684  insn count: 80
+branches ffffa00000009660 ffffa00000009686
+New_constraint:Distinct(Sub(pa_14,0x8400040004000))
+BtoTake ffffa00000009660
+debug_log Sym branch in path explore: bExecute: 1
+rax: 15e rbx: ffffa00300020000 rcx: 80000 rdx: 1 rdi: 8400040004000 
+rsi: 1 r8: ffffa0010003fea0 r9: 0 r10: ffffa0010003ff8f r11: 8400040004000 
+r12: 8 r13: ffffa0010003fe01 r14: e r15: 8400040004000 rip: ffffa00000009660 
+rsp: ffffa0010003fd20 rbp: ffffa0010003fda0 rflgs: 117 
+here1
+here3
+here4
+
+ins:128 rip:0xffffa00000009660 in:movzx 0x1ee(%rbx,%rax,1),%r14d
+dispatching for NIE
+rax: 15e rbx: ffffa00300020000 rcx: 80000 rdx: 1 rdi: 8400040004000 
+rsi: 1 r8: ffffa0010003fea0 r9: 0 r10: ffffa0010003ff8f r11: 8400040004000 
+r12: 8 r13: ffffa0010003fe01 r14: d r15: 8400040004000 rip: ffffa00000009669 
+rsp: ffffa0010003fd20 rbp: ffffa0010003fda0 rflgs: 117 
+here1
+here3
+here4
+
+ins:129 rip:0xffffa00000009669 in:cmp $0xff,%r14w
+dispatching for NIE
+rax: 15e rbx: ffffa00300020000 rcx: 80000 rdx: 1 rdi: 8400040004000 
+rsi: 1 r8: ffffa0010003fea0 r9: 0 r10: ffffa0010003ff8f r11: 8400040004000 
+r12: 8 r13: ffffa0010003fe01 r14: d r15: 8400040004000 rip: ffffa0000000966e 
+rsp: ffffa0010003fd20 rbp: ffffa0010003fda0 rflgs: 113 
+here1
+here3
+here4
+
+ins:130 rip:0xffffa0000000966e in:jz 0x2d(%rip)
+updateJCCDecision 
+rax: 15e rbx: ffffa00300020000 rcx: 80000 rdx: 1 rdi: 8400040004000 
+rsi: 1 r8: ffffa0010003fea0 r9: 0 r10: ffffa0010003ff8f r11: 8400040004000 
+r12: 8 r13: ffffa0010003fe01 r14: d r15: 8400040004000 rip: ffffa00000009670 
+rsp: ffffa0010003fd20 rbp: ffffa0010003fda0 rflgs: 113 
+here1
+here3
+here4
+
+ins:131 rip:0xffffa00000009670 in:movzx %r14w,%eax
+dispatching for NIE
+rax: d rbx: ffffa00300020000 rcx: 80000 rdx: 1 rdi: 8400040004000 
+rsi: 1 r8: ffffa0010003fea0 r9: 0 r10: ffffa0010003ff8f r11: 8400040004000 
+r12: 8 r13: ffffa0010003fe01 r14: d r15: 8400040004000 rip: ffffa00000009674 
+rsp: ffffa0010003fd20 rbp: ffffa0010003fda0 rflgs: 113 
+here1
+here3
+here4
+
+ins:132 rip:0xffffa00000009674 in:lea 0x0(%rax,%rax,4),%rax
+dispatching for NIE
+rax: 41 rbx: ffffa00300020000 rcx: 80000 rdx: 1 rdi: 8400040004000 
+rsi: 1 r8: ffffa0010003fea0 r9: 0 r10: ffffa0010003ff8f r11: 8400040004000 
+r12: 8 r13: ffffa0010003fe01 r14: d r15: 8400040004000 rip: ffffa00000009678 
+rsp: ffffa0010003fd20 rbp: ffffa0010003fda0 rflgs: 113 
+here1
+here3
+here4
+
+ins:133 rip:0xffffa00000009678 in:lea 0x0(%rax,%rax,4),%rax
+dispatching for NIE
+rax: 145 rbx: ffffa00300020000 rcx: 80000 rdx: 1 rdi: 8400040004000 
+rsi: 1 r8: ffffa0010003fea0 r9: 0 r10: ffffa0010003ff8f r11: 8400040004000 
+r12: 8 r13: ffffa0010003fe01 r14: d r15: 8400040004000 rip: ffffa0000000967c 
+rsp: ffffa0010003fd20 rbp: ffffa0010003fda0 rflgs: 113 
+here1
+here3
+here4
+
+ins:134 rip:0xffffa0000000967c in:cmp %r15,0x1e2(%rbx,%rax,1)
+sym mem ...
+dispatching for SIE
+ok3
+src : pa_13
+
+dst : 8400040004000 dst sz: 0x8
+dst aft sign extend : 8400040004000
+rax: 145 rbx: ffffa00300020000 rcx: 80000 rdx: 1 rdi: 8400040004000 
+rsi: 1 r8: ffffa0010003fea0 r9: 0 r10: ffffa0010003ff8f r11: 8400040004000 
+r12: 8 r13: ffffa0010003fe01 r14: d r15: 8400040004000 rip: ffffa00000009684 
+rsp: ffffa0010003fd20 rbp: ffffa0010003fda0 rflgs: 113 
+here1
+here3
+here4
+
+ins:135 rip:0xffffa00000009684 in:jnz 0xffffffdc(%rip)
+updateJCCDecision 
+debug_log c_BranchInsn : rip :0xffffa00000009684  insn count: 88
+branches ffffa00000009660 ffffa00000009686
+New_constraint:Distinct(Sub(pa_13,0x8400040004000))
+BtoTake ffffa00000009660
+debug_log Sym branch in path explore: bExecute: 1
+rax: 145 rbx: ffffa00300020000 rcx: 80000 rdx: 1 rdi: 8400040004000 
+rsi: 1 r8: ffffa0010003fea0 r9: 0 r10: ffffa0010003ff8f r11: 8400040004000 
+r12: 8 r13: ffffa0010003fe01 r14: d r15: 8400040004000 rip: ffffa00000009660 
+rsp: ffffa0010003fd20 rbp: ffffa0010003fda0 rflgs: 113 
+here1
+here3
+here4
+
+ins:136 rip:0xffffa00000009660 in:movzx 0x1ee(%rbx,%rax,1),%r14d
+dispatching for NIE
+rax: 145 rbx: ffffa00300020000 rcx: 80000 rdx: 1 rdi: 8400040004000 
+rsi: 1 r8: ffffa0010003fea0 r9: 0 r10: ffffa0010003ff8f r11: 8400040004000 
+r12: 8 r13: ffffa0010003fe01 r14: c r15: 8400040004000 rip: ffffa00000009669 
+rsp: ffffa0010003fd20 rbp: ffffa0010003fda0 rflgs: 113 
+here1
+here3
+here4
+
+ins:137 rip:0xffffa00000009669 in:cmp $0xff,%r14w
+dispatching for NIE
+rax: 145 rbx: ffffa00300020000 rcx: 80000 rdx: 1 rdi: 8400040004000 
+rsi: 1 r8: ffffa0010003fea0 r9: 0 r10: ffffa0010003ff8f r11: 8400040004000 
+r12: 8 r13: ffffa0010003fe01 r14: c r15: 8400040004000 rip: ffffa0000000966e 
+rsp: ffffa0010003fd20 rbp: ffffa0010003fda0 rflgs: 113 
+here1
+here3
+here4
+
+ins:138 rip:0xffffa0000000966e in:jz 0x2d(%rip)
+updateJCCDecision 
+rax: 145 rbx: ffffa00300020000 rcx: 80000 rdx: 1 rdi: 8400040004000 
+rsi: 1 r8: ffffa0010003fea0 r9: 0 r10: ffffa0010003ff8f r11: 8400040004000 
+r12: 8 r13: ffffa0010003fe01 r14: c r15: 8400040004000 rip: ffffa00000009670 
+rsp: ffffa0010003fd20 rbp: ffffa0010003fda0 rflgs: 113 
+here1
+here3
+here4
+
+ins:139 rip:0xffffa00000009670 in:movzx %r14w,%eax
+dispatching for NIE
+rax: c rbx: ffffa00300020000 rcx: 80000 rdx: 1 rdi: 8400040004000 
+rsi: 1 r8: ffffa0010003fea0 r9: 0 r10: ffffa0010003ff8f r11: 8400040004000 
+r12: 8 r13: ffffa0010003fe01 r14: c r15: 8400040004000 rip: ffffa00000009674 
+rsp: ffffa0010003fd20 rbp: ffffa0010003fda0 rflgs: 113 
+here1
+here3
+here4
+
+ins:140 rip:0xffffa00000009674 in:lea 0x0(%rax,%rax,4),%rax
+dispatching for NIE
+rax: 3c rbx: ffffa00300020000 rcx: 80000 rdx: 1 rdi: 8400040004000 
+rsi: 1 r8: ffffa0010003fea0 r9: 0 r10: ffffa0010003ff8f r11: 8400040004000 
+r12: 8 r13: ffffa0010003fe01 r14: c r15: 8400040004000 rip: ffffa00000009678 
+rsp: ffffa0010003fd20 rbp: ffffa0010003fda0 rflgs: 113 
+here1
+here3
+here4
+
+ins:141 rip:0xffffa00000009678 in:lea 0x0(%rax,%rax,4),%rax
+dispatching for NIE
+rax: 12c rbx: ffffa00300020000 rcx: 80000 rdx: 1 rdi: 8400040004000 
+rsi: 1 r8: ffffa0010003fea0 r9: 0 r10: ffffa0010003ff8f r11: 8400040004000 
+r12: 8 r13: ffffa0010003fe01 r14: c r15: 8400040004000 rip: ffffa0000000967c 
+rsp: ffffa0010003fd20 rbp: ffffa0010003fda0 rflgs: 113 
+here1
+here3
+here4
+
+ins:142 rip:0xffffa0000000967c in:cmp %r15,0x1e2(%rbx,%rax,1)
+sym mem ...
+dispatching for SIE
+ok3
+src : pa_12
+
+dst : 8400040004000 dst sz: 0x8
+dst aft sign extend : 8400040004000
+rax: 12c rbx: ffffa00300020000 rcx: 80000 rdx: 1 rdi: 8400040004000 
+rsi: 1 r8: ffffa0010003fea0 r9: 0 r10: ffffa0010003ff8f r11: 8400040004000 
+r12: 8 r13: ffffa0010003fe01 r14: c r15: 8400040004000 rip: ffffa00000009684 
+rsp: ffffa0010003fd20 rbp: ffffa0010003fda0 rflgs: 113 
+here1
+here3
+here4
+
+ins:143 rip:0xffffa00000009684 in:jnz 0xffffffdc(%rip)
+updateJCCDecision 
+debug_log c_BranchInsn : rip :0xffffa00000009684  insn count: 90
+branches ffffa00000009660 ffffa00000009686
+New_constraint:Distinct(Sub(pa_12,0x8400040004000))
+BtoTake ffffa00000009660
+debug_log Sym branch in path explore: bExecute: 1
+rax: 12c rbx: ffffa00300020000 rcx: 80000 rdx: 1 rdi: 8400040004000 
+rsi: 1 r8: ffffa0010003fea0 r9: 0 r10: ffffa0010003ff8f r11: 8400040004000 
+r12: 8 r13: ffffa0010003fe01 r14: c r15: 8400040004000 rip: ffffa00000009660 
+rsp: ffffa0010003fd20 rbp: ffffa0010003fda0 rflgs: 113 
+here1
+here3
+here4
+
+ins:144 rip:0xffffa00000009660 in:movzx 0x1ee(%rbx,%rax,1),%r14d
+dispatching for NIE
+rax: 12c rbx: ffffa00300020000 rcx: 80000 rdx: 1 rdi: 8400040004000 
+rsi: 1 r8: ffffa0010003fea0 r9: 0 r10: ffffa0010003ff8f r11: 8400040004000 
+r12: 8 r13: ffffa0010003fe01 r14: b r15: 8400040004000 rip: ffffa00000009669 
+rsp: ffffa0010003fd20 rbp: ffffa0010003fda0 rflgs: 113 
+here1
+here3
+here4
+
+ins:145 rip:0xffffa00000009669 in:cmp $0xff,%r14w
+dispatching for NIE
+rax: 12c rbx: ffffa00300020000 rcx: 80000 rdx: 1 rdi: 8400040004000 
+rsi: 1 r8: ffffa0010003fea0 r9: 0 r10: ffffa0010003ff8f r11: 8400040004000 
+r12: 8 r13: ffffa0010003fe01 r14: b r15: 8400040004000 rip: ffffa0000000966e 
+rsp: ffffa0010003fd20 rbp: ffffa0010003fda0 rflgs: 117 
+here1
+here3
+here4
+
+ins:146 rip:0xffffa0000000966e in:jz 0x2d(%rip)
+updateJCCDecision 
+rax: 12c rbx: ffffa00300020000 rcx: 80000 rdx: 1 rdi: 8400040004000 
+rsi: 1 r8: ffffa0010003fea0 r9: 0 r10: ffffa0010003ff8f r11: 8400040004000 
+r12: 8 r13: ffffa0010003fe01 r14: b r15: 8400040004000 rip: ffffa00000009670 
+rsp: ffffa0010003fd20 rbp: ffffa0010003fda0 rflgs: 117 
+here1
+here3
+here4
+
+ins:147 rip:0xffffa00000009670 in:movzx %r14w,%eax
+dispatching for NIE
+rax: b rbx: ffffa00300020000 rcx: 80000 rdx: 1 rdi: 8400040004000 
+rsi: 1 r8: ffffa0010003fea0 r9: 0 r10: ffffa0010003ff8f r11: 8400040004000 
+r12: 8 r13: ffffa0010003fe01 r14: b r15: 8400040004000 rip: ffffa00000009674 
+rsp: ffffa0010003fd20 rbp: ffffa0010003fda0 rflgs: 117 
+here1
+here3
+here4
+
+ins:148 rip:0xffffa00000009674 in:lea 0x0(%rax,%rax,4),%rax
+dispatching for NIE
+rax: 37 rbx: ffffa00300020000 rcx: 80000 rdx: 1 rdi: 8400040004000 
+rsi: 1 r8: ffffa0010003fea0 r9: 0 r10: ffffa0010003ff8f r11: 8400040004000 
+r12: 8 r13: ffffa0010003fe01 r14: b r15: 8400040004000 rip: ffffa00000009678 
+rsp: ffffa0010003fd20 rbp: ffffa0010003fda0 rflgs: 117 
+here1
+here3
+here4
+
+ins:149 rip:0xffffa00000009678 in:lea 0x0(%rax,%rax,4),%rax
+dispatching for NIE
+rax: 113 rbx: ffffa00300020000 rcx: 80000 rdx: 1 rdi: 8400040004000 
+rsi: 1 r8: ffffa0010003fea0 r9: 0 r10: ffffa0010003ff8f r11: 8400040004000 
+r12: 8 r13: ffffa0010003fe01 r14: b r15: 8400040004000 rip: ffffa0000000967c 
+rsp: ffffa0010003fd20 rbp: ffffa0010003fda0 rflgs: 117 
+here1
+here3
+here4
+
+ins:150 rip:0xffffa0000000967c in:cmp %r15,0x1e2(%rbx,%rax,1)
+sym mem ...
+dispatching for SIE
+ok3
+src : pa_11
+
+dst : 8400040004000 dst sz: 0x8
+dst aft sign extend : 8400040004000
+rax: 113 rbx: ffffa00300020000 rcx: 80000 rdx: 1 rdi: 8400040004000 
+rsi: 1 r8: ffffa0010003fea0 r9: 0 r10: ffffa0010003ff8f r11: 8400040004000 
+r12: 8 r13: ffffa0010003fe01 r14: b r15: 8400040004000 rip: ffffa00000009684 
+rsp: ffffa0010003fd20 rbp: ffffa0010003fda0 rflgs: 117 
+here1
+here3
+here4
+
+ins:151 rip:0xffffa00000009684 in:jnz 0xffffffdc(%rip)
+updateJCCDecision 
+debug_log c_BranchInsn : rip :0xffffa00000009684  insn count: 98
+branches ffffa00000009660 ffffa00000009686
+New_constraint:Distinct(Sub(pa_11,0x8400040004000))
+BtoTake ffffa00000009660
+debug_log Sym branch in path explore: bExecute: 1
+rax: 113 rbx: ffffa00300020000 rcx: 80000 rdx: 1 rdi: 8400040004000 
+rsi: 1 r8: ffffa0010003fea0 r9: 0 r10: ffffa0010003ff8f r11: 8400040004000 
+r12: 8 r13: ffffa0010003fe01 r14: b r15: 8400040004000 rip: ffffa00000009660 
+rsp: ffffa0010003fd20 rbp: ffffa0010003fda0 rflgs: 117 
+here1
+here3
+here4
+
+ins:152 rip:0xffffa00000009660 in:movzx 0x1ee(%rbx,%rax,1),%r14d
+dispatching for NIE
+rax: 113 rbx: ffffa00300020000 rcx: 80000 rdx: 1 rdi: 8400040004000 
+rsi: 1 r8: ffffa0010003fea0 r9: 0 r10: ffffa0010003ff8f r11: 8400040004000 
+r12: 8 r13: ffffa0010003fe01 r14: a r15: 8400040004000 rip: ffffa00000009669 
+rsp: ffffa0010003fd20 rbp: ffffa0010003fda0 rflgs: 117 
+here1
+here3
+here4
+
+ins:153 rip:0xffffa00000009669 in:cmp $0xff,%r14w
+dispatching for NIE
+rax: 113 rbx: ffffa00300020000 rcx: 80000 rdx: 1 rdi: 8400040004000 
+rsi: 1 r8: ffffa0010003fea0 r9: 0 r10: ffffa0010003ff8f r11: 8400040004000 
+r12: 8 r13: ffffa0010003fe01 r14: a r15: 8400040004000 rip: ffffa0000000966e 
+rsp: ffffa0010003fd20 rbp: ffffa0010003fda0 rflgs: 113 
+here1
+here3
+here4
+
+ins:154 rip:0xffffa0000000966e in:jz 0x2d(%rip)
+updateJCCDecision 
+rax: 113 rbx: ffffa00300020000 rcx: 80000 rdx: 1 rdi: 8400040004000 
+rsi: 1 r8: ffffa0010003fea0 r9: 0 r10: ffffa0010003ff8f r11: 8400040004000 
+r12: 8 r13: ffffa0010003fe01 r14: a r15: 8400040004000 rip: ffffa00000009670 
+rsp: ffffa0010003fd20 rbp: ffffa0010003fda0 rflgs: 113 
+here1
+here3
+here4
+
+ins:155 rip:0xffffa00000009670 in:movzx %r14w,%eax
+dispatching for NIE
+rax: a rbx: ffffa00300020000 rcx: 80000 rdx: 1 rdi: 8400040004000 
+rsi: 1 r8: ffffa0010003fea0 r9: 0 r10: ffffa0010003ff8f r11: 8400040004000 
+r12: 8 r13: ffffa0010003fe01 r14: a r15: 8400040004000 rip: ffffa00000009674 
+rsp: ffffa0010003fd20 rbp: ffffa0010003fda0 rflgs: 113 
+here1
+here3
+here4
+
+ins:156 rip:0xffffa00000009674 in:lea 0x0(%rax,%rax,4),%rax
+dispatching for NIE
+rax: 32 rbx: ffffa00300020000 rcx: 80000 rdx: 1 rdi: 8400040004000 
+rsi: 1 r8: ffffa0010003fea0 r9: 0 r10: ffffa0010003ff8f r11: 8400040004000 
+r12: 8 r13: ffffa0010003fe01 r14: a r15: 8400040004000 rip: ffffa00000009678 
+rsp: ffffa0010003fd20 rbp: ffffa0010003fda0 rflgs: 113 
+here1
+here3
+here4
+
+ins:157 rip:0xffffa00000009678 in:lea 0x0(%rax,%rax,4),%rax
+dispatching for NIE
+rax: fa rbx: ffffa00300020000 rcx: 80000 rdx: 1 rdi: 8400040004000 
+rsi: 1 r8: ffffa0010003fea0 r9: 0 r10: ffffa0010003ff8f r11: 8400040004000 
+r12: 8 r13: ffffa0010003fe01 r14: a r15: 8400040004000 rip: ffffa0000000967c 
+rsp: ffffa0010003fd20 rbp: ffffa0010003fda0 rflgs: 113 
+here1
+here3
+here4
+
+ins:158 rip:0xffffa0000000967c in:cmp %r15,0x1e2(%rbx,%rax,1)
+sym mem ...
+dispatching for SIE
+ok3
+src : pa_10
+
+dst : 8400040004000 dst sz: 0x8
+dst aft sign extend : 8400040004000
+rax: fa rbx: ffffa00300020000 rcx: 80000 rdx: 1 rdi: 8400040004000 
+rsi: 1 r8: ffffa0010003fea0 r9: 0 r10: ffffa0010003ff8f r11: 8400040004000 
+r12: 8 r13: ffffa0010003fe01 r14: a r15: 8400040004000 rip: ffffa00000009684 
+rsp: ffffa0010003fd20 rbp: ffffa0010003fda0 rflgs: 113 
+here1
+here3
+here4
+
+ins:159 rip:0xffffa00000009684 in:jnz 0xffffffdc(%rip)
+updateJCCDecision 
+debug_log c_BranchInsn : rip :0xffffa00000009684  insn count: a0
+branches ffffa00000009660 ffffa00000009686
+New_constraint:Distinct(Sub(pa_10,0x8400040004000))
+BtoTake ffffa00000009660
+debug_log Sym branch in path explore: bExecute: 1
+rax: fa rbx: ffffa00300020000 rcx: 80000 rdx: 1 rdi: 8400040004000 
+rsi: 1 r8: ffffa0010003fea0 r9: 0 r10: ffffa0010003ff8f r11: 8400040004000 
+r12: 8 r13: ffffa0010003fe01 r14: a r15: 8400040004000 rip: ffffa00000009660 
+rsp: ffffa0010003fd20 rbp: ffffa0010003fda0 rflgs: 113 
+here1
+here3
+here4
+
+ins:160 rip:0xffffa00000009660 in:movzx 0x1ee(%rbx,%rax,1),%r14d
+dispatching for NIE
+rax: fa rbx: ffffa00300020000 rcx: 80000 rdx: 1 rdi: 8400040004000 
+rsi: 1 r8: ffffa0010003fea0 r9: 0 r10: ffffa0010003ff8f r11: 8400040004000 
+r12: 8 r13: ffffa0010003fe01 r14: 9 r15: 8400040004000 rip: ffffa00000009669 
+rsp: ffffa0010003fd20 rbp: ffffa0010003fda0 rflgs: 113 
+here1
+here3
+here4
+
+ins:161 rip:0xffffa00000009669 in:cmp $0xff,%r14w
+dispatching for NIE
+rax: fa rbx: ffffa00300020000 rcx: 80000 rdx: 1 rdi: 8400040004000 
+rsi: 1 r8: ffffa0010003fea0 r9: 0 r10: ffffa0010003ff8f r11: 8400040004000 
+r12: 8 r13: ffffa0010003fe01 r14: 9 r15: 8400040004000 rip: ffffa0000000966e 
+rsp: ffffa0010003fd20 rbp: ffffa0010003fda0 rflgs: 117 
+here1
+here3
+here4
+
+ins:162 rip:0xffffa0000000966e in:jz 0x2d(%rip)
+updateJCCDecision 
+rax: fa rbx: ffffa00300020000 rcx: 80000 rdx: 1 rdi: 8400040004000 
+rsi: 1 r8: ffffa0010003fea0 r9: 0 r10: ffffa0010003ff8f r11: 8400040004000 
+r12: 8 r13: ffffa0010003fe01 r14: 9 r15: 8400040004000 rip: ffffa00000009670 
+rsp: ffffa0010003fd20 rbp: ffffa0010003fda0 rflgs: 117 
+here1
+here3
+here4
+
+ins:163 rip:0xffffa00000009670 in:movzx %r14w,%eax
+dispatching for NIE
+rax: 9 rbx: ffffa00300020000 rcx: 80000 rdx: 1 rdi: 8400040004000 
+rsi: 1 r8: ffffa0010003fea0 r9: 0 r10: ffffa0010003ff8f r11: 8400040004000 
+r12: 8 r13: ffffa0010003fe01 r14: 9 r15: 8400040004000 rip: ffffa00000009674 
+rsp: ffffa0010003fd20 rbp: ffffa0010003fda0 rflgs: 117 
+here1
+here3
+here4
+
+ins:164 rip:0xffffa00000009674 in:lea 0x0(%rax,%rax,4),%rax
+dispatching for NIE
+rax: 2d rbx: ffffa00300020000 rcx: 80000 rdx: 1 rdi: 8400040004000 
+rsi: 1 r8: ffffa0010003fea0 r9: 0 r10: ffffa0010003ff8f r11: 8400040004000 
+r12: 8 r13: ffffa0010003fe01 r14: 9 r15: 8400040004000 rip: ffffa00000009678 
+rsp: ffffa0010003fd20 rbp: ffffa0010003fda0 rflgs: 117 
+here1
+here3
+here4
+
+ins:165 rip:0xffffa00000009678 in:lea 0x0(%rax,%rax,4),%rax
+dispatching for NIE
+rax: e1 rbx: ffffa00300020000 rcx: 80000 rdx: 1 rdi: 8400040004000 
+rsi: 1 r8: ffffa0010003fea0 r9: 0 r10: ffffa0010003ff8f r11: 8400040004000 
+r12: 8 r13: ffffa0010003fe01 r14: 9 r15: 8400040004000 rip: ffffa0000000967c 
+rsp: ffffa0010003fd20 rbp: ffffa0010003fda0 rflgs: 117 
+here1
+here3
+here4
+
+ins:166 rip:0xffffa0000000967c in:cmp %r15,0x1e2(%rbx,%rax,1)
+sym mem ...
+dispatching for SIE
+ok3
+src : pa_9
+
+dst : 8400040004000 dst sz: 0x8
+dst aft sign extend : 8400040004000
+rax: e1 rbx: ffffa00300020000 rcx: 80000 rdx: 1 rdi: 8400040004000 
+rsi: 1 r8: ffffa0010003fea0 r9: 0 r10: ffffa0010003ff8f r11: 8400040004000 
+r12: 8 r13: ffffa0010003fe01 r14: 9 r15: 8400040004000 rip: ffffa00000009684 
+rsp: ffffa0010003fd20 rbp: ffffa0010003fda0 rflgs: 117 
+here1
+here3
+here4
+
+ins:167 rip:0xffffa00000009684 in:jnz 0xffffffdc(%rip)
+updateJCCDecision 
+debug_log c_BranchInsn : rip :0xffffa00000009684  insn count: a8
+branches ffffa00000009660 ffffa00000009686
+New_constraint:Distinct(Sub(pa_9,0x8400040004000))
+BtoTake ffffa00000009660
+debug_log Sym branch in path explore: bExecute: 1
+rax: e1 rbx: ffffa00300020000 rcx: 80000 rdx: 1 rdi: 8400040004000 
+rsi: 1 r8: ffffa0010003fea0 r9: 0 r10: ffffa0010003ff8f r11: 8400040004000 
+r12: 8 r13: ffffa0010003fe01 r14: 9 r15: 8400040004000 rip: ffffa00000009660 
+rsp: ffffa0010003fd20 rbp: ffffa0010003fda0 rflgs: 117 
+here1
+here3
+here4
+
+ins:168 rip:0xffffa00000009660 in:movzx 0x1ee(%rbx,%rax,1),%r14d
+dispatching for NIE
+rax: e1 rbx: ffffa00300020000 rcx: 80000 rdx: 1 rdi: 8400040004000 
+rsi: 1 r8: ffffa0010003fea0 r9: 0 r10: ffffa0010003ff8f r11: 8400040004000 
+r12: 8 r13: ffffa0010003fe01 r14: 8 r15: 8400040004000 rip: ffffa00000009669 
+rsp: ffffa0010003fd20 rbp: ffffa0010003fda0 rflgs: 117 
+here1
+here3
+here4
+
+ins:169 rip:0xffffa00000009669 in:cmp $0xff,%r14w
+dispatching for NIE
+rax: e1 rbx: ffffa00300020000 rcx: 80000 rdx: 1 rdi: 8400040004000 
+rsi: 1 r8: ffffa0010003fea0 r9: 0 r10: ffffa0010003ff8f r11: 8400040004000 
+r12: 8 r13: ffffa0010003fe01 r14: 8 r15: 8400040004000 rip: ffffa0000000966e 
+rsp: ffffa0010003fd20 rbp: ffffa0010003fda0 rflgs: 117 
+here1
+here3
+here4
+
+ins:170 rip:0xffffa0000000966e in:jz 0x2d(%rip)
+updateJCCDecision 
+rax: e1 rbx: ffffa00300020000 rcx: 80000 rdx: 1 rdi: 8400040004000 
+rsi: 1 r8: ffffa0010003fea0 r9: 0 r10: ffffa0010003ff8f r11: 8400040004000 
+r12: 8 r13: ffffa0010003fe01 r14: 8 r15: 8400040004000 rip: ffffa00000009670 
+rsp: ffffa0010003fd20 rbp: ffffa0010003fda0 rflgs: 117 
+here1
+here3
+here4
+
+ins:171 rip:0xffffa00000009670 in:movzx %r14w,%eax
+dispatching for NIE
+rax: 8 rbx: ffffa00300020000 rcx: 80000 rdx: 1 rdi: 8400040004000 
+rsi: 1 r8: ffffa0010003fea0 r9: 0 r10: ffffa0010003ff8f r11: 8400040004000 
+r12: 8 r13: ffffa0010003fe01 r14: 8 r15: 8400040004000 rip: ffffa00000009674 
+rsp: ffffa0010003fd20 rbp: ffffa0010003fda0 rflgs: 117 
+here1
+here3
+here4
+
+ins:172 rip:0xffffa00000009674 in:lea 0x0(%rax,%rax,4),%rax
+dispatching for NIE
+rax: 28 rbx: ffffa00300020000 rcx: 80000 rdx: 1 rdi: 8400040004000 
+rsi: 1 r8: ffffa0010003fea0 r9: 0 r10: ffffa0010003ff8f r11: 8400040004000 
+r12: 8 r13: ffffa0010003fe01 r14: 8 r15: 8400040004000 rip: ffffa00000009678 
+rsp: ffffa0010003fd20 rbp: ffffa0010003fda0 rflgs: 117 
+here1
+here3
+here4
+
+ins:173 rip:0xffffa00000009678 in:lea 0x0(%rax,%rax,4),%rax
+dispatching for NIE
+rax: c8 rbx: ffffa00300020000 rcx: 80000 rdx: 1 rdi: 8400040004000 
+rsi: 1 r8: ffffa0010003fea0 r9: 0 r10: ffffa0010003ff8f r11: 8400040004000 
+r12: 8 r13: ffffa0010003fe01 r14: 8 r15: 8400040004000 rip: ffffa0000000967c 
+rsp: ffffa0010003fd20 rbp: ffffa0010003fda0 rflgs: 117 
+here1
+here3
+here4
+
+ins:174 rip:0xffffa0000000967c in:cmp %r15,0x1e2(%rbx,%rax,1)
+sym mem ...
+dispatching for SIE
+ok3
+src : pa_8
+
+dst : 8400040004000 dst sz: 0x8
+dst aft sign extend : 8400040004000
+rax: c8 rbx: ffffa00300020000 rcx: 80000 rdx: 1 rdi: 8400040004000 
+rsi: 1 r8: ffffa0010003fea0 r9: 0 r10: ffffa0010003ff8f r11: 8400040004000 
+r12: 8 r13: ffffa0010003fe01 r14: 8 r15: 8400040004000 rip: ffffa00000009684 
+rsp: ffffa0010003fd20 rbp: ffffa0010003fda0 rflgs: 117 
+here1
+here3
+here4
+
+ins:175 rip:0xffffa00000009684 in:jnz 0xffffffdc(%rip)
+updateJCCDecision 
+debug_log c_BranchInsn : rip :0xffffa00000009684  insn count: b0
+branches ffffa00000009660 ffffa00000009686
+New_constraint:Distinct(Sub(pa_8,0x8400040004000))
+BtoTake ffffa00000009660
+debug_log Sym branch in path explore: bExecute: 1
+rax: c8 rbx: ffffa00300020000 rcx: 80000 rdx: 1 rdi: 8400040004000 
+rsi: 1 r8: ffffa0010003fea0 r9: 0 r10: ffffa0010003ff8f r11: 8400040004000 
+r12: 8 r13: ffffa0010003fe01 r14: 8 r15: 8400040004000 rip: ffffa00000009660 
+rsp: ffffa0010003fd20 rbp: ffffa0010003fda0 rflgs: 117 
+here1
+here3
+here4
+
+ins:176 rip:0xffffa00000009660 in:movzx 0x1ee(%rbx,%rax,1),%r14d
+dispatching for NIE
+rax: c8 rbx: ffffa00300020000 rcx: 80000 rdx: 1 rdi: 8400040004000 
+rsi: 1 r8: ffffa0010003fea0 r9: 0 r10: ffffa0010003ff8f r11: 8400040004000 
+r12: 8 r13: ffffa0010003fe01 r14: 7 r15: 8400040004000 rip: ffffa00000009669 
+rsp: ffffa0010003fd20 rbp: ffffa0010003fda0 rflgs: 117 
+here1
+here3
+here4
+
+ins:177 rip:0xffffa00000009669 in:cmp $0xff,%r14w
+dispatching for NIE
+rax: c8 rbx: ffffa00300020000 rcx: 80000 rdx: 1 rdi: 8400040004000 
+rsi: 1 r8: ffffa0010003fea0 r9: 0 r10: ffffa0010003ff8f r11: 8400040004000 
+r12: 8 r13: ffffa0010003fe01 r14: 7 r15: 8400040004000 rip: ffffa0000000966e 
+rsp: ffffa0010003fd20 rbp: ffffa0010003fda0 rflgs: 113 
+here1
+here3
+here4
+
+ins:178 rip:0xffffa0000000966e in:jz 0x2d(%rip)
+updateJCCDecision 
+rax: c8 rbx: ffffa00300020000 rcx: 80000 rdx: 1 rdi: 8400040004000 
+rsi: 1 r8: ffffa0010003fea0 r9: 0 r10: ffffa0010003ff8f r11: 8400040004000 
+r12: 8 r13: ffffa0010003fe01 r14: 7 r15: 8400040004000 rip: ffffa00000009670 
+rsp: ffffa0010003fd20 rbp: ffffa0010003fda0 rflgs: 113 
+here1
+here3
+here4
+
+ins:179 rip:0xffffa00000009670 in:movzx %r14w,%eax
+dispatching for NIE
+rax: 7 rbx: ffffa00300020000 rcx: 80000 rdx: 1 rdi: 8400040004000 
+rsi: 1 r8: ffffa0010003fea0 r9: 0 r10: ffffa0010003ff8f r11: 8400040004000 
+r12: 8 r13: ffffa0010003fe01 r14: 7 r15: 8400040004000 rip: ffffa00000009674 
+rsp: ffffa0010003fd20 rbp: ffffa0010003fda0 rflgs: 113 
+here1
+here3
+here4
+
+ins:180 rip:0xffffa00000009674 in:lea 0x0(%rax,%rax,4),%rax
+dispatching for NIE
+rax: 23 rbx: ffffa00300020000 rcx: 80000 rdx: 1 rdi: 8400040004000 
+rsi: 1 r8: ffffa0010003fea0 r9: 0 r10: ffffa0010003ff8f r11: 8400040004000 
+r12: 8 r13: ffffa0010003fe01 r14: 7 r15: 8400040004000 rip: ffffa00000009678 
+rsp: ffffa0010003fd20 rbp: ffffa0010003fda0 rflgs: 113 
+here1
+here3
+here4
+
+ins:181 rip:0xffffa00000009678 in:lea 0x0(%rax,%rax,4),%rax
+dispatching for NIE
+rax: af rbx: ffffa00300020000 rcx: 80000 rdx: 1 rdi: 8400040004000 
+rsi: 1 r8: ffffa0010003fea0 r9: 0 r10: ffffa0010003ff8f r11: 8400040004000 
+r12: 8 r13: ffffa0010003fe01 r14: 7 r15: 8400040004000 rip: ffffa0000000967c 
+rsp: ffffa0010003fd20 rbp: ffffa0010003fda0 rflgs: 113 
+here1
+here3
+here4
+
+ins:182 rip:0xffffa0000000967c in:cmp %r15,0x1e2(%rbx,%rax,1)
+sym mem ...
+dispatching for SIE
+ok3
+src : pa_7
+
+dst : 8400040004000 dst sz: 0x8
+dst aft sign extend : 8400040004000
+rax: af rbx: ffffa00300020000 rcx: 80000 rdx: 1 rdi: 8400040004000 
+rsi: 1 r8: ffffa0010003fea0 r9: 0 r10: ffffa0010003ff8f r11: 8400040004000 
+r12: 8 r13: ffffa0010003fe01 r14: 7 r15: 8400040004000 rip: ffffa00000009684 
+rsp: ffffa0010003fd20 rbp: ffffa0010003fda0 rflgs: 113 
+here1
+here3
+here4
+
+ins:183 rip:0xffffa00000009684 in:jnz 0xffffffdc(%rip)
+updateJCCDecision 
+debug_log c_BranchInsn : rip :0xffffa00000009684  insn count: b8
+branches ffffa00000009660 ffffa00000009686
+New_constraint:Distinct(Sub(pa_7,0x8400040004000))
+BtoTake ffffa00000009660
+debug_log Sym branch in path explore: bExecute: 1
+rax: af rbx: ffffa00300020000 rcx: 80000 rdx: 1 rdi: 8400040004000 
+rsi: 1 r8: ffffa0010003fea0 r9: 0 r10: ffffa0010003ff8f r11: 8400040004000 
+r12: 8 r13: ffffa0010003fe01 r14: 7 r15: 8400040004000 rip: ffffa00000009660 
+rsp: ffffa0010003fd20 rbp: ffffa0010003fda0 rflgs: 113 
+here1
+here3
+here4
+
+ins:184 rip:0xffffa00000009660 in:movzx 0x1ee(%rbx,%rax,1),%r14d
+dispatching for NIE
+rax: af rbx: ffffa00300020000 rcx: 80000 rdx: 1 rdi: 8400040004000 
+rsi: 1 r8: ffffa0010003fea0 r9: 0 r10: ffffa0010003ff8f r11: 8400040004000 
+r12: 8 r13: ffffa0010003fe01 r14: 5 r15: 8400040004000 rip: ffffa00000009669 
+rsp: ffffa0010003fd20 rbp: ffffa0010003fda0 rflgs: 113 
+here1
+here3
+here4
+
+ins:185 rip:0xffffa00000009669 in:cmp $0xff,%r14w
+dispatching for NIE
+rax: af rbx: ffffa00300020000 rcx: 80000 rdx: 1 rdi: 8400040004000 
+rsi: 1 r8: ffffa0010003fea0 r9: 0 r10: ffffa0010003ff8f r11: 8400040004000 
+r12: 8 r13: ffffa0010003fe01 r14: 5 r15: 8400040004000 rip: ffffa0000000966e 
+rsp: ffffa0010003fd20 rbp: ffffa0010003fda0 rflgs: 117 
+here1
+here3
+here4
+
+ins:186 rip:0xffffa0000000966e in:jz 0x2d(%rip)
+updateJCCDecision 
+rax: af rbx: ffffa00300020000 rcx: 80000 rdx: 1 rdi: 8400040004000 
+rsi: 1 r8: ffffa0010003fea0 r9: 0 r10: ffffa0010003ff8f r11: 8400040004000 
+r12: 8 r13: ffffa0010003fe01 r14: 5 r15: 8400040004000 rip: ffffa00000009670 
+rsp: ffffa0010003fd20 rbp: ffffa0010003fda0 rflgs: 117 
+here1
+here3
+here4
+
+ins:187 rip:0xffffa00000009670 in:movzx %r14w,%eax
+dispatching for NIE
+rax: 5 rbx: ffffa00300020000 rcx: 80000 rdx: 1 rdi: 8400040004000 
+rsi: 1 r8: ffffa0010003fea0 r9: 0 r10: ffffa0010003ff8f r11: 8400040004000 
+r12: 8 r13: ffffa0010003fe01 r14: 5 r15: 8400040004000 rip: ffffa00000009674 
+rsp: ffffa0010003fd20 rbp: ffffa0010003fda0 rflgs: 117 
+here1
+here3
+here4
+
+ins:188 rip:0xffffa00000009674 in:lea 0x0(%rax,%rax,4),%rax
+dispatching for NIE
+rax: 19 rbx: ffffa00300020000 rcx: 80000 rdx: 1 rdi: 8400040004000 
+rsi: 1 r8: ffffa0010003fea0 r9: 0 r10: ffffa0010003ff8f r11: 8400040004000 
+r12: 8 r13: ffffa0010003fe01 r14: 5 r15: 8400040004000 rip: ffffa00000009678 
+rsp: ffffa0010003fd20 rbp: ffffa0010003fda0 rflgs: 117 
+here1
+here3
+here4
+
+ins:189 rip:0xffffa00000009678 in:lea 0x0(%rax,%rax,4),%rax
+dispatching for NIE
+rax: 7d rbx: ffffa00300020000 rcx: 80000 rdx: 1 rdi: 8400040004000 
+rsi: 1 r8: ffffa0010003fea0 r9: 0 r10: ffffa0010003ff8f r11: 8400040004000 
+r12: 8 r13: ffffa0010003fe01 r14: 5 r15: 8400040004000 rip: ffffa0000000967c 
+rsp: ffffa0010003fd20 rbp: ffffa0010003fda0 rflgs: 117 
+here1
+here3
+here4
+
+ins:190 rip:0xffffa0000000967c in:cmp %r15,0x1e2(%rbx,%rax,1)
+sym mem ...
+dispatching for SIE
+ok3
+src : pa_5
+
+dst : 8400040004000 dst sz: 0x8
+dst aft sign extend : 8400040004000
+rax: 7d rbx: ffffa00300020000 rcx: 80000 rdx: 1 rdi: 8400040004000 
+rsi: 1 r8: ffffa0010003fea0 r9: 0 r10: ffffa0010003ff8f r11: 8400040004000 
+r12: 8 r13: ffffa0010003fe01 r14: 5 r15: 8400040004000 rip: ffffa00000009684 
+rsp: ffffa0010003fd20 rbp: ffffa0010003fda0 rflgs: 117 
+here1
+here3
+here4
+
+ins:191 rip:0xffffa00000009684 in:jnz 0xffffffdc(%rip)
+updateJCCDecision 
+debug_log c_BranchInsn : rip :0xffffa00000009684  insn count: c0
+branches ffffa00000009660 ffffa00000009686
+New_constraint:Distinct(Sub(pa_5,0x8400040004000))
+BtoTake ffffa00000009660
+debug_log Sym branch in path explore: bExecute: 1
+rax: 7d rbx: ffffa00300020000 rcx: 80000 rdx: 1 rdi: 8400040004000 
+rsi: 1 r8: ffffa0010003fea0 r9: 0 r10: ffffa0010003ff8f r11: 8400040004000 
+r12: 8 r13: ffffa0010003fe01 r14: 5 r15: 8400040004000 rip: ffffa00000009660 
+rsp: ffffa0010003fd20 rbp: ffffa0010003fda0 rflgs: 117 
+here1
+here3
+here4
+
+ins:192 rip:0xffffa00000009660 in:movzx 0x1ee(%rbx,%rax,1),%r14d
+dispatching for NIE
+rax: 7d rbx: ffffa00300020000 rcx: 80000 rdx: 1 rdi: 8400040004000 
+rsi: 1 r8: ffffa0010003fea0 r9: 0 r10: ffffa0010003ff8f r11: 8400040004000 
+r12: 8 r13: ffffa0010003fe01 r14: 4 r15: 8400040004000 rip: ffffa00000009669 
+rsp: ffffa0010003fd20 rbp: ffffa0010003fda0 rflgs: 117 
+here1
+here3
+here4
+
+ins:193 rip:0xffffa00000009669 in:cmp $0xff,%r14w
+dispatching for NIE
+rax: 7d rbx: ffffa00300020000 rcx: 80000 rdx: 1 rdi: 8400040004000 
+rsi: 1 r8: ffffa0010003fea0 r9: 0 r10: ffffa0010003ff8f r11: 8400040004000 
+r12: 8 r13: ffffa0010003fe01 r14: 4 r15: 8400040004000 rip: ffffa0000000966e 
+rsp: ffffa0010003fd20 rbp: ffffa0010003fda0 rflgs: 117 
+here1
+here3
+here4
+
+ins:194 rip:0xffffa0000000966e in:jz 0x2d(%rip)
+updateJCCDecision 
+rax: 7d rbx: ffffa00300020000 rcx: 80000 rdx: 1 rdi: 8400040004000 
+rsi: 1 r8: ffffa0010003fea0 r9: 0 r10: ffffa0010003ff8f r11: 8400040004000 
+r12: 8 r13: ffffa0010003fe01 r14: 4 r15: 8400040004000 rip: ffffa00000009670 
+rsp: ffffa0010003fd20 rbp: ffffa0010003fda0 rflgs: 117 
+here1
+here3
+here4
+
+ins:195 rip:0xffffa00000009670 in:movzx %r14w,%eax
+dispatching for NIE
+rax: 4 rbx: ffffa00300020000 rcx: 80000 rdx: 1 rdi: 8400040004000 
+rsi: 1 r8: ffffa0010003fea0 r9: 0 r10: ffffa0010003ff8f r11: 8400040004000 
+r12: 8 r13: ffffa0010003fe01 r14: 4 r15: 8400040004000 rip: ffffa00000009674 
+rsp: ffffa0010003fd20 rbp: ffffa0010003fda0 rflgs: 117 
+here1
+here3
+here4
+
+ins:196 rip:0xffffa00000009674 in:lea 0x0(%rax,%rax,4),%rax
+dispatching for NIE
+rax: 14 rbx: ffffa00300020000 rcx: 80000 rdx: 1 rdi: 8400040004000 
+rsi: 1 r8: ffffa0010003fea0 r9: 0 r10: ffffa0010003ff8f r11: 8400040004000 
+r12: 8 r13: ffffa0010003fe01 r14: 4 r15: 8400040004000 rip: ffffa00000009678 
+rsp: ffffa0010003fd20 rbp: ffffa0010003fda0 rflgs: 117 
+here1
+here3
+here4
+
+ins:197 rip:0xffffa00000009678 in:lea 0x0(%rax,%rax,4),%rax
+dispatching for NIE
+rax: 64 rbx: ffffa00300020000 rcx: 80000 rdx: 1 rdi: 8400040004000 
+rsi: 1 r8: ffffa0010003fea0 r9: 0 r10: ffffa0010003ff8f r11: 8400040004000 
+r12: 8 r13: ffffa0010003fe01 r14: 4 r15: 8400040004000 rip: ffffa0000000967c 
+rsp: ffffa0010003fd20 rbp: ffffa0010003fda0 rflgs: 117 
+here1
+here3
+here4
+
+ins:198 rip:0xffffa0000000967c in:cmp %r15,0x1e2(%rbx,%rax,1)
+sym mem ...
+dispatching for SIE
+ok3
+src : pa_4
+
+dst : 8400040004000 dst sz: 0x8
+dst aft sign extend : 8400040004000
+rax: 64 rbx: ffffa00300020000 rcx: 80000 rdx: 1 rdi: 8400040004000 
+rsi: 1 r8: ffffa0010003fea0 r9: 0 r10: ffffa0010003ff8f r11: 8400040004000 
+r12: 8 r13: ffffa0010003fe01 r14: 4 r15: 8400040004000 rip: ffffa00000009684 
+rsp: ffffa0010003fd20 rbp: ffffa0010003fda0 rflgs: 117 
+here1
+here3
+here4
+
+ins:199 rip:0xffffa00000009684 in:jnz 0xffffffdc(%rip)
+updateJCCDecision 
+debug_log c_BranchInsn : rip :0xffffa00000009684  insn count: c8
+branches ffffa00000009660 ffffa00000009686
+New_constraint:Distinct(Sub(pa_4,0x8400040004000))
+BtoTake ffffa00000009660
+debug_log Sym branch in path explore: bExecute: 1
+rax: 64 rbx: ffffa00300020000 rcx: 80000 rdx: 1 rdi: 8400040004000 
+rsi: 1 r8: ffffa0010003fea0 r9: 0 r10: ffffa0010003ff8f r11: 8400040004000 
+r12: 8 r13: ffffa0010003fe01 r14: 4 r15: 8400040004000 rip: ffffa00000009660 
+rsp: ffffa0010003fd20 rbp: ffffa0010003fda0 rflgs: 117 
+here1
+here3
+here4
+
+ins:200 rip:0xffffa00000009660 in:movzx 0x1ee(%rbx,%rax,1),%r14d
+dispatching for NIE
+rax: 64 rbx: ffffa00300020000 rcx: 80000 rdx: 1 rdi: 8400040004000 
+rsi: 1 r8: ffffa0010003fea0 r9: 0 r10: ffffa0010003ff8f r11: 8400040004000 
+r12: 8 r13: ffffa0010003fe01 r14: 36 r15: 8400040004000 rip: ffffa00000009669 
+rsp: ffffa0010003fd20 rbp: ffffa0010003fda0 rflgs: 117 
+here1
+here3
+here4
+
+ins:201 rip:0xffffa00000009669 in:cmp $0xff,%r14w
+dispatching for NIE
+rax: 64 rbx: ffffa00300020000 rcx: 80000 rdx: 1 rdi: 8400040004000 
+rsi: 1 r8: ffffa0010003fea0 r9: 0 r10: ffffa0010003ff8f r11: 8400040004000 
+r12: 8 r13: ffffa0010003fe01 r14: 36 r15: 8400040004000 rip: ffffa0000000966e 
+rsp: ffffa0010003fd20 rbp: ffffa0010003fda0 rflgs: 113 
+here1
+here3
+here4
+
+ins:202 rip:0xffffa0000000966e in:jz 0x2d(%rip)
+updateJCCDecision 
+rax: 64 rbx: ffffa00300020000 rcx: 80000 rdx: 1 rdi: 8400040004000 
+rsi: 1 r8: ffffa0010003fea0 r9: 0 r10: ffffa0010003ff8f r11: 8400040004000 
+r12: 8 r13: ffffa0010003fe01 r14: 36 r15: 8400040004000 rip: ffffa00000009670 
+rsp: ffffa0010003fd20 rbp: ffffa0010003fda0 rflgs: 113 
+here1
+here3
+here4
+
+ins:203 rip:0xffffa00000009670 in:movzx %r14w,%eax
+dispatching for NIE
+rax: 36 rbx: ffffa00300020000 rcx: 80000 rdx: 1 rdi: 8400040004000 
+rsi: 1 r8: ffffa0010003fea0 r9: 0 r10: ffffa0010003ff8f r11: 8400040004000 
+r12: 8 r13: ffffa0010003fe01 r14: 36 r15: 8400040004000 rip: ffffa00000009674 
+rsp: ffffa0010003fd20 rbp: ffffa0010003fda0 rflgs: 113 
+here1
+here3
+here4
+
+ins:204 rip:0xffffa00000009674 in:lea 0x0(%rax,%rax,4),%rax
+dispatching for NIE
+rax: 10e rbx: ffffa00300020000 rcx: 80000 rdx: 1 rdi: 8400040004000 
+rsi: 1 r8: ffffa0010003fea0 r9: 0 r10: ffffa0010003ff8f r11: 8400040004000 
+r12: 8 r13: ffffa0010003fe01 r14: 36 r15: 8400040004000 rip: ffffa00000009678 
+rsp: ffffa0010003fd20 rbp: ffffa0010003fda0 rflgs: 113 
+here1
+here3
+here4
+
+ins:205 rip:0xffffa00000009678 in:lea 0x0(%rax,%rax,4),%rax
+dispatching for NIE
+rax: 546 rbx: ffffa00300020000 rcx: 80000 rdx: 1 rdi: 8400040004000 
+rsi: 1 r8: ffffa0010003fea0 r9: 0 r10: ffffa0010003ff8f r11: 8400040004000 
+r12: 8 r13: ffffa0010003fe01 r14: 36 r15: 8400040004000 rip: ffffa0000000967c 
+rsp: ffffa0010003fd20 rbp: ffffa0010003fda0 rflgs: 113 
+here1
+here3
+here4
+
+ins:206 rip:0xffffa0000000967c in:cmp %r15,0x1e2(%rbx,%rax,1)
+sym mem ...
+dispatching for SIE
+ok3
+src : pa_54
+
+dst : 8400040004000 dst sz: 0x8
+dst aft sign extend : 8400040004000
+rax: 546 rbx: ffffa00300020000 rcx: 80000 rdx: 1 rdi: 8400040004000 
+rsi: 1 r8: ffffa0010003fea0 r9: 0 r10: ffffa0010003ff8f r11: 8400040004000 
+r12: 8 r13: ffffa0010003fe01 r14: 36 r15: 8400040004000 rip: ffffa00000009684 
+rsp: ffffa0010003fd20 rbp: ffffa0010003fda0 rflgs: 113 
+here1
+here3
+here4
+
+ins:207 rip:0xffffa00000009684 in:jnz 0xffffffdc(%rip)
+updateJCCDecision 
+debug_log c_BranchInsn : rip :0xffffa00000009684  insn count: d0
+branches ffffa00000009660 ffffa00000009686
+New_constraint:Distinct(Sub(pa_54,0x8400040004000))
+BtoTake ffffa00000009660
+debug_log Sym branch in path explore: bExecute: 1
+rax: 546 rbx: ffffa00300020000 rcx: 80000 rdx: 1 rdi: 8400040004000 
+rsi: 1 r8: ffffa0010003fea0 r9: 0 r10: ffffa0010003ff8f r11: 8400040004000 
+r12: 8 r13: ffffa0010003fe01 r14: 36 r15: 8400040004000 rip: ffffa00000009660 
+rsp: ffffa0010003fd20 rbp: ffffa0010003fda0 rflgs: 113 
+here1
+here3
+here4
+
+ins:208 rip:0xffffa00000009660 in:movzx 0x1ee(%rbx,%rax,1),%r14d
+dispatching for NIE
+rax: 546 rbx: ffffa00300020000 rcx: 80000 rdx: 1 rdi: 8400040004000 
+rsi: 1 r8: ffffa0010003fea0 r9: 0 r10: ffffa0010003ff8f r11: 8400040004000 
+r12: 8 r13: ffffa0010003fe01 r14: ffff r15: 8400040004000 rip: ffffa00000009669 
+rsp: ffffa0010003fd20 rbp: ffffa0010003fda0 rflgs: 113 
+here1
+here3
+here4
+
+ins:209 rip:0xffffa00000009669 in:cmp $0xff,%r14w
+dispatching for NIE
+rax: 546 rbx: ffffa00300020000 rcx: 80000 rdx: 1 rdi: 8400040004000 
+rsi: 1 r8: ffffa0010003fea0 r9: 0 r10: ffffa0010003ff8f r11: 8400040004000 
+r12: 8 r13: ffffa0010003fe01 r14: ffff r15: 8400040004000 rip: ffffa0000000966e 
+rsp: ffffa0010003fd20 rbp: ffffa0010003fda0 rflgs: 146 
+here1
+here3
+here4
+
+ins:210 rip:0xffffa0000000966e in:jz 0x2d(%rip)
+updateJCCDecision 
+rax: 546 rbx: ffffa00300020000 rcx: 80000 rdx: 1 rdi: 8400040004000 
+rsi: 1 r8: ffffa0010003fea0 r9: 0 r10: ffffa0010003ff8f r11: 8400040004000 
+r12: 8 r13: ffffa0010003fe01 r14: ffff r15: 8400040004000 rip: ffffa0000000969b 
+rsp: ffffa0010003fd20 rbp: ffffa0010003fda0 rflgs: 146 
+here1
+here3
+here4
+
+ins:211 rip:0xffffa0000000969b in:mov $0xffff,%r14w
+dispatching for NIE
+rax: 546 rbx: ffffa00300020000 rcx: 80000 rdx: 1 rdi: 8400040004000 
+rsi: 1 r8: ffffa0010003fea0 r9: 0 r10: ffffa0010003ff8f r11: 8400040004000 
+r12: 8 r13: ffffa0010003fe01 r14: ffff r15: 8400040004000 rip: ffffa000000096a0 
+rsp: ffffa0010003fd20 rbp: ffffa0010003fda0 rflgs: 146 
+here1
+here3
+here4
+
+ins:212 rip:0xffffa000000096a0 in:add $0x1,0xf66(%rbx)
+ seam_va: 0xffffa00300020f66 seam_pg_va: 0xffffa00300020000
+next backp idx: 1 backing up on to: 0x7fffe7c54000
+BackupPg Constructor: seam_pg_va = 0xffffa00300020000
+map size: 2
+dispatching for NIE
+rax: 546 rbx: ffffa00300020000 rcx: 80000 rdx: 1 rdi: 8400040004000 
+rsi: 1 r8: ffffa0010003fea0 r9: 0 r10: ffffa0010003ff8f r11: 8400040004000 
+r12: 8 r13: ffffa0010003fe01 r14: ffff r15: 8400040004000 rip: ffffa000000096a8 
+rsp: ffffa0010003fd20 rbp: ffffa0010003fda0 rflgs: 106 
+here1
+here3
+here4
+
+ins:213 rip:0xffffa000000096a8 in:jz 0x103(%rip)
+updateJCCDecision 
+rax: 546 rbx: ffffa00300020000 rcx: 80000 rdx: 1 rdi: 8400040004000 
+rsi: 1 r8: ffffa0010003fea0 r9: 0 r10: ffffa0010003ff8f r11: 8400040004000 
+r12: 8 r13: ffffa0010003fe01 r14: ffff r15: 8400040004000 rip: ffffa000000096ae 
+rsp: ffffa0010003fd20 rbp: ffffa0010003fda0 rflgs: 106 
+here1
+here3
+here4
+
+ins:214 rip:0xffffa000000096ae in:cmp $0xff,%r14w
+dispatching for NIE
+rax: 546 rbx: ffffa00300020000 rcx: 80000 rdx: 1 rdi: 8400040004000 
+rsi: 1 r8: ffffa0010003fea0 r9: 0 r10: ffffa0010003ff8f r11: 8400040004000 
+r12: 8 r13: ffffa0010003fe01 r14: ffff r15: 8400040004000 rip: ffffa000000096b3 
+rsp: ffffa0010003fd20 rbp: ffffa0010003fda0 rflgs: 146 
+here1
+here3
+here4
+
+ins:215 rip:0xffffa000000096b3 in:jz 0x121(%rip)
+updateJCCDecision 
+rax: 546 rbx: ffffa00300020000 rcx: 80000 rdx: 1 rdi: 8400040004000 
+rsi: 1 r8: ffffa0010003fea0 r9: 0 r10: ffffa0010003ff8f r11: 8400040004000 
+r12: 8 r13: ffffa0010003fe01 r14: ffff r15: 8400040004000 rip: ffffa000000097d4 
+rsp: ffffa0010003fd20 rbp: ffffa0010003fda0 rflgs: 146 
+here1
+here3
+here4
+
+ins:216 rip:0xffffa000000097d4 in:movzx 0xf64(%rbx),%r8d
+dispatching for NIE
+rax: 546 rbx: ffffa00300020000 rcx: 80000 rdx: 1 rdi: 8400040004000 
+rsi: 1 r8: 6 r9: 0 r10: ffffa0010003ff8f r11: 8400040004000 
+r12: 8 r13: ffffa0010003fe01 r14: ffff r15: 8400040004000 rip: ffffa000000097dc 
+rsp: ffffa0010003fd20 rbp: ffffa0010003fda0 rflgs: 146 
+here1
+here3
+here4
+
+ins:217 rip:0xffffa000000097dc in:cmp $0xffff,%r8
+dispatching for NIE
+rax: 546 rbx: ffffa00300020000 rcx: 80000 rdx: 1 rdi: 8400040004000 
+rsi: 1 r8: 6 r9: 0 r10: ffffa0010003ff8f r11: 8400040004000 
+r12: 8 r13: ffffa0010003fe01 r14: ffff r15: 8400040004000 rip: ffffa000000097e3 
+rsp: ffffa0010003fd20 rbp: ffffa0010003fda0 rflgs: 193 
+here1
+here3
+here4
+
+ins:218 rip:0xffffa000000097e3 in:jz 0x312(%rip)
+updateJCCDecision 
+rax: 546 rbx: ffffa00300020000 rcx: 80000 rdx: 1 rdi: 8400040004000 
+rsi: 1 r8: 6 r9: 0 r10: ffffa0010003ff8f r11: 8400040004000 
+r12: 8 r13: ffffa0010003fe01 r14: ffff r15: 8400040004000 rip: ffffa000000097e9 
+rsp: ffffa0010003fd20 rbp: ffffa0010003fda0 rflgs: 193 
+here1
+here3
+here4
+
+ins:219 rip:0xffffa000000097e9 in:lea 0x0(%r8,%r8,4),%rax
+dispatching for NIE
+rax: 1e rbx: ffffa00300020000 rcx: 80000 rdx: 1 rdi: 8400040004000 
+rsi: 1 r8: 6 r9: 0 r10: ffffa0010003ff8f r11: 8400040004000 
+r12: 8 r13: ffffa0010003fe01 r14: ffff r15: 8400040004000 rip: ffffa000000097ed 
+rsp: ffffa0010003fd20 rbp: ffffa0010003fda0 rflgs: 193 
+here1
+here3
+here4
+
+ins:220 rip:0xffffa000000097ed in:lea 0x0(%rax,%rax,4),%rdi
+dispatching for NIE
+rax: 1e rbx: ffffa00300020000 rcx: 80000 rdx: 1 rdi: 96 
+rsi: 1 r8: 6 r9: 0 r10: ffffa0010003ff8f r11: 8400040004000 
+r12: 8 r13: ffffa0010003fe01 r14: ffff r15: 8400040004000 rip: ffffa000000097f1 
+rsp: ffffa0010003fd20 rbp: ffffa0010003fda0 rflgs: 193 
+here1
+here3
+here4
+
+ins:221 rip:0xffffa000000097f1 in:mov $0xf7e,%rcx
+dispatching for NIE
+rax: 1e rbx: ffffa00300020000 rcx: ffffa003ffff0000 rdx: 1 rdi: 96 
+rsi: 1 r8: 6 r9: 0 r10: ffffa0010003ff8f r11: 8400040004000 
+r12: 8 r13: ffffa0010003fe01 r14: ffff r15: 8400040004000 rip: ffffa000000097fa 
+rsp: ffffa0010003fd20 rbp: ffffa0010003fda0 rflgs: 193 
+here1
+here3
+here4
+
+ins:222 rip:0xffffa000000097fa in:mov 0x114(%rbx),%r14d
+dispatching for NIE
+rax: 1e rbx: ffffa00300020000 rcx: ffffa003ffff0000 rdx: 1 rdi: 96 
+rsi: 1 r8: 6 r9: 0 r10: ffffa0010003ff8f r11: 8400040004000 
+r12: 8 r13: ffffa0010003fe01 r14: 0 r15: 8400040004000 rip: ffffa00000009801 
+rsp: ffffa0010003fd20 rbp: ffffa0010003fda0 rflgs: 193 
+here1
+here3
+here4
+
+ins:223 rip:0xffffa00000009801 in:mov %r14,%rax
+dispatching for NIE
+rax: 0 rbx: ffffa00300020000 rcx: ffffa003ffff0000 rdx: 1 rdi: 96 
+rsi: 1 r8: 6 r9: 0 r10: ffffa0010003ff8f r11: 8400040004000 
+r12: 8 r13: ffffa0010003fe01 r14: 0 r15: 8400040004000 rip: ffffa00000009804 
+rsp: ffffa0010003fd20 rbp: ffffa0010003fda0 rflgs: 193 
+here1
+here3
+here4
+
+ins:224 rip:0xffffa00000009804 in:shl/sal $0x7,%rax
+dispatching for NIE
+rax: 0 rbx: ffffa00300020000 rcx: ffffa003ffff0000 rdx: 1 rdi: 96 
+rsi: 1 r8: 6 r9: 0 r10: ffffa0010003ff8f r11: 8400040004000 
+r12: 8 r13: ffffa0010003fe01 r14: 0 r15: 8400040004000 rip: ffffa00000009808 
+rsp: ffffa0010003fd20 rbp: ffffa0010003fda0 rflgs: 146 
+here1
+here3
+here4
+
+ins:225 rip:0xffffa00000009808 in:add %r8,%rax
+dispatching for NIE
+rax: 6 rbx: ffffa00300020000 rcx: ffffa003ffff0000 rdx: 1 rdi: 96 
+rsi: 1 r8: 6 r9: 0 r10: ffffa0010003ff8f r11: 8400040004000 
+r12: 8 r13: ffffa0010003fe01 r14: 0 r15: 8400040004000 rip: ffffa0000000980b 
+rsp: ffffa0010003fd20 rbp: ffffa0010003fda0 rflgs: 106 
+here1
+here3
+here4
+
+ins:226 rip:0xffffa0000000980b in:shl/sal $0xc,%rax
+dispatching for NIE
+rax: 6000 rbx: ffffa00300020000 rcx: ffffa003ffff0000 rdx: 1 rdi: 96 
+rsi: 1 r8: 6 r9: 0 r10: ffffa0010003ff8f r11: 8400040004000 
+r12: 8 r13: ffffa0010003fe01 r14: 0 r15: 8400040004000 rip: ffffa0000000980f 
+rsp: ffffa0010003fd20 rbp: ffffa0010003fda0 rflgs: 106 
+here1
+here3
+here4
+
+ins:227 rip:0xffffa0000000980f in:mov %rcx,0x38(%rsp)
+ seam_va: 0xffffa0010003fd58 seam_pg_va: 0xffffa0010003f000
+already backed up
+dispatching for NIE
+rax: 6000 rbx: ffffa00300020000 rcx: ffffa003ffff0000 rdx: 1 rdi: 96 
+rsi: 1 r8: 6 r9: 0 r10: ffffa0010003ff8f r11: 8400040004000 
+r12: 8 r13: ffffa0010003fe01 r14: 0 r15: 8400040004000 rip: ffffa00000009814 
+rsp: ffffa0010003fd20 rbp: ffffa0010003fda0 rflgs: 106 
+here1
+here3
+here4
+
+ins:228 rip:0xffffa00000009814 in:add 0x838(%rcx),%rax
+dispatching for NIE
+rax: ffffa00200006000 rbx: ffffa00300020000 rcx: ffffa003ffff0000 rdx: 1 rdi: 96 
+rsi: 1 r8: 6 r9: 0 r10: ffffa0010003ff8f r11: 8400040004000 
+r12: 8 r13: ffffa0010003fe01 r14: 0 r15: 8400040004000 rip: ffffa0000000981b 
+rsp: ffffa0010003fd20 rbp: ffffa0010003fda0 rflgs: 186 
+here1
+here3
+here4
+
+ins:229 rip:0xffffa0000000981b in:movzx 0x1ea(%rbx,%rdi,1),%esi
+dispatching for NIE
+rax: ffffa00200006000 rbx: ffffa00300020000 rcx: ffffa003ffff0000 rdx: 1 rdi: 96 
+rsi: 32 r8: 6 r9: 0 r10: ffffa0010003ff8f r11: 8400040004000 
+r12: 8 r13: ffffa0010003fe01 r14: 0 r15: 8400040004000 rip: ffffa00000009823 
+rsp: ffffa0010003fd20 rbp: ffffa0010003fda0 rflgs: 186 
+here1
+here3
+here4
+
+ins:230 rip:0xffffa00000009823 in:movzx 0x1ec(%rbx,%rdi,1),%r9d
+dispatching for NIE
+rax: ffffa00200006000 rbx: ffffa00300020000 rcx: ffffa003ffff0000 rdx: 1 rdi: 96 
+rsi: 32 r8: 6 r9: ffff r10: ffffa0010003ff8f r11: 8400040004000 
+r12: 8 r13: ffffa0010003fe01 r14: 0 r15: 8400040004000 rip: ffffa0000000982c 
+rsp: ffffa0010003fd20 rbp: ffffa0010003fda0 rflgs: 186 
+here1
+here3
+here4
+
+ins:231 rip:0xffffa0000000982c in:cmp %r8w,0xf62(%rbx)
+dispatching for NIE
+rax: ffffa00200006000 rbx: ffffa00300020000 rcx: ffffa003ffff0000 rdx: 1 rdi: 96 
+rsi: 32 r8: 6 r9: ffff r10: ffffa0010003ff8f r11: 8400040004000 
+r12: 8 r13: ffffa0010003fe01 r14: 0 r15: 8400040004000 rip: ffffa00000009834 
+rsp: ffffa0010003fd20 rbp: ffffa0010003fda0 rflgs: 197 
+here1
+here3
+here4
+
+ins:232 rip:0xffffa00000009834 in:jnz 0xa(%rip)
+updateJCCDecision 
+rax: ffffa00200006000 rbx: ffffa00300020000 rcx: ffffa003ffff0000 rdx: 1 rdi: 96 
+rsi: 32 r8: 6 r9: ffff r10: ffffa0010003ff8f r11: 8400040004000 
+r12: 8 r13: ffffa0010003fe01 r14: 0 r15: 8400040004000 rip: ffffa0000000983e 
+rsp: ffffa0010003fd20 rbp: ffffa0010003fda0 rflgs: 197 
+here1
+here3
+here4
+
+ins:233 rip:0xffffa0000000983e in:cmp %r8w,0xf64(%rbx)
+dispatching for NIE
+rax: ffffa00200006000 rbx: ffffa00300020000 rcx: ffffa003ffff0000 rdx: 1 rdi: 96 
+rsi: 32 r8: 6 r9: ffff r10: ffffa0010003ff8f r11: 8400040004000 
+r12: 8 r13: ffffa0010003fe01 r14: 0 r15: 8400040004000 rip: ffffa00000009846 
+rsp: ffffa0010003fd20 rbp: ffffa0010003fda0 rflgs: 146 
+here1
+here3
+here4
+
+ins:234 rip:0xffffa00000009846 in:jnz 0x9(%rip)
+updateJCCDecision 
+rax: ffffa00200006000 rbx: ffffa00300020000 rcx: ffffa003ffff0000 rdx: 1 rdi: 96 
+rsi: 32 r8: 6 r9: ffff r10: ffffa0010003ff8f r11: 8400040004000 
+r12: 8 r13: ffffa0010003fe01 r14: 0 r15: 8400040004000 rip: ffffa00000009848 
+rsp: ffffa0010003fd20 rbp: ffffa0010003fda0 rflgs: 146 
+here1
+here3
+here4
+
+ins:235 rip:0xffffa00000009848 in:mov %si,0xf64(%rbx)
+ seam_va: 0xffffa00300020f64 seam_pg_va: 0xffffa00300020000
+already backed up
+dispatching for NIE
+rax: ffffa00200006000 rbx: ffffa00300020000 rcx: ffffa003ffff0000 rdx: 1 rdi: 96 
+rsi: 32 r8: 6 r9: ffff r10: ffffa0010003ff8f r11: 8400040004000 
+r12: 8 r13: ffffa0010003fe01 r14: 0 r15: 8400040004000 rip: ffffa0000000984f 
+rsp: ffffa0010003fd20 rbp: ffffa0010003fda0 rflgs: 146 
+here1
+here3
+here4
+
+ins:236 rip:0xffffa0000000984f in:cmp $0xff,%r9w
+dispatching for NIE
+rax: ffffa00200006000 rbx: ffffa00300020000 rcx: ffffa003ffff0000 rdx: 1 rdi: 96 
+rsi: 32 r8: 6 r9: ffff r10: ffffa0010003ff8f r11: 8400040004000 
+r12: 8 r13: ffffa0010003fe01 r14: 0 r15: 8400040004000 rip: ffffa00000009854 
+rsp: ffffa0010003fd20 rbp: ffffa0010003fda0 rflgs: 146 
+here1
+here3
+here4
+
+ins:237 rip:0xffffa00000009854 in:mov %rdi,0x10(%rsp)
+ seam_va: 0xffffa0010003fd30 seam_pg_va: 0xffffa0010003f000
+already backed up
+dispatching for NIE
+rax: ffffa00200006000 rbx: ffffa00300020000 rcx: ffffa003ffff0000 rdx: 1 rdi: 96 
+rsi: 32 r8: 6 r9: ffff r10: ffffa0010003ff8f r11: 8400040004000 
+r12: 8 r13: ffffa0010003fe01 r14: 0 r15: 8400040004000 rip: ffffa00000009859 
+rsp: ffffa0010003fd20 rbp: ffffa0010003fda0 rflgs: 146 
+here1
+here3
+here4
+
+ins:238 rip:0xffffa00000009859 in:jz 0x1b(%rip)
+updateJCCDecision 
+rax: ffffa00200006000 rbx: ffffa00300020000 rcx: ffffa003ffff0000 rdx: 1 rdi: 96 
+rsi: 32 r8: 6 r9: ffff r10: ffffa0010003ff8f r11: 8400040004000 
+r12: 8 r13: ffffa0010003fe01 r14: 0 r15: 8400040004000 rip: ffffa00000009874 
+rsp: ffffa0010003fd20 rbp: ffffa0010003fda0 rflgs: 146 
+here1
+here3
+here4
+
+ins:239 rip:0xffffa00000009874 in:mov %r11d,%ecx
+dispatching for NIE
+rax: ffffa00200006000 rbx: ffffa00300020000 rcx: 40004000 rdx: 1 rdi: 96 
+rsi: 32 r8: 6 r9: ffff r10: ffffa0010003ff8f r11: 8400040004000 
+r12: 8 r13: ffffa0010003fe01 r14: 0 r15: 8400040004000 rip: ffffa00000009877 
+rsp: ffffa0010003fd20 rbp: ffffa0010003fda0 rflgs: 146 
+here1
+here3
+here4
+
+ins:240 rip:0xffffa00000009877 in:and $0xfff,%ecx
+dispatching for NIE
+rax: ffffa00200006000 rbx: ffffa00300020000 rcx: 0 rdx: 1 rdi: 96 
+rsi: 32 r8: 6 r9: ffff r10: ffffa0010003ff8f r11: 8400040004000 
+r12: 8 r13: ffffa0010003fe01 r14: 0 r15: 8400040004000 rip: ffffa0000000987d 
+rsp: ffffa0010003fd20 rbp: ffffa0010003fda0 rflgs: 146 
+here1
+here3
+here4
+
+ins:241 rip:0xffffa0000000987d in:mov %rcx,0x40(%rsp)
+ seam_va: 0xffffa0010003fd60 seam_pg_va: 0xffffa0010003f000
+already backed up
+dispatching for NIE
+rax: ffffa00200006000 rbx: ffffa00300020000 rcx: 0 rdx: 1 rdi: 96 
+rsi: 32 r8: 6 r9: ffff r10: ffffa0010003ff8f r11: 8400040004000 
+r12: 8 r13: ffffa0010003fe01 r14: 0 r15: 8400040004000 rip: ffffa00000009882 
+rsp: ffffa0010003fd20 rbp: ffffa0010003fda0 rflgs: 146 
+here1
+here3
+here4
+
+ins:242 rip:0xffffa00000009882 in:cmp $0xff,%si
+dispatching for NIE
+rax: ffffa00200006000 rbx: ffffa00300020000 rcx: 0 rdx: 1 rdi: 96 
+rsi: 32 r8: 6 r9: ffff r10: ffffa0010003ff8f r11: 8400040004000 
+r12: 8 r13: ffffa0010003fe01 r14: 0 r15: 8400040004000 rip: ffffa00000009886 
+rsp: ffffa0010003fd20 rbp: ffffa0010003fda0 rflgs: 117 
+here1
+here3
+here4
+
+ins:243 rip:0xffffa00000009886 in:jz 0x16(%rip)
+updateJCCDecision 
+rax: ffffa00200006000 rbx: ffffa00300020000 rcx: 0 rdx: 1 rdi: 96 
+rsi: 32 r8: 6 r9: ffff r10: ffffa0010003ff8f r11: 8400040004000 
+r12: 8 r13: ffffa0010003fe01 r14: 0 r15: 8400040004000 rip: ffffa00000009888 
+rsp: ffffa0010003fd20 rbp: ffffa0010003fda0 rflgs: 117 
+here1
+here3
+here4
+
+ins:244 rip:0xffffa00000009888 in:movzx %si,%esi
+dispatching for NIE
+rax: ffffa00200006000 rbx: ffffa00300020000 rcx: 0 rdx: 1 rdi: 96 
+rsi: 32 r8: 6 r9: ffff r10: ffffa0010003ff8f r11: 8400040004000 
+r12: 8 r13: ffffa0010003fe01 r14: 0 r15: 8400040004000 rip: ffffa0000000988b 
+rsp: ffffa0010003fd20 rbp: ffffa0010003fda0 rflgs: 117 
+here1
+here3
+here4
+
+ins:245 rip:0xffffa0000000988b in:lea 0x0(%rsi,%rsi,4),%rsi
+dispatching for NIE
+rax: ffffa00200006000 rbx: ffffa00300020000 rcx: 0 rdx: 1 rdi: 96 
+rsi: fa r8: 6 r9: ffff r10: ffffa0010003ff8f r11: 8400040004000 
+r12: 8 r13: ffffa0010003fe01 r14: 0 r15: 8400040004000 rip: ffffa0000000988f 
+rsp: ffffa0010003fd20 rbp: ffffa0010003fda0 rflgs: 117 
+here1
+here3
+here4
+
+ins:246 rip:0xffffa0000000988f in:lea 0x0(%rsi,%rsi,4),%rsi
+dispatching for NIE
+rax: ffffa00200006000 rbx: ffffa00300020000 rcx: 0 rdx: 1 rdi: 96 
+rsi: 4e2 r8: 6 r9: ffff r10: ffffa0010003ff8f r11: 8400040004000 
+r12: 8 r13: ffffa0010003fe01 r14: 0 r15: 8400040004000 rip: ffffa00000009893 
+rsp: ffffa0010003fd20 rbp: ffffa0010003fda0 rflgs: 117 
+here1
+here3
+here4
+
+ins:247 rip:0xffffa00000009893 in:mov %r9w,0x1ec(%rbx,%rsi,1)
+ seam_va: 0xffffa003000206ce seam_pg_va: 0xffffa00300020000
+already backed up
+dispatching for NIE
+rax: ffffa00200006000 rbx: ffffa00300020000 rcx: 0 rdx: 1 rdi: 96 
+rsi: 4e2 r8: 6 r9: ffff r10: ffffa0010003ff8f r11: 8400040004000 
+r12: 8 r13: ffffa0010003fe01 r14: 0 r15: 8400040004000 rip: ffffa0000000989c 
+rsp: ffffa0010003fd20 rbp: ffffa0010003fda0 rflgs: 117 
+here1
+here3
+here4
+
+ins:248 rip:0xffffa0000000989c in:lea 0x0(%rbx,%rdi,1),%r10
+dispatching for NIE
+rax: ffffa00200006000 rbx: ffffa00300020000 rcx: 0 rdx: 1 rdi: 96 
+rsi: 4e2 r8: 6 r9: ffff r10: ffffa00300020096 r11: 8400040004000 
+r12: 8 r13: ffffa0010003fe01 r14: 0 r15: 8400040004000 rip: ffffa000000098a0 
+rsp: ffffa0010003fd20 rbp: ffffa0010003fda0 rflgs: 117 
+here1
+here3
+here4
+
+ins:249 rip:0xffffa000000098a0 in:add $0x1e2,%r10
+dispatching for NIE
+rax: ffffa00200006000 rbx: ffffa00300020000 rcx: 0 rdx: 1 rdi: 96 
+rsi: 4e2 r8: 6 r9: ffff r10: ffffa00300020278 r11: 8400040004000 
+r12: 8 r13: ffffa0010003fe01 r14: 0 r15: 8400040004000 rip: ffffa000000098a7 
+rsp: ffffa0010003fd20 rbp: ffffa0010003fda0 rflgs: 186 
+here1
+here3
+here4
+
+ins:250 rip:0xffffa000000098a7 in:mov 0x1f0(%rbx,%rdi,1),%cl
+dispatching for NIE
+rax: ffffa00200006000 rbx: ffffa00300020000 rcx: 2 rdx: 1 rdi: 96 
+rsi: 4e2 r8: 6 r9: ffff r10: ffffa00300020278 r11: 8400040004000 
+r12: 8 r13: ffffa0010003fe01 r14: 0 r15: 8400040004000 rip: ffffa000000098ae 
+rsp: ffffa0010003fd20 rbp: ffffa0010003fda0 rflgs: 186 
+here1
+here3
+here4
+
+ins:251 rip:0xffffa000000098ae in:mov %cl,0x6(%rsp)
+ seam_va: 0xffffa0010003fd26 seam_pg_va: 0xffffa0010003f000
+already backed up
+dispatching for NIE
+rax: ffffa00200006000 rbx: ffffa00300020000 rcx: 2 rdx: 1 rdi: 96 
+rsi: 4e2 r8: 6 r9: ffff r10: ffffa00300020278 r11: 8400040004000 
+r12: 8 r13: ffffa0010003fe01 r14: 0 r15: 8400040004000 rip: ffffa000000098b2 
+rsp: ffffa0010003fd20 rbp: ffffa0010003fda0 rflgs: 186 
+here1
+here3
+here4
+
+ins:252 rip:0xffffa000000098b2 in:cmp $0x2,%cl
+dispatching for NIE
+rax: ffffa00200006000 rbx: ffffa00300020000 rcx: 2 rdx: 1 rdi: 96 
+rsi: 4e2 r8: 6 r9: ffff r10: ffffa00300020278 r11: 8400040004000 
+r12: 8 r13: ffffa0010003fe01 r14: 0 r15: 8400040004000 rip: ffffa000000098b5 
+rsp: ffffa0010003fd20 rbp: ffffa0010003fda0 rflgs: 146 
+here1
+here3
+here4
+
+ins:253 rip:0xffffa000000098b5 in:mov $0x0,%r9d
+dispatching for NIE
+rax: ffffa00200006000 rbx: ffffa00300020000 rcx: 2 rdx: 1 rdi: 96 
+rsi: 4e2 r8: 6 r9: 0 r10: ffffa00300020278 r11: 8400040004000 
+r12: 8 r13: ffffa0010003fe01 r14: 0 r15: 8400040004000 rip: ffffa000000098bb 
+rsp: ffffa0010003fd20 rbp: ffffa0010003fda0 rflgs: 146 
+here1
+here3
+here4
+
+ins:254 rip:0xffffa000000098bb in:jnz 0x14f(%rip)
+updateJCCDecision 
+rax: ffffa00200006000 rbx: ffffa00300020000 rcx: 2 rdx: 1 rdi: 96 
+rsi: 4e2 r8: 6 r9: 0 r10: ffffa00300020278 r11: 8400040004000 
+r12: 8 r13: ffffa0010003fe01 r14: 0 r15: 8400040004000 rip: ffffa000000098c1 
+rsp: ffffa0010003fd20 rbp: ffffa0010003fda0 rflgs: 146 
+here1
+here3
+here4
+
+ins:255 rip:0xffffa000000098c1 in:mov %r8,0x28(%rsp)
+ seam_va: 0xffffa0010003fd48 seam_pg_va: 0xffffa0010003f000
+already backed up
+dispatching for NIE
+rax: ffffa00200006000 rbx: ffffa00300020000 rcx: 2 rdx: 1 rdi: 96 
+rsi: 4e2 r8: 6 r9: 0 r10: ffffa00300020278 r11: 8400040004000 
+r12: 8 r13: ffffa0010003fe01 r14: 0 r15: 8400040004000 rip: ffffa000000098c6 
+rsp: ffffa0010003fd20 rbp: ffffa0010003fda0 rflgs: 146 
+here1
+here3
+here4
+
+ins:256 rip:0xffffa000000098c6 in:mov %r10,0x18(%rsp)
+ seam_va: 0xffffa0010003fd38 seam_pg_va: 0xffffa0010003f000
+already backed up
+dispatching for NIE
+rax: ffffa00200006000 rbx: ffffa00300020000 rcx: 2 rdx: 1 rdi: 96 
+rsi: 4e2 r8: 6 r9: 0 r10: ffffa00300020278 r11: 8400040004000 
+r12: 8 r13: ffffa0010003fe01 r14: 0 r15: 8400040004000 rip: ffffa000000098cb 
+rsp: ffffa0010003fd20 rbp: ffffa0010003fda0 rflgs: 146 
+here1
+here3
+here4
+
+ins:257 rip:0xffffa000000098cb in:mov (%r10),%r10
+sym mem ...
+dispatching for SIE
+ok3
+at process_mov
+src expr:
+
+0@8,pa_6; 
+rax: ffffa00200006000 rbx: ffffa00300020000 rcx: 2 rdx: 1 rdi: 96 
+rsi: 4e2 r8: 6 r9: 0 r10: 0 r11: 8400040004000 
+r12: 8 r13: ffffa0010003fe01 r14: 0 r15: 8400040004000 rip: ffffa000000098ce 
+rsp: ffffa0010003fd20 rbp: ffffa0010003fda0 rflgs: 146 
+here1
+here3
+here4
+
+ins:258 rip:0xffffa000000098ce in:mov %r10,%rcx
+read reg 1801000a is sym. 
+sym reg ...
+dispatching for SIE
+ok3
+at process_mov
+src expr:
+
+0@8,pa_6; 
+rax: ffffa00200006000 rbx: ffffa00300020000 rcx: 0 rdx: 1 rdi: 96 
+rsi: 4e2 r8: 6 r9: 0 r10: 0 r11: 8400040004000 
+r12: 8 r13: ffffa0010003fe01 r14: 0 r15: 8400040004000 rip: ffffa000000098d1 
+rsp: ffffa0010003fd20 rbp: ffffa0010003fda0 rflgs: 146 
+here1
+here3
+here4
+
+ins:259 rip:0xffffa000000098d1 in:shr $0x20,%rcx
+read reg 18010001 is sym. 
+sym reg ...
+dispatching for SIE
+ok3
+rax: ffffa00200006000 rbx: ffffa00300020000 rcx: 0 rdx: 1 rdi: 96 
+rsi: 4e2 r8: 6 r9: 0 r10: 0 r11: 8400040004000 
+r12: 8 r13: ffffa0010003fe01 r14: 0 r15: 8400040004000 rip: ffffa000000098d5 
+rsp: ffffa0010003fd20 rbp: ffffa0010003fda0 rflgs: 146 
+here1
+here3
+here4
+
+ins:260 rip:0xffffa000000098d5 in:mov %r10d,%edi
+read reg 18010f0a is sym. 
+sym reg ...
+dispatching for SIE
+ok3
+at process_mov
+src expr:
+
+0@4,Extract(pa_6, 0, 4); 
+rax: ffffa00200006000 rbx: ffffa00300020000 rcx: 0 rdx: 1 rdi: 0 
+rsi: 4e2 r8: 6 r9: 0 r10: 0 r11: 8400040004000 
+r12: 8 r13: ffffa0010003fe01 r14: 0 r15: 8400040004000 rip: ffffa000000098d8 
+rsp: ffffa0010003fd20 rbp: ffffa0010003fda0 rflgs: 146 
+here1
+here3
+here4
+
+ins:261 rip:0xffffa000000098d8 in:shr $0x10,%edi
+read reg 18010f07 is sym. 
+sym reg ...
+dispatching for SIE
+ok3
+rax: ffffa00200006000 rbx: ffffa00300020000 rcx: 0 rdx: 1 rdi: 0 
+rsi: 4e2 r8: 6 r9: 0 r10: 0 r11: 8400040004000 
+r12: 8 r13: ffffa0010003fe01 r14: 0 r15: 8400040004000 rip: ffffa000000098db 
+rsp: ffffa0010003fd20 rbp: ffffa0010003fda0 rflgs: 146 
+here1
+here3
+here4
+
+ins:262 rip:0xffffa000000098db in:xor %ecx,%edi
+read reg 18010f07 is sym. 
+sym reg ...
+dispatching for SIE
+ok3
+LShr(Extract(pa_6, 0, 4),0x10)
+Extract(LShr(pa_6,0x20), 0, 4)
+rax: ffffa00200006000 rbx: ffffa00300020000 rcx: 0 rdx: 1 rdi: 0 
+rsi: 4e2 r8: 6 r9: 0 r10: 0 r11: 8400040004000 
+r12: 8 r13: ffffa0010003fe01 r14: 0 r15: 8400040004000 rip: ffffa000000098dd 
+rsp: ffffa0010003fd20 rbp: ffffa0010003fda0 rflgs: 146 
+here1
+here3
+here4
+
+ins:263 rip:0xffffa000000098dd in:mov %r10,%rcx
+write reg 18010001 is sym. 
+sym reg ...
+dispatching for SIE
+ok3
+at process_mov
+src expr:
+
+0@8,pa_6; 
+rax: ffffa00200006000 rbx: ffffa00300020000 rcx: 0 rdx: 1 rdi: 0 
+rsi: 4e2 r8: 6 r9: 0 r10: 0 r11: 8400040004000 
+r12: 8 r13: ffffa0010003fe01 r14: 0 r15: 8400040004000 rip: ffffa000000098e0 
+rsp: ffffa0010003fd20 rbp: ffffa0010003fda0 rflgs: 146 
+here1
+here3
+here4
+
+ins:264 rip:0xffffa000000098e0 in:shr $0x30,%rcx
+read reg 18010001 is sym. 
+sym reg ...
+dispatching for SIE
+ok3
+rax: ffffa00200006000 rbx: ffffa00300020000 rcx: 0 rdx: 1 rdi: 0 
+rsi: 4e2 r8: 6 r9: 0 r10: 0 r11: 8400040004000 
+r12: 8 r13: ffffa0010003fe01 r14: 0 r15: 8400040004000 rip: ffffa000000098e4 
+rsp: ffffa0010003fd20 rbp: ffffa0010003fda0 rflgs: 146 
+here1
+here3
+here4
+
+ins:265 rip:0xffffa000000098e4 in:xor %edi,%ecx
+read reg 18010f01 is sym. 
+sym reg ...
+dispatching for SIE
+ok3
+Extract(LShr(pa_6,0x30), 0, 4)
+Xor(LShr(Extract(pa_6, 0, 4),0x10),Extract(LShr(pa_6,0x20), 0, 4))
+rax: ffffa00200006000 rbx: ffffa00300020000 rcx: 0 rdx: 1 rdi: 0 
+rsi: 4e2 r8: 6 r9: 0 r10: 0 r11: 8400040004000 
+r12: 8 r13: ffffa0010003fe01 r14: 0 r15: 8400040004000 rip: ffffa000000098e6 
+rsp: ffffa0010003fd20 rbp: ffffa0010003fda0 rflgs: 146 
+here1
+here3
+here4
+
+ins:266 rip:0xffffa000000098e6 in:and $0x7f,%ecx
+read reg 18010f01 is sym. 
+sym reg ...
+dispatching for SIE
+ok3
+oidst->size: 4
+oisrc2->size: 1
+rax: ffffa00200006000 rbx: ffffa00300020000 rcx: 0 rdx: 1 rdi: 0 
+rsi: 4e2 r8: 6 r9: 0 r10: 0 r11: 8400040004000 
+r12: 8 r13: ffffa0010003fe01 r14: 0 r15: 8400040004000 rip: ffffa000000098e9 
+rsp: ffffa0010003fd20 rbp: ffffa0010003fda0 rflgs: 146 
+here1
+here3
+here4
+
+ins:267 rip:0xffffa000000098e9 in:movzx 0xe62(%rbx,%rcx,2),%r8d
+RCX is sym!!!
+CombineMulti(And(Xor(Extract(LShr(pa_6,0x30), 0, 4),Xor(LShr(Extract(pa_6, 0, 4),0x10),Extract(LShr(pa_6,0x20), 0, 4))),0x7f), 0x0, 0x0, 0x0, 0x0, )
+sym mem ...
+Sym addr concretization enabled, handling symbolic address
+expression: Add(Add(0xffffa00300020000,Mul(CombineMulti(And(Xor(Extract(LShr(pa_6,0x30), 0, 4),Xor(LShr(Extract(pa_6, 0, 4),0x10),Extract(LShr(pa_6,0x20), 0, 4))),0x7f), 0x0, 0x0, 0x0, 0x0, ),0x2)),0xe62)
+Concretizing a symbolic expr, count :41
+symbolic address: concrete base_adr:0xffffa00300020000
+concretized val : ffffa00300020ecc
+not sym-mem
+dispatching for SIE
+Sym addr concretization enabled, handling symbolic address
+expression: Add(Add(0xffffa00300020000,Mul(CombineMulti(And(Xor(Extract(LShr(pa_6,0x30), 0, 4),Xor(LShr(Extract(pa_6, 0, 4),0x10),Extract(LShr(pa_6,0x20), 0, 4))),0x7f), 0x0, 0x0, 0x0, 0x0, ),0x2)),0xe62)
+Concretizing a symbolic expr, count :42
+symbolic address: concrete base_adr:0xffffa00300020000
+concretized val : ffffa00300020ecc
+not sym-mem
+ok3
+rax: ffffa00200006000 rbx: ffffa00300020000 rcx: 0 rdx: 1 rdi: 0 
+rsi: 4e2 r8: 3e r9: 0 r10: 0 r11: 8400040004000 
+r12: 8 r13: ffffa0010003fe01 r14: 0 r15: 8400040004000 rip: ffffa000000098f2 
+rsp: ffffa0010003fd20 rbp: ffffa0010003fda0 rflgs: 146 
+here1
+here3
+here4
+
+ins:268 rip:0xffffa000000098f2 in:cmp $0xff,%r8w
+dispatching for NIE
+rax: ffffa00200006000 rbx: ffffa00300020000 rcx: 0 rdx: 1 rdi: 0 
+rsi: 4e2 r8: 3e r9: 0 r10: 0 r11: 8400040004000 
+r12: 8 r13: ffffa0010003fe01 r14: 0 r15: 8400040004000 rip: ffffa000000098f7 
+rsp: ffffa0010003fd20 rbp: ffffa0010003fda0 rflgs: 117 
+here1
+here3
+here4
+
+ins:269 rip:0xffffa000000098f7 in:jz 0xe4(%rip)
+updateJCCDecision 
+rax: ffffa00200006000 rbx: ffffa00300020000 rcx: 0 rdx: 1 rdi: 0 
+rsi: 4e2 r8: 3e r9: 0 r10: 0 r11: 8400040004000 
+r12: 8 r13: ffffa0010003fe01 r14: 0 r15: 8400040004000 rip: ffffa000000098fd 
+rsp: ffffa0010003fd20 rbp: ffffa0010003fda0 rflgs: 117 
+here1
+here3
+here4
+
+ins:270 rip:0xffffa000000098fd in:mov %rcx,0x30(%rsp)
+read reg 18010001 is sym. 
+sym reg ...
+ seam_va: 0xffffa0010003fd50 seam_pg_va: 0xffffa0010003f000
+already backed up
+dispatching for SIE
+ok3
+at process_mov
+src expr:
+
+0@4,And(Xor(Extract(LShr(pa_6,0x30), 0, 4),Xor(LShr(Extract(pa_6, 0, 4),0x10),Extract(LShr(pa_6,0x20), 0, 4))),0x7f); 
+rax: ffffa00200006000 rbx: ffffa00300020000 rcx: 0 rdx: 1 rdi: 0 
+rsi: 4e2 r8: 3e r9: 0 r10: 0 r11: 8400040004000 
+r12: 8 r13: ffffa0010003fe01 r14: 0 r15: 8400040004000 rip: ffffa00000009902 
+rsp: ffffa0010003fd20 rbp: ffffa0010003fda0 rflgs: 117 
+here1
+here3
+here4
+
+ins:271 rip:0xffffa00000009902 in:mov %r14,0x20(%rsp)
+ seam_va: 0xffffa0010003fd40 seam_pg_va: 0xffffa0010003f000
+already backed up
+dispatching for NIE
+rax: ffffa00200006000 rbx: ffffa00300020000 rcx: 0 rdx: 1 rdi: 0 
+rsi: 4e2 r8: 3e r9: 0 r10: 0 r11: 8400040004000 
+r12: 8 r13: ffffa0010003fe01 r14: 0 r15: 8400040004000 rip: ffffa00000009907 
+rsp: ffffa0010003fd20 rbp: ffffa0010003fda0 rflgs: 117 
+here1
+here3
+here4
+
+ins:272 rip:0xffffa00000009907 in:mov %r11,0x8(%rsp)
+ seam_va: 0xffffa0010003fd28 seam_pg_va: 0xffffa0010003f000
+already backed up
+dispatching for NIE
+rax: ffffa00200006000 rbx: ffffa00300020000 rcx: 0 rdx: 1 rdi: 0 
+rsi: 4e2 r8: 3e r9: 0 r10: 0 r11: 8400040004000 
+r12: 8 r13: ffffa0010003fe01 r14: 0 r15: 8400040004000 rip: ffffa0000000990c 
+rsp: ffffa0010003fd20 rbp: ffffa0010003fda0 rflgs: 117 
+here1
+here3
+here4
+
+ins:273 rip:0xffffa0000000990c in:mov 0x10(%rsp),%rcx
+write reg 18010001 is sym. 
+sym reg ...
+dispatching for SIE
+ok3
+at process_mov
+rax: ffffa00200006000 rbx: ffffa00300020000 rcx: 96 rdx: 1 rdi: 0 
+rsi: 4e2 r8: 3e r9: 0 r10: 0 r11: 8400040004000 
+r12: 8 r13: ffffa0010003fe01 r14: 0 r15: 8400040004000 rip: ffffa00000009911 
+rsp: ffffa0010003fd20 rbp: ffffa0010003fda0 rflgs: 117 
+here1
+here3
+here4
+
+ins:274 rip:0xffffa00000009911 in:mov 0x1f1(%rbx,%rcx,1),%r9b
+dispatching for NIE
+rax: ffffa00200006000 rbx: ffffa00300020000 rcx: 96 rdx: 1 rdi: 0 
+rsi: 4e2 r8: 3e r9: 1 r10: 0 r11: 8400040004000 
+r12: 8 r13: ffffa0010003fe01 r14: 0 r15: 8400040004000 rip: ffffa00000009919 
+rsp: ffffa0010003fd20 rbp: ffffa0010003fda0 rflgs: 117 
+here1
+here3
+here4
+
+ins:275 rip:0xffffa00000009919 in:mov 0x1f2(%rbx,%rcx,1),%cl
+dispatching for NIE
+rax: ffffa00200006000 rbx: ffffa00300020000 rcx: 1 rdx: 1 rdi: 0 
+rsi: 4e2 r8: 3e r9: 1 r10: 0 r11: 8400040004000 
+r12: 8 r13: ffffa0010003fe01 r14: 0 r15: 8400040004000 rip: ffffa00000009920 
+rsp: ffffa0010003fd20 rbp: ffffa0010003fda0 rflgs: 117 
+here1
+here3
+here4
+
+ins:276 rip:0xffffa00000009920 in:mov %cl,0x7(%rsp)
+ seam_va: 0xffffa0010003fd27 seam_pg_va: 0xffffa0010003f000
+already backed up
+dispatching for NIE
+rax: ffffa00200006000 rbx: ffffa00300020000 rcx: 1 rdx: 1 rdi: 0 
+rsi: 4e2 r8: 3e r9: 1 r10: 0 r11: 8400040004000 
+r12: 8 r13: ffffa0010003fe01 r14: 0 r15: 8400040004000 rip: ffffa00000009924 
+rsp: ffffa0010003fd20 rbp: ffffa0010003fda0 rflgs: 117 
+here1
+here3
+here4
+
+ins:277 rip:0xffffa00000009924 in:and $0xfffff000,%r10
+read reg 1801000a is sym. 
+sym reg ...
+dispatching for SIE
+ok3
+oidst->size: 8
+oisrc2->size: 4
+rax: ffffa00200006000 rbx: ffffa00300020000 rcx: 1 rdx: 1 rdi: 0 
+rsi: 4e2 r8: 3e r9: 1 r10: 0 r11: 8400040004000 
+r12: 8 r13: ffffa0010003fe01 r14: 0 r15: 8400040004000 rip: ffffa0000000992b 
+rsp: ffffa0010003fd20 rbp: ffffa0010003fda0 rflgs: 117 
+here1
+here3
+here4
+
+ins:278 rip:0xffffa0000000992b in:mov $0xffff,%r11w
+dispatching for NIE
+rax: ffffa00200006000 rbx: ffffa00300020000 rcx: 1 rdx: 1 rdi: 0 
+rsi: 4e2 r8: 3e r9: 1 r10: 0 r11: 840004000ffff 
+r12: 8 r13: ffffa0010003fe01 r14: 0 r15: 8400040004000 rip: ffffa00000009930 
+rsp: ffffa0010003fd20 rbp: ffffa0010003fda0 rflgs: 117 
+here1
+here3
+here4
+
+ins:279 rip:0xffffa00000009930 in:mov 0x7(%rsp),%cl
+dispatching for NIE
+rax: ffffa00200006000 rbx: ffffa00300020000 rcx: 1 rdx: 1 rdi: 0 
+rsi: 4e2 r8: 3e r9: 1 r10: 0 r11: 840004000ffff 
+r12: 8 r13: ffffa0010003fe01 r14: 0 r15: 8400040004000 rip: ffffa00000009934 
+rsp: ffffa0010003fd20 rbp: ffffa0010003fda0 rflgs: 117 
+here1
+here3
+here4
+
+ins:280 rip:0xffffa00000009934 in:jmp 0x21(%rip)
+rax: ffffa00200006000 rbx: ffffa00300020000 rcx: 1 rdx: 1 rdi: 0 
+rsi: 4e2 r8: 3e r9: 1 r10: 0 r11: 840004000ffff 
+r12: 8 r13: ffffa0010003fe01 r14: 0 r15: 8400040004000 rip: ffffa00000009955 
+rsp: ffffa0010003fd20 rbp: ffffa0010003fda0 rflgs: 117 
+here1
+here3
+here4
+
+ins:281 rip:0xffffa00000009955 in:movzx %r8w,%esi
+dispatching for NIE
+rax: ffffa00200006000 rbx: ffffa00300020000 rcx: 1 rdx: 1 rdi: 0 
+rsi: 3e r8: 3e r9: 1 r10: 0 r11: 840004000ffff 
+r12: 8 r13: ffffa0010003fe01 r14: 0 r15: 8400040004000 rip: ffffa00000009959 
+rsp: ffffa0010003fd20 rbp: ffffa0010003fda0 rflgs: 117 
+here1
+here3
+here4
+
+ins:282 rip:0xffffa00000009959 in:lea 0x0(%rsi,%rsi,4),%rdi
+write reg 18010007 is sym. 
+sym reg ...
+dispatching for SIE
+ok3
+rax: ffffa00200006000 rbx: ffffa00300020000 rcx: 1 rdx: 1 rdi: 136 
+rsi: 3e r8: 3e r9: 1 r10: 0 r11: 840004000ffff 
+r12: 8 r13: ffffa0010003fe01 r14: 0 r15: 8400040004000 rip: ffffa0000000995d 
+rsp: ffffa0010003fd20 rbp: ffffa0010003fda0 rflgs: 117 
+here1
+here3
+here4
+
+ins:283 rip:0xffffa0000000995d in:lea 0x0(%rdi,%rdi,4),%r14
+dispatching for NIE
+rax: ffffa00200006000 rbx: ffffa00300020000 rcx: 1 rdx: 1 rdi: 136 
+rsi: 3e r8: 3e r9: 1 r10: 0 r11: 840004000ffff 
+r12: 8 r13: ffffa0010003fe01 r14: 60e r15: 8400040004000 rip: ffffa00000009961 
+rsp: ffffa0010003fd20 rbp: ffffa0010003fda0 rflgs: 117 
+here1
+here3
+here4
+
+ins:284 rip:0xffffa00000009961 in:cmp %r10,0x1e2(%rbx,%r14,1)
+sym mem ...
+dispatching for SIE
+ok3
+pa_62
+And(pa_6,0xfffffffffffff000)
+rax: ffffa00200006000 rbx: ffffa00300020000 rcx: 1 rdx: 1 rdi: 136 
+rsi: 3e r8: 3e r9: 1 r10: 0 r11: 840004000ffff 
+r12: 8 r13: ffffa0010003fe01 r14: 60e r15: 8400040004000 rip: ffffa00000009969 
+rsp: ffffa0010003fd20 rbp: ffffa0010003fda0 rflgs: 117 
+here1
+here3
+here4
+
+ins:285 rip:0xffffa00000009969 in:jnz 0xffffffd7(%rip)
+updateJCCDecision 
+debug_log c_BranchInsn : rip :0xffffa00000009969  insn count: 11e
+branches ffffa00000009940 ffffa0000000996b
+New_constraint:Distinct(Sub(pa_62,And(pa_6,0xfffffffffffff000)))
+BtoTake ffffa00000009940
+debug_log Sym branch in path explore: bExecute: 1
+rax: ffffa00200006000 rbx: ffffa00300020000 rcx: 1 rdx: 1 rdi: 136 
+rsi: 3e r8: 3e r9: 1 r10: 0 r11: 840004000ffff 
+r12: 8 r13: ffffa0010003fe01 r14: 60e r15: 8400040004000 rip: ffffa00000009940 
+rsp: ffffa0010003fd20 rbp: ffffa0010003fda0 rflgs: 117 
+here1
+here3
+here4
+
+ins:286 rip:0xffffa00000009940 in:mov %r8d,%r11d
+dispatching for NIE
+rax: ffffa00200006000 rbx: ffffa00300020000 rcx: 1 rdx: 1 rdi: 136 
+rsi: 3e r8: 3e r9: 1 r10: 0 r11: 3e 
+r12: 8 r13: ffffa0010003fe01 r14: 60e r15: 8400040004000 rip: ffffa00000009943 
+rsp: ffffa0010003fd20 rbp: ffffa0010003fda0 rflgs: 117 
+here1
+here3
+here4
+
+ins:287 rip:0xffffa00000009943 in:movzx 0x1ee(%rbx,%r14,1),%edi
+dispatching for NIE
+rax: ffffa00200006000 rbx: ffffa00300020000 rcx: 1 rdx: 1 rdi: 3d 
+rsi: 3e r8: 3e r9: 1 r10: 0 r11: 3e 
+r12: 8 r13: ffffa0010003fe01 r14: 60e r15: 8400040004000 rip: ffffa0000000994c 
+rsp: ffffa0010003fd20 rbp: ffffa0010003fda0 rflgs: 117 
+here1
+here3
+here4
+
+ins:288 rip:0xffffa0000000994c in:mov %edi,%r8d
+dispatching for NIE
+rax: ffffa00200006000 rbx: ffffa00300020000 rcx: 1 rdx: 1 rdi: 3d 
+rsi: 3e r8: 3d r9: 1 r10: 0 r11: 3e 
+r12: 8 r13: ffffa0010003fe01 r14: 60e r15: 8400040004000 rip: ffffa0000000994f 
+rsp: ffffa0010003fd20 rbp: ffffa0010003fda0 rflgs: 117 
+here1
+here3
+here4
+
+ins:289 rip:0xffffa0000000994f in:cmp $0xff,%di
+dispatching for NIE
+rax: ffffa00200006000 rbx: ffffa00300020000 rcx: 1 rdx: 1 rdi: 3d 
+rsi: 3e r8: 3d r9: 1 r10: 0 r11: 3e 
+r12: 8 r13: ffffa0010003fe01 r14: 60e r15: 8400040004000 rip: ffffa00000009953 
+rsp: ffffa0010003fd20 rbp: ffffa0010003fda0 rflgs: 113 
+here1
+here3
+here4
+
+ins:290 rip:0xffffa00000009953 in:jz 0x51(%rip)
+updateJCCDecision 
+rax: ffffa00200006000 rbx: ffffa00300020000 rcx: 1 rdx: 1 rdi: 3d 
+rsi: 3e r8: 3d r9: 1 r10: 0 r11: 3e 
+r12: 8 r13: ffffa0010003fe01 r14: 60e r15: 8400040004000 rip: ffffa00000009955 
+rsp: ffffa0010003fd20 rbp: ffffa0010003fda0 rflgs: 113 
+here1
+here3
+here4
+
+ins:291 rip:0xffffa00000009955 in:movzx %r8w,%esi
+dispatching for NIE
+rax: ffffa00200006000 rbx: ffffa00300020000 rcx: 1 rdx: 1 rdi: 3d 
+rsi: 3d r8: 3d r9: 1 r10: 0 r11: 3e 
+r12: 8 r13: ffffa0010003fe01 r14: 60e r15: 8400040004000 rip: ffffa00000009959 
+rsp: ffffa0010003fd20 rbp: ffffa0010003fda0 rflgs: 113 
+here1
+here3
+here4
+
+ins:292 rip:0xffffa00000009959 in:lea 0x0(%rsi,%rsi,4),%rdi
+dispatching for NIE
+rax: ffffa00200006000 rbx: ffffa00300020000 rcx: 1 rdx: 1 rdi: 131 
+rsi: 3d r8: 3d r9: 1 r10: 0 r11: 3e 
+r12: 8 r13: ffffa0010003fe01 r14: 60e r15: 8400040004000 rip: ffffa0000000995d 
+rsp: ffffa0010003fd20 rbp: ffffa0010003fda0 rflgs: 113 
+here1
+here3
+here4
+
+ins:293 rip:0xffffa0000000995d in:lea 0x0(%rdi,%rdi,4),%r14
+dispatching for NIE
+rax: ffffa00200006000 rbx: ffffa00300020000 rcx: 1 rdx: 1 rdi: 131 
+rsi: 3d r8: 3d r9: 1 r10: 0 r11: 3e 
+r12: 8 r13: ffffa0010003fe01 r14: 5f5 r15: 8400040004000 rip: ffffa00000009961 
+rsp: ffffa0010003fd20 rbp: ffffa0010003fda0 rflgs: 113 
+here1
+here3
+here4
+
+ins:294 rip:0xffffa00000009961 in:cmp %r10,0x1e2(%rbx,%r14,1)
+sym mem ...
+dispatching for SIE
+ok3
+pa_61
+And(pa_6,0xfffffffffffff000)
+rax: ffffa00200006000 rbx: ffffa00300020000 rcx: 1 rdx: 1 rdi: 131 
+rsi: 3d r8: 3d r9: 1 r10: 0 r11: 3e 
+r12: 8 r13: ffffa0010003fe01 r14: 5f5 r15: 8400040004000 rip: ffffa00000009969 
+rsp: ffffa0010003fd20 rbp: ffffa0010003fda0 rflgs: 113 
+here1
+here3
+here4
+
+ins:295 rip:0xffffa00000009969 in:jnz 0xffffffd7(%rip)
+updateJCCDecision 
+debug_log c_BranchInsn : rip :0xffffa00000009969  insn count: 128
+branches ffffa00000009940 ffffa0000000996b
+New_constraint:Distinct(Sub(pa_61,And(pa_6,0xfffffffffffff000)))
+BtoTake ffffa00000009940
+debug_log Sym branch in path explore: bExecute: 1
+rax: ffffa00200006000 rbx: ffffa00300020000 rcx: 1 rdx: 1 rdi: 131 
+rsi: 3d r8: 3d r9: 1 r10: 0 r11: 3e 
+r12: 8 r13: ffffa0010003fe01 r14: 5f5 r15: 8400040004000 rip: ffffa00000009940 
+rsp: ffffa0010003fd20 rbp: ffffa0010003fda0 rflgs: 113 
+here1
+here3
+here4
+
+ins:296 rip:0xffffa00000009940 in:mov %r8d,%r11d
+dispatching for NIE
+rax: ffffa00200006000 rbx: ffffa00300020000 rcx: 1 rdx: 1 rdi: 131 
+rsi: 3d r8: 3d r9: 1 r10: 0 r11: 3d 
+r12: 8 r13: ffffa0010003fe01 r14: 5f5 r15: 8400040004000 rip: ffffa00000009943 
+rsp: ffffa0010003fd20 rbp: ffffa0010003fda0 rflgs: 113 
+here1
+here3
+here4
+
+ins:297 rip:0xffffa00000009943 in:movzx 0x1ee(%rbx,%r14,1),%edi
+dispatching for NIE
+rax: ffffa00200006000 rbx: ffffa00300020000 rcx: 1 rdx: 1 rdi: 3c 
+rsi: 3d r8: 3d r9: 1 r10: 0 r11: 3d 
+r12: 8 r13: ffffa0010003fe01 r14: 5f5 r15: 8400040004000 rip: ffffa0000000994c 
+rsp: ffffa0010003fd20 rbp: ffffa0010003fda0 rflgs: 113 
+here1
+here3
+here4
+
+ins:298 rip:0xffffa0000000994c in:mov %edi,%r8d
+dispatching for NIE
+rax: ffffa00200006000 rbx: ffffa00300020000 rcx: 1 rdx: 1 rdi: 3c 
+rsi: 3d r8: 3c r9: 1 r10: 0 r11: 3d 
+r12: 8 r13: ffffa0010003fe01 r14: 5f5 r15: 8400040004000 rip: ffffa0000000994f 
+rsp: ffffa0010003fd20 rbp: ffffa0010003fda0 rflgs: 113 
+here1
+here3
+here4
+
+ins:299 rip:0xffffa0000000994f in:cmp $0xff,%di
+dispatching for NIE
+rax: ffffa00200006000 rbx: ffffa00300020000 rcx: 1 rdx: 1 rdi: 3c 
+rsi: 3d r8: 3c r9: 1 r10: 0 r11: 3d 
+r12: 8 r13: ffffa0010003fe01 r14: 5f5 r15: 8400040004000 rip: ffffa00000009953 
+rsp: ffffa0010003fd20 rbp: ffffa0010003fda0 rflgs: 113 
+here1
+here3
+here4
+
+ins:300 rip:0xffffa00000009953 in:jz 0x51(%rip)
+updateJCCDecision 
+rax: ffffa00200006000 rbx: ffffa00300020000 rcx: 1 rdx: 1 rdi: 3c 
+rsi: 3d r8: 3c r9: 1 r10: 0 r11: 3d 
+r12: 8 r13: ffffa0010003fe01 r14: 5f5 r15: 8400040004000 rip: ffffa00000009955 
+rsp: ffffa0010003fd20 rbp: ffffa0010003fda0 rflgs: 113 
+here1
+here3
+here4
+
+ins:301 rip:0xffffa00000009955 in:movzx %r8w,%esi
+dispatching for NIE
+rax: ffffa00200006000 rbx: ffffa00300020000 rcx: 1 rdx: 1 rdi: 3c 
+rsi: 3c r8: 3c r9: 1 r10: 0 r11: 3d 
+r12: 8 r13: ffffa0010003fe01 r14: 5f5 r15: 8400040004000 rip: ffffa00000009959 
+rsp: ffffa0010003fd20 rbp: ffffa0010003fda0 rflgs: 113 
+here1
+here3
+here4
+
+ins:302 rip:0xffffa00000009959 in:lea 0x0(%rsi,%rsi,4),%rdi
+dispatching for NIE
+rax: ffffa00200006000 rbx: ffffa00300020000 rcx: 1 rdx: 1 rdi: 12c 
+rsi: 3c r8: 3c r9: 1 r10: 0 r11: 3d 
+r12: 8 r13: ffffa0010003fe01 r14: 5f5 r15: 8400040004000 rip: ffffa0000000995d 
+rsp: ffffa0010003fd20 rbp: ffffa0010003fda0 rflgs: 113 
+here1
+here3
+here4
+
+ins:303 rip:0xffffa0000000995d in:lea 0x0(%rdi,%rdi,4),%r14
+dispatching for NIE
+rax: ffffa00200006000 rbx: ffffa00300020000 rcx: 1 rdx: 1 rdi: 12c 
+rsi: 3c r8: 3c r9: 1 r10: 0 r11: 3d 
+r12: 8 r13: ffffa0010003fe01 r14: 5dc r15: 8400040004000 rip: ffffa00000009961 
+rsp: ffffa0010003fd20 rbp: ffffa0010003fda0 rflgs: 113 
+here1
+here3
+here4
+
+ins:304 rip:0xffffa00000009961 in:cmp %r10,0x1e2(%rbx,%r14,1)
+sym mem ...
+dispatching for SIE
+ok3
+pa_60
+And(pa_6,0xfffffffffffff000)
+rax: ffffa00200006000 rbx: ffffa00300020000 rcx: 1 rdx: 1 rdi: 12c 
+rsi: 3c r8: 3c r9: 1 r10: 0 r11: 3d 
+r12: 8 r13: ffffa0010003fe01 r14: 5dc r15: 8400040004000 rip: ffffa00000009969 
+rsp: ffffa0010003fd20 rbp: ffffa0010003fda0 rflgs: 113 
+here1
+here3
+here4
+
+ins:305 rip:0xffffa00000009969 in:jnz 0xffffffd7(%rip)
+updateJCCDecision 
+debug_log c_BranchInsn : rip :0xffffa00000009969  insn count: 132
+branches ffffa00000009940 ffffa0000000996b
+New_constraint:Distinct(Sub(pa_60,And(pa_6,0xfffffffffffff000)))
+BtoTake ffffa00000009940
+debug_log Sym branch in path explore: bExecute: 1
+rax: ffffa00200006000 rbx: ffffa00300020000 rcx: 1 rdx: 1 rdi: 12c 
+rsi: 3c r8: 3c r9: 1 r10: 0 r11: 3d 
+r12: 8 r13: ffffa0010003fe01 r14: 5dc r15: 8400040004000 rip: ffffa00000009940 
+rsp: ffffa0010003fd20 rbp: ffffa0010003fda0 rflgs: 113 
+here1
+here3
+here4
+
+ins:306 rip:0xffffa00000009940 in:mov %r8d,%r11d
+dispatching for NIE
+rax: ffffa00200006000 rbx: ffffa00300020000 rcx: 1 rdx: 1 rdi: 12c 
+rsi: 3c r8: 3c r9: 1 r10: 0 r11: 3c 
+r12: 8 r13: ffffa0010003fe01 r14: 5dc r15: 8400040004000 rip: ffffa00000009943 
+rsp: ffffa0010003fd20 rbp: ffffa0010003fda0 rflgs: 113 
+here1
+here3
+here4
+
+ins:307 rip:0xffffa00000009943 in:movzx 0x1ee(%rbx,%r14,1),%edi
+dispatching for NIE
+rax: ffffa00200006000 rbx: ffffa00300020000 rcx: 1 rdx: 1 rdi: 3b 
+rsi: 3c r8: 3c r9: 1 r10: 0 r11: 3c 
+r12: 8 r13: ffffa0010003fe01 r14: 5dc r15: 8400040004000 rip: ffffa0000000994c 
+rsp: ffffa0010003fd20 rbp: ffffa0010003fda0 rflgs: 113 
+here1
+here3
+here4
+
+ins:308 rip:0xffffa0000000994c in:mov %edi,%r8d
+dispatching for NIE
+rax: ffffa00200006000 rbx: ffffa00300020000 rcx: 1 rdx: 1 rdi: 3b 
+rsi: 3c r8: 3b r9: 1 r10: 0 r11: 3c 
+r12: 8 r13: ffffa0010003fe01 r14: 5dc r15: 8400040004000 rip: ffffa0000000994f 
+rsp: ffffa0010003fd20 rbp: ffffa0010003fda0 rflgs: 113 
+here1
+here3
+here4
+
+ins:309 rip:0xffffa0000000994f in:cmp $0xff,%di
+dispatching for NIE
+rax: ffffa00200006000 rbx: ffffa00300020000 rcx: 1 rdx: 1 rdi: 3b 
+rsi: 3c r8: 3b r9: 1 r10: 0 r11: 3c 
+r12: 8 r13: ffffa0010003fe01 r14: 5dc r15: 8400040004000 rip: ffffa00000009953 
+rsp: ffffa0010003fd20 rbp: ffffa0010003fda0 rflgs: 117 
+here1
+here3
+here4
+
+ins:310 rip:0xffffa00000009953 in:jz 0x51(%rip)
+updateJCCDecision 
+rax: ffffa00200006000 rbx: ffffa00300020000 rcx: 1 rdx: 1 rdi: 3b 
+rsi: 3c r8: 3b r9: 1 r10: 0 r11: 3c 
+r12: 8 r13: ffffa0010003fe01 r14: 5dc r15: 8400040004000 rip: ffffa00000009955 
+rsp: ffffa0010003fd20 rbp: ffffa0010003fda0 rflgs: 117 
+here1
+here3
+here4
+
+ins:311 rip:0xffffa00000009955 in:movzx %r8w,%esi
+dispatching for NIE
+rax: ffffa00200006000 rbx: ffffa00300020000 rcx: 1 rdx: 1 rdi: 3b 
+rsi: 3b r8: 3b r9: 1 r10: 0 r11: 3c 
+r12: 8 r13: ffffa0010003fe01 r14: 5dc r15: 8400040004000 rip: ffffa00000009959 
+rsp: ffffa0010003fd20 rbp: ffffa0010003fda0 rflgs: 117 
+here1
+here3
+here4
+
+ins:312 rip:0xffffa00000009959 in:lea 0x0(%rsi,%rsi,4),%rdi
+dispatching for NIE
+rax: ffffa00200006000 rbx: ffffa00300020000 rcx: 1 rdx: 1 rdi: 127 
+rsi: 3b r8: 3b r9: 1 r10: 0 r11: 3c 
+r12: 8 r13: ffffa0010003fe01 r14: 5dc r15: 8400040004000 rip: ffffa0000000995d 
+rsp: ffffa0010003fd20 rbp: ffffa0010003fda0 rflgs: 117 
+here1
+here3
+here4
+
+ins:313 rip:0xffffa0000000995d in:lea 0x0(%rdi,%rdi,4),%r14
+dispatching for NIE
+rax: ffffa00200006000 rbx: ffffa00300020000 rcx: 1 rdx: 1 rdi: 127 
+rsi: 3b r8: 3b r9: 1 r10: 0 r11: 3c 
+r12: 8 r13: ffffa0010003fe01 r14: 5c3 r15: 8400040004000 rip: ffffa00000009961 
+rsp: ffffa0010003fd20 rbp: ffffa0010003fda0 rflgs: 117 
+here1
+here3
+here4
+
+ins:314 rip:0xffffa00000009961 in:cmp %r10,0x1e2(%rbx,%r14,1)
+sym mem ...
+dispatching for SIE
+ok3
+pa_59
+And(pa_6,0xfffffffffffff000)
+rax: ffffa00200006000 rbx: ffffa00300020000 rcx: 1 rdx: 1 rdi: 127 
+rsi: 3b r8: 3b r9: 1 r10: 0 r11: 3c 
+r12: 8 r13: ffffa0010003fe01 r14: 5c3 r15: 8400040004000 rip: ffffa00000009969 
+rsp: ffffa0010003fd20 rbp: ffffa0010003fda0 rflgs: 117 
+here1
+here3
+here4
+
+ins:315 rip:0xffffa00000009969 in:jnz 0xffffffd7(%rip)
+updateJCCDecision 
+debug_log c_BranchInsn : rip :0xffffa00000009969  insn count: 13c
+branches ffffa00000009940 ffffa0000000996b
+New_constraint:Distinct(Sub(pa_59,And(pa_6,0xfffffffffffff000)))
+BtoTake ffffa00000009940
+debug_log Sym branch in path explore: bExecute: 1
+rax: ffffa00200006000 rbx: ffffa00300020000 rcx: 1 rdx: 1 rdi: 127 
+rsi: 3b r8: 3b r9: 1 r10: 0 r11: 3c 
+r12: 8 r13: ffffa0010003fe01 r14: 5c3 r15: 8400040004000 rip: ffffa00000009940 
+rsp: ffffa0010003fd20 rbp: ffffa0010003fda0 rflgs: 117 
+here1
+here3
+here4
+
+ins:316 rip:0xffffa00000009940 in:mov %r8d,%r11d
+dispatching for NIE
+rax: ffffa00200006000 rbx: ffffa00300020000 rcx: 1 rdx: 1 rdi: 127 
+rsi: 3b r8: 3b r9: 1 r10: 0 r11: 3b 
+r12: 8 r13: ffffa0010003fe01 r14: 5c3 r15: 8400040004000 rip: ffffa00000009943 
+rsp: ffffa0010003fd20 rbp: ffffa0010003fda0 rflgs: 117 
+here1
+here3
+here4
+
+ins:317 rip:0xffffa00000009943 in:movzx 0x1ee(%rbx,%r14,1),%edi
+dispatching for NIE
+rax: ffffa00200006000 rbx: ffffa00300020000 rcx: 1 rdx: 1 rdi: 3a 
+rsi: 3b r8: 3b r9: 1 r10: 0 r11: 3b 
+r12: 8 r13: ffffa0010003fe01 r14: 5c3 r15: 8400040004000 rip: ffffa0000000994c 
+rsp: ffffa0010003fd20 rbp: ffffa0010003fda0 rflgs: 117 
+here1
+here3
+here4
+
+ins:318 rip:0xffffa0000000994c in:mov %edi,%r8d
+dispatching for NIE
+rax: ffffa00200006000 rbx: ffffa00300020000 rcx: 1 rdx: 1 rdi: 3a 
+rsi: 3b r8: 3a r9: 1 r10: 0 r11: 3b 
+r12: 8 r13: ffffa0010003fe01 r14: 5c3 r15: 8400040004000 rip: ffffa0000000994f 
+rsp: ffffa0010003fd20 rbp: ffffa0010003fda0 rflgs: 117 
+here1
+here3
+here4
+
+ins:319 rip:0xffffa0000000994f in:cmp $0xff,%di
+dispatching for NIE
+rax: ffffa00200006000 rbx: ffffa00300020000 rcx: 1 rdx: 1 rdi: 3a 
+rsi: 3b r8: 3a r9: 1 r10: 0 r11: 3b 
+r12: 8 r13: ffffa0010003fe01 r14: 5c3 r15: 8400040004000 rip: ffffa00000009953 
+rsp: ffffa0010003fd20 rbp: ffffa0010003fda0 rflgs: 113 
+here1
+here3
+here4
+
+ins:320 rip:0xffffa00000009953 in:jz 0x51(%rip)
+updateJCCDecision 
+rax: ffffa00200006000 rbx: ffffa00300020000 rcx: 1 rdx: 1 rdi: 3a 
+rsi: 3b r8: 3a r9: 1 r10: 0 r11: 3b 
+r12: 8 r13: ffffa0010003fe01 r14: 5c3 r15: 8400040004000 rip: ffffa00000009955 
+rsp: ffffa0010003fd20 rbp: ffffa0010003fda0 rflgs: 113 
+here1
+here3
+here4
+
+ins:321 rip:0xffffa00000009955 in:movzx %r8w,%esi
+dispatching for NIE
+rax: ffffa00200006000 rbx: ffffa00300020000 rcx: 1 rdx: 1 rdi: 3a 
+rsi: 3a r8: 3a r9: 1 r10: 0 r11: 3b 
+r12: 8 r13: ffffa0010003fe01 r14: 5c3 r15: 8400040004000 rip: ffffa00000009959 
+rsp: ffffa0010003fd20 rbp: ffffa0010003fda0 rflgs: 113 
+here1
+here3
+here4
+
+ins:322 rip:0xffffa00000009959 in:lea 0x0(%rsi,%rsi,4),%rdi
+dispatching for NIE
+rax: ffffa00200006000 rbx: ffffa00300020000 rcx: 1 rdx: 1 rdi: 122 
+rsi: 3a r8: 3a r9: 1 r10: 0 r11: 3b 
+r12: 8 r13: ffffa0010003fe01 r14: 5c3 r15: 8400040004000 rip: ffffa0000000995d 
+rsp: ffffa0010003fd20 rbp: ffffa0010003fda0 rflgs: 113 
+here1
+here3
+here4
+
+ins:323 rip:0xffffa0000000995d in:lea 0x0(%rdi,%rdi,4),%r14
+dispatching for NIE
+rax: ffffa00200006000 rbx: ffffa00300020000 rcx: 1 rdx: 1 rdi: 122 
+rsi: 3a r8: 3a r9: 1 r10: 0 r11: 3b 
+r12: 8 r13: ffffa0010003fe01 r14: 5aa r15: 8400040004000 rip: ffffa00000009961 
+rsp: ffffa0010003fd20 rbp: ffffa0010003fda0 rflgs: 113 
+here1
+here3
+here4
+
+ins:324 rip:0xffffa00000009961 in:cmp %r10,0x1e2(%rbx,%r14,1)
+sym mem ...
+dispatching for SIE
+ok3
+pa_58
+And(pa_6,0xfffffffffffff000)
+rax: ffffa00200006000 rbx: ffffa00300020000 rcx: 1 rdx: 1 rdi: 122 
+rsi: 3a r8: 3a r9: 1 r10: 0 r11: 3b 
+r12: 8 r13: ffffa0010003fe01 r14: 5aa r15: 8400040004000 rip: ffffa00000009969 
+rsp: ffffa0010003fd20 rbp: ffffa0010003fda0 rflgs: 113 
+here1
+here3
+here4
+
+ins:325 rip:0xffffa00000009969 in:jnz 0xffffffd7(%rip)
+updateJCCDecision 
+debug_log c_BranchInsn : rip :0xffffa00000009969  insn count: 146
+branches ffffa00000009940 ffffa0000000996b
+New_constraint:Distinct(Sub(pa_58,And(pa_6,0xfffffffffffff000)))
+BtoTake ffffa00000009940
+debug_log Sym branch in path explore: bExecute: 1
+rax: ffffa00200006000 rbx: ffffa00300020000 rcx: 1 rdx: 1 rdi: 122 
+rsi: 3a r8: 3a r9: 1 r10: 0 r11: 3b 
+r12: 8 r13: ffffa0010003fe01 r14: 5aa r15: 8400040004000 rip: ffffa00000009940 
+rsp: ffffa0010003fd20 rbp: ffffa0010003fda0 rflgs: 113 
+here1
+here3
+here4
+
+ins:326 rip:0xffffa00000009940 in:mov %r8d,%r11d
+dispatching for NIE
+rax: ffffa00200006000 rbx: ffffa00300020000 rcx: 1 rdx: 1 rdi: 122 
+rsi: 3a r8: 3a r9: 1 r10: 0 r11: 3a 
+r12: 8 r13: ffffa0010003fe01 r14: 5aa r15: 8400040004000 rip: ffffa00000009943 
+rsp: ffffa0010003fd20 rbp: ffffa0010003fda0 rflgs: 113 
+here1
+here3
+here4
+
+ins:327 rip:0xffffa00000009943 in:movzx 0x1ee(%rbx,%r14,1),%edi
+dispatching for NIE
+rax: ffffa00200006000 rbx: ffffa00300020000 rcx: 1 rdx: 1 rdi: 39 
+rsi: 3a r8: 3a r9: 1 r10: 0 r11: 3a 
+r12: 8 r13: ffffa0010003fe01 r14: 5aa r15: 8400040004000 rip: ffffa0000000994c 
+rsp: ffffa0010003fd20 rbp: ffffa0010003fda0 rflgs: 113 
+here1
+here3
+here4
+
+ins:328 rip:0xffffa0000000994c in:mov %edi,%r8d
+dispatching for NIE
+rax: ffffa00200006000 rbx: ffffa00300020000 rcx: 1 rdx: 1 rdi: 39 
+rsi: 3a r8: 39 r9: 1 r10: 0 r11: 3a 
+r12: 8 r13: ffffa0010003fe01 r14: 5aa r15: 8400040004000 rip: ffffa0000000994f 
+rsp: ffffa0010003fd20 rbp: ffffa0010003fda0 rflgs: 113 
+here1
+here3
+here4
+
+ins:329 rip:0xffffa0000000994f in:cmp $0xff,%di
+dispatching for NIE
+rax: ffffa00200006000 rbx: ffffa00300020000 rcx: 1 rdx: 1 rdi: 39 
+rsi: 3a r8: 39 r9: 1 r10: 0 r11: 3a 
+r12: 8 r13: ffffa0010003fe01 r14: 5aa r15: 8400040004000 rip: ffffa00000009953 
+rsp: ffffa0010003fd20 rbp: ffffa0010003fda0 rflgs: 117 
+here1
+here3
+here4
+
+ins:330 rip:0xffffa00000009953 in:jz 0x51(%rip)
+updateJCCDecision 
+rax: ffffa00200006000 rbx: ffffa00300020000 rcx: 1 rdx: 1 rdi: 39 
+rsi: 3a r8: 39 r9: 1 r10: 0 r11: 3a 
+r12: 8 r13: ffffa0010003fe01 r14: 5aa r15: 8400040004000 rip: ffffa00000009955 
+rsp: ffffa0010003fd20 rbp: ffffa0010003fda0 rflgs: 117 
+here1
+here3
+here4
+
+ins:331 rip:0xffffa00000009955 in:movzx %r8w,%esi
+dispatching for NIE
+rax: ffffa00200006000 rbx: ffffa00300020000 rcx: 1 rdx: 1 rdi: 39 
+rsi: 39 r8: 39 r9: 1 r10: 0 r11: 3a 
+r12: 8 r13: ffffa0010003fe01 r14: 5aa r15: 8400040004000 rip: ffffa00000009959 
+rsp: ffffa0010003fd20 rbp: ffffa0010003fda0 rflgs: 117 
+here1
+here3
+here4
+
+ins:332 rip:0xffffa00000009959 in:lea 0x0(%rsi,%rsi,4),%rdi
+dispatching for NIE
+rax: ffffa00200006000 rbx: ffffa00300020000 rcx: 1 rdx: 1 rdi: 11d 
+rsi: 39 r8: 39 r9: 1 r10: 0 r11: 3a 
+r12: 8 r13: ffffa0010003fe01 r14: 5aa r15: 8400040004000 rip: ffffa0000000995d 
+rsp: ffffa0010003fd20 rbp: ffffa0010003fda0 rflgs: 117 
+here1
+here3
+here4
+
+ins:333 rip:0xffffa0000000995d in:lea 0x0(%rdi,%rdi,4),%r14
+dispatching for NIE
+rax: ffffa00200006000 rbx: ffffa00300020000 rcx: 1 rdx: 1 rdi: 11d 
+rsi: 39 r8: 39 r9: 1 r10: 0 r11: 3a 
+r12: 8 r13: ffffa0010003fe01 r14: 591 r15: 8400040004000 rip: ffffa00000009961 
+rsp: ffffa0010003fd20 rbp: ffffa0010003fda0 rflgs: 117 
+here1
+here3
+here4
+
+ins:334 rip:0xffffa00000009961 in:cmp %r10,0x1e2(%rbx,%r14,1)
+sym mem ...
+dispatching for SIE
+ok3
+pa_57
+And(pa_6,0xfffffffffffff000)
+rax: ffffa00200006000 rbx: ffffa00300020000 rcx: 1 rdx: 1 rdi: 11d 
+rsi: 39 r8: 39 r9: 1 r10: 0 r11: 3a 
+r12: 8 r13: ffffa0010003fe01 r14: 591 r15: 8400040004000 rip: ffffa00000009969 
+rsp: ffffa0010003fd20 rbp: ffffa0010003fda0 rflgs: 117 
+here1
+here3
+here4
+
+ins:335 rip:0xffffa00000009969 in:jnz 0xffffffd7(%rip)
+updateJCCDecision 
+debug_log c_BranchInsn : rip :0xffffa00000009969  insn count: 150
+branches ffffa00000009940 ffffa0000000996b
+New_constraint:Distinct(Sub(pa_57,And(pa_6,0xfffffffffffff000)))
+BtoTake ffffa00000009940
+debug_log Sym branch in path explore: bExecute: 1
+rax: ffffa00200006000 rbx: ffffa00300020000 rcx: 1 rdx: 1 rdi: 11d 
+rsi: 39 r8: 39 r9: 1 r10: 0 r11: 3a 
+r12: 8 r13: ffffa0010003fe01 r14: 591 r15: 8400040004000 rip: ffffa00000009940 
+rsp: ffffa0010003fd20 rbp: ffffa0010003fda0 rflgs: 117 
+here1
+here3
+here4
+
+ins:336 rip:0xffffa00000009940 in:mov %r8d,%r11d
+dispatching for NIE
+rax: ffffa00200006000 rbx: ffffa00300020000 rcx: 1 rdx: 1 rdi: 11d 
+rsi: 39 r8: 39 r9: 1 r10: 0 r11: 39 
+r12: 8 r13: ffffa0010003fe01 r14: 591 r15: 8400040004000 rip: ffffa00000009943 
+rsp: ffffa0010003fd20 rbp: ffffa0010003fda0 rflgs: 117 
+here1
+here3
+here4
+
+ins:337 rip:0xffffa00000009943 in:movzx 0x1ee(%rbx,%r14,1),%edi
+dispatching for NIE
+rax: ffffa00200006000 rbx: ffffa00300020000 rcx: 1 rdx: 1 rdi: 38 
+rsi: 39 r8: 39 r9: 1 r10: 0 r11: 39 
+r12: 8 r13: ffffa0010003fe01 r14: 591 r15: 8400040004000 rip: ffffa0000000994c 
+rsp: ffffa0010003fd20 rbp: ffffa0010003fda0 rflgs: 117 
+here1
+here3
+here4
+
+ins:338 rip:0xffffa0000000994c in:mov %edi,%r8d
+dispatching for NIE
+rax: ffffa00200006000 rbx: ffffa00300020000 rcx: 1 rdx: 1 rdi: 38 
+rsi: 39 r8: 38 r9: 1 r10: 0 r11: 39 
+r12: 8 r13: ffffa0010003fe01 r14: 591 r15: 8400040004000 rip: ffffa0000000994f 
+rsp: ffffa0010003fd20 rbp: ffffa0010003fda0 rflgs: 117 
+here1
+here3
+here4
+
+ins:339 rip:0xffffa0000000994f in:cmp $0xff,%di
+dispatching for NIE
+rax: ffffa00200006000 rbx: ffffa00300020000 rcx: 1 rdx: 1 rdi: 38 
+rsi: 39 r8: 38 r9: 1 r10: 0 r11: 39 
+r12: 8 r13: ffffa0010003fe01 r14: 591 r15: 8400040004000 rip: ffffa00000009953 
+rsp: ffffa0010003fd20 rbp: ffffa0010003fda0 rflgs: 117 
+here1
+here3
+here4
+
+ins:340 rip:0xffffa00000009953 in:jz 0x51(%rip)
+updateJCCDecision 
+rax: ffffa00200006000 rbx: ffffa00300020000 rcx: 1 rdx: 1 rdi: 38 
+rsi: 39 r8: 38 r9: 1 r10: 0 r11: 39 
+r12: 8 r13: ffffa0010003fe01 r14: 591 r15: 8400040004000 rip: ffffa00000009955 
+rsp: ffffa0010003fd20 rbp: ffffa0010003fda0 rflgs: 117 
+here1
+here3
+here4
+
+ins:341 rip:0xffffa00000009955 in:movzx %r8w,%esi
+dispatching for NIE
+rax: ffffa00200006000 rbx: ffffa00300020000 rcx: 1 rdx: 1 rdi: 38 
+rsi: 38 r8: 38 r9: 1 r10: 0 r11: 39 
+r12: 8 r13: ffffa0010003fe01 r14: 591 r15: 8400040004000 rip: ffffa00000009959 
+rsp: ffffa0010003fd20 rbp: ffffa0010003fda0 rflgs: 117 
+here1
+here3
+here4
+
+ins:342 rip:0xffffa00000009959 in:lea 0x0(%rsi,%rsi,4),%rdi
+dispatching for NIE
+rax: ffffa00200006000 rbx: ffffa00300020000 rcx: 1 rdx: 1 rdi: 118 
+rsi: 38 r8: 38 r9: 1 r10: 0 r11: 39 
+r12: 8 r13: ffffa0010003fe01 r14: 591 r15: 8400040004000 rip: ffffa0000000995d 
+rsp: ffffa0010003fd20 rbp: ffffa0010003fda0 rflgs: 117 
+here1
+here3
+here4
+
+ins:343 rip:0xffffa0000000995d in:lea 0x0(%rdi,%rdi,4),%r14
+dispatching for NIE
+rax: ffffa00200006000 rbx: ffffa00300020000 rcx: 1 rdx: 1 rdi: 118 
+rsi: 38 r8: 38 r9: 1 r10: 0 r11: 39 
+r12: 8 r13: ffffa0010003fe01 r14: 578 r15: 8400040004000 rip: ffffa00000009961 
+rsp: ffffa0010003fd20 rbp: ffffa0010003fda0 rflgs: 117 
+here1
+here3
+here4
+
+ins:344 rip:0xffffa00000009961 in:cmp %r10,0x1e2(%rbx,%r14,1)
+sym mem ...
+dispatching for SIE
+ok3
+pa_56
+And(pa_6,0xfffffffffffff000)
+rax: ffffa00200006000 rbx: ffffa00300020000 rcx: 1 rdx: 1 rdi: 118 
+rsi: 38 r8: 38 r9: 1 r10: 0 r11: 39 
+r12: 8 r13: ffffa0010003fe01 r14: 578 r15: 8400040004000 rip: ffffa00000009969 
+rsp: ffffa0010003fd20 rbp: ffffa0010003fda0 rflgs: 117 
+here1
+here3
+here4
+
+ins:345 rip:0xffffa00000009969 in:jnz 0xffffffd7(%rip)
+updateJCCDecision 
+debug_log c_BranchInsn : rip :0xffffa00000009969  insn count: 15a
+branches ffffa00000009940 ffffa0000000996b
+New_constraint:Distinct(Sub(pa_56,And(pa_6,0xfffffffffffff000)))
+BtoTake ffffa00000009940
+debug_log Sym branch in path explore: bExecute: 1
+rax: ffffa00200006000 rbx: ffffa00300020000 rcx: 1 rdx: 1 rdi: 118 
+rsi: 38 r8: 38 r9: 1 r10: 0 r11: 39 
+r12: 8 r13: ffffa0010003fe01 r14: 578 r15: 8400040004000 rip: ffffa00000009940 
+rsp: ffffa0010003fd20 rbp: ffffa0010003fda0 rflgs: 117 
+here1
+here3
+here4
+
+ins:346 rip:0xffffa00000009940 in:mov %r8d,%r11d
+dispatching for NIE
+rax: ffffa00200006000 rbx: ffffa00300020000 rcx: 1 rdx: 1 rdi: 118 
+rsi: 38 r8: 38 r9: 1 r10: 0 r11: 38 
+r12: 8 r13: ffffa0010003fe01 r14: 578 r15: 8400040004000 rip: ffffa00000009943 
+rsp: ffffa0010003fd20 rbp: ffffa0010003fda0 rflgs: 117 
+here1
+here3
+here4
+
+ins:347 rip:0xffffa00000009943 in:movzx 0x1ee(%rbx,%r14,1),%edi
+dispatching for NIE
+rax: ffffa00200006000 rbx: ffffa00300020000 rcx: 1 rdx: 1 rdi: 37 
+rsi: 38 r8: 38 r9: 1 r10: 0 r11: 38 
+r12: 8 r13: ffffa0010003fe01 r14: 578 r15: 8400040004000 rip: ffffa0000000994c 
+rsp: ffffa0010003fd20 rbp: ffffa0010003fda0 rflgs: 117 
+here1
+here3
+here4
+
+ins:348 rip:0xffffa0000000994c in:mov %edi,%r8d
+dispatching for NIE
+rax: ffffa00200006000 rbx: ffffa00300020000 rcx: 1 rdx: 1 rdi: 37 
+rsi: 38 r8: 37 r9: 1 r10: 0 r11: 38 
+r12: 8 r13: ffffa0010003fe01 r14: 578 r15: 8400040004000 rip: ffffa0000000994f 
+rsp: ffffa0010003fd20 rbp: ffffa0010003fda0 rflgs: 117 
+here1
+here3
+here4
+
+ins:349 rip:0xffffa0000000994f in:cmp $0xff,%di
+dispatching for NIE
+rax: ffffa00200006000 rbx: ffffa00300020000 rcx: 1 rdx: 1 rdi: 37 
+rsi: 38 r8: 37 r9: 1 r10: 0 r11: 38 
+r12: 8 r13: ffffa0010003fe01 r14: 578 r15: 8400040004000 rip: ffffa00000009953 
+rsp: ffffa0010003fd20 rbp: ffffa0010003fda0 rflgs: 113 
+here1
+here3
+here4
+
+ins:350 rip:0xffffa00000009953 in:jz 0x51(%rip)
+updateJCCDecision 
+rax: ffffa00200006000 rbx: ffffa00300020000 rcx: 1 rdx: 1 rdi: 37 
+rsi: 38 r8: 37 r9: 1 r10: 0 r11: 38 
+r12: 8 r13: ffffa0010003fe01 r14: 578 r15: 8400040004000 rip: ffffa00000009955 
+rsp: ffffa0010003fd20 rbp: ffffa0010003fda0 rflgs: 113 
+here1
+here3
+here4
+
+ins:351 rip:0xffffa00000009955 in:movzx %r8w,%esi
+dispatching for NIE
+rax: ffffa00200006000 rbx: ffffa00300020000 rcx: 1 rdx: 1 rdi: 37 
+rsi: 37 r8: 37 r9: 1 r10: 0 r11: 38 
+r12: 8 r13: ffffa0010003fe01 r14: 578 r15: 8400040004000 rip: ffffa00000009959 
+rsp: ffffa0010003fd20 rbp: ffffa0010003fda0 rflgs: 113 
+here1
+here3
+here4
+
+ins:352 rip:0xffffa00000009959 in:lea 0x0(%rsi,%rsi,4),%rdi
+dispatching for NIE
+rax: ffffa00200006000 rbx: ffffa00300020000 rcx: 1 rdx: 1 rdi: 113 
+rsi: 37 r8: 37 r9: 1 r10: 0 r11: 38 
+r12: 8 r13: ffffa0010003fe01 r14: 578 r15: 8400040004000 rip: ffffa0000000995d 
+rsp: ffffa0010003fd20 rbp: ffffa0010003fda0 rflgs: 113 
+here1
+here3
+here4
+
+ins:353 rip:0xffffa0000000995d in:lea 0x0(%rdi,%rdi,4),%r14
+dispatching for NIE
+rax: ffffa00200006000 rbx: ffffa00300020000 rcx: 1 rdx: 1 rdi: 113 
+rsi: 37 r8: 37 r9: 1 r10: 0 r11: 38 
+r12: 8 r13: ffffa0010003fe01 r14: 55f r15: 8400040004000 rip: ffffa00000009961 
+rsp: ffffa0010003fd20 rbp: ffffa0010003fda0 rflgs: 113 
+here1
+here3
+here4
+
+ins:354 rip:0xffffa00000009961 in:cmp %r10,0x1e2(%rbx,%r14,1)
+sym mem ...
+dispatching for SIE
+ok3
+pa_55
+And(pa_6,0xfffffffffffff000)
+rax: ffffa00200006000 rbx: ffffa00300020000 rcx: 1 rdx: 1 rdi: 113 
+rsi: 37 r8: 37 r9: 1 r10: 0 r11: 38 
+r12: 8 r13: ffffa0010003fe01 r14: 55f r15: 8400040004000 rip: ffffa00000009969 
+rsp: ffffa0010003fd20 rbp: ffffa0010003fda0 rflgs: 113 
+here1
+here3
+here4
+
+ins:355 rip:0xffffa00000009969 in:jnz 0xffffffd7(%rip)
+updateJCCDecision 
+debug_log c_BranchInsn : rip :0xffffa00000009969  insn count: 164
+branches ffffa00000009940 ffffa0000000996b
+New_constraint:Distinct(Sub(pa_55,And(pa_6,0xfffffffffffff000)))
+BtoTake ffffa00000009940
+debug_log Sym branch in path explore: bExecute: 1
+rax: ffffa00200006000 rbx: ffffa00300020000 rcx: 1 rdx: 1 rdi: 113 
+rsi: 37 r8: 37 r9: 1 r10: 0 r11: 38 
+r12: 8 r13: ffffa0010003fe01 r14: 55f r15: 8400040004000 rip: ffffa00000009940 
+rsp: ffffa0010003fd20 rbp: ffffa0010003fda0 rflgs: 113 
+here1
+here3
+here4
+
+ins:356 rip:0xffffa00000009940 in:mov %r8d,%r11d
+dispatching for NIE
+rax: ffffa00200006000 rbx: ffffa00300020000 rcx: 1 rdx: 1 rdi: 113 
+rsi: 37 r8: 37 r9: 1 r10: 0 r11: 37 
+r12: 8 r13: ffffa0010003fe01 r14: 55f r15: 8400040004000 rip: ffffa00000009943 
+rsp: ffffa0010003fd20 rbp: ffffa0010003fda0 rflgs: 113 
+here1
+here3
+here4
+
+ins:357 rip:0xffffa00000009943 in:movzx 0x1ee(%rbx,%r14,1),%edi
+dispatching for NIE
+rax: ffffa00200006000 rbx: ffffa00300020000 rcx: 1 rdx: 1 rdi: 35 
+rsi: 37 r8: 37 r9: 1 r10: 0 r11: 37 
+r12: 8 r13: ffffa0010003fe01 r14: 55f r15: 8400040004000 rip: ffffa0000000994c 
+rsp: ffffa0010003fd20 rbp: ffffa0010003fda0 rflgs: 113 
+here1
+here3
+here4
+
+ins:358 rip:0xffffa0000000994c in:mov %edi,%r8d
+dispatching for NIE
+rax: ffffa00200006000 rbx: ffffa00300020000 rcx: 1 rdx: 1 rdi: 35 
+rsi: 37 r8: 35 r9: 1 r10: 0 r11: 37 
+r12: 8 r13: ffffa0010003fe01 r14: 55f r15: 8400040004000 rip: ffffa0000000994f 
+rsp: ffffa0010003fd20 rbp: ffffa0010003fda0 rflgs: 113 
+here1
+here3
+here4
+
+ins:359 rip:0xffffa0000000994f in:cmp $0xff,%di
+dispatching for NIE
+rax: ffffa00200006000 rbx: ffffa00300020000 rcx: 1 rdx: 1 rdi: 35 
+rsi: 37 r8: 35 r9: 1 r10: 0 r11: 37 
+r12: 8 r13: ffffa0010003fe01 r14: 55f r15: 8400040004000 rip: ffffa00000009953 
+rsp: ffffa0010003fd20 rbp: ffffa0010003fda0 rflgs: 117 
+here1
+here3
+here4
+
+ins:360 rip:0xffffa00000009953 in:jz 0x51(%rip)
+updateJCCDecision 
+rax: ffffa00200006000 rbx: ffffa00300020000 rcx: 1 rdx: 1 rdi: 35 
+rsi: 37 r8: 35 r9: 1 r10: 0 r11: 37 
+r12: 8 r13: ffffa0010003fe01 r14: 55f r15: 8400040004000 rip: ffffa00000009955 
+rsp: ffffa0010003fd20 rbp: ffffa0010003fda0 rflgs: 117 
+here1
+here3
+here4
+
+ins:361 rip:0xffffa00000009955 in:movzx %r8w,%esi
+dispatching for NIE
+rax: ffffa00200006000 rbx: ffffa00300020000 rcx: 1 rdx: 1 rdi: 35 
+rsi: 35 r8: 35 r9: 1 r10: 0 r11: 37 
+r12: 8 r13: ffffa0010003fe01 r14: 55f r15: 8400040004000 rip: ffffa00000009959 
+rsp: ffffa0010003fd20 rbp: ffffa0010003fda0 rflgs: 117 
+here1
+here3
+here4
+
+ins:362 rip:0xffffa00000009959 in:lea 0x0(%rsi,%rsi,4),%rdi
+dispatching for NIE
+rax: ffffa00200006000 rbx: ffffa00300020000 rcx: 1 rdx: 1 rdi: 109 
+rsi: 35 r8: 35 r9: 1 r10: 0 r11: 37 
+r12: 8 r13: ffffa0010003fe01 r14: 55f r15: 8400040004000 rip: ffffa0000000995d 
+rsp: ffffa0010003fd20 rbp: ffffa0010003fda0 rflgs: 117 
+here1
+here3
+here4
+
+ins:363 rip:0xffffa0000000995d in:lea 0x0(%rdi,%rdi,4),%r14
+dispatching for NIE
+rax: ffffa00200006000 rbx: ffffa00300020000 rcx: 1 rdx: 1 rdi: 109 
+rsi: 35 r8: 35 r9: 1 r10: 0 r11: 37 
+r12: 8 r13: ffffa0010003fe01 r14: 52d r15: 8400040004000 rip: ffffa00000009961 
+rsp: ffffa0010003fd20 rbp: ffffa0010003fda0 rflgs: 117 
+here1
+here3
+here4
+
+ins:364 rip:0xffffa00000009961 in:cmp %r10,0x1e2(%rbx,%r14,1)
+sym mem ...
+dispatching for SIE
+ok3
+pa_53
+And(pa_6,0xfffffffffffff000)
+rax: ffffa00200006000 rbx: ffffa00300020000 rcx: 1 rdx: 1 rdi: 109 
+rsi: 35 r8: 35 r9: 1 r10: 0 r11: 37 
+r12: 8 r13: ffffa0010003fe01 r14: 52d r15: 8400040004000 rip: ffffa00000009969 
+rsp: ffffa0010003fd20 rbp: ffffa0010003fda0 rflgs: 117 
+here1
+here3
+here4
+
+ins:365 rip:0xffffa00000009969 in:jnz 0xffffffd7(%rip)
+updateJCCDecision 
+debug_log c_BranchInsn : rip :0xffffa00000009969  insn count: 16e
+branches ffffa00000009940 ffffa0000000996b
+New_constraint:LNot(Distinct(Sub(pa_53,And(pa_6,0xfffffffffffff000))))
+BtoTake ffffa0000000996b
+debug_log Sym branch in path explore: bExecute: 0
+rax: ffffa00200006000 rbx: ffffa00300020000 rcx: 1 rdx: 1 rdi: 109 
+rsi: 35 r8: 35 r9: 1 r10: 0 r11: 37 
+r12: 8 r13: ffffa0010003fe01 r14: 52d r15: 8400040004000 rip: ffffa0000000996b 
+rsp: ffffa0010003fd20 rbp: ffffa0010003fda0 rflgs: 157 
+here1
+here3
+here4
+
+ins:366 rip:0xffffa0000000996b in:cmp %r9b,0x1f1(%rbx,%r14,1)
+dispatching for NIE
+rax: ffffa00200006000 rbx: ffffa00300020000 rcx: 1 rdx: 1 rdi: 109 
+rsi: 35 r8: 35 r9: 1 r10: 0 r11: 37 
+r12: 8 r13: ffffa0010003fe01 r14: 52d r15: 8400040004000 rip: ffffa00000009973 
+rsp: ffffa0010003fd20 rbp: ffffa0010003fda0 rflgs: 146 
+here1
+here3
+here4
+
+ins:367 rip:0xffffa00000009973 in:jnz 0xffffffcd(%rip)
+updateJCCDecision 
+rax: ffffa00200006000 rbx: ffffa00300020000 rcx: 1 rdx: 1 rdi: 109 
+rsi: 35 r8: 35 r9: 1 r10: 0 r11: 37 
+r12: 8 r13: ffffa0010003fe01 r14: 52d r15: 8400040004000 rip: ffffa00000009975 
+rsp: ffffa0010003fd20 rbp: ffffa0010003fda0 rflgs: 146 
+here1
+here3
+here4
+
+ins:368 rip:0xffffa00000009975 in:cmp %cl,0x1f2(%rbx,%r14,1)
+dispatching for NIE
+rax: ffffa00200006000 rbx: ffffa00300020000 rcx: 1 rdx: 1 rdi: 109 
+rsi: 35 r8: 35 r9: 1 r10: 0 r11: 37 
+r12: 8 r13: ffffa0010003fe01 r14: 52d r15: 8400040004000 rip: ffffa0000000997d 
+rsp: ffffa0010003fd20 rbp: ffffa0010003fda0 rflgs: 146 
+here1
+here3
+here4
+
+ins:369 rip:0xffffa0000000997d in:jnz 0xffffffc3(%rip)
+updateJCCDecision 
+rax: ffffa00200006000 rbx: ffffa00300020000 rcx: 1 rdx: 1 rdi: 109 
+rsi: 35 r8: 35 r9: 1 r10: 0 r11: 37 
+r12: 8 r13: ffffa0010003fe01 r14: 52d r15: 8400040004000 rip: ffffa0000000997f 
+rsp: ffffa0010003fd20 rbp: ffffa0010003fda0 rflgs: 146 
+here1
+here3
+here4
+
+ins:370 rip:0xffffa0000000997f in:lea 0x0(%rbx,%r14,1),%rdi
+dispatching for NIE
+rax: ffffa00200006000 rbx: ffffa00300020000 rcx: 1 rdx: 1 rdi: ffffa0030002052d 
+rsi: 35 r8: 35 r9: 1 r10: 0 r11: 37 
+r12: 8 r13: ffffa0010003fe01 r14: 52d r15: 8400040004000 rip: ffffa00000009983 
+rsp: ffffa0010003fd20 rbp: ffffa0010003fda0 rflgs: 146 
+here1
+here3
+here4
+
+ins:371 rip:0xffffa00000009983 in:add $0x1ee,%rdi
+dispatching for NIE
+rax: ffffa00200006000 rbx: ffffa00300020000 rcx: 1 rdx: 1 rdi: ffffa0030002071b 
+rsi: 35 r8: 35 r9: 1 r10: 0 r11: 37 
+r12: 8 r13: ffffa0010003fe01 r14: 52d r15: 8400040004000 rip: ffffa0000000998a 
+rsp: ffffa0010003fd20 rbp: ffffa0010003fda0 rflgs: 196 
+here1
+here3
+here4
+
+ins:372 rip:0xffffa0000000998a in:movzx 0x1ee(%rbx,%r14,1),%r8d
+dispatching for NIE
+rax: ffffa00200006000 rbx: ffffa00300020000 rcx: 1 rdx: 1 rdi: ffffa0030002071b 
+rsi: 35 r8: 34 r9: 1 r10: 0 r11: 37 
+r12: 8 r13: ffffa0010003fe01 r14: 52d r15: 8400040004000 rip: ffffa00000009993 
+rsp: ffffa0010003fd20 rbp: ffffa0010003fda0 rflgs: 196 
+here1
+here3
+here4
+
+ins:373 rip:0xffffa00000009993 in:cmp $0xff,%r11w
+dispatching for NIE
+rax: ffffa00200006000 rbx: ffffa00300020000 rcx: 1 rdx: 1 rdi: ffffa0030002071b 
+rsi: 35 r8: 34 r9: 1 r10: 0 r11: 37 
+r12: 8 r13: ffffa0010003fe01 r14: 52d r15: 8400040004000 rip: ffffa00000009998 
+rsp: ffffa0010003fd20 rbp: ffffa0010003fda0 rflgs: 113 
+here1
+here3
+here4
+
+ins:374 rip:0xffffa00000009998 in:jz 0x127(%rip)
+updateJCCDecision 
+rax: ffffa00200006000 rbx: ffffa00300020000 rcx: 1 rdx: 1 rdi: ffffa0030002071b 
+rsi: 35 r8: 34 r9: 1 r10: 0 r11: 37 
+r12: 8 r13: ffffa0010003fe01 r14: 52d r15: 8400040004000 rip: ffffa0000000999e 
+rsp: ffffa0010003fd20 rbp: ffffa0010003fda0 rflgs: 113 
+here1
+here3
+here4
+
+ins:375 rip:0xffffa0000000999e in:movzx %r11w,%esi
+dispatching for NIE
+rax: ffffa00200006000 rbx: ffffa00300020000 rcx: 1 rdx: 1 rdi: ffffa0030002071b 
+rsi: 37 r8: 34 r9: 1 r10: 0 r11: 37 
+r12: 8 r13: ffffa0010003fe01 r14: 52d r15: 8400040004000 rip: ffffa000000099a2 
+rsp: ffffa0010003fd20 rbp: ffffa0010003fda0 rflgs: 113 
+here1
+here3
+here4
+
+ins:376 rip:0xffffa000000099a2 in:jmp 0x14(%rip)
+rax: ffffa00200006000 rbx: ffffa00300020000 rcx: 1 rdx: 1 rdi: ffffa0030002071b 
+rsi: 37 r8: 34 r9: 1 r10: 0 r11: 37 
+r12: 8 r13: ffffa0010003fe01 r14: 52d r15: 8400040004000 rip: ffffa000000099b6 
+rsp: ffffa0010003fd20 rbp: ffffa0010003fda0 rflgs: 113 
+here1
+here3
+here4
+
+ins:377 rip:0xffffa000000099b6 in:mov 0x8(%rsp),%r11
+dispatching for NIE
+rax: ffffa00200006000 rbx: ffffa00300020000 rcx: 1 rdx: 1 rdi: ffffa0030002071b 
+rsi: 37 r8: 34 r9: 1 r10: 0 r11: 8400040004000 
+r12: 8 r13: ffffa0010003fe01 r14: 52d r15: 8400040004000 rip: ffffa000000099bb 
+rsp: ffffa0010003fd20 rbp: ffffa0010003fda0 rflgs: 113 
+here1
+here3
+here4
+
+ins:378 rip:0xffffa000000099bb in:mov 0x20(%rsp),%r14
+dispatching for NIE
+rax: ffffa00200006000 rbx: ffffa00300020000 rcx: 1 rdx: 1 rdi: ffffa0030002071b 
+rsi: 37 r8: 34 r9: 1 r10: 0 r11: 8400040004000 
+r12: 8 r13: ffffa0010003fe01 r14: 0 r15: 8400040004000 rip: ffffa000000099c0 
+rsp: ffffa0010003fd20 rbp: ffffa0010003fda0 rflgs: 113 
+here1
+here3
+here4
+
+ins:379 rip:0xffffa000000099c0 in:mov 0x18(%rsp),%r10
+write reg 1801000a is sym. 
+sym reg ...
+dispatching for SIE
+ok3
+at process_mov
+rax: ffffa00200006000 rbx: ffffa00300020000 rcx: 1 rdx: 1 rdi: ffffa0030002071b 
+rsi: 37 r8: 34 r9: 1 r10: ffffa00300020278 r11: 8400040004000 
+r12: 8 r13: ffffa0010003fe01 r14: 0 r15: 8400040004000 rip: ffffa000000099c5 
+rsp: ffffa0010003fd20 rbp: ffffa0010003fda0 rflgs: 113 
+here1
+here3
+here4
+
+ins:380 rip:0xffffa000000099c5 in:lea 0x0(%rsi,%rsi,4),%rcx
+dispatching for NIE
+rax: ffffa00200006000 rbx: ffffa00300020000 rcx: 113 rdx: 1 rdi: ffffa0030002071b 
+rsi: 37 r8: 34 r9: 1 r10: ffffa00300020278 r11: 8400040004000 
+r12: 8 r13: ffffa0010003fe01 r14: 0 r15: 8400040004000 rip: ffffa000000099c9 
+rsp: ffffa0010003fd20 rbp: ffffa0010003fda0 rflgs: 113 
+here1
+here3
+here4
+
+ins:381 rip:0xffffa000000099c9 in:lea 0x0(%rcx,%rcx,4),%rcx
+dispatching for NIE
+rax: ffffa00200006000 rbx: ffffa00300020000 rcx: 55f rdx: 1 rdi: ffffa0030002071b 
+rsi: 37 r8: 34 r9: 1 r10: ffffa00300020278 r11: 8400040004000 
+r12: 8 r13: ffffa0010003fe01 r14: 0 r15: 8400040004000 rip: ffffa000000099cd 
+rsp: ffffa0010003fd20 rbp: ffffa0010003fda0 rflgs: 113 
+here1
+here3
+here4
+
+ins:382 rip:0xffffa000000099cd in:mov %r8w,0x1ee(%rbx,%rcx,1)
+ seam_va: 0xffffa0030002074d seam_pg_va: 0xffffa00300020000
+already backed up
+dispatching for NIE
+rax: ffffa00200006000 rbx: ffffa00300020000 rcx: 55f rdx: 1 rdi: ffffa0030002071b 
+rsi: 37 r8: 34 r9: 1 r10: ffffa00300020278 r11: 8400040004000 
+r12: 8 r13: ffffa0010003fe01 r14: 0 r15: 8400040004000 rip: ffffa000000099d6 
+rsp: ffffa0010003fd20 rbp: ffffa0010003fda0 rflgs: 113 
+here1
+here3
+here4
+
+ins:383 rip:0xffffa000000099d6 in:xor %r9d,%r9d
+dispatching for NIE
+rax: ffffa00200006000 rbx: ffffa00300020000 rcx: 55f rdx: 1 rdi: ffffa0030002071b 
+rsi: 37 r8: 34 r9: 0 r10: ffffa00300020278 r11: 8400040004000 
+r12: 8 r13: ffffa0010003fe01 r14: 0 r15: 8400040004000 rip: ffffa000000099d9 
+rsp: ffffa0010003fd20 rbp: ffffa0010003fda0 rflgs: 146 
+here1
+here3
+here4
+
+ins:384 rip:0xffffa000000099d9 in:jmp 0x22(%rip)
+rax: ffffa00200006000 rbx: ffffa00300020000 rcx: 55f rdx: 1 rdi: ffffa0030002071b 
+rsi: 37 r8: 34 r9: 0 r10: ffffa00300020278 r11: 8400040004000 
+r12: 8 r13: ffffa0010003fe01 r14: 0 r15: 8400040004000 rip: ffffa000000099fb 
+rsp: ffffa0010003fd20 rbp: ffffa0010003fda0 rflgs: 146 
+here1
+here3
+here4
+
+ins:385 rip:0xffffa000000099fb in:mov $0xffff,(%rdi)
+ seam_va: 0xffffa0030002071b seam_pg_va: 0xffffa00300020000
+already backed up
+dispatching for NIE
+rax: ffffa00200006000 rbx: ffffa00300020000 rcx: 55f rdx: 1 rdi: ffffa0030002071b 
+rsi: 37 r8: 34 r9: 0 r10: ffffa00300020278 r11: 8400040004000 
+r12: 8 r13: ffffa0010003fe01 r14: 0 r15: 8400040004000 rip: ffffa00000009a00 
+rsp: ffffa0010003fd20 rbp: ffffa0010003fda0 rflgs: 146 
+here1
+here3
+here4
+
+ins:386 rip:0xffffa00000009a00 in:mov 0x28(%rsp),%r8
+dispatching for NIE
+rax: ffffa00200006000 rbx: ffffa00300020000 rcx: 55f rdx: 1 rdi: ffffa0030002071b 
+rsi: 37 r8: 6 r9: 0 r10: ffffa00300020278 r11: 8400040004000 
+r12: 8 r13: ffffa0010003fe01 r14: 0 r15: 8400040004000 rip: ffffa00000009a05 
+rsp: ffffa0010003fd20 rbp: ffffa0010003fda0 rflgs: 146 
+here1
+here3
+here4
+
+ins:387 rip:0xffffa00000009a05 in:mov 0x10(%rsp),%rdi
+dispatching for NIE
+rax: ffffa00200006000 rbx: ffffa00300020000 rcx: 55f rdx: 1 rdi: 96 
+rsi: 37 r8: 6 r9: 0 r10: ffffa00300020278 r11: 8400040004000 
+r12: 8 r13: ffffa0010003fe01 r14: 0 r15: 8400040004000 rip: ffffa00000009a0a 
+rsp: ffffa0010003fd20 rbp: ffffa0010003fda0 rflgs: 146 
+here1
+here3
+here4
+
+ins:388 rip:0xffffa00000009a0a in:mov $0x1,0xe(%r10)
+ seam_va: 0xffffa00300020286 seam_pg_va: 0xffffa00300020000
+already backed up
+dispatching for NIE
+rax: ffffa00200006000 rbx: ffffa00300020000 rcx: 55f rdx: 1 rdi: 96 
+rsi: 37 r8: 6 r9: 0 r10: ffffa00300020278 r11: 8400040004000 
+r12: 8 r13: ffffa0010003fe01 r14: 0 r15: 8400040004000 rip: ffffa00000009a0f 
+rsp: ffffa0010003fd20 rbp: ffffa0010003fda0 rflgs: 146 
+here1
+here3
+here4
+
+ins:389 rip:0xffffa00000009a0f in:mov %r15,(%r10)
+sym mem ...
+ seam_va: 0xffffa00300020278 seam_pg_va: 0xffffa00300020000
+already backed up
+dispatching for SIE
+ok3
+at process_mov
+rax: ffffa00200006000 rbx: ffffa00300020000 rcx: 55f rdx: 1 rdi: 96 
+rsi: 37 r8: 6 r9: 0 r10: ffffa00300020278 r11: 8400040004000 
+r12: 8 r13: ffffa0010003fe01 r14: 0 r15: 8400040004000 rip: ffffa00000009a12 
+rsp: ffffa0010003fd20 rbp: ffffa0010003fda0 rflgs: 146 
+here1
+here3
+here4
+
+ins:390 rip:0xffffa00000009a12 in:mov %r13b,0x1f1(%rbx,%rdi,1)
+ seam_va: 0xffffa00300020287 seam_pg_va: 0xffffa00300020000
+already backed up
+dispatching for NIE
+rax: ffffa00200006000 rbx: ffffa00300020000 rcx: 55f rdx: 1 rdi: 96 
+rsi: 37 r8: 6 r9: 0 r10: ffffa00300020278 r11: 8400040004000 
+r12: 8 r13: ffffa0010003fe01 r14: 0 r15: 8400040004000 rip: ffffa00000009a1a 
+rsp: ffffa0010003fd20 rbp: ffffa0010003fda0 rflgs: 146 
+here1
+here3
+here4
+
+ins:391 rip:0xffffa00000009a1a in:mov %dl,0x1f2(%rbx,%rdi,1)
+ seam_va: 0xffffa00300020288 seam_pg_va: 0xffffa00300020000
+already backed up
+dispatching for NIE
+rax: ffffa00200006000 rbx: ffffa00300020000 rcx: 55f rdx: 1 rdi: 96 
+rsi: 37 r8: 6 r9: 0 r10: ffffa00300020278 r11: 8400040004000 
+r12: 8 r13: ffffa0010003fe01 r14: 0 r15: 8400040004000 rip: ffffa00000009a21 
+rsp: ffffa0010003fd20 rbp: ffffa0010003fda0 rflgs: 146 
+here1
+here3
+here4
+
+ins:392 rip:0xffffa00000009a21 in:mov $0x1,0x1f3(%rbx,%rdi,1)
+sym mem ...
+ seam_va: 0xffffa00300020289 seam_pg_va: 0xffffa00300020000
+already backed up
+dispatching for SIE
+ok3
+at process_mov
+end2
+rax: ffffa00200006000 rbx: ffffa00300020000 rcx: 55f rdx: 1 rdi: 96 
+rsi: 37 r8: 6 r9: 0 r10: ffffa00300020278 r11: 8400040004000 
+r12: 8 r13: ffffa0010003fe01 r14: 0 r15: 8400040004000 rip: ffffa00000009a2d 
+rsp: ffffa0010003fd20 rbp: ffffa0010003fda0 rflgs: 146 
+here1
+here3
+here4
+
+ins:393 rip:0xffffa00000009a2d in:movzx 0xe62(%rbx,%r12,2),%ecx
+dispatching for NIE
+rax: ffffa00200006000 rbx: ffffa00300020000 rcx: 2a rdx: 1 rdi: 96 
+rsi: 37 r8: 6 r9: 0 r10: ffffa00300020278 r11: 8400040004000 
+r12: 8 r13: ffffa0010003fe01 r14: 0 r15: 8400040004000 rip: ffffa00000009a36 
+rsp: ffffa0010003fd20 rbp: ffffa0010003fda0 rflgs: 146 
+here1
+here3
+here4
+
+ins:394 rip:0xffffa00000009a36 in:mov %cx,0x1ee(%rbx,%rdi,1)
+ seam_va: 0xffffa00300020284 seam_pg_va: 0xffffa00300020000
+already backed up
+dispatching for NIE
+rax: ffffa00200006000 rbx: ffffa00300020000 rcx: 2a rdx: 1 rdi: 96 
+rsi: 37 r8: 6 r9: 0 r10: ffffa00300020278 r11: 8400040004000 
+r12: 8 r13: ffffa0010003fe01 r14: 0 r15: 8400040004000 rip: ffffa00000009a3e 
+rsp: ffffa0010003fd20 rbp: ffffa0010003fda0 rflgs: 146 
+here1
+here3
+here4
+
+ins:395 rip:0xffffa00000009a3e in:mov %r8w,0xe62(%rbx,%r12,2)
+ seam_va: 0xffffa00300020e72 seam_pg_va: 0xffffa00300020000
+already backed up
+dispatching for NIE
+rax: ffffa00200006000 rbx: ffffa00300020000 rcx: 2a rdx: 1 rdi: 96 
+rsi: 37 r8: 6 r9: 0 r10: ffffa00300020278 r11: 8400040004000 
+r12: 8 r13: ffffa0010003fe01 r14: 0 r15: 8400040004000 rip: ffffa00000009a47 
+rsp: ffffa0010003fd20 rbp: ffffa0010003fda0 rflgs: 146 
+here1
+here3
+here4
+
+ins:396 rip:0xffffa00000009a47 in:or 0x40(%rsp),%rax
+dispatching for NIE
+rax: ffffa00200006000 rbx: ffffa00300020000 rcx: 2a rdx: 1 rdi: 96 
+rsi: 37 r8: 6 r9: 0 r10: ffffa00300020278 r11: 8400040004000 
+r12: 8 r13: ffffa0010003fe01 r14: 0 r15: 8400040004000 rip: ffffa00000009a4c 
+rsp: ffffa0010003fd20 rbp: ffffa0010003fda0 rflgs: 186 
+here1
+here3
+here4
+
+ins:397 rip:0xffffa00000009a4c in:shl/sal $0x7,%r14d
+dispatching for NIE
+rax: ffffa00200006000 rbx: ffffa00300020000 rcx: 2a rdx: 1 rdi: 96 
+rsi: 37 r8: 6 r9: 0 r10: ffffa00300020278 r11: 8400040004000 
+r12: 8 r13: ffffa0010003fe01 r14: 0 r15: 8400040004000 rip: ffffa00000009a50 
+rsp: ffffa0010003fd20 rbp: ffffa0010003fda0 rflgs: 146 
+here1
+here3
+here4
+
+ins:398 rip:0xffffa00000009a50 in:add %r8,%r14
+dispatching for NIE
+rax: ffffa00200006000 rbx: ffffa00300020000 rcx: 2a rdx: 1 rdi: 96 
+rsi: 37 r8: 6 r9: 0 r10: ffffa00300020278 r11: 8400040004000 
+r12: 8 r13: ffffa0010003fe01 r14: 6 r15: 8400040004000 rip: ffffa00000009a53 
+rsp: ffffa0010003fd20 rbp: ffffa0010003fda0 rflgs: 106 
+here1
+here3
+here4
+
+ins:399 rip:0xffffa00000009a53 in:mov $0x4503599627366400,%rcx
+dispatching for NIE
+rax: ffffa00200006000 rbx: ffffa00300020000 rcx: ffffffffff000 rdx: 1 rdi: 96 
+rsi: 37 r8: 6 r9: 0 r10: ffffa00300020278 r11: 8400040004000 
+r12: 8 r13: ffffa0010003fe01 r14: 6 r15: 8400040004000 rip: ffffa00000009a5d 
+rsp: ffffa0010003fd20 rbp: ffffa0010003fda0 rflgs: 106 
+here1
+here3
+here4
+
+ins:400 rip:0xffffa00000009a5d in:and %rcx,%r11
+dispatching for NIE
+rax: ffffa00200006000 rbx: ffffa00300020000 rcx: ffffffffff000 rdx: 1 rdi: 96 
+rsi: 37 r8: 6 r9: 0 r10: ffffa00300020278 r11: 8400040004000 
+r12: 8 r13: ffffa0010003fe01 r14: 6 r15: 8400040004000 rip: ffffa00000009a60 
+rsp: ffffa0010003fd20 rbp: ffffa0010003fda0 rflgs: 106 
+here1
+here3
+here4
+
+ins:401 rip:0xffffa00000009a60 in:mov %r13b,%r9b
+dispatching for NIE
+rax: ffffa00200006000 rbx: ffffa00300020000 rcx: ffffffffff000 rdx: 1 rdi: 96 
+rsi: 37 r8: 6 r9: 1 r10: ffffa00300020278 r11: 8400040004000 
+r12: 8 r13: ffffa0010003fe01 r14: 6 r15: 8400040004000 rip: ffffa00000009a63 
+rsp: ffffa0010003fd20 rbp: ffffa0010003fda0 rflgs: 106 
+here1
+here3
+here4
+
+ins:402 rip:0xffffa00000009a63 in:mov %r13d,%ecx
+dispatching for NIE
+rax: ffffa00200006000 rbx: ffffa00300020000 rcx: 3fe01 rdx: 1 rdi: 96 
+rsi: 37 r8: 6 r9: 1 r10: ffffa00300020278 r11: 8400040004000 
+r12: 8 r13: ffffa0010003fe01 r14: 6 r15: 8400040004000 rip: ffffa00000009a66 
+rsp: ffffa0010003fd20 rbp: ffffa0010003fda0 rflgs: 106 
+here1
+here3
+here4
+
+ins:403 rip:0xffffa00000009a66 in:shl/sal $0x6,%cl
+dispatching for NIE
+rax: ffffa00200006000 rbx: ffffa00300020000 rcx: 3fe40 rdx: 1 rdi: 96 
+rsi: 37 r8: 6 r9: 1 r10: ffffa00300020278 r11: 8400040004000 
+r12: 8 r13: ffffa0010003fe01 r14: 6 r15: 8400040004000 rip: ffffa00000009a69 
+rsp: ffffa0010003fd20 rbp: ffffa0010003fda0 rflgs: 102 
+here1
+here3
+here4
+
+ins:404 rip:0xffffa00000009a69 in:mov $0x-9223372036854775775,%rdi
+dispatching for NIE
+rax: ffffa00200006000 rbx: ffffa00300020000 rcx: 3fe40 rdx: 1 rdi: 8000000000000021 
+rsi: 37 r8: 6 r9: 1 r10: ffffa00300020278 r11: 8400040004000 
+r12: 8 r13: ffffa0010003fe01 r14: 6 r15: 8400040004000 rip: ffffa00000009a73 
+rsp: ffffa0010003fd20 rbp: ffffa0010003fda0 rflgs: 102 
+here1
+here3
+here4
+
+ins:405 rip:0xffffa00000009a73 in:test %dl,%dl
+dispatching for NIE
+rax: ffffa00200006000 rbx: ffffa00300020000 rcx: 3fe40 rdx: 1 rdi: 8000000000000021 
+rsi: 37 r8: 6 r9: 1 r10: ffffa00300020278 r11: 8400040004000 
+r12: 8 r13: ffffa0010003fe01 r14: 6 r15: 8400040004000 rip: ffffa00000009a75 
+rsp: ffffa0010003fd20 rbp: ffffa0010003fda0 rflgs: 102 
+here1
+here3
+here4
+
+ins:406 rip:0xffffa00000009a75 in:lea 0x98(%rdi),%rsi
+dispatching for NIE
+rax: ffffa00200006000 rbx: ffffa00300020000 rcx: 3fe40 rdx: 1 rdi: 8000000000000021 
+rsi: 80000000000000b9 r8: 6 r9: 1 r10: ffffa00300020278 r11: 8400040004000 
+r12: 8 r13: ffffa0010003fe01 r14: 6 r15: 8400040004000 rip: ffffa00000009a7c 
+rsp: ffffa0010003fd20 rbp: ffffa0010003fda0 rflgs: 102 
+here1
+here3
+here4
+
+ins:407 rip:0xffffa00000009a7c in:cmovne %rdi,%rsi
+dispatching for NIE
+rax: ffffa00200006000 rbx: ffffa00300020000 rcx: 3fe40 rdx: 1 rdi: 8000000000000021 
+rsi: 8000000000000021 r8: 6 r9: 1 r10: ffffa00300020278 r11: 8400040004000 
+r12: 8 r13: ffffa0010003fe01 r14: 6 r15: 8400040004000 rip: ffffa00000009a80 
+rsp: ffffa0010003fd20 rbp: ffffa0010003fda0 rflgs: 102 
+here1
+here3
+here4
+
+ins:408 rip:0xffffa00000009a80 in:or %r11,%rsi
+dispatching for NIE
+rax: ffffa00200006000 rbx: ffffa00300020000 rcx: 3fe40 rdx: 1 rdi: 8000000000000021 
+rsi: 8008400040004021 r8: 6 r9: 1 r10: ffffa00300020278 r11: 8400040004000 
+r12: 8 r13: ffffa0010003fe01 r14: 6 r15: 8400040004000 rip: ffffa00000009a83 
+rsp: ffffa0010003fd20 rbp: ffffa0010003fda0 rflgs: 186 
+here1
+here3
+here4
+
+ins:409 rip:0xffffa00000009a83 in:lea 0x0(%rsi,%r9,2),%rdx
+dispatching for NIE
+rax: ffffa00200006000 rbx: ffffa00300020000 rcx: 3fe40 rdx: 8008400040004023 rdi: 8000000000000021 
+rsi: 8008400040004021 r8: 6 r9: 1 r10: ffffa00300020278 r11: 8400040004000 
+r12: 8 r13: ffffa0010003fe01 r14: 6 r15: 8400040004000 rip: ffffa00000009a87 
+rsp: ffffa0010003fd20 rbp: ffffa0010003fda0 rflgs: 186 
+here1
+here3
+here4
+
+ins:410 rip:0xffffa00000009a87 in:movzx %cl,%ecx
+dispatching for NIE
+rax: ffffa00200006000 rbx: ffffa00300020000 rcx: 40 rdx: 8008400040004023 rdi: 8000000000000021 
+rsi: 8008400040004021 r8: 6 r9: 1 r10: ffffa00300020278 r11: 8400040004000 
+r12: 8 r13: ffffa0010003fe01 r14: 6 r15: 8400040004000 rip: ffffa00000009a8a 
+rsp: ffffa0010003fd20 rbp: ffffa0010003fda0 rflgs: 186 
+here1
+here3
+here4
+
+ins:411 rip:0xffffa00000009a8a in:or %rcx,%rdx
+dispatching for NIE
+rax: ffffa00200006000 rbx: ffffa00300020000 rcx: 40 rdx: 8008400040004063 rdi: 8000000000000021 
+rsi: 8008400040004021 r8: 6 r9: 1 r10: ffffa00300020278 r11: 8400040004000 
+r12: 8 r13: ffffa0010003fe01 r14: 6 r15: 8400040004000 rip: ffffa00000009a8d 
+rsp: ffffa0010003fd20 rbp: ffffa0010003fda0 rflgs: 186 
+here1
+here3
+here4
+
+ins:412 rip:0xffffa00000009a8d in:mov 0x38(%rsp),%rcx
+dispatching for NIE
+rax: ffffa00200006000 rbx: ffffa00300020000 rcx: ffffa003ffff0000 rdx: 8008400040004063 rdi: 8000000000000021 
+rsi: 8008400040004021 r8: 6 r9: 1 r10: ffffa00300020278 r11: 8400040004000 
+r12: 8 r13: ffffa0010003fe01 r14: 6 r15: 8400040004000 rip: ffffa00000009a92 
+rsp: ffffa0010003fd20 rbp: ffffa0010003fda0 rflgs: 186 
+here1
+here3
+here4
+
+ins:413 rip:0xffffa00000009a92 in:mov 0x848(%rcx),%rcx
+dispatching for NIE
+rax: ffffa00200006000 rbx: ffffa00300020000 rcx: 200100000000 rdx: 8008400040004063 rdi: 8000000000000021 
+rsi: 8008400040004021 r8: 6 r9: 1 r10: ffffa00300020278 r11: 8400040004000 
+r12: 8 r13: ffffa0010003fe01 r14: 6 r15: 8400040004000 rip: ffffa00000009a99 
+rsp: ffffa0010003fd20 rbp: ffffa0010003fda0 rflgs: 186 
+here1
+here3
+here4
+
+ins:414 rip:0xffffa00000009a99 in:sidt %ebx
+dispatching for NIE
+rax: ffffa00200006000 rbx: ffffa00300020000 rcx: 200100000000 rdx: 8008400040004063 rdi: 8000000000000021 
+rsi: 8008400040004021 r8: 6 r9: 1 r10: ffffa00300020278 r11: 8400040004000 
+r12: 8 r13: ffffa0010003fe01 r14: 6 r15: 8400040004000 rip: ffffa00000009a9c 
+rsp: ffffa0010003fd20 rbp: ffffa0010003fda0 rflgs: 40186 
+here1
+here3
+here4
+
+ins:415 rip:0xffffa00000009a9c in:mov %rdx,0x0(%rcx,%r14,8)
+ seam_va: 0x200100000030 seam_pg_va: 0x200100000000
+next backp idx: 2 backing up on to: 0x7fffe7c55000
+BackupPg Constructor: seam_pg_va = 0x200100000000
+map size: 3
+dispatching for NIE
+rax: ffffa00200006000 rbx: ffffa00300020000 rcx: 200100000000 rdx: 8008400040004063 rdi: 8000000000000021 
+rsi: 8008400040004021 r8: 6 r9: 1 r10: ffffa00300020278 r11: 8400040004000 
+r12: 8 r13: ffffa0010003fe01 r14: 6 r15: 8400040004000 rip: ffffa00000009aa3 
+rsp: ffffa0010003fd20 rbp: ffffa0010003fda0 rflgs: 186 
+here1
+here3
+here4
+
+ins:416 rip:0xffffa00000009aa3 in:cmp $0x2,0x6(%rsp)
+dispatching for NIE
+rax: ffffa00200006000 rbx: ffffa00300020000 rcx: 200100000000 rdx: 8008400040004063 rdi: 8000000000000021 
+rsi: 8008400040004021 r8: 6 r9: 1 r10: ffffa00300020278 r11: 8400040004000 
+r12: 8 r13: ffffa0010003fe01 r14: 6 r15: 8400040004000 rip: ffffa00000009aa8 
+rsp: ffffa0010003fd20 rbp: ffffa0010003fda0 rflgs: 146 
+here1
+here3
+here4
+
+ins:417 rip:0xffffa00000009aa8 in:jnz 0x5(%rip)
+updateJCCDecision 
+rax: ffffa00200006000 rbx: ffffa00300020000 rcx: 200100000000 rdx: 8008400040004063 rdi: 8000000000000021 
+rsi: 8008400040004021 r8: 6 r9: 1 r10: ffffa00300020278 r11: 8400040004000 
+r12: 8 r13: ffffa0010003fe01 r14: 6 r15: 8400040004000 rip: ffffa00000009aaa 
+rsp: ffffa0010003fd20 rbp: ffffa0010003fda0 rflgs: 146 
+here1
+here3
+here4
+
+ins:418 rip:0xffffa00000009aaa in:invlpg 
+dispatching for NIE
+rax: ffffa00200006000 rbx: ffffa00300020000 rcx: 200100000000 rdx: 8008400040004063 rdi: 8000000000000021 
+rsi: 8008400040004021 r8: 6 r9: 1 r10: ffffa00300020278 r11: 8400040004000 
+r12: 8 r13: ffffa0010003fe01 r14: 6 r15: 8400040004000 rip: ffffa00000009aad 
+rsp: ffffa0010003fd20 rbp: ffffa0010003fda0 rflgs: 146 
+here1
+here3
+here4
+
+ins:419 rip:0xffffa00000009aad in:lfence 
+dispatching for NIE
+rax: ffffa00200006000 rbx: ffffa00300020000 rcx: 200100000000 rdx: 8008400040004063 rdi: 8000000000000021 
+rsi: 8008400040004021 r8: 6 r9: 1 r10: ffffa00300020278 r11: 8400040004000 
+r12: 8 r13: ffffa0010003fe01 r14: 6 r15: 8400040004000 rip: ffffa00000009ab0 
+rsp: ffffa0010003fd20 rbp: ffffa0010003fda0 rflgs: 146 
+here1
+here3
+here4
+
+ins:420 rip:0xffffa00000009ab0 in:lea 0xffffffd8(%rbp),%rsp
+dispatching for NIE
+rax: ffffa00200006000 rbx: ffffa00300020000 rcx: 200100000000 rdx: 8008400040004063 rdi: 8000000000000021 
+rsi: 8008400040004021 r8: 6 r9: 1 r10: ffffa00300020278 r11: 8400040004000 
+r12: 8 r13: ffffa0010003fe01 r14: 6 r15: 8400040004000 rip: ffffa00000009ab4 
+rsp: ffffa0010003fd78 rbp: ffffa0010003fda0 rflgs: 146 
+here1
+here3
+here4
+
+ins:421 rip:0xffffa00000009ab4 in:pop %rbx
+dispatching for NIE
+rax: ffffa00200006000 rbx: 40004000 rcx: 200100000000 rdx: 8008400040004063 rdi: 8000000000000021 
+rsi: 8008400040004021 r8: 6 r9: 1 r10: ffffa00300020278 r11: 8400040004000 
+r12: 8 r13: ffffa0010003fe01 r14: 6 r15: 8400040004000 rip: ffffa00000009ab5 
+rsp: ffffa0010003fd80 rbp: ffffa0010003fda0 rflgs: 146 
+here1
+here3
+here4
+
+ins:422 rip:0xffffa00000009ab5 in:pop %r12
+dispatching for NIE
+rax: ffffa00200006000 rbx: 40004000 rcx: 200100000000 rdx: 8008400040004063 rdi: 8000000000000021 
+rsi: 8008400040004021 r8: 6 r9: 1 r10: ffffa00300020278 r11: 8400040004000 
+r12: 21 r13: ffffa0010003fe01 r14: 6 r15: 8400040004000 rip: ffffa00000009ab7 
+rsp: ffffa0010003fd88 rbp: ffffa0010003fda0 rflgs: 146 
+here1
+here3
+here4
+
+ins:423 rip:0xffffa00000009ab7 in:pop %r13
+dispatching for NIE
+rax: ffffa00200006000 rbx: 40004000 rcx: 200100000000 rdx: 8008400040004063 rdi: 8000000000000021 
+rsi: 8008400040004021 r8: 6 r9: 1 r10: ffffa00300020278 r11: 8400040004000 
+r12: 21 r13: ffffa0010003fea0 r14: 6 r15: 8400040004000 rip: ffffa00000009ab9 
+rsp: ffffa0010003fd90 rbp: ffffa0010003fda0 rflgs: 146 
+here1
+here3
+here4
+
+ins:424 rip:0xffffa00000009ab9 in:pop %r14
+dispatching for NIE
+rax: ffffa00200006000 rbx: 40004000 rcx: 200100000000 rdx: 8008400040004063 rdi: 8000000000000021 
+rsi: 8008400040004021 r8: 6 r9: 1 r10: ffffa00300020278 r11: 8400040004000 
+r12: 21 r13: ffffa0010003fea0 r14: 4 r15: 8400040004000 rip: ffffa00000009abb 
+rsp: ffffa0010003fd98 rbp: ffffa0010003fda0 rflgs: 146 
+here1
+here3
+here4
+
+ins:425 rip:0xffffa00000009abb in:pop %r15
+dispatching for NIE
+rax: ffffa00200006000 rbx: 40004000 rcx: 200100000000 rdx: 8008400040004063 rdi: 8000000000000021 
+rsi: 8008400040004021 r8: 6 r9: 1 r10: ffffa00300020278 r11: 8400040004000 
+r12: 21 r13: ffffa0010003fea0 r14: 4 r15: 1000000000000 rip: ffffa00000009abd 
+rsp: ffffa0010003fda0 rbp: ffffa0010003fda0 rflgs: 146 
+here1
+here3
+here4
+
+ins:426 rip:0xffffa00000009abd in:pop %rbp
+dispatching for NIE
+rax: ffffa00200006000 rbx: 40004000 rcx: 200100000000 rdx: 8008400040004063 rdi: 8000000000000021 
+rsi: 8008400040004021 r8: 6 r9: 1 r10: ffffa00300020278 r11: 8400040004000 
+r12: 21 r13: ffffa0010003fea0 r14: 4 r15: 1000000000000 rip: ffffa00000009abe 
+rsp: ffffa0010003fda8 rbp: ffffa0010003fdb0 rflgs: 146 
+here1
+here3
+here4
+
+ins:427 rip:0xffffa00000009abe in:ret near (%rsp)
+rsp_at_dispatchRET: ffffa0010003fda8
+rax: ffffa00200006000 rbx: 40004000 rcx: 200100000000 rdx: 8008400040004063 rdi: 8000000000000021 
+rsi: 8008400040004021 r8: 6 r9: 1 r10: ffffa00300020278 r11: 8400040004000 
+r12: 21 r13: ffffa0010003fea0 r14: 4 r15: 1000000000000 rip: ffffa00000009b46 
+rsp: ffffa0010003fdb0 rbp: ffffa0010003fdb0 rflgs: 146 
+here1
+here3
+here4
+
+ins:428 rip:0xffffa00000009b46 in:mov %rbp,%rsp
+dispatching for NIE
+rax: ffffa00200006000 rbx: 40004000 rcx: 200100000000 rdx: 8008400040004063 rdi: 8000000000000021 
+rsi: 8008400040004021 r8: 6 r9: 1 r10: ffffa00300020278 r11: 8400040004000 
+r12: 21 r13: ffffa0010003fea0 r14: 4 r15: 1000000000000 rip: ffffa00000009b49 
+rsp: ffffa0010003fdb0 rbp: ffffa0010003fdb0 rflgs: 146 
+here1
+here3
+here4
+
+ins:429 rip:0xffffa00000009b49 in:pop %rbp
+dispatching for NIE
+rax: ffffa00200006000 rbx: 40004000 rcx: 200100000000 rdx: 8008400040004063 rdi: 8000000000000021 
+rsi: 8008400040004021 r8: 6 r9: 1 r10: ffffa00300020278 r11: 8400040004000 
+r12: 21 r13: ffffa0010003fea0 r14: 4 r15: 1000000000000 rip: ffffa00000009b4a 
+rsp: ffffa0010003fdb8 rbp: ffffa0010003fe50 rflgs: 146 
+here1
+here3
+here4
+
+ins:430 rip:0xffffa00000009b4a in:ret near (%rsp)
+rsp_at_dispatchRET: ffffa0010003fdb8
+rax: ffffa00200006000 rbx: 40004000 rcx: 200100000000 rdx: 8008400040004063 rdi: 8000000000000021 
+rsi: 8008400040004021 r8: 6 r9: 1 r10: ffffa00300020278 r11: 8400040004000 
+r12: 21 r13: ffffa0010003fea0 r14: 4 r15: 1000000000000 rip: ffffa00000008ed3 
+rsp: ffffa0010003fdc0 rbp: ffffa0010003fe50 rflgs: 146 
+here1
+at map_pa_ret():0x
+
+##End of cur path
+
+path constraints : 
+Current path constraint: 
+Distinct(Sub(pa_57,And(pa_6,0xfffffffffffff000)))
+Distinct(Sub(pa_21,0x8400040004000))
+Distinct(Sub(pa_24,0x8400040004000))
+Distinct(Sub(pa_13,0x8400040004000))
+Distinct(Sub(pa_20,0x8400040004000))
+LNot(Distinct(Sub(pa_53,And(pa_6,0xfffffffffffff000))))
+Distinct(Sub(pa_19,0x8400040004000))
+Distinct(Sub(pa_25,0x8400040004000))
+Distinct(Sub(pa_7,0x8400040004000))
+Distinct(Sub(pa_27,0x8400040004000))
+LNot(Distinct(Sub(pa_18,0x8400040004000)))
+Distinct(Sub(pa_8,0x8400040004000))
+Distinct(Sub(pa_23,0x8400040004000))
+Distinct(Sub(pa_14,0x8400040004000))
+Distinct(Sub(pa_10,0x8400040004000))
+Distinct(Sub(pa_4,0x8400040004000))
+Distinct(Sub(pa_42,0x8400040004000))
+Distinct(Sub(pa_12,0x8400040004000))
+Distinct(Sub(pa_22,0x8400040004000))
+Distinct(Sub(pa_62,And(pa_6,0xfffffffffffff000)))
+Distinct(Sub(pa_60,And(pa_6,0xfffffffffffff000)))
+Distinct(Sub(pa_9,0x8400040004000))
+Distinct(Sub(pa_26,0x8400040004000))
+Distinct(Sub(pa_54,0x8400040004000))
+Distinct(Sub(pa_58,And(pa_6,0xfffffffffffff000)))
+Distinct(Sub(pa_11,0x8400040004000))
+Distinct(Sub(pa_55,And(pa_6,0xfffffffffffff000)))
+Distinct(Sub(pa_5,0x8400040004000))
+Distinct(Sub(pa_61,And(pa_6,0xfffffffffffff000)))
+Distinct(Sub(pa_59,And(pa_6,0xfffffffffffff000)))
+Distinct(Sub(pa_56,And(pa_6,0xfffffffffffff000)))
+
+at path end handler
+
+End of cur path ....
+
+path constraints : 
+hkid_pa_mapped: 0x8400040004000
+keyid_pa_in: 0x8400040004000
+
+End of cur path .... AT FUNCTION RET: NEW MAPPING
+new keyhole mapped for keyid+pa
+-------------------khole idx: 0
+Expression to evaluate: Equal(Sub(r_0,r_0))
+initial expr: r_0	end expr: r_0	is_ref_c_unmodified: 1
+OK: no increase in ref count
+-------------------khole idx: 1
+Expression to evaluate: Equal(Sub(r_1,r_1))
+initial expr: r_1	end expr: r_1	is_ref_c_unmodified: 1
+OK: no increase in ref count
+-------------------khole idx: 2
+Expression to evaluate: Equal(Sub(r_2,r_2))
+initial expr: r_2	end expr: r_2	is_ref_c_unmodified: 1
+OK: no increase in ref count
+-------------------khole idx: 3
+Expression to evaluate: Equal(Sub(r_3,r_3))
+initial expr: r_3	end expr: r_3	is_ref_c_unmodified: 1
+OK: no increase in ref count
+-------------------khole idx: 4
+Expression to evaluate: Equal(Sub(r_4,r_4))
+initial expr: r_4	end expr: r_4	is_ref_c_unmodified: 1
+OK: no increase in ref count
+-------------------khole idx: 5
+Expression to evaluate: Equal(Sub(r_5,r_5))
+initial expr: r_5	end expr: r_5	is_ref_c_unmodified: 1
+OK: no increase in ref count
+-------------------khole idx: 6
+OK: if ref count is modified to a concrete value: 1
+OK: no increase in ref count
+-------------------khole idx: 7
+Expression to evaluate: Equal(Sub(r_7,r_7))
+initial expr: r_7	end expr: r_7	is_ref_c_unmodified: 1
+OK: no increase in ref count
+-------------------khole idx: 8
+Expression to evaluate: Equal(Sub(r_8,r_8))
+initial expr: r_8	end expr: r_8	is_ref_c_unmodified: 1
+OK: no increase in ref count
+-------------------khole idx: 9
+Expression to evaluate: Equal(Sub(r_9,r_9))
+initial expr: r_9	end expr: r_9	is_ref_c_unmodified: 1
+OK: no increase in ref count
+-------------------khole idx: 10
+Expression to evaluate: Equal(Sub(r_10,r_10))
+initial expr: r_10	end expr: r_10	is_ref_c_unmodified: 1
+OK: no increase in ref count
+-------------------khole idx: 11
+Expression to evaluate: Equal(Sub(r_11,r_11))
+initial expr: r_11	end expr: r_11	is_ref_c_unmodified: 1
+OK: no increase in ref count
+-------------------khole idx: 12
+Expression to evaluate: Equal(Sub(r_12,r_12))
+initial expr: r_12	end expr: r_12	is_ref_c_unmodified: 1
+OK: no increase in ref count
+-------------------khole idx: 13
+Expression to evaluate: Equal(Sub(r_13,r_13))
+initial expr: r_13	end expr: r_13	is_ref_c_unmodified: 1
+OK: no increase in ref count
+-------------------khole idx: 14
+Expression to evaluate: Equal(Sub(r_14,r_14))
+initial expr: r_14	end expr: r_14	is_ref_c_unmodified: 1
+OK: no increase in ref count
+-------------------khole idx: 15
+Expression to evaluate: Equal(Sub(r_15,r_15))
+initial expr: r_15	end expr: r_15	is_ref_c_unmodified: 1
+OK: no increase in ref count
+-------------------khole idx: 16
+Expression to evaluate: Equal(Sub(r_16,r_16))
+initial expr: r_16	end expr: r_16	is_ref_c_unmodified: 1
+OK: no increase in ref count
+-------------------khole idx: 17
+Expression to evaluate: Equal(Sub(r_17,r_17))
+initial expr: r_17	end expr: r_17	is_ref_c_unmodified: 1
+OK: no increase in ref count
+-------------------khole idx: 18
+Expression to evaluate: Equal(Sub(r_18,r_18))
+initial expr: r_18	end expr: r_18	is_ref_c_unmodified: 1
+OK: no increase in ref count
+-------------------khole idx: 19
+Expression to evaluate: Equal(Sub(r_19,r_19))
+initial expr: r_19	end expr: r_19	is_ref_c_unmodified: 1
+OK: no increase in ref count
+-------------------khole idx: 20
+Expression to evaluate: Equal(Sub(r_20,r_20))
+initial expr: r_20	end expr: r_20	is_ref_c_unmodified: 1
+OK: no increase in ref count
+-------------------khole idx: 21
+Expression to evaluate: Equal(Sub(r_21,r_21))
+initial expr: r_21	end expr: r_21	is_ref_c_unmodified: 1
+OK: no increase in ref count
+-------------------khole idx: 22
+Expression to evaluate: Equal(Sub(r_22,r_22))
+initial expr: r_22	end expr: r_22	is_ref_c_unmodified: 1
+OK: no increase in ref count
+-------------------khole idx: 23
+Expression to evaluate: Equal(Sub(r_23,r_23))
+initial expr: r_23	end expr: r_23	is_ref_c_unmodified: 1
+OK: no increase in ref count
+-------------------khole idx: 24
+Expression to evaluate: Equal(Sub(r_24,r_24))
+initial expr: r_24	end expr: r_24	is_ref_c_unmodified: 1
+OK: no increase in ref count
+-------------------khole idx: 25
+Expression to evaluate: Equal(Sub(r_25,r_25))
+initial expr: r_25	end expr: r_25	is_ref_c_unmodified: 1
+OK: no increase in ref count
+-------------------khole idx: 26
+Expression to evaluate: Equal(Sub(r_26,r_26))
+initial expr: r_26	end expr: r_26	is_ref_c_unmodified: 1
+OK: no increase in ref count
+-------------------khole idx: 27
+Expression to evaluate: Equal(Sub(r_27,r_27))
+initial expr: r_27	end expr: r_27	is_ref_c_unmodified: 1
+OK: no increase in ref count
+-------------------khole idx: 28
+Expression to evaluate: Equal(Sub(r_28,r_28))
+initial expr: r_28	end expr: r_28	is_ref_c_unmodified: 1
+OK: no increase in ref count
+-------------------khole idx: 29
+Expression to evaluate: Equal(Sub(r_29,r_29))
+initial expr: r_29	end expr: r_29	is_ref_c_unmodified: 1
+OK: no increase in ref count
+-------------------khole idx: 30
+Expression to evaluate: Equal(Sub(r_30,r_30))
+initial expr: r_30	end expr: r_30	is_ref_c_unmodified: 1
+OK: no increase in ref count
+-------------------khole idx: 31
+Expression to evaluate: Equal(Sub(r_31,r_31))
+initial expr: r_31	end expr: r_31	is_ref_c_unmodified: 1
+OK: no increase in ref count
+-------------------khole idx: 32
+Expression to evaluate: Equal(Sub(r_32,r_32))
+initial expr: r_32	end expr: r_32	is_ref_c_unmodified: 1
+OK: no increase in ref count
+-------------------khole idx: 33
+Expression to evaluate: Equal(Sub(r_33,r_33))
+initial expr: r_33	end expr: r_33	is_ref_c_unmodified: 1
+OK: no increase in ref count
+-------------------khole idx: 34
+Expression to evaluate: Equal(Sub(r_34,r_34))
+initial expr: r_34	end expr: r_34	is_ref_c_unmodified: 1
+OK: no increase in ref count
+-------------------khole idx: 35
+Expression to evaluate: Equal(Sub(r_35,r_35))
+initial expr: r_35	end expr: r_35	is_ref_c_unmodified: 1
+OK: no increase in ref count
+-------------------khole idx: 36
+Expression to evaluate: Equal(Sub(r_36,r_36))
+initial expr: r_36	end expr: r_36	is_ref_c_unmodified: 1
+OK: no increase in ref count
+-------------------khole idx: 37
+Expression to evaluate: Equal(Sub(r_37,r_37))
+initial expr: r_37	end expr: r_37	is_ref_c_unmodified: 1
+OK: no increase in ref count
+-------------------khole idx: 38
+Expression to evaluate: Equal(Sub(r_38,r_38))
+initial expr: r_38	end expr: r_38	is_ref_c_unmodified: 1
+OK: no increase in ref count
+-------------------khole idx: 39
+Expression to evaluate: Equal(Sub(r_39,r_39))
+initial expr: r_39	end expr: r_39	is_ref_c_unmodified: 1
+OK: no increase in ref count
+-------------------khole idx: 40
+Expression to evaluate: Equal(Sub(r_40,r_40))
+initial expr: r_40	end expr: r_40	is_ref_c_unmodified: 1
+OK: no increase in ref count
+-------------------khole idx: 41
+Expression to evaluate: Equal(Sub(r_41,r_41))
+initial expr: r_41	end expr: r_41	is_ref_c_unmodified: 1
+OK: no increase in ref count
+-------------------khole idx: 42
+Expression to evaluate: Equal(Sub(r_42,r_42))
+initial expr: r_42	end expr: r_42	is_ref_c_unmodified: 1
+OK: no increase in ref count
+-------------------khole idx: 43
+Expression to evaluate: Equal(Sub(r_43,r_43))
+initial expr: r_43	end expr: r_43	is_ref_c_unmodified: 1
+OK: no increase in ref count
+-------------------khole idx: 44
+Expression to evaluate: Equal(Sub(r_44,r_44))
+initial expr: r_44	end expr: r_44	is_ref_c_unmodified: 1
+OK: no increase in ref count
+-------------------khole idx: 45
+Expression to evaluate: Equal(Sub(r_45,r_45))
+initial expr: r_45	end expr: r_45	is_ref_c_unmodified: 1
+OK: no increase in ref count
+-------------------khole idx: 46
+Expression to evaluate: Equal(Sub(r_46,r_46))
+initial expr: r_46	end expr: r_46	is_ref_c_unmodified: 1
+OK: no increase in ref count
+-------------------khole idx: 47
+Expression to evaluate: Equal(Sub(r_47,r_47))
+initial expr: r_47	end expr: r_47	is_ref_c_unmodified: 1
+OK: no increase in ref count
+-------------------khole idx: 48
+Expression to evaluate: Equal(Sub(r_48,r_48))
+initial expr: r_48	end expr: r_48	is_ref_c_unmodified: 1
+OK: no increase in ref count
+-------------------khole idx: 49
+Expression to evaluate: Equal(Sub(r_49,r_49))
+initial expr: r_49	end expr: r_49	is_ref_c_unmodified: 1
+OK: no increase in ref count
+-------------------khole idx: 50
+Expression to evaluate: Equal(Sub(r_50,r_50))
+initial expr: r_50	end expr: r_50	is_ref_c_unmodified: 1
+OK: no increase in ref count
+-------------------khole idx: 51
+Expression to evaluate: Equal(Sub(r_51,r_51))
+initial expr: r_51	end expr: r_51	is_ref_c_unmodified: 1
+OK: no increase in ref count
+-------------------khole idx: 52
+Expression to evaluate: Equal(Sub(r_52,r_52))
+initial expr: r_52	end expr: r_52	is_ref_c_unmodified: 1
+OK: no increase in ref count
+-------------------khole idx: 53
+Expression to evaluate: Equal(Sub(r_53,r_53))
+initial expr: r_53	end expr: r_53	is_ref_c_unmodified: 1
+OK: no increase in ref count
+-------------------khole idx: 54
+Expression to evaluate: Equal(Sub(r_54,r_54))
+initial expr: r_54	end expr: r_54	is_ref_c_unmodified: 1
+OK: no increase in ref count
+-------------------khole idx: 55
+Expression to evaluate: Equal(Sub(r_55,r_55))
+initial expr: r_55	end expr: r_55	is_ref_c_unmodified: 1
+OK: no increase in ref count
+-------------------khole idx: 56
+Expression to evaluate: Equal(Sub(r_56,r_56))
+initial expr: r_56	end expr: r_56	is_ref_c_unmodified: 1
+OK: no increase in ref count
+-------------------khole idx: 57
+Expression to evaluate: Equal(Sub(r_57,r_57))
+initial expr: r_57	end expr: r_57	is_ref_c_unmodified: 1
+OK: no increase in ref count
+-------------------khole idx: 58
+Expression to evaluate: Equal(Sub(r_58,r_58))
+initial expr: r_58	end expr: r_58	is_ref_c_unmodified: 1
+OK: no increase in ref count
+-------------------khole idx: 59
+Expression to evaluate: Equal(Sub(r_59,r_59))
+initial expr: r_59	end expr: r_59	is_ref_c_unmodified: 1
+OK: no increase in ref count
+-------------------khole idx: 60
+Expression to evaluate: Equal(Sub(r_60,r_60))
+initial expr: r_60	end expr: r_60	is_ref_c_unmodified: 1
+OK: no increase in ref count
+-------------------khole idx: 61
+Expression to evaluate: Equal(Sub(r_61,r_61))
+initial expr: r_61	end expr: r_61	is_ref_c_unmodified: 1
+OK: no increase in ref count
+-------------------khole idx: 62
+Expression to evaluate: Equal(Sub(r_62,r_62))
+initial expr: r_62	end expr: r_62	is_ref_c_unmodified: 1
+OK: no increase in ref count
+-------------------khole idx: 63
+Expression to evaluate: Equal(Sub(r_63,r_63))
+initial expr: r_63	end expr: r_63	is_ref_c_unmodified: 1
+OK: no increase in ref count
+-------------------khole idx: 64
+Expression to evaluate: Equal(Sub(r_64,r_64))
+initial expr: r_64	end expr: r_64	is_ref_c_unmodified: 1
+OK: no increase in ref count
+-------------------khole idx: 65
+Expression to evaluate: Equal(Sub(r_65,r_65))
+initial expr: r_65	end expr: r_65	is_ref_c_unmodified: 1
+OK: no increase in ref count
+-------------------khole idx: 66
+Expression to evaluate: Equal(Sub(r_66,r_66))
+initial expr: r_66	end expr: r_66	is_ref_c_unmodified: 1
+OK: no increase in ref count
+-------------------khole idx: 67
+Expression to evaluate: Equal(Sub(r_67,r_67))
+initial expr: r_67	end expr: r_67	is_ref_c_unmodified: 1
+OK: no increase in ref count
+-------------------khole idx: 68
+Expression to evaluate: Equal(Sub(r_68,r_68))
+initial expr: r_68	end expr: r_68	is_ref_c_unmodified: 1
+OK: no increase in ref count
+-------------------khole idx: 69
+Expression to evaluate: Equal(Sub(r_69,r_69))
+initial expr: r_69	end expr: r_69	is_ref_c_unmodified: 1
+OK: no increase in ref count
+-------------------khole idx: 70
+Expression to evaluate: Equal(Sub(r_70,r_70))
+initial expr: r_70	end expr: r_70	is_ref_c_unmodified: 1
+OK: no increase in ref count
+-------------------khole idx: 71
+Expression to evaluate: Equal(Sub(r_71,r_71))
+initial expr: r_71	end expr: r_71	is_ref_c_unmodified: 1
+OK: no increase in ref count
+-------------------khole idx: 72
+Expression to evaluate: Equal(Sub(r_72,r_72))
+initial expr: r_72	end expr: r_72	is_ref_c_unmodified: 1
+OK: no increase in ref count
+-------------------khole idx: 73
+Expression to evaluate: Equal(Sub(r_73,r_73))
+initial expr: r_73	end expr: r_73	is_ref_c_unmodified: 1
+OK: no increase in ref count
+-------------------khole idx: 74
+Expression to evaluate: Equal(Sub(r_74,r_74))
+initial expr: r_74	end expr: r_74	is_ref_c_unmodified: 1
+OK: no increase in ref count
+-------------------khole idx: 75
+Expression to evaluate: Equal(Sub(r_75,r_75))
+initial expr: r_75	end expr: r_75	is_ref_c_unmodified: 1
+OK: no increase in ref count
+-------------------khole idx: 76
+Expression to evaluate: Equal(Sub(r_76,r_76))
+initial expr: r_76	end expr: r_76	is_ref_c_unmodified: 1
+OK: no increase in ref count
+-------------------khole idx: 77
+Expression to evaluate: Equal(Sub(r_77,r_77))
+initial expr: r_77	end expr: r_77	is_ref_c_unmodified: 1
+OK: no increase in ref count
+-------------------khole idx: 78
+Expression to evaluate: Equal(Sub(r_78,r_78))
+initial expr: r_78	end expr: r_78	is_ref_c_unmodified: 1
+OK: no increase in ref count
+-------------------khole idx: 79
+Expression to evaluate: Equal(Sub(r_79,r_79))
+initial expr: r_79	end expr: r_79	is_ref_c_unmodified: 1
+OK: no increase in ref count
+-------------------khole idx: 80
+Expression to evaluate: Equal(Sub(r_80,r_80))
+initial expr: r_80	end expr: r_80	is_ref_c_unmodified: 1
+OK: no increase in ref count
+-------------------khole idx: 81
+Expression to evaluate: Equal(Sub(r_81,r_81))
+initial expr: r_81	end expr: r_81	is_ref_c_unmodified: 1
+OK: no increase in ref count
+-------------------khole idx: 82
+Expression to evaluate: Equal(Sub(r_82,r_82))
+initial expr: r_82	end expr: r_82	is_ref_c_unmodified: 1
+OK: no increase in ref count
+-------------------khole idx: 83
+Expression to evaluate: Equal(Sub(r_83,r_83))
+initial expr: r_83	end expr: r_83	is_ref_c_unmodified: 1
+OK: no increase in ref count
+-------------------khole idx: 84
+Expression to evaluate: Equal(Sub(r_84,r_84))
+initial expr: r_84	end expr: r_84	is_ref_c_unmodified: 1
+OK: no increase in ref count
+-------------------khole idx: 85
+Expression to evaluate: Equal(Sub(r_85,r_85))
+initial expr: r_85	end expr: r_85	is_ref_c_unmodified: 1
+OK: no increase in ref count
+-------------------khole idx: 86
+Expression to evaluate: Equal(Sub(r_86,r_86))
+initial expr: r_86	end expr: r_86	is_ref_c_unmodified: 1
+OK: no increase in ref count
+-------------------khole idx: 87
+Expression to evaluate: Equal(Sub(r_87,r_87))
+initial expr: r_87	end expr: r_87	is_ref_c_unmodified: 1
+OK: no increase in ref count
+-------------------khole idx: 88
+Expression to evaluate: Equal(Sub(r_88,r_88))
+initial expr: r_88	end expr: r_88	is_ref_c_unmodified: 1
+OK: no increase in ref count
+-------------------khole idx: 89
+Expression to evaluate: Equal(Sub(r_89,r_89))
+initial expr: r_89	end expr: r_89	is_ref_c_unmodified: 1
+OK: no increase in ref count
+-------------------khole idx: 90
+Expression to evaluate: Equal(Sub(r_90,r_90))
+initial expr: r_90	end expr: r_90	is_ref_c_unmodified: 1
+OK: no increase in ref count
+-------------------khole idx: 91
+Expression to evaluate: Equal(Sub(r_91,r_91))
+initial expr: r_91	end expr: r_91	is_ref_c_unmodified: 1
+OK: no increase in ref count
+-------------------khole idx: 92
+Expression to evaluate: Equal(Sub(r_92,r_92))
+initial expr: r_92	end expr: r_92	is_ref_c_unmodified: 1
+OK: no increase in ref count
+-------------------khole idx: 93
+Expression to evaluate: Equal(Sub(r_93,r_93))
+initial expr: r_93	end expr: r_93	is_ref_c_unmodified: 1
+OK: no increase in ref count
+-------------------khole idx: 94
+Expression to evaluate: Equal(Sub(r_94,r_94))
+initial expr: r_94	end expr: r_94	is_ref_c_unmodified: 1
+OK: no increase in ref count
+-------------------khole idx: 95
+Expression to evaluate: Equal(Sub(r_95,r_95))
+initial expr: r_95	end expr: r_95	is_ref_c_unmodified: 1
+OK: no increase in ref count
+-------------------khole idx: 96
+Expression to evaluate: Equal(Sub(r_96,r_96))
+initial expr: r_96	end expr: r_96	is_ref_c_unmodified: 1
+OK: no increase in ref count
+-------------------khole idx: 97
+Expression to evaluate: Equal(Sub(r_97,r_97))
+initial expr: r_97	end expr: r_97	is_ref_c_unmodified: 1
+OK: no increase in ref count
+-------------------khole idx: 98
+Expression to evaluate: Equal(Sub(r_98,r_98))
+initial expr: r_98	end expr: r_98	is_ref_c_unmodified: 1
+OK: no increase in ref count
+-------------------khole idx: 99
+Expression to evaluate: Equal(Sub(r_99,r_99))
+initial expr: r_99	end expr: r_99	is_ref_c_unmodified: 1
+OK: no increase in ref count
+-------------------khole idx: 100
+Expression to evaluate: Equal(Sub(r_100,r_100))
+initial expr: r_100	end expr: r_100	is_ref_c_unmodified: 1
+OK: no increase in ref count
+-------------------khole idx: 101
+Expression to evaluate: Equal(Sub(r_101,r_101))
+initial expr: r_101	end expr: r_101	is_ref_c_unmodified: 1
+OK: no increase in ref count
+-------------------khole idx: 102
+Expression to evaluate: Equal(Sub(r_102,r_102))
+initial expr: r_102	end expr: r_102	is_ref_c_unmodified: 1
+OK: no increase in ref count
+-------------------khole idx: 103
+Expression to evaluate: Equal(Sub(r_103,r_103))
+initial expr: r_103	end expr: r_103	is_ref_c_unmodified: 1
+OK: no increase in ref count
+-------------------khole idx: 104
+Expression to evaluate: Equal(Sub(r_104,r_104))
+initial expr: r_104	end expr: r_104	is_ref_c_unmodified: 1
+OK: no increase in ref count
+-------------------khole idx: 105
+Expression to evaluate: Equal(Sub(r_105,r_105))
+initial expr: r_105	end expr: r_105	is_ref_c_unmodified: 1
+OK: no increase in ref count
+-------------------khole idx: 106
+Expression to evaluate: Equal(Sub(r_106,r_106))
+initial expr: r_106	end expr: r_106	is_ref_c_unmodified: 1
+OK: no increase in ref count
+-------------------khole idx: 107
+Expression to evaluate: Equal(Sub(r_107,r_107))
+initial expr: r_107	end expr: r_107	is_ref_c_unmodified: 1
+OK: no increase in ref count
+-------------------khole idx: 108
+Expression to evaluate: Equal(Sub(r_108,r_108))
+initial expr: r_108	end expr: r_108	is_ref_c_unmodified: 1
+OK: no increase in ref count
+-------------------khole idx: 109
+Expression to evaluate: Equal(Sub(r_109,r_109))
+initial expr: r_109	end expr: r_109	is_ref_c_unmodified: 1
+OK: no increase in ref count
+-------------------khole idx: 110
+Expression to evaluate: Equal(Sub(r_110,r_110))
+initial expr: r_110	end expr: r_110	is_ref_c_unmodified: 1
+OK: no increase in ref count
+-------------------khole idx: 111
+Expression to evaluate: Equal(Sub(r_111,r_111))
+initial expr: r_111	end expr: r_111	is_ref_c_unmodified: 1
+OK: no increase in ref count
+-------------------khole idx: 112
+Expression to evaluate: Equal(Sub(r_112,r_112))
+initial expr: r_112	end expr: r_112	is_ref_c_unmodified: 1
+OK: no increase in ref count
+-------------------khole idx: 113
+Expression to evaluate: Equal(Sub(r_113,r_113))
+initial expr: r_113	end expr: r_113	is_ref_c_unmodified: 1
+OK: no increase in ref count
+-------------------khole idx: 114
+Expression to evaluate: Equal(Sub(r_114,r_114))
+initial expr: r_114	end expr: r_114	is_ref_c_unmodified: 1
+OK: no increase in ref count
+-------------------khole idx: 115
+Expression to evaluate: Equal(Sub(r_115,r_115))
+initial expr: r_115	end expr: r_115	is_ref_c_unmodified: 1
+OK: no increase in ref count
+-------------------khole idx: 116
+Expression to evaluate: Equal(Sub(r_116,r_116))
+initial expr: r_116	end expr: r_116	is_ref_c_unmodified: 1
+OK: no increase in ref count
+-------------------khole idx: 117
+Expression to evaluate: Equal(Sub(r_117,r_117))
+initial expr: r_117	end expr: r_117	is_ref_c_unmodified: 1
+OK: no increase in ref count
+-------------------khole idx: 118
+Expression to evaluate: Equal(Sub(r_118,r_118))
+initial expr: r_118	end expr: r_118	is_ref_c_unmodified: 1
+OK: no increase in ref count
+-------------------khole idx: 119
+Expression to evaluate: Equal(Sub(r_119,r_119))
+initial expr: r_119	end expr: r_119	is_ref_c_unmodified: 1
+OK: no increase in ref count
+-------------------khole idx: 120
+Expression to evaluate: Equal(Sub(r_120,r_120))
+initial expr: r_120	end expr: r_120	is_ref_c_unmodified: 1
+OK: no increase in ref count
+-------------------khole idx: 121
+Expression to evaluate: Equal(Sub(r_121,r_121))
+initial expr: r_121	end expr: r_121	is_ref_c_unmodified: 1
+OK: no increase in ref count
+-------------------khole idx: 122
+Expression to evaluate: Equal(Sub(r_122,r_122))
+initial expr: r_122	end expr: r_122	is_ref_c_unmodified: 1
+OK: no increase in ref count
+-------------------khole idx: 123
+Expression to evaluate: Equal(Sub(r_123,r_123))
+initial expr: r_123	end expr: r_123	is_ref_c_unmodified: 1
+OK: no increase in ref count
+-------------------khole idx: 124
+Expression to evaluate: Equal(Sub(r_124,r_124))
+initial expr: r_124	end expr: r_124	is_ref_c_unmodified: 1
+OK: no increase in ref count
+-------------------khole idx: 125
+Expression to evaluate: Equal(Sub(r_125,r_125))
+initial expr: r_125	end expr: r_125	is_ref_c_unmodified: 1
+OK: no increase in ref count
+-------------------khole idx: 126
+Expression to evaluate: Equal(Sub(r_126,r_126))
+initial expr: r_126	end expr: r_126	is_ref_c_unmodified: 1
+OK: no increase in ref count
+-------------------khole idx: 127
+Expression to evaluate: Equal(Sub(r_127,r_127))
+initial expr: r_127	end expr: r_127	is_ref_c_unmodified: 1
+OK: no increase in ref count
+OK: correct keyhole not in the cache, has been incremented
+expected_va: 0xffffa00200006000 returned va: 0xffffa00200006000
+OK: returned va does match the expected
+here3
+here4
+
+Ending Current path -----------------------------------------
+ins count : 431
+sie_count : 49
+nie_count : 299
+cumilative khole accesses : 0
+cumilative non khole accesses : 19018
+

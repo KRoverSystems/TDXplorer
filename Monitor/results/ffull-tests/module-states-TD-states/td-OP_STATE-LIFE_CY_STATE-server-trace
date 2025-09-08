@@ -1,0 +1,432 @@
+
+Untill TDH_MNG_INIT is completed the TDH.MNG.RD return is negative (Fails)
+This is the expected behavior.
+Therefore untill the MNG_INIT completes, we can not use TDH.MNG.RD to querry the TD OP_STATE or TD LIFE_CYCLE_STATE
+OP_STATE: We can not verify UNINITIALIZED, can verify INITIALIZED and RUNNABLE
+LIFE_CYCLE_STATE: We can not verify HKID_ASSIGNED, can verify TD_KEYS_CONFIGURED state but not right after TDH.MNG.KEY.CONFIG. We can only
+querry and check TD_KEYS_CONFIGURED state after TDH_MNG_INIT completes.
+
+2025-06-24T16:00:39.297406+08:00 DXH-104-059 kernel: kernel_agent: vmm_agent loaded
+
+
+2025-06-24T16:00:47.333371+08:00 DXH-104-059 kernel: kernel_agent: hooked  tdx_vm_ioctl() 
+2025-06-24T16:00:47.333399+08:00 DXH-104-059 kernel: kernel_agent: ioctl: KVM_TDX_CAPABILITIES
+2025-06-24T16:00:47.333403+08:00 DXH-104-059 kernel: 
+2025-06-24T16:00:47.333405+08:00 DXH-104-059 kernel: kernel_agent: hooked  tdx_vm_ioctl() 
+2025-06-24T16:00:47.333408+08:00 DXH-104-059 kernel: kernel_agent: ioctl: KVM_TDX_CAPABILITIES
+2025-06-24T16:00:47.333410+08:00 DXH-104-059 kernel: 
+2025-06-24T16:00:47.333412+08:00 DXH-104-059 kernel: kernel_agent: hooked  tdx_vm_ioctl() 
+2025-06-24T16:00:47.333414+08:00 DXH-104-059 kernel: kernel_agent: ioctl: KVM_TDX_CAPABILITIES
+2025-06-24T16:00:47.333416+08:00 DXH-104-059 kernel: 
+2025-06-24T16:00:47.340447+08:00 DXH-104-059 kernel: kernel_agent: hooked  tdx_vm_ioctl() 
+2025-06-24T16:00:47.340473+08:00 DXH-104-059 kernel: kernel_agent: ioctl: KVM_TDX_INIT_VM
+2025-06-24T16:00:47.340476+08:00 DXH-104-059 kernel: 
+2025-06-24T16:00:47.340478+08:00 DXH-104-059 kernel: kernel_agent: tdr_pa: 28b485000
+2025-06-24T16:00:47.340481+08:00 DXH-104-059 kernel: kernel_agent: kvm __seamcall(): TDH_MNG_CREATE ------------------------------------ 
+2025-06-24T16:00:47.340483+08:00 DXH-104-059 kernel: kernel_agent: field identifier: 9010000200000004
+2025-06-24T16:00:47.340485+08:00 DXH-104-059 kernel: kernel_agent: scall TDH.MNG.RD 1 RET: 0xc000030000000001
+2025-06-24T16:00:47.340487+08:00 DXH-104-059 kernel: kernel_agent: return rcx: 0x28b485000
+2025-06-24T16:00:47.340489+08:00 DXH-104-059 kernel: kernel_agent: return rdx: 0x9010000200000004
+2025-06-24T16:00:47.340491+08:00 DXH-104-059 kernel: kernel_agent: return r8 OP_STATE: 0x0
+2025-06-24T16:00:47.340493+08:00 DXH-104-059 kernel: 
+2025-06-24T16:00:47.340495+08:00 DXH-104-059 kernel: kernel_agent: field identifier: 8010000200000005
+2025-06-24T16:00:47.340496+08:00 DXH-104-059 kernel: kernel_agent: scall TDH.MNG.RD 1 RET: 0xc000030000000001
+2025-06-24T16:00:47.340498+08:00 DXH-104-059 kernel: kernel_agent: return rcx: 0x28b485000
+2025-06-24T16:00:47.340499+08:00 DXH-104-059 kernel: kernel_agent: return rdx: 0x8010000200000005
+2025-06-24T16:00:47.340500+08:00 DXH-104-059 kernel: kernel_agent: return r8 LIFE_CYCLE_STATE: 0x0
+2025-06-24T16:00:47.340501+08:00 DXH-104-059 kernel: 
+2025-06-24T16:00:47.340503+08:00 DXH-104-059 kernel: kernel_agent: kvm __seamcall(): TDH_MNG_KEY_CONFIG ------------------------------------ 
+2025-06-24T16:00:47.340504+08:00 DXH-104-059 kernel: kernel_agent: field identifier: 9010000200000004
+2025-06-24T16:00:47.340506+08:00 DXH-104-059 kernel: kernel_agent: scall TDH.MNG.RD 1 RET: 0x8000081000000000
+2025-06-24T16:00:47.340507+08:00 DXH-104-059 kernel: kernel_agent: return rcx: 0x28b485000
+2025-06-24T16:00:47.340508+08:00 DXH-104-059 kernel: kernel_agent: return rdx: 0x9010000200000004
+2025-06-24T16:00:47.340509+08:00 DXH-104-059 kernel: kernel_agent: return r8 OP_STATE: 0x0
+2025-06-24T16:00:47.340511+08:00 DXH-104-059 kernel: 
+2025-06-24T16:00:47.340513+08:00 DXH-104-059 kernel: kernel_agent: field identifier: 8010000200000005
+2025-06-24T16:00:47.340515+08:00 DXH-104-059 kernel: kernel_agent: scall TDH.MNG.RD 1 RET: 0x8000081000000000
+2025-06-24T16:00:47.340516+08:00 DXH-104-059 kernel: kernel_agent: return rcx: 0x28b485000
+2025-06-24T16:00:47.340517+08:00 DXH-104-059 kernel: kernel_agent: return rdx: 0x8010000200000005
+2025-06-24T16:00:47.340518+08:00 DXH-104-059 kernel: kernel_agent: return r8 LIFE_CYCLE_STATE: 0x0
+2025-06-24T16:00:47.340520+08:00 DXH-104-059 kernel: 
+2025-06-24T16:00:47.341546+08:00 DXH-104-059 kernel: kernel_agent: kvm __seamcall(): TDH_MNG_ADDCX ------------------------------------ 
+2025-06-24T16:00:47.341572+08:00 DXH-104-059 kernel: kernel_agent: field identifier: 9010000200000004
+2025-06-24T16:00:47.341575+08:00 DXH-104-059 kernel: kernel_agent: scall TDH.MNG.RD 1 RET: 0xc000060600000000
+2025-06-24T16:00:47.341577+08:00 DXH-104-059 kernel: kernel_agent: return rcx: 0x28b485000
+2025-06-24T16:00:47.341579+08:00 DXH-104-059 kernel: kernel_agent: return rdx: 0x9010000200000004
+2025-06-24T16:00:47.341580+08:00 DXH-104-059 kernel: kernel_agent: return r8 OP_STATE: 0x0
+2025-06-24T16:00:47.341582+08:00 DXH-104-059 kernel: 
+2025-06-24T16:00:47.341584+08:00 DXH-104-059 kernel: kernel_agent: field identifier: 8010000200000005
+2025-06-24T16:00:47.341585+08:00 DXH-104-059 kernel: kernel_agent: scall TDH.MNG.RD 1 RET: 0xc000060600000000
+2025-06-24T16:00:47.341587+08:00 DXH-104-059 kernel: kernel_agent: return rcx: 0x28b485000
+2025-06-24T16:00:47.341589+08:00 DXH-104-059 kernel: kernel_agent: return rdx: 0x8010000200000005
+2025-06-24T16:00:47.341590+08:00 DXH-104-059 kernel: kernel_agent: return r8 LIFE_CYCLE_STATE: 0x0
+2025-06-24T16:00:47.341592+08:00 DXH-104-059 kernel: 
+2025-06-24T16:00:47.341593+08:00 DXH-104-059 kernel: kernel_agent: kvm __seamcall(): TDH_MNG_ADDCX ------------------------------------ 
+2025-06-24T16:00:47.341595+08:00 DXH-104-059 kernel: kernel_agent: field identifier: 9010000200000004
+2025-06-24T16:00:47.341598+08:00 DXH-104-059 kernel: kernel_agent: scall TDH.MNG.RD 1 RET: 0xc000060600000000
+2025-06-24T16:00:47.341626+08:00 DXH-104-059 kernel: kernel_agent: return rcx: 0x28b485000
+2025-06-24T16:00:47.341628+08:00 DXH-104-059 kernel: kernel_agent: return rdx: 0x9010000200000004
+2025-06-24T16:00:47.341631+08:00 DXH-104-059 kernel: kernel_agent: return r8 OP_STATE: 0x0
+2025-06-24T16:00:47.341633+08:00 DXH-104-059 kernel: 
+2025-06-24T16:00:47.341635+08:00 DXH-104-059 kernel: kernel_agent: field identifier: 8010000200000005
+2025-06-24T16:00:47.341637+08:00 DXH-104-059 kernel: kernel_agent: scall TDH.MNG.RD 1 RET: 0xc000060600000000
+2025-06-24T16:00:47.341638+08:00 DXH-104-059 kernel: kernel_agent: return rcx: 0x28b485000
+2025-06-24T16:00:47.341640+08:00 DXH-104-059 kernel: kernel_agent: return rdx: 0x8010000200000005
+2025-06-24T16:00:47.341642+08:00 DXH-104-059 kernel: kernel_agent: return r8 LIFE_CYCLE_STATE: 0x0
+2025-06-24T16:00:47.341644+08:00 DXH-104-059 kernel: 
+2025-06-24T16:00:47.341646+08:00 DXH-104-059 kernel: kernel_agent: kvm __seamcall(): TDH_MNG_ADDCX ------------------------------------ 
+2025-06-24T16:00:47.341648+08:00 DXH-104-059 kernel: kernel_agent: field identifier: 9010000200000004
+2025-06-24T16:00:47.341650+08:00 DXH-104-059 kernel: kernel_agent: scall TDH.MNG.RD 1 RET: 0xc000060600000000
+2025-06-24T16:00:47.341652+08:00 DXH-104-059 kernel: kernel_agent: return rcx: 0x28b485000
+2025-06-24T16:00:47.341654+08:00 DXH-104-059 kernel: kernel_agent: return rdx: 0x9010000200000004
+2025-06-24T16:00:47.341656+08:00 DXH-104-059 kernel: kernel_agent: return r8 OP_STATE: 0x0
+2025-06-24T16:00:47.341658+08:00 DXH-104-059 kernel: 
+2025-06-24T16:00:47.341659+08:00 DXH-104-059 kernel: kernel_agent: field identifier: 8010000200000005
+2025-06-24T16:00:47.341660+08:00 DXH-104-059 kernel: kernel_agent: scall TDH.MNG.RD 1 RET: 0xc000060600000000
+2025-06-24T16:00:47.341661+08:00 DXH-104-059 kernel: kernel_agent: return rcx: 0x28b485000
+2025-06-24T16:00:47.341662+08:00 DXH-104-059 kernel: kernel_agent: return rdx: 0x8010000200000005
+2025-06-24T16:00:47.341664+08:00 DXH-104-059 kernel: kernel_agent: return r8 LIFE_CYCLE_STATE: 0x0
+2025-06-24T16:00:47.341665+08:00 DXH-104-059 kernel: 
+2025-06-24T16:00:47.341666+08:00 DXH-104-059 kernel: kernel_agent: kvm __seamcall(): TDH_MNG_ADDCX ------------------------------------ 
+2025-06-24T16:00:47.341667+08:00 DXH-104-059 kernel: kernel_agent: field identifier: 9010000200000004
+2025-06-24T16:00:47.341668+08:00 DXH-104-059 kernel: kernel_agent: scall TDH.MNG.RD 1 RET: 0xc000060600000000
+2025-06-24T16:00:47.341669+08:00 DXH-104-059 kernel: kernel_agent: return rcx: 0x28b485000
+2025-06-24T16:00:47.341671+08:00 DXH-104-059 kernel: kernel_agent: return rdx: 0x9010000200000004
+2025-06-24T16:00:47.341672+08:00 DXH-104-059 kernel: kernel_agent: return r8 OP_STATE: 0x0
+2025-06-24T16:00:47.341673+08:00 DXH-104-059 kernel: 
+2025-06-24T16:00:47.341674+08:00 DXH-104-059 kernel: kernel_agent: field identifier: 8010000200000005
+2025-06-24T16:00:47.341675+08:00 DXH-104-059 kernel: kernel_agent: scall TDH.MNG.RD 1 RET: 0xc000060600000000
+2025-06-24T16:00:47.341677+08:00 DXH-104-059 kernel: kernel_agent: return rcx: 0x28b485000
+2025-06-24T16:00:47.341678+08:00 DXH-104-059 kernel: kernel_agent: return rdx: 0x8010000200000005
+2025-06-24T16:00:47.341680+08:00 DXH-104-059 kernel: kernel_agent: return r8 LIFE_CYCLE_STATE: 0x0
+2025-06-24T16:00:47.341681+08:00 DXH-104-059 kernel: 
+2025-06-24T16:00:47.341682+08:00 DXH-104-059 kernel: kernel_agent: kvm __seamcall(): TDH_MNG_ADDCX ------------------------------------ 
+2025-06-24T16:00:47.341683+08:00 DXH-104-059 kernel: kernel_agent: field identifier: 9010000200000004
+2025-06-24T16:00:47.341685+08:00 DXH-104-059 kernel: kernel_agent: scall TDH.MNG.RD 1 RET: 0xc000060600000000
+2025-06-24T16:00:47.341686+08:00 DXH-104-059 kernel: kernel_agent: return rcx: 0x28b485000
+2025-06-24T16:00:47.341687+08:00 DXH-104-059 kernel: kernel_agent: return rdx: 0x9010000200000004
+2025-06-24T16:00:47.341688+08:00 DXH-104-059 kernel: kernel_agent: return r8 OP_STATE: 0x0
+2025-06-24T16:00:47.341689+08:00 DXH-104-059 kernel: 
+2025-06-24T16:00:47.341690+08:00 DXH-104-059 kernel: kernel_agent: field identifier: 8010000200000005
+2025-06-24T16:00:47.341692+08:00 DXH-104-059 kernel: kernel_agent: scall TDH.MNG.RD 1 RET: 0xc000060600000000
+2025-06-24T16:00:47.341693+08:00 DXH-104-059 kernel: kernel_agent: return rcx: 0x28b485000
+2025-06-24T16:00:47.341694+08:00 DXH-104-059 kernel: kernel_agent: return rdx: 0x8010000200000005
+2025-06-24T16:00:47.341695+08:00 DXH-104-059 kernel: kernel_agent: return r8 LIFE_CYCLE_STATE: 0x0
+2025-06-24T16:00:47.341696+08:00 DXH-104-059 kernel: 
+2025-06-24T16:00:47.341697+08:00 DXH-104-059 kernel: kernel_agent: kvm __seamcall(): TDH_MNG_ADDCX ------------------------------------ 
+2025-06-24T16:00:47.341699+08:00 DXH-104-059 kernel: kernel_agent: field identifier: 9010000200000004
+2025-06-24T16:00:47.341700+08:00 DXH-104-059 kernel: kernel_agent: scall TDH.MNG.RD 1 RET: 0xc000060600000000
+2025-06-24T16:00:47.341701+08:00 DXH-104-059 kernel: kernel_agent: return rcx: 0x28b485000
+2025-06-24T16:00:47.341702+08:00 DXH-104-059 kernel: kernel_agent: return rdx: 0x9010000200000004
+2025-06-24T16:00:47.341703+08:00 DXH-104-059 kernel: kernel_agent: return r8 OP_STATE: 0x0
+2025-06-24T16:00:47.341704+08:00 DXH-104-059 kernel: 
+2025-06-24T16:00:47.341706+08:00 DXH-104-059 kernel: kernel_agent: field identifier: 8010000200000005
+2025-06-24T16:00:47.341743+08:00 DXH-104-059 kernel: kernel_agent: scall TDH.MNG.RD 1 RET: 0xc000060600000000
+2025-06-24T16:00:47.341748+08:00 DXH-104-059 kernel: kernel_agent: return rcx: 0x28b485000
+2025-06-24T16:00:47.341750+08:00 DXH-104-059 kernel: kernel_agent: return rdx: 0x8010000200000005
+2025-06-24T16:00:47.341753+08:00 DXH-104-059 kernel: kernel_agent: return r8 LIFE_CYCLE_STATE: 0x0
+2025-06-24T16:00:47.341755+08:00 DXH-104-059 kernel: 
+2025-06-24T16:00:47.341757+08:00 DXH-104-059 kernel: kernel_agent: kvm __seamcall_ret: TDH_MNG_INIT ------------------------------------ 
+At this point we are about to issue TDH_MNG_INIT, untill this is completed, TDH.MNG.RD can not be used to read TD OP_STATE and LIFE_CYCLE_STATE
+
+2025-06-24T16:00:47.341759+08:00 DXH-104-059 kernel: kernel_agent: field identifier: 9010000200000004
+2025-06-24T16:00:47.341762+08:00 DXH-104-059 kernel: kernel_agent: scall TDH.MNG.RD 1 RET: 0xc000060800000000
+2025-06-24T16:00:47.341764+08:00 DXH-104-059 kernel: kernel_agent: return rcx: 0x28b485000
+2025-06-24T16:00:47.341766+08:00 DXH-104-059 kernel: kernel_agent: return rdx: 0x9010000200000004
+2025-06-24T16:00:47.341768+08:00 DXH-104-059 kernel: kernel_agent: return r8 OP_STATE: 0x0
+2025-06-24T16:00:47.341770+08:00 DXH-104-059 kernel: 
+2025-06-24T16:00:47.341772+08:00 DXH-104-059 kernel: kernel_agent: field identifier: 8010000200000005
+2025-06-24T16:00:47.341774+08:00 DXH-104-059 kernel: kernel_agent: scall TDH.MNG.RD 1 RET: 0xc000060800000000
+2025-06-24T16:00:47.341776+08:00 DXH-104-059 kernel: kernel_agent: return rcx: 0x28b485000
+2025-06-24T16:00:47.341778+08:00 DXH-104-059 kernel: kernel_agent: return rdx: 0x8010000200000005
+2025-06-24T16:00:47.341780+08:00 DXH-104-059 kernel: kernel_agent: return r8 LIFE_CYCLE_STATE: 0x0
+2025-06-24T16:00:47.341782+08:00 DXH-104-059 kernel: 
+2025-06-24T16:00:47.341784+08:00 DXH-104-059 kernel: kernel_agent: kvm __seamcall_ret: TDH_MNG_RD ------------------------------------ 
+2025-06-24T16:00:47.341786+08:00 DXH-104-059 kernel: kernel_agent: field identifier: 9010000200000004
+2025-06-24T16:00:47.341788+08:00 DXH-104-059 kernel: kernel_agent: scall TDH.MNG.RD 1 RET: 0x0
+2025-06-24T16:00:47.341790+08:00 DXH-104-059 kernel: kernel_agent: return rcx: 0x28b485000
+2025-06-24T16:00:47.341792+08:00 DXH-104-059 kernel: kernel_agent: return rdx: 0x9010000200000004
+2025-06-24T16:00:47.341793+08:00 DXH-104-059 kernel: kernel_agent: return r8 OP_STATE: 0x1
+2025-06-24T16:00:47.341795+08:00 DXH-104-059 kernel: 
+2025-06-24T16:00:47.341797+08:00 DXH-104-059 kernel: kernel_agent: field identifier: 8010000200000005
+2025-06-24T16:00:47.341799+08:00 DXH-104-059 kernel: kernel_agent: scall TDH.MNG.RD 1 RET: 0x0
+2025-06-24T16:00:47.341801+08:00 DXH-104-059 kernel: kernel_agent: return rcx: 0x28b485000
+2025-06-24T16:00:47.341803+08:00 DXH-104-059 kernel: kernel_agent: return rdx: 0x8010000200000005
+2025-06-24T16:00:47.341805+08:00 DXH-104-059 kernel: kernel_agent: return r8 LIFE_CYCLE_STATE: 0x1
+2025-06-24T16:00:47.341807+08:00 DXH-104-059 kernel: 
+2025-06-24T16:00:47.483385+08:00 DXH-104-059 kernel: kernel_agent: hooked  tdx_vcpu_ioctl() 
+2025-06-24T16:00:47.483411+08:00 DXH-104-059 kernel: kernel_agent: ioctl: KVM_TDX_INIT_VCPU
+2025-06-24T16:00:47.483414+08:00 DXH-104-059 kernel: 
+2025-06-24T16:00:47.483417+08:00 DXH-104-059 kernel: kernel_agent: kvm __seamcall(): TDH_VP_CREATE ------------------------------------ 
+2025-06-24T16:00:47.483419+08:00 DXH-104-059 kernel: kernel_agent: field identifier: 9010000200000004
+2025-06-24T16:00:47.483421+08:00 DXH-104-059 kernel: kernel_agent: scall TDH.MNG.RD 1 RET: 0x0
+2025-06-24T16:00:47.483423+08:00 DXH-104-059 kernel: kernel_agent: return rcx: 0x28b485000
+2025-06-24T16:00:47.483424+08:00 DXH-104-059 kernel: kernel_agent: return rdx: 0x9010000200000004
+2025-06-24T16:00:47.483426+08:00 DXH-104-059 kernel: kernel_agent: return r8 OP_STATE: 0x1
+2025-06-24T16:00:47.483428+08:00 DXH-104-059 kernel: 
+2025-06-24T16:00:47.483429+08:00 DXH-104-059 kernel: kernel_agent: field identifier: 8010000200000005
+2025-06-24T16:00:47.483432+08:00 DXH-104-059 kernel: kernel_agent: scall TDH.MNG.RD 1 RET: 0x0
+2025-06-24T16:00:47.483433+08:00 DXH-104-059 kernel: kernel_agent: return rcx: 0x28b485000
+2025-06-24T16:00:47.483434+08:00 DXH-104-059 kernel: kernel_agent: return rdx: 0x8010000200000005
+2025-06-24T16:00:47.483436+08:00 DXH-104-059 kernel: kernel_agent: return r8 LIFE_CYCLE_STATE: 0x1
+2025-06-24T16:00:47.483437+08:00 DXH-104-059 kernel: 
+2025-06-24T16:00:47.483439+08:00 DXH-104-059 kernel: kernel_agent: hooked  tdx_vcpu_ioctl() 
+2025-06-24T16:00:47.483440+08:00 DXH-104-059 kernel: kernel_agent: ioctl: KVM_TDX_INIT_VCPU
+2025-06-24T16:00:47.483442+08:00 DXH-104-059 kernel: 
+2025-06-24T16:00:47.483443+08:00 DXH-104-059 kernel: kernel_agent: kvm __seamcall(): TDH_VP_CREATE ------------------------------------ 
+2025-06-24T16:00:47.483445+08:00 DXH-104-059 kernel: kernel_agent: field identifier: 9010000200000004
+2025-06-24T16:00:47.483446+08:00 DXH-104-059 kernel: kernel_agent: scall TDH.MNG.RD 1 RET: 0x0
+2025-06-24T16:00:47.483447+08:00 DXH-104-059 kernel: kernel_agent: return rcx: 0x28b485000
+2025-06-24T16:00:47.483448+08:00 DXH-104-059 kernel: kernel_agent: return rdx: 0x9010000200000004
+2025-06-24T16:00:47.483450+08:00 DXH-104-059 kernel: kernel_agent: return r8 OP_STATE: 0x1
+2025-06-24T16:00:47.483452+08:00 DXH-104-059 kernel: 
+2025-06-24T16:00:47.483453+08:00 DXH-104-059 kernel: kernel_agent: field identifier: 8010000200000005
+2025-06-24T16:00:47.483454+08:00 DXH-104-059 kernel: kernel_agent: scall TDH.MNG.RD 1 RET: 0x0
+2025-06-24T16:00:47.483455+08:00 DXH-104-059 kernel: kernel_agent: return rcx: 0x28b485000
+2025-06-24T16:00:47.483457+08:00 DXH-104-059 kernel: kernel_agent: return rdx: 0x8010000200000005
+2025-06-24T16:00:47.483458+08:00 DXH-104-059 kernel: kernel_agent: return r8 LIFE_CYCLE_STATE: 0x1
+2025-06-24T16:00:47.483460+08:00 DXH-104-059 kernel: 
+2025-06-24T16:00:47.483484+08:00 DXH-104-059 kernel: kernel_agent: hooked  tdx_vcpu_ioctl() 
+2025-06-24T16:00:47.483485+08:00 DXH-104-059 kernel: kernel_agent: ioctl: KVM_TDX_INIT_VCPU
+2025-06-24T16:00:47.483487+08:00 DXH-104-059 kernel: 
+2025-06-24T16:00:47.483488+08:00 DXH-104-059 kernel: kernel_agent: kvm __seamcall(): TDH_VP_CREATE ------------------------------------ 
+2025-06-24T16:00:47.483490+08:00 DXH-104-059 kernel: kernel_agent: field identifier: 9010000200000004
+2025-06-24T16:00:47.483491+08:00 DXH-104-059 kernel: kernel_agent: scall TDH.MNG.RD 1 RET: 0x0
+2025-06-24T16:00:47.483493+08:00 DXH-104-059 kernel: kernel_agent: return rcx: 0x28b485000
+2025-06-24T16:00:47.483494+08:00 DXH-104-059 kernel: kernel_agent: return rdx: 0x9010000200000004
+2025-06-24T16:00:47.483495+08:00 DXH-104-059 kernel: kernel_agent: return r8 OP_STATE: 0x1
+2025-06-24T16:00:47.483496+08:00 DXH-104-059 kernel: 
+2025-06-24T16:00:47.483498+08:00 DXH-104-059 kernel: kernel_agent: field identifier: 8010000200000005
+2025-06-24T16:00:47.483499+08:00 DXH-104-059 kernel: kernel_agent: scall TDH.MNG.RD 1 RET: 0x0
+2025-06-24T16:00:47.483501+08:00 DXH-104-059 kernel: kernel_agent: return rcx: 0x28b485000
+2025-06-24T16:00:47.483502+08:00 DXH-104-059 kernel: kernel_agent: return rdx: 0x8010000200000005
+2025-06-24T16:00:47.483503+08:00 DXH-104-059 kernel: kernel_agent: return r8 LIFE_CYCLE_STATE: 0x1
+2025-06-24T16:00:47.483504+08:00 DXH-104-059 kernel: 
+2025-06-24T16:00:47.484450+08:00 DXH-104-059 kernel: kernel_agent: hooked  tdx_vcpu_ioctl() 
+2025-06-24T16:00:47.484477+08:00 DXH-104-059 kernel: kernel_agent: ioctl: KVM_TDX_INIT_VCPU
+2025-06-24T16:00:47.484479+08:00 DXH-104-059 kernel: 
+2025-06-24T16:00:47.484482+08:00 DXH-104-059 kernel: kernel_agent: kvm __seamcall(): TDH_VP_CREATE ------------------------------------ 
+2025-06-24T16:00:47.484484+08:00 DXH-104-059 kernel: kernel_agent: field identifier: 9010000200000004
+2025-06-24T16:00:47.484486+08:00 DXH-104-059 kernel: kernel_agent: scall TDH.MNG.RD 1 RET: 0x0
+2025-06-24T16:00:47.484488+08:00 DXH-104-059 kernel: kernel_agent: return rcx: 0x28b485000
+2025-06-24T16:00:47.484489+08:00 DXH-104-059 kernel: kernel_agent: return rdx: 0x9010000200000004
+2025-06-24T16:00:47.484491+08:00 DXH-104-059 kernel: kernel_agent: return r8 OP_STATE: 0x1
+2025-06-24T16:00:47.484493+08:00 DXH-104-059 kernel: 
+2025-06-24T16:00:47.484494+08:00 DXH-104-059 kernel: kernel_agent: field identifier: 8010000200000005
+2025-06-24T16:00:47.484496+08:00 DXH-104-059 kernel: kernel_agent: scall TDH.MNG.RD 1 RET: 0x0
+2025-06-24T16:00:47.484497+08:00 DXH-104-059 kernel: kernel_agent: return rcx: 0x28b485000
+2025-06-24T16:00:47.484499+08:00 DXH-104-059 kernel: kernel_agent: return rdx: 0x8010000200000005
+2025-06-24T16:00:47.484501+08:00 DXH-104-059 kernel: kernel_agent: return r8 LIFE_CYCLE_STATE: 0x1
+2025-06-24T16:00:47.484503+08:00 DXH-104-059 kernel: 
+2025-06-24T16:00:47.484505+08:00 DXH-104-059 kernel: kernel_agent: hooked  tdx_vcpu_ioctl() 
+2025-06-24T16:00:47.484506+08:00 DXH-104-059 kernel: kernel_agent: ioctl: KVM_TDX_INIT_VCPU
+2025-06-24T16:00:47.484507+08:00 DXH-104-059 kernel: 
+2025-06-24T16:00:47.484509+08:00 DXH-104-059 kernel: kernel_agent: kvm __seamcall(): TDH_VP_CREATE ------------------------------------ 
+2025-06-24T16:00:47.484510+08:00 DXH-104-059 kernel: kernel_agent: field identifier: 9010000200000004
+2025-06-24T16:00:47.484511+08:00 DXH-104-059 kernel: kernel_agent: scall TDH.MNG.RD 1 RET: 0x0
+2025-06-24T16:00:47.484513+08:00 DXH-104-059 kernel: kernel_agent: return rcx: 0x28b485000
+2025-06-24T16:00:47.484514+08:00 DXH-104-059 kernel: kernel_agent: return rdx: 0x9010000200000004
+2025-06-24T16:00:47.484515+08:00 DXH-104-059 kernel: kernel_agent: return r8 OP_STATE: 0x1
+2025-06-24T16:00:47.484517+08:00 DXH-104-059 kernel: 
+2025-06-24T16:00:47.484518+08:00 DXH-104-059 kernel: kernel_agent: field identifier: 8010000200000005
+2025-06-24T16:00:47.484519+08:00 DXH-104-059 kernel: kernel_agent: scall TDH.MNG.RD 1 RET: 0x0
+2025-06-24T16:00:47.484521+08:00 DXH-104-059 kernel: kernel_agent: return rcx: 0x28b485000
+2025-06-24T16:00:47.484522+08:00 DXH-104-059 kernel: kernel_agent: return rdx: 0x8010000200000005
+2025-06-24T16:00:47.484523+08:00 DXH-104-059 kernel: kernel_agent: return r8 LIFE_CYCLE_STATE: 0x1
+2025-06-24T16:00:47.484525+08:00 DXH-104-059 kernel: 
+2025-06-24T16:00:47.484526+08:00 DXH-104-059 kernel: kernel_agent: hooked  tdx_vcpu_ioctl() 
+2025-06-24T16:00:47.484527+08:00 DXH-104-059 kernel: kernel_agent: ioctl: KVM_TDX_INIT_VCPU
+2025-06-24T16:00:47.484529+08:00 DXH-104-059 kernel: 
+2025-06-24T16:00:47.484530+08:00 DXH-104-059 kernel: kernel_agent: kvm __seamcall(): TDH_VP_CREATE ------------------------------------ 
+2025-06-24T16:00:47.484532+08:00 DXH-104-059 kernel: kernel_agent: field identifier: 9010000200000004
+2025-06-24T16:00:47.484533+08:00 DXH-104-059 kernel: kernel_agent: scall TDH.MNG.RD 1 RET: 0x0
+2025-06-24T16:00:47.484534+08:00 DXH-104-059 kernel: kernel_agent: return rcx: 0x28b485000
+2025-06-24T16:00:47.484535+08:00 DXH-104-059 kernel: kernel_agent: return rdx: 0x9010000200000004
+2025-06-24T16:00:47.484537+08:00 DXH-104-059 kernel: kernel_agent: return r8 OP_STATE: 0x1
+2025-06-24T16:00:47.484539+08:00 DXH-104-059 kernel: 
+2025-06-24T16:00:47.484540+08:00 DXH-104-059 kernel: kernel_agent: field identifier: 8010000200000005
+2025-06-24T16:00:47.484541+08:00 DXH-104-059 kernel: kernel_agent: scall TDH.MNG.RD 1 RET: 0x0
+2025-06-24T16:00:47.484542+08:00 DXH-104-059 kernel: kernel_agent: return rcx: 0x28b485000
+2025-06-24T16:00:47.484543+08:00 DXH-104-059 kernel: kernel_agent: return rdx: 0x8010000200000005
+2025-06-24T16:00:47.484545+08:00 DXH-104-059 kernel: kernel_agent: return r8 LIFE_CYCLE_STATE: 0x1
+2025-06-24T16:00:47.484546+08:00 DXH-104-059 kernel: 
+2025-06-24T16:00:47.484548+08:00 DXH-104-059 kernel: kernel_agent: hooked  tdx_vcpu_ioctl() 
+2025-06-24T16:00:47.484581+08:00 DXH-104-059 kernel: kernel_agent: ioctl: KVM_TDX_INIT_VCPU
+2025-06-24T16:00:47.484584+08:00 DXH-104-059 kernel: 
+2025-06-24T16:00:47.484586+08:00 DXH-104-059 kernel: kernel_agent: kvm __seamcall(): TDH_VP_CREATE ------------------------------------ 
+2025-06-24T16:00:47.484588+08:00 DXH-104-059 kernel: kernel_agent: field identifier: 9010000200000004
+2025-06-24T16:00:47.484590+08:00 DXH-104-059 kernel: kernel_agent: scall TDH.MNG.RD 1 RET: 0x0
+2025-06-24T16:00:47.484592+08:00 DXH-104-059 kernel: kernel_agent: return rcx: 0x28b485000
+2025-06-24T16:00:47.484594+08:00 DXH-104-059 kernel: kernel_agent: return rdx: 0x9010000200000004
+2025-06-24T16:00:47.484596+08:00 DXH-104-059 kernel: kernel_agent: return r8 OP_STATE: 0x1
+2025-06-24T16:00:47.484598+08:00 DXH-104-059 kernel: 
+2025-06-24T16:00:47.484599+08:00 DXH-104-059 kernel: kernel_agent: field identifier: 8010000200000005
+2025-06-24T16:00:47.484601+08:00 DXH-104-059 kernel: kernel_agent: scall TDH.MNG.RD 1 RET: 0x0
+2025-06-24T16:00:47.484603+08:00 DXH-104-059 kernel: kernel_agent: return rcx: 0x28b485000
+2025-06-24T16:00:47.484605+08:00 DXH-104-059 kernel: kernel_agent: return rdx: 0x8010000200000005
+2025-06-24T16:00:47.484607+08:00 DXH-104-059 kernel: kernel_agent: return r8 LIFE_CYCLE_STATE: 0x1
+2025-06-24T16:00:47.484609+08:00 DXH-104-059 kernel: 
+2025-06-24T16:00:47.484610+08:00 DXH-104-059 kernel: kernel_agent: hooked  tdx_vcpu_ioctl() 
+2025-06-24T16:00:47.484612+08:00 DXH-104-059 kernel: kernel_agent: ioctl: KVM_TDX_INIT_VCPU
+2025-06-24T16:00:47.484614+08:00 DXH-104-059 kernel: 
+2025-06-24T16:00:47.484616+08:00 DXH-104-059 kernel: kernel_agent: kvm __seamcall(): TDH_VP_CREATE ------------------------------------ 
+2025-06-24T16:00:47.484619+08:00 DXH-104-059 kernel: kernel_agent: field identifier: 9010000200000004
+2025-06-24T16:00:47.484621+08:00 DXH-104-059 kernel: kernel_agent: scall TDH.MNG.RD 1 RET: 0x0
+2025-06-24T16:00:47.484622+08:00 DXH-104-059 kernel: kernel_agent: return rcx: 0x28b485000
+2025-06-24T16:00:47.484624+08:00 DXH-104-059 kernel: kernel_agent: return rdx: 0x9010000200000004
+2025-06-24T16:00:47.484626+08:00 DXH-104-059 kernel: kernel_agent: return r8 OP_STATE: 0x1
+2025-06-24T16:00:47.484627+08:00 DXH-104-059 kernel: 
+2025-06-24T16:00:47.484629+08:00 DXH-104-059 kernel: kernel_agent: field identifier: 8010000200000005
+2025-06-24T16:00:47.484631+08:00 DXH-104-059 kernel: kernel_agent: scall TDH.MNG.RD 1 RET: 0x0
+2025-06-24T16:00:47.484633+08:00 DXH-104-059 kernel: kernel_agent: return rcx: 0x28b485000
+2025-06-24T16:00:47.484635+08:00 DXH-104-059 kernel: kernel_agent: return rdx: 0x8010000200000005
+2025-06-24T16:00:47.484637+08:00 DXH-104-059 kernel: kernel_agent: return r8 LIFE_CYCLE_STATE: 0x1
+2025-06-24T16:00:47.484639+08:00 DXH-104-059 kernel: 
+2025-06-24T16:00:47.484663+08:00 DXH-104-059 kernel: kernel_agent: hooked  tdx_vcpu_ioctl() 
+2025-06-24T16:00:47.484665+08:00 DXH-104-059 kernel: kernel_agent: ioctl: KVM_TDX_INIT_VCPU
+2025-06-24T16:00:47.484666+08:00 DXH-104-059 kernel: 
+2025-06-24T16:00:47.484668+08:00 DXH-104-059 kernel: kernel_agent: kvm __seamcall(): TDH_VP_CREATE ------------------------------------ 
+2025-06-24T16:00:47.484669+08:00 DXH-104-059 kernel: kernel_agent: field identifier: 9010000200000004
+2025-06-24T16:00:47.484670+08:00 DXH-104-059 kernel: kernel_agent: scall TDH.MNG.RD 1 RET: 0x0
+2025-06-24T16:00:47.484671+08:00 DXH-104-059 kernel: kernel_agent: return rcx: 0x28b485000
+2025-06-24T16:00:47.484673+08:00 DXH-104-059 kernel: kernel_agent: return rdx: 0x9010000200000004
+2025-06-24T16:00:47.484674+08:00 DXH-104-059 kernel: kernel_agent: return r8 OP_STATE: 0x1
+2025-06-24T16:00:47.484675+08:00 DXH-104-059 kernel: 
+2025-06-24T16:00:47.484676+08:00 DXH-104-059 kernel: kernel_agent: field identifier: 8010000200000005
+2025-06-24T16:00:47.484678+08:00 DXH-104-059 kernel: kernel_agent: scall TDH.MNG.RD 1 RET: 0x0
+2025-06-24T16:00:47.484679+08:00 DXH-104-059 kernel: kernel_agent: return rcx: 0x28b485000
+2025-06-24T16:00:47.484680+08:00 DXH-104-059 kernel: kernel_agent: return rdx: 0x8010000200000005
+2025-06-24T16:00:47.484681+08:00 DXH-104-059 kernel: kernel_agent: return r8 LIFE_CYCLE_STATE: 0x1
+2025-06-24T16:00:47.484683+08:00 DXH-104-059 kernel: 
+2025-06-24T16:00:47.485436+08:00 DXH-104-059 kernel: kernel_agent: hooked  tdx_vcpu_ioctl() 
+2025-06-24T16:00:47.485462+08:00 DXH-104-059 kernel: kernel_agent: ioctl: KVM_TDX_INIT_VCPU
+2025-06-24T16:00:47.485465+08:00 DXH-104-059 kernel: 
+2025-06-24T16:00:47.485467+08:00 DXH-104-059 kernel: kernel_agent: kvm __seamcall(): TDH_VP_CREATE ------------------------------------ 
+2025-06-24T16:00:47.485470+08:00 DXH-104-059 kernel: kernel_agent: field identifier: 9010000200000004
+2025-06-24T16:00:47.485472+08:00 DXH-104-059 kernel: kernel_agent: scall TDH.MNG.RD 1 RET: 0x0
+2025-06-24T16:00:47.485473+08:00 DXH-104-059 kernel: kernel_agent: return rcx: 0x28b485000
+2025-06-24T16:00:47.485475+08:00 DXH-104-059 kernel: kernel_agent: return rdx: 0x9010000200000004
+2025-06-24T16:00:47.485476+08:00 DXH-104-059 kernel: kernel_agent: return r8 OP_STATE: 0x1
+2025-06-24T16:00:47.485478+08:00 DXH-104-059 kernel: 
+2025-06-24T16:00:47.485480+08:00 DXH-104-059 kernel: kernel_agent: field identifier: 8010000200000005
+2025-06-24T16:00:47.485482+08:00 DXH-104-059 kernel: kernel_agent: scall TDH.MNG.RD 1 RET: 0x0
+2025-06-24T16:00:47.485483+08:00 DXH-104-059 kernel: kernel_agent: return rcx: 0x28b485000
+2025-06-24T16:00:47.485485+08:00 DXH-104-059 kernel: kernel_agent: return rdx: 0x8010000200000005
+2025-06-24T16:00:47.485486+08:00 DXH-104-059 kernel: kernel_agent: return r8 LIFE_CYCLE_STATE: 0x1
+2025-06-24T16:00:47.485488+08:00 DXH-104-059 kernel: 
+2025-06-24T16:00:47.485489+08:00 DXH-104-059 kernel: kernel_agent: hooked  tdx_vcpu_ioctl() 
+2025-06-24T16:00:47.485490+08:00 DXH-104-059 kernel: kernel_agent: ioctl: KVM_TDX_INIT_VCPU
+2025-06-24T16:00:47.485492+08:00 DXH-104-059 kernel: 
+2025-06-24T16:00:47.485493+08:00 DXH-104-059 kernel: kernel_agent: kvm __seamcall(): TDH_VP_CREATE ------------------------------------ 
+2025-06-24T16:00:47.485495+08:00 DXH-104-059 kernel: kernel_agent: field identifier: 9010000200000004
+2025-06-24T16:00:47.485496+08:00 DXH-104-059 kernel: kernel_agent: scall TDH.MNG.RD 1 RET: 0x0
+2025-06-24T16:00:47.485497+08:00 DXH-104-059 kernel: kernel_agent: return rcx: 0x28b485000
+2025-06-24T16:00:47.485499+08:00 DXH-104-059 kernel: kernel_agent: return rdx: 0x9010000200000004
+2025-06-24T16:00:47.485500+08:00 DXH-104-059 kernel: kernel_agent: return r8 OP_STATE: 0x1
+2025-06-24T16:00:47.485502+08:00 DXH-104-059 kernel: 
+2025-06-24T16:00:47.485503+08:00 DXH-104-059 kernel: kernel_agent: field identifier: 8010000200000005
+2025-06-24T16:00:47.485504+08:00 DXH-104-059 kernel: kernel_agent: scall TDH.MNG.RD 1 RET: 0x0
+2025-06-24T16:00:47.485506+08:00 DXH-104-059 kernel: kernel_agent: return rcx: 0x28b485000
+2025-06-24T16:00:47.485507+08:00 DXH-104-059 kernel: kernel_agent: return rdx: 0x8010000200000005
+2025-06-24T16:00:47.485508+08:00 DXH-104-059 kernel: kernel_agent: return r8 LIFE_CYCLE_STATE: 0x1
+2025-06-24T16:00:47.485510+08:00 DXH-104-059 kernel: 
+2025-06-24T16:00:47.485511+08:00 DXH-104-059 kernel: kernel_agent: hooked  tdx_vcpu_ioctl() 
+2025-06-24T16:00:47.485512+08:00 DXH-104-059 kernel: kernel_agent: ioctl: KVM_TDX_INIT_VCPU
+2025-06-24T16:00:47.485514+08:00 DXH-104-059 kernel: 
+2025-06-24T16:00:47.485515+08:00 DXH-104-059 kernel: kernel_agent: kvm __seamcall(): TDH_VP_CREATE ------------------------------------ 
+2025-06-24T16:00:47.485516+08:00 DXH-104-059 kernel: kernel_agent: field identifier: 9010000200000004
+2025-06-24T16:00:47.485518+08:00 DXH-104-059 kernel: kernel_agent: scall TDH.MNG.RD 1 RET: 0x0
+2025-06-24T16:00:47.485519+08:00 DXH-104-059 kernel: kernel_agent: return rcx: 0x28b485000
+2025-06-24T16:00:47.485521+08:00 DXH-104-059 kernel: kernel_agent: return rdx: 0x9010000200000004
+2025-06-24T16:00:47.485522+08:00 DXH-104-059 kernel: kernel_agent: return r8 OP_STATE: 0x1
+2025-06-24T16:00:47.485523+08:00 DXH-104-059 kernel: 
+2025-06-24T16:00:47.485524+08:00 DXH-104-059 kernel: kernel_agent: field identifier: 8010000200000005
+2025-06-24T16:00:47.485526+08:00 DXH-104-059 kernel: kernel_agent: scall TDH.MNG.RD 1 RET: 0x0
+2025-06-24T16:00:47.485527+08:00 DXH-104-059 kernel: kernel_agent: return rcx: 0x28b485000
+2025-06-24T16:00:47.485528+08:00 DXH-104-059 kernel: kernel_agent: return rdx: 0x8010000200000005
+2025-06-24T16:00:47.485530+08:00 DXH-104-059 kernel: kernel_agent: return r8 LIFE_CYCLE_STATE: 0x1
+2025-06-24T16:00:47.485531+08:00 DXH-104-059 kernel: 
+2025-06-24T16:00:47.485532+08:00 DXH-104-059 kernel: kernel_agent: hooked  tdx_vcpu_ioctl() 
+2025-06-24T16:00:47.485533+08:00 DXH-104-059 kernel: kernel_agent: ioctl: KVM_TDX_INIT_VCPU
+2025-06-24T16:00:47.485535+08:00 DXH-104-059 kernel: 
+2025-06-24T16:00:47.485537+08:00 DXH-104-059 kernel: kernel_agent: kvm __seamcall(): TDH_VP_CREATE ------------------------------------ 
+2025-06-24T16:00:47.485538+08:00 DXH-104-059 kernel: kernel_agent: field identifier: 9010000200000004
+2025-06-24T16:00:47.485539+08:00 DXH-104-059 kernel: kernel_agent: scall TDH.MNG.RD 1 RET: 0x0
+2025-06-24T16:00:47.485541+08:00 DXH-104-059 kernel: kernel_agent: return rcx: 0x28b485000
+2025-06-24T16:00:47.485542+08:00 DXH-104-059 kernel: kernel_agent: return rdx: 0x9010000200000004
+2025-06-24T16:00:47.485544+08:00 DXH-104-059 kernel: kernel_agent: return r8 OP_STATE: 0x1
+2025-06-24T16:00:47.485545+08:00 DXH-104-059 kernel: 
+2025-06-24T16:00:47.485546+08:00 DXH-104-059 kernel: kernel_agent: field identifier: 8010000200000005
+2025-06-24T16:00:47.485547+08:00 DXH-104-059 kernel: kernel_agent: scall TDH.MNG.RD 1 RET: 0x0
+2025-06-24T16:00:47.485549+08:00 DXH-104-059 kernel: kernel_agent: return rcx: 0x28b485000
+2025-06-24T16:00:47.485550+08:00 DXH-104-059 kernel: kernel_agent: return rdx: 0x8010000200000005
+2025-06-24T16:00:47.485551+08:00 DXH-104-059 kernel: kernel_agent: return r8 LIFE_CYCLE_STATE: 0x1
+2025-06-24T16:00:47.485553+08:00 DXH-104-059 kernel: 
+2025-06-24T16:00:47.485578+08:00 DXH-104-059 kernel: kernel_agent: hooked  tdx_vcpu_ioctl() 
+2025-06-24T16:00:47.485579+08:00 DXH-104-059 kernel: kernel_agent: ioctl: KVM_TDX_INIT_VCPU
+2025-06-24T16:00:47.485580+08:00 DXH-104-059 kernel: 
+2025-06-24T16:00:47.485582+08:00 DXH-104-059 kernel: kernel_agent: kvm __seamcall(): TDH_VP_CREATE ------------------------------------ 
+2025-06-24T16:00:47.485583+08:00 DXH-104-059 kernel: kernel_agent: field identifier: 9010000200000004
+2025-06-24T16:00:47.485585+08:00 DXH-104-059 kernel: kernel_agent: scall TDH.MNG.RD 1 RET: 0x0
+2025-06-24T16:00:47.485586+08:00 DXH-104-059 kernel: kernel_agent: return rcx: 0x28b485000
+2025-06-24T16:00:47.485587+08:00 DXH-104-059 kernel: kernel_agent: return rdx: 0x9010000200000004
+2025-06-24T16:00:47.485589+08:00 DXH-104-059 kernel: kernel_agent: return r8 OP_STATE: 0x1
+2025-06-24T16:00:47.485590+08:00 DXH-104-059 kernel: 
+2025-06-24T16:00:47.485591+08:00 DXH-104-059 kernel: kernel_agent: field identifier: 8010000200000005
+2025-06-24T16:00:47.485592+08:00 DXH-104-059 kernel: kernel_agent: scall TDH.MNG.RD 1 RET: 0x0
+2025-06-24T16:00:47.485594+08:00 DXH-104-059 kernel: kernel_agent: return rcx: 0x28b485000
+2025-06-24T16:00:47.485595+08:00 DXH-104-059 kernel: kernel_agent: return rdx: 0x8010000200000005
+2025-06-24T16:00:47.485596+08:00 DXH-104-059 kernel: kernel_agent: return r8 LIFE_CYCLE_STATE: 0x1
+2025-06-24T16:00:47.485598+08:00 DXH-104-059 kernel: 
+2025-06-24T16:00:47.486392+08:00 DXH-104-059 kernel: kernel_agent: hooked  tdx_vcpu_ioctl() 
+2025-06-24T16:00:47.486419+08:00 DXH-104-059 kernel: kernel_agent: ioctl: KVM_TDX_INIT_VCPU
+2025-06-24T16:00:47.486421+08:00 DXH-104-059 kernel: 
+2025-06-24T16:00:47.486424+08:00 DXH-104-059 kernel: kernel_agent: kvm __seamcall(): TDH_VP_CREATE ------------------------------------ 
+2025-06-24T16:00:47.486426+08:00 DXH-104-059 kernel: kernel_agent: field identifier: 9010000200000004
+2025-06-24T16:00:47.486428+08:00 DXH-104-059 kernel: kernel_agent: scall TDH.MNG.RD 1 RET: 0x0
+2025-06-24T16:00:47.486430+08:00 DXH-104-059 kernel: kernel_agent: return rcx: 0x28b485000
+2025-06-24T16:00:47.486431+08:00 DXH-104-059 kernel: kernel_agent: return rdx: 0x9010000200000004
+2025-06-24T16:00:47.486433+08:00 DXH-104-059 kernel: kernel_agent: return r8 OP_STATE: 0x1
+2025-06-24T16:00:47.486434+08:00 DXH-104-059 kernel: 
+2025-06-24T16:00:47.486436+08:00 DXH-104-059 kernel: kernel_agent: field identifier: 8010000200000005
+2025-06-24T16:00:47.486438+08:00 DXH-104-059 kernel: kernel_agent: scall TDH.MNG.RD 1 RET: 0x0
+2025-06-24T16:00:47.486440+08:00 DXH-104-059 kernel: kernel_agent: return rcx: 0x28b485000
+2025-06-24T16:00:47.486441+08:00 DXH-104-059 kernel: kernel_agent: return rdx: 0x8010000200000005
+2025-06-24T16:00:47.486442+08:00 DXH-104-059 kernel: kernel_agent: return r8 LIFE_CYCLE_STATE: 0x1
+2025-06-24T16:00:47.486444+08:00 DXH-104-059 kernel: 
+2025-06-24T16:00:47.486446+08:00 DXH-104-059 kernel: kernel_agent: hooked  tdx_vcpu_ioctl() 
+2025-06-24T16:00:47.486447+08:00 DXH-104-059 kernel: kernel_agent: ioctl: KVM_TDX_INIT_VCPU
+2025-06-24T16:00:47.486448+08:00 DXH-104-059 kernel: 
+2025-06-24T16:00:47.486450+08:00 DXH-104-059 kernel: kernel_agent: kvm __seamcall(): TDH_VP_CREATE ------------------------------------ 
+2025-06-24T16:00:47.486451+08:00 DXH-104-059 kernel: kernel_agent: field identifier: 9010000200000004
+2025-06-24T16:00:47.486452+08:00 DXH-104-059 kernel: kernel_agent: scall TDH.MNG.RD 1 RET: 0x0
+2025-06-24T16:00:47.486453+08:00 DXH-104-059 kernel: kernel_agent: return rcx: 0x28b485000
+2025-06-24T16:00:47.486455+08:00 DXH-104-059 kernel: kernel_agent: return rdx: 0x9010000200000004
+2025-06-24T16:00:47.486456+08:00 DXH-104-059 kernel: kernel_agent: return r8 OP_STATE: 0x1
+2025-06-24T16:00:47.486458+08:00 DXH-104-059 kernel: 
+2025-06-24T16:00:47.486459+08:00 DXH-104-059 kernel: kernel_agent: field identifier: 8010000200000005
+2025-06-24T16:00:47.486461+08:00 DXH-104-059 kernel: kernel_agent: scall TDH.MNG.RD 1 RET: 0x0
+2025-06-24T16:00:47.486462+08:00 DXH-104-059 kernel: kernel_agent: return rcx: 0x28b485000
+2025-06-24T16:00:47.486463+08:00 DXH-104-059 kernel: kernel_agent: return rdx: 0x8010000200000005
+2025-06-24T16:00:47.486464+08:00 DXH-104-059 kernel: kernel_agent: return r8 LIFE_CYCLE_STATE: 0x1
+2025-06-24T16:00:47.486466+08:00 DXH-104-059 kernel: 
+2025-06-24T16:00:47.498357+08:00 DXH-104-059 kernel: kernel_agent: hooked  tdx_vm_ioctl() 
+2025-06-24T16:00:47.498384+08:00 DXH-104-059 kernel: kernel_agent: ioctl: KVM_TDX_EXTEND_MEMORY
+2025-06-24T16:00:47.498386+08:00 DXH-104-059 kernel: 
+2025-06-24T16:00:47.583364+08:00 DXH-104-059 kernel: kernel_agent: hooked  tdx_vm_ioctl() 
+2025-06-24T16:00:47.583391+08:00 DXH-104-059 kernel: kernel_agent: ioctl: KVM_TDX_FINALIZE_VM
+2025-06-24T16:00:47.583394+08:00 DXH-104-059 kernel: 
+2025-06-24T16:00:47.583397+08:00 DXH-104-059 kernel: kernel_agent: TD_FINALIZED
+2025-06-24T16:00:47.591380+08:00 DXH-104-059 kernel: kernel_agent: kvm __seamcall(): TDH_VP_FLUSH ------------------------------------ 
+2025-06-24T16:00:47.591406+08:00 DXH-104-059 kernel: kernel_agent: field identifier: 9010000200000004
+2025-06-24T16:00:47.591408+08:00 DXH-104-059 kernel: kernel_agent: scall TDH.MNG.RD 1 RET: 0x0
+2025-06-24T16:00:47.591411+08:00 DXH-104-059 kernel: kernel_agent: return rcx: 0x28b485000
+2025-06-24T16:00:47.591413+08:00 DXH-104-059 kernel: kernel_agent: return rdx: 0x9010000200000004
+2025-06-24T16:00:47.591415+08:00 DXH-104-059 kernel: kernel_agent: return r8 OP_STATE: 0x2
+2025-06-24T16:00:47.591417+08:00 DXH-104-059 kernel: 
+2025-06-24T16:00:47.591418+08:00 DXH-104-059 kernel: kernel_agent: field identifier: 8010000200000005
+2025-06-24T16:00:47.591420+08:00 DXH-104-059 kernel: kernel_agent: scall TDH.MNG.RD 1 RET: 0x0
+2025-06-24T16:00:47.591422+08:00 DXH-104-059 kernel: kernel_agent: return rcx: 0x28b485000
+2025-06-24T16:00:47.591424+08:00 DXH-104-059 kernel: kernel_agent: return rdx: 0x8010000200000005
+2025-06-24T16:00:47.591425+08:00 DXH-104-059 kernel: kernel_agent: return r8 LIFE_CYCLE_STATE: 0x1
+2025-06-24T16:00:47.591427+08:00 DXH-104-059 kernel: 

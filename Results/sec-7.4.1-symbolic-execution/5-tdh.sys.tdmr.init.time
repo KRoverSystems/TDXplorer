@@ -1,0 +1,129 @@
+starting Monitor
+doing sanity checks
+size of struct comArea: 0x5bbdd4
+cpuid movdir64b support: 0
+cpuid serialize support: 0
+cpuid xgetbv support: 0
+sanity checks done
+seam manager's va for seam env pa: 0x7fffe57cb000
+doing 64-bit specifics ...
+aft setup GDT base:ffff900000000000 lim:0x2f
+preliminary seam environment prep done
+loading p-seamloder
+load p-seamldr successful ...
+fusing tdx sw PDPT with agent PML4, pml4 idx: 96
+fusing tdx sw PDPT with agent PML4, pml4 idx: 352
+
+interpreter's core, exiting now
+starting Monitor
+doing sanity checks
+size of struct comArea: 0x5bbdd4
+cpuid movdir64b support: 0
+cpuid serialize support: 0
+cpuid xgetbv support: 0
+sanity checks done
+seam manager's va for seam env pa: 0x7fffe57cb000
+doing 64-bit specifics ...
+aft setup GDT base:ffff900000000000 lim:0x2f
+preliminary seam environment prep done
+loading p-seamloder
+load p-seamldr successful ...
+fusing tdx sw PDPT with agent PML4, pml4 idx: 96
+fusing tdx sw PDPT with agent PML4, pml4 idx: 352
+executing Monitor/SEAM environment process
+installing tdx module
+
+########## issuing SEAMCALL SEAMLDR_INSTALL 
+########## CALL_COUNT: 0000 SEAMCALL SEAMLDR_INSTALL return code: 0
+rax:0x0 rcx:0x1200000 rdx:0x0
+r8:0x0 r9:0x0 r10:0x0 r11:0x0 
+
+########## issuing SEAMCALL SEAMLDR_INSTALL 
+########## CALL_COUNT: 0001 SEAMCALL SEAMLDR_INSTALL return code: 0
+rax:0x0 rcx:0x1200000 rdx:0x0
+r8:0x0 r9:0x0 r10:0x0 r11:0x0 
+
+########## issuing SEAMCALL SEAMLDR_INSTALL 
+########## CALL_COUNT: 0002 SEAMCALL SEAMLDR_INSTALL return code: 0
+rax:0x0 rcx:0x1200000 rdx:0x0
+r8:0x0 r9:0x0 r10:0x0 r11:0x0 
+
+########## issuing SEAMCALL SEAMLDR_INSTALL 
+########## CALL_COUNT: 0003 SEAMCALL SEAMLDR_INSTALL return code: 0
+rax:0x0 rcx:0x1200000 rdx:0x0
+r8:0x0 r9:0x0 r10:0x0 r11:0x0 
+
+install tdx module epilogue
+fusing tdx sw PDPT with agent PML4, pml4 idx: 64
+fusing tdx sw PDPT with agent PML4, pml4 idx: 320
+com->khole_data.khole_rgn_base:0xffffa00200000000
+com->khole_data.khole_rgn_size:0x200000
+com->khole_data.khole_edit_rgn_size: 1000
+lp:0 com->lp_khole_state[lp].khole_edit_rgn_pa: 5cef000
+lp:1 com->lp_khole_state[lp].khole_edit_rgn_pa: 5cef400
+lp:2 com->lp_khole_state[lp].khole_edit_rgn_pa: 5cef800
+lp:3 com->lp_khole_state[lp].khole_edit_rgn_pa: 5cefc00
+max physical address width: 39 bits
+com->max_pa_bit_below_hkid: 39
+seam_manager's wait for interpreter's PT update: START
+seam_manager's wait for interpreter's PT update: END
+
+analyzer function start
+enter the TDX call number: init_tdx_module
+
+########## issuing SEAMCALL TDH_SYS_INIT 
+########## CALL_COUNT: 0004 SEAMCALL TDH_SYS_INIT return code: 0
+rax:0x0 rcx:0x0 rdx:0x0
+r8:0x0 r9:0x0 r10:0x0 r11:0x9110000300000010 
+
+########## issuing SEAMCALL TDH_SYS_LP_INIT 
+########## CALL_COUNT: 0005 SEAMCALL TDH_SYS_LP_INIT return code: 0
+rax:0x0 rcx:0x0 rdx:0x0
+r8:0x0 r9:0x55555555fff0 r10:0x7ffff7b062a0 r11:0x9110000300000010 
+
+########## issuing SEAMCALL TDH_SYS_LP_INIT 
+########## CALL_COUNT: 0006 SEAMCALL TDH_SYS_LP_INIT return code: 0
+rax:0x0 rcx:0x0 rdx:0x0
+r8:0x0 r9:0x55555555fff0 r10:0x7ffff7b062a0 r11:0x9110000300000010 
+
+########## issuing SEAMCALL TDH_SYS_LP_INIT 
+########## CALL_COUNT: 0007 SEAMCALL TDH_SYS_LP_INIT return code: 0
+rax:0x0 rcx:0x0 rdx:0x0
+r8:0x0 r9:0x55555555fff0 r10:0x7ffff7b062a0 r11:0x9110000300000010 
+
+########## issuing SEAMCALL TDH_SYS_LP_INIT 
+########## CALL_COUNT: 0008 SEAMCALL TDH_SYS_LP_INIT return code: 0
+rax:0x0 rcx:0x0 rdx:0x0
+r8:0x0 r9:0x55555555fff0 r10:0x7ffff7b062a0 r11:0x9110000300000010 
+
+########## issuing SEAMCALL TDH_SYS_CONFIG 
+########## CALL_COUNT: 0009 SEAMCALL TDH_SYS_CONFIG return code: 0
+rax:0x0 rcx:0x1200000 rdx:0x1
+r8:0x20 r9:0x18 r10:0x7ffff7b0a760 r11:0x555555561db8 
+
+########## issuing SEAMCALL TDH_SYS_KEY_CONFIG 
+########## CALL_COUNT: 0010 SEAMCALL TDH_SYS_KEY_CONFIG return code: 0
+rax:0x0 rcx:0x5cfb000 rdx:0x20
+r8:0x0 r9:0x0 r10:0x800ff8 r11:0x55555555fec4 
+Starting _se
+
+########## issuing SEAMCALL TDH_SYS_TDMR_INIT 
+
+at beginAnalysis
+rip:0xffffa0000003568d
+TDH_SYS_TDMR_INIT
+setExecProfileSinglePath
+SE: at start of processFuncyion
+
+s Ending seeded SE path  -----------------------------------------
+Current path constraint: 
+t0:32209316991472 t1:32210221540828 total time:904549356
+ending analsis at interpreter's analyzer function
+
+
+
+//comments for AEC 
+total time in cpu cycles: 904549356
+cpu clock 2GHz 
+time in ms: 452 ms
+time per ins: 0.0135

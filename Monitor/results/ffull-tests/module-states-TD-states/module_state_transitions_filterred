@@ -1,0 +1,1410 @@
+########## 0000 SEAMCALL SEAMLDR_INSTALL SEAMRET status: 0 SUCCESS -----------------
+############# TDX GLOBAL_STATE.SYS_STATE: SYSINIT_PENDING
+--
+########## 0001 SEAMCALL SEAMLDR_INSTALL SEAMRET status: 0 SUCCESS -----------------
+############# TDX GLOBAL_STATE.SYS_STATE: SYSINIT_PENDING
+--
+########## 0002 SEAMCALL SEAMLDR_INSTALL SEAMRET status: 0 SUCCESS -----------------
+############# TDX GLOBAL_STATE.SYS_STATE: SYSINIT_PENDING
+--
+########## 0003 SEAMCALL SEAMLDR_INSTALL SEAMRET status: 0 SUCCESS -----------------
+############# TDX GLOBAL_STATE.SYS_STATE: SYSINIT_PENDING
+--
+########## 0004 SEAMCALL TDH_SYS_INIT SEAMRET status: 0 SUCCESS -----------------
+############# TDX GLOBAL_STATE.SYS_STATE: SYSINIT_DONE
+--
+########## 0005 SEAMCALL TDH_SYS_LP_INIT SEAMRET status: 0 SUCCESS -----------------
+############# TDX GLOBAL_STATE.SYS_STATE: SYSINIT_DONE
+--
+########## 0006 SEAMCALL TDH_SYS_LP_INIT SEAMRET status: 0 SUCCESS -----------------
+############# TDX GLOBAL_STATE.SYS_STATE: SYSINIT_DONE
+--
+########## 0007 SEAMCALL TDH_SYS_LP_INIT SEAMRET status: 0 SUCCESS -----------------
+############# TDX GLOBAL_STATE.SYS_STATE: SYSINIT_DONE
+--
+
+########## 0008 SEAMCALL TDH_SYS_LP_INIT SEAMRET status: 0 SUCCESS -----------------
+############# TDX GLOBAL_STATE.SYS_STATE: SYSINIT_DONE
+--
+########## 0009 SEAMCALL TDH_SYS_CONFIG SEAMRET status: 0 SUCCESS -----------------
+############# TDX GLOBAL_STATE.SYS_STATE: SYSCONFIG_DONE
+--
+########## 0010 SEAMCALL TDH_SYS_KEY_CONFIG SEAMRET status: 0 SUCCESS -----------------
+############# TDX GLOBAL_STATE.SYS_STATE: SYS_READY
+--
+########## 0011 SEAMCALL TDH_SYS_TDMR_INIT SEAMRET status: 0 SUCCESS -----------------
+############# TDX GLOBAL_STATE.SYS_STATE: SYS_READY
+--
+########## 0012 SEAMCALL TDH_SYS_TDMR_INIT SEAMRET status: 0 SUCCESS -----------------
+############# TDX GLOBAL_STATE.SYS_STATE: SYS_READY
+--
+########## 0013 SEAMCALL TDH_SYS_TDMR_INIT SEAMRET status: 0 SUCCESS -----------------
+############# TDX GLOBAL_STATE.SYS_STATE: SYS_READY
+--
+########## 0014 SEAMCALL TDH_SYS_TDMR_INIT SEAMRET status: 0 SUCCESS -----------------
+############# TDX GLOBAL_STATE.SYS_STATE: SYS_READY
+--
+########## 0015 SEAMCALL TDH_SYS_TDMR_INIT SEAMRET status: 0 SUCCESS -----------------
+############# TDX GLOBAL_STATE.SYS_STATE: SYS_READY
+--
+########## 0016 SEAMCALL TDH_SYS_TDMR_INIT SEAMRET status: 0 SUCCESS -----------------
+############# TDX GLOBAL_STATE.SYS_STATE: SYS_READY
+--
+########## 0017 SEAMCALL TDH_SYS_TDMR_INIT SEAMRET status: 0 SUCCESS -----------------
+############# TDX GLOBAL_STATE.SYS_STATE: SYS_READY
+--
+########## 0018 SEAMCALL TDH_SYS_TDMR_INIT SEAMRET status: 0 SUCCESS -----------------
+############# TDX GLOBAL_STATE.SYS_STATE: SYS_READY
+--
+########## 0019 SEAMCALL TDH_SYS_TDMR_INIT SEAMRET status: 0 SUCCESS -----------------
+############# TDX GLOBAL_STATE.SYS_STATE: SYS_READY
+--
+########## 0020 SEAMCALL TDH_SYS_TDMR_INIT SEAMRET status: 0 SUCCESS -----------------
+############# TDX GLOBAL_STATE.SYS_STATE: SYS_READY
+--
+########## 0021 SEAMCALL TDH_SYS_TDMR_INIT SEAMRET status: 0 SUCCESS -----------------
+############# TDX GLOBAL_STATE.SYS_STATE: SYS_READY
+--
+########## 0022 SEAMCALL TDH_SYS_TDMR_INIT SEAMRET status: 0 SUCCESS -----------------
+############# TDX GLOBAL_STATE.SYS_STATE: SYS_READY
+--
+########## 0023 SEAMCALL TDH_SYS_TDMR_INIT SEAMRET status: 0 SUCCESS -----------------
+############# TDX GLOBAL_STATE.SYS_STATE: SYS_READY
+--
+########## 0024 SEAMCALL TDH_SYS_TDMR_INIT SEAMRET status: 0 SUCCESS -----------------
+############# TDX GLOBAL_STATE.SYS_STATE: SYS_READY
+--
+########## 0025 SEAMCALL TDH_SYS_TDMR_INIT SEAMRET status: 0 SUCCESS -----------------
+############# TDX GLOBAL_STATE.SYS_STATE: SYS_READY
+--
+########## 0026 SEAMCALL TDH_SYS_TDMR_INIT SEAMRET status: 0 SUCCESS -----------------
+############# TDX GLOBAL_STATE.SYS_STATE: SYS_READY
+--
+########## 0027 SEAMCALL TDH_SYS_TDMR_INIT SEAMRET status: 0 SUCCESS -----------------
+############# TDX GLOBAL_STATE.SYS_STATE: SYS_READY
+--
+########## 0028 SEAMCALL TDH_SYS_TDMR_INIT SEAMRET status: 0 SUCCESS -----------------
+############# TDX GLOBAL_STATE.SYS_STATE: SYS_READY
+--
+########## 0029 SEAMCALL TDH_SYS_TDMR_INIT SEAMRET status: 0 SUCCESS -----------------
+############# TDX GLOBAL_STATE.SYS_STATE: SYS_READY
+--
+########## 0030 SEAMCALL TDH_SYS_TDMR_INIT SEAMRET status: 0 SUCCESS -----------------
+############# TDX GLOBAL_STATE.SYS_STATE: SYS_READY
+--
+########## 0031 SEAMCALL TDH_SYS_TDMR_INIT SEAMRET status: 0 SUCCESS -----------------
+############# TDX GLOBAL_STATE.SYS_STATE: SYS_READY
+--
+########## 0032 SEAMCALL TDH_SYS_TDMR_INIT SEAMRET status: 0 SUCCESS -----------------
+############# TDX GLOBAL_STATE.SYS_STATE: SYS_READY
+--
+########## 0033 SEAMCALL TDH_SYS_TDMR_INIT SEAMRET status: 0 SUCCESS -----------------
+############# TDX GLOBAL_STATE.SYS_STATE: SYS_READY
+--
+########## 0034 SEAMCALL TDH_SYS_TDMR_INIT SEAMRET status: 0 SUCCESS -----------------
+############# TDX GLOBAL_STATE.SYS_STATE: SYS_READY
+--
+########## 0035 SEAMCALL TDH_SYS_TDMR_INIT SEAMRET status: 0 SUCCESS -----------------
+############# TDX GLOBAL_STATE.SYS_STATE: SYS_READY
+--
+########## 0036 SEAMCALL TDH_SYS_TDMR_INIT SEAMRET status: 0 SUCCESS -----------------
+############# TDX GLOBAL_STATE.SYS_STATE: SYS_READY
+--
+########## 0037 SEAMCALL TDH_SYS_TDMR_INIT SEAMRET status: 0 SUCCESS -----------------
+############# TDX GLOBAL_STATE.SYS_STATE: SYS_READY
+--
+########## 0038 SEAMCALL TDH_SYS_TDMR_INIT SEAMRET status: 0 SUCCESS -----------------
+############# TDX GLOBAL_STATE.SYS_STATE: SYS_READY
+--
+########## 0039 SEAMCALL TDH_SYS_TDMR_INIT SEAMRET status: 0 SUCCESS -----------------
+############# TDX GLOBAL_STATE.SYS_STATE: SYS_READY
+--
+########## 0040 SEAMCALL TDH_SYS_TDMR_INIT SEAMRET status: 0 SUCCESS -----------------
+############# TDX GLOBAL_STATE.SYS_STATE: SYS_READY
+--
+########## 0041 SEAMCALL TDH_SYS_TDMR_INIT SEAMRET status: 0 SUCCESS -----------------
+############# TDX GLOBAL_STATE.SYS_STATE: SYS_READY
+--
+########## 0042 SEAMCALL TDH_SYS_TDMR_INIT SEAMRET status: 0 SUCCESS -----------------
+############# TDX GLOBAL_STATE.SYS_STATE: SYS_READY
+--
+########## 0043 SEAMCALL TDH_SYS_TDMR_INIT SEAMRET status: 0 SUCCESS -----------------
+############# TDX GLOBAL_STATE.SYS_STATE: SYS_READY
+--
+########## 0044 SEAMCALL TDH_SYS_TDMR_INIT SEAMRET status: 0 SUCCESS -----------------
+############# TDX GLOBAL_STATE.SYS_STATE: SYS_READY
+--
+########## 0045 SEAMCALL TDH_SYS_TDMR_INIT SEAMRET status: 0 SUCCESS -----------------
+############# TDX GLOBAL_STATE.SYS_STATE: SYS_READY
+--
+########## 0046 SEAMCALL TDH_SYS_TDMR_INIT SEAMRET status: 0 SUCCESS -----------------
+############# TDX GLOBAL_STATE.SYS_STATE: SYS_READY
+--
+########## 0047 SEAMCALL TDH_SYS_TDMR_INIT SEAMRET status: 0 SUCCESS -----------------
+############# TDX GLOBAL_STATE.SYS_STATE: SYS_READY
+--
+########## 0048 SEAMCALL TDH_SYS_TDMR_INIT SEAMRET status: 0 SUCCESS -----------------
+############# TDX GLOBAL_STATE.SYS_STATE: SYS_READY
+--
+########## 0049 SEAMCALL TDH_SYS_TDMR_INIT SEAMRET status: 0 SUCCESS -----------------
+############# TDX GLOBAL_STATE.SYS_STATE: SYS_READY
+--
+########## 0050 SEAMCALL TDH_SYS_TDMR_INIT SEAMRET status: 0 SUCCESS -----------------
+############# TDX GLOBAL_STATE.SYS_STATE: SYS_READY
+--
+########## 0051 SEAMCALL TDH_SYS_TDMR_INIT SEAMRET status: 0 SUCCESS -----------------
+############# TDX GLOBAL_STATE.SYS_STATE: SYS_READY
+--
+########## 0052 SEAMCALL TDH_SYS_TDMR_INIT SEAMRET status: 0 SUCCESS -----------------
+############# TDX GLOBAL_STATE.SYS_STATE: SYS_READY
+--
+########## 0053 SEAMCALL TDH_SYS_TDMR_INIT SEAMRET status: 0 SUCCESS -----------------
+############# TDX GLOBAL_STATE.SYS_STATE: SYS_READY
+--
+########## 0054 SEAMCALL TDH_SYS_TDMR_INIT SEAMRET status: 0 SUCCESS -----------------
+############# TDX GLOBAL_STATE.SYS_STATE: SYS_READY
+--
+########## 0055 SEAMCALL TDH_SYS_TDMR_INIT SEAMRET status: 0 SUCCESS -----------------
+############# TDX GLOBAL_STATE.SYS_STATE: SYS_READY
+--
+########## 0056 SEAMCALL TDH_SYS_TDMR_INIT SEAMRET status: 0 SUCCESS -----------------
+############# TDX GLOBAL_STATE.SYS_STATE: SYS_READY
+--
+########## 0057 SEAMCALL TDH_SYS_TDMR_INIT SEAMRET status: 0 SUCCESS -----------------
+############# TDX GLOBAL_STATE.SYS_STATE: SYS_READY
+--
+########## 0058 SEAMCALL TDH_SYS_TDMR_INIT SEAMRET status: 0 SUCCESS -----------------
+############# TDX GLOBAL_STATE.SYS_STATE: SYS_READY
+--
+########## 0059 SEAMCALL TDH_SYS_TDMR_INIT SEAMRET status: 0 SUCCESS -----------------
+############# TDX GLOBAL_STATE.SYS_STATE: SYS_READY
+--
+########## 0060 SEAMCALL TDH_SYS_TDMR_INIT SEAMRET status: 0 SUCCESS -----------------
+############# TDX GLOBAL_STATE.SYS_STATE: SYS_READY
+--
+########## 0061 SEAMCALL TDH_SYS_TDMR_INIT SEAMRET status: 0 SUCCESS -----------------
+############# TDX GLOBAL_STATE.SYS_STATE: SYS_READY
+--
+########## 0062 SEAMCALL TDH_SYS_TDMR_INIT SEAMRET status: 0 SUCCESS -----------------
+############# TDX GLOBAL_STATE.SYS_STATE: SYS_READY
+--
+########## 0063 SEAMCALL TDH_SYS_TDMR_INIT SEAMRET status: 0 SUCCESS -----------------
+############# TDX GLOBAL_STATE.SYS_STATE: SYS_READY
+--
+########## 0064 SEAMCALL TDH_SYS_TDMR_INIT SEAMRET status: 0 SUCCESS -----------------
+############# TDX GLOBAL_STATE.SYS_STATE: SYS_READY
+--
+########## 0065 SEAMCALL TDH_SYS_TDMR_INIT SEAMRET status: 0 SUCCESS -----------------
+############# TDX GLOBAL_STATE.SYS_STATE: SYS_READY
+--
+########## 0066 SEAMCALL TDH_SYS_TDMR_INIT SEAMRET status: 0 SUCCESS -----------------
+############# TDX GLOBAL_STATE.SYS_STATE: SYS_READY
+--
+########## 0067 SEAMCALL TDH_SYS_TDMR_INIT SEAMRET status: 0 SUCCESS -----------------
+############# TDX GLOBAL_STATE.SYS_STATE: SYS_READY
+--
+########## 0068 SEAMCALL TDH_SYS_TDMR_INIT SEAMRET status: 0 SUCCESS -----------------
+############# TDX GLOBAL_STATE.SYS_STATE: SYS_READY
+--
+########## 0069 SEAMCALL TDH_SYS_TDMR_INIT SEAMRET status: 0 SUCCESS -----------------
+############# TDX GLOBAL_STATE.SYS_STATE: SYS_READY
+--
+########## 0070 SEAMCALL TDH_SYS_TDMR_INIT SEAMRET status: 0 SUCCESS -----------------
+############# TDX GLOBAL_STATE.SYS_STATE: SYS_READY
+--
+########## 0071 SEAMCALL TDH_SYS_TDMR_INIT SEAMRET status: 0 SUCCESS -----------------
+############# TDX GLOBAL_STATE.SYS_STATE: SYS_READY
+--
+########## 0072 SEAMCALL TDH_SYS_TDMR_INIT SEAMRET status: 0 SUCCESS -----------------
+############# TDX GLOBAL_STATE.SYS_STATE: SYS_READY
+--
+########## 0073 SEAMCALL TDH_SYS_TDMR_INIT SEAMRET status: 0 SUCCESS -----------------
+############# TDX GLOBAL_STATE.SYS_STATE: SYS_READY
+--
+########## 0074 SEAMCALL TDH_SYS_TDMR_INIT SEAMRET status: 0 SUCCESS -----------------
+############# TDX GLOBAL_STATE.SYS_STATE: SYS_READY
+--
+########## 0075 SEAMCALL TDH_SYS_TDMR_INIT SEAMRET status: 0 SUCCESS -----------------
+############# TDX GLOBAL_STATE.SYS_STATE: SYS_READY
+--
+########## 0076 SEAMCALL TDH_SYS_TDMR_INIT SEAMRET status: 0 SUCCESS -----------------
+############# TDX GLOBAL_STATE.SYS_STATE: SYS_READY
+--
+########## 0077 SEAMCALL TDH_SYS_TDMR_INIT SEAMRET status: 0 SUCCESS -----------------
+############# TDX GLOBAL_STATE.SYS_STATE: SYS_READY
+--
+########## 0078 SEAMCALL TDH_SYS_TDMR_INIT SEAMRET status: 0 SUCCESS -----------------
+############# TDX GLOBAL_STATE.SYS_STATE: SYS_READY
+--
+########## 0079 SEAMCALL TDH_SYS_TDMR_INIT SEAMRET status: 0 SUCCESS -----------------
+############# TDX GLOBAL_STATE.SYS_STATE: SYS_READY
+--
+########## 0080 SEAMCALL TDH_SYS_TDMR_INIT SEAMRET status: 0 SUCCESS -----------------
+############# TDX GLOBAL_STATE.SYS_STATE: SYS_READY
+--
+########## 0081 SEAMCALL TDH_SYS_TDMR_INIT SEAMRET status: 0 SUCCESS -----------------
+############# TDX GLOBAL_STATE.SYS_STATE: SYS_READY
+--
+########## 0082 SEAMCALL TDH_SYS_TDMR_INIT SEAMRET status: 0 SUCCESS -----------------
+############# TDX GLOBAL_STATE.SYS_STATE: SYS_READY
+--
+########## 0083 SEAMCALL TDH_SYS_TDMR_INIT SEAMRET status: 0 SUCCESS -----------------
+############# TDX GLOBAL_STATE.SYS_STATE: SYS_READY
+--
+########## 0084 SEAMCALL TDH_SYS_TDMR_INIT SEAMRET status: 0 SUCCESS -----------------
+############# TDX GLOBAL_STATE.SYS_STATE: SYS_READY
+--
+########## 0085 SEAMCALL TDH_SYS_TDMR_INIT SEAMRET status: 0 SUCCESS -----------------
+############# TDX GLOBAL_STATE.SYS_STATE: SYS_READY
+--
+########## 0086 SEAMCALL TDH_SYS_TDMR_INIT SEAMRET status: 0 SUCCESS -----------------
+############# TDX GLOBAL_STATE.SYS_STATE: SYS_READY
+--
+########## 0087 SEAMCALL TDH_SYS_TDMR_INIT SEAMRET status: 0 SUCCESS -----------------
+############# TDX GLOBAL_STATE.SYS_STATE: SYS_READY
+--
+########## 0088 SEAMCALL TDH_SYS_TDMR_INIT SEAMRET status: 0 SUCCESS -----------------
+############# TDX GLOBAL_STATE.SYS_STATE: SYS_READY
+--
+########## 0089 SEAMCALL TDH_SYS_TDMR_INIT SEAMRET status: 0 SUCCESS -----------------
+############# TDX GLOBAL_STATE.SYS_STATE: SYS_READY
+--
+########## 0090 SEAMCALL TDH_SYS_TDMR_INIT SEAMRET status: 0 SUCCESS -----------------
+############# TDX GLOBAL_STATE.SYS_STATE: SYS_READY
+--
+########## 0091 SEAMCALL TDH_SYS_TDMR_INIT SEAMRET status: 0 SUCCESS -----------------
+############# TDX GLOBAL_STATE.SYS_STATE: SYS_READY
+--
+########## 0092 SEAMCALL TDH_SYS_TDMR_INIT SEAMRET status: 0 SUCCESS -----------------
+############# TDX GLOBAL_STATE.SYS_STATE: SYS_READY
+--
+########## 0093 SEAMCALL TDH_SYS_TDMR_INIT SEAMRET status: 0 SUCCESS -----------------
+############# TDX GLOBAL_STATE.SYS_STATE: SYS_READY
+--
+########## 0094 SEAMCALL TDH_SYS_TDMR_INIT SEAMRET status: 0 SUCCESS -----------------
+############# TDX GLOBAL_STATE.SYS_STATE: SYS_READY
+--
+########## 0095 SEAMCALL TDH_SYS_TDMR_INIT SEAMRET status: 0 SUCCESS -----------------
+############# TDX GLOBAL_STATE.SYS_STATE: SYS_READY
+--
+########## 0096 SEAMCALL TDH_SYS_TDMR_INIT SEAMRET status: 0 SUCCESS -----------------
+############# TDX GLOBAL_STATE.SYS_STATE: SYS_READY
+--
+########## 0097 SEAMCALL TDH_SYS_TDMR_INIT SEAMRET status: 0 SUCCESS -----------------
+############# TDX GLOBAL_STATE.SYS_STATE: SYS_READY
+--
+########## 0098 SEAMCALL TDH_SYS_TDMR_INIT SEAMRET status: 0 SUCCESS -----------------
+############# TDX GLOBAL_STATE.SYS_STATE: SYS_READY
+--
+########## 0099 SEAMCALL TDH_SYS_TDMR_INIT SEAMRET status: 0 SUCCESS -----------------
+############# TDX GLOBAL_STATE.SYS_STATE: SYS_READY
+--
+########## 0100 SEAMCALL TDH_SYS_TDMR_INIT SEAMRET status: 0 SUCCESS -----------------
+############# TDX GLOBAL_STATE.SYS_STATE: SYS_READY
+--
+########## 0101 SEAMCALL TDH_SYS_TDMR_INIT SEAMRET status: 0 SUCCESS -----------------
+############# TDX GLOBAL_STATE.SYS_STATE: SYS_READY
+--
+########## 0102 SEAMCALL TDH_SYS_TDMR_INIT SEAMRET status: 0 SUCCESS -----------------
+############# TDX GLOBAL_STATE.SYS_STATE: SYS_READY
+--
+########## 0103 SEAMCALL TDH_SYS_TDMR_INIT SEAMRET status: 0 SUCCESS -----------------
+############# TDX GLOBAL_STATE.SYS_STATE: SYS_READY
+--
+########## 0104 SEAMCALL TDH_SYS_TDMR_INIT SEAMRET status: 0 SUCCESS -----------------
+############# TDX GLOBAL_STATE.SYS_STATE: SYS_READY
+--
+########## 0105 SEAMCALL TDH_SYS_TDMR_INIT SEAMRET status: 0 SUCCESS -----------------
+############# TDX GLOBAL_STATE.SYS_STATE: SYS_READY
+--
+########## 0106 SEAMCALL TDH_SYS_TDMR_INIT SEAMRET status: 0 SUCCESS -----------------
+############# TDX GLOBAL_STATE.SYS_STATE: SYS_READY
+--
+########## 0107 SEAMCALL TDH_SYS_TDMR_INIT SEAMRET status: 0 SUCCESS -----------------
+############# TDX GLOBAL_STATE.SYS_STATE: SYS_READY
+--
+########## 0108 SEAMCALL TDH_SYS_TDMR_INIT SEAMRET status: 0 SUCCESS -----------------
+############# TDX GLOBAL_STATE.SYS_STATE: SYS_READY
+--
+########## 0109 SEAMCALL TDH_SYS_TDMR_INIT SEAMRET status: 0 SUCCESS -----------------
+############# TDX GLOBAL_STATE.SYS_STATE: SYS_READY
+--
+########## 0110 SEAMCALL TDH_SYS_TDMR_INIT SEAMRET status: 0 SUCCESS -----------------
+############# TDX GLOBAL_STATE.SYS_STATE: SYS_READY
+--
+########## 0111 SEAMCALL TDH_SYS_TDMR_INIT SEAMRET status: 0 SUCCESS -----------------
+############# TDX GLOBAL_STATE.SYS_STATE: SYS_READY
+--
+########## 0112 SEAMCALL TDH_SYS_TDMR_INIT SEAMRET status: 0 SUCCESS -----------------
+############# TDX GLOBAL_STATE.SYS_STATE: SYS_READY
+--
+########## 0113 SEAMCALL TDH_SYS_TDMR_INIT SEAMRET status: 0 SUCCESS -----------------
+############# TDX GLOBAL_STATE.SYS_STATE: SYS_READY
+--
+########## 0114 SEAMCALL TDH_SYS_TDMR_INIT SEAMRET status: 0 SUCCESS -----------------
+############# TDX GLOBAL_STATE.SYS_STATE: SYS_READY
+--
+########## 0115 SEAMCALL TDH_SYS_TDMR_INIT SEAMRET status: 0 SUCCESS -----------------
+############# TDX GLOBAL_STATE.SYS_STATE: SYS_READY
+--
+########## 0116 SEAMCALL TDH_SYS_TDMR_INIT SEAMRET status: 0 SUCCESS -----------------
+############# TDX GLOBAL_STATE.SYS_STATE: SYS_READY
+--
+########## 0117 SEAMCALL TDH_SYS_TDMR_INIT SEAMRET status: 0 SUCCESS -----------------
+############# TDX GLOBAL_STATE.SYS_STATE: SYS_READY
+--
+########## 0118 SEAMCALL TDH_SYS_TDMR_INIT SEAMRET status: 0 SUCCESS -----------------
+############# TDX GLOBAL_STATE.SYS_STATE: SYS_READY
+--
+########## 0119 SEAMCALL TDH_SYS_TDMR_INIT SEAMRET status: 0 SUCCESS -----------------
+############# TDX GLOBAL_STATE.SYS_STATE: SYS_READY
+--
+########## 0120 SEAMCALL TDH_SYS_TDMR_INIT SEAMRET status: 0 SUCCESS -----------------
+############# TDX GLOBAL_STATE.SYS_STATE: SYS_READY
+--
+########## 0121 SEAMCALL TDH_SYS_TDMR_INIT SEAMRET status: 0 SUCCESS -----------------
+############# TDX GLOBAL_STATE.SYS_STATE: SYS_READY
+--
+########## 0122 SEAMCALL TDH_SYS_TDMR_INIT SEAMRET status: 0 SUCCESS -----------------
+############# TDX GLOBAL_STATE.SYS_STATE: SYS_READY
+--
+########## 0123 SEAMCALL TDH_SYS_TDMR_INIT SEAMRET status: 0 SUCCESS -----------------
+############# TDX GLOBAL_STATE.SYS_STATE: SYS_READY
+--
+########## 0124 SEAMCALL TDH_SYS_TDMR_INIT SEAMRET status: 0 SUCCESS -----------------
+############# TDX GLOBAL_STATE.SYS_STATE: SYS_READY
+--
+########## 0125 SEAMCALL TDH_SYS_TDMR_INIT SEAMRET status: 0 SUCCESS -----------------
+############# TDX GLOBAL_STATE.SYS_STATE: SYS_READY
+--
+########## 0126 SEAMCALL TDH_SYS_TDMR_INIT SEAMRET status: 0 SUCCESS -----------------
+############# TDX GLOBAL_STATE.SYS_STATE: SYS_READY
+--
+########## 0127 SEAMCALL TDH_SYS_TDMR_INIT SEAMRET status: 0 SUCCESS -----------------
+############# TDX GLOBAL_STATE.SYS_STATE: SYS_READY
+--
+########## 0128 SEAMCALL TDH_SYS_TDMR_INIT SEAMRET status: 0 SUCCESS -----------------
+############# TDX GLOBAL_STATE.SYS_STATE: SYS_READY
+--
+########## 0129 SEAMCALL TDH_SYS_TDMR_INIT SEAMRET status: 0 SUCCESS -----------------
+############# TDX GLOBAL_STATE.SYS_STATE: SYS_READY
+--
+########## 0130 SEAMCALL TDH_SYS_TDMR_INIT SEAMRET status: 0 SUCCESS -----------------
+############# TDX GLOBAL_STATE.SYS_STATE: SYS_READY
+--
+########## 0131 SEAMCALL TDH_SYS_TDMR_INIT SEAMRET status: 0 SUCCESS -----------------
+############# TDX GLOBAL_STATE.SYS_STATE: SYS_READY
+--
+########## 0132 SEAMCALL TDH_SYS_TDMR_INIT SEAMRET status: 0 SUCCESS -----------------
+############# TDX GLOBAL_STATE.SYS_STATE: SYS_READY
+--
+########## 0133 SEAMCALL TDH_SYS_TDMR_INIT SEAMRET status: 0 SUCCESS -----------------
+############# TDX GLOBAL_STATE.SYS_STATE: SYS_READY
+--
+########## 0134 SEAMCALL TDH_SYS_TDMR_INIT SEAMRET status: 0 SUCCESS -----------------
+############# TDX GLOBAL_STATE.SYS_STATE: SYS_READY
+--
+########## 0135 SEAMCALL TDH_SYS_TDMR_INIT SEAMRET status: 0 SUCCESS -----------------
+############# TDX GLOBAL_STATE.SYS_STATE: SYS_READY
+--
+########## 0136 SEAMCALL TDH_SYS_TDMR_INIT SEAMRET status: 0 SUCCESS -----------------
+############# TDX GLOBAL_STATE.SYS_STATE: SYS_READY
+--
+########## 0137 SEAMCALL TDH_SYS_TDMR_INIT SEAMRET status: 0 SUCCESS -----------------
+############# TDX GLOBAL_STATE.SYS_STATE: SYS_READY
+--
+########## 0138 SEAMCALL TDH_SYS_TDMR_INIT SEAMRET status: 0 SUCCESS -----------------
+############# TDX GLOBAL_STATE.SYS_STATE: SYS_READY
+--
+########## 0139 SEAMCALL TDH_SYS_TDMR_INIT SEAMRET status: 0 SUCCESS -----------------
+############# TDX GLOBAL_STATE.SYS_STATE: SYS_READY
+--
+########## 0140 SEAMCALL TDH_SYS_TDMR_INIT SEAMRET status: 0 SUCCESS -----------------
+############# TDX GLOBAL_STATE.SYS_STATE: SYS_READY
+--
+########## 0141 SEAMCALL TDH_SYS_TDMR_INIT SEAMRET status: 0 SUCCESS -----------------
+############# TDX GLOBAL_STATE.SYS_STATE: SYS_READY
+--
+########## 0142 SEAMCALL TDH_SYS_TDMR_INIT SEAMRET status: 0 SUCCESS -----------------
+############# TDX GLOBAL_STATE.SYS_STATE: SYS_READY
+--
+########## 0143 SEAMCALL TDH_SYS_TDMR_INIT SEAMRET status: 0 SUCCESS -----------------
+############# TDX GLOBAL_STATE.SYS_STATE: SYS_READY
+--
+########## 0144 SEAMCALL TDH_SYS_TDMR_INIT SEAMRET status: 0 SUCCESS -----------------
+############# TDX GLOBAL_STATE.SYS_STATE: SYS_READY
+--
+########## 0145 SEAMCALL TDH_SYS_TDMR_INIT SEAMRET status: 0 SUCCESS -----------------
+############# TDX GLOBAL_STATE.SYS_STATE: SYS_READY
+--
+########## 0146 SEAMCALL TDH_SYS_TDMR_INIT SEAMRET status: 0 SUCCESS -----------------
+############# TDX GLOBAL_STATE.SYS_STATE: SYS_READY
+--
+########## 0147 SEAMCALL TDH_SYS_TDMR_INIT SEAMRET status: 0 SUCCESS -----------------
+############# TDX GLOBAL_STATE.SYS_STATE: SYS_READY
+--
+########## 0148 SEAMCALL TDH_SYS_TDMR_INIT SEAMRET status: 0 SUCCESS -----------------
+############# TDX GLOBAL_STATE.SYS_STATE: SYS_READY
+--
+########## 0149 SEAMCALL TDH_SYS_TDMR_INIT SEAMRET status: 0 SUCCESS -----------------
+############# TDX GLOBAL_STATE.SYS_STATE: SYS_READY
+--
+########## 0150 SEAMCALL TDH_SYS_TDMR_INIT SEAMRET status: 0 SUCCESS -----------------
+############# TDX GLOBAL_STATE.SYS_STATE: SYS_READY
+--
+########## 0151 SEAMCALL TDH_SYS_TDMR_INIT SEAMRET status: 0 SUCCESS -----------------
+############# TDX GLOBAL_STATE.SYS_STATE: SYS_READY
+--
+########## 0152 SEAMCALL TDH_SYS_TDMR_INIT SEAMRET status: 0 SUCCESS -----------------
+############# TDX GLOBAL_STATE.SYS_STATE: SYS_READY
+--
+########## 0153 SEAMCALL TDH_SYS_TDMR_INIT SEAMRET status: 0 SUCCESS -----------------
+############# TDX GLOBAL_STATE.SYS_STATE: SYS_READY
+--
+########## 0154 SEAMCALL TDH_SYS_TDMR_INIT SEAMRET status: 0 SUCCESS -----------------
+############# TDX GLOBAL_STATE.SYS_STATE: SYS_READY
+--
+########## 0155 SEAMCALL TDH_SYS_TDMR_INIT SEAMRET status: 0 SUCCESS -----------------
+############# TDX GLOBAL_STATE.SYS_STATE: SYS_READY
+--
+########## 0156 SEAMCALL TDH_SYS_TDMR_INIT SEAMRET status: 0 SUCCESS -----------------
+############# TDX GLOBAL_STATE.SYS_STATE: SYS_READY
+--
+########## 0157 SEAMCALL TDH_SYS_TDMR_INIT SEAMRET status: 0 SUCCESS -----------------
+############# TDX GLOBAL_STATE.SYS_STATE: SYS_READY
+--
+########## 0158 SEAMCALL TDH_SYS_TDMR_INIT SEAMRET status: 0 SUCCESS -----------------
+############# TDX GLOBAL_STATE.SYS_STATE: SYS_READY
+--
+########## 0159 SEAMCALL TDH_SYS_TDMR_INIT SEAMRET status: 0 SUCCESS -----------------
+############# TDX GLOBAL_STATE.SYS_STATE: SYS_READY
+--
+########## 0160 SEAMCALL TDH_SYS_TDMR_INIT SEAMRET status: 0 SUCCESS -----------------
+############# TDX GLOBAL_STATE.SYS_STATE: SYS_READY
+--
+########## 0161 SEAMCALL TDH_SYS_TDMR_INIT SEAMRET status: 0 SUCCESS -----------------
+############# TDX GLOBAL_STATE.SYS_STATE: SYS_READY
+--
+########## 0162 SEAMCALL TDH_SYS_TDMR_INIT SEAMRET status: 0 SUCCESS -----------------
+############# TDX GLOBAL_STATE.SYS_STATE: SYS_READY
+--
+########## 0163 SEAMCALL TDH_SYS_TDMR_INIT SEAMRET status: 0 SUCCESS -----------------
+############# TDX GLOBAL_STATE.SYS_STATE: SYS_READY
+--
+########## 0164 SEAMCALL TDH_SYS_TDMR_INIT SEAMRET status: 0 SUCCESS -----------------
+############# TDX GLOBAL_STATE.SYS_STATE: SYS_READY
+--
+########## 0165 SEAMCALL TDH_SYS_TDMR_INIT SEAMRET status: 0 SUCCESS -----------------
+############# TDX GLOBAL_STATE.SYS_STATE: SYS_READY
+--
+########## 0166 SEAMCALL TDH_SYS_TDMR_INIT SEAMRET status: 0 SUCCESS -----------------
+############# TDX GLOBAL_STATE.SYS_STATE: SYS_READY
+--
+########## 0167 SEAMCALL TDH_SYS_TDMR_INIT SEAMRET status: 0 SUCCESS -----------------
+############# TDX GLOBAL_STATE.SYS_STATE: SYS_READY
+--
+########## 0168 SEAMCALL TDH_SYS_TDMR_INIT SEAMRET status: 0 SUCCESS -----------------
+############# TDX GLOBAL_STATE.SYS_STATE: SYS_READY
+--
+########## 0169 SEAMCALL TDH_SYS_TDMR_INIT SEAMRET status: 0 SUCCESS -----------------
+############# TDX GLOBAL_STATE.SYS_STATE: SYS_READY
+--
+########## 0170 SEAMCALL TDH_SYS_TDMR_INIT SEAMRET status: 0 SUCCESS -----------------
+############# TDX GLOBAL_STATE.SYS_STATE: SYS_READY
+--
+########## 0171 SEAMCALL TDH_SYS_TDMR_INIT SEAMRET status: 0 SUCCESS -----------------
+############# TDX GLOBAL_STATE.SYS_STATE: SYS_READY
+--
+########## 0172 SEAMCALL TDH_SYS_TDMR_INIT SEAMRET status: 0 SUCCESS -----------------
+############# TDX GLOBAL_STATE.SYS_STATE: SYS_READY
+--
+########## 0173 SEAMCALL TDH_SYS_TDMR_INIT SEAMRET status: 0 SUCCESS -----------------
+############# TDX GLOBAL_STATE.SYS_STATE: SYS_READY
+--
+########## 0174 SEAMCALL TDH_SYS_TDMR_INIT SEAMRET status: 0 SUCCESS -----------------
+############# TDX GLOBAL_STATE.SYS_STATE: SYS_READY
+--
+########## 0175 SEAMCALL TDH_SYS_TDMR_INIT SEAMRET status: 0 SUCCESS -----------------
+############# TDX GLOBAL_STATE.SYS_STATE: SYS_READY
+--
+########## 0176 SEAMCALL TDH_SYS_TDMR_INIT SEAMRET status: 0 SUCCESS -----------------
+############# TDX GLOBAL_STATE.SYS_STATE: SYS_READY
+--
+########## 0177 SEAMCALL TDH_SYS_TDMR_INIT SEAMRET status: 0 SUCCESS -----------------
+############# TDX GLOBAL_STATE.SYS_STATE: SYS_READY
+--
+########## 0178 SEAMCALL TDH_SYS_TDMR_INIT SEAMRET status: 0 SUCCESS -----------------
+############# TDX GLOBAL_STATE.SYS_STATE: SYS_READY
+--
+########## 0179 SEAMCALL TDH_SYS_TDMR_INIT SEAMRET status: 0 SUCCESS -----------------
+############# TDX GLOBAL_STATE.SYS_STATE: SYS_READY
+--
+########## 0180 SEAMCALL TDH_SYS_TDMR_INIT SEAMRET status: 0 SUCCESS -----------------
+############# TDX GLOBAL_STATE.SYS_STATE: SYS_READY
+--
+########## 0181 SEAMCALL TDH_SYS_TDMR_INIT SEAMRET status: 0 SUCCESS -----------------
+############# TDX GLOBAL_STATE.SYS_STATE: SYS_READY
+--
+########## 0182 SEAMCALL TDH_SYS_TDMR_INIT SEAMRET status: 0 SUCCESS -----------------
+############# TDX GLOBAL_STATE.SYS_STATE: SYS_READY
+--
+########## 0183 SEAMCALL TDH_SYS_TDMR_INIT SEAMRET status: 0 SUCCESS -----------------
+############# TDX GLOBAL_STATE.SYS_STATE: SYS_READY
+--
+########## 0184 SEAMCALL TDH_SYS_TDMR_INIT SEAMRET status: 0 SUCCESS -----------------
+############# TDX GLOBAL_STATE.SYS_STATE: SYS_READY
+--
+########## 0185 SEAMCALL TDH_SYS_TDMR_INIT SEAMRET status: 0 SUCCESS -----------------
+############# TDX GLOBAL_STATE.SYS_STATE: SYS_READY
+--
+########## 0186 SEAMCALL TDH_SYS_TDMR_INIT SEAMRET status: 0 SUCCESS -----------------
+############# TDX GLOBAL_STATE.SYS_STATE: SYS_READY
+--
+########## 0187 SEAMCALL TDH_SYS_TDMR_INIT SEAMRET status: 0 SUCCESS -----------------
+############# TDX GLOBAL_STATE.SYS_STATE: SYS_READY
+--
+########## 0188 SEAMCALL TDH_SYS_TDMR_INIT SEAMRET status: 0 SUCCESS -----------------
+############# TDX GLOBAL_STATE.SYS_STATE: SYS_READY
+--
+########## 0189 SEAMCALL TDH_SYS_TDMR_INIT SEAMRET status: 0 SUCCESS -----------------
+############# TDX GLOBAL_STATE.SYS_STATE: SYS_READY
+--
+########## 0190 SEAMCALL TDH_SYS_TDMR_INIT SEAMRET status: 0 SUCCESS -----------------
+############# TDX GLOBAL_STATE.SYS_STATE: SYS_READY
+--
+########## 0191 SEAMCALL TDH_SYS_TDMR_INIT SEAMRET status: 0 SUCCESS -----------------
+############# TDX GLOBAL_STATE.SYS_STATE: SYS_READY
+--
+########## 0192 SEAMCALL TDH_SYS_TDMR_INIT SEAMRET status: 0 SUCCESS -----------------
+############# TDX GLOBAL_STATE.SYS_STATE: SYS_READY
+--
+########## 0193 SEAMCALL TDH_SYS_TDMR_INIT SEAMRET status: 0 SUCCESS -----------------
+############# TDX GLOBAL_STATE.SYS_STATE: SYS_READY
+--
+########## 0194 SEAMCALL TDH_SYS_TDMR_INIT SEAMRET status: 0 SUCCESS -----------------
+############# TDX GLOBAL_STATE.SYS_STATE: SYS_READY
+--
+########## 0195 SEAMCALL TDH_SYS_TDMR_INIT SEAMRET status: 0 SUCCESS -----------------
+############# TDX GLOBAL_STATE.SYS_STATE: SYS_READY
+--
+########## 0196 SEAMCALL TDH_SYS_TDMR_INIT SEAMRET status: 0 SUCCESS -----------------
+############# TDX GLOBAL_STATE.SYS_STATE: SYS_READY
+--
+########## 0197 SEAMCALL TDH_SYS_TDMR_INIT SEAMRET status: 0 SUCCESS -----------------
+############# TDX GLOBAL_STATE.SYS_STATE: SYS_READY
+--
+########## 0198 SEAMCALL TDH_SYS_TDMR_INIT SEAMRET status: 0 SUCCESS -----------------
+############# TDX GLOBAL_STATE.SYS_STATE: SYS_READY
+--
+########## 0199 SEAMCALL TDH_SYS_TDMR_INIT SEAMRET status: 0 SUCCESS -----------------
+############# TDX GLOBAL_STATE.SYS_STATE: SYS_READY
+--
+########## 0200 SEAMCALL TDH_SYS_TDMR_INIT SEAMRET status: 0 SUCCESS -----------------
+############# TDX GLOBAL_STATE.SYS_STATE: SYS_READY
+--
+########## 0201 SEAMCALL TDH_SYS_TDMR_INIT SEAMRET status: 0 SUCCESS -----------------
+############# TDX GLOBAL_STATE.SYS_STATE: SYS_READY
+--
+########## 0202 SEAMCALL TDH_SYS_TDMR_INIT SEAMRET status: 0 SUCCESS -----------------
+############# TDX GLOBAL_STATE.SYS_STATE: SYS_READY
+--
+########## 0203 SEAMCALL TDH_SYS_TDMR_INIT SEAMRET status: 0 SUCCESS -----------------
+############# TDX GLOBAL_STATE.SYS_STATE: SYS_READY
+--
+########## 0204 SEAMCALL TDH_SYS_TDMR_INIT SEAMRET status: 0 SUCCESS -----------------
+############# TDX GLOBAL_STATE.SYS_STATE: SYS_READY
+--
+########## 0205 SEAMCALL TDH_SYS_TDMR_INIT SEAMRET status: 0 SUCCESS -----------------
+############# TDX GLOBAL_STATE.SYS_STATE: SYS_READY
+--
+########## 0206 SEAMCALL TDH_SYS_TDMR_INIT SEAMRET status: 0 SUCCESS -----------------
+############# TDX GLOBAL_STATE.SYS_STATE: SYS_READY
+--
+########## 0207 SEAMCALL TDH_SYS_TDMR_INIT SEAMRET status: 0 SUCCESS -----------------
+############# TDX GLOBAL_STATE.SYS_STATE: SYS_READY
+--
+########## 0208 SEAMCALL TDH_SYS_TDMR_INIT SEAMRET status: 0 SUCCESS -----------------
+############# TDX GLOBAL_STATE.SYS_STATE: SYS_READY
+--
+########## 0209 SEAMCALL TDH_SYS_TDMR_INIT SEAMRET status: 0 SUCCESS -----------------
+############# TDX GLOBAL_STATE.SYS_STATE: SYS_READY
+--
+########## 0210 SEAMCALL TDH_SYS_TDMR_INIT SEAMRET status: 0 SUCCESS -----------------
+############# TDX GLOBAL_STATE.SYS_STATE: SYS_READY
+--
+########## 0211 SEAMCALL TDH_SYS_TDMR_INIT SEAMRET status: 0 SUCCESS -----------------
+############# TDX GLOBAL_STATE.SYS_STATE: SYS_READY
+--
+########## 0212 SEAMCALL TDH_SYS_TDMR_INIT SEAMRET status: 0 SUCCESS -----------------
+############# TDX GLOBAL_STATE.SYS_STATE: SYS_READY
+--
+########## 0213 SEAMCALL TDH_SYS_TDMR_INIT SEAMRET status: 0 SUCCESS -----------------
+############# TDX GLOBAL_STATE.SYS_STATE: SYS_READY
+--
+########## 0214 SEAMCALL TDH_SYS_TDMR_INIT SEAMRET status: 0 SUCCESS -----------------
+############# TDX GLOBAL_STATE.SYS_STATE: SYS_READY
+--
+########## 0215 SEAMCALL TDH_SYS_TDMR_INIT SEAMRET status: 0 SUCCESS -----------------
+############# TDX GLOBAL_STATE.SYS_STATE: SYS_READY
+--
+########## 0216 SEAMCALL TDH_SYS_TDMR_INIT SEAMRET status: 0 SUCCESS -----------------
+############# TDX GLOBAL_STATE.SYS_STATE: SYS_READY
+--
+########## 0217 SEAMCALL TDH_SYS_TDMR_INIT SEAMRET status: 0 SUCCESS -----------------
+############# TDX GLOBAL_STATE.SYS_STATE: SYS_READY
+--
+########## 0218 SEAMCALL TDH_SYS_TDMR_INIT SEAMRET status: 0 SUCCESS -----------------
+############# TDX GLOBAL_STATE.SYS_STATE: SYS_READY
+--
+########## 0219 SEAMCALL TDH_SYS_TDMR_INIT SEAMRET status: 0 SUCCESS -----------------
+############# TDX GLOBAL_STATE.SYS_STATE: SYS_READY
+--
+########## 0220 SEAMCALL TDH_SYS_TDMR_INIT SEAMRET status: 0 SUCCESS -----------------
+############# TDX GLOBAL_STATE.SYS_STATE: SYS_READY
+--
+########## 0221 SEAMCALL TDH_SYS_TDMR_INIT SEAMRET status: 0 SUCCESS -----------------
+############# TDX GLOBAL_STATE.SYS_STATE: SYS_READY
+--
+########## 0222 SEAMCALL TDH_SYS_TDMR_INIT SEAMRET status: 0 SUCCESS -----------------
+############# TDX GLOBAL_STATE.SYS_STATE: SYS_READY
+--
+########## 0223 SEAMCALL TDH_SYS_TDMR_INIT SEAMRET status: 0 SUCCESS -----------------
+############# TDX GLOBAL_STATE.SYS_STATE: SYS_READY
+--
+########## 0224 SEAMCALL TDH_SYS_TDMR_INIT SEAMRET status: 0 SUCCESS -----------------
+############# TDX GLOBAL_STATE.SYS_STATE: SYS_READY
+--
+########## 0225 SEAMCALL TDH_SYS_TDMR_INIT SEAMRET status: 0 SUCCESS -----------------
+############# TDX GLOBAL_STATE.SYS_STATE: SYS_READY
+--
+########## 0226 SEAMCALL TDH_SYS_TDMR_INIT SEAMRET status: 0 SUCCESS -----------------
+############# TDX GLOBAL_STATE.SYS_STATE: SYS_READY
+--
+########## 0227 SEAMCALL TDH_SYS_TDMR_INIT SEAMRET status: 0 SUCCESS -----------------
+############# TDX GLOBAL_STATE.SYS_STATE: SYS_READY
+--
+########## 0228 SEAMCALL TDH_SYS_TDMR_INIT SEAMRET status: 0 SUCCESS -----------------
+############# TDX GLOBAL_STATE.SYS_STATE: SYS_READY
+--
+########## 0229 SEAMCALL TDH_SYS_TDMR_INIT SEAMRET status: 0 SUCCESS -----------------
+############# TDX GLOBAL_STATE.SYS_STATE: SYS_READY
+--
+########## 0230 SEAMCALL TDH_SYS_TDMR_INIT SEAMRET status: 0 SUCCESS -----------------
+############# TDX GLOBAL_STATE.SYS_STATE: SYS_READY
+--
+########## 0231 SEAMCALL TDH_SYS_TDMR_INIT SEAMRET status: 0 SUCCESS -----------------
+############# TDX GLOBAL_STATE.SYS_STATE: SYS_READY
+--
+########## 0232 SEAMCALL TDH_SYS_TDMR_INIT SEAMRET status: 0 SUCCESS -----------------
+############# TDX GLOBAL_STATE.SYS_STATE: SYS_READY
+--
+########## 0233 SEAMCALL TDH_SYS_TDMR_INIT SEAMRET status: 0 SUCCESS -----------------
+############# TDX GLOBAL_STATE.SYS_STATE: SYS_READY
+--
+########## 0234 SEAMCALL TDH_SYS_TDMR_INIT SEAMRET status: 0 SUCCESS -----------------
+############# TDX GLOBAL_STATE.SYS_STATE: SYS_READY
+--
+########## 0235 SEAMCALL TDH_SYS_TDMR_INIT SEAMRET status: 0 SUCCESS -----------------
+############# TDX GLOBAL_STATE.SYS_STATE: SYS_READY
+--
+########## 0236 SEAMCALL TDH_SYS_TDMR_INIT SEAMRET status: 0 SUCCESS -----------------
+############# TDX GLOBAL_STATE.SYS_STATE: SYS_READY
+--
+########## 0237 SEAMCALL TDH_SYS_TDMR_INIT SEAMRET status: 0 SUCCESS -----------------
+############# TDX GLOBAL_STATE.SYS_STATE: SYS_READY
+--
+########## 0238 SEAMCALL TDH_SYS_TDMR_INIT SEAMRET status: 0 SUCCESS -----------------
+############# TDX GLOBAL_STATE.SYS_STATE: SYS_READY
+--
+########## 0239 SEAMCALL TDH_SYS_TDMR_INIT SEAMRET status: 0 SUCCESS -----------------
+############# TDX GLOBAL_STATE.SYS_STATE: SYS_READY
+--
+########## 0240 SEAMCALL TDH_SYS_TDMR_INIT SEAMRET status: 0 SUCCESS -----------------
+############# TDX GLOBAL_STATE.SYS_STATE: SYS_READY
+--
+########## 0241 SEAMCALL TDH_SYS_TDMR_INIT SEAMRET status: 0 SUCCESS -----------------
+############# TDX GLOBAL_STATE.SYS_STATE: SYS_READY
+--
+########## 0242 SEAMCALL TDH_SYS_TDMR_INIT SEAMRET status: 0 SUCCESS -----------------
+############# TDX GLOBAL_STATE.SYS_STATE: SYS_READY
+--
+########## 0243 SEAMCALL TDH_SYS_TDMR_INIT SEAMRET status: 0 SUCCESS -----------------
+############# TDX GLOBAL_STATE.SYS_STATE: SYS_READY
+--
+########## 0244 SEAMCALL TDH_SYS_TDMR_INIT SEAMRET status: 0 SUCCESS -----------------
+############# TDX GLOBAL_STATE.SYS_STATE: SYS_READY
+--
+########## 0245 SEAMCALL TDH_SYS_TDMR_INIT SEAMRET status: 0 SUCCESS -----------------
+############# TDX GLOBAL_STATE.SYS_STATE: SYS_READY
+--
+########## 0246 SEAMCALL TDH_SYS_TDMR_INIT SEAMRET status: 0 SUCCESS -----------------
+############# TDX GLOBAL_STATE.SYS_STATE: SYS_READY
+--
+########## 0247 SEAMCALL TDH_SYS_TDMR_INIT SEAMRET status: 0 SUCCESS -----------------
+############# TDX GLOBAL_STATE.SYS_STATE: SYS_READY
+--
+########## 0248 SEAMCALL TDH_SYS_TDMR_INIT SEAMRET status: 0 SUCCESS -----------------
+############# TDX GLOBAL_STATE.SYS_STATE: SYS_READY
+--
+########## 0249 SEAMCALL TDH_SYS_TDMR_INIT SEAMRET status: 0 SUCCESS -----------------
+############# TDX GLOBAL_STATE.SYS_STATE: SYS_READY
+--
+########## 0250 SEAMCALL TDH_SYS_TDMR_INIT SEAMRET status: 0 SUCCESS -----------------
+############# TDX GLOBAL_STATE.SYS_STATE: SYS_READY
+--
+########## 0251 SEAMCALL TDH_SYS_TDMR_INIT SEAMRET status: 0 SUCCESS -----------------
+############# TDX GLOBAL_STATE.SYS_STATE: SYS_READY
+--
+########## 0252 SEAMCALL TDH_SYS_TDMR_INIT SEAMRET status: 0 SUCCESS -----------------
+############# TDX GLOBAL_STATE.SYS_STATE: SYS_READY
+--
+########## 0253 SEAMCALL TDH_SYS_TDMR_INIT SEAMRET status: 0 SUCCESS -----------------
+############# TDX GLOBAL_STATE.SYS_STATE: SYS_READY
+--
+########## 0254 SEAMCALL TDH_SYS_TDMR_INIT SEAMRET status: 0 SUCCESS -----------------
+############# TDX GLOBAL_STATE.SYS_STATE: SYS_READY
+--
+########## 0255 SEAMCALL TDH_SYS_TDMR_INIT SEAMRET status: 0 SUCCESS -----------------
+############# TDX GLOBAL_STATE.SYS_STATE: SYS_READY
+--
+########## 0256 SEAMCALL TDH_SYS_TDMR_INIT SEAMRET status: 0 SUCCESS -----------------
+############# TDX GLOBAL_STATE.SYS_STATE: SYS_READY
+--
+########## 0257 SEAMCALL TDH_SYS_TDMR_INIT SEAMRET status: 0 SUCCESS -----------------
+############# TDX GLOBAL_STATE.SYS_STATE: SYS_READY
+--
+########## 0258 SEAMCALL TDH_SYS_TDMR_INIT SEAMRET status: 0 SUCCESS -----------------
+############# TDX GLOBAL_STATE.SYS_STATE: SYS_READY
+--
+########## 0259 SEAMCALL TDH_SYS_TDMR_INIT SEAMRET status: 0 SUCCESS -----------------
+############# TDX GLOBAL_STATE.SYS_STATE: SYS_READY
+--
+########## 0260 SEAMCALL TDH_SYS_TDMR_INIT SEAMRET status: 0 SUCCESS -----------------
+############# TDX GLOBAL_STATE.SYS_STATE: SYS_READY
+--
+########## 0261 SEAMCALL TDH_SYS_TDMR_INIT SEAMRET status: 0 SUCCESS -----------------
+############# TDX GLOBAL_STATE.SYS_STATE: SYS_READY
+--
+########## 0262 SEAMCALL TDH_SYS_TDMR_INIT SEAMRET status: 0 SUCCESS -----------------
+############# TDX GLOBAL_STATE.SYS_STATE: SYS_READY
+--
+########## 0263 SEAMCALL TDH_SYS_TDMR_INIT SEAMRET status: 0 SUCCESS -----------------
+############# TDX GLOBAL_STATE.SYS_STATE: SYS_READY
+--
+########## 0264 SEAMCALL TDH_SYS_TDMR_INIT SEAMRET status: 0 SUCCESS -----------------
+############# TDX GLOBAL_STATE.SYS_STATE: SYS_READY
+--
+########## 0265 SEAMCALL TDH_SYS_TDMR_INIT SEAMRET status: 0 SUCCESS -----------------
+############# TDX GLOBAL_STATE.SYS_STATE: SYS_READY
+--
+########## 0266 SEAMCALL TDH_SYS_TDMR_INIT SEAMRET status: 0 SUCCESS -----------------
+############# TDX GLOBAL_STATE.SYS_STATE: SYS_READY
+--
+########## 0267 SEAMCALL TDH_MNG_CREATE SEAMRET status: 0 SUCCESS -----------------
+############# TDX GLOBAL_STATE.SYS_STATE: SYS_READY
+--
+########## 0268 SEAMCALL TDH_MNG_KEY_CONFIG SEAMRET status: 0 SUCCESS -----------------
+############# TDX GLOBAL_STATE.SYS_STATE: SYS_READY
+--
+########## 0269 SEAMCALL TDH_MNG_ADDCX SEAMRET status: 0 SUCCESS -----------------
+############# TDX GLOBAL_STATE.SYS_STATE: SYS_READY
+--
+########## 0270 SEAMCALL TDH_MNG_ADDCX SEAMRET status: 0 SUCCESS -----------------
+############# TDX GLOBAL_STATE.SYS_STATE: SYS_READY
+--
+########## 0271 SEAMCALL TDH_MNG_ADDCX SEAMRET status: 0 SUCCESS -----------------
+############# TDX GLOBAL_STATE.SYS_STATE: SYS_READY
+--
+########## 0272 SEAMCALL TDH_MNG_ADDCX SEAMRET status: 0 SUCCESS -----------------
+############# TDX GLOBAL_STATE.SYS_STATE: SYS_READY
+--
+########## 0273 SEAMCALL TDH_MNG_ADDCX SEAMRET status: 0 SUCCESS -----------------
+############# TDX GLOBAL_STATE.SYS_STATE: SYS_READY
+--
+########## 0274 SEAMCALL TDH_MNG_ADDCX SEAMRET status: 0 SUCCESS -----------------
+############# TDX GLOBAL_STATE.SYS_STATE: SYS_READY
+--
+########## 0275 SEAMCALL TDH_SYS_INFO SEAMRET status: 0 SUCCESS -----------------
+############# TDX GLOBAL_STATE.SYS_STATE: SYS_READY
+--
+########## 0276 SEAMCALL TDH_MNG_INIT SEAMRET status: 0 SUCCESS -----------------
+############# TDX GLOBAL_STATE.SYS_STATE: SYS_READY
+--
+########## 0277 SEAMCALL TDH_VP_CREATE SEAMRET status: 0 SUCCESS -----------------
+############# TDX GLOBAL_STATE.SYS_STATE: SYS_READY
+--
+########## 0278 SEAMCALL TDH_VP_ADDCX SEAMRET status: 0 SUCCESS -----------------
+############# TDX GLOBAL_STATE.SYS_STATE: SYS_READY
+--
+########## 0279 SEAMCALL TDH_VP_ADDCX SEAMRET status: 0 SUCCESS -----------------
+############# TDX GLOBAL_STATE.SYS_STATE: SYS_READY
+--
+########## 0280 SEAMCALL TDH_VP_ADDCX SEAMRET status: 0 SUCCESS -----------------
+############# TDX GLOBAL_STATE.SYS_STATE: SYS_READY
+--
+########## 0281 SEAMCALL TDH_VP_ADDCX SEAMRET status: 0 SUCCESS -----------------
+############# TDX GLOBAL_STATE.SYS_STATE: SYS_READY
+--
+########## 0282 SEAMCALL TDH_VP_ADDCX SEAMRET status: 0 SUCCESS -----------------
+############# TDX GLOBAL_STATE.SYS_STATE: SYS_READY
+--
+########## 0283 SEAMCALL TDH_VP_ADDCX SEAMRET status: 0 SUCCESS -----------------
+############# TDX GLOBAL_STATE.SYS_STATE: SYS_READY
+--
+########## 0284 SEAMCALL TDH_VP_ADDCX SEAMRET status: 0 SUCCESS -----------------
+############# TDX GLOBAL_STATE.SYS_STATE: SYS_READY
+--
+########## 0285 SEAMCALL TDH_VP_ADDCX SEAMRET status: 0 SUCCESS -----------------
+############# TDX GLOBAL_STATE.SYS_STATE: SYS_READY
+--
+########## 0286 SEAMCALL TDH_VP_ADDCX SEAMRET status: 0 SUCCESS -----------------
+############# TDX GLOBAL_STATE.SYS_STATE: SYS_READY
+--
+########## 0287 SEAMCALL TDH_VP_ADDCX SEAMRET status: 0 SUCCESS -----------------
+############# TDX GLOBAL_STATE.SYS_STATE: SYS_READY
+--
+########## 0288 SEAMCALL TDH_VP_ADDCX SEAMRET status: 0 SUCCESS -----------------
+############# TDX GLOBAL_STATE.SYS_STATE: SYS_READY
+--
+########## 0289 SEAMCALL TDH_VP_ADDCX SEAMRET status: 0 SUCCESS -----------------
+############# TDX GLOBAL_STATE.SYS_STATE: SYS_READY
+--
+########## 0290 SEAMCALL TDH_VP_ADDCX SEAMRET status: 0 SUCCESS -----------------
+############# TDX GLOBAL_STATE.SYS_STATE: SYS_READY
+--
+########## 0291 SEAMCALL TDH_VP_ADDCX SEAMRET status: 0 SUCCESS -----------------
+############# TDX GLOBAL_STATE.SYS_STATE: SYS_READY
+--
+########## 0292 SEAMCALL TDH_VP_INIT SEAMRET status: 0 SUCCESS -----------------
+############# TDX GLOBAL_STATE.SYS_STATE: SYS_READY
+--
+########## 0293 SEAMCALL TDH_MEM_SEPT_ADD SEAMRET status: 0 SUCCESS -----------------
+############# TDX GLOBAL_STATE.SYS_STATE: SYS_READY
+--
+########## 0294 SEAMCALL TDH_MEM_SEPT_ADD SEAMRET status: 0 SUCCESS -----------------
+############# TDX GLOBAL_STATE.SYS_STATE: SYS_READY
+--
+########## 0295 SEAMCALL TDH_MEM_SEPT_ADD SEAMRET status: 0 SUCCESS -----------------
+############# TDX GLOBAL_STATE.SYS_STATE: SYS_READY
+--
+########## 0296 SEAMCALL TDH_MEM_SEPT_ADD SEAMRET status: 0 SUCCESS -----------------
+############# TDX GLOBAL_STATE.SYS_STATE: SYS_READY
+--
+########## 0297 SEAMCALL TDH_MEM_PAGE_ADD SEAMRET status: 0 SUCCESS -----------------
+############# TDX GLOBAL_STATE.SYS_STATE: SYS_READY
+--
+########## 0298 SEAMCALL TDH_MEM_PAGE_ADD SEAMRET status: 0 SUCCESS -----------------
+############# TDX GLOBAL_STATE.SYS_STATE: SYS_READY
+--
+########## 0299 SEAMCALL TDH_MEM_PAGE_ADD SEAMRET status: 0 SUCCESS -----------------
+############# TDX GLOBAL_STATE.SYS_STATE: SYS_READY
+--
+########## 0300 SEAMCALL TDH_MEM_PAGE_ADD SEAMRET status: 0 SUCCESS -----------------
+############# TDX GLOBAL_STATE.SYS_STATE: SYS_READY
+--
+########## 0301 SEAMCALL TDH_MR_EXTEND SEAMRET status: 0 SUCCESS -----------------
+############# TDX GLOBAL_STATE.SYS_STATE: SYS_READY
+--
+########## 0302 SEAMCALL TDH_MR_EXTEND SEAMRET status: 0 SUCCESS -----------------
+############# TDX GLOBAL_STATE.SYS_STATE: SYS_READY
+--
+########## 0303 SEAMCALL TDH_MR_EXTEND SEAMRET status: 0 SUCCESS -----------------
+############# TDX GLOBAL_STATE.SYS_STATE: SYS_READY
+--
+########## 0304 SEAMCALL TDH_MR_EXTEND SEAMRET status: 0 SUCCESS -----------------
+############# TDX GLOBAL_STATE.SYS_STATE: SYS_READY
+--
+########## 0305 SEAMCALL TDH_MR_EXTEND SEAMRET status: 0 SUCCESS -----------------
+############# TDX GLOBAL_STATE.SYS_STATE: SYS_READY
+--
+########## 0306 SEAMCALL TDH_MR_EXTEND SEAMRET status: 0 SUCCESS -----------------
+############# TDX GLOBAL_STATE.SYS_STATE: SYS_READY
+--
+########## 0307 SEAMCALL TDH_MR_EXTEND SEAMRET status: 0 SUCCESS -----------------
+############# TDX GLOBAL_STATE.SYS_STATE: SYS_READY
+--
+########## 0308 SEAMCALL TDH_MR_EXTEND SEAMRET status: 0 SUCCESS -----------------
+############# TDX GLOBAL_STATE.SYS_STATE: SYS_READY
+--
+########## 0309 SEAMCALL TDH_MR_EXTEND SEAMRET status: 0 SUCCESS -----------------
+############# TDX GLOBAL_STATE.SYS_STATE: SYS_READY
+--
+########## 0310 SEAMCALL TDH_MR_EXTEND SEAMRET status: 0 SUCCESS -----------------
+############# TDX GLOBAL_STATE.SYS_STATE: SYS_READY
+--
+########## 0311 SEAMCALL TDH_MR_EXTEND SEAMRET status: 0 SUCCESS -----------------
+############# TDX GLOBAL_STATE.SYS_STATE: SYS_READY
+--
+########## 0312 SEAMCALL TDH_MR_EXTEND SEAMRET status: 0 SUCCESS -----------------
+############# TDX GLOBAL_STATE.SYS_STATE: SYS_READY
+--
+########## 0313 SEAMCALL TDH_MR_EXTEND SEAMRET status: 0 SUCCESS -----------------
+############# TDX GLOBAL_STATE.SYS_STATE: SYS_READY
+--
+########## 0314 SEAMCALL TDH_MR_EXTEND SEAMRET status: 0 SUCCESS -----------------
+############# TDX GLOBAL_STATE.SYS_STATE: SYS_READY
+--
+########## 0315 SEAMCALL TDH_MR_EXTEND SEAMRET status: 0 SUCCESS -----------------
+############# TDX GLOBAL_STATE.SYS_STATE: SYS_READY
+--
+########## 0316 SEAMCALL TDH_MR_EXTEND SEAMRET status: 0 SUCCESS -----------------
+############# TDX GLOBAL_STATE.SYS_STATE: SYS_READY
+--
+########## 0317 SEAMCALL TDH_MR_EXTEND SEAMRET status: 0 SUCCESS -----------------
+############# TDX GLOBAL_STATE.SYS_STATE: SYS_READY
+--
+########## 0318 SEAMCALL TDH_MR_EXTEND SEAMRET status: 0 SUCCESS -----------------
+############# TDX GLOBAL_STATE.SYS_STATE: SYS_READY
+--
+########## 0319 SEAMCALL TDH_MR_EXTEND SEAMRET status: 0 SUCCESS -----------------
+############# TDX GLOBAL_STATE.SYS_STATE: SYS_READY
+--
+########## 0320 SEAMCALL TDH_MR_EXTEND SEAMRET status: 0 SUCCESS -----------------
+############# TDX GLOBAL_STATE.SYS_STATE: SYS_READY
+--
+########## 0321 SEAMCALL TDH_MR_EXTEND SEAMRET status: 0 SUCCESS -----------------
+############# TDX GLOBAL_STATE.SYS_STATE: SYS_READY
+--
+########## 0322 SEAMCALL TDH_MR_EXTEND SEAMRET status: 0 SUCCESS -----------------
+############# TDX GLOBAL_STATE.SYS_STATE: SYS_READY
+--
+########## 0323 SEAMCALL TDH_MR_EXTEND SEAMRET status: 0 SUCCESS -----------------
+############# TDX GLOBAL_STATE.SYS_STATE: SYS_READY
+--
+########## 0324 SEAMCALL TDH_MR_EXTEND SEAMRET status: 0 SUCCESS -----------------
+############# TDX GLOBAL_STATE.SYS_STATE: SYS_READY
+--
+########## 0325 SEAMCALL TDH_MR_EXTEND SEAMRET status: 0 SUCCESS -----------------
+############# TDX GLOBAL_STATE.SYS_STATE: SYS_READY
+--
+########## 0326 SEAMCALL TDH_MR_EXTEND SEAMRET status: 0 SUCCESS -----------------
+############# TDX GLOBAL_STATE.SYS_STATE: SYS_READY
+--
+########## 0327 SEAMCALL TDH_MR_EXTEND SEAMRET status: 0 SUCCESS -----------------
+############# TDX GLOBAL_STATE.SYS_STATE: SYS_READY
+--
+########## 0328 SEAMCALL TDH_MR_EXTEND SEAMRET status: 0 SUCCESS -----------------
+############# TDX GLOBAL_STATE.SYS_STATE: SYS_READY
+--
+########## 0329 SEAMCALL TDH_MR_EXTEND SEAMRET status: 0 SUCCESS -----------------
+############# TDX GLOBAL_STATE.SYS_STATE: SYS_READY
+--
+########## 0330 SEAMCALL TDH_MR_EXTEND SEAMRET status: 0 SUCCESS -----------------
+############# TDX GLOBAL_STATE.SYS_STATE: SYS_READY
+--
+########## 0331 SEAMCALL TDH_MR_EXTEND SEAMRET status: 0 SUCCESS -----------------
+############# TDX GLOBAL_STATE.SYS_STATE: SYS_READY
+--
+########## 0332 SEAMCALL TDH_MR_EXTEND SEAMRET status: 0 SUCCESS -----------------
+############# TDX GLOBAL_STATE.SYS_STATE: SYS_READY
+--
+########## 0333 SEAMCALL TDH_MR_EXTEND SEAMRET status: 0 SUCCESS -----------------
+############# TDX GLOBAL_STATE.SYS_STATE: SYS_READY
+--
+########## 0334 SEAMCALL TDH_MR_EXTEND SEAMRET status: 0 SUCCESS -----------------
+############# TDX GLOBAL_STATE.SYS_STATE: SYS_READY
+--
+########## 0335 SEAMCALL TDH_MR_EXTEND SEAMRET status: 0 SUCCESS -----------------
+############# TDX GLOBAL_STATE.SYS_STATE: SYS_READY
+--
+########## 0336 SEAMCALL TDH_MR_EXTEND SEAMRET status: 0 SUCCESS -----------------
+############# TDX GLOBAL_STATE.SYS_STATE: SYS_READY
+--
+########## 0337 SEAMCALL TDH_MR_EXTEND SEAMRET status: 0 SUCCESS -----------------
+############# TDX GLOBAL_STATE.SYS_STATE: SYS_READY
+--
+########## 0338 SEAMCALL TDH_MR_EXTEND SEAMRET status: 0 SUCCESS -----------------
+############# TDX GLOBAL_STATE.SYS_STATE: SYS_READY
+--
+########## 0339 SEAMCALL TDH_MR_EXTEND SEAMRET status: 0 SUCCESS -----------------
+############# TDX GLOBAL_STATE.SYS_STATE: SYS_READY
+--
+########## 0340 SEAMCALL TDH_MR_EXTEND SEAMRET status: 0 SUCCESS -----------------
+############# TDX GLOBAL_STATE.SYS_STATE: SYS_READY
+--
+########## 0341 SEAMCALL TDH_MR_EXTEND SEAMRET status: 0 SUCCESS -----------------
+############# TDX GLOBAL_STATE.SYS_STATE: SYS_READY
+--
+########## 0342 SEAMCALL TDH_MR_EXTEND SEAMRET status: 0 SUCCESS -----------------
+############# TDX GLOBAL_STATE.SYS_STATE: SYS_READY
+--
+########## 0343 SEAMCALL TDH_MR_EXTEND SEAMRET status: 0 SUCCESS -----------------
+############# TDX GLOBAL_STATE.SYS_STATE: SYS_READY
+--
+########## 0344 SEAMCALL TDH_MR_EXTEND SEAMRET status: 0 SUCCESS -----------------
+############# TDX GLOBAL_STATE.SYS_STATE: SYS_READY
+--
+########## 0345 SEAMCALL TDH_MR_EXTEND SEAMRET status: 0 SUCCESS -----------------
+############# TDX GLOBAL_STATE.SYS_STATE: SYS_READY
+--
+########## 0346 SEAMCALL TDH_MR_EXTEND SEAMRET status: 0 SUCCESS -----------------
+############# TDX GLOBAL_STATE.SYS_STATE: SYS_READY
+--
+########## 0347 SEAMCALL TDH_MR_EXTEND SEAMRET status: 0 SUCCESS -----------------
+############# TDX GLOBAL_STATE.SYS_STATE: SYS_READY
+--
+########## 0348 SEAMCALL TDH_MR_EXTEND SEAMRET status: 0 SUCCESS -----------------
+############# TDX GLOBAL_STATE.SYS_STATE: SYS_READY
+--
+########## 0349 SEAMCALL TDH_MR_EXTEND SEAMRET status: 0 SUCCESS -----------------
+############# TDX GLOBAL_STATE.SYS_STATE: SYS_READY
+--
+########## 0350 SEAMCALL TDH_MR_EXTEND SEAMRET status: 0 SUCCESS -----------------
+############# TDX GLOBAL_STATE.SYS_STATE: SYS_READY
+--
+########## 0351 SEAMCALL TDH_MR_EXTEND SEAMRET status: 0 SUCCESS -----------------
+############# TDX GLOBAL_STATE.SYS_STATE: SYS_READY
+--
+########## 0352 SEAMCALL TDH_MR_EXTEND SEAMRET status: 0 SUCCESS -----------------
+############# TDX GLOBAL_STATE.SYS_STATE: SYS_READY
+--
+########## 0353 SEAMCALL TDH_MR_EXTEND SEAMRET status: 0 SUCCESS -----------------
+############# TDX GLOBAL_STATE.SYS_STATE: SYS_READY
+--
+########## 0354 SEAMCALL TDH_MR_EXTEND SEAMRET status: 0 SUCCESS -----------------
+############# TDX GLOBAL_STATE.SYS_STATE: SYS_READY
+--
+########## 0355 SEAMCALL TDH_MR_EXTEND SEAMRET status: 0 SUCCESS -----------------
+############# TDX GLOBAL_STATE.SYS_STATE: SYS_READY
+--
+########## 0356 SEAMCALL TDH_MR_EXTEND SEAMRET status: 0 SUCCESS -----------------
+############# TDX GLOBAL_STATE.SYS_STATE: SYS_READY
+--
+########## 0357 SEAMCALL TDH_MR_EXTEND SEAMRET status: 0 SUCCESS -----------------
+############# TDX GLOBAL_STATE.SYS_STATE: SYS_READY
+--
+########## 0358 SEAMCALL TDH_MR_EXTEND SEAMRET status: 0 SUCCESS -----------------
+############# TDX GLOBAL_STATE.SYS_STATE: SYS_READY
+--
+########## 0359 SEAMCALL TDH_MR_EXTEND SEAMRET status: 0 SUCCESS -----------------
+############# TDX GLOBAL_STATE.SYS_STATE: SYS_READY
+--
+########## 0360 SEAMCALL TDH_MR_EXTEND SEAMRET status: 0 SUCCESS -----------------
+############# TDX GLOBAL_STATE.SYS_STATE: SYS_READY
+--
+########## 0361 SEAMCALL TDH_MR_EXTEND SEAMRET status: 0 SUCCESS -----------------
+############# TDX GLOBAL_STATE.SYS_STATE: SYS_READY
+--
+########## 0362 SEAMCALL TDH_MR_EXTEND SEAMRET status: 0 SUCCESS -----------------
+############# TDX GLOBAL_STATE.SYS_STATE: SYS_READY
+--
+########## 0363 SEAMCALL TDH_MR_EXTEND SEAMRET status: 0 SUCCESS -----------------
+############# TDX GLOBAL_STATE.SYS_STATE: SYS_READY
+--
+########## 0364 SEAMCALL TDH_MR_EXTEND SEAMRET status: 0 SUCCESS -----------------
+############# TDX GLOBAL_STATE.SYS_STATE: SYS_READY
+--
+########## 0365 SEAMCALL TDH_MR_FINALIZE SEAMRET status: 0 SUCCESS -----------------
+############# TDX GLOBAL_STATE.SYS_STATE: SYS_READY
+--
+########## 0366 SEAMCALL TDH_MNG_CREATE SEAMRET status: 0 SUCCESS -----------------
+############# TDX GLOBAL_STATE.SYS_STATE: SYS_READY
+--
+########## 0367 SEAMCALL TDH_MNG_KEY_CONFIG SEAMRET status: 0 SUCCESS -----------------
+############# TDX GLOBAL_STATE.SYS_STATE: SYS_READY
+--
+########## 0368 SEAMCALL TDH_MNG_ADDCX SEAMRET status: 0 SUCCESS -----------------
+############# TDX GLOBAL_STATE.SYS_STATE: SYS_READY
+--
+########## 0369 SEAMCALL TDH_MNG_ADDCX SEAMRET status: 0 SUCCESS -----------------
+############# TDX GLOBAL_STATE.SYS_STATE: SYS_READY
+--
+########## 0370 SEAMCALL TDH_MNG_ADDCX SEAMRET status: 0 SUCCESS -----------------
+############# TDX GLOBAL_STATE.SYS_STATE: SYS_READY
+--
+########## 0371 SEAMCALL TDH_MNG_ADDCX SEAMRET status: 0 SUCCESS -----------------
+############# TDX GLOBAL_STATE.SYS_STATE: SYS_READY
+--
+########## 0372 SEAMCALL TDH_MNG_ADDCX SEAMRET status: 0 SUCCESS -----------------
+############# TDX GLOBAL_STATE.SYS_STATE: SYS_READY
+--
+########## 0373 SEAMCALL TDH_MNG_ADDCX SEAMRET status: 0 SUCCESS -----------------
+############# TDX GLOBAL_STATE.SYS_STATE: SYS_READY
+--
+########## 0374 SEAMCALL TDH_SYS_INFO SEAMRET status: 0 SUCCESS -----------------
+############# TDX GLOBAL_STATE.SYS_STATE: SYS_READY
+--
+########## 0375 SEAMCALL TDH_MNG_INIT SEAMRET status: 0 SUCCESS -----------------
+############# TDX GLOBAL_STATE.SYS_STATE: SYS_READY
+--
+########## 0376 SEAMCALL TDH_VP_CREATE SEAMRET status: 0 SUCCESS -----------------
+############# TDX GLOBAL_STATE.SYS_STATE: SYS_READY
+--
+########## 0377 SEAMCALL TDH_VP_ADDCX SEAMRET status: 0 SUCCESS -----------------
+############# TDX GLOBAL_STATE.SYS_STATE: SYS_READY
+--
+########## 0378 SEAMCALL TDH_VP_ADDCX SEAMRET status: 0 SUCCESS -----------------
+############# TDX GLOBAL_STATE.SYS_STATE: SYS_READY
+--
+########## 0379 SEAMCALL TDH_VP_ADDCX SEAMRET status: 0 SUCCESS -----------------
+############# TDX GLOBAL_STATE.SYS_STATE: SYS_READY
+--
+########## 0380 SEAMCALL TDH_VP_ADDCX SEAMRET status: 0 SUCCESS -----------------
+############# TDX GLOBAL_STATE.SYS_STATE: SYS_READY
+--
+########## 0381 SEAMCALL TDH_VP_ADDCX SEAMRET status: 0 SUCCESS -----------------
+############# TDX GLOBAL_STATE.SYS_STATE: SYS_READY
+--
+########## 0382 SEAMCALL TDH_VP_ADDCX SEAMRET status: 0 SUCCESS -----------------
+############# TDX GLOBAL_STATE.SYS_STATE: SYS_READY
+--
+########## 0383 SEAMCALL TDH_VP_ADDCX SEAMRET status: 0 SUCCESS -----------------
+############# TDX GLOBAL_STATE.SYS_STATE: SYS_READY
+--
+########## 0384 SEAMCALL TDH_VP_ADDCX SEAMRET status: 0 SUCCESS -----------------
+############# TDX GLOBAL_STATE.SYS_STATE: SYS_READY
+--
+########## 0385 SEAMCALL TDH_VP_ADDCX SEAMRET status: 0 SUCCESS -----------------
+############# TDX GLOBAL_STATE.SYS_STATE: SYS_READY
+--
+########## 0386 SEAMCALL TDH_VP_ADDCX SEAMRET status: 0 SUCCESS -----------------
+############# TDX GLOBAL_STATE.SYS_STATE: SYS_READY
+--
+########## 0387 SEAMCALL TDH_VP_ADDCX SEAMRET status: 0 SUCCESS -----------------
+############# TDX GLOBAL_STATE.SYS_STATE: SYS_READY
+--
+########## 0388 SEAMCALL TDH_VP_ADDCX SEAMRET status: 0 SUCCESS -----------------
+############# TDX GLOBAL_STATE.SYS_STATE: SYS_READY
+--
+########## 0389 SEAMCALL TDH_VP_ADDCX SEAMRET status: 0 SUCCESS -----------------
+############# TDX GLOBAL_STATE.SYS_STATE: SYS_READY
+--
+########## 0390 SEAMCALL TDH_VP_ADDCX SEAMRET status: 0 SUCCESS -----------------
+############# TDX GLOBAL_STATE.SYS_STATE: SYS_READY
+--
+########## 0391 SEAMCALL TDH_VP_INIT SEAMRET status: 0 SUCCESS -----------------
+############# TDX GLOBAL_STATE.SYS_STATE: SYS_READY
+--
+########## 0392 SEAMCALL TDH_MEM_SEPT_ADD SEAMRET status: 0 SUCCESS -----------------
+############# TDX GLOBAL_STATE.SYS_STATE: SYS_READY
+--
+########## 0393 SEAMCALL TDH_MEM_SEPT_ADD SEAMRET status: 0 SUCCESS -----------------
+############# TDX GLOBAL_STATE.SYS_STATE: SYS_READY
+--
+########## 0394 SEAMCALL TDH_MEM_SEPT_ADD SEAMRET status: 0 SUCCESS -----------------
+############# TDX GLOBAL_STATE.SYS_STATE: SYS_READY
+--
+########## 0395 SEAMCALL TDH_MEM_SEPT_ADD SEAMRET status: 0 SUCCESS -----------------
+############# TDX GLOBAL_STATE.SYS_STATE: SYS_READY
+--
+########## 0396 SEAMCALL TDH_MEM_PAGE_ADD SEAMRET status: 0 SUCCESS -----------------
+############# TDX GLOBAL_STATE.SYS_STATE: SYS_READY
+--
+########## 0397 SEAMCALL TDH_MEM_PAGE_ADD SEAMRET status: 0 SUCCESS -----------------
+############# TDX GLOBAL_STATE.SYS_STATE: SYS_READY
+--
+########## 0398 SEAMCALL TDH_MEM_PAGE_ADD SEAMRET status: 0 SUCCESS -----------------
+############# TDX GLOBAL_STATE.SYS_STATE: SYS_READY
+--
+########## 0399 SEAMCALL TDH_MEM_PAGE_ADD SEAMRET status: 0 SUCCESS -----------------
+############# TDX GLOBAL_STATE.SYS_STATE: SYS_READY
+--
+########## 0400 SEAMCALL TDH_MR_EXTEND SEAMRET status: 0 SUCCESS -----------------
+############# TDX GLOBAL_STATE.SYS_STATE: SYS_READY
+--
+########## 0401 SEAMCALL TDH_MR_EXTEND SEAMRET status: 0 SUCCESS -----------------
+############# TDX GLOBAL_STATE.SYS_STATE: SYS_READY
+--
+########## 0402 SEAMCALL TDH_MR_EXTEND SEAMRET status: 0 SUCCESS -----------------
+############# TDX GLOBAL_STATE.SYS_STATE: SYS_READY
+--
+########## 0403 SEAMCALL TDH_MR_EXTEND SEAMRET status: 0 SUCCESS -----------------
+############# TDX GLOBAL_STATE.SYS_STATE: SYS_READY
+--
+########## 0404 SEAMCALL TDH_MR_EXTEND SEAMRET status: 0 SUCCESS -----------------
+############# TDX GLOBAL_STATE.SYS_STATE: SYS_READY
+--
+########## 0405 SEAMCALL TDH_MR_EXTEND SEAMRET status: 0 SUCCESS -----------------
+############# TDX GLOBAL_STATE.SYS_STATE: SYS_READY
+--
+########## 0406 SEAMCALL TDH_MR_EXTEND SEAMRET status: 0 SUCCESS -----------------
+############# TDX GLOBAL_STATE.SYS_STATE: SYS_READY
+--
+########## 0407 SEAMCALL TDH_MR_EXTEND SEAMRET status: 0 SUCCESS -----------------
+############# TDX GLOBAL_STATE.SYS_STATE: SYS_READY
+--
+########## 0408 SEAMCALL TDH_MR_EXTEND SEAMRET status: 0 SUCCESS -----------------
+############# TDX GLOBAL_STATE.SYS_STATE: SYS_READY
+--
+########## 0409 SEAMCALL TDH_MR_EXTEND SEAMRET status: 0 SUCCESS -----------------
+############# TDX GLOBAL_STATE.SYS_STATE: SYS_READY
+--
+########## 0410 SEAMCALL TDH_MR_EXTEND SEAMRET status: 0 SUCCESS -----------------
+############# TDX GLOBAL_STATE.SYS_STATE: SYS_READY
+--
+########## 0411 SEAMCALL TDH_MR_EXTEND SEAMRET status: 0 SUCCESS -----------------
+############# TDX GLOBAL_STATE.SYS_STATE: SYS_READY
+--
+########## 0412 SEAMCALL TDH_MR_EXTEND SEAMRET status: 0 SUCCESS -----------------
+############# TDX GLOBAL_STATE.SYS_STATE: SYS_READY
+--
+########## 0413 SEAMCALL TDH_MR_EXTEND SEAMRET status: 0 SUCCESS -----------------
+############# TDX GLOBAL_STATE.SYS_STATE: SYS_READY
+--
+########## 0414 SEAMCALL TDH_MR_EXTEND SEAMRET status: 0 SUCCESS -----------------
+############# TDX GLOBAL_STATE.SYS_STATE: SYS_READY
+--
+########## 0415 SEAMCALL TDH_MR_EXTEND SEAMRET status: 0 SUCCESS -----------------
+############# TDX GLOBAL_STATE.SYS_STATE: SYS_READY
+--
+########## 0416 SEAMCALL TDH_MR_EXTEND SEAMRET status: 0 SUCCESS -----------------
+############# TDX GLOBAL_STATE.SYS_STATE: SYS_READY
+--
+########## 0417 SEAMCALL TDH_MR_EXTEND SEAMRET status: 0 SUCCESS -----------------
+############# TDX GLOBAL_STATE.SYS_STATE: SYS_READY
+--
+########## 0418 SEAMCALL TDH_MR_EXTEND SEAMRET status: 0 SUCCESS -----------------
+############# TDX GLOBAL_STATE.SYS_STATE: SYS_READY
+--
+########## 0419 SEAMCALL TDH_MR_EXTEND SEAMRET status: 0 SUCCESS -----------------
+############# TDX GLOBAL_STATE.SYS_STATE: SYS_READY
+--
+########## 0420 SEAMCALL TDH_MR_EXTEND SEAMRET status: 0 SUCCESS -----------------
+############# TDX GLOBAL_STATE.SYS_STATE: SYS_READY
+--
+########## 0421 SEAMCALL TDH_MR_EXTEND SEAMRET status: 0 SUCCESS -----------------
+############# TDX GLOBAL_STATE.SYS_STATE: SYS_READY
+--
+########## 0422 SEAMCALL TDH_MR_EXTEND SEAMRET status: 0 SUCCESS -----------------
+############# TDX GLOBAL_STATE.SYS_STATE: SYS_READY
+--
+########## 0423 SEAMCALL TDH_MR_EXTEND SEAMRET status: 0 SUCCESS -----------------
+############# TDX GLOBAL_STATE.SYS_STATE: SYS_READY
+--
+########## 0424 SEAMCALL TDH_MR_EXTEND SEAMRET status: 0 SUCCESS -----------------
+############# TDX GLOBAL_STATE.SYS_STATE: SYS_READY
+--
+########## 0425 SEAMCALL TDH_MR_EXTEND SEAMRET status: 0 SUCCESS -----------------
+############# TDX GLOBAL_STATE.SYS_STATE: SYS_READY
+--
+########## 0426 SEAMCALL TDH_MR_EXTEND SEAMRET status: 0 SUCCESS -----------------
+############# TDX GLOBAL_STATE.SYS_STATE: SYS_READY
+--
+########## 0427 SEAMCALL TDH_MR_EXTEND SEAMRET status: 0 SUCCESS -----------------
+############# TDX GLOBAL_STATE.SYS_STATE: SYS_READY
+--
+########## 0428 SEAMCALL TDH_MR_EXTEND SEAMRET status: 0 SUCCESS -----------------
+############# TDX GLOBAL_STATE.SYS_STATE: SYS_READY
+--
+########## 0429 SEAMCALL TDH_MR_EXTEND SEAMRET status: 0 SUCCESS -----------------
+############# TDX GLOBAL_STATE.SYS_STATE: SYS_READY
+--
+########## 0430 SEAMCALL TDH_MR_EXTEND SEAMRET status: 0 SUCCESS -----------------
+############# TDX GLOBAL_STATE.SYS_STATE: SYS_READY
+--
+########## 0431 SEAMCALL TDH_MR_EXTEND SEAMRET status: 0 SUCCESS -----------------
+############# TDX GLOBAL_STATE.SYS_STATE: SYS_READY
+--
+########## 0432 SEAMCALL TDH_MR_EXTEND SEAMRET status: 0 SUCCESS -----------------
+############# TDX GLOBAL_STATE.SYS_STATE: SYS_READY
+--
+########## 0433 SEAMCALL TDH_MR_EXTEND SEAMRET status: 0 SUCCESS -----------------
+############# TDX GLOBAL_STATE.SYS_STATE: SYS_READY
+--
+########## 0434 SEAMCALL TDH_MR_EXTEND SEAMRET status: 0 SUCCESS -----------------
+############# TDX GLOBAL_STATE.SYS_STATE: SYS_READY
+--
+########## 0435 SEAMCALL TDH_MR_EXTEND SEAMRET status: 0 SUCCESS -----------------
+############# TDX GLOBAL_STATE.SYS_STATE: SYS_READY
+--
+########## 0436 SEAMCALL TDH_MR_EXTEND SEAMRET status: 0 SUCCESS -----------------
+############# TDX GLOBAL_STATE.SYS_STATE: SYS_READY
+--
+########## 0437 SEAMCALL TDH_MR_EXTEND SEAMRET status: 0 SUCCESS -----------------
+############# TDX GLOBAL_STATE.SYS_STATE: SYS_READY
+--
+########## 0438 SEAMCALL TDH_MR_EXTEND SEAMRET status: 0 SUCCESS -----------------
+############# TDX GLOBAL_STATE.SYS_STATE: SYS_READY
+--
+########## 0439 SEAMCALL TDH_MR_EXTEND SEAMRET status: 0 SUCCESS -----------------
+############# TDX GLOBAL_STATE.SYS_STATE: SYS_READY
+--
+########## 0440 SEAMCALL TDH_MR_EXTEND SEAMRET status: 0 SUCCESS -----------------
+############# TDX GLOBAL_STATE.SYS_STATE: SYS_READY
+--
+########## 0441 SEAMCALL TDH_MR_EXTEND SEAMRET status: 0 SUCCESS -----------------
+############# TDX GLOBAL_STATE.SYS_STATE: SYS_READY
+--
+########## 0442 SEAMCALL TDH_MR_EXTEND SEAMRET status: 0 SUCCESS -----------------
+############# TDX GLOBAL_STATE.SYS_STATE: SYS_READY
+--
+########## 0443 SEAMCALL TDH_MR_EXTEND SEAMRET status: 0 SUCCESS -----------------
+############# TDX GLOBAL_STATE.SYS_STATE: SYS_READY
+--
+########## 0444 SEAMCALL TDH_MR_EXTEND SEAMRET status: 0 SUCCESS -----------------
+############# TDX GLOBAL_STATE.SYS_STATE: SYS_READY
+--
+########## 0445 SEAMCALL TDH_MR_EXTEND SEAMRET status: 0 SUCCESS -----------------
+############# TDX GLOBAL_STATE.SYS_STATE: SYS_READY
+--
+########## 0446 SEAMCALL TDH_MR_EXTEND SEAMRET status: 0 SUCCESS -----------------
+############# TDX GLOBAL_STATE.SYS_STATE: SYS_READY
+--
+########## 0447 SEAMCALL TDH_MR_EXTEND SEAMRET status: 0 SUCCESS -----------------
+############# TDX GLOBAL_STATE.SYS_STATE: SYS_READY
+--
+########## 0448 SEAMCALL TDH_MR_EXTEND SEAMRET status: 0 SUCCESS -----------------
+############# TDX GLOBAL_STATE.SYS_STATE: SYS_READY
+--
+########## 0449 SEAMCALL TDH_MR_EXTEND SEAMRET status: 0 SUCCESS -----------------
+############# TDX GLOBAL_STATE.SYS_STATE: SYS_READY
+--
+########## 0450 SEAMCALL TDH_MR_EXTEND SEAMRET status: 0 SUCCESS -----------------
+############# TDX GLOBAL_STATE.SYS_STATE: SYS_READY
+--
+########## 0451 SEAMCALL TDH_MR_EXTEND SEAMRET status: 0 SUCCESS -----------------
+############# TDX GLOBAL_STATE.SYS_STATE: SYS_READY
+--
+########## 0452 SEAMCALL TDH_MR_EXTEND SEAMRET status: 0 SUCCESS -----------------
+############# TDX GLOBAL_STATE.SYS_STATE: SYS_READY
+--
+########## 0453 SEAMCALL TDH_MR_EXTEND SEAMRET status: 0 SUCCESS -----------------
+############# TDX GLOBAL_STATE.SYS_STATE: SYS_READY
+--
+########## 0454 SEAMCALL TDH_MR_EXTEND SEAMRET status: 0 SUCCESS -----------------
+############# TDX GLOBAL_STATE.SYS_STATE: SYS_READY
+--
+########## 0455 SEAMCALL TDH_MR_EXTEND SEAMRET status: 0 SUCCESS -----------------
+############# TDX GLOBAL_STATE.SYS_STATE: SYS_READY
+--
+########## 0456 SEAMCALL TDH_MR_EXTEND SEAMRET status: 0 SUCCESS -----------------
+############# TDX GLOBAL_STATE.SYS_STATE: SYS_READY
+--
+########## 0457 SEAMCALL TDH_MR_EXTEND SEAMRET status: 0 SUCCESS -----------------
+############# TDX GLOBAL_STATE.SYS_STATE: SYS_READY
+--
+########## 0458 SEAMCALL TDH_MR_EXTEND SEAMRET status: 0 SUCCESS -----------------
+############# TDX GLOBAL_STATE.SYS_STATE: SYS_READY
+--
+########## 0459 SEAMCALL TDH_MR_EXTEND SEAMRET status: 0 SUCCESS -----------------
+############# TDX GLOBAL_STATE.SYS_STATE: SYS_READY
+--
+########## 0460 SEAMCALL TDH_MR_EXTEND SEAMRET status: 0 SUCCESS -----------------
+############# TDX GLOBAL_STATE.SYS_STATE: SYS_READY
+--
+########## 0461 SEAMCALL TDH_MR_EXTEND SEAMRET status: 0 SUCCESS -----------------
+############# TDX GLOBAL_STATE.SYS_STATE: SYS_READY
+--
+########## 0462 SEAMCALL TDH_MR_EXTEND SEAMRET status: 0 SUCCESS -----------------
+############# TDX GLOBAL_STATE.SYS_STATE: SYS_READY
+--
+########## 0463 SEAMCALL TDH_MR_EXTEND SEAMRET status: 0 SUCCESS -----------------
+############# TDX GLOBAL_STATE.SYS_STATE: SYS_READY
+--
+########## 0464 SEAMCALL TDH_MR_FINALIZE SEAMRET status: 0 SUCCESS -----------------
+############# TDX GLOBAL_STATE.SYS_STATE: SYS_READY
+--
+########## 0465 SEAMCALL TDH_MEM_SEPT_ADD SEAMRET status: 0 SUCCESS -----------------
+############# TDX GLOBAL_STATE.SYS_STATE: SYS_READY
+--
+########## 0466 SEAMCALL TDH_MEM_SEPT_ADD SEAMRET status: 0 SUCCESS -----------------
+############# TDX GLOBAL_STATE.SYS_STATE: SYS_READY
+--
+########## 0467 SEAMCALL TDH_MEM_SEPT_ADD SEAMRET status: 0 SUCCESS -----------------
+############# TDX GLOBAL_STATE.SYS_STATE: SYS_READY
+--
+########## 0468 SEAMCALL TDH_MEM_SEPT_ADD SEAMRET status: 0 SUCCESS -----------------
+############# TDX GLOBAL_STATE.SYS_STATE: SYS_READY
+--
+########## 0469 SEAMCALL TDH_MNG_RD SEAMRET status: 0 SUCCESS -----------------
+############# TDX GLOBAL_STATE.SYS_STATE: SYS_READY

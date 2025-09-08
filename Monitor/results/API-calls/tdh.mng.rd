@@ -1,0 +1,3651 @@
+starting SEAM manager
+size of struct comArea:0x5bbd6c
+CPUID movdir64b support: 1
+CPUID serialize support: 0
+seam manager's va for seam env pa: 0x7fffe5dbe000
+com->pseamldr_ins:0x7fffe67be0d0
+doing 64-bit specifics ...
+new pdpt allocated, pdpt_pa: 0x201000
+setup_page_tables: next_pt_pa: 0x20d000
+struct desc_struct sz: 8
+seam_gdt:0x7fffe61be000, &seam_gdt[1]:0x7fffe61be008, &seam_gdt[2]:0x7fffe61be010
+GDT[0]:0x0, GDT[1]:0xaf9b000000ffff, GDT[2]:0xaf93000000ffff
+seam_gdt setup ok
+struct gate_struct sz: 16
+seam_idt:0x7fffe61c0000, &seam_idt[2]:0x7fffe61c0020, &seam_idt[3]:0x7fffe61c0030
+seam_emulator_bin:0xffff900000200000
+seam_emulator_bin:0xffff900000200000
+seam_emulator_bin:0xffff900000200000
+aft setup GDT base:ffff900000000000 lim:0x2f
+RSP:0xffff900000400ff8
+call ins:58 f 22 d8 41 
+60
+ i: 3
+6b
+ i: 6
+88
+ i: 9
+262
+ i: 13
+26d
+ i: 17
+28a
+ i: 21
+45c
+ i: 25
+467
+ i: 29
+484
+ i: 33
+2c78
+ i: 38
+0
+0
+0
+0
+0
+0
+starting NP-SEAMLDR ... ...................................................
+seam env max pa:0x80000000 SeamldrData.PhysAddrMask: 0x7fffffff
+CDataStackSize		: 0x3000
+CCodeRgnSize		: 0x16000
+CDataRgnSize		: 0x6000
+CKeyholeRgnSize		: 0x200000
+CKeyholeEditRgnSize	: 0x1000
+CEntryPointOffset	: 0x33fc
+get pseamldr consts: OK
+
+SeamrrBase pa: 0x4000000 ,SeamrrSize: 0x4000000
+PSysInfoTable NP's va: 0x7fffeddbd000
+SeamldrData.SysInfoTable->PSeamldrRange.Base: 0x6000000
+SeamldrData.SysInfoTable->PSeamldrRange.Size: 0x2000000
+SeamldrData.SeamrrVa: 0x7fffe9dbe000
+SeamldrData.SeamrrVaLimit: 0x7fffeddbe000
+
+loading p_seamldr code ------------------------------------------------
+pseamldr.so size : 0x16000
+loading p_seamldr code: OK
+
+Init Pseamldr PT Ctx --------------------------------------------------
+SeamrrPtCtx->PtBaseAddrLa	: 0x7fffebdc0000
+SeamrrPtCtx->PtBaseAddrPa	: 0x6002000
+SeamrrPtCtx->PtAllocatorPa	: 0x6003000
+SeamrrPtCtx->PagingStructSize	: 0x19000
+SeamrrPtCtx->VPDelta		: 0x7fffe5dbe000
+Init Pseamldr PT Ctx: OK
+
+relocating image ------------------------------------------------------
+section header num: 0x0type: 0x0
+section header num: 0x1type: 0x1
+section header num: 0x2type: 0x1
+section header num: 0x3type: 0x1
+section header num: 0x4type: 0x7
+section header num: 0x5type: 0xb
+section header num: 0x6type: 0x3
+section header num: 0x7type: 0x6ffffff6
+section header num: 0x8type: 0x70000001
+section header num: 0x9type: 0x1
+section header num: 0xatype: 0x4 SHT_RELA
+section header num: 0xbtype: 0x6
+section header num: 0xctype: 0x1
+section header num: 0xdtype: 0x1
+section header num: 0xetype: 0x1
+section header num: 0xftype: 0x2
+section header num: 0x10type: 0x3
+section header num: 0x11type: 0x3
+relocating image: OK
+
+mapping pseamldr code pages -------------------------------------------
+CurCodePhysicalAddr:0x7fe9000
+mapping pseamldr code pages: OK
+
+mapping pseamldr stack pages ------------------------------------------
+mapping pseamldr stack pages: OK
+
+setup keyhole region --------------------------------------------------
+edit rgn linear address base
+next edit rgn linear addresssetup keyhole region: OK
+
+mapping pseamldr data pages -------------------------------------------
+mapping pseamldr data pages: OK
+
+mapping pseamldr sysinfo table ----------------------------------------
+mapping pseamldr sysinfo table: OK
+
+mapping pseamldr tdxmodule region -------------------------------------
+mapping pseamldr tdxmodule region: OK
+
+setting up sysinfo table
+SeamldrData.PSeamldrConsts->CCodeRgnSize:0x16000
+ending NP-SEAMLDR ... .....................................................
+load_p_seamldr successful ...
+at instrument_seam_sw_code
+seam_sw_code_pa:0x7fe9000
+data/pseamldr/pseamldr.so.objdump size : 0x625b7
+INS rdmsr	found sp ins count:0 >> offset:0x5c5	va:0xffffb000000005c5	size:0x2
+INS rdmsr	found sp ins count:1 >> offset:0x5d2	va:0xffffb000000005d2	size:0x2
+INS rdmsr	found sp ins count:2 >> offset:0x5dc	va:0xffffb000000005dc	size:0x2
+INS rdmsr	found sp ins count:3 >> offset:0x5e6	va:0xffffb000000005e6	size:0x2
+INS rdmsr	found sp ins count:4 >> offset:0x5ef	va:0xffffb000000005ef	size:0x2
+INS rdmsr	found sp ins count:5 >> offset:0x5f9	va:0xffffb000000005f9	size:0x2
+INS rdmsr	found sp ins count:6 >> offset:0x609	va:0xffffb00000000609	size:0x2
+INS rdmsr	found sp ins count:7 >> offset:0x61c	va:0xffffb0000000061c	size:0x2
+INS rdmsr	found sp ins count:8 >> offset:0x62c	va:0xffffb0000000062c	size:0x2
+INS rdmsr	found sp ins count:9 >> offset:0x6c1	va:0xffffb000000006c1	size:0x2
+INS rdmsr	found sp ins count:10 >> offset:0x6d7	va:0xffffb000000006d7	size:0x2
+INS cpuid	found sp ins count:11 >> offset:0x857	va:0xffffb00000000857	size:0x2
+INS cpuid	found sp ins count:12 >> offset:0x8a7	va:0xffffb000000008a7	size:0x2
+INS cpuid	found sp ins count:13 >> offset:0x8d4	va:0xffffb000000008d4	size:0x2
+INS wrmsr	found sp ins count:14 >> offset:0xb6c	va:0xffffb00000000b6c	size:0x2
+INS wrmsr	found sp ins count:15 >> offset:0xc6b	va:0xffffb00000000c6b	size:0x2
+vmread operands op0:rax op1:0x8 rsp
+INS vmread	found sp ins count:16 >> offset:0xe0c	va:0xffffb00000000e0c	size:0x5
+vmread operands op0:rax op1:0x10 rsp
+INS vmread	found sp ins count:17 >> offset:0xe33	va:0xffffb00000000e33	size:0x5
+vmwrite operand op0:rax operand op01:rcx
+INS vmwrite	found sp ins count:18 >> offset:0xe5c	va:0xffffb00000000e5c	size:0x3
+vmread operands op0:rax op1:0x10 rsp
+INS vmread	found sp ins count:19 >> offset:0xe79	va:0xffffb00000000e79	size:0x5
+vmwrite operand op0:rax operand op01:rcx
+INS vmwrite	found sp ins count:20 >> offset:0xeac	va:0xffffb00000000eac	size:0x3
+vmread operands op0:rax op1:0x10 rsp
+INS vmread	found sp ins count:21 >> offset:0xec9	va:0xffffb00000000ec9	size:0x5
+vmread operands op0:rax op1:0x8 rsp
+INS vmread	found sp ins count:22 >> offset:0xee8	va:0xffffb00000000ee8	size:0x5
+vmread operands op0:rax op1:0x0 rsp
+INS vmread	found sp ins count:23 >> offset:0xf07	va:0xffffb00000000f07	size:0x4
+vmwrite operand op0:rcx operand op01:rax
+INS vmwrite	found sp ins count:24 >> offset:0xf50	va:0xffffb00000000f50	size:0x3
+rdgsbase operand op0:rbx detected
+INS rdgsbase	found sp ins count:25 >> offset:0x1bff	va:0xffffb00000001bff	size:0x5
+rdfsbase operand op0:rax detected
+INS rdfsbase	found sp ins count:26 >> offset:0x1cd8	va:0xffffb00000001cd8	size:0x5
+rdrand operand op0:rcx detected
+INS rdrand	found sp ins count:27 >> offset:0x1cef	va:0xffffb00000001cef	size:0x4
+vmwrite operand op0:rbx operand op01:rax
+INS vmwrite	found sp ins count:28 >> offset:0x1d13	va:0xffffb00000001d13	size:0x3
+INS rdmsr	found sp ins count:29 >> offset:0x1d6e	va:0xffffb00000001d6e	size:0x2
+INS rdmsr	found sp ins count:30 >> offset:0x1d8b	va:0xffffb00000001d8b	size:0x2
+INS rdmsr	found sp ins count:31 >> offset:0x1db8	va:0xffffb00000001db8	size:0x2
+INS rdmsr	found sp ins count:32 >> offset:0x1dc9	va:0xffffb00000001dc9	size:0x2
+INS vmclear	found sp ins count:33 >> offset:0x1ff9	va:0xffffb00000001ff9	size:0x9
+rdrand operand op0:rbx detected
+INS rdrand	found sp ins count:34 >> offset:0x2723	va:0xffffb00000002723	size:0x4
+INS rdmsr	found sp ins count:35 >> offset:0x307e	va:0xffffb0000000307e	size:0x2
+INS seamret	found sp ins count:36 >> offset:0x33f4	va:0xffffb000000033f4	size:0x4
+special instructuons count: 37
+pseamldr code instrumentation successful ...
+Fusing tdx sw PDPT with s_smulator PML4, pml4 idx: 96
+Fusing tdx sw PDPT with s_smulator PML4, pml4 idx: 352
+
+va:0xffff900000200000 pa:0x600000 pml4_idx:288
+new pdpt_pa:0x20d000
+pdpt idx:0
+new pd_pa:0x20e000
+pd idx:1
+new pt_pa:0x20f000
+pt idx:0
+
+va:0xffff900000400000 pa:0x800000 pml4_idx:288
+pdpt idx:0
+pd idx:2
+new pt_pa:0x210000
+pt idx:0
+
+va:0xffff900000000000 pa:0x400000 pml4_idx:288
+pdpt idx:0
+pd idx:0
+new pt_pa:0x211000
+pt idx:0
+
+va:0xffff900000002000 pa:0x402000 pml4_idx:288
+pdpt idx:0
+pd idx:0
+pt idx:2
+R-MGR: executing SEAM environment
+
+pseamldr cr3:0x6002000
+fsbase:0xffffb003ffff0000 gsbase:0xffffb00300000000
+setup args for PSEAMLDR_SEAMCALL_SEAMLDR_INSTALL
+libtdx.so size : 0x61000
+Mod size: 0x61000, mod_pages:0x61
+pseamldr entry rip:0xffffb000000033fc rsp:0xffffb00100002ff8
+tdx call: 9223372036854775809
+########## issuing SEAMCALL SEAMLDR_INSTALL ----------------------------------------
+########## 0000 SEAMCALL SEAMLDR_INSTALL SEAMRET status: 0 SUCCESS -----------------
+pseamldr cr3:0x6002000
+fsbase:0xffffb003ffff0000 gsbase:0xffffb00300000000
+setup args for PSEAMLDR_SEAMCALL_SEAMLDR_INSTALL
+libtdx.so size : 0x61000
+Mod size: 0x61000, mod_pages:0x61
+pseamldr entry rip:0xffffb000000033fc rsp:0xffffb00100002ff8
+tdx call: 9223372036854775809
+########## issuing SEAMCALL SEAMLDR_INSTALL ----------------------------------------
+########## 0001 SEAMCALL SEAMLDR_INSTALL SEAMRET status: 0 SUCCESS -----------------
+pseamldr cr3:0x6002000
+fsbase:0xffffb003ffff0000 gsbase:0xffffb00300000000
+setup args for PSEAMLDR_SEAMCALL_SEAMLDR_INSTALL
+libtdx.so size : 0x61000
+Mod size: 0x61000, mod_pages:0x61
+pseamldr entry rip:0xffffb000000033fc rsp:0xffffb00100002ff8
+tdx call: 9223372036854775809
+########## issuing SEAMCALL SEAMLDR_INSTALL ----------------------------------------
+########## 0002 SEAMCALL SEAMLDR_INSTALL SEAMRET status: 0 SUCCESS -----------------
+pseamldr cr3:0x6002000
+fsbase:0xffffb003ffff0000 gsbase:0xffffb00300000000
+setup args for PSEAMLDR_SEAMCALL_SEAMLDR_INSTALL
+libtdx.so size : 0x61000
+Mod size: 0x61000, mod_pages:0x61
+pseamldr entry rip:0xffffb000000033fc rsp:0xffffb00100002ff8
+tdx call: 9223372036854775809
+########## issuing SEAMCALL SEAMLDR_INSTALL ----------------------------------------
+########## 0003 SEAMCALL SEAMLDR_INSTALL SEAMRET status: 0 SUCCESS -----------------
+here
+Fusing tdx sw PDPT with s_smulator PML4, pml4 idx: 64
+Fusing tdx sw PDPT with s_smulator PML4, pml4 idx: 320
+
+va:0xffff900000200000 pa:0x600000 pml4_idx:288
+new pdpt_pa:0x212000
+pdpt idx:0
+new pd_pa:0x213000
+pd idx:1
+new pt_pa:0x214000
+pt idx:0
+
+va:0xffff900000400000 pa:0x800000 pml4_idx:288
+pdpt idx:0
+pd idx:2
+new pt_pa:0x215000
+pt idx:0
+
+va:0xffff900000000000 pa:0x400000 pml4_idx:288
+pdpt idx:0
+pd idx:0
+new pt_pa:0x216000
+pt idx:0
+
+va:0xffff900000002000 pa:0x402000 pml4_idx:288
+pdpt idx:0
+pd idx:0
+pt idx:2
+at instrument_seam_sw_code
+data/tdxmodule/libtdx-ippcrypto.start.address offset: 0x35a40
+ipp_crypto_start_offset : 0x35a40
+seam_sw_code_pa:0x5e00000
+data/tdxmodule/libtdx.so.objdump size : 0x1877fa
+vmread operands op0:rax op1:0x8 rdi
+INS vmread	found sp ins count:0 >> offset:0x8a0	va:0xffffa000000008a0	size:0x4
+vmread operands op0:rax op1:0x18 rbx
+INS vmread	found sp ins count:1 >> offset:0x8bb	va:0xffffa000000008bb	size:0x4
+vmread operands op0:rax op1:0x28 rbx
+INS vmread	found sp ins count:2 >> offset:0x8d6	va:0xffffa000000008d6	size:0x4
+vmread operands op0:rax op1:0x38 rbx
+INS vmread	found sp ins count:3 >> offset:0x8f1	va:0xffffa000000008f1	size:0x4
+vmread operands op0:rax op1:0x48 rbx
+INS vmread	found sp ins count:4 >> offset:0x90c	va:0xffffa0000000090c	size:0x4
+vmread operands op0:rax op1:0x58 rbx
+INS vmread	found sp ins count:5 >> offset:0x927	va:0xffffa00000000927	size:0x4
+vmread operands op0:rax op1:0x68 rbx
+INS vmread	found sp ins count:6 >> offset:0x942	va:0xffffa00000000942	size:0x4
+vmread operands op0:rax op1:0x78 rbx
+INS vmread	found sp ins count:7 >> offset:0x95d	va:0xffffa0000000095d	size:0x4
+vmread operands op0:rax op1:0x88 rbx
+INS vmread	found sp ins count:8 >> offset:0x97b	va:0xffffa0000000097b	size:0x7
+vmread operands op0:rax op1:0x98 rbx
+INS vmread	found sp ins count:9 >> offset:0x99c	va:0xffffa0000000099c	size:0x7
+vmread operands op0:rax op1:0xa8 rbx
+INS vmread	found sp ins count:10 >> offset:0x9bd	va:0xffffa000000009bd	size:0x7
+vmread operands op0:rax op1:0xb8 rbx
+INS vmread	found sp ins count:11 >> offset:0x9de	va:0xffffa000000009de	size:0x7
+vmread operands op0:rax op1:0xc8 rbx
+INS vmread	found sp ins count:12 >> offset:0x9ff	va:0xffffa000000009ff	size:0x7
+vmread operands op0:rax op1:0xd8 rbx
+INS vmread	found sp ins count:13 >> offset:0xa20	va:0xffffa00000000a20	size:0x7
+vmwrite operand op0:rax operand op01:rcx
+INS vmwrite	found sp ins count:14 >> offset:0xb83	va:0xffffa00000000b83	size:0x3
+vmwrite operand op0:rax operand op01:rcx
+INS vmwrite	found sp ins count:15 >> offset:0xba4	va:0xffffa00000000ba4	size:0x3
+vmwrite operand op0:rax operand op01:rcx
+INS vmwrite	found sp ins count:16 >> offset:0xbbd	va:0xffffa00000000bbd	size:0x3
+vmwrite operand op0:rax operand op01:rcx
+INS vmwrite	found sp ins count:17 >> offset:0xbd3	va:0xffffa00000000bd3	size:0x3
+vmwrite operand op0:rax operand op01:rcx
+INS vmwrite	found sp ins count:18 >> offset:0xbe9	va:0xffffa00000000be9	size:0x3
+vmwrite operand op0:rax operand op01:rcx
+INS vmwrite	found sp ins count:19 >> offset:0xbff	va:0xffffa00000000bff	size:0x3
+vmwrite operand op0:rax operand op01:rcx
+INS vmwrite	found sp ins count:20 >> offset:0xc15	va:0xffffa00000000c15	size:0x3
+vmwrite operand op0:rax operand op01:rcx
+INS vmwrite	found sp ins count:21 >> offset:0xc3c	va:0xffffa00000000c3c	size:0x3
+vmwrite operand op0:rax operand op01:rcx
+INS vmwrite	found sp ins count:22 >> offset:0xc52	va:0xffffa00000000c52	size:0x3
+vmwrite operand op0:rax operand op01:rcx
+INS vmwrite	found sp ins count:23 >> offset:0xc6c	va:0xffffa00000000c6c	size:0x3
+vmwrite operand op0:rax operand op01:rcx
+INS vmwrite	found sp ins count:24 >> offset:0xd50	va:0xffffa00000000d50	size:0x3
+vmwrite operand op0:rax operand op01:rcx
+INS vmwrite	found sp ins count:25 >> offset:0xd65	va:0xffffa00000000d65	size:0x3
+vmwrite operand op0:rax operand op01:rcx
+INS vmwrite	found sp ins count:26 >> offset:0xd7a	va:0xffffa00000000d7a	size:0x3
+vmwrite operand op0:rax operand op01:rsi
+INS vmwrite	found sp ins count:27 >> offset:0xde8	va:0xffffa00000000de8	size:0x3
+vmwrite operand op0:rax operand op01:rsi
+INS vmwrite	found sp ins count:28 >> offset:0xe03	va:0xffffa00000000e03	size:0x3
+vmwrite operand op0:rax operand op01:rsi
+INS vmwrite	found sp ins count:29 >> offset:0xe1e	va:0xffffa00000000e1e	size:0x3
+vmwrite operand op0:rax operand op01:rsi
+INS vmwrite	found sp ins count:30 >> offset:0xe39	va:0xffffa00000000e39	size:0x3
+vmwrite operand op0:rax operand op01:rsi
+INS vmwrite	found sp ins count:31 >> offset:0xe54	va:0xffffa00000000e54	size:0x3
+vmwrite operand op0:rax operand op01:rsi
+INS vmwrite	found sp ins count:32 >> offset:0xe6f	va:0xffffa00000000e6f	size:0x3
+vmwrite operand op0:rax operand op01:rsi
+INS vmwrite	found sp ins count:33 >> offset:0xe8a	va:0xffffa00000000e8a	size:0x3
+vmwrite operand op0:rax operand op01:rsi
+INS vmwrite	found sp ins count:34 >> offset:0xea5	va:0xffffa00000000ea5	size:0x3
+vmwrite operand op0:rax operand op01:rsi
+INS vmwrite	found sp ins count:35 >> offset:0xec0	va:0xffffa00000000ec0	size:0x3
+vmwrite operand op0:rax operand op01:rsi
+INS vmwrite	found sp ins count:36 >> offset:0xedb	va:0xffffa00000000edb	size:0x3
+vmwrite operand op0:rax operand op01:rsi
+INS vmwrite	found sp ins count:37 >> offset:0xef6	va:0xffffa00000000ef6	size:0x3
+vmwrite operand op0:rax operand op01:rsi
+INS vmwrite	found sp ins count:38 >> offset:0xf11	va:0xffffa00000000f11	size:0x3
+vmwrite operand op0:rax operand op01:rsi
+INS vmwrite	found sp ins count:39 >> offset:0xf2c	va:0xffffa00000000f2c	size:0x3
+vmwrite operand op0:rax operand op01:rsi
+INS vmwrite	found sp ins count:40 >> offset:0xf47	va:0xffffa00000000f47	size:0x3
+vmwrite operand op0:rax operand op01:rcx
+INS vmwrite	found sp ins count:41 >> offset:0xf69	va:0xffffa00000000f69	size:0x3
+vmwrite operand op0:rax operand op01:rcx
+INS vmwrite	found sp ins count:42 >> offset:0xf82	va:0xffffa00000000f82	size:0x3
+vmwrite operand op0:rax operand op01:rcx
+INS vmwrite	found sp ins count:43 >> offset:0xf9b	va:0xffffa00000000f9b	size:0x3
+vmwrite operand op0:rax operand op01:rcx
+INS vmwrite	found sp ins count:44 >> offset:0xfb4	va:0xffffa00000000fb4	size:0x3
+vmwrite operand op0:rax operand op01:rsi
+INS vmwrite	found sp ins count:45 >> offset:0x1159	va:0xffffa00000001159	size:0x3
+vmwrite operand op0:rax operand op01:rsi
+INS vmwrite	found sp ins count:46 >> offset:0x119c	va:0xffffa0000000119c	size:0x3
+vmwrite operand op0:rax operand op01:rcx
+INS vmwrite	found sp ins count:47 >> offset:0x12c9	va:0xffffa000000012c9	size:0x3
+vmwrite operand op0:rax operand op01:rcx
+INS vmwrite	found sp ins count:48 >> offset:0x12fa	va:0xffffa000000012fa	size:0x3
+vmwrite operand op0:rcx operand op01:rax
+INS vmwrite	found sp ins count:49 >> offset:0x1322	va:0xffffa00000001322	size:0x3
+vmwrite operand op0:r13 operand op01:rax
+INS vmwrite	found sp ins count:50 >> offset:0x133b	va:0xffffa0000000133b	size:0x4
+vmwrite operand op0:r12 operand op01:rax
+INS vmwrite	found sp ins count:51 >> offset:0x1351	va:0xffffa00000001351	size:0x4
+vmwrite operand op0:r11 operand op01:rax
+INS vmwrite	found sp ins count:52 >> offset:0x1369	va:0xffffa00000001369	size:0x4
+vmwrite operand op0:rax operand op01:rcx
+INS vmwrite	found sp ins count:53 >> offset:0x1388	va:0xffffa00000001388	size:0x3
+vmwrite operand op0:rax operand op01:rcx
+INS vmwrite	found sp ins count:54 >> offset:0x13a1	va:0xffffa000000013a1	size:0x3
+vmwrite operand op0:rax operand op01:rcx
+INS vmwrite	found sp ins count:55 >> offset:0x13f3	va:0xffffa000000013f3	size:0x3
+vmwrite operand op0:rax operand op01:rcx
+INS vmwrite	found sp ins count:56 >> offset:0x1413	va:0xffffa00000001413	size:0x3
+vmwrite operand op0:rax operand op01:rcx
+INS vmwrite	found sp ins count:57 >> offset:0x1436	va:0xffffa00000001436	size:0x3
+vmwrite operand op0:rax operand op01:rcx
+INS vmwrite	found sp ins count:58 >> offset:0x1460	va:0xffffa00000001460	size:0x3
+vmwrite operand op0:rax operand op01:rcx
+INS vmwrite	found sp ins count:59 >> offset:0x148a	va:0xffffa0000000148a	size:0x3
+vmwrite operand op0:rax operand op01:rcx
+INS vmwrite	found sp ins count:60 >> offset:0x14a3	va:0xffffa000000014a3	size:0x3
+vmwrite operand op0:rax operand op01:rcx
+INS vmwrite	found sp ins count:61 >> offset:0x151d	va:0xffffa0000000151d	size:0x3
+vmwrite operand op0:rax operand op01:rcx
+INS vmwrite	found sp ins count:62 >> offset:0x1556	va:0xffffa00000001556	size:0x3
+vmwrite operand op0:rcx operand op01:rax
+INS vmwrite	found sp ins count:63 >> offset:0x1606	va:0xffffa00000001606	size:0x3
+vmread operands op0:rax op1:0x58 rsp
+INS vmread	found sp ins count:64 >> offset:0x1820	va:0xffffa00000001820	size:0x5
+vmread operands op0:rax op1:0x58 rsp
+INS vmread	found sp ins count:65 >> offset:0x1840	va:0xffffa00000001840	size:0x5
+vmread operands op0:rax op1:0x58 rsp
+INS vmread	found sp ins count:66 >> offset:0x1860	va:0xffffa00000001860	size:0x5
+vmread operands op0:rax op1:0x58 rsp
+INS vmread	found sp ins count:67 >> offset:0x1880	va:0xffffa00000001880	size:0x5
+vmwrite operand op0:rax operand op01:rcx
+INS vmwrite	found sp ins count:68 >> offset:0x18c4	va:0xffffa000000018c4	size:0x3
+INS pconfig	found sp ins count:69 >> offset:0x1d85	va:0xffffa00000001d85	size:0x3
+vmread operands op0:rax op1:0x38 rsp
+INS vmread	found sp ins count:70 >> offset:0x3462	va:0xffffa00000003462	size:0x5
+vmread operands op0:rax op1:0x0 rsp
+INS vmread	found sp ins count:71 >> offset:0x3b73	va:0xffffa00000003b73	size:0x4
+vmread operands op0:rax op1:0x8 rsp
+INS vmread	found sp ins count:72 >> offset:0x3c17	va:0xffffa00000003c17	size:0x5
+vmwrite operand op0:rax operand op01:rcx
+INS vmwrite	found sp ins count:73 >> offset:0x3c95	va:0xffffa00000003c95	size:0x3
+vmwrite operand op0:rax operand op01:rcx
+INS vmwrite	found sp ins count:74 >> offset:0x3ca9	va:0xffffa00000003ca9	size:0x3
+vmwrite operand op0:rax operand op01:rcx
+INS vmwrite	found sp ins count:75 >> offset:0x3cbe	va:0xffffa00000003cbe	size:0x3
+vmwrite operand op0:rax operand op01:rcx
+INS vmwrite	found sp ins count:76 >> offset:0x3cd3	va:0xffffa00000003cd3	size:0x3
+vmread operands op0:rbx op1:0x0 rsp
+INS vmread	found sp ins count:77 >> offset:0x3ce1	va:0xffffa00000003ce1	size:0x4
+vmwrite operand op0:rax operand op01:rbx
+INS vmwrite	found sp ins count:78 >> offset:0x3cf8	va:0xffffa00000003cf8	size:0x3
+vmread operands op0:rax op1:0x10 rsp
+INS vmread	found sp ins count:79 >> offset:0x3db3	va:0xffffa00000003db3	size:0x5
+vmwrite operand op0:rax operand op01:rcx
+INS vmwrite	found sp ins count:80 >> offset:0x3e07	va:0xffffa00000003e07	size:0x3
+vmread operands op0:rax op1:0x8 rsp
+INS vmread	found sp ins count:81 >> offset:0x3e1c	va:0xffffa00000003e1c	size:0x5
+vmwrite operand op0:rax operand op01:rcx
+INS vmwrite	found sp ins count:82 >> offset:0x3e35	va:0xffffa00000003e35	size:0x3
+vmread operands op0:rax op1:0x8 rsp
+INS vmread	found sp ins count:83 >> offset:0x3e47	va:0xffffa00000003e47	size:0x5
+vmwrite operand op0:rax operand op01:rcx
+INS vmwrite	found sp ins count:84 >> offset:0x3e5c	va:0xffffa00000003e5c	size:0x3
+vmwrite operand op0:rax operand op01:rcx
+INS vmwrite	found sp ins count:85 >> offset:0x3e74	va:0xffffa00000003e74	size:0x3
+vmread operands op0:rax op1:0x10 rsp
+INS vmread	found sp ins count:86 >> offset:0x3fb8	va:0xffffa00000003fb8	size:0x5
+vmread operands op0:rbx op1:0x8 rsp
+INS vmread	found sp ins count:87 >> offset:0x4012	va:0xffffa00000004012	size:0x5
+vmwrite operand op0:rax operand op01:rbx
+INS vmwrite	found sp ins count:88 >> offset:0x402a	va:0xffffa0000000402a	size:0x3
+vmread operands op0:rax op1:0x0 rsp
+INS vmread	found sp ins count:89 >> offset:0x41e0	va:0xffffa000000041e0	size:0x4
+INS wrmsr	found sp ins count:90 >> offset:0x4587	va:0xffffa00000004587	size:0x2
+INS rdmsr	found sp ins count:91 >> offset:0x458e	va:0xffffa0000000458e	size:0x2
+INS wrmsr	found sp ins count:92 >> offset:0x4599	va:0xffffa00000004599	size:0x2
+rdrand operand op0:rax detected
+INS rdrand	found sp ins count:93 >> offset:0x45a4	va:0xffffa000000045a4	size:0x4
+INS wrmsr	found sp ins count:94 >> offset:0x464b	va:0xffffa0000000464b	size:0x2
+vmread operands op0:rax op1:0x10 rsp
+INS vmread	found sp ins count:95 >> offset:0x4683	va:0xffffa00000004683	size:0x5
+vmread operands op0:rax op1:0x8 rsp
+INS vmread	found sp ins count:96 >> offset:0x4693	va:0xffffa00000004693	size:0x5
+vmread operands op0:rax op1:0x0 rsp
+INS vmread	found sp ins count:97 >> offset:0x46a3	va:0xffffa000000046a3	size:0x4
+vmwrite operand op0:rcx operand op01:rax
+INS vmwrite	found sp ins count:98 >> offset:0x4715	va:0xffffa00000004715	size:0x3
+vmread operands op0:rax op1:0x8 rsp
+INS vmread	found sp ins count:99 >> offset:0x477c	va:0xffffa0000000477c	size:0x5
+vmread operands op0:rax op1:0x10 rsp
+INS vmread	found sp ins count:100 >> offset:0x4790	va:0xffffa00000004790	size:0x5
+vmwrite operand op0:rax operand op01:rcx
+INS vmwrite	found sp ins count:101 >> offset:0x47b7	va:0xffffa000000047b7	size:0x3
+vmread operands op0:rax op1:0x10 rsp
+INS vmread	found sp ins count:102 >> offset:0x47c5	va:0xffffa000000047c5	size:0x5
+vmwrite operand op0:rax operand op01:rcx
+INS vmwrite	found sp ins count:103 >> offset:0x47e9	va:0xffffa000000047e9	size:0x3
+vmread operands op0:rax op1:0x0 rsp
+INS vmread	found sp ins count:104 >> offset:0x48c3	va:0xffffa000000048c3	size:0x4
+vmwrite operand op0:rax operand op01:rcx
+INS vmwrite	found sp ins count:105 >> offset:0x48e3	va:0xffffa000000048e3	size:0x3
+INS vmclear	found sp ins count:106 >> offset:0x4e43	va:0xffffa00000004e43	size:0x5
+INS vmclear	found sp ins count:107 >> offset:0x4ec3	va:0xffffa00000004ec3	size:0x5
+rdseed operand op0:rsi detected
+INS rdseed	found sp ins count:108 >> offset:0x53bf	va:0xffffa000000053bf	size:0x4
+vmread operands op0:rax op1:0x20 rsp
+INS vmread	found sp ins count:109 >> offset:0x5823	va:0xffffa00000005823	size:0x5
+vmread operands op0:rax op1:0x18 rsp
+INS vmread	found sp ins count:110 >> offset:0x5854	va:0xffffa00000005854	size:0x5
+vmread operands op0:rax op1:0x10 rsp
+INS vmread	found sp ins count:111 >> offset:0x589b	va:0xffffa0000000589b	size:0x5
+vmread operands op0:rax op1:0x8 rsp
+INS vmread	found sp ins count:112 >> offset:0x58ab	va:0xffffa000000058ab	size:0x5
+vmread operands op0:rax op1:0x0 rsp
+INS vmread	found sp ins count:113 >> offset:0x58bb	va:0xffffa000000058bb	size:0x4
+vmread operands op0:rax op1:0x10 rsp
+INS vmread	found sp ins count:114 >> offset:0x5983	va:0xffffa00000005983	size:0x5
+vmwrite operand op0:rax operand op01:rcx
+INS vmwrite	found sp ins count:115 >> offset:0x599c	va:0xffffa0000000599c	size:0x3
+vmread operands op0:rax op1:0x8 rsp
+INS vmread	found sp ins count:116 >> offset:0x59b7	va:0xffffa000000059b7	size:0x5
+vmwrite operand op0:rax operand op01:rcx
+INS vmwrite	found sp ins count:117 >> offset:0x59d0	va:0xffffa000000059d0	size:0x3
+vmwrite operand op0:rax operand op01:rcx
+INS vmwrite	found sp ins count:118 >> offset:0x59ec	va:0xffffa000000059ec	size:0x3
+vmwrite operand op0:rax operand op01:rcx
+INS vmwrite	found sp ins count:119 >> offset:0x5a00	va:0xffffa00000005a00	size:0x3
+vmwrite operand op0:rax operand op01:rcx
+INS vmwrite	found sp ins count:120 >> offset:0x5a14	va:0xffffa00000005a14	size:0x3
+vmread operands op0:rax op1:0x0 rsp
+INS vmread	found sp ins count:121 >> offset:0x5afb	va:0xffffa00000005afb	size:0x4
+vmwrite operand op0:rax operand op01:rcx
+INS vmwrite	found sp ins count:122 >> offset:0x5b6c	va:0xffffa00000005b6c	size:0x3
+vmwrite operand op0:rax operand op01:rcx
+INS vmwrite	found sp ins count:123 >> offset:0x5b7e	va:0xffffa00000005b7e	size:0x3
+vmwrite operand op0:rsi operand op01:rcx
+INS vmwrite	found sp ins count:124 >> offset:0x604b	va:0xffffa0000000604b	size:0x3
+INS invept	found sp ins count:125 >> offset:0x6230	va:0xffffa00000006230	size:0x8
+vmread operands op0:rax op1:0x58 rsp
+INS vmread	found sp ins count:126 >> offset:0xce62	va:0xffffa0000000ce62	size:0x5
+vmread operands op0:rax op1:0x50 rsp
+INS vmread	found sp ins count:127 >> offset:0xce7b	va:0xffffa0000000ce7b	size:0x5
+operand op0:0x58 rsp
+INS vmptrld	found sp ins count:128 >> offset:0xced3	va:0xffffa0000000ced3	size:0x5
+vmread operands op0:rax op1:0x58 rsp
+INS vmread	found sp ins count:129 >> offset:0xcef1	va:0xffffa0000000cef1	size:0x5
+vmread operands op0:rax op1:0x58 rsp
+INS vmread	found sp ins count:130 >> offset:0xcfc1	va:0xffffa0000000cfc1	size:0x5
+vmread operands op0:rax op1:0x50 rsp
+INS vmread	found sp ins count:131 >> offset:0xcfda	va:0xffffa0000000cfda	size:0x5
+operand op0:0x58 rsp
+INS vmptrld	found sp ins count:132 >> offset:0xd17b	va:0xffffa0000000d17b	size:0x5
+vmread operands op0:rdx op1:0x38 rsp
+INS vmread	found sp ins count:133 >> offset:0xd18e	va:0xffffa0000000d18e	size:0x5
+vmwrite operand op0:r13 operand op01:r11
+INS vmwrite	found sp ins count:134 >> offset:0xd5bc	va:0xffffa0000000d5bc	size:0x4
+vmwrite operand op0:rax operand op01:rcx
+INS vmwrite	found sp ins count:135 >> offset:0xd7f3	va:0xffffa0000000d7f3	size:0x3
+vmwrite operand op0:rbx operand op01:rax
+INS vmwrite	found sp ins count:136 >> offset:0xd805	va:0xffffa0000000d805	size:0x3
+vmread operands op0:rax op1:0x68 rsp
+INS vmread	found sp ins count:137 >> offset:0xd8c7	va:0xffffa0000000d8c7	size:0x5
+vmwrite operand op0:rcx operand op01:rax
+INS vmwrite	found sp ins count:138 >> offset:0xda1a	va:0xffffa0000000da1a	size:0x3
+vmwrite operand op0:rbx operand op01:rax
+INS vmwrite	found sp ins count:139 >> offset:0xda2c	va:0xffffa0000000da2c	size:0x3
+vmread operands op0:rax op1:0x68 rsp
+INS vmread	found sp ins count:140 >> offset:0xda6d	va:0xffffa0000000da6d	size:0x5
+vmread operands op0:rax op1:0x68 rsp
+INS vmread	found sp ins count:141 >> offset:0xdb6b	va:0xffffa0000000db6b	size:0x5
+vmread operands op0:rax op1:0x60 rsp
+INS vmread	found sp ins count:142 >> offset:0xdb7f	va:0xffffa0000000db7f	size:0x5
+vmread operands op0:rax op1:0x58 rsp
+INS vmread	found sp ins count:143 >> offset:0xdb93	va:0xffffa0000000db93	size:0x5
+vmwrite operand op0:rax operand op01:rcx
+INS vmwrite	found sp ins count:144 >> offset:0xdc66	va:0xffffa0000000dc66	size:0x3
+vmwrite operand op0:rbx operand op01:rax
+INS vmwrite	found sp ins count:145 >> offset:0xdc78	va:0xffffa0000000dc78	size:0x3
+vmwrite operand op0:rcx operand op01:rax
+INS vmwrite	found sp ins count:146 >> offset:0xdd0c	va:0xffffa0000000dd0c	size:0x3
+vmwrite operand op0:rbx operand op01:rax
+INS vmwrite	found sp ins count:147 >> offset:0xdd1e	va:0xffffa0000000dd1e	size:0x3
+vmread operands op0:rax op1:0x68 rsp
+INS vmread	found sp ins count:148 >> offset:0xdd75	va:0xffffa0000000dd75	size:0x5
+vmread operands op0:rax op1:0x68 rsp
+INS vmread	found sp ins count:149 >> offset:0xded4	va:0xffffa0000000ded4	size:0x5
+vmread operands op0:rax op1:0x60 rsp
+INS vmread	found sp ins count:150 >> offset:0xdee8	va:0xffffa0000000dee8	size:0x5
+vmread operands op0:rax op1:0x58 rsp
+INS vmread	found sp ins count:151 >> offset:0xdefc	va:0xffffa0000000defc	size:0x5
+vmread operands op0:rax op1:0x60 rsp
+INS vmread	found sp ins count:152 >> offset:0xe0d8	va:0xffffa0000000e0d8	size:0x5
+vmread operands op0:rax op1:0x68 rsp
+INS vmread	found sp ins count:153 >> offset:0xe102	va:0xffffa0000000e102	size:0x5
+operand op0:0x68 rsp
+INS vmptrld	found sp ins count:154 >> offset:0xe2d7	va:0xffffa0000000e2d7	size:0x5
+vmwrite operand op0:rax operand op01:rcx
+INS vmwrite	found sp ins count:155 >> offset:0xe30a	va:0xffffa0000000e30a	size:0x3
+vmwrite operand op0:rax operand op01:rcx
+INS vmwrite	found sp ins count:156 >> offset:0xe32d	va:0xffffa0000000e32d	size:0x3
+INS cpuid	found sp ins count:157 >> offset:0xfbae	va:0xffffa0000000fbae	size:0x2
+vmread operands op0:rbx op1:0x28 rsp
+INS vmread	found sp ins count:158 >> offset:0xfdf1	va:0xffffa0000000fdf1	size:0x5
+vmwrite operand op0:rax operand op01:rbx
+INS vmwrite	found sp ins count:159 >> offset:0xfe0f	va:0xffffa0000000fe0f	size:0x3
+vmwrite operand op0:rax operand op01:rcx
+INS vmwrite	found sp ins count:160 >> offset:0xfe26	va:0xffffa0000000fe26	size:0x3
+vmwrite operand op0:rax operand op01:rcx
+INS vmwrite	found sp ins count:161 >> offset:0xfe3a	va:0xffffa0000000fe3a	size:0x3
+vmread operands op0:rax op1:0x28 rsp
+INS vmread	found sp ins count:162 >> offset:0x10013	va:0xffffa00000010013	size:0x5
+operand op0:0x28 rsp
+INS vmptrld	found sp ins count:163 >> offset:0x10152	va:0xffffa00000010152	size:0x5
+vmread operands op0:rax op1:0x0 rsp
+INS vmread	found sp ins count:164 >> offset:0x1016e	va:0xffffa0000001016e	size:0x4
+vmread operands op0:rbx op1:0x28 rsp
+INS vmread	found sp ins count:165 >> offset:0x101e6	va:0xffffa000000101e6	size:0x5
+vmwrite operand op0:rax operand op01:rbx
+INS vmwrite	found sp ins count:166 >> offset:0x101ff	va:0xffffa000000101ff	size:0x3
+vmread operands op0:rbx op1:0x28 rsp
+INS vmread	found sp ins count:167 >> offset:0x102cf	va:0xffffa000000102cf	size:0x5
+vmwrite operand op0:rax operand op01:rbx
+INS vmwrite	found sp ins count:168 >> offset:0x102ed	va:0xffffa000000102ed	size:0x3
+vmwrite operand op0:rax operand op01:rcx
+INS vmwrite	found sp ins count:169 >> offset:0x10304	va:0xffffa00000010304	size:0x3
+vmwrite operand op0:rax operand op01:rcx
+INS vmwrite	found sp ins count:170 >> offset:0x10318	va:0xffffa00000010318	size:0x3
+INS wrmsr	found sp ins count:171 >> offset:0x10549	va:0xffffa00000010549	size:0x2
+vmread operands op0:rax op1:0x0 rsp
+INS vmread	found sp ins count:172 >> offset:0x10625	va:0xffffa00000010625	size:0x4
+vmread operands op0:rax op1:0x28 rsp
+INS vmread	found sp ins count:173 >> offset:0x106d2	va:0xffffa000000106d2	size:0x5
+vmread operands op0:rax op1:0x20 rsp
+INS vmread	found sp ins count:174 >> offset:0x106e6	va:0xffffa000000106e6	size:0x5
+vmread operands op0:rbx op1:0x28 rsp
+INS vmread	found sp ins count:175 >> offset:0x10736	va:0xffffa00000010736	size:0x5
+vmwrite operand op0:rax operand op01:rbx
+INS vmwrite	found sp ins count:176 >> offset:0x10754	va:0xffffa00000010754	size:0x3
+vmwrite operand op0:rax operand op01:rcx
+INS vmwrite	found sp ins count:177 >> offset:0x1076b	va:0xffffa0000001076b	size:0x3
+vmwrite operand op0:rax operand op01:rcx
+INS vmwrite	found sp ins count:178 >> offset:0x1077f	va:0xffffa0000001077f	size:0x3
+operand op0:0x28 rsp
+INS vmptrld	found sp ins count:179 >> offset:0x10b9d	va:0xffffa00000010b9d	size:0x5
+INS rdmsr	found sp ins count:180 >> offset:0x10f20	va:0xffffa00000010f20	size:0x2
+INS wrmsr	found sp ins count:181 >> offset:0x10f4b	va:0xffffa00000010f4b	size:0x2
+vmread operands op0:rax op1:0x0 r15
+INS vmread	found sp ins count:182 >> offset:0x10f60	va:0xffffa00000010f60	size:0x4
+vmread operands op0:rax op1:0x0 r8
+INS vmread	found sp ins count:183 >> offset:0x10f92	va:0xffffa00000010f92	size:0x4
+vmread operands op0:rax op1:0x0 r12
+INS vmread	found sp ins count:184 >> offset:0x10fa5	va:0xffffa00000010fa5	size:0x5
+vmread operands op0:rax op1:0x10 rsp
+INS vmread	found sp ins count:185 >> offset:0x110b2	va:0xffffa000000110b2	size:0x5
+vmread operands op0:r14 op1:0x18 rsp
+INS vmread	found sp ins count:186 >> offset:0x11112	va:0xffffa00000011112	size:0x6
+vmwrite operand op0:rax operand op01:r14
+INS vmwrite	found sp ins count:187 >> offset:0x1112c	va:0xffffa0000001112c	size:0x4
+vmwrite operand op0:rax operand op01:rcx
+INS vmwrite	found sp ins count:188 >> offset:0x11148	va:0xffffa00000011148	size:0x3
+vmread operands op0:rax op1:0x18 rsp
+INS vmread	found sp ins count:189 >> offset:0x11163	va:0xffffa00000011163	size:0x5
+vmwrite operand op0:rax operand op01:rcx
+INS vmwrite	found sp ins count:190 >> offset:0x1117c	va:0xffffa0000001117c	size:0x3
+vmread operands op0:rax op1:0x18 rsp
+INS vmread	found sp ins count:191 >> offset:0x1118e	va:0xffffa0000001118e	size:0x5
+vmwrite operand op0:rax operand op01:rcx
+INS vmwrite	found sp ins count:192 >> offset:0x111a7	va:0xffffa000000111a7	size:0x3
+vmread operands op0:rbx op1:0x38 rsp
+INS vmread	found sp ins count:193 >> offset:0x114ec	va:0xffffa000000114ec	size:0x5
+vmwrite operand op0:rax operand op01:rbx
+INS vmwrite	found sp ins count:194 >> offset:0x1150a	va:0xffffa0000001150a	size:0x3
+vmwrite operand op0:rax operand op01:rcx
+INS vmwrite	found sp ins count:195 >> offset:0x11521	va:0xffffa00000011521	size:0x3
+vmread operands op0:rbx op1:0x38 rsp
+INS vmread	found sp ins count:196 >> offset:0x117d2	va:0xffffa000000117d2	size:0x5
+vmwrite operand op0:rax operand op01:rbx
+INS vmwrite	found sp ins count:197 >> offset:0x117f0	va:0xffffa000000117f0	size:0x3
+vmwrite operand op0:rax operand op01:rcx
+INS vmwrite	found sp ins count:198 >> offset:0x11807	va:0xffffa00000011807	size:0x3
+vmwrite operand op0:rax operand op01:rcx
+INS vmwrite	found sp ins count:199 >> offset:0x1181b	va:0xffffa0000001181b	size:0x3
+vmread operands op0:rbx op1:0x38 rsp
+INS vmread	found sp ins count:200 >> offset:0x11876	va:0xffffa00000011876	size:0x5
+vmwrite operand op0:rax operand op01:rbx
+INS vmwrite	found sp ins count:201 >> offset:0x11894	va:0xffffa00000011894	size:0x3
+vmwrite operand op0:rax operand op01:rcx
+INS vmwrite	found sp ins count:202 >> offset:0x118ab	va:0xffffa000000118ab	size:0x3
+vmwrite operand op0:rax operand op01:rcx
+INS vmwrite	found sp ins count:203 >> offset:0x118bf	va:0xffffa000000118bf	size:0x3
+vmread operands op0:rbx op1:0x18 rsp
+INS vmread	found sp ins count:204 >> offset:0x1192c	va:0xffffa0000001192c	size:0x5
+vmwrite operand op0:rax operand op01:rbx
+INS vmwrite	found sp ins count:205 >> offset:0x11945	va:0xffffa00000011945	size:0x3
+operand op0:0x38 rsp
+INS vmptrld	found sp ins count:206 >> offset:0x119e9	va:0xffffa000000119e9	size:0x5
+vmread operands op0:rax op1:0x0 rsp
+INS vmread	found sp ins count:207 >> offset:0x11a05	va:0xffffa00000011a05	size:0x4
+vmread operands op0:rbx op1:0x10 rsp
+INS vmread	found sp ins count:208 >> offset:0x11a36	va:0xffffa00000011a36	size:0x5
+vmwrite operand op0:rax operand op01:rbx
+INS vmwrite	found sp ins count:209 >> offset:0x11a4f	va:0xffffa00000011a4f	size:0x3
+vmread operands op0:rax op1:0x38 rsp
+INS vmread	found sp ins count:210 >> offset:0x11a9f	va:0xffffa00000011a9f	size:0x5
+INS wrmsr	found sp ins count:211 >> offset:0x11ae3	va:0xffffa00000011ae3	size:0x2
+vmread operands op0:rax op1:0x18 rsp
+INS vmread	found sp ins count:212 >> offset:0x11e5c	va:0xffffa00000011e5c	size:0x5
+INS cpuid	found sp ins count:213 >> offset:0x11ea7	va:0xffffa00000011ea7	size:0x2
+vmread operands op0:rax op1:0x18 rsp
+INS vmread	found sp ins count:214 >> offset:0x11eb3	va:0xffffa00000011eb3	size:0x5
+vmread operands op0:rax op1:0x10 rsp
+INS vmread	found sp ins count:215 >> offset:0x11ec7	va:0xffffa00000011ec7	size:0x5
+INS rdmsr	found sp ins count:216 >> offset:0x11f0a	va:0xffffa00000011f0a	size:0x2
+vmread operands op0:rax op1:0x18 rsp
+INS vmread	found sp ins count:217 >> offset:0x11f1e	va:0xffffa00000011f1e	size:0x5
+INS rdmsr	found sp ins count:218 >> offset:0x1245d	va:0xffffa0000001245d	size:0x2
+INS invept	found sp ins count:219 >> offset:0x12b4a	va:0xffffa00000012b4a	size:0x7
+vmread operands op0:rbx op1:0x8 rsp
+INS vmread	found sp ins count:220 >> offset:0x12f53	va:0xffffa00000012f53	size:0x5
+vmwrite operand op0:rax operand op01:rbx
+INS vmwrite	found sp ins count:221 >> offset:0x12f6d	va:0xffffa00000012f6d	size:0x3
+vmwrite operand op0:rax operand op01:rcx
+INS vmwrite	found sp ins count:222 >> offset:0x12f80	va:0xffffa00000012f80	size:0x3
+vmwrite operand op0:rax operand op01:rcx
+INS vmwrite	found sp ins count:223 >> offset:0x12f90	va:0xffffa00000012f90	size:0x3
+INS invvpid	found sp ins count:224 >> offset:0x130e7	va:0xffffa000000130e7	size:0x7
+INS invvpid	found sp ins count:225 >> offset:0x13227	va:0xffffa00000013227	size:0x7
+INS rdmsr	found sp ins count:226 >> offset:0x13286	va:0xffffa00000013286	size:0x2
+INS wrmsr	found sp ins count:227 >> offset:0x13cb5	va:0xffffa00000013cb5	size:0x2
+vmread operands op0:rax op1:0x18 rsp
+INS vmread	found sp ins count:228 >> offset:0x13ccf	va:0xffffa00000013ccf	size:0x5
+vmwrite operand op0:rax operand op01:rcx
+INS vmwrite	found sp ins count:229 >> offset:0x13d4e	va:0xffffa00000013d4e	size:0x3
+vmread operands op0:rax op1:0x18 rsp
+INS vmread	found sp ins count:230 >> offset:0x13d76	va:0xffffa00000013d76	size:0x5
+vmwrite operand op0:rax operand op01:rcx
+INS vmwrite	found sp ins count:231 >> offset:0x13de9	va:0xffffa00000013de9	size:0x3
+vmread operands op0:rax op1:0x10 rsp
+INS vmread	found sp ins count:232 >> offset:0x13dfb	va:0xffffa00000013dfb	size:0x5
+vmread operands op0:rbx op1:0x8 rsp
+INS vmread	found sp ins count:233 >> offset:0x13e21	va:0xffffa00000013e21	size:0x5
+vmwrite operand op0:rcx operand op01:rbx
+INS vmwrite	found sp ins count:234 >> offset:0x13e4f	va:0xffffa00000013e4f	size:0x3
+vmread operands op0:rax op1:0x0 rsp
+INS vmread	found sp ins count:235 >> offset:0x14147	va:0xffffa00000014147	size:0x4
+INS rdmsr	found sp ins count:236 >> offset:0x141b8	va:0xffffa000000141b8	size:0x2
+INS rdmsr	found sp ins count:237 >> offset:0x1465c	va:0xffffa0000001465c	size:0x2
+INS seamops	found sp ins count:238 >> offset:0x14707	va:0xffffa00000014707	size:0x4
+vmread operands op0:rbx op1:0x8 rsp
+INS vmread	found sp ins count:239 >> offset:0x14ca0	va:0xffffa00000014ca0	size:0x5
+vmwrite operand op0:rax operand op01:rbx
+INS vmwrite	found sp ins count:240 >> offset:0x14cbe	va:0xffffa00000014cbe	size:0x3
+vmwrite operand op0:rax operand op01:rcx
+INS vmwrite	found sp ins count:241 >> offset:0x14cd5	va:0xffffa00000014cd5	size:0x3
+vmwrite operand op0:rax operand op01:rcx
+INS vmwrite	found sp ins count:242 >> offset:0x14ce9	va:0xffffa00000014ce9	size:0x3
+vmread operands op0:rax op1:0x0 rsp
+INS vmread	found sp ins count:243 >> offset:0x14dbf	va:0xffffa00000014dbf	size:0x4
+vmread operands op0:rax op1:0x8 rsp
+INS vmread	found sp ins count:244 >> offset:0x14ea8	va:0xffffa00000014ea8	size:0x5
+vmread operands op0:rax op1:0x10 rsp
+INS vmread	found sp ins count:245 >> offset:0x14ed1	va:0xffffa00000014ed1	size:0x5
+vmwrite operand op0:rax operand op01:rcx
+INS vmwrite	found sp ins count:246 >> offset:0x14f01	va:0xffffa00000014f01	size:0x3
+vmread operands op0:rbx op1:0x10 rsp
+INS vmread	found sp ins count:247 >> offset:0x14faf	va:0xffffa00000014faf	size:0x5
+vmwrite operand op0:rax operand op01:rbx
+INS vmwrite	found sp ins count:248 >> offset:0x14fcd	va:0xffffa00000014fcd	size:0x3
+vmwrite operand op0:rax operand op01:rcx
+INS vmwrite	found sp ins count:249 >> offset:0x14fe4	va:0xffffa00000014fe4	size:0x3
+vmwrite operand op0:rax operand op01:rcx
+INS vmwrite	found sp ins count:250 >> offset:0x14ff8	va:0xffffa00000014ff8	size:0x3
+vmwrite operand op0:rax operand op01:rcx
+INS vmwrite	found sp ins count:251 >> offset:0x150d7	va:0xffffa000000150d7	size:0x3
+vmwrite operand op0:rax operand op01:rcx
+INS vmwrite	found sp ins count:252 >> offset:0x150eb	va:0xffffa000000150eb	size:0x3
+vmread operands op0:rax op1:0x18 rsp
+INS vmread	found sp ins count:253 >> offset:0x1511b	va:0xffffa0000001511b	size:0x5
+vmread operands op0:rax op1:0x10 rsp
+INS vmread	found sp ins count:254 >> offset:0x1512f	va:0xffffa0000001512f	size:0x5
+vmread operands op0:rax op1:0x8 rsp
+INS vmread	found sp ins count:255 >> offset:0x15143	va:0xffffa00000015143	size:0x5
+vmwrite operand op0:rax operand op01:rcx
+INS vmwrite	found sp ins count:256 >> offset:0x15189	va:0xffffa00000015189	size:0x3
+vmread operands op0:rbx op1:0x18 rsp
+INS vmread	found sp ins count:257 >> offset:0x1519b	va:0xffffa0000001519b	size:0x5
+vmwrite operand op0:rax operand op01:rbx
+INS vmwrite	found sp ins count:258 >> offset:0x151b5	va:0xffffa000000151b5	size:0x3
+vmwrite operand op0:rax operand op01:rcx
+INS vmwrite	found sp ins count:259 >> offset:0x15382	va:0xffffa00000015382	size:0x3
+vmread operands op0:rbx op1:0x8 rsp
+INS vmread	found sp ins count:260 >> offset:0x1539e	va:0xffffa0000001539e	size:0x5
+vmwrite operand op0:rax operand op01:rbx
+INS vmwrite	found sp ins count:261 >> offset:0x153b3	va:0xffffa000000153b3	size:0x3
+INS invept	found sp ins count:262 >> offset:0x16325	va:0xffffa00000016325	size:0xa
+vmread operands op0:r15 op1:0x20 rsp
+INS vmread	found sp ins count:263 >> offset:0x16464	va:0xffffa00000016464	size:0x6
+vmwrite operand op0:rax operand op01:r15
+INS vmwrite	found sp ins count:264 >> offset:0x1647e	va:0xffffa0000001647e	size:0x4
+vmread operands op0:rax op1:0x28 rsp
+INS vmread	found sp ins count:265 >> offset:0x16491	va:0xffffa00000016491	size:0x5
+vmread operands op0:rax op1:0x18 rsp
+INS vmread	found sp ins count:266 >> offset:0x16516	va:0xffffa00000016516	size:0x5
+vmread operands op0:rax op1:0x8 rsp
+INS vmread	found sp ins count:267 >> offset:0x165c5	va:0xffffa000000165c5	size:0x5
+INS seamops	found sp ins count:268 >> offset:0x16786	va:0xffffa00000016786	size:0x4
+vmread operands op0:rax op1:0x38 rsp
+INS vmread	found sp ins count:269 >> offset:0x168a5	va:0xffffa000000168a5	size:0x5
+operand op0:0x50 rsp
+INS vmptrld	found sp ins count:270 >> offset:0x16966	va:0xffffa00000016966	size:0x5
+INS invept	found sp ins count:271 >> offset:0x16a96	va:0xffffa00000016a96	size:0x7
+vmwrite operand op0:rax operand op01:rcx
+INS vmwrite	found sp ins count:272 >> offset:0x16af1	va:0xffffa00000016af1	size:0x3
+vmwrite operand op0:rax operand op01:rcx
+INS vmwrite	found sp ins count:273 >> offset:0x16b0a	va:0xffffa00000016b0a	size:0x3
+vmwrite operand op0:rax operand op01:rcx
+INS vmwrite	found sp ins count:274 >> offset:0x16b23	va:0xffffa00000016b23	size:0x3
+vmwrite operand op0:rax operand op01:rcx
+INS vmwrite	found sp ins count:275 >> offset:0x16b3c	va:0xffffa00000016b3c	size:0x3
+vmwrite operand op0:rax operand op01:rcx
+INS vmwrite	found sp ins count:276 >> offset:0x16b55	va:0xffffa00000016b55	size:0x3
+vmwrite operand op0:rax operand op01:rcx
+INS vmwrite	found sp ins count:277 >> offset:0x16b89	va:0xffffa00000016b89	size:0x3
+INS invvpid	found sp ins count:278 >> offset:0x16bc5	va:0xffffa00000016bc5	size:0x7
+INS invvpid	found sp ins count:279 >> offset:0x16bef	va:0xffffa00000016bef	size:0x7
+INS rdmsr	found sp ins count:280 >> offset:0x16d1b	va:0xffffa00000016d1b	size:0x2
+operand op0:0x110 rsp
+INS vmptrld	found sp ins count:281 >> offset:0x16d96	va:0xffffa00000016d96	size:0x8
+operand op0:0x110 rsp
+INS vmptrld	found sp ins count:282 >> offset:0x1702d	va:0xffffa0000001702d	size:0x8
+INS rdmsr	found sp ins count:283 >> offset:0x170d2	va:0xffffa000000170d2	size:0x2
+INS rdmsr	found sp ins count:284 >> offset:0x17153	va:0xffffa00000017153	size:0x2
+vmread operands op0:rax op1:0x78 rsp
+INS vmread	found sp ins count:285 >> offset:0x17192	va:0xffffa00000017192	size:0x5
+vmread operands op0:rax op1:0x70 rsp
+INS vmread	found sp ins count:286 >> offset:0x171a6	va:0xffffa000000171a6	size:0x5
+vmread operands op0:rax op1:0x68 rsp
+INS vmread	found sp ins count:287 >> offset:0x171ba	va:0xffffa000000171ba	size:0x5
+vmread operands op0:rax op1:0x110 rsp
+INS vmread	found sp ins count:288 >> offset:0x17692	va:0xffffa00000017692	size:0x8
+vmread operands op0:rax op1:0x108 rsp
+INS vmread	found sp ins count:289 >> offset:0x176bb	va:0xffffa000000176bb	size:0x8
+vmread operands op0:rax op1:0x108 rsp
+INS vmread	found sp ins count:290 >> offset:0x176db	va:0xffffa000000176db	size:0x8
+vmread operands op0:rax op1:0x108 rsp
+INS vmread	found sp ins count:291 >> offset:0x176fa	va:0xffffa000000176fa	size:0x8
+vmread operands op0:rax op1:0x100 rsp
+INS vmread	found sp ins count:292 >> offset:0x17719	va:0xffffa00000017719	size:0x8
+vmread operands op0:rax op1:0xf0 rsp
+INS vmread	found sp ins count:293 >> offset:0x17772	va:0xffffa00000017772	size:0x8
+vmread operands op0:rax op1:0xf8 rsp
+INS vmread	found sp ins count:294 >> offset:0x17789	va:0xffffa00000017789	size:0x8
+vmread operands op0:rax op1:0xe0 rsp
+INS vmread	found sp ins count:295 >> offset:0x177db	va:0xffffa000000177db	size:0x8
+vmread operands op0:rax op1:0xe8 rsp
+INS vmread	found sp ins count:296 >> offset:0x177f2	va:0xffffa000000177f2	size:0x8
+vmread operands op0:rax op1:0xd8 rsp
+INS vmread	found sp ins count:297 >> offset:0x1783c	va:0xffffa0000001783c	size:0x8
+vmread operands op0:rax op1:0xd0 rsp
+INS vmread	found sp ins count:298 >> offset:0x17853	va:0xffffa00000017853	size:0x8
+operand op0:0x110 rsp
+INS vmptrld	found sp ins count:299 >> offset:0x178d6	va:0xffffa000000178d6	size:0x8
+INS invept	found sp ins count:300 >> offset:0x17a34	va:0xffffa00000017a34	size:0xb
+INS wrmsr	found sp ins count:301 >> offset:0x17a87	va:0xffffa00000017a87	size:0x2
+vmread operands op0:rbx op1:0x110 rsp
+INS vmread	found sp ins count:302 >> offset:0x17cad	va:0xffffa00000017cad	size:0x8
+vmwrite operand op0:rax operand op01:rbx
+INS vmwrite	found sp ins count:303 >> offset:0x17ccf	va:0xffffa00000017ccf	size:0x3
+vmread operands op0:rbx op1:0x110 rsp
+INS vmread	found sp ins count:304 >> offset:0x17de0	va:0xffffa00000017de0	size:0x8
+vmwrite operand op0:rax operand op01:rbx
+INS vmwrite	found sp ins count:305 >> offset:0x17e02	va:0xffffa00000017e02	size:0x3
+vmread operands op0:rbx op1:0x60 rsp
+INS vmread	found sp ins count:306 >> offset:0x17e1c	va:0xffffa00000017e1c	size:0x5
+vmwrite operand op0:rcx operand op01:rbx
+INS vmwrite	found sp ins count:307 >> offset:0x17e4b	va:0xffffa00000017e4b	size:0x3
+vmwrite operand op0:rax operand op01:rcx
+INS vmwrite	found sp ins count:308 >> offset:0x17ebb	va:0xffffa00000017ebb	size:0x3
+vmread operands op0:rax op1:0x20 r14
+INS vmread	found sp ins count:309 >> offset:0x186eb	va:0xffffa000000186eb	size:0x5
+vmread operands op0:rax op1:0x80 r14
+INS vmread	found sp ins count:310 >> offset:0x186ff	va:0xffffa000000186ff	size:0x8
+vmread operands op0:rax op1:0x88 r14
+INS vmread	found sp ins count:311 >> offset:0x18716	va:0xffffa00000018716	size:0x8
+vmread operands op0:rax op1:0x90 r14
+INS vmread	found sp ins count:312 >> offset:0x1872d	va:0xffffa0000001872d	size:0x8
+vmread operands op0:rax op1:0x10 rsp
+INS vmread	found sp ins count:313 >> offset:0x1874d	va:0xffffa0000001874d	size:0x5
+INS rdmsr	found sp ins count:314 >> offset:0x18bad	va:0xffffa00000018bad	size:0x2
+INS rdmsr	found sp ins count:315 >> offset:0x18bc5	va:0xffffa00000018bc5	size:0x2
+INS rdmsr	found sp ins count:316 >> offset:0x18c35	va:0xffffa00000018c35	size:0x2
+INS rdmsr	found sp ins count:317 >> offset:0x18c75	va:0xffffa00000018c75	size:0x2
+INS rdmsr	found sp ins count:318 >> offset:0x18c97	va:0xffffa00000018c97	size:0x2
+INS rdmsr	found sp ins count:319 >> offset:0x18caf	va:0xffffa00000018caf	size:0x2
+INS rdmsr	found sp ins count:320 >> offset:0x18cc7	va:0xffffa00000018cc7	size:0x2
+INS rdmsr	found sp ins count:321 >> offset:0x18cdf	va:0xffffa00000018cdf	size:0x2
+INS rdmsr	found sp ins count:322 >> offset:0x18cf7	va:0xffffa00000018cf7	size:0x2
+INS rdmsr	found sp ins count:323 >> offset:0x18d0f	va:0xffffa00000018d0f	size:0x2
+INS rdmsr	found sp ins count:324 >> offset:0x18d27	va:0xffffa00000018d27	size:0x2
+INS wrmsr	found sp ins count:325 >> offset:0x18d7a	va:0xffffa00000018d7a	size:0x2
+operand op0:0x28 rsp
+INS vmptrld	found sp ins count:326 >> offset:0x18e31	va:0xffffa00000018e31	size:0x5
+INS wrmsr	found sp ins count:327 >> offset:0x18ece	va:0xffffa00000018ece	size:0x2
+INS wrmsr	found sp ins count:328 >> offset:0x18ef8	va:0xffffa00000018ef8	size:0x2
+INS wrmsr	found sp ins count:329 >> offset:0x18f11	va:0xffffa00000018f11	size:0x2
+INS wrmsr	found sp ins count:330 >> offset:0x18f68	va:0xffffa00000018f68	size:0x2
+INS wrmsr	found sp ins count:331 >> offset:0x18f8a	va:0xffffa00000018f8a	size:0x2
+INS wrmsr	found sp ins count:332 >> offset:0x18fa3	va:0xffffa00000018fa3	size:0x2
+INS wrmsr	found sp ins count:333 >> offset:0x18fbc	va:0xffffa00000018fbc	size:0x2
+INS wrmsr	found sp ins count:334 >> offset:0x18fd5	va:0xffffa00000018fd5	size:0x2
+INS wrmsr	found sp ins count:335 >> offset:0x18fee	va:0xffffa00000018fee	size:0x2
+INS wrmsr	found sp ins count:336 >> offset:0x19007	va:0xffffa00000019007	size:0x2
+INS wrmsr	found sp ins count:337 >> offset:0x19020	va:0xffffa00000019020	size:0x2
+INS wrmsr	found sp ins count:338 >> offset:0x19039	va:0xffffa00000019039	size:0x2
+INS wrmsr	found sp ins count:339 >> offset:0x19052	va:0xffffa00000019052	size:0x2
+INS wrmsr	found sp ins count:340 >> offset:0x1906b	va:0xffffa0000001906b	size:0x2
+INS rdmsr	found sp ins count:341 >> offset:0x19072	va:0xffffa00000019072	size:0x2
+INS wrmsr	found sp ins count:342 >> offset:0x19079	va:0xffffa00000019079	size:0x2
+INS wrmsr	found sp ins count:343 >> offset:0x1909c	va:0xffffa0000001909c	size:0x2
+INS wrmsr	found sp ins count:344 >> offset:0x190b5	va:0xffffa000000190b5	size:0x2
+INS wrmsr	found sp ins count:345 >> offset:0x190ce	va:0xffffa000000190ce	size:0x2
+INS wrmsr	found sp ins count:346 >> offset:0x190e7	va:0xffffa000000190e7	size:0x2
+INS wrmsr	found sp ins count:347 >> offset:0x19100	va:0xffffa00000019100	size:0x2
+INS wrmsr	found sp ins count:348 >> offset:0x1911f	va:0xffffa0000001911f	size:0x2
+INS wrmsr	found sp ins count:349 >> offset:0x19138	va:0xffffa00000019138	size:0x2
+INS wrmsr	found sp ins count:350 >> offset:0x19153	va:0xffffa00000019153	size:0x2
+INS wrmsr	found sp ins count:351 >> offset:0x19170	va:0xffffa00000019170	size:0x2
+vmread operands op0:rbx op1:0x28 rsp
+INS vmread	found sp ins count:352 >> offset:0x19177	va:0xffffa00000019177	size:0x5
+vmwrite operand op0:rax operand op01:rbx
+INS vmwrite	found sp ins count:353 >> offset:0x19195	va:0xffffa00000019195	size:0x3
+vmwrite operand op0:rax operand op01:rcx
+INS vmwrite	found sp ins count:354 >> offset:0x191b3	va:0xffffa000000191b3	size:0x3
+vmwrite operand op0:rax operand op01:rcx
+INS vmwrite	found sp ins count:355 >> offset:0x191d1	va:0xffffa000000191d1	size:0x3
+vmwrite operand op0:rax operand op01:rcx
+INS vmwrite	found sp ins count:356 >> offset:0x191f0	va:0xffffa000000191f0	size:0x3
+vmwrite operand op0:rax operand op01:rcx
+INS vmwrite	found sp ins count:357 >> offset:0x19207	va:0xffffa00000019207	size:0x3
+INS rdmsr	found sp ins count:358 >> offset:0x1924d	va:0xffffa0000001924d	size:0x2
+INS rdmsr	found sp ins count:359 >> offset:0x19276	va:0xffffa00000019276	size:0x2
+INS rdmsr	found sp ins count:360 >> offset:0x192c6	va:0xffffa000000192c6	size:0x2
+INS rdmsr	found sp ins count:361 >> offset:0x192f3	va:0xffffa000000192f3	size:0x2
+INS rdmsr	found sp ins count:362 >> offset:0x1930d	va:0xffffa0000001930d	size:0x2
+INS rdmsr	found sp ins count:363 >> offset:0x19332	va:0xffffa00000019332	size:0x2
+INS rdmsr	found sp ins count:364 >> offset:0x1934a	va:0xffffa0000001934a	size:0x2
+INS rdmsr	found sp ins count:365 >> offset:0x19362	va:0xffffa00000019362	size:0x2
+INS rdmsr	found sp ins count:366 >> offset:0x19388	va:0xffffa00000019388	size:0x2
+INS rdmsr	found sp ins count:367 >> offset:0x193a0	va:0xffffa000000193a0	size:0x2
+INS rdmsr	found sp ins count:368 >> offset:0x193b8	va:0xffffa000000193b8	size:0x2
+INS rdmsr	found sp ins count:369 >> offset:0x193d0	va:0xffffa000000193d0	size:0x2
+INS rdmsr	found sp ins count:370 >> offset:0x193e8	va:0xffffa000000193e8	size:0x2
+vmread operands op0:rax op1:0x80 rsp
+INS vmread	found sp ins count:371 >> offset:0x19517	va:0xffffa00000019517	size:0x8
+vmread operands op0:rax op1:0x78 rsp
+INS vmread	found sp ins count:372 >> offset:0x1952e	va:0xffffa0000001952e	size:0x5
+vmread operands op0:rax op1:0x70 rsp
+INS vmread	found sp ins count:373 >> offset:0x19542	va:0xffffa00000019542	size:0x5
+vmread operands op0:rax op1:0x68 rsp
+INS vmread	found sp ins count:374 >> offset:0x19556	va:0xffffa00000019556	size:0x5
+vmread operands op0:rax op1:0x60 rsp
+INS vmread	found sp ins count:375 >> offset:0x1956a	va:0xffffa0000001956a	size:0x5
+vmread operands op0:rax op1:0x58 rsp
+INS vmread	found sp ins count:376 >> offset:0x1957e	va:0xffffa0000001957e	size:0x5
+vmread operands op0:rax op1:0x50 rsp
+INS vmread	found sp ins count:377 >> offset:0x19592	va:0xffffa00000019592	size:0x5
+vmread operands op0:rax op1:0x90 rsp
+INS vmread	found sp ins count:378 >> offset:0x19774	va:0xffffa00000019774	size:0x8
+vmread operands op0:rax op1:0x90 rsp
+INS vmread	found sp ins count:379 >> offset:0x19793	va:0xffffa00000019793	size:0x8
+vmread operands op0:rax op1:0x90 rsp
+INS vmread	found sp ins count:380 >> offset:0x197b2	va:0xffffa000000197b2	size:0x8
+vmread operands op0:rax op1:0x88 rsp
+INS vmread	found sp ins count:381 >> offset:0x197d1	va:0xffffa000000197d1	size:0x8
+operand op0:0x98 rsp
+INS vmptrld	found sp ins count:382 >> offset:0x198a3	va:0xffffa000000198a3	size:0x8
+vmwrite operand op0:rax operand op01:rcx
+INS vmwrite	found sp ins count:383 >> offset:0x198de	va:0xffffa000000198de	size:0x3
+vmread operands op0:rax op1:0x10 rsp
+INS vmread	found sp ins count:384 >> offset:0x19b3c	va:0xffffa00000019b3c	size:0x5
+vmread operands op0:rax op1:0x8 rsp
+INS vmread	found sp ins count:385 >> offset:0x19b4c	va:0xffffa00000019b4c	size:0x5
+vmread operands op0:rax op1:0x10 rsp
+INS vmread	found sp ins count:386 >> offset:0x19bfe	va:0xffffa00000019bfe	size:0x5
+INS rdmsr	found sp ins count:387 >> offset:0x19cc7	va:0xffffa00000019cc7	size:0x2
+vmread operands op0:rbx op1:0x18 rsp
+INS vmread	found sp ins count:388 >> offset:0x19d20	va:0xffffa00000019d20	size:0x5
+vmwrite operand op0:rax operand op01:rbx
+INS vmwrite	found sp ins count:389 >> offset:0x19d39	va:0xffffa00000019d39	size:0x3
+vmread operands op0:rax op1:0x8 rsp
+INS vmread	found sp ins count:390 >> offset:0x19d8c	va:0xffffa00000019d8c	size:0x5
+vmread operands op0:rax op1:0x18 rsp
+INS vmread	found sp ins count:391 >> offset:0x19da0	va:0xffffa00000019da0	size:0x5
+vmread operands op0:r14 op1:0x18 rsp
+INS vmread	found sp ins count:392 >> offset:0x19e31	va:0xffffa00000019e31	size:0x6
+vmwrite operand op0:rax operand op01:r14
+INS vmwrite	found sp ins count:393 >> offset:0x19e4b	va:0xffffa00000019e4b	size:0x4
+vmread operands op0:rax op1:0x18 rsp
+INS vmread	found sp ins count:394 >> offset:0x19f10	va:0xffffa00000019f10	size:0x5
+vmwrite operand op0:rbx operand op01:rax
+INS vmwrite	found sp ins count:395 >> offset:0x19fc8	va:0xffffa00000019fc8	size:0x3
+vmread operands op0:rax op1:0x10 rsp
+INS vmread	found sp ins count:396 >> offset:0x1a07b	va:0xffffa0000001a07b	size:0x5
+vmread operands op0:rax op1:0x8 rsp
+INS vmread	found sp ins count:397 >> offset:0x1a20b	va:0xffffa0000001a20b	size:0x5
+rdgsbase operand op0:r14 detected
+INS rdgsbase	found sp ins count:398 >> offset:0x1a2f5	va:0xffffa0000001a2f5	size:0x5
+vmread operands op0:rax op1:0x10 rsp
+INS vmread	found sp ins count:399 >> offset:0x1a30d	va:0xffffa0000001a30d	size:0x5
+INS rdmsr	found sp ins count:400 >> offset:0x1a38f	va:0xffffa0000001a38f	size:0x2
+INS wrmsr	found sp ins count:401 >> offset:0x1a3b3	va:0xffffa0000001a3b3	size:0x2
+vmread operands op0:rax op1:0x8 rsp
+INS vmread	found sp ins count:402 >> offset:0x1a3ba	va:0xffffa0000001a3ba	size:0x5
+INS wrmsr	found sp ins count:403 >> offset:0x1a3e8	va:0xffffa0000001a3e8	size:0x2
+INS rdmsr	found sp ins count:404 >> offset:0x1a403	va:0xffffa0000001a403	size:0x2
+INS rdmsr	found sp ins count:405 >> offset:0x1a41e	va:0xffffa0000001a41e	size:0x2
+INS wrmsr	found sp ins count:406 >> offset:0x1a43b	va:0xffffa0000001a43b	size:0x2
+INS wrmsr	found sp ins count:407 >> offset:0x1ae53	va:0xffffa0000001ae53	size:0x2
+rdfsbase operand op0:rcx detected
+INS rdfsbase	found sp ins count:408 >> offset:0x1af0f	va:0xffffa0000001af0f	size:0x5
+INS wrmsr	found sp ins count:409 >> offset:0x1b02d	va:0xffffa0000001b02d	size:0x2
+vmread operands op0:rax op1:0x1c0 rsp
+INS vmread	found sp ins count:410 >> offset:0x1bcab	va:0xffffa0000001bcab	size:0x8
+INS rdmsr	found sp ins count:411 >> offset:0x1bcc2	va:0xffffa0000001bcc2	size:0x2
+INS rdmsr	found sp ins count:412 >> offset:0x1d977	va:0xffffa0000001d977	size:0x2
+INS rdmsr	found sp ins count:413 >> offset:0x1d98e	va:0xffffa0000001d98e	size:0x2
+INS rdmsr	found sp ins count:414 >> offset:0x1d9c2	va:0xffffa0000001d9c2	size:0x2
+INS rdmsr	found sp ins count:415 >> offset:0x1da04	va:0xffffa0000001da04	size:0x2
+INS wrmsr	found sp ins count:416 >> offset:0x1da24	va:0xffffa0000001da24	size:0x2
+INS rdmsr	found sp ins count:417 >> offset:0x1da2e	va:0xffffa0000001da2e	size:0x2
+INS rdmsr	found sp ins count:418 >> offset:0x1da52	va:0xffffa0000001da52	size:0x2
+INS rdmsr	found sp ins count:419 >> offset:0x1da88	va:0xffffa0000001da88	size:0x2
+INS rdmsr	found sp ins count:420 >> offset:0x1da9f	va:0xffffa0000001da9f	size:0x2
+INS rdmsr	found sp ins count:421 >> offset:0x1dab6	va:0xffffa0000001dab6	size:0x2
+INS rdmsr	found sp ins count:422 >> offset:0x1dacd	va:0xffffa0000001dacd	size:0x2
+INS rdmsr	found sp ins count:423 >> offset:0x1db44	va:0xffffa0000001db44	size:0x2
+INS rdmsr	found sp ins count:424 >> offset:0x1db91	va:0xffffa0000001db91	size:0x2
+INS rdmsr	found sp ins count:425 >> offset:0x1dba8	va:0xffffa0000001dba8	size:0x2
+INS wrmsr	found sp ins count:426 >> offset:0x1dc7c	va:0xffffa0000001dc7c	size:0x2
+INS seamops	found sp ins count:427 >> offset:0x1dc99	va:0xffffa0000001dc99	size:0x4
+INS seamops	found sp ins count:428 >> offset:0x1dd3e	va:0xffffa0000001dd3e	size:0x4
+rdrand operand op0:rax detected
+INS rdrand	found sp ins count:429 >> offset:0x1ddcd	va:0xffffa0000001ddcd	size:0x4
+vmwrite operand op0:rbx operand op01:rax
+INS vmwrite	found sp ins count:430 >> offset:0x1de37	va:0xffffa0000001de37	size:0x3
+INS rdmsr	found sp ins count:431 >> offset:0x1dfad	va:0xffffa0000001dfad	size:0x2
+INS rdmsr	found sp ins count:432 >> offset:0x1dfd4	va:0xffffa0000001dfd4	size:0x2
+vmread operands op0:rax op1:0xb0 rsp
+INS vmread	found sp ins count:433 >> offset:0x1e9fe	va:0xffffa0000001e9fe	size:0x8
+INS rdmsr	found sp ins count:434 >> offset:0x1ea15	va:0xffffa0000001ea15	size:0x2
+vmread operands op0:rax op1:0xb0 rsp
+INS vmread	found sp ins count:435 >> offset:0x1ece5	va:0xffffa0000001ece5	size:0x8
+INS rdmsr	found sp ins count:436 >> offset:0x1ecfc	va:0xffffa0000001ecfc	size:0x2
+operand op0:0x68 rsp
+INS vmptrld	found sp ins count:437 >> offset:0x20395	va:0xffffa00000020395	size:0x5
+INS rdmsr	found sp ins count:438 >> offset:0x204ed	va:0xffffa000000204ed	size:0x2
+operand op0:0x68 rsp
+INS vmptrld	found sp ins count:439 >> offset:0x20625	va:0xffffa00000020625	size:0x5
+operand op0:0x68 rsp
+INS vmptrld	found sp ins count:440 >> offset:0x20671	va:0xffffa00000020671	size:0x5
+INS invept	found sp ins count:441 >> offset:0x20ada	va:0xffffa00000020ada	size:0x6
+INS seamops	found sp ins count:442 >> offset:0x20aec	va:0xffffa00000020aec	size:0x4
+vmwrite operand op0:rax operand op01:rcx
+INS vmwrite	found sp ins count:443 >> offset:0x20b5f	va:0xffffa00000020b5f	size:0x3
+operand op0:0xa8 rsp
+INS vmptrld	found sp ins count:444 >> offset:0x229d9	va:0xffffa000000229d9	size:0x8
+INS wrmsr	found sp ins count:445 >> offset:0x2331b	va:0xffffa0000002331b	size:0x2
+vmread operands op0:rsi op1:0x18 rsp
+INS vmread	found sp ins count:446 >> offset:0x2332d	va:0xffffa0000002332d	size:0x5
+INS rdmsr	found sp ins count:447 >> offset:0x2333d	va:0xffffa0000002333d	size:0x2
+vmread operands op0:rax op1:0x180 rsp
+INS vmread	found sp ins count:448 >> offset:0x24237	va:0xffffa00000024237	size:0x8
+INS rdmsr	found sp ins count:449 >> offset:0x2424e	va:0xffffa0000002424e	size:0x2
+vmread operands op0:rax op1:0x180 rsp
+INS vmread	found sp ins count:450 >> offset:0x244d7	va:0xffffa000000244d7	size:0x8
+INS rdmsr	found sp ins count:451 >> offset:0x244ee	va:0xffffa000000244ee	size:0x2
+INS rdmsr	found sp ins count:452 >> offset:0x25bc4	va:0xffffa00000025bc4	size:0x2
+INS rdmsr	found sp ins count:453 >> offset:0x25f4e	va:0xffffa00000025f4e	size:0x2
+INS invept	found sp ins count:454 >> offset:0x268b0	va:0xffffa000000268b0	size:0x7
+vmread operands op0:rax op1:0x8 rsp
+INS vmread	found sp ins count:455 >> offset:0x28bae	va:0xffffa00000028bae	size:0x5
+vmread operands op0:r14 op1:0x0 rsp
+INS vmread	found sp ins count:456 >> offset:0x28c07	va:0xffffa00000028c07	size:0x5
+vmwrite operand op0:rax operand op01:r14
+INS vmwrite	found sp ins count:457 >> offset:0x28c32	va:0xffffa00000028c32	size:0x4
+INS wrmsr	found sp ins count:458 >> offset:0x28dfa	va:0xffffa00000028dfa	size:0x2
+operand op0:0x18 rsp
+INS vmptrld	found sp ins count:459 >> offset:0x28edb	va:0xffffa00000028edb	size:0x5
+vmread operands op0:rax op1:0x10 rsp
+INS vmread	found sp ins count:460 >> offset:0x28efa	va:0xffffa00000028efa	size:0x5
+vmwrite operand op0:rax operand op01:rcx
+INS vmwrite	found sp ins count:461 >> offset:0x28f2b	va:0xffffa00000028f2b	size:0x3
+operand op0:0x18 rsp
+INS vmptrld	found sp ins count:462 >> offset:0x28f85	va:0xffffa00000028f85	size:0x5
+vmread operands op0:rax op1:0x20 rsp
+INS vmread	found sp ins count:463 >> offset:0x29070	va:0xffffa00000029070	size:0x5
+vmread operands op0:rax op1:0x18 rsp
+INS vmread	found sp ins count:464 >> offset:0x29093	va:0xffffa00000029093	size:0x5
+vmread operands op0:rax op1:0x28 rsp
+INS vmread	found sp ins count:465 >> offset:0x291bc	va:0xffffa000000291bc	size:0x5
+vmread operands op0:rax op1:0x168 rsp
+INS vmread	found sp ins count:466 >> offset:0x2a741	va:0xffffa0000002a741	size:0x8
+INS rdmsr	found sp ins count:467 >> offset:0x2a758	va:0xffffa0000002a758	size:0x2
+vmread operands op0:rax op1:0xa8 rsp
+INS vmread	found sp ins count:468 >> offset:0x2c75f	va:0xffffa0000002c75f	size:0x8
+INS rdmsr	found sp ins count:469 >> offset:0x2c772	va:0xffffa0000002c772	size:0x2
+vmread operands op0:rax op1:0x120 rsp
+INS vmread	found sp ins count:470 >> offset:0x2e030	va:0xffffa0000002e030	size:0x8
+INS rdmsr	found sp ins count:471 >> offset:0x2e047	va:0xffffa0000002e047	size:0x2
+INS rdmsr	found sp ins count:472 >> offset:0x2ed6c	va:0xffffa0000002ed6c	size:0x2
+vmread operands op0:rax op1:0xc8 rsp
+INS vmread	found sp ins count:473 >> offset:0x2f644	va:0xffffa0000002f644	size:0x8
+INS rdmsr	found sp ins count:474 >> offset:0x2f657	va:0xffffa0000002f657	size:0x2
+vmread operands op0:rax op1:0x98 rsp
+INS vmread	found sp ins count:475 >> offset:0x2fe75	va:0xffffa0000002fe75	size:0x8
+INS rdmsr	found sp ins count:476 >> offset:0x2fe8c	va:0xffffa0000002fe8c	size:0x2
+vmread operands op0:rax op1:0xd8 rsp
+INS vmread	found sp ins count:477 >> offset:0x30d63	va:0xffffa00000030d63	size:0x8
+INS rdmsr	found sp ins count:478 >> offset:0x30d76	va:0xffffa00000030d76	size:0x2
+vmread operands op0:rax op1:0x98 rsp
+INS vmread	found sp ins count:479 >> offset:0x31335	va:0xffffa00000031335	size:0x8
+INS rdmsr	found sp ins count:480 >> offset:0x3134c	va:0xffffa0000003134c	size:0x2
+operand op0:0xf0 rsp
+INS vmptrld	found sp ins count:481 >> offset:0x31c00	va:0xffffa00000031c00	size:0x8
+operand op0:0xd8 rsp
+INS vmptrld	found sp ins count:482 >> offset:0x324b9	va:0xffffa000000324b9	size:0x8
+vmread operands op0:rax op1:0xd8 rsp
+INS vmread	found sp ins count:483 >> offset:0x32527	va:0xffffa00000032527	size:0x8
+INS rdmsr	found sp ins count:484 >> offset:0x3253a	va:0xffffa0000003253a	size:0x2
+operand op0:0x100 rsp
+INS vmptrld	found sp ins count:485 >> offset:0x32903	va:0xffffa00000032903	size:0x8
+vmread operands op0:rax op1:0xb8 rsp
+INS vmread	found sp ins count:486 >> offset:0x336a4	va:0xffffa000000336a4	size:0x8
+INS rdmsr	found sp ins count:487 >> offset:0x336b7	va:0xffffa000000336b7	size:0x2
+operand op0:0xd8 rsp
+INS vmptrld	found sp ins count:488 >> offset:0x33c11	va:0xffffa00000033c11	size:0x8
+operand op0:0xd8 rsp
+INS vmptrld	found sp ins count:489 >> offset:0x34410	va:0xffffa00000034410	size:0x8
+vmread operands op0:rax op1:0xd8 rsp
+INS vmread	found sp ins count:490 >> offset:0x3449d	va:0xffffa0000003449d	size:0x8
+INS rdmsr	found sp ins count:491 >> offset:0x344b0	va:0xffffa000000344b0	size:0x2
+INS vmresume	found sp ins count:492 >> offset:0x3566f	va:0xffffa0000003566f	size:0x3
+INS vmlaunch	found sp ins count:493 >> offset:0x3567c	va:0xffffa0000003567c	size:0x3
+INS seamret	found sp ins count:494 >> offset:0x357dc	va:0xffffa000000357dc	size:0x4
+INS cpuid	found sp ins count:495 >> offset:0x41d98	va:0xffffa00000041d98	size:0x2
+INS cpuid	found sp ins count:496 >> offset:0x41dca	va:0xffffa00000041dca	size:0x2
+INS cpuid	found sp ins count:497 >> offset:0x41e0a	va:0xffffa00000041e0a	size:0x2
+INS cpuid	found sp ins count:498 >> offset:0x41ea8	va:0xffffa00000041ea8	size:0x2
+INS cpuid	found sp ins count:499 >> offset:0x41ed3	va:0xffffa00000041ed3	size:0x2
+INS cpuid	found sp ins count:500 >> offset:0x41ee8	va:0xffffa00000041ee8	size:0x2
+INS cpuid	found sp ins count:501 >> offset:0x41f12	va:0xffffa00000041f12	size:0x2
+INS cpuid	found sp ins count:502 >> offset:0x41f34	va:0xffffa00000041f34	size:0x2
+special instructuons count: 503
+data/tdxmodule/libtdx-khole-edit-write.ins size : 0x3f
+data/tdxmodule/libtdx-seamentry.address offset: 0x35684
+data/tdxmodule/libtdx-tdexit-entry.address offset: 0x35554
+99ec 9cb8
+com->khole_data.khole_rgn_base:0xffffa00200000000
+com->khole_data.khole_rgn_size:0x200000
+com->khole_data.khole_edit_rgn_size: 1000
+lp:0 com->lp_khole_state[lp].khole_edit_rgn_pa: 5cef000
+lp:1 com->lp_khole_state[lp].khole_edit_rgn_pa: 5cef400
+lp:2 com->lp_khole_00000005f9	size:0x2
+INS rdmsr	found sp ins count:6 >> offset:0x609	va:0xffffb00000000609	size:0x2
+INS rdmsr	found sp ins count:7 >> offset:0x61c	va:0xffffb0000000061c	size:0x2
+INS rdmsr	found sp ins count:8 >> offset:0x62c	va:0xffffb0000000062c	size:0x2
+INS rdmsr	found sp ins count:9 >> offset:0x6c1	va:0xffffb000000006c1	size:0x2
+INS rdmsr	found sp ins count:10 >> offset:0x6d7	va:0xffffb000000006d7	size:0x2
+INS cpuid	found sp ins count:11 >> offset:0x857	va:0xffffb00000000857	size:0x2
+INS cpuid	found sp ins count:12 >> offset:0x8a7	va:0xffffb000000008a7	size:0x2
+INS cpuid	found sp ins count:13 >> offset:0x8d4	va:0xffffb000000008d4	size:0x2
+INS wrmsr	found sp ins count:14 >> offset:0xb6c	va:0xffffb00000000b6c	size:0x2
+INS wrmsr	found sp ins count:15 >> offset:0xc6b	va:0xffffb00000000c6b	size:0x2
+vmread operands op0:rax op1:0x8 rsp
+INS vmread	found sp ins count:16 >> offset:0xe0c	va:0xffffb00000000e0c	size:0x5
+vmread operands op0:rax op1:0x10 rsp
+INS vmread	found sp ins count:17 >> offset:0xe33	va:0xffffb00000000e33	size:0x5
+vmwrite operand op0:rax operand op01:rcx
+INS vmwrite	found sp ins count:18 >> offset:0xe5c	va:0xffffb00000000e5c	size:0x3
+vmread operands op0:rax op1:0x10 rsp
+INS vmread	found sp ins count:19 >> offset:0xe79	va:0xffffb00000000e79	size:0x5
+vmwrite operand op0:rax operand op01:rcx
+INS vmwrite	found sp ins count:20 >> offset:0xeac	va:0xffffb00000000eac	size:0x3
+vmread operands op0:rax op1:0x10 rsp
+INS vmread	found sp ins count:21 >> offset:0xec9	va:0xffffb00000000ec9	size:0x5
+vmread operands op0:rax op1:0x8 rsp
+INS vmread	found sp ins count:22 >> offset:0xee8	va:0xffffb00000000ee8	size:0x5
+vmread operands op0:rax op1:0x0 rsp
+INS vmread	found sp ins count:23 >> offset:0xf07	va:0xffffb00000000f07	size:0x4
+vmwrite operand op0:rcx operand op01:rax
+INS vmwrite	found sp ins count:24 >> offset:0xf50	va:0xffffb00000000f50	size:0x3
+rdgsbase operand op0:rbx detected
+INS rdgsbase	found sp ins count:25 >> offset:0x1bff	va:0xffffb00000001bff	size:0x5
+rdfsbase operand op0:rax detected
+INS rdfsbase	found sp ins count:26 >> offset:0x1cd8	va:0xffffb00000001cd8	size:0x5
+rdrand operand op0:rcx detected
+INS rdrand	found sp ins count:27 >> offset:0x1cef	va:0xffffb00000001cef	size:0x4
+vmwrite operand op0:rbx operand op01:rax
+INS vmwrite	found sp ins count:28 >> offset:0x1d13	va:0xffffb00000001d13	size:0x3
+INS rdmsr	found sp ins count:29 >> offset:0x1d6e	va:0xffffb00000001d6e	size:0x2
+INS rdmsr	found sp ins count:30 >> offset:0x1d8b	va:0xffffb00000001d8b	size:0x2
+INS rdmsr	found sp ins count:31 >> offset:0x1db8	va:0xffffb00000001db8	size:0x2
+INS rdmsr	found sp ins count:32 >> offset:0x1dc9	va:0xffffb00000001dc9	size:0x2
+INS vmclear	found sp ins count:33 >> offset:0x1ff9	va:0xffffb00000001ff9	size:0x9
+rdrand operand op0:rbx detected
+INS rdrand	found sp ins count:34 >> offset:0x2723	va:0xffffb00000002723	size:0x4
+INS rdmsr	found sp ins count:35 >> offset:0x307e	va:0xffffb0000000307e	size:0x2
+INS seamret	found sp ins count:36 >> offset:0x33f4	va:0xffffb000000033f4	size:0x4
+special instructuons count: 37
+pseamldr code instrumentation successful ...
+Fusing tdx sw PDPT with s_smulator PML4, pml4 idx: 96
+Fusing tdx sw PDPT with s_smulator PML4, pml4 idx: 352
+
+va:0xffff900000200000 pa:0x600000 pml4_idx:288
+new pdpt_pa:0x20d000
+pdpt idx:0
+new pd_pa:0x20e000
+pd idx:1
+new pt_pa:0x20f000
+pt idx:0
+
+va:0xffff900000400000 pa:0x800000 pml4_idx:288
+pdpt idx:0
+pd idx:2
+new pt_pa:0x210000
+pt idx:0
+
+va:0xffff900000000000 pa:0x400000 pml4_idx:288
+pdpt idx:0
+pd idx:0
+new pt_pa:0x211000
+pt idx:0
+
+va:0xffff900000002000 pa:0x402000 pml4_idx:288
+pdpt idx:0
+pd idx:0
+pt idx:2
+SE: krover_manager's wait for tdx module install: START
+SE: krover_manager's wait for tdx module install: END
+SE: TDX Mod pml4 pa: 5cfb000 hva:7fffebab9000
+SE: pml4 idx: 0
+SE: pml4 idx: 1
+SE: pml4 idx: 2
+SE: pml4 idx: 3
+SE: pml4 idx: 4
+SE: pml4 idx: 5
+SE: pml4 idx: 6
+SE: pml4 idx: 7
+SE: pml4 idx: 8
+SE: pml4 idx: 9
+SE: pml4 idx: 10
+SE: pml4 idx: 11
+SE: pml4 idx: 12
+SE: pml4 idx: 13
+SE: pml4 idx: 14
+SE: pml4 idx: 15
+SE: pml4 idx: 16
+SE: pml4 idx: 17
+SE: pml4 idx: 18
+SE: pml4 idx: 19
+SE: pml4 idx: 20
+SE: pml4 idx: 21
+SE: pml4 idx: 22
+SE: pml4 idx: 23
+SE: pml4 idx: 24
+SE: pml4 idx: 25
+SE: pml4 idx: 26
+SE: pml4 idx: 27
+SE: pml4 idx: 28
+SE: pml4 idx: 29
+SE: pml4 idx: 30
+SE: pml4 idx: 31
+SE: pml4 idx: 32
+SE: pml4 idx: 33
+SE: pml4 idx: 34
+SE: pml4 idx: 35
+SE: pml4 idx: 36
+SE: pml4 idx: 37
+SE: pml4 idx: 38
+SE: pml4 idx: 39
+SE: pml4 idx: 40
+SE: pml4 idx: 41
+SE: pml4 idx: 42
+SE: pml4 idx: 43
+SE: pml4 idx: 44
+SE: pml4 idx: 45
+SE: pml4 idx: 46
+SE: pml4 idx: 47
+SE: pml4 idx: 48
+SE: pml4 idx: 49
+SE: pml4 idx: 50
+SE: pml4 idx: 51
+SE: pml4 idx: 52
+SE: pml4 idx: 53
+SE: pml4 idx: 54
+SE: pml4 idx: 55
+SE: pml4 idx: 56
+SE: pml4 idx: 57
+SE: pml4 idx: 58
+SE: pml4 idx: 59
+SE: pml4 idx: 60
+SE: pml4 idx: 61
+SE: pml4 idx: 62
+SE: pml4 idx: 63
+SE: pml4 idx: 64
+SE: pml4 idx: 65
+SE: pml4 idx: 66
+SE: pml4 idx: 67
+SE: pml4 idx: 68
+SE: pml4 idx: 69
+SE: pml4 idx: 70
+SE: pml4 idx: 71
+SE: pml4 idx: 72
+SE: pml4 idx: 73
+SE: pml4 idx: 74
+SE: pml4 idx: 75
+SE: pml4 idx: 76
+SE: pml4 idx: 77
+SE: pml4 idx: 78
+SE: pml4 idx: 79
+SE: pml4 idx: 80
+SE: pml4 idx: 81
+SE: pml4 idx: 82
+SE: pml4 idx: 83
+SE: pml4 idx: 84
+SE: pml4 idx: 85
+SE: pml4 idx: 86
+SE: pml4 idx: 87
+SE: pml4 idx: 88
+SE: pml4 idx: 89
+SE: pml4 idx: 90
+SE: pml4 idx: 91
+SE: pml4 idx: 92
+SE: pml4 idx: 93
+SE: pml4 idx: 94
+SE: pml4 idx: 95
+SE: pml4 idx: 96
+SE: pml4 idx: 97
+SE: pml4 idx: 98
+SE: pml4 idx: 99
+SE: pml4 idx: 100
+SE: pml4 idx: 101
+SE: pml4 idx: 102
+SE: pml4 idx: 103
+SE: pml4 idx: 104
+SE: pml4 idx: 105
+SE: pml4 idx: 106
+SE: pml4 idx: 107
+SE: pml4 idx: 108
+SE: pml4 idx: 109
+SE: pml4 idx: 110
+SE: pml4 idx: 111
+SE: pml4 idx: 112
+SE: pml4 idx: 113
+SE: pml4 idx: 114
+SE: pml4 idx: 115
+SE: pml4 idx: 116
+SE: pml4 idx: 117
+SE: pml4 idx: 118
+SE: pml4 idx: 119
+SE: pml4 idx: 120
+SE: pml4 idx: 121
+SE: pml4 idx: 122
+SE: pml4 idx: 123
+SE: pml4 idx: 124
+SE: pml4 idx: 125
+SE: pml4 idx: 126
+SE: pml4 idx: 127
+SE: pml4 idx: 128
+SE: pml4 idx: 129
+SE: pml4 idx: 130
+SE: pml4 idx: 131
+SE: pml4 idx: 132
+SE: pml4 idx: 133
+SE: pml4 idx: 134
+SE: pml4 idx: 135
+SE: pml4 idx: 136
+SE: pml4 idx: 137
+SE: pml4 idx: 138
+SE: pml4 idx: 139
+SE: pml4 idx: 140
+SE: pml4 idx: 141
+SE: pml4 idx: 142
+SE: pml4 idx: 143
+SE: pml4 idx: 144
+SE: pml4 idx: 145
+SE: pml4 idx: 146
+SE: pml4 idx: 147
+SE: pml4 idx: 148
+SE: pml4 idx: 149
+SE: pml4 idx: 150
+SE: pml4 idx: 151
+SE: pml4 idx: 152
+SE: pml4 idx: 153
+SE: pml4 idx: 154
+SE: pml4 idx: 155
+SE: pml4 idx: 156
+SE: pml4 idx: 157
+SE: pml4 idx: 158
+SE: pml4 idx: 159
+SE: pml4 idx: 160
+SE: pml4 idx: 161
+SE: pml4 idx: 162
+SE: pml4 idx: 163
+SE: pml4 idx: 164
+SE: pml4 idx: 165
+SE: pml4 idx: 166
+SE: pml4 idx: 167
+SE: pml4 idx: 168
+SE: pml4 idx: 169
+SE: pml4 idx: 170
+SE: pml4 idx: 171
+SE: pml4 idx: 172
+SE: pml4 idx: 173
+SE: pml4 idx: 174
+SE: pml4 idx: 175
+SE: pml4 idx: 176
+SE: pml4 idx: 177
+SE: pml4 idx: 178
+SE: pml4 idx: 179
+SE: pml4 idx: 180
+SE: pml4 idx: 181
+SE: pml4 idx: 182
+SE: pml4 idx: 183
+SE: pml4 idx: 184
+SE: pml4 idx: 185
+SE: pml4 idx: 186
+SE: pml4 idx: 187
+SE: pml4 idx: 188
+SE: pml4 idx: 189
+SE: pml4 idx: 190
+SE: pml4 idx: 191
+SE: pml4 idx: 192
+SE: pml4 idx: 193
+SE: pml4 idx: 194
+SE: pml4 idx: 195
+SE: pml4 idx: 196
+SE: pml4 idx: 197
+SE: pml4 idx: 198
+SE: pml4 idx: 199
+SE: pml4 idx: 200
+SE: pml4 idx: 201
+SE: pml4 idx: 202
+SE: pml4 idx: 203
+SE: pml4 idx: 204
+SE: pml4 idx: 205
+SE: pml4 idx: 206
+SE: pml4 idx: 207
+SE: pml4 idx: 208
+SE: pml4 idx: 209
+SE: pml4 idx: 210
+SE: pml4 idx: 211
+SE: pml4 idx: 212
+SE: pml4 idx: 213
+SE: pml4 idx: 214
+SE: pml4 idx: 215
+SE: pml4 idx: 216
+SE: pml4 idx: 217
+SE: pml4 idx: 218
+SE: pml4 idx: 219
+SE: pml4 idx: 220
+SE: pml4 idx: 221
+SE: pml4 idx: 222
+SE: pml4 idx: 223
+SE: pml4 idx: 224
+SE: pml4 idx: 225
+SE: pml4 idx: 226
+SE: pml4 idx: 227
+SE: pml4 idx: 228
+SE: pml4 idx: 229
+SE: pml4 idx: 230
+SE: pml4 idx: 231
+SE: pml4 idx: 232
+SE: pml4 idx: 233
+SE: pml4 idx: 234
+SE: pml4 idx: 235
+SE: pml4 idx: 236
+SE: pml4 idx: 237
+SE: pml4 idx: 238
+SE: pml4 idx: 239
+SE: pml4 idx: 240
+SE: pml4 idx: 241
+SE: pml4 idx: 242
+SE: pml4 idx: 243
+SE: pml4 idx: 244
+SE: pml4 idx: 245
+SE: pml4 idx: 246
+SE: pml4 idx: 247
+SE: pml4 idx: 248
+SE: pml4 idx: 249
+SE: pml4 idx: 250
+SE: pml4 idx: 251
+SE: pml4 idx: 252
+SE: pml4 idx: 253
+SE: pml4 idx: 254
+SE: pml4 idx: 255
+SE: pml4 idx: 256
+SE: pml4 idx: 257
+SE: pml4 idx: 258
+SE: pml4 idx: 259
+SE: pml4 idx: 260
+SE: pml4 idx: 261
+SE: pml4 idx: 262
+SE: pml4 idx: 263
+SE: pml4 idx: 264
+SE: pml4 idx: 265
+SE: pml4 idx: 266
+SE: pml4 idx: 267
+SE: pml4 idx: 268
+SE: pml4 idx: 269
+SE: pml4 idx: 270
+SE: pml4 idx: 271
+SE: pml4 idx: 272
+SE: pml4 idx: 273
+SE: pml4 idx: 274
+SE: pml4 idx: 275
+SE: pml4 idx: 276
+SE: pml4 idx: 277
+SE: pml4 idx: 278
+SE: pml4 idx: 279
+SE: pml4 idx: 280
+SE: pml4 idx: 281
+SE: pml4 idx: 282
+SE: pml4 idx: 283
+SE: pml4 idx: 284
+SE: pml4 idx: 285
+SE: pml4 idx: 286
+SE: pml4 idx: 287
+SE: pml4 idx: 288
+SE: pml4 idx: 289
+SE: pml4 idx: 290
+SE: pml4 idx: 291
+SE: pml4 idx: 292
+SE: pml4 idx: 293
+SE: pml4 idx: 294
+SE: pml4 idx: 295
+SE: pml4 idx: 296
+SE: pml4 idx: 297
+SE: pml4 idx: 298
+SE: pml4 idx: 299
+SE: pml4 idx: 300
+SE: pml4 idx: 301
+SE: pml4 idx: 302
+SE: pml4 idx: 303
+SE: pml4 idx: 304
+SE: pml4 idx: 305
+SE: pml4 idx: 306
+SE: pml4 idx: 307
+SE: pml4 idx: 308
+SE: pml4 idx: 309
+SE: pml4 idx: 310
+SE: pml4 idx: 311
+SE: pml4 idx: 312
+SE: pml4 idx: 313
+SE: pml4 idx: 314
+SE: pml4 idx: 315
+SE: pml4 idx: 316
+SE: pml4 idx: 317
+SE: pml4 idx: 318
+SE: pml4 idx: 319
+SE: pml4 idx: 320
+SE: pml4 idx: 321
+SE: pml4 idx: 322
+SE: pml4 idx: 323
+SE: pml4 idx: 324
+SE: pml4 idx: 325
+SE: pml4 idx: 326
+SE: pml4 idx: 327
+SE: pml4 idx: 328
+SE: pml4 idx: 329
+SE: pml4 idx: 330
+SE: pml4 idx: 331
+SE: pml4 idx: 332
+SE: pml4 idx: 333
+SE: pml4 idx: 334
+SE: pml4 idx: 335
+SE: pml4 idx: 336
+SE: pml4 idx: 337
+SE: pml4 idx: 338
+SE: pml4 idx: 339
+SE: pml4 idx: 340
+SE: pml4 idx: 341
+SE: pml4 idx: 342
+SE: pml4 idx: 343
+SE: pml4 idx: 344
+SE: pml4 idx: 345
+SE: pml4 idx: 346
+SE: pml4 idx: 347
+SE: pml4 idx: 348
+SE: pml4 idx: 349
+SE: pml4 idx: 350
+SE: pml4 idx: 351
+SE: pml4 idx: 352
+SE: pml4 idx: 353
+SE: pml4 idx: 354
+SE: pml4 idx: 355
+SE: pml4 idx: 356
+SE: pml4 idx: 357
+SE: pml4 idx: 358
+SE: pml4 idx: 359
+SE: pml4 idx: 360
+SE: pml4 idx: 361
+SE: pml4 idx: 362
+SE: pml4 idx: 363
+SE: pml4 idx: 364
+SE: pml4 idx: 365
+SE: pml4 idx: 366
+SE: pml4 idx: 367
+SE: pml4 idx: 368
+SE: pml4 idx: 369
+SE: pml4 idx: 370
+SE: pml4 idx: 371
+SE: pml4 idx: 372
+SE: pml4 idx: 373
+SE: pml4 idx: 374
+SE: pml4 idx: 375
+SE: pml4 idx: 376
+SE: pml4 idx: 377
+SE: pml4 idx: 378
+SE: pml4 idx: 379
+SE: pml4 idx: 380
+SE: pml4 idx: 381
+SE: pml4 idx: 382
+SE: pml4 idx: 383
+SE: pml4 idx: 384
+SE: pml4 idx: 385
+SE: pml4 idx: 386
+SE: pml4 idx: 387
+SE: pml4 idx: 388
+SE: pml4 idx: 389
+SE: pml4 idx: 390
+SE: pml4 idx: 391
+SE: pml4 idx: 392
+SE: pml4 idx: 393
+SE: pml4 idx: 394
+SE: pml4 idx: 395
+SE: pml4 idx: 396
+SE: pml4 idx: 397
+SE: pml4 idx: 398
+SE: pml4 idx: 399
+SE: pml4 idx: 400
+SE: pml4 idx: 401
+SE: pml4 idx: 402
+SE: pml4 idx: 403
+SE: pml4 idx: 404
+SE: pml4 idx: 405
+SE: pml4 idx: 406
+SE: pml4 idx: 407
+SE: pml4 idx: 408
+SE: pml4 idx: 409
+SE: pml4 idx: 410
+SE: pml4 idx: 411
+SE: pml4 idx: 412
+SE: pml4 idx: 413
+SE: pml4 idx: 414
+SE: pml4 idx: 415
+SE: pml4 idx: 416
+SE: pml4 idx: 417
+SE: pml4 idx: 418
+SE: pml4 idx: 419
+SE: pml4 idx: 420
+SE: pml4 idx: 421
+SE: pml4 idx: 422
+SE: pml4 idx: 423
+SE: pml4 idx: 424
+SE: pml4 idx: 425
+SE: pml4 idx: 426
+SE: pml4 idx: 427
+SE: pml4 idx: 428
+SE: pml4 idx: 429
+SE: pml4 idx: 430
+SE: pml4 idx: 431
+SE: pml4 idx: 432
+SE: pml4 idx: 433
+SE: pml4 idx: 434
+SE: pml4 idx: 435
+SE: pml4 idx: 436
+SE: pml4 idx: 437
+SE: pml4 idx: 438
+SE: pml4 idx: 439
+SE: pml4 idx: 440
+SE: pml4 idx: 441
+SE: pml4 idx: 442
+SE: pml4 idx: 443
+SE: pml4 idx: 444
+SE: pml4 idx: 445
+SE: pml4 idx: 446
+SE: pml4 idx: 447
+SE: pml4 idx: 448
+SE: pml4 idx: 449
+SE: pml4 idx: 450
+SE: pml4 idx: 451
+SE: pml4 idx: 452
+SE: pml4 idx: 453
+SE: pml4 idx: 454
+SE: pml4 idx: 455
+SE: pml4 idx: 456
+SE: pml4 idx: 457
+SE: pml4 idx: 458
+SE: pml4 idx: 459
+SE: pml4 idx: 460
+SE: pml4 idx: 461
+SE: pml4 idx: 462
+SE: pml4 idx: 463
+SE: pml4 idx: 464
+SE: pml4 idx: 465
+SE: pml4 idx: 466
+SE: pml4 idx: 467
+SE: pml4 idx: 468
+SE: pml4 idx: 469
+SE: pml4 idx: 470
+SE: pml4 idx: 471
+SE: pml4 idx: 472
+SE: pml4 idx: 473
+SE: pml4 idx: 474
+SE: pml4 idx: 475
+SE: pml4 idx: 476
+SE: pml4 idx: 477
+SE: pml4 idx: 478
+SE: pml4 idxstate[lp].khole_edit_rgn_pa: 5cef800
+lp:3 com->lp_khole_state[lp].khole_edit_rgn_pa: 5cefc00
+Max Physical Address Width: 46 bits
+com->max_pa_bit_below_hkid: 45
+seam_manager's wait for krover PT update: START
+seam_manager's wait for krover PT update: END
+VMM agent
+init_tdx_module
+tdx call: 33
+########## issuing SEAMCALL TDH_SYS_INIT ----------------------------------------
+########## 0004 SEAMCALL TDH_SYS_INIT SEAMRET status: 0 SUCCESS -----------------
+tdx call: 35
+########## issuing SEAMCALL TDH_SYS_LP_INIT ----------------------------------------
+########## 0005 SEAMCALL TDH_SYS_LP_INIT SEAMRET status: 0 SUCCESS -----------------
+tdx call: 35
+########## issuing SEAMCALL TDH_SYS_LP_INIT ----------------------------------------
+########## 0006 SEAMCALL TDH_SYS_LP_INIT SEAMRET status: 0 SUCCESS -----------------
+tdx call: 35
+########## issuing SEAMCALL TDH_SYS_LP_INIT ----------------------------------------
+########## 0007 SEAMCALL TDH_SYS_LP_INIT SEAMRET status: 0 SUCCESS -----------------
+tdx call: 35
+########## issuing SEAMCALL TDH_SYS_LP_INIT ----------------------------------------
+########## 0008 SEAMCALL TDH_SYS_LP_INIT SEAMRET status: 0 SUCCESS -----------------
+hhkid: 32
+tdx call: 45
+########## issuing SEAMCALL TDH_SYS_CONFIG ----------------------------------------
+########## 0009 SEAMCALL TDH_SYS_CONFIG SEAMRET status: 0 SUCCESS -----------------
+tdx call: 31
+########## issuing SEAMCALL TDH_SYS_KEY_CONFIG ----------------------------------------
+########## 0010 SEAMCALL TDH_SYS_KEY_CONFIG SEAMRET status: 0 SUCCESS -----------------
+tdx call: 36
+########## issuing SEAMCALL TDH_SYS_TDMR_INIT ----------------------------------------
+########## 0011 SEAMCALL TDH_SYS_TDMR_INIT SEAMRET status: 0 SUCCESS -----------------
+tdx call: 36
+########## issuing SEAMCALL TDH_SYS_TDMR_INIT ----------------------------------------
+########## 0012 SEAMCALL TDH_SYS_TDMR_INIT SEAMRET status: 0 SUCCESS -----------------
+tdx call: 36
+########## issuing SEAMCALL TDH_SYS_TDMR_INIT ----------------------------------------
+########## 0013 SEAMCALL TDH_SYS_TDMR_INIT SEAMRET status: 0 SUCCESS -----------------
+tdx call: 36
+########## issuing SEAMCALL TDH_SYS_TDMR_INIT ----------------------------------------
+########## 0014 SEAMCALL TDH_SYS_TDMR_INIT SEAMRET status: 0 SUCCESS -----------------
+tdx call: 36
+########## issuing SEAMCALL TDH_SYS_TDMR_INIT ----------------------------------------
+########## 0015 SEAMCALL TDH_SYS_TDMR_INIT SEAMRET status: 0 SUCCESS -----------------
+tdx call: 36
+########## issuing SEAMCALL TDH_SYS_TDMR_INIT ----------------------------------------
+########## 0016 SEAMCALL TDH_SYS_TDMR_INIT SEAMRET status: 0 SUCCESS -----------------
+tdx call: 36
+########## issuing SEAMCALL TDH_SYS_TDMR_INIT ----------------------------------------
+########## 0017 SEAMCALL TDH_SYS_TDMR_INIT SEAMRET status: 0 SUCCESS -----------------
+tdx call: 36
+########## issuing SEAMCALL TDH_SYS_TDMR_INIT ----------------------------------------
+########## 0018 SEAMCALL TDH_SYS_TDMR_INIT SEAMRET status: 0 SUCCESS -----------------
+tdx call: 36
+########## issuing SEAMCALL TDH_SYS_TDMR_INIT ----------------------------------------
+########## 0019 SEAMCALL TDH_SYS_TDMR_INIT SEAMRET status: 0 SUCCESS -----------------
+tdx call: 36
+########## issuing SEAMCALL TDH_SYS_TDMR_INIT ----------------------------------------
+########## 0020 SEAMCALL TDH_SYS_TDMR_INIT SEAMRET status: 0 SUCCESS -----------------
+tdx call: 36
+########## issuing SEAMCALL TDH_SYS_TDMR_INIT ----------------------------------------
+########## 0021 SEAMCALL TDH_SYS_TDMR_INIT SEAMRET status: 0 SUCCESS -----------------
+tdx call: 36
+########## issuing SEAMCALL TDH_SYS_TDMR_INIT ----------------------------------------
+########## 0022 SEAMCALL TDH_SYS_TDMR_INIT SEAMRET status: 0 SUCCESS -----------------
+tdx call: 36
+########## issuing SEAMCALL TDH_SYS_TDMR_INIT ----------------------------------------
+########## 0023 SEAMCALL TDH_SYS_TDMR_INIT SEAMRET status: 0 SUCCESS -----------------
+tdx call: 36
+########## issuing SEAMCALL TDH_SYS_TDMR_INIT ----------------------------------------
+########## 0024 SEAMCALL TDH_SYS_TDMR_INIT SEAMRET status: 0 SUCCESS -----------------
+tdx call: 36
+########## issuing SEAMCALL TDH_SYS_TDMR_INIT ----------------------------------------
+########## 0025 SEAMCALL TDH_SYS_TDMR_INIT SEAMRET status: 0 SUCCESS -----------------
+tdx call: 36
+########## issuing SEAMCALL TDH_SYS_TDMR_INIT ----------------------------------------
+########## 0026 SEAMCALL TDH_SYS_TDMR_INIT SEAMRET status: 0 SUCCESS -----------------
+tdx call: 36
+########## issuing SEAMCALL TDH_SYS_TDMR_INIT ----------------------------------------
+########## 0027 SEAMCALL TDH_SYS_TDMR_INIT SEAMRET status: 0 SUCCESS -----------------
+tdx call: 36
+########## issuing SEAMCALL TDH_SYS_TDMR_INIT ----------------------------------------
+########## 0028 SEAMCALL TDH_SYS_TDMR_INIT SEAMRET status: 0 SUCCESS -----------------
+tdx call: 36
+########## issuing SEAMCALL TDH_SYS_TDMR_INIT ----------------------------------------
+########## 0029 SEAMCALL TDH_SYS_TDMR_INIT SEAMRET status: 0 SUCCESS -----------------
+tdx call: 36
+########## issuing SEAMCALL TDH_SYS_TDMR_INIT ----------------------------------------
+########## 0030 SEAMCALL TDH_SYS_TDMR_INIT SEAMRET status: 0 SUCCESS -----------------
+tdx call: 36
+########## issuing SEAMCALL TDH_SYS_TDMR_INIT ----------------------------------------
+########## 0031 SEAMCALL TDH_SYS_TDMR_INIT SEAMRET status: 0 SUCCESS -----------------
+tdx call: 36
+########## issuing SEAMCALL TDH_SYS_TDMR_INIT ----------------------------------------
+########## 0032 SEAMCALL TDH_SYS_TDMR_INIT SEAMRET status: 0 SUCCESS -----------------
+tdx call: 36
+########## issuing SEAMCALL TDH_SYS_TDMR_INIT ----------------------------------------
+########## 0033 SEAMCALL TDH_SYS_TDMR_INIT SEAMRET status: 0 SUCCESS -----------------
+tdx call: 36
+########## issuing SEAMCALL TDH_SYS_TDMR_INIT ----------------------------------------
+########## 0034 SEAMCALL TDH_SYS_TDMR_INIT SEAMRET status: 0 SUCCESS -----------------
+tdx call: 36
+########## issuing SEAMCALL TDH_SYS_TDMR_INIT ----------------------------------------
+########## 0035 SEAMCALL TDH_SYS_TDMR_INIT SEAMRET status: 0 SUCCESS -----------------
+tdx call: 36
+########## issuing SEAMCALL TDH_SYS_TDMR_INIT ----------------------------------------
+########## 0036 SEAMCALL TDH_SYS_TDMR_INIT SEAMRET status: 0 SUCCESS -----------------
+tdx call: 36
+########## issuing SEAMCALL TDH_SYS_TDMR_INIT ----------------------------------------
+########## 0037 SEAMCALL TDH_SYS_TDMR_INIT SEAMRET status: 0 SUCCESS -----------------
+tdx call: 36
+########## issuing SEAMCALL TDH_SYS_TDMR_INIT ----------------------------------------
+########## 0038 SEAMCALL TDH_SYS_TDMR_INIT SEAMRET status: 0 SUCCESS -----------------
+tdx call: 36
+########## issuing SEAMCALL TDH_SYS_TDMR_INIT ----------------------------------------
+########## 0039 SEAMCALL TDH_SYS_TDMR_INIT SEAMRET status: 0 SUCCESS -----------------
+tdx call: 36
+########## issuing SEAMCALL TDH_SYS_TDMR_INIT ----------------------------------------
+########## 0040 SEAMCALL TDH_SYS_TDMR_INIT SEAMRET status: 0 SUCCESS -----------------
+tdx call: 36
+########## issuing SEAMCALL TDH_SYS_TDMR_INIT ----------------------------------------
+########## 0041 SEAMCALL TDH_SYS_TDMR_INIT SEAMRET status: 0 SUCCESS -----------------
+tdx call: 36
+########## issuing SEAMCALL TDH_SYS_TDMR_INIT ----------------------------------------
+########## 0042 SEAMCALL TDH_SYS_TDMR_INIT SEAMRET status: 0 SUCCESS -----------------
+tdx call: 36
+########## issuing SEAMCALL TDH_SYS_TDMR_INIT ----------------------------------------
+########## 0043 SEAMCALL TDH_SYS_TDMR_INIT SEAMRET status: 0 SUCCESS -----------------
+tdx call: 36
+########## issuing SEAMCALL TDH_SYS_TDMR_INIT ----------------------------------------
+########## 0044 SEAMCALL TDH_SYS_TDMR_INIT SEAMRET status: 0 SUCCESS -----------------
+tdx call: 36
+########## issuing SEAMCALL TDH_SYS_TDMR_INIT ----------------------------------------
+########## 0045 SEAMCALL TDH_SYS_TDMR_INIT SEAMRET status: 0 SUCCESS -----------------
+tdx call: 36
+########## issuing SEAMCALL TDH_SYS_TDMR_INIT ----------------------------------------
+########## 0046 SEAMCALL TDH_SYS_TDMR_INIT SEAMRET status: 0 SUCCESS -----------------
+tdx call: 36
+########## issuing SEAMCALL TDH_SYS_TDMR_INIT ----------------------------------------
+########## 0047 SEAMCALL TDH_SYS_TDMR_INIT SEAMRET status: 0 SUCCESS -----------------
+tdx call: 36
+########## issuing SEAMCALL TDH_SYS_TDMR_INIT ----------------------------------------
+########## 0048 SEAMCALL TDH_SYS_TDMR_INIT SEAMRET status: 0 SUCCESS -----------------
+tdx call: 36
+########## issuing SEAMCALL TDH_SYS_TDMR_INIT ----------------------------------------
+########## 0049 SEAMCALL TDH_SYS_TDMR_INIT SEAMRET status: 0 SUCCESS -----------------
+tdx call: 36
+########## issuing SEAMCALL TDH_SYS_TDMR_INIT ----------------------------------------
+########## 0050 SEAMCALL TDH_SYS_TDMR_INIT SEAMRET status: 0 SUCCESS -----------------
+tdx call: 36
+########## issuing SEAMCALL TDH_SYS_TDMR_INIT ----------------------------------------
+########## 0051 SEAMCALL TDH_SYS_TDMR_INIT SEAMRET status: 0 SUCCESS -----------------
+tdx call: 36
+########## issuing SEAMCALL TDH_SYS_TDMR_INIT ----------------------------------------
+########## 0052 SEAMCALL TDH_SYS_TDMR_INIT SEAMRET status: 0 SUCCESS -----------------
+tdx call: 36
+########## issuing SEAMCALL TDH_SYS_TDMR_INIT ----------------------------------------
+########## 0053 SEAMCALL TDH_SYS_TDMR_INIT SEAMRET status: 0 SUCCESS -----------------
+tdx call: 36
+########## issuing SEAMCALL TDH_SYS_TDMR_INIT ----------------------------------------
+########## 0054 SEAMCALL TDH_SYS_TDMR_INIT SEAMRET status: 0 SUCCESS -----------------
+tdx call: 36
+########## issuing SEAMCALL TDH_SYS_TDMR_INIT ----------------------------------------
+########## 0055 SEAMCALL TDH_SYS_TDMR_INIT SEAMRET status: 0 SUCCESS -----------------
+tdx call: 36
+########## issuing SEAMCALL TDH_SYS_TDMR_INIT ----------------------------------------
+########## 0056 SEAMCALL TDH_SYS_TDMR_INIT SEAMRET status: 0 SUCCESS -----------------
+tdx call: 36
+########## issuing SEAMCALL TDH_SYS_TDMR_INIT ----------------------------------------
+########## 0057 SEAMCALL TDH_SYS_TDMR_INIT SEAMRET status: 0 SUCCESS -----------------
+tdx call: 36
+########## issuing SEAMCALL TDH_SYS_TDMR_INIT ----------------------------------------
+########## 0058 SEAMCALL TDH_SYS_TDMR_INIT SEAMRET status: 0 SUCCESS -----------------
+tdx call: 36
+########## issuing SEAMCALL TDH_SYS_TDMR_INIT ----------------------------------------
+########## 0059 SEAMCALL TDH_SYS_TDMR_INIT SEAMRET status: 0 SUCCESS -----------------
+tdx call: 36
+########## issuing SEAMCALL TDH_SYS_TDMR_INIT ----------------------------------------
+########## 0060 SEAMCALL TDH_SYS_TDMR_INIT SEAMRET status: 0 SUCCESS -----------------
+tdx call: 36
+########## issuing SEAMCALL TDH_SYS_TDMR_INIT ----------------------------------------
+########## 0061 SEAMCALL TDH_SYS_TDMR_INIT SEAMRET status: 0 SUCCESS -----------------
+tdx call: 36
+########## issuing SEAMCALL TDH_SYS_TDMR_INIT ----------------------------------------
+########## 0062 SEAMCALL TDH_SYS_TDMR_INIT SEAMRET status: 0 SUCCESS -----------------
+tdx call: 36
+########## issuing SEAMCALL TDH_SYS_TDMR_INIT ----------------------------------------
+########## 0063 SEAMCALL TDH_SYS_TDMR_INIT SEAMRET status: 0 SUCCESS -----------------
+tdx call: 36
+########## issuing SEAMCALL TDH_SYS_TDMR_INIT ----------------------------------------
+########## 0064 SEAMCALL TDH_SYS_TDMR_INIT SEAMRET status: 0 SUCCESS -----------------
+tdx call: 36
+########## issuing SEAMCALL TDH_SYS_TDMR_INIT ----------------------------------------
+########## 0065 SEAMCALL TDH_SYS_TDMR_INIT SEAMRET status: 0 SUCCESS -----------------
+tdx call: 36
+########## issuing SEAMCALL TDH_SYS_TDMR_INIT ----------------------------------------
+########## 0066 SEAMCALL TDH_SYS_TDMR_INIT SEAMRET status: 0 SUCCESS -----------------
+tdx call: 36
+########## issuing SEAMCALL TDH_SYS_TDMR_INIT ----------------------------------------
+########## 0067 SEAMCALL TDH_SYS_TDMR_INIT SEAMRET status: 0 SUCCESS -----------------
+tdx call: 36
+########## issuing SEAMCALL TDH_SYS_TDMR_INIT ----------------------------------------
+########## 0068 SEAMCALL TDH_SYS_TDMR_INIT SEAMRET status: 0 SUCCESS -----------------
+tdx call: 36
+########## issuing SEAMCALL TDH_SYS_TDMR_INIT ----------------------------------------
+########## 0069 SEAMCALL TDH_SYS_TDMR_INIT SEAMRET status: 0 SUCCESS -----------------
+tdx call: 36
+########## issuing SEAMCALL TDH_SYS_TDMR_INIT ----------------------------------------
+########## 0070 SEAMCALL TDH_SYS_TDMR_INIT SEAMRET status: 0 SUCCESS -----------------
+tdx call: 36
+########## issuing SEAMCALL TDH_SYS_TDMR_INIT ----------------------------------------
+########## 0071 SEAMCALL TDH_SYS_TDMR_INIT SEAMRET status: 0 SUCCESS -----------------
+tdx call: 36
+########## issuing SEAMCALL TDH_SYS_TDMR_INIT ----------------------------------------
+########## 0072 SEAMCALL TDH_SYS_TDMR_INIT SEAMRET status: 0 SUCCESS -----------------
+tdx call: 36
+########## issuing SEAMCALL TDH_SYS_TDMR_INIT ----------------------------------------
+########## 0073 SEAMCALL TDH_SYS_TDMR_INIT SEAMRET status: 0 SUCCESS -----------------
+tdx call: 36
+########## issuing SEAMCALL TDH_SYS_TDMR_INIT ----------------------------------------
+########## 0074 SEAMCALL TDH_SYS_TDMR_INIT SEAMRET status: 0 SUCCESS -----------------
+tdx call: 36
+########## issuing SEAMCALL TDH_SYS_TDMR_INIT ----------------------------------------
+########## 0075 SEAMCALL TDH_SYS_TDMR_INIT SEAMRET status: 0 SUCCESS -----------------
+tdx call: 36
+########## issuing SEAMCALL TDH_SYS_TDMR_INIT ----------------------------------------
+########## 0076 SEAMCALL TDH_SYS_TDMR_INIT SEAMRET status: 0 SUCCESS -----------------
+tdx call: 36
+########## issuing SEAMCALL TDH_SYS_TDMR_INIT ----------------------------------------
+########## 0077 SEAMCALL TDH_SYS_TDMR_INIT SEAMRET status: 0 SUCCESS -----------------
+tdx call: 36
+########## issuing SEAMCALL TDH_SYS_TDMR_INIT ----------------------------------------
+########## 0078 SEAMCALL TDH_SYS_TDMR_INIT SEAMRET status: 0 SUCCESS -----------------
+tdx call: 36
+########## issuing SEAMCALL TDH_SYS_TDMR_INIT ----------------------------------------
+########## 0079 SEAMCALL TDH_SYS_TDMR_INIT SEAMRET status: 0 SUCCESS -----------------
+tdx call: 36
+########## issuing SEAMCALL TDH_SYS_TDMR_INIT ----------------------------------------
+########## 0080 SEAMCALL TDH_SYS_TDMR_INIT SEAMRET status: 0 SUCCESS -----------------
+tdx call: 36
+########## issuing SEAMCALL TDH_SYS_TDMR_INIT ----------------------------------------
+########## 0081 SEAMCALL TDH_SYS_TDMR_INIT SEAMRET status: 0 SUCCESS -----------------
+tdx call: 36
+########## issuing SEAMCALL TDH_SYS_TDMR_INIT ----------------------------------------
+########## 0082 SEAMCALL TDH_SYS_TDMR_INIT SEAMRET status: 0 SUCCESS -----------------
+tdx call: 36
+########## issuing SEAMCALL TDH_SYS_TDMR_INIT ----------------------------------------
+########## 0083 SEAMCALL TDH_SYS_TDMR_INIT SEAMRET status: 0 SUCCESS -----------------
+tdx call: 36
+########## issuing SEAMCALL TDH_SYS_TDMR_INIT ----------------------------------------
+########## 0084 SEAMCALL TDH_SYS_TDMR_INIT SEAMRET status: 0 SUCCESS -----------------
+tdx call: 36
+########## issuing SEAMCALL TDH_SYS_TDMR_INIT ----------------------------------------
+########## 0085 SEAMCALL TDH_SYS_TDMR_INIT SEAMRET status: 0 SUCCESS -----------------
+tdx call: 36
+########## issuing SEAMCALL TDH_SYS_TDMR_INIT ----------------------------------------
+########## 0086 SEAMCALL TDH_SYS_TDMR_INIT SEAMRET status: 0 SUCCESS -----------------
+tdx call: 36
+########## issuing SEAMCALL TDH_SYS_TDMR_INIT ----------------------------------------
+########## 0087 SEAMCALL TDH_SYS_TDMR_INIT SEAMRET status: 0 SUCCESS -----------------
+tdx call: 36
+########## issuing SEAMCALL TDH_SYS_TDMR_INIT ----------------------------------------
+########## 0088 SEAMCALL TDH_SYS_TDMR_INIT SEAMRET status: 0 SUCCESS -----------------
+tdx call: 36
+########## issuing SEAMCALL TDH_SYS_TDMR_INIT ----------------------------------------
+########## 0089 SEAMCALL TDH_SYS_TDMR_INIT SEAMRET status: 0 SUCCESS -----------------
+tdx call: 36
+########## issuing SEAMCALL TDH_SYS_TDMR_INIT ----------------------------------------
+########## 0090 SEAMCALL TDH_SYS_TDMR_INIT SEAMRET status: 0 SUCCESS -----------------
+tdx call: 36
+########## issuing SEAMCALL TDH_SYS_TDMR_INIT ----------------------------------------
+########## 0091 SEAMCALL TDH_SYS_TDMR_INIT SEAMRET status: 0 SUCCESS -----------------
+tdx call: 36
+########## issuing SEAMCALL TDH_SYS_TDMR_INIT ----------------------------------------
+########## 0092 SEAMCALL TDH_SYS_TDMR_INIT SEAMRET status: 0 SUCCESS -----------------
+tdx call: 36
+########## issuing SEAMCALL TDH_SYS_TDMR_INIT ----------------------------------------
+########## 0093 SEAMCALL TDH_SYS_TDMR_INIT SEAMRET status: 0 SUCCESS -----------------
+tdx call: 36
+########## issuing SEAMCALL TDH_SYS_TDMR_INIT ----------------------------------------
+########## 0094 SEAMCALL TDH_SYS_TDMR_INIT SEAMRET status: 0 SUCCESS -----------------
+tdx call: 36
+########## issuing SEAMCALL TDH_SYS_TDMR_INIT ----------------------------------------
+########## 0095 SEAMCALL TDH_SYS_TDMR_INIT SEAMRET status: 0 SUCCESS -----------------
+tdx call: 36
+########## issuing SEAMCALL TDH_SYS_TDMR_INIT ----------------------------------------
+########## 0096 SEAMCALL TDH_SYS_TDMR_INIT SEAMRET status: 0 SUCCESS -----------------
+tdx call: 36
+########## issuing SEAMCALL TDH_SYS_TDMR_INIT ----------------------------------------
+########## 0097 SEAMCALL TDH_SYS_TDMR_INIT SEAMRET status: 0 SUCCESS -----------------
+tdx call: 36
+########## issuing SEAMCALL TDH_SYS_TDMR_INIT ----------------------------------------
+########## 0098 SEAMCALL TDH_SYS_TDMR_INIT SEAMRET status: 0 SUCCESS -----------------
+tdx call: 36
+########## issuing SEAMCALL TDH_SYS_TDMR_INIT ----------------------------------------
+########## 0099 SEAMCALL TDH_SYS_TDMR_INIT SEAMRET status: 0 SUCCESS -----------------
+tdx call: 36
+########## issuing SEAMCALL TDH_SYS_TDMR_INIT ----------------------------------------
+########## 0100 SEAMCALL TDH_SYS_TDMR_INIT SEAMRET status: 0 SUCCESS -----------------
+tdx call: 36
+########## issuing SEAMCALL TDH_SYS_TDMR_INIT ----------------------------------------
+########## 0101 SEAMCALL TDH_SYS_TDMR_INIT SEAMRET status: 0 SUCCESS -----------------
+tdx call: 36
+########## issuing SEAMCALL TDH_SYS_TDMR_INIT ----------------------------------------
+########## 0102 SEAMCALL TDH_SYS_TDMR_INIT SEAMRET status: 0 SUCCESS -----------------
+tdx call: 36
+########## issuing SEAMCALL TDH_SYS_TDMR_INIT ----------------------------------------
+########## 0103 SEAMCALL TDH_SYS_TDMR_INIT SEAMRET status: 0 SUCCESS -----------------
+tdx call: 36
+########## issuing SEAMCALL TDH_SYS_TDMR_INIT ----------------------------------------
+########## 0104 SEAMCALL TDH_SYS_TDMR_INIT SEAMRET status: 0 SUCCESS -----------------
+tdx call: 36
+########## issuing SEAMCALL TDH_SYS_TDMR_INIT ----------------------------------------
+########## 0105 SEAMCALL TDH_SYS_TDMR_INIT SEAMRET status: 0 SUCCESS -----------------
+tdx call: 36
+########## issuing SEAMCALL TDH_SYS_TDMR_INIT ----------------------------------------
+########## 0106 SEAMCALL TDH_SYS_TDMR_INIT SEAMRET status: 0 SUCCESS -----------------
+tdx call: 36
+########## issuing SEAMCALL TDH_SYS_TDMR_INIT ----------------------------------------
+########## 0107 SEAMCALL TDH_SYS_TDMR_INIT SEAMRET status: 0 SUCCESS -----------------
+tdx call: 36
+########## issuing SEAMCALL TDH_SYS_TDMR_INIT ----------------------------------------
+########## 0108 SEAMCALL TDH_SYS_TDMR_INIT SEAMRET status: 0 SUCCESS -----------------
+tdx call: 36
+########## issuing SEAMCALL TDH_SYS_TDMR_INIT ----------------------------------------
+########## 0109 SEAMCALL TDH_SYS_TDMR_INIT SEAMRET status: 0 SUCCESS -----------------
+tdx call: 36
+########## issuing SEAMCALL TDH_SYS_TDMR_INIT ----------------------------------------
+########## 0110 SEAMCALL TDH_SYS_TDMR_INIT SEAMRET status: 0 SUCCESS -----------------
+tdx call: 36
+########## issuing SEAMCALL TDH_SYS_TDMR_INIT ----------------------------------------
+########## 0111 SEAMCALL TDH_SYS_TDMR_INIT SEAMRET status: 0 SUCCESS -----------------
+tdx call: 36
+########## issuing SEAMCALL TDH_SYS_TDMR_INIT ----------------------------------------
+########## 0112 SEAMCALL TDH_SYS_TDMR_INIT SEAMRET status: 0 SUCCESS -----------------
+tdx call: 36
+########## issuing SEAMCALL TDH_SYS_TDMR_INIT ----------------------------------------
+########## 0113 SEAMCALL TDH_SYS_TDMR_INIT SEAMRET status: 0 SUCCESS -----------------
+tdx call: 36
+########## issuing SEAMCALL TDH_SYS_TDMR_INIT ----------------------------------------
+########## 0114 SEAMCALL TDH_SYS_TDMR_INIT SEAMRET status: 0 SUCCESS -----------------
+tdx call: 36
+########## issuing SEAMCALL TDH_SYS_TDMR_INIT ----------------------------------------
+########## 0115 SEAMCALL TDH_SYS_TDMR_INIT SEAMRET status: 0 SUCCESS -----------------
+tdx call: 36
+########## issuing SEAMCALL TDH_SYS_TDMR_INIT ----------------------------------------
+########## 0116 SEAMCALL TDH_SYS_TDMR_INIT SEAMRET status: 0 SUCCESS -----------------
+tdx call: 36
+########## issuing SEAMCALL TDH_SYS_TDMR_INIT ----------------------------------------
+########## 0117 SEAMCALL TDH_SYS_TDMR_INIT SEAMRET status: 0 SUCCESS -----------------
+tdx call: 36
+########## issuing SEAMCALL TDH_SYS_TDMR_INIT ----------------------------------------
+########## 0118 SEAMCALL TDH_SYS_TDMR_INIT SEAMRET status: 0 SUCCESS -----------------
+tdx call: 36
+########## issuing SEAMCALL TDH_SYS_TDMR_INIT ----------------------------------------
+########## 0119 SEAMCALL TDH_SYS_TDMR_INIT SEAMRET status: 0 SUCCESS -----------------
+tdx call: 36
+########## issuing SEAMCALL TDH_SYS_TDMR_INIT ----------------------------------------
+########## 0120 SEAMCALL TDH_SYS_TDMR_INIT SEAMRET status: 0 SUCCESS -----------------
+tdx call: 36
+########## issuing SEAMCALL TDH_SYS_TDMR_INIT ----------------------------------------
+########## 0121 SEAMCALL TDH_SYS_TDMR_INIT SEAMRET status: 0 SUCCESS -----------------
+tdx call: 36
+########## issuing SEAMCALL TDH_SYS_TDMR_INIT ----------------------------------------
+########## 0122 SEAMCALL TDH_SYS_TDMR_INIT SEAMRET status: 0 SUCCESS -----------------
+tdx call: 36
+########## issuing SEAMCALL TDH_SYS_TDMR_INIT ----------------------------------------
+########## 0123 SEAMCALL TDH_SYS_TDMR_INIT SEAMRET status: 0 SUCCESS -----------------
+tdx call: 36
+########## issuing SEAMCALL TDH_SYS_TDMR_INIT ----------------------------------------
+########## 0124 SEAMCALL TDH_SYS_TDMR_INIT SEAMRET status: 0 SUCCESS -----------------
+tdx call: 36
+########## issuing SEAMCALL TDH_SYS_TDMR_INIT ----------------------------------------
+########## 0125 SEAMCALL TDH_SYS_TDMR_INIT SEAMRET status: 0 SUCCESS -----------------
+tdx call: 36
+########## issuing SEAMCALL TDH_SYS_TDMR_INIT ----------------------------------------
+########## 0126 SEAMCALL TDH_SYS_TDMR_INIT SEAMRET status: 0 SUCCESS -----------------
+tdx call: 36
+########## issuing SEAMCALL TDH_SYS_TDMR_INIT ----------------------------------------
+########## 0127 SEAMCALL TDH_SYS_TDMR_INIT SEAMRET status: 0 SUCCESS -----------------
+tdx call: 36
+########## issuing SEAMCALL TDH_SYS_TDMR_INIT ----------------------------------------
+########## 0128 SEAMCALL TDH_SYS_TDMR_INIT SEAMRET status: 0 SUCCESS -----------------
+tdx call: 36
+########## issuing SEAMCALL TDH_SYS_TDMR_INIT ----------------------------------------
+########## 0129 SEAMCALL TDH_SYS_TDMR_INIT SEAMRET status: 0 SUCCESS -----------------
+tdx call: 36
+########## issuing SEAMCALL TDH_SYS_TDMR_INIT ----------------------------------------
+########## 0130 SEAMCALL TDH_SYS_TDMR_INIT SEAMRET status: 0 SUCCESS -----------------
+tdx call: 36
+########## issuing SEAMCALL TDH_SYS_TDMR_INIT ----------------------------------------
+########## 0131 SEAMCALL TDH_SYS_TDMR_INIT SEAMRET status: 0 SUCCESS -----------------
+tdx call: 36
+########## issuing SEAMCALL TDH_SYS_TDMR_INIT ----------------------------------------
+########## 0132 SEAMCALL TDH_SYS_TDMR_INIT SEAMRET status: 0 SUCCESS -----------------
+tdx call: 36
+########## issuing SEAMCALL TDH_SYS_TDMR_INIT ----------------------------------------
+########## 0133 SEAMCALL TDH_SYS_TDMR_INIT SEAMRET status: 0 SUCCESS -----------------
+tdx call: 36
+########## issuing SEAMCALL TDH_SYS_TDMR_INIT ----------------------------------------
+########## 0134 SEAMCALL TDH_SYS_TDMR_INIT SEAMRET status: 0 SUCCESS -----------------
+tdx call: 36
+########## issuing SEAMCALL TDH_SYS_TDMR_INIT ----------------------------------------
+########## 0135 SEAMCALL TDH_SYS_TDMR_INIT SEAMRET status: 0 SUCCESS -----------------
+tdx call: 36
+########## issuing SEAMCALL TDH_SYS_TDMR_INIT ----------------------------------------
+########## 0136 SEAMCALL TDH_SYS_TDMR_INIT SEAMRET status: 0 SUCCESS -----------------
+tdx call: 36
+########## issuing SEAMCALL TDH_SYS_TDMR_INIT ----------------------------------------
+########## 0137 SEAMCALL TDH_SYS_TDMR_INIT SEAMRET status: 0 SUCCESS -----------------
+tdx call: 36
+########## issuing SEAMCALL TDH_SYS_TDMR_INIT ----------------------------------------
+########## 0138 SEAMCALL TDH_SYS_TDMR_INIT SEAMRET status: 0 SUCCESS -----------------
+tdx call: 36
+########## issuing SEAMCALL TDH_SYS_TDMR_INIT ----------------------------------------
+########## 0139 SEAMCALL TDH_SYS_TDMR_INIT SEAMRET status: 0 SUCCESS -----------------
+tdx call: 36
+########## issuing SEAMCALL TDH_SYS_TDMR_INIT ----------------------------------------
+########## 0140 SEAMCALL TDH_SYS_TDMR_INIT SEAMRET status: 0 SUCCESS -----------------
+tdx call: 36
+########## issuing SEAMCALL TDH_SYS_TDMR_INIT ----------------------------------------
+########## 0141 SEAMCALL TDH_SYS_TDMR_INIT SEAMRET status: 0 SUCCESS -----------------
+tdx call: 36
+########## issuing SEAMCALL TDH_SYS_TDMR_INIT ----------------------------------------
+########## 0142 SEAMCALL TDH_SYS_TDMR_INIT SEAMRET status: 0 SUCCESS -----------------
+tdx call: 36
+########## issuing SEAMCALL TDH_SYS_TDMR_INIT ----------------------------------------
+########## 0143 SEAMCALL TDH_SYS_TDMR_INIT SEAMRET status: 0 SUCCESS -----------------
+tdx call: 36
+########## issuing SEAMCALL TDH_SYS_TDMR_INIT ----------------------------------------
+########## 0144 SEAMCALL TDH_SYS_TDMR_INIT SEAMRET status: 0 SUCCESS -----------------
+tdx call: 36
+########## issuing SEAMCALL TDH_SYS_TDMR_INIT ----------------------------------------
+########## 0145 SEAMCALL TDH_SYS_TDMR_INIT SEAMRET status: 0 SUCCESS -----------------
+tdx call: 36
+########## issuing SEAMCALL TDH_SYS_TDMR_INIT ----------------------------------------
+########## 0146 SEAMCALL TDH_SYS_TDMR_INIT SEAMRET status: 0 SUCCESS -----------------
+tdx call: 36
+########## issuing SEAMCALL TDH_SYS_TDMR_INIT ----------------------------------------
+########## 0147 SEAMCALL TDH_SYS_TDMR_INIT SEAMRET status: 0 SUCCESS -----------------
+tdx call: 36
+########## issuing SEAMCALL TDH_SYS_TDMR_INIT ----------------------------------------
+########## 0148 SEAMCALL TDH_SYS_TDMR_INIT SEAMRET status: 0 SUCCESS -----------------
+tdx call: 36
+########## issuing SEAMCALL TDH_SYS_TDMR_INIT ----------------------------------------
+########## 0149 SEAMCALL TDH_SYS_TDMR_INIT SEAMRET status: 0 SUCCESS -----------------
+tdx call: 36
+########## issuing SEAMCALL TDH_SYS_TDMR_INIT ----------------------------------------
+########## 0150 SEAMCALL TDH_SYS_TDMR_INIT SEAMRET status: 0 SUCCESS -----------------
+tdx call: 36
+########## issuing SEAMCALL TDH_SYS_TDMR_INIT ----------------------------------------
+########## 0151 SEAMCALL TDH_SYS_TDMR_INIT SEAMRET status: 0 SUCCESS -----------------
+tdx call: 36
+########## issuing SEAMCALL TDH_SYS_TDMR_INIT ----------------------------------------
+########## 0152 SEAMCALL TDH_SYS_TDMR_INIT SEAMRET status: 0 SUCCESS -----------------
+tdx call: 36
+########## issuing SEAMCALL TDH_SYS_TDMR_INIT ----------------------------------------
+########## 0153 SEAMCALL TDH_SYS_TDMR_INIT SEAMRET status: 0 SUCCESS -----------------
+tdx call: 36
+########## issuing SEAMCALL TDH_SYS_TDMR_INIT ----------------------------------------
+########## 0154 SEAMCALL TDH_SYS_TDMR_INIT SEAMRET status: 0 SUCCESS -----------------
+tdx call: 36
+########## issuing SEAMCALL TDH_SYS_TDMR_INIT ----------------------------------------
+########## 0155 SEAMCALL TDH_SYS_TDMR_INIT SEAMRET status: 0 SUCCESS -----------------
+tdx call: 36
+########## issuing SEAMCALL TDH_SYS_TDMR_INIT ----------------------------------------
+########## 0156 SEAMCALL TDH_SYS_TDMR_INIT SEAMRET status: 0 SUCCESS -----------------
+tdx call: 36
+########## issuing SEAMCALL TDH_SYS_TDMR_INIT ----------------------------------------
+########## 0157 SEAMCALL TDH_SYS_TDMR_INIT SEAMRET status: 0 SUCCESS -----------------
+tdx call: 36
+########## issuing SEAMCALL TDH_SYS_TDMR_INIT ----------------------------------------
+########## 0158 SEAMCALL TDH_SYS_TDMR_INIT SEAMRET status: 0 SUCCESS -----------------
+tdx call: 36
+########## issuing SEAMCALL TDH_SYS_TDMR_INIT ----------------------------------------
+########## 0159 SEAMCALL TDH_SYS_TDMR_INIT SEAMRET status: 0 SUCCESS -----------------
+tdx call: 36
+########## issuing SEAMCALL TDH_SYS_TDMR_INIT ----------------------------------------
+########## 0160 SEAMCALL TDH_SYS_TDMR_INIT SEAMRET status: 0 SUCCESS -----------------
+tdx call: 36
+########## issuing SEAMCALL TDH_SYS_TDMR_INIT ----------------------------------------
+########## 0161 SEAMCALL TDH_SYS_TDMR_INIT SEAMRET status: 0 SUCCESS -----------------
+tdx call: 36
+########## issuing SEAMCALL TDH_SYS_TDMR_INIT ----------------------------------------
+########## 0162 SEAMCALL TDH_SYS_TDMR_INIT SEAMRET status: 0 SUCCESS -----------------
+tdx call: 36
+########## issuing SEAMCALL TDH_SYS_TDMR_INIT ----------------------------------------
+########## 0163 SEAMCALL TDH_SYS_TDMR_INIT SEAMRET status: 0 SUCCESS -----------------
+tdx call: 36
+########## issuing SEAMCALL TDH_SYS_TDMR_INIT ----------------------------------------
+########## 0164 SEAMCALL TDH_SYS_TDMR_INIT SEAMRET status: 0 SUCCESS -----------------
+tdx call: 36
+########## issuing SEAMCALL TDH_SYS_TDMR_INIT ----------------------------------------
+########## 0165 SEAMCALL TDH_SYS_TDMR_INIT SEAMRET status: 0 SUCCESS -----------------
+tdx call: 36
+########## issuing SEAMCALL TDH_SYS_TDMR_INIT ----------------------------------------
+########## 0166 SEAMCALL TDH_SYS_TDMR_INIT SEAMRET status: 0 SUCCESS -----------------
+tdx call: 36
+########## issuing SEAMCALL TDH_SYS_TDMR_INIT ----------------------------------------
+########## 0167 SEAMCALL TDH_SYS_TDMR_INIT SEAMRET status: 0 SUCCESS -----------------
+tdx call: 36
+########## issuing SEAMCALL TDH_SYS_TDMR_INIT ----------------------------------------
+########## 0168 SEAMCALL TDH_SYS_TDMR_INIT SEAMRET status: 0 SUCCESS -----------------
+tdx call: 36
+########## issuing SEAMCALL TDH_SYS_TDMR_INIT ----------------------------------------
+########## 0169 SEAMCALL TDH_SYS_TDMR_INIT SEAMRET status: 0 SUCCESS -----------------
+tdx call: 36
+########## issuing SEAMCALL TDH_SYS_TDMR_INIT ----------------------------------------
+########## 0170 SEAMCALL TDH_SYS_TDMR_INIT SEAMRET status: 0 SUCCESS -----------------
+tdx call: 36
+########## issuing SEAMCALL TDH_SYS_TDMR_INIT ----------------------------------------
+########## 0171 SEAMCALL TDH_SYS_TDMR_INIT SEAMRET status: 0 SUCCESS -----------------
+tdx call: 36
+########## issuing SEAMCALL TDH_SYS_TDMR_INIT ----------------------------------------
+########## 0172 SEAMCALL TDH_SYS_TDMR_INIT SEAMRET status: 0 SUCCESS -----------------
+tdx call: 36
+########## issuing SEAMCALL TDH_SYS_TDMR_INIT ----------------------------------------
+########## 0173 SEAMCALL TDH_SYS_TDMR_INIT SEAMRET status: 0 SUCCESS -----------------
+tdx call: 36
+########## issuing SEAMCALL TDH_SYS_TDMR_INIT ----------------------------------------
+########## 0174 SEAMCALL TDH_SYS_TDMR_INIT SEAMRET status: 0 SUCCESS -----------------
+tdx call: 36
+########## issuing SEAMCALL TDH_SYS_TDMR_INIT ----------------------------------------
+########## 0175 SEAMCALL TDH_SYS_TDMR_INIT SEAMRET status: 0 SUCCESS -----------------
+tdx call: 36
+########## issuing SEAMCALL TDH_SYS_TDMR_INIT ----------------------------------------
+########## 0176 SEAMCALL TDH_SYS_TDMR_INIT SEAMRET status: 0 SUCCESS -----------------
+tdx call: 36
+########## issuing SEAMCALL TDH_SYS_TDMR_INIT ----------------------------------------
+########## 0177 SEAMCALL TDH_SYS_TDMR_INIT SEAMRET status: 0 SUCCESS -----------------
+tdx call: 36
+########## issuing SEAMCALL TDH_SYS_TDMR_INIT ----------------------------------------
+########## 0178 SEAMCALL TDH_SYS_TDMR_INIT SEAMRET status: 0 SUCCESS -----------------
+tdx call: 36
+########## issuing SEAMCALL TDH_SYS_TDMR_INIT ----------------------------------------
+########## 0179 SEAMCALL TDH_SYS_TDMR_INIT SEAMRET status: 0 SUCCESS -----------------
+tdx call: 36
+########## issuing SEAMCALL TDH_SYS_TDMR_INIT ----------------------------------------
+########## 0180 SEAMCALL TDH_SYS_TDMR_INIT SEAMRET status: 0 SUCCESS -----------------
+tdx call: 36
+########## issuing SEAMCALL TDH_SYS_TDMR_INIT ----------------------------------------
+########## 0181 SEAMCALL TDH_SYS_TDMR_INIT SEAMRET status: 0 SUCCESS -----------------
+tdx call: 36
+########## issuing SEAMCALL TDH_SYS_TDMR_INIT ----------------------------------------
+########## 0182 SEAMCALL TDH_SYS_TDMR_INIT SEAMRET status: 0 SUCCESS -----------------
+tdx call: 36
+########## issuing SEAMCALL TDH_SYS_TDMR_INIT ----------------------------------------
+########## 0183 SEAMCALL TDH_SYS_TDMR_INIT SEAMRET status: 0 SUCCESS -----------------
+tdx call: 36
+########## issuing SEAMCALL TDH_SYS_TDMR_INIT ----------------------------------------
+########## 0184 SEAMCALL TDH_SYS_TDMR_INIT SEAMRET status: 0 SUCCESS -----------------
+tdx call: 36
+########## issuing SEAMCALL TDH_SYS_TDMR_INIT ----------------------------------------
+########## 0185 SEAMCALL TDH_SYS_TDMR_INIT SEAMRET status: 0 SUCCESS -----------------
+tdx call: 36
+########## issuing SEAMCALL TDH_SYS_TDMR_INIT ----------------------------------------
+########## 0186 SEAMCALL TDH_SYS_TDMR_INIT SEAMRET status: 0 SUCCESS -----------------
+tdx call: 36
+########## issuing SEAMCALL TDH_SYS_TDMR_INIT ----------------------------------------
+########## 0187 SEAMCALL TDH_SYS_TDMR_INIT SEAMRET status: 0 SUCCESS -----------------
+tdx call: 36
+########## issuing SEAMCALL TDH_SYS_TDMR_INIT ----------------------------------------
+########## 0188 SEAMCALL TDH_SYS_TDMR_INIT SEAMRET status: 0 SUCCESS -----------------
+tdx call: 36
+########## issuing SEAMCALL TDH_SYS_TDMR_INIT ----------------------------------------
+########## 0189 SEAMCALL TDH_SYS_TDMR_INIT SEAMRET status: 0 SUCCESS -----------------
+tdx call: 36
+########## issuing SEAMCALL TDH_SYS_TDMR_INIT ----------------------------------------
+########## 0190 SEAMCALL TDH_SYS_TDMR_INIT SEAMRET status: 0 SUCCESS -----------------
+tdx call: 36
+########## issuing SEAMCALL TDH_SYS_TDMR_INIT ----------------------------------------
+########## 0191 SEAMCALL TDH_SYS_TDMR_INIT SEAMRET status: 0 SUCCESS -----------------
+tdx call: 36
+########## issuing SEAMCALL TDH_SYS_TDMR_INIT ----------------------------------------
+########## 0192 SEAMCALL TDH_SYS_TDMR_INIT SEAMRET status: 0 SUCCESS -----------------
+tdx call: 36
+########## issuing SEAMCALL TDH_SYS_TDMR_INIT ----------------------------------------
+########## 0193 SEAMCALL TDH_SYS_TDMR_INIT SEAMRET status: 0 SUCCESS -----------------
+tdx call: 36
+########## issuing SEAMCALL TDH_SYS_TDMR_INIT ----------------------------------------
+########## 0194 SEAMCALL TDH_SYS_TDMR_INIT SEAMRET status: 0 SUCCESS -----------------
+tdx call: 36
+########## issuing SEAMCALL TDH_SYS_TDMR_INIT ----------------------------------------
+########## 0195 SEAMCALL TDH_SYS_TDMR_INIT SEAMRET status: 0 SUCCESS -----------------
+tdx call: 36
+########## issuing SEAMCALL TDH_SYS_TDMR_INIT ----------------------------------------
+########## 0196 SEAMCALL TDH_SYS_TDMR_INIT SEAMRET status: 0 SUCCESS -----------------
+tdx call: 36
+########## issuing SEAMCALL TDH_SYS_TDMR_INIT ----------------------------------------
+########## 0197 SEAMCALL TDH_SYS_TDMR_INIT SEAMRET status: 0 SUCCESS -----------------
+tdx call: 36
+########## issuing SEAMCALL TDH_SYS_TDMR_INIT ----------------------------------------
+########## 0198 SEAMCALL TDH_SYS_TDMR_INIT SEAMRET status: 0 SUCCESS -----------------
+tdx call: 36
+########## issuing SEAMCALL TDH_SYS_TDMR_INIT ----------------------------------------
+########## 0199 SEAMCALL TDH_SYS_TDMR_INIT SEAMRET status: 0 SUCCESS -----------------
+tdx call: 36
+########## issuing SEAMCALL TDH_SYS_TDMR_INIT ----------------------------------------
+########## 0200 SEAMCALL TDH_SYS_TDMR_INIT SEAMRET status: 0 SUCCESS -----------------
+tdx call: 36
+########## issuing SEAMCALL TDH_SYS_TDMR_INIT ----------------------------------------
+########## 0201 SEAMCALL TDH_SYS_TDMR_INIT SEAMRET status: 0 SUCCESS -----------------
+tdx call: 36
+########## issuing SEAMCALL TDH_SYS_TDMR_INIT ----------------------------------------
+########## 0202 SEAMCALL TDH_SYS_TDMR_INIT SEAMRET status: 0 SUCCESS -----------------
+tdx call: 36
+########## issuing SEAMCALL TDH_SYS_TDMR_INIT ----------------------------------------
+########## 0203 SEAMCALL TDH_SYS_TDMR_INIT SEAMRET status: 0 SUCCESS -----------------
+tdx call: 36
+########## issuing SEAMCALL TDH_SYS_TDMR_INIT ----------------------------------------
+########## 0204 SEAMCALL TDH_SYS_TDMR_INIT SEAMRET status: 0 SUCCESS -----------------
+tdx call: 36
+########## issuing SEAMCALL TDH_SYS_TDMR_INIT ----------------------------------------
+########## 0205 SEAMCALL TDH_SYS_TDMR_INIT SEAMRET status: 0 SUCCESS -----------------
+tdx call: 36
+########## issuing SEAMCALL TDH_SYS_TDMR_INIT ----------------------------------------
+########## 0206 SEAMCALL TDH_SYS_TDMR_INIT SEAMRET status: 0 SUCCESS -----------------
+tdx call: 36
+########## issuing SEAMCALL TDH_SYS_TDMR_INIT ----------------------------------------
+########## 0207 SEAMCALL TDH_SYS_TDMR_INIT SEAMRET status: 0 SUCCESS -----------------
+tdx call: 36
+########## issuing SEAMCALL TDH_SYS_TDMR_INIT ----------------------------------------
+########## 0208 SEAMCALL TDH_SYS_TDMR_INIT SEAMRET status: 0 SUCCESS -----------------
+tdx call: 36
+########## issuing SEAMCALL TDH_SYS_TDMR_INIT ----------------------------------------
+########## 0209 SEAMCALL TDH_SYS_TDMR_INIT SEAMRET status: 0 SUCCESS -----------------
+tdx call: 36
+########## issuing SEAMCALL TDH_SYS_TDMR_INIT ----------------------------------------
+########## 0210 SEAMCALL TDH_SYS_TDMR_INIT SEAMRET status: 0 SUCCESS -----------------
+tdx call: 36
+########## issuing SEAMCALL TDH_SYS_TDMR_INIT ----------------------------------------
+########## 0211 SEAMCALL TDH_SYS_TDMR_INIT SEAMRET status: 0 SUCCESS -----------------
+tdx call: 36
+########## issuing SEAMCALL TDH_SYS_TDMR_INIT ----------------------------------------
+########## 0212 SEAMCALL TDH_SYS_TDMR_INIT SEAMRET status: 0 SUCCESS -----------------
+tdx call: 36
+########## issuing SEAMCALL TDH_SYS_TDMR_INIT ----------------------------------------
+########## 0213 SEAMCALL TDH_SYS_TDMR_INIT SEAMRET status: 0 SUCCESS -----------------
+tdx call: 36
+########## issuing SEAMCALL TDH_SYS_TDMR_INIT ----------------------------------------
+########## 0214 SEAMCALL TDH_SYS_TDMR_INIT SEAMRET status: 0 SUCCESS -----------------
+tdx call: 36
+########## issuing SEAMCALL TDH_SYS_TDMR_INIT ----------------------------------------
+########## 0215 SEAMCALL TDH_SYS_TDMR_INIT SEAMRET status: 0 SUCCESS -----------------
+tdx call: 36
+########## issuing SEAMCALL TDH_SYS_TDMR_INIT ----------------------------------------
+########## 0216 SEAMCALL TDH_SYS_TDMR_INIT SEAMRET status: 0 SUCCESS -----------------
+tdx call: 36
+########## issuing SEAMCALL TDH_SYS_TDMR_INIT ----------------------------------------
+########## 0217 SEAMCALL TDH_SYS_TDMR_INIT SEAMRET status: 0 SUCCESS -----------------
+tdx call: 36
+########## issuing SEAMCALL TDH_SYS_TDMR_INIT ----------------------------------------
+########## 0218 SEAMCALL TDH_SYS_TDMR_INIT SEAMRET status: 0 SUCCESS -----------------
+tdx call: 36
+########## issuing SEAMCALL TDH_SYS_TDMR_INIT ----------------------------------------
+########## 0219 SEAMCALL TDH_SYS_TDMR_INIT SEAMRET status: 0 SUCCESS -----------------
+tdx call: 36
+########## issuing SEAMCALL TDH_SYS_TDMR_INIT ----------------------------------------
+########## 0220 SEAMCALL TDH_SYS_TDMR_INIT SEAMRET status: 0 SUCCESS -----------------
+tdx call: 36
+########## issuing SEAMCALL TDH_SYS_TDMR_INIT ----------------------------------------
+########## 0221 SEAMCALL TDH_SYS_TDMR_INIT SEAMRET status: 0 SUCCESS -----------------
+tdx call: 36
+########## issuing SEAMCALL TDH_SYS_TDMR_INIT ----------------------------------------
+########## 0222 SEAMCALL TDH_SYS_TDMR_INIT SEAMRET status: 0 SUCCESS -----------------
+tdx call: 36
+########## issuing SEAMCALL TDH_SYS_TDMR_INIT ----------------------------------------
+########## 0223 SEAMCALL TDH_SYS_TDMR_INIT SEAMRET status: 0 SUCCESS -----------------
+tdx call: 36
+########## issuing SEAMCALL TDH_SYS_TDMR_INIT ----------------------------------------
+########## 0224 SEAMCALL TDH_SYS_TDMR_INIT SEAMRET status: 0 SUCCESS -----------------
+tdx call: 36
+########## issuing SEAMCALL TDH_SYS_TDMR_INIT ----------------------------------------
+########## 0225 SEAMCALL TDH_SYS_TDMR_INIT SEAMRET status: 0 SUCCESS -----------------
+tdx call: 36
+########## issuing SEAMCALL TDH_SYS_TDMR_INIT ----------------------------------------
+########## 0226 SEAMCALL TDH_SYS_TDMR_INIT SEAMRET status: 0 SUCCESS -----------------
+tdx call: 36
+########## issuing SEAMCALL TDH_SYS_TDMR_INIT ----------------------------------------
+########## 0227 SEAMCALL TDH_SYS_TDMR_INIT SEAMRET status: 0 SUCCESS -----------------
+tdx call: 36
+########## issuing SEAMCALL TDH_SYS_TDMR_INIT ----------------------------------------
+########## 0228 SEAMCALL TDH_SYS_TDMR_INIT SEAMRET status: 0 SUCCESS -----------------
+tdx call: 36
+########## issuing SEAMCALL TDH_SYS_TDMR_INIT ----------------------------------------
+########## 0229 SEAMCALL TDH_SYS_TDMR_INIT SEAMRET status: 0 SUCCESS -----------------
+tdx call: 36
+########## issuing SEAMCALL TDH_SYS_TDMR_INIT ----------------------------------------
+########## 0230 SEAMCALL TDH_SYS_TDMR_INIT SEAMRET status: 0 SUCCESS -----------------
+tdx call: 36
+########## issuing SEAMCALL TDH_SYS_TDMR_INIT ----------------------------------------
+########## 0231 SEAMCALL TDH_SYS_TDMR_INIT SEAMRET status: 0 SUCCESS -----------------
+tdx call: 36
+########## issuing SEAMCALL TDH_SYS_TDMR_INIT ----------------------------------------
+########## 0232 SEAMCALL TDH_SYS_TDMR_INIT SEAMRET status: 0 SUCCESS -----------------
+tdx call: 36
+########## issuing SEAMCALL TDH_SYS_TDMR_INIT ----------------------------------------
+########## 0233 SEAMCALL TDH_SYS_TDMR_INIT SEAMRET status: 0 SUCCESS -----------------
+tdx call: 36
+########## issuing SEAMCALL TDH_SYS_TDMR_INIT ----------------------------------------
+########## 0234 SEAMCALL TDH_SYS_TDMR_INIT SEAMRET status: 0 SUCCESS -----------------
+tdx call: 36
+########## issuing SEAMCALL TDH_SYS_TDMR_INIT ----------------------------------------
+########## 0235 SEAMCALL TDH_SYS_TDMR_INIT SEAMRET status: 0 SUCCESS -----------------
+tdx call: 36
+########## issuing SEAMCALL TDH_SYS_TDMR_INIT ----------------------------------------
+########## 0236 SEAMCALL TDH_SYS_TDMR_INIT SEAMRET status: 0 SUCCESS -----------------
+tdx call: 36
+########## issuing SEAMCALL TDH_SYS_TDMR_INIT ----------------------------------------
+########## 0237 SEAMCALL TDH_SYS_TDMR_INIT SEAMRET status: 0 SUCCESS -----------------
+tdx call: 36
+########## issuing SEAMCALL TDH_SYS_TDMR_INIT ----------------------------------------
+########## 0238 SEAMCALL TDH_SYS_TDMR_INIT SEAMRET status: 0 SUCCESS -----------------
+tdx call: 36
+########## issuing SEAMCALL TDH_SYS_TDMR_INIT ----------------------------------------
+########## 0239 SEAMCALL TDH_SYS_TDMR_INIT SEAMRET status: 0 SUCCESS -----------------
+tdx call: 36
+########## issuing SEAMCALL TDH_SYS_TDMR_INIT ----------------------------------------
+########## 0240 SEAMCALL TDH_SYS_TDMR_INIT SEAMRET status: 0 SUCCESS -----------------
+tdx call: 36
+########## issuing SEAMCALL TDH_SYS_TDMR_INIT ----------------------------------------
+########## 0241 SEAMCALL TDH_SYS_TDMR_INIT SEAMRET status: 0 SUCCESS -----------------
+tdx call: 36
+########## issuing SEAMCALL TDH_SYS_TDMR_INIT ----------------------------------------
+########## 0242 SEAMCALL TDH_SYS_TDMR_INIT SEAMRET status: 0 SUCCESS -----------------
+tdx call: 36
+########## issuing SEAMCALL TDH_SYS_TDMR_INIT ----------------------------------------
+########## 0243 SEAMCALL TDH_SYS_TDMR_INIT SEAMRET status: 0 SUCCESS -----------------
+tdx call: 36
+########## issuing SEAMCALL TDH_SYS_TDMR_INIT ----------------------------------------
+########## 0244 SEAMCALL TDH_SYS_TDMR_INIT SEAMRET status: 0 SUCCESS -----------------
+tdx call: 36
+########## issuing SEAMCALL TDH_SYS_TDMR_INIT ----------------------------------------
+########## 0245 SEAMCALL TDH_SYS_TDMR_INIT SEAMRET status: 0 SUCCESS -----------------
+tdx call: 36
+########## issuing SEAMCALL TDH_SYS_TDMR_INIT ----------------------------------------
+########## 0246 SEAMCALL TDH_SYS_TDMR_INIT SEAMRET status: 0 SUCCESS -----------------
+tdx call: 36
+########## issuing SEAMCALL TDH_SYS_TDMR_INIT ----------------------------------------
+########## 0247 SEAMCALL TDH_SYS_TDMR_INIT SEAMRET status: 0 SUCCESS -----------------
+tdx call: 36
+########## issuing SEAMCALL TDH_SYS_TDMR_INIT ----------------------------------------
+########## 0248 SEAMCALL TDH_SYS_TDMR_INIT SEAMRET status: 0 SUCCESS -----------------
+tdx call: 36
+########## issuing SEAMCALL TDH_SYS_TDMR_INIT ----------------------------------------
+########## 0249 SEAMCALL TDH_SYS_TDMR_INIT SEAMRET status: 0 SUCCESS -----------------
+tdx call: 36
+########## issuing SEAMCALL TDH_SYS_TDMR_INIT ----------------------------------------
+########## 0250 SEAMCALL TDH_SYS_TDMR_INIT SEAMRET status: 0 SUCCESS -----------------
+tdx call: 36
+########## issuing SEAMCALL TDH_SYS_TDMR_INIT ----------------------------------------
+########## 0251 SEAMCALL TDH_SYS_TDMR_INIT SEAMRET status: 0 SUCCESS -----------------
+tdx call: 36
+########## issuing SEAMCALL TDH_SYS_TDMR_INIT ----------------------------------------
+########## 0252 SEAMCALL TDH_SYS_TDMR_INIT SEAMRET status: 0 SUCCESS -----------------
+tdx call: 36
+########## issuing SEAMCALL TDH_SYS_TDMR_INIT ----------------------------------------
+########## 0253 SEAMCALL TDH_SYS_TDMR_INIT SEAMRET status: 0 SUCCESS -----------------
+tdx call: 36
+########## issuing SEAMCALL TDH_SYS_TDMR_INIT ----------------------------------------
+########## 0254 SEAMCALL TDH_SYS_TDMR_INIT SEAMRET status: 0 SUCCESS -----------------
+tdx call: 36
+########## issuing SEAMCALL TDH_SYS_TDMR_INIT ----------------------------------------
+########## 0255 SEAMCALL TDH_SYS_TDMR_INIT SEAMRET status: 0 SUCCESS -----------------
+tdx call: 36
+########## issuing SEAMCALL TDH_SYS_TDMR_INIT ----------------------------------------
+########## 0256 SEAMCALL TDH_SYS_TDMR_INIT SEAMRET status: 0 SUCCESS -----------------
+tdx call: 36
+########## issuing SEAMCALL TDH_SYS_TDMR_INIT ----------------------------------------
+########## 0257 SEAMCALL TDH_SYS_TDMR_INIT SEAMRET status: 0 SUCCESS -----------------
+tdx call: 36
+########## issuing SEAMCALL TDH_SYS_TDMR_INIT ----------------------------------------
+########## 0258 SEAMCALL TDH_SYS_TDMR_INIT SEAMRET status: 0 SUCCESS -----------------
+tdx call: 36
+########## issuing SEAMCALL TDH_SYS_TDMR_INIT ----------------------------------------
+########## 0259 SEAMCALL TDH_SYS_TDMR_INIT SEAMRET status: 0 SUCCESS -----------------
+tdx call: 36
+########## issuing SEAMCALL TDH_SYS_TDMR_INIT ----------------------------------------
+########## 0260 SEAMCALL TDH_SYS_TDMR_INIT SEAMRET status: 0 SUCCESS -----------------
+tdx call: 36
+########## issuing SEAMCALL TDH_SYS_TDMR_INIT ----------------------------------------
+########## 0261 SEAMCALL TDH_SYS_TDMR_INIT SEAMRET status: 0 SUCCESS -----------------
+tdx call: 36
+########## issuing SEAMCALL TDH_SYS_TDMR_INIT ----------------------------------------
+########## 0262 SEAMCALL TDH_SYS_TDMR_INIT SEAMRET status: 0 SUCCESS -----------------
+tdx call: 36
+########## issuing SEAMCALL TDH_SYS_TDMR_INIT ----------------------------------------
+########## 0263 SEAMCALL TDH_SYS_TDMR_INIT SEAMRET status: 0 SUCCESS -----------------
+tdx call: 36
+########## issuing SEAMCALL TDH_SYS_TDMR_INIT ----------------------------------------
+########## 0264 SEAMCALL TDH_SYS_TDMR_INIT SEAMRET status: 0 SUCCESS -----------------
+tdx call: 36
+########## issuing SEAMCALL TDH_SYS_TDMR_INIT ----------------------------------------
+########## 0265 SEAMCALL TDH_SYS_TDMR_INIT SEAMRET status: 0 SUCCESS -----------------
+tdx call: 36
+########## issuing SEAMCALL TDH_SYS_TDMR_INIT ----------------------------------------
+########## 0266 SEAMCALL TDH_SYS_TDMR_INIT SEAMRET status: 0 SUCCESS -----------------
+com->tdmr_next_avl_p pa:0x40000000
+0 com->sreq.secPages[page_idx].raw: 0x40000400
+Address 0x7fffe6d59810
+hhkid: 33
+tdx call: 9
+########## issuing SEAMCALL TDH_MNG_CREATE ----------------------------------------
+########## 0267 SEAMCALL TDH_MNG_CREATE SEAMRET status: 0 SUCCESS -----------------
+tdx call: 8
+########## issuing SEAMCALL TDH_MNG_KEY_CONFIG ----------------------------------------
+########## 0268 SEAMCALL TDH_MNG_KEY_CONFIG SEAMRET status: 0 SUCCESS -----------------
+com->tdmr_next_avl_p pa:0x40001000
+1 com->sreq.secPages[page_idx].raw: 0x40001000
+Address 0x7fffe6d59818
+com->tdmr_next_avl_p pa:0x40001000
+1 com->sreq.secPages[page_idx].raw: 0x40001000
+Address 0x7fffe6d59818
+tdx call: 1
+########## issuing SEAMCALL TDH_MNG_ADDCX ----------------------------------------
+########## 0269 SEAMCALL TDH_MNG_ADDCX SEAMRET status: 0 SUCCESS -----------------
+com->tdmr_next_avl_p pa:0x40002000
+2 com->sreq.secPages[page_idx].raw: 0x40002000
+Address 0x7fffe6d59820
+tdx call: 1
+########## issuing SEAMCALL TDH_MNG_ADDCX ----------------------------------------
+########## 0270 SEAMCALL TDH_MNG_ADDCX SEAMRET status: 0 SUCCESS -----------------
+com->tdmr_next_avl_p pa:0x40003000
+3 com->sreq.secPages[page_idx].raw: 0x40003000
+Address 0x7fffe6d59828
+tdx call: 1
+########## issuing SEAMCALL TDH_MNG_ADDCX ----------------------------------------
+########## 0271 SEAMCALL TDH_MNG_ADDCX SEAMRET status: 0 SUCCESS -----------------
+com->tdmr_next_avl_p pa:0x40004000
+4 com->sreq.secPages[page_idx].raw: 0x40004000
+Address 0x7fffe6d59830
+com->tdmr_next_avl_p pa:0x40004000
+4 com->sreq.secPages[page_idx].raw: 0x40004000
+Address 0x7fffe6d59830
+tdx call: 1
+########## issuing SEAMCALL TDH_MNG_ADDCX ----------------------------------------
+########## 0272 SEAMCALL TDH_MNG_ADDCX SEAMRET status: 0 SUCCESS -----------------
+com->tdmr_next_avl_p pa:0x40005000
+5 com->sreq.secPages[page_idx].raw: 0x40005000
+Address 0x7fffe6d59838
+tdx call: 1
+########## issuing SEAMCALL TDH_MNG_ADDCX ----------------------------------------
+########## 0273 SEAMCALL TDH_MNG_ADDCX SEAMRET status: 0 SUCCESS -----------------
+com->tdmr_next_avl_p pa:0x40006000
+6 com->sreq.secPages[page_idx].raw: 0x40006000
+Address 0x7fffe6d59840
+tdx call: 1
+########## issuing SEAMCALL TDH_MNG_ADDCX ----------------------------------------
+########## 0274 SEAMCALL TDH_MNG_ADDCX SEAMRET status: 0 SUCCESS -----------------
+tdx call: 32
+########## issuing SEAMCALL TDH_SYS_INFO ----------------------------------------
+########## 0275 SEAMCALL TDH_SYS_INFO SEAMRET status: 0 SUCCESS -----------------
+tdx call: 21
+########## issuing SEAMCALL TDH_MNG_INIT ----------------------------------------
+########## 0276 SEAMCALL TDH_MNG_INIT SEAMRET status: 0 SUCCESS -----------------
+com->tdmr_next_avl_pa tdvps:40007000
+com->tdmr_next_avl_p pa:0x40007000
+7 com->sreq.secPages[page_idx].raw: 0x40007000
+Address 0x7fffe6d59848
+tdx call: 10
+########## issuing SEAMCALL TDH_VP_CREATE ----------------------------------------
+########## 0277 SEAMCALL TDH_VP_CREATE SEAMRET status: 0 SUCCESS -----------------
+tdvps pa: 40007000
+com->tdmr_next_avl_pa:40008000
+com->tdmr_next_avl_p pa:0x40008000
+8 com->sreq.secPages[page_idx].raw: 0x40008000
+Address 0x7fffe6d59850
+com->tdmr_next_avl_p pa:0x40008000
+8 com->sreq.secPages[page_idx].raw: 0x40008000
+Address 0x7fffe6d59850
+tdx call: 4
+########## issuing SEAMCALL TDH_VP_ADDCX ----------------------------------------
+########## 0278 SEAMCALL TDH_VP_ADDCX SEAMRET status: 0 SUCCESS -----------------
+com->tdmr_next_avl_pa:40009000
+com->tdmr_next_avl_p pa:0x40009000
+9 com->sreq.secPages[page_idx].raw: 0x40009000
+Address 0x7fffe6d59858
+tdx call: 4
+########## issuing SEAMCALL TDH_VP_ADDCX ----------------------------------------
+########## 0279 SEAMCALL TDH_VP_ADDCX SEAMRET status: 0 SUCCESS -----------------
+com->tdmr_next_avl_pa:4000a000
+com->tdmr_next_avl_p pa:0x4000a000
+10 com->sreq.secPages[page_idx].raw: 0x4000a000
+Address 0x7fffe6d59860
+tdx call: 4
+########## issuing SEAMCALL TDH_VP_ADDCX ----------------------------------------
+########## 0280 SEAMCALL TDH_VP_ADDCX SEAMRET status: 0 SUCCESS -----------------
+com->tdmr_next_avl_pa:4000b000
+com->tdmr_next_avl_p pa:0x4000b000
+11 com->sreq.secPages[page_idx].raw: 0x4000b000
+Address 0x7fffe6d59868
+tdx call: 4
+########## issuing SEAMCALL TDH_VP_ADDCX ----------------------------------------
+########## 0281 SEAMCALL TDH_VP_ADDCX SEAMRET status: 0 SUCCESS -----------------
+com->tdmr_next_avl_pa:4000c000
+com->tdmr_next_avl_p pa:0x4000c000
+12 com->sreq.secPages[page_idx].raw: 0x4000c000
+Address 0x7fffe6d59870
+tdx call: 4
+########## issuing SEAMCALL TDH_VP_ADDCX ----------------------------------------
+########## 0282 SEAMCALL TDH_VP_ADDCX SEAMRET status: 0 SUCCESS -----------------
+com->tdmr_next_avl_pa:4000d000
+com->tdmr_next_avl_p pa:0x4000d000
+13 com->sreq.secPages[page_idx].raw: 0x4000d000
+Address 0x7fffe6d59878
+tdx call: 4
+########## issuing SEAMCALL TDH_VP_ADDCX ----------------------------------------
+########## 0283 SEAMCALL TDH_VP_ADDCX SEAMRET status: 0 SUCCESS -----------------
+com->tdmr_next_avl_pa:4000e000
+com->tdmr_next_avl_p pa:0x4000e000
+14 com->sreq.secPages[page_idx].raw: 0x4000e000
+Address 0x7fffe6d59880
+tdx call: 4
+########## issuing SEAMCALL TDH_VP_ADDCX ----------------------------------------
+########## 0284 SEAMCALL TDH_VP_ADDCX SEAMRET status: 0 SUCCESS -----------------
+com->tdmr_next_avl_pa:4000f000
+com->tdmr_next_avl_p pa:0x4000f000
+15 com->sreq.secPages[page_idx].raw: 0x4000f000
+Address 0x7fffe6d59888
+tdx call: 4
+########## issuing SEAMCALL TDH_VP_ADDCX ----------------------------------------
+########## 0285 SEAMCALL TDH_VP_ADDCX SEAMRET status: 0 SUCCESS -----------------
+com->tdmr_next_avl_pa:40010000
+com->tdmr_next_avl_p pa:0x40010000
+16 com->sreq.secPages[page_idx].raw: 0x40010000
+Address 0x7fffe6d59890
+tdx call: 4
+########## issuing SEAMCALL TDH_VP_ADDCX ----------------------------------------
+########## 0286 SEAMCALL TDH_VP_ADDCX SEAMRET status: 0 SUCCESS -----------------
+com->tdmr_next_avl_pa:40011000
+com->tdmr_next_avl_p pa:0x40011000
+17 com->sreq.secPages[page_idx].raw: 0x40011000
+Address 0x7fffe6d59898
+tdx call: 4
+########## issuing SEAMCALL TDH_VP_ADDCX ----------------------------------------
+########## 0287 SEAMCALL TDH_VP_ADDCX SEAMRET status: 0 SUCCESS -----------------
+com->tdmr_next_avl_pa:40012000
+com->tdmr_next_avl_p pa:0x40012000
+18 com->sreq.secPages[page_idx].raw: 0x40012000
+Address 0x7fffe6d598a0
+tdx call: 4
+########## issuing SEAMCALL TDH_VP_ADDCX ----------------------------------------
+########## 0288 SEAMCALL TDH_VP_ADDCX SEAMRET status: 0 SUCCESS -----------------
+com->tdmr_next_avl_pa:40013000
+com->tdmr_next_avl_p pa:0x40013000
+19 com->sreq.secPages[page_idx].raw: 0x40013000
+Address 0x7fffe6d598a8
+tdx call: 4
+########## issuing SEAMCALL TDH_VP_ADDCX ----------------------------------------
+########## 0289 SEAMCALL TDH_VP_ADDCX SEAMRET status: 0 SUCCESS -----------------
+com->tdmr_next_avl_pa:40014000
+com->tdmr_next_avl_p pa:0x40014000
+20 com->sreq.secPages[page_idx].raw: 0x40014000
+Address 0x7fffe6d598b0
+tdx call: 4
+########## issuing SEAMCALL TDH_VP_ADDCX ----------------------------------------
+########## 0290 SEAMCALL TDH_VP_ADDCX SEAMRET status: 0 SUCCESS -----------------
+com->tdmr_next_avl_pa:40015000
+com->tdmr_next_avl_p pa:0x40015000
+21 com->sreq.secPages[page_idx].raw: 0x40015000
+Address 0x7fffe6d598b8
+tdx call: 4
+########## issuing SEAMCALL TDH_VP_ADDCX ----------------------------------------
+########## 0291 SEAMCALL TDH_VP_ADDCX SEAMRET status: 0 SUCCESS -----------------
+tdx call: 22
+########## issuing SEAMCALL TDH_VP_INIT ----------------------------------------
+########## 0292 SEAMCALL TDH_VP_INIT SEAMRET status: 0 SUCCESS -----------------
+com->tdmr_next_avl_p pa:0x40016000
+22 com->sreq.secPages[page_idx].raw: 0x40016000
+Address 0x7fffe6d598c0
+tdx call: 3
+########## issuing SEAMCALL TDH_MEM_SEPT_ADD ----------------------------------------
+########## 0293 SEAMCALL TDH_MEM_SEPT_ADD SEAMRET status: 0 SUCCESS -----------------
+R8: ffffffffffffffff
+com->tdmr_next_avl_p pa:0x40017000
+23 com->sreq.secPages[page_idx].raw: 0x40017000
+Address 0x7fffe6d598c8
+tdx call: 3
+########## issuing SEAMCALL TDH_MEM_SEPT_ADD ----------------------------------------
+########## 0294 SEAMCALL TDH_MEM_SEPT_ADD SEAMRET status: 0 SUCCESS -----------------
+R8: ffffffffffffffff
+com->tdmr_next_avl_p pa:0x40018000
+24 com->sreq.secPages[page_idx].raw: 0x40018000
+Address 0x7fffe6d598d0
+tdx call: 3
+########## issuing SEAMCALL TDH_MEM_SEPT_ADD ----------------------------------------
+########## 0295 SEAMCALL TDH_MEM_SEPT_ADD SEAMRET status: 0 SUCCESS -----------------
+R8: ffffffffffffffff
+gpa start:0x0
+com->tdmr_next_avl_p pa:0x40019000
+25 com->sreq.secPages[page_idx].raw: 0x40019000
+Address 0x7fffe6d598d8
+tdx call: 3
+########## issuing SEAMCALL TDH_MEM_SEPT_ADD ----------------------------------------
+########## 0296 SEAMCALL TDH_MEM_SEPT_ADD SEAMRET status: 0 SUCCESS -----------------
+R8: ffffffffffffffff
+com->tdmr_next_avl_p pa:0x4001a000
+26 com->sreq.secPages[page_idx].raw: 0x4001a000
+Address 0x7fffe6d598e0
+tdx call: 2
+########## issuing SEAMCALL TDH_MEM_PAGE_ADD ----------------------------------------
+########## 0297 SEAMCALL TDH_MEM_PAGE_ADD SEAMRET status: 0 SUCCESS -----------------
+com->tdmr_next_avl_p pa:0x4001b000
+27 com->sreq.secPages[page_idx].raw: 0x4001b000
+Address 0x7fffe6d598e8
+tdx call: 2
+########## issuing SEAMCALL TDH_MEM_PAGE_ADD ----------------------------------------
+########## 0298 SEAMCALL TDH_MEM_PAGE_ADD SEAMRET status: 0 SUCCESS -----------------
+com->tdmr_next_avl_p pa:0x4001c000
+28 com->sreq.secPages[page_idx].raw: 0x4001c000
+Address 0x7fffe6d598f0
+tdx call: 2
+########## issuing SEAMCALL TDH_MEM_PAGE_ADD ----------------------------------------
+########## 0299 SEAMCALL TDH_MEM_PAGE_ADD SEAMRET status: 0 SUCCESS -----------------
+com->tdmr_next_avl_p pa:0x4001d000
+29 com->sreq.secPages[page_idx].raw: 0x4001d000
+Address 0x7fffe6d598f8
+tdx call: 2
+########## issuing SEAMCALL TDH_MEM_PAGE_ADD ----------------------------------------
+########## 0300 SEAMCALL TDH_MEM_PAGE_ADD SEAMRET status: 0 SUCCESS -----------------
+tdx call: 16
+########## issuing SEAMCALL TDH_MR_EXTEND ----------------------------------------
+########## 0301 SEAMCALL TDH_MR_EXTEND SEAMRET status: 0 SUCCESS -----------------
+tdx call: 16
+########## issuing SEAMCALL TDH_MR_EXTEND ----------------------------------------
+########## 0302 SEAMCALL TDH_MR_EXTEND SEAMRET status: 0 SUCCESS -----------------
+tdx call: 16
+########## issuing SEAMCALL TDH_MR_EXTEND ----------------------------------------
+########## 0303 SEAMCALL TDH_MR_EXTEND SEAMRET status: 0 SUCCESS -----------------
+tdx call: 16
+########## issuing SEAMCALL TDH_MR_EXTEND ----------------------------------------
+########## 0304 SEAMCALL TDH_MR_EXTEND SEAMRET status: 0 SUCCESS -----------------
+tdx call: 16
+########## issuing SEAMCALL TDH_MR_EXTEND ----------------------------------------
+########## 0305 SEAMCALL TDH_MR_EXTEND SEAMRET status: 0 SUCCESS -----------------
+tdx call: 16
+########## issuing SEAMCALL TDH_MR_EXTEND ----------------------------------------
+########## 0306 SEAMCALL TDH_MR_EXTEND SEAMRET status: 0 SUCCESS -----------------
+tdx call: 16
+########## issuing SEAMCALL TDH_MR_EXTEND ----------------------------------------
+########## 0307 SEAMCALL TDH_MR_EXTEND SEAMRET status: 0 SUCCESS -----------------
+tdx call: 16
+########## issuing SEAMCALL TDH_MR_EXTEND ----------------------------------------
+########## 0308 SEAMCALL TDH_MR_EXTEND SEAMRET status: 0 SUCCESS -----------------
+tdx call: 16
+########## issuing SEAMCALL TDH_MR_EXTEND ----------------------------------------
+########## 0309 SEAMCALL TDH_MR_EXTEND SEAMRET status: 0 SUCCESS -----------------
+tdx call: 16
+########## issuing SEAMCALL TDH_MR_EXTEND ----------------------------------------
+########## 0310 SEAMCALL TDH_MR_EXTEND SEAMRET status: 0 SUCCESS -----------------
+tdx call: 16
+########## issuing SEAMCALL TDH_MR_EXTEND ----------------------------------------
+########## 0311 SEAMCALL TDH_MR_EXTEND SEAMRET status: 0 SUCCESS -----------------
+tdx call: 16
+########## issuing SEAMCALL TDH_MR_EXTEND ----------------------------------------
+########## 0312 SEAMCALL TDH_MR_EXTEND SEAMRET status: 0 SUCCESS -----------------
+tdx call: 16
+########## issuing SEAMCALL TDH_MR_EXTEND ----------------------------------------
+########## 0313 SEAMCALL TDH_MR_EXTEND SEAMRET status: 0 SUCCESS -----------------
+tdx call: 16
+########## issuing SEAMCALL TDH_MR_EXTEND ----------------------------------------
+########## 0314 SEAMCALL TDH_MR_EXTEND SEAMRET status: 0 SUCCESS -----------------
+tdx call: 16
+########## issuing SEAMCALL TDH_MR_EXTEND ----------------------------------------
+########## 0315 SEAMCALL TDH_MR_EXTEND SEAMRET status: 0 SUCCESS -----------------
+tdx call: 16
+########## issuing SEAMCALL TDH_MR_EXTEND ----------------------------------------
+########## 0316 SEAMCALL TDH_MR_EXTEND SEAMRET status: 0 SUCCESS -----------------
+tdx call: 16
+########## issuing SEAMCALL TDH_MR_EXTEND ----------------------------------------
+########## 0317 SEAMCALL TDH_MR_EXTEND SEAMRET status: 0 SUCCESS -----------------
+tdx call: 16
+########## issuing SEAMCALL TDH_MR_EXTEND ----------------------------------------
+########## 0318 SEAMCALL TDH_MR_EXTEND SEAMRET status: 0 SUCCESS -----------------
+tdx call: 16
+########## issuing SEAMCALL TDH_MR_EXTEND ----------------------------------------
+########## 0319 SEAMCALL TDH_MR_EXTEND SEAMRET status: 0 SUCCESS -----------------
+tdx call: 16
+########## issuing SEAMCALL TDH_MR_EXTEND ----------------------------------------
+########## 0320 SEAMCALL TDH_MR_EXTEND SEAMRET status: 0 SUCCESS -----------------
+tdx call: 16
+########## issuing SEAMCALL TDH_MR_EXTEND ----------------------------------------
+########## 0321 SEAMCALL TDH_MR_EXTEND SEAMRET status: 0 SUCCESS -----------------
+tdx call: 16
+########## issuing SEAMCALL TDH_MR_EXTEND ----------------------------------------
+########## 0322 SEAMCALL TDH_MR_EXTEND SEAMRET status: 0 SUCCESS -----------------
+tdx call: 16
+########## issuing SEAMCALL TDH_MR_EXTEND ----------------------------------------
+########## 0323 SEAMCALL TDH_MR_EXTEND SEAMRET status: 0 SUCCESS -----------------
+tdx call: 16
+########## issuing SEAMCALL TDH_MR_EXTEND ----------------------------------------
+########## 0324 SEAMCALL TDH_MR_EXTEND SEAMRET status: 0 SUCCESS -----------------
+tdx call: 16
+########## issuing SEAMCALL TDH_MR_EXTEND ----------------------------------------
+########## 0325 SEAMCALL TDH_MR_EXTEND SEAMRET status: 0 SUCCESS -----------------
+tdx call: 16
+########## issuing SEAMCALL TDH_MR_EXTEND ----------------------------------------
+########## 0326 SEAMCALL TDH_MR_EXTEND SEAMRET status: 0 SUCCESS -----------------
+tdx call: 16
+########## issuing SEAMCALL TDH_MR_EXTEND ----------------------------------------
+########## 0327 SEAMCALL TDH_MR_EXTEND SEAMRET status: 0 SUCCESS -----------------
+tdx call: 16
+########## issuing SEAMCALL TDH_MR_EXTEND ----------------------------------------
+########## 0328 SEAMCALL TDH_MR_EXTEND SEAMRET status: 0 SUCCESS -----------------
+tdx call: 16
+########## issuing SEAMCALL TDH_MR_EXTEND ----------------------------------------
+########## 0329 SEAMCALL TDH_MR_EXTEND SEAMRET status: 0 SUCCESS -----------------
+tdx call: 16
+########## issuing SEAMCALL TDH_MR_EXTEND ----------------------------------------
+########## 0330 SEAMCALL TDH_MR_EXTEND SEAMRET status: 0 SUCCESS -----------------
+tdx call: 16
+########## issuing SEAMCALL TDH_MR_EXTEND ----------------------------------------
+########## 0331 SEAMCALL TDH_MR_EXTEND SEAMRET status: 0 SUCCESS -----------------
+tdx call: 16
+########## issuing SEAMCALL TDH_MR_EXTEND ----------------------------------------
+########## 0332 SEAMCALL TDH_MR_EXTEND SEAMRET status: 0 SUCCESS -----------------
+tdx call: 16
+########## issuing SEAMCALL TDH_MR_EXTEND ----------------------------------------
+########## 0333 SEAMCALL TDH_MR_EXTEND SEAMRET status: 0 SUCCESS -----------------
+tdx call: 16
+########## issuing SEAMCALL TDH_MR_EXTEND ----------------------------------------
+########## 0334 SEAMCALL TDH_MR_EXTEND SEAMRET status: 0 SUCCESS -----------------
+tdx call: 16
+########## issuing SEAMCALL TDH_MR_EXTEND ----------------------------------------
+########## 0335 SEAMCALL TDH_MR_EXTEND SEAMRET status: 0 SUCCESS -----------------
+tdx call: 16
+########## issuing SEAMCALL TDH_MR_EXTEND ----------------------------------------
+########## 0336 SEAMCALL TDH_MR_EXTEND SEAMRET status: 0 SUCCESS -----------------
+tdx call: 16
+########## issuing SEAMCALL TDH_MR_EXTEND ----------------------------------------
+########## 0337 SEAMCALL TDH_MR_EXTEND SEAMRET status: 0 SUCCESS -----------------
+tdx call: 16
+########## issuing SEAMCALL TDH_MR_EXTEND ----------------------------------------
+########## 0338 SEAMCALL TDH_MR_EXTEND SEAMRET status: 0 SUCCESS -----------------
+tdx call: 16
+########## issuing SEAMCALL TDH_MR_EXTEND ----------------------------------------
+########## 0339 SEAMCALL TDH_MR_EXTEND SEAMRET status: 0 SUCCESS -----------------
+tdx call: 16
+########## issuing SEAMCALL TDH_MR_EXTEND ----------------------------------------
+########## 0340 SEAMCALL TDH_MR_EXTEND SEAMRET status: 0 SUCCESS -----------------
+tdx call: 16
+########## issuing SEAMCALL TDH_MR_EXTEND ----------------------------------------
+########## 0341 SEAMCALL TDH_MR_EXTEND SEAMRET status: 0 SUCCESS -----------------
+tdx call: 16
+########## issuing SEAMCALL TDH_MR_EXTEND ----------------------------------------
+########## 0342 SEAMCALL TDH_MR_EXTEND SEAMRET status: 0 SUCCESS -----------------
+tdx call: 16
+########## issuing SEAMCALL TDH_MR_EXTEND ----------------------------------------
+########## 0343 SEAMCALL TDH_MR_EXTEND SEAMRET status: 0 SUCCESS -----------------
+tdx call: 16
+########## issuing SEAMCALL TDH_MR_EXTEND ----------------------------------------
+########## 0344 SEAMCALL TDH_MR_EXTEND SEAMRET status: 0 SUCCESS -----------------
+tdx call: 16
+########## issuing SEAMCALL TDH_MR_EXTEND ----------------------------------------
+########## 0345 SEAMCALL TDH_MR_EXTEND SEAMRET status: 0 SUCCESS -----------------
+tdx call: 16
+########## issuing SEAMCALL TDH_MR_EXTEND ----------------------------------------
+########## 0346 SEAMCALL TDH_MR_EXTEND SEAMRET status: 0 SUCCESS -----------------
+tdx call: 16
+########## issuing SEAMCALL TDH_MR_EXTEND ----------------------------------------
+########## 0347 SEAMCALL TDH_MR_EXTEND SEAMRET status: 0 SUCCESS -----------------
+tdx call: 16
+########## issuing SEAMCALL TDH_MR_EXTEND ----------------------------------------
+########## 0348 SEAMCALL TDH_MR_EXTEND SEAMRET status: 0 SUCCESS -----------------
+tdx call: 16
+########## issuing SEAMCALL TDH_MR_EXTEND ----------------------------------------
+########## 0349 SEAMCALL TDH_MR_EXTEND SEAMRET status: 0 SUCCESS -----------------
+tdx call: 16
+########## issuing SEAMCALL TDH_MR_EXTEND ----------------------------------------
+########## 0350 SEAMCALL TDH_MR_EXTEND SEAMRET status: 0 SUCCESS -----------------
+tdx call: 16
+########## issuing SEAMCALL TDH_MR_EXTEND ----------------------------------------
+########## 0351 SEAMCALL TDH_MR_EXTEND SEAMRET status: 0 SUCCESS -----------------
+tdx call: 16
+########## issuing SEAMCALL TDH_MR_EXTEND ----------------------------------------
+########## 0352 SEAMCALL TDH_MR_EXTEND SEAMRET status: 0 SUCCESS -----------------
+tdx call: 16
+########## issuing SEAMCALL TDH_MR_EXTEND ----------------------------------------
+########## 0353 SEAMCALL TDH_MR_EXTEND SEAMRET status: 0 SUCCESS -----------------
+tdx call: 16
+########## issuing SEAMCALL TDH_MR_EXTEND ----------------------------------------
+########## 0354 SEAMCALL TDH_MR_EXTEND SEAMRET status: 0 SUCCESS -----------------
+tdx call: 16
+########## issuing SEAMCALL TDH_MR_EXTEND ----------------------------------------
+########## 0355 SEAMCALL TDH_MR_EXTEND SEAMRET status: 0 SUCCESS -----------------
+tdx call: 16
+########## issuing SEAMCALL TDH_MR_EXTEND ----------------------------------------
+########## 0356 SEAMCALL TDH_MR_EXTEND SEAMRET status: 0 SUCCESS -----------------
+tdx call: 16
+########## issuing SEAMCALL TDH_MR_EXTEND ----------------------------------------
+########## 0357 SEAMCALL TDH_MR_EXTEND SEAMRET status: 0 SUCCESS -----------------
+tdx call: 16
+########## issuing SEAMCALL TDH_MR_EXTEND ----------------------------------------
+########## 0358 SEAMCALL TDH_MR_EXTEND SEAMRET status: 0 SUCCESS -----------------
+tdx call: 16
+########## issuing SEAMCALL TDH_MR_EXTEND ----------------------------------------
+########## 0359 SEAMCALL TDH_MR_EXTEND SEAMRET status: 0 SUCCESS -----------------
+tdx call: 16
+########## issuing SEAMCALL TDH_MR_EXTEND ----------------------------------------
+########## 0360 SEAMCALL TDH_MR_EXTEND SEAMRET status: 0 SUCCESS -----------------
+tdx call: 16
+########## issuing SEAMCALL TDH_MR_EXTEND ----------------------------------------
+########## 0361 SEAMCALL TDH_MR_EXTEND SEAMRET status: 0 SUCCESS -----------------
+tdx call: 16
+########## issuing SEAMCALL TDH_MR_EXTEND ----------------------------------------
+########## 0362 SEAMCALL TDH_MR_EXTEND SEAMRET status: 0 SUCCESS -----------------
+tdx call: 16
+########## issuing SEAMCALL TDH_MR_EXTEND ----------------------------------------
+########## 0363 SEAMCALL TDH_MR_EXTEND SEAMRET status: 0 SUCCESS -----------------
+tdx call: 16
+########## issuing SEAMCALL TDH_MR_EXTEND ----------------------------------------
+########## 0364 SEAMCALL TDH_MR_EXTEND SEAMRET status: 0 SUCCESS -----------------
+tdx call: 17
+########## issuing SEAMCALL TDH_MR_FINALIZE ----------------------------------------
+########## 0365 SEAMCALL TDH_MR_FINALIZE SEAMRET status: 0 SUCCESS -----------------
+com->tdmr_next_avl_p pa:0x4001e000
+30 com->sreq.secPages[page_idx].raw: 0x4001e401
+Address 0x7fffe6d59900
+hhkid: 34
+tdx call: 9
+########## issuing SEAMCALL TDH_MNG_CREATE ----------------------------------------
+########## 0366 SEAMCALL TDH_MNG_CREATE SEAMRET status: 0 SUCCESS -----------------
+############# TD 1 LEFECYCLE STATE: TD_HKID_ASSIGNED
+tdx call: 8
+########## issuing SEAMCALL TDH_MNG_KEY_CONFIG ----------------------------------------
+########## 0367 SEAMCALL TDH_MNG_KEY_CONFIG SEAMRET status: 0 SUCCESS -----------------
+############# TD 1 LEFECYCLE STATE: TD_KEYS_CONFIGURED
+com->tdmr_next_avl_p pa:0x4001f000
+31 com->sreq.secPages[page_idx].raw: 0x4001f041
+Address 0x7fffe6d59908
+com->tdmr_next_avl_p pa:0x4001f000
+31 com->sreq.secPages[page_idx].raw: 0x4001f041
+Address 0x7fffe6d59908
+tdx call: 1
+########## issuing SEAMCALL TDH_MNG_ADDCX ----------------------------------------
+########## 0368 SEAMCALL TDH_MNG_ADDCX SEAMRET status: 0 SUCCESS -----------------
+############# TD 1 LEFECYCLE STATE: TD_KEYS_CONFIGURED
+############# TD 1 OP STATE: OP_STATE_UNINITIALIZED
+com->tdmr_next_avl_p pa:0x40020000
+32 com->sreq.secPages[page_idx].raw: 0x40020041
+Address 0x7fffe6d59910
+tdx call: 1
+########## issuing SEAMCALL TDH_MNG_ADDCX ----------------------------------------
+########## 0369 SEAMCALL TDH_MNG_ADDCX SEAMRET status: 0 SUCCESS -----------------
+############# TD 1 LEFECYCLE STATE: TD_KEYS_CONFIGURED
+############# TD 1 OP STATE: OP_STATE_UNINITIALIZED
+com->tdmr_next_avl_p pa:0x40021000
+33 com->sreq.secPages[page_idx].raw: 0x40021041
+Address 0x7fffe6d59918
+tdx call: 1
+########## issuing SEAMCALL TDH_MNG_ADDCX ----------------------------------------
+########## 0370 SEAMCALL TDH_MNG_ADDCX SEAMRET status: 0 SUCCESS -----------------
+############# TD 1 LEFECYCLE STATE: TD_KEYS_CONFIGURED
+############# TD 1 OP STATE: OP_STATE_UNINITIALIZED
+com->tdmr_next_avl_p pa:0x40022000
+34 com->sreq.secPages[page_idx].raw: 0x40022041
+Address 0x7fffe6d59920
+com->tdmr_next_avl_p pa:0x40022000
+34 com->sreq.secPages[page_idx].raw: 0x40022041
+Address 0x7fffe6d59920
+tdx call: 1
+########## issuing SEAMCALL TDH_MNG_ADDCX ----------------------------------------
+########## 0371 SEAMCALL TDH_MNG_ADDCX SEAMRET status: 0 SUCCESS -----------------
+############# TD 1 LEFECYCLE STATE: TD_KEYS_CONFIGURED
+############# TD 1 OP STATE: OP_STATE_UNINITIALIZED
+com->tdmr_next_avl_p pa:0x40023000
+35 com->sreq.secPages[page_idx].raw: 0x40023041
+Address 0x7fffe6d59928
+tdx call: 1
+########## issuing SEAMCALL TDH_MNG_ADDCX ----------------------------------------
+########## 0372 SEAMCALL TDH_MNG_ADDCX SEAMRET status: 0 SUCCESS -----------------
+############# TD 1 LEFECYCLE STATE: TD_KEYS_CONFIGURED
+############# TD 1 OP STATE: OP_STATE_UNINITIALIZED
+com->tdmr_next_avl_p pa:0x40024000
+36 com->sreq.secPages[page_idx].raw: 0x40024041
+Address 0x7fffe6d59930
+tdx call: 1
+########## issuing SEAMCALL TDH_MNG_ADDCX ----------------------------------------
+########## 0373 SEAMCALL TDH_MNG_ADDCX SEAMRET status: 0 SUCCESS -----------------
+############# TD 1 LEFECYCLE STATE: TD_KEYS_CONFIGURED
+############# TD 1 OP STATE: OP_STATE_UNINITIALIZED
+tdx call: 32
+########## issuing SEAMCALL TDH_SYS_INFO ----------------------------------------
+########## 0374 SEAMCALL TDH_SYS_INFO SEAMRET status: 0 SUCCESS -----------------
+############# TD 1 LEFECYCLE STATE: TD_KEYS_CONFIGURED
+############# TD 1 OP STATE: OP_STATE_UNINITIALIZED
+tdx call: 21
+########## issuing SEAMCALL TDH_MNG_INIT ----------------------------------------
+########## 0375 SEAMCALL TDH_MNG_INIT SEAMRET status: 0 SUCCESS -----------------
+############# TD 1 LEFECYCLE STATE: TD_KEYS_CONFIGURED
+############# TD 1 OP STATE: OP_STATE_INITIALIZED
+com->tdmr_next_avl_pa tdvps:40025000
+com->tdmr_next_avl_p pa:0x40025000
+37 com->sreq.secPages[page_idx].raw: 0x40025041
+Address 0x7fffe6d59938
+tdx call: 10
+########## issuing SEAMCALL TDH_VP_CREATE ----------------------------------------
+########## 0376 SEAMCALL TDH_VP_CREATE SEAMRET status: 0 SUCCESS -----------------
+############# TD 1 LEFECYCLE STATE: TD_KEYS_CONFIGURED
+############# TD 1 OP STATE: OP_STATE_INITIALIZED
+tdvps pa: 40025000
+com->tdmr_next_avl_pa:40026000
+com->tdmr_next_avl_p pa:0x40026000
+38 com->sreq.secPages[page_idx].raw: 0x40026041
+Address 0x7fffe6d59940
+com->tdmr_next_avl_p pa:0x40026000
+38 com->sreq.secPages[page_idx].raw: 0x40026041
+Address 0x7fffe6d59940
+tdx call: 4
+########## issuing SEAMCALL TDH_VP_ADDCX ----------------------------------------
+########## 0377 SEAMCALL TDH_VP_ADDCX SEAMRET status: 0 SUCCESS -----------------
+############# TD 1 LEFECYCLE STATE: TD_KEYS_CONFIGURED
+############# TD 1 OP STATE: OP_STATE_INITIALIZED
+com->tdmr_next_avl_pa:40027000
+com->tdmr_next_avl_p pa:0x40027000
+39 com->sreq.secPages[page_idx].raw: 0x40027041
+Address 0x7fffe6d59948
+tdx call: 4
+########## issuing SEAMCALL TDH_VP_ADDCX ----------------------------------------
+########## 0378 SEAMCALL TDH_VP_ADDCX SEAMRET status: 0 SUCCESS -----------------
+############# TD 1 LEFECYCLE STATE: TD_KEYS_CONFIGURED
+############# TD 1 OP STATE: OP_STATE_INITIALIZED
+com->tdmr_next_avl_pa:40028000
+com->tdmr_next_avl_p pa:0x40028000
+40 com->sreq.secPages[page_idx].raw: 0x40028041
+Address 0x7fffe6d59950
+tdx call: 4
+########## issuing SEAMCALL TDH_VP_ADDCX ----------------------------------------
+########## 0379 SEAMCALL TDH_VP_ADDCX SEAMRET status: 0 SUCCESS -----------------
+############# TD 1 LEFECYCLE STATE: TD_KEYS_CONFIGURED
+############# TD 1 OP STATE: OP_STATE_INITIALIZED
+com->tdmr_next_avl_pa:40029000
+com->tdmr_next_avl_p pa:0x40029000
+41 com->sreq.secPages[page_idx].raw: 0x40029041
+Address 0x7fffe6d59958
+tdx call: 4
+########## issuing SEAMCALL TDH_VP_ADDCX ----------------------------------------
+########## 0380 SEAMCALL TDH_VP_ADDCX SEAMRET status: 0 SUCCESS -----------------
+############# TD 1 LEFECYCLE STATE: TD_KEYS_CONFIGURED
+############# TD 1 OP STATE: OP_STATE_INITIALIZED
+com->tdmr_next_avl_pa:4002a000
+com->tdmr_next_avl_p pa:0x4002a000
+42 com->sreq.secPages[page_idx].raw: 0x4002a041
+Address 0x7fffe6d59960
+tdx call: 4
+########## issuing SEAMCALL TDH_VP_ADDCX ----------------------------------------
+########## 0381 SEAMCALL TDH_VP_ADDCX SEAMRET status: 0 SUCCESS -----------------
+############# TD 1 LEFECYCLE STATE: TD_KEYS_CONFIGURED
+############# TD 1 OP STATE: OP_STATE_INITIALIZED
+com->tdmr_next_avl_pa:4002b000
+com->tdmr_next_avl_p pa:0x4002b000
+43 com->sreq.secPages[page_idx].raw: 0x4002b041
+Address 0x7fffe6d59968
+tdx call: 4
+########## issuing SEAMCALL TDH_VP_ADDCX ----------------------------------------
+########## 0382 SEAMCALL TDH_VP_ADDCX SEAMRET status: 0 SUCCESS -----------------
+############# TD 1 LEFECYCLE STATE: TD_KEYS_CONFIGURED
+############# TD 1 OP STATE: OP_STATE_INITIALIZED
+com->tdmr_next_avl_pa:4002c000
+com->tdmr_next_avl_p pa:0x4002c000
+44 com->sreq.secPages[page_idx].raw: 0x4002c041
+Address 0x7fffe6d59970
+tdx call: 4
+########## issuing SEAMCALL TDH_VP_ADDCX ----------------------------------------
+########## 0383 SEAMCALL TDH_VP_ADDCX SEAMRET status: 0 SUCCESS -----------------
+############# TD 1 LEFECYCLE STATE: TD_KEYS_CONFIGURED
+############# TD 1 OP STATE: OP_STATE_INITIALIZED
+com->tdmr_next_avl_pa:4002d000
+com->tdmr_next_avl_p pa:0x4002d000
+45 com->sreq.secPages[page_idx].raw: 0x4002d041
+Address 0x7fffe6d59978
+tdx call: 4
+########## issuing SEAMCALL TDH_VP_ADDCX ----------------------------------------
+########## 0384 SEAMCALL TDH_VP_ADDCX SEAMRET status: 0 SUCCESS -----------------
+############# TD 1 LEFECYCLE STATE: TD_KEYS_CONFIGURED
+############# TD 1 OP STATE: OP_STATE_INITIALIZED
+com->tdmr_next_avl_pa:4002e000
+com->tdmr_next_avl_p pa:0x4002e000
+46 com->sreq.secPages[page_idx].raw: 0x4002e041
+Address 0x7fffe6d59980
+tdx call: 4
+########## issuing SEAMCALL TDH_VP_ADDCX ----------------------------------------
+########## 0385 SEAMCALL TDH_VP_ADDCX SEAMRET status: 0 SUCCESS -----------------
+############# TD 1 LEFECYCLE STATE: TD_KEYS_CONFIGURED
+############# TD 1 OP STATE: OP_STATE_INITIALIZED
+com->tdmr_next_avl_pa:4002f000
+com->tdmr_next_avl_p pa:0x4002f000
+47 com->sreq.secPages[page_idx].raw: 0x4002f041
+Address 0x7fffe6d59988
+tdx call: 4
+########## issuing SEAMCALL TDH_VP_ADDCX ----------------------------------------
+########## 0386 SEAMCALL TDH_VP_ADDCX SEAMRET status: 0 SUCCESS -----------------
+############# TD 1 LEFECYCLE STATE: TD_KEYS_CONFIGURED
+############# TD 1 OP STATE: OP_STATE_INITIALIZED
+com->tdmr_next_avl_pa:40030000
+com->tdmr_next_avl_p pa:0x40030000
+48 com->sreq.secPages[page_idx].raw: 0x40030041
+Address 0x7fffe6d59990
+tdx call: 4
+########## issuing SEAMCALL TDH_VP_ADDCX ----------------------------------------
+########## 0387 SEAMCALL TDH_VP_ADDCX SEAMRET status: 0 SUCCESS -----------------
+############# TD 1 LEFECYCLE STATE: TD_KEYS_CONFIGURED
+############# TD 1 OP STATE: OP_STATE_INITIALIZED
+com->tdmr_next_avl_pa:40031000
+com->tdmr_next_avl_p pa:0x40031000
+49 com->sreq.secPages[page_idx].raw: 0x40031041
+Address 0x7fffe6d59998
+tdx call: 4
+########## issuing SEAMCALL TDH_VP_ADDCX ----------------------------------------
+########## 0388 SEAMCALL TDH_VP_ADDCX SEAMRET status: 0 SUCCESS -----------------
+############# TD 1 LEFECYCLE STATE: TD_KEYS_CONFIGURED
+############# TD 1 OP STATE: OP_STATE_INITIALIZED
+com->tdmr_next_avl_pa:40032000
+com->tdmr_next_avl_p pa:0x40032000
+50 com->sreq.secPages[page_idx].raw: 0x40032041
+Address 0x7fffe6d599a0
+tdx call: 4
+########## issuing SEAMCALL TDH_VP_ADDCX ----------------------------------------
+########## 0389 SEAMCALL TDH_VP_ADDCX SEAMRET status: 0 SUCCESS -----------------
+############# TD 1 LEFECYCLE STATE: TD_KEYS_CONFIGURED
+############# TD 1 OP STATE: OP_STATE_INITIALIZED
+com->tdmr_next_avl_pa:40033000
+com->tdmr_next_avl_p pa:0x40033000
+51 com->sreq.secPages[page_idx].raw: 0x40033041
+Address 0x7fffe6d599a8
+tdx call: 4
+########## issuing SEAMCALL TDH_VP_ADDCX ----------------------------------------
+########## 0390 SEAMCALL TDH_VP_ADDCX SEAMRET status: 0 SUCCESS -----------------
+############# TD 1 LEFECYCLE STATE: TD_KEYS_CONFIGURED
+############# TD 1 OP STATE: OP_STATE_INITIALIZED
+tdx call: 22
+########## issuing SEAMCALL TDH_VP_INIT ----------------------------------------
+########## 0391 SEAMCALL TDH_VP_INIT SEAMRET status: 0 SUCCESS -----------------
+############# TD 1 LEFECYCLE STATE: TD_KEYS_CONFIGURED
+############# TD 1 OP STATE: OP_STATE_INITIALIZED
+com->tdmr_next_avl_p pa:0x40034000
+52 com->sreq.secPages[page_idx].raw: 0x40034041
+Address 0x7fffe6d599b0
+tdx call: 3
+########## issuing SEAMCALL TDH_MEM_SEPT_ADD ----------------------------------------
+########## 0392 SEAMCALL TDH_MEM_SEPT_ADD SEAMRET status: 0 SUCCESS -----------------
+############# TD 1 LEFECYCLE STATE: TD_KEYS_CONFIGURED
+############# TD 1 OP STATE: OP_STATE_INITIALIZED
+R8: ffffffffffffffff
+com->tdmr_next_avl_p pa:0x40035000
+53 com->sreq.secPages[page_idx].raw: 0x40035041
+Address 0x7fffe6d599b8
+tdx call: 3
+########## issuing SEAMCALL TDH_MEM_SEPT_ADD ----------------------------------------
+########## 0393 SEAMCALL TDH_MEM_SEPT_ADD SEAMRET status: 0 SUCCESS -----------------
+############# TD 1 LEFECYCLE STATE: TD_KEYS_CONFIGURED
+############# TD 1 OP STATE: OP_STATE_INITIALIZED
+R8: ffffffffffffffff
+com->tdmr_next_avl_p pa:0x40036000
+54 com->sreq.secPages[page_idx].raw: 0x40036041
+Address 0x7fffe6d599c0
+tdx call: 3
+########## issuing SEAMCALL TDH_MEM_SEPT_ADD ----------------------------------------
+########## 0394 SEAMCALL TDH_MEM_SEPT_ADD SEAMRET status: 0 SUCCESS -----------------
+############# TD 1 LEFECYCLE STATE: TD_KEYS_CONFIGURED
+############# TD 1 OP STATE: OP_STATE_INITIALIZED
+R8: ffffffffffffffff
+gpa start:0x0
+com->tdmr_next_avl_p pa:0x40037000
+55 com->sreq.secPages[page_idx].raw: 0x40037041
+Address 0x7fffe6d599c8
+tdx call: 3
+########## issuing SEAMCALL TDH_MEM_SEPT_ADD ----------------------------------------
+########## 0395 SEAMCALL TDH_MEM_SEPT_ADD SEAMRET status: 0 SUCCESS -----------------
+############# TD 1 LEFECYCLE STATE: TD_KEYS_CONFIGURED
+############# TD 1 OP STATE: OP_STATE_INITIALIZED
+R8: ffffffffffffffff
+com->tdmr_next_avl_p pa:0x40038000
+56 com->sreq.secPages[page_idx].raw: 0x40038041
+Address 0x7fffe6d599d0
+tdx call: 2
+########## issuing SEAMCALL TDH_MEM_PAGE_ADD ----------------------------------------
+########## 0396 SEAMCALL TDH_MEM_PAGE_ADD SEAMRET status: 0 SUCCESS -----------------
+############# TD 1 LEFECYCLE STATE: TD_KEYS_CONFIGURED
+############# TD 1 OP STATE: OP_STATE_INITIALIZED
+com->tdmr_next_avl_p pa:0x40039000
+57 com->sreq.secPages[page_idx].raw: 0x40039041
+Address 0x7fffe6d599d8
+tdx call: 2
+########## issuing SEAMCALL TDH_MEM_PAGE_ADD ----------------------------------------
+########## 0397 SEAMCALL TDH_MEM_PAGE_ADD SEAMRET status: 0 SUCCESS -----------------
+############# TD 1 LEFECYCLE STATE: TD_KEYS_CONFIGURED
+############# TD 1 OP STATE: OP_STATE_INITIALIZED
+com->tdmr_next_avl_p pa:0x4003a000
+58 com->sreq.secPages[page_idx].raw: 0x4003a041
+Address 0x7fffe6d599e0
+tdx call: 2
+########## issuing SEAMCALL TDH_MEM_PAGE_ADD ----------------------------------------
+########## 0398 SEAMCALL TDH_MEM_PAGE_ADD SEAMRET status: 0 SUCCESS -----------------
+############# TD 1 LEFECYCLE STATE: TD_KEYS_CONFIGURED
+############# TD 1 OP STATE: OP_STATE_INITIALIZED
+com->tdmr_next_avl_p pa:0x4003b000
+59 com->sreq.secPages[page_idx].raw: 0x4003b041
+Address 0x7fffe6d599e8
+tdx call: 2
+########## issuing SEAMCALL TDH_MEM_PAGE_ADD ----------------------------------------
+########## 0399 SEAMCALL TDH_MEM_PAGE_ADD SEAMRET status: 0 SUCCESS -----------------
+############# TD 1 LEFECYCLE STATE: TD_KEYS_CONFIGURED
+############# TD 1 OP STATE: OP_STATE_INITIALIZED
+tdx call: 16
+########## issuing SEAMCALL TDH_MR_EXTEND ----------------------------------------
+########## 0400 SEAMCALL TDH_MR_EXTEND SEAMRET status: 0 SUCCESS -----------------
+############# TD 1 LEFECYCLE STATE: TD_KEYS_CONFIGURED
+############# TD 1 OP STATE: OP_STATE_INITIALIZED
+tdx call: 16
+########## issuing SEAMCALL TDH_MR_EXTEND ----------------------------------------
+########## 0401 SEAMCALL TDH_MR_EXTEND SEAMRET status: 0 SUCCESS -----------------
+############# TD 1 LEFECYCLE STATE: TD_KEYS_CONFIGURED
+############# TD 1 OP STATE: OP_STATE_INITIALIZED
+tdx call: 16
+########## issuing SEAMCALL TDH_MR_EXTEND ----------------------------------------
+########## 0402 SEAMCALL TDH_MR_EXTEND SEAMRET status: 0 SUCCESS -----------------
+############# TD 1 LEFECYCLE STATE: TD_KEYS_CONFIGURED
+############# TD 1 OP STATE: OP_STATE_INITIALIZED
+tdx call: 16
+########## issuing SEAMCALL TDH_MR_EXTEND ----------------------------------------
+########## 0403 SEAMCALL TDH_MR_EXTEND SEAMRET status: 0 SUCCESS -----------------
+############# TD 1 LEFECYCLE STATE: TD_KEYS_CONFIGURED
+############# TD 1 OP STATE: OP_STATE_INITIALIZED
+tdx call: 16
+########## issuing SEAMCALL TDH_MR_EXTEND ----------------------------------------
+########## 0404 SEAMCALL TDH_MR_EXTEND SEAMRET status: 0 SUCCESS -----------------
+############# TD 1 LEFECYCLE STATE: TD_KEYS_CONFIGURED
+############# TD 1 OP STATE: OP_STATE_INITIALIZED
+tdx call: 16
+########## issuing SEAMCALL TDH_MR_EXTEND ----------------------------------------
+########## 0405 SEAMCALL TDH_MR_EXTEND SEAMRET status: 0 SUCCESS -----------------
+############# TD 1 LEFECYCLE STATE: TD_KEYS_CONFIGURED
+############# TD 1 OP STATE: OP_STATE_INITIALIZED
+tdx call: 16
+########## issuing SEAMCALL TDH_MR_EXTEND ----------------------------------------
+########## 0406 SEAMCALL TDH_MR_EXTEND SEAMRET status: 0 SUCCESS -----------------
+############# TD 1 LEFECYCLE STATE: TD_KEYS_CONFIGURED
+############# TD 1 OP STATE: OP_STATE_INITIALIZED
+tdx call: 16
+########## issuing SEAMCALL TDH_MR_EXTEND ----------------------------------------
+########## 0407 SEAMCALL TDH_MR_EXTEND SEAMRET status: 0 SUCCESS -----------------
+############# TD 1 LEFECYCLE STATE: TD_KEYS_CONFIGURED
+############# TD 1 OP STATE: OP_STATE_INITIALIZED
+tdx call: 16
+########## issuing SEAMCALL TDH_MR_EXTEND ----------------------------------------
+########## 0408 SEAMCALL TDH_MR_EXTEND SEAMRET status: 0 SUCCESS -----------------
+############# TD 1 LEFECYCLE STATE: TD_KEYS_CONFIGURED
+############# TD 1 OP STATE: OP_STATE_INITIALIZED
+tdx call: 16
+########## issuing SEAMCALL TDH_MR_EXTEND ----------------------------------------
+########## 0409 SEAMCALL TDH_MR_EXTEND SEAMRET status: 0 SUCCESS -----------------
+############# TD 1 LEFECYCLE STATE: TD_KEYS_CONFIGURED
+############# TD 1 OP STATE: OP_STATE_INITIALIZED
+tdx call: 16
+########## issuing SEAMCALL TDH_MR_EXTEND ----------------------------------------
+########## 0410 SEAMCALL TDH_MR_EXTEND SEAMRET status: 0 SUCCESS -----------------
+############# TD 1 LEFECYCLE STATE: TD_KEYS_CONFIGURED
+############# TD 1 OP STATE: OP_STATE_INITIALIZED
+tdx call: 16
+########## issuing SEAMCALL TDH_MR_EXTEND ----------------------------------------
+########## 0411 SEAMCALL TDH_MR_EXTEND SEAMRET status: 0 SUCCESS -----------------
+############# TD 1 LEFECYCLE STATE: TD_KEYS_CONFIGURED
+############# TD 1 OP STATE: OP_STATE_INITIALIZED
+tdx call: 16
+########## issuing SEAMCALL TDH_MR_EXTEND ----------------------------------------
+########## 0412 SEAMCALL TDH_MR_EXTEND SEAMRET status: 0 SUCCESS -----------------
+############# TD 1 LEFECYCLE STATE: TD_KEYS_CONFIGURED
+############# TD 1 OP STATE: OP_STATE_INITIALIZED
+tdx call: 16
+########## issuing SEAMCALL TDH_MR_EXTEND ----------------------------------------
+########## 0413 SEAMCALL TDH_MR_EXTEND SEAMRET status: 0 SUCCESS -----------------
+############# TD 1 LEFECYCLE STATE: TD_KEYS_CONFIGURED
+############# TD 1 OP STATE: OP_STATE_INITIALIZED
+tdx call: 16
+########## issuing SEAMCALL TDH_MR_EXTEND ----------------------------------------
+########## 0414 SEAMCALL TDH_MR_EXTEND SEAMRET status: 0 SUCCESS -----------------
+############# TD 1 LEFECYCLE STATE: TD_KEYS_CONFIGURED
+############# TD 1 OP STATE: OP_STATE_INITIALIZED
+tdx call: 16
+########## issuing SEAMCALL TDH_MR_EXTEND ----------------------------------------
+########## 0415 SEAMCALL TDH_MR_EXTEND SEAMRET status: 0 SUCCESS -----------------
+############# TD 1 LEFECYCLE STATE: TD_KEYS_CONFIGURED
+############# TD 1 OP STATE: OP_STATE_INITIALIZED
+tdx call: 16
+########## issuing SEAMCALL TDH_MR_EXTEND ----------------------------------------
+########## 0416 SEAMCALL TDH_MR_EXTEND SEAMRET status: 0 SUCCESS -----------------
+############# TD 1 LEFECYCLE STATE: TD_KEYS_CONFIGURED
+############# TD 1 OP STATE: OP_STATE_INITIALIZED
+tdx call: 16
+########## issuing SEAMCALL TDH_MR_EXTEND ----------------------------------------
+########## 0417 SEAMCALL TDH_MR_EXTEND SEAMRET status: 0 SUCCESS -----------------
+############# TD 1 LEFECYCLE STATE: TD_KEYS_CONFIGURED
+############# TD 1 OP STATE: OP_STATE_INITIALIZED
+tdx call: 16
+########## issuing SEAMCALL TDH_MR_EXTEND ----------------------------------------
+########## 0418 SEAMCALL TDH_MR_EXTEND SEAMRET status: 0 SUCCESS -----------------
+############# TD 1 LEFECYCLE STATE: TD_KEYS_CONFIGURED
+############# TD 1 OP STATE: OP_STATE_INITIALIZED
+tdx call: 16
+########## issuing SEAMCALL TDH_MR_EXTEND ----------------------------------------
+########## 0419 SEAMCALL TDH_MR_EXTEND SEAMRET status: 0 SUCCESS -----------------
+############# TD 1 LEFECYCLE STATE: TD_KEYS_CONFIGURED
+############# TD 1 OP STATE: OP_STATE_INITIALIZED
+tdx call: 16
+########## issuing SEAMCALL TDH_MR_EXTEND ----------------------------------------
+########## 0420 SEAMCALL TDH_MR_EXTEND SEAMRET status: 0 SUCCESS -----------------
+############# TD 1 LEFECYCLE STATE: TD_KEYS_CONFIGURED
+############# TD 1 OP STATE: OP_STATE_INITIALIZED
+tdx call: 16
+########## issuing SEAMCALL TDH_MR_EXTEND ----------------------------------------
+########## 0421 SEAMCALL TDH_MR_EXTEND SEAMRET status: 0 SUCCESS -----------------
+############# TD 1 LEFECYCLE STATE: TD_KEYS_CONFIGURED
+############# TD 1 OP STATE: OP_STATE_INITIALIZED
+tdx call: 16
+########## issuing SEAMCALL TDH_MR_EXTEND ----------------------------------------
+########## 0422 SEAMCALL TDH_MR_EXTEND SEAMRET status: 0 SUCCESS -----------------
+############# TD 1 LEFECYCLE STATE: TD_KEYS_CONFIGURED
+############# TD 1 OP STATE: OP_STATE_INITIALIZED
+tdx call: 16
+########## issuing SEAMCALL TDH_MR_EXTEND ----------------------------------------
+########## 0423 SEAMCALL TDH_MR_EXTEND SEAMRET status: 0 SUCCESS -----------------
+############# TD 1 LEFECYCLE STATE: TD_KEYS_CONFIGURED
+############# TD 1 OP STATE: OP_STATE_INITIALIZED
+tdx call: 16
+########## issuing SEAMCALL TDH_MR_EXTEND ----------------------------------------
+########## 0424 SEAMCALL TDH_MR_EXTEND SEAMRET status: 0 SUCCESS -----------------
+############# TD 1 LEFECYCLE STATE: TD_KEYS_CONFIGURED
+############# TD 1 OP STATE: OP_STATE_INITIALIZED
+tdx call: 16
+########## issuing SEAMCALL TDH_MR_EXTEND ----------------------------------------
+########## 0425 SEAMCALL TDH_MR_EXTEND SEAMRET status: 0 SUCCESS -----------------
+############# TD 1 LEFECYCLE STATE: TD_KEYS_CONFIGURED
+############# TD 1 OP STATE: OP_STATE_INITIALIZED
+tdx call: 16
+########## issuing SEAMCALL TDH_MR_EXTEND ----------------------------------------
+########## 0426 SEAMCALL TDH_MR_EXTEND SEAMRET status: 0 SUCCESS -----------------
+############# TD 1 LEFECYCLE STATE: TD_KEYS_CONFIGURED
+############# TD 1 OP STATE: OP_STATE_INITIALIZED
+tdx call: 16
+########## issuing SEAMCALL TDH_MR_EXTEND ----------------------------------------
+########## 0427 SEAMCALL TDH_MR_EXTEND SEAMRET status: 0 SUCCESS -----------------
+############# TD 1 LEFECYCLE STATE: TD_KEYS_CONFIGURED
+############# TD 1 OP STATE: OP_STATE_INITIALIZED
+tdx call: 16
+########## issuing SEAMCALL TDH_MR_EXTEND ----------------------------------------
+########## 0428 SEAMCALL TDH_MR_EXTEND SEAMRET status: 0 SUCCESS -----------------
+############# TD 1 LEFECYCLE STATE: TD_KEYS_CONFIGURED
+############# TD 1 OP STATE: OP_STATE_INITIALIZED
+tdx call: 16
+########## issuing SEAMCALL TDH_MR_EXTEND ----------------------------------------
+########## 0429 SEAMCALL TDH_MR_EXTEND SEAMRET status: 0 SUCCESS -----------------
+############# TD 1 LEFECYCLE STATE: TD_KEYS_CONFIGURED
+############# TD 1 OP STATE: OP_STATE_INITIALIZED
+tdx call: 16
+########## issuing SEAMCALL TDH_MR_EXTEND ----------------------------------------
+########## 0430 SEAMCALL TDH_MR_EXTEND SEAMRET status: 0 SUCCESS -----------------
+############# TD 1 LEFECYCLE STATE: TD_KEYS_CONFIGURED
+############# TD 1 OP STATE: OP_STATE_INITIALIZED
+tdx call: 16
+########## issuing SEAMCALL TDH_MR_EXTEND ----------------------------------------
+########## 0431 SEAMCALL TDH_MR_EXTEND SEAMRET status: 0 SUCCESS -----------------
+############# TD 1 LEFECYCLE STATE: TD_KEYS_CONFIGURED
+############# TD 1 OP STATE: OP_STATE_INITIALIZED
+tdx call: 16
+########## issuing SEAMCALL TDH_MR_EXTEND ----------------------------------------
+########## 0432 SEAMCALL TDH_MR_EXTEND SEAMRET status: 0 SUCCESS -----------------
+############# TD 1 LEFECYCLE STATE: TD_KEYS_CONFIGURED
+############# TD 1 OP STATE: OP_STATE_INITIALIZED
+tdx call: 16
+########## issuing SEAMCALL TDH_MR_EXTEND ----------------------------------------
+########## 0433 SEAMCALL TDH_MR_EXTEND SEAMRET status: 0 SUCCESS -----------------
+############# TD 1 LEFECYCLE STATE: TD_KEYS_CONFIGURED
+############# TD 1 OP STATE: OP_STATE_INITIALIZED
+tdx call: 16
+########## issuing SEAMCALL TDH_MR_EXTEND ----------------------------------------
+########## 0434 SEAMCALL TDH_MR_EXTEND SEAMRET status: 0 SUCCESS -----------------
+############# TD 1 LEFECYCLE STATE: TD_KEYS_CONFIGURED
+############# TD 1 OP STATE: OP_STATE_INITIALIZED
+tdx call: 16
+########## issuing SEAMCALL TDH_MR_EXTEND ----------------------------------------
+########## 0435 SEAMCALL TDH_MR_EXTEND SEAMRET status: 0 SUCCESS -----------------
+############# TD 1 LEFECYCLE STATE: TD_KEYS_CONFIGURED
+############# TD 1 OP STATE: OP_STATE_INITIALIZED
+tdx call: 16
+########## issuing SEAMCALL TDH_MR_EXTEND ----------------------------------------
+########## 0436 SEAMCALL TDH_MR_EXTEND SEAMRET status: 0 SUCCESS -----------------
+############# TD 1 LEFECYCLE STATE: TD_KEYS_CONFIGURED
+############# TD 1 OP STATE: OP_STATE_INITIALIZED
+tdx call: 16
+########## issuing SEAMCALL TDH_MR_EXTEND ----------------------------------------
+########## 0437 SEAMCALL TDH_MR_EXTEND SEAMRET status: 0 SUCCESS -----------------
+############# TD 1 LEFECYCLE STATE: TD_KEYS_CONFIGURED
+############# TD 1 OP STATE: OP_STATE_INITIALIZED
+tdx call: 16
+########## issuing SEAMCALL TDH_MR_EXTEND ----------------------------------------
+########## 0438 SEAMCALL TDH_MR_EXTEND SEAMRET status: 0 SUCCESS -----------------
+############# TD 1 LEFECYCLE STATE: TD_KEYS_CONFIGURED
+############# TD 1 OP STATE: OP_STATE_INITIALIZED
+tdx call: 16
+########## issuing SEAMCALL TDH_MR_EXTEND ----------------------------------------
+########## 0439 SEAMCALL TDH_MR_EXTEND SEAMRET status: 0 SUCCESS -----------------
+############# TD 1 LEFECYCLE STATE: TD_KEYS_CONFIGURED
+############# TD 1 OP STATE: OP_STATE_INITIALIZED
+tdx call: 16
+########## issuing SEAMCALL TDH_MR_EXTEND ----------------------------------------
+########## 0440 SEAMCALL TDH_MR_EXTEND SEAMRET status: 0 SUCCESS -----------------
+############# TD 1 LEFECYCLE STATE: TD_KEYS_CONFIGURED
+############# TD 1 OP STATE: OP_STATE_INITIALIZED
+tdx call: 16
+########## issuing SEAMCALL TDH_MR_EXTEND ----------------------------------------
+########## 0441 SEAMCALL TDH_MR_EXTEND SEAMRET status: 0 SUCCESS -----------------
+############# TD 1 LEFECYCLE STATE: TD_KEYS_CONFIGURED
+############# TD 1 OP STATE: OP_STATE_INITIALIZED
+tdx call: 16
+########## issuing SEAMCALL TDH_MR_EXTEND ----------------------------------------
+########## 0442 SEAMCALL TDH_MR_EXTEND SEAMRET status: 0 SUCCESS -----------------
+############# TD 1 LEFECYCLE STATE: TD_KEYS_CONFIGURED
+############# TD 1 OP STATE: OP_STATE_INITIALIZED
+tdx call: 16
+########## issuing SEAMCALL TDH_MR_EXTEND ----------------------------------------
+########## 0443 SEAMCALL TDH_MR_EXTEND SEAMRET status: 0 SUCCESS -----------------
+############# TD 1 LEFECYCLE STATE: TD_KEYS_CONFIGURED
+############# TD 1 OP STATE: OP_STATE_INITIALIZED
+tdx call: 16
+########## issuing SEAMCALL TDH_MR_EXTEND ----------------------------------------
+########## 0444 SEAMCALL TDH_MR_EXTEND SEAMRET status: 0 SUCCESS -----------------
+############# TD 1 LEFECYCLE STATE: TD_KEYS_CONFIGURED
+############# TD 1 OP STATE: OP_STATE_INITIALIZED
+tdx call: 16
+########## issuing SEAMCALL TDH_MR_EXTEND ----------------------------------------
+########## 0445 SEAMCALL TDH_MR_EXTEND SEAMRET status: 0 SUCCESS -----------------
+############# TD 1 LEFECYCLE STATE: TD_KEYS_CONFIGURED
+############# TD 1 OP STATE: OP_STATE_INITIALIZED
+tdx call: 16
+########## issuing SEAMCALL TDH_MR_EXTEND ----------------------------------------
+########## 0446 SEAMCALL TDH_MR_EXTEND SEAMRET status: 0 SUCCESS -----------------
+############# TD 1 LEFECYCLE STATE: TD_KEYS_CONFIGURED
+############# TD 1 OP STATE: OP_STATE_INITIALIZED
+tdx call: 16
+########## issuing SEAMCALL TDH_MR_EXTEND ----------------------------------------
+########## 0447 SEAMCALL TDH_MR_EXTEND SEAMRET status: 0 SUCCESS -----------------
+############# TD 1 LEFECYCLE STATE: TD_KEYS_CONFIGURED
+############# TD 1 OP STATE: OP_STATE_INITIALIZED
+tdx call: 16
+########## issuing SEAMCALL TDH_MR_EXTEND ----------------------------------------
+########## 0448 SEAMCALL TDH_MR_EXTEND SEAMRET status: 0 SUCCESS -----------------
+############# TD 1 LEFECYCLE STATE: TD_KEYS_CONFIGURED
+############# TD 1 OP STATE: OP_STATE_INITIALIZED
+tdx call: 16
+########## issuing SEAMCALL TDH_MR_EXTEND ----------------------------------------
+########## 0449 SEAMCALL TDH_MR_EXTEND SEAMRET status: 0 SUCCESS -----------------
+############# TD 1 LEFECYCLE STATE: TD_KEYS_CONFIGURED
+############# TD 1 OP STATE: OP_STATE_INITIALIZED
+tdx call: 16
+########## issuing SEAMCALL TDH_MR_EXTEND ----------------------------------------
+########## 0450 SEAMCALL TDH_MR_EXTEND SEAMRET status: 0 SUCCESS -----------------
+############# TD 1 LEFECYCLE STATE: TD_KEYS_CONFIGURED
+############# TD 1 OP STATE: OP_STATE_INITIALIZED
+tdx call: 16
+########## issuing SEAMCALL TDH_MR_EXTEND ----------------------------------------
+########## 0451 SEAMCALL TDH_MR_EXTEND SEAMRET status: 0 SUCCESS -----------------
+############# TD 1 LEFECYCLE STATE: TD_KEYS_CONFIGURED
+############# TD 1 OP STATE: OP_STATE_INITIALIZED
+tdx call: 16
+########## issuing SEAMCALL TDH_MR_EXTEND ----------------------------------------
+########## 0452 SEAMCALL TDH_MR_EXTEND SEAMRET status: 0 SUCCESS -----------------
+############# TD 1 LEFECYCLE STATE: TD_KEYS_CONFIGURED
+############# TD 1 OP STATE: OP_STATE_INITIALIZED
+tdx call: 16
+########## issuing SEAMCALL TDH_MR_EXTEND ----------------------------------------
+########## 0453 SEAMCALL TDH_MR_EXTEND SEAMRET status: 0 SUCCESS -----------------
+############# TD 1 LEFECYCLE STATE: TD_KEYS_CONFIGURED
+############# TD 1 OP STATE: OP_STATE_INITIALIZED
+tdx call: 16
+########## issuing SEAMCALL TDH_MR_EXTEND ----------------------------------------
+########## 0454 SEAMCALL TDH_MR_EXTEND SEAMRET status: 0 SUCCESS -----------------
+############# TD 1 LEFECYCLE STATE: TD_KEYS_CONFIGURED
+############# TD 1 OP STATE: OP_STATE_INITIALIZED
+tdx call: 16
+########## issuing SEAMCALL TDH_MR_EXTEND ----------------------------------------
+########## 0455 SEAMCALL TDH_MR_EXTEND SEAMRET status: 0 SUCCESS -----------------
+############# TD 1 LEFECYCLE STATE: TD_KEYS_CONFIGURED
+############# TD 1 OP STATE: OP_STATE_INITIALIZED
+tdx call: 16
+########## issuing SEAMCALL TDH_MR_EXTEND ----------------------------------------
+########## 0456 SEAMCALL TDH_MR_EXTEND SEAMRET status: 0 SUCCESS -----------------
+############# TD 1 LEFECYCLE STATE: TD_KEYS_CONFIGURED
+############# TD 1 OP STATE: OP_STATE_INITIALIZED
+tdx call: 16
+########## issuing SEAMCALL TDH_MR_EXTEND ----------------------------------------
+########## 0457 SEAMCALL TDH_MR_EXTEND SEAMRET status: 0 SUCCESS -----------------
+############# TD 1 LEFECYCLE STATE: TD_KEYS_CONFIGURED
+############# TD 1 OP STATE: OP_STATE_INITIALIZED
+tdx call: 16
+########## issuing SEAMCALL TDH_MR_EXTEND ----------------------------------------
+########## 0458 SEAMCALL TDH_MR_EXTEND SEAMRET status: 0 SUCCESS -----------------
+############# TD 1 LEFECYCLE STATE: TD_KEYS_CONFIGURED
+############# TD 1 OP STATE: OP_STATE_INITIALIZED
+tdx call: 16
+########## issuing SEAMCALL TDH_MR_EXTEND ----------------------------------------
+########## 0459 SEAMCALL TDH_MR_EXTEND SEAMRET status: 0 SUCCESS -----------------
+############# TD 1 LEFECYCLE STATE: TD_KEYS_CONFIGURED
+############# TD 1 OP STATE: OP_STATE_INITIALIZED
+tdx call: 16
+########## issuing SEAMCALL TDH_MR_EXTEND ----------------------------------------
+########## 0460 SEAMCALL TDH_MR_EXTEND SEAMRET status: 0 SUCCESS -----------------
+############# TD 1 LEFECYCLE STATE: TD_KEYS_CONFIGURED
+############# TD 1 OP STATE: OP_STATE_INITIALIZED
+tdx call: 16
+########## issuing SEAMCALL TDH_MR_EXTEND ----------------------------------------
+########## 0461 SEAMCALL TDH_MR_EXTEND SEAMRET status: 0 SUCCESS -----------------
+############# TD 1 LEFECYCLE STATE: TD_KEYS_CONFIGURED
+############# TD 1 OP STATE: OP_STATE_INITIALIZED
+tdx call: 16
+########## issuing SEAMCALL TDH_MR_EXTEND ----------------------------------------
+########## 0462 SEAMCALL TDH_MR_EXTEND SEAMRET status: 0 SUCCESS -----------------
+############# TD 1 LEFECYCLE STATE: TD_KEYS_CONFIGURED
+############# TD 1 OP STATE: OP_STATE_INITIALIZED
+tdx call: 16
+########## issuing SEAMCALL TDH_MR_EXTEND ----------------------------------------
+########## 0463 SEAMCALL TDH_MR_EXTEND SEAMRET status: 0 SUCCESS -----------------
+############# TD 1 LEFECYCLE STATE: TD_KEYS_CONFIGURED
+############# TD 1 OP STATE: OP_STATE_INITIALIZED
+tdx call: 17
+########## issuing SEAMCALL TDH_MR_FINALIZE ----------------------------------------
+########## 0464 SEAMCALL TDH_MR_FINALIZE SEAMRET status: 0 SUCCESS -----------------
+############# TD 1 LEFECYCLE STATE: TD_KEYS_CONFIGURED
+############# TD 1 OP STATE: OP_STATE_RUNNABLE
+
+Two TDs created.
+com->tdmr_next_avl_p pa:0x4003c000
+60 com->sreq.secPages[page_idx].raw: 0x4003c000
+Address 0x7fffe6d599f0
+tdx call: 3
+########## issuing SEAMCALL TDH_MEM_SEPT_ADD ----------------------------------------
+########## 0465 SEAMCALL TDH_MEM_SEPT_ADD SEAMRET status: 0 SUCCESS -----------------
+com->tdmr_next_avl_p pa:0x4003d000
+61 com->sreq.secPages[page_idx].raw: 0x4003d000
+Address 0x7fffe6d599f8
+tdx call: 3
+########## issuing SEAMCALL TDH_MEM_SEPT_ADD ----------------------------------------
+########## 0466 SEAMCALL TDH_MEM_SEPT_ADD SEAMRET status: 0 SUCCESS -----------------
+com->tdmr_next_avl_p pa:0x4003e000
+62 com->sreq.secPages[page_idx].raw: 0x4003e000
+Address 0x7fffe6d59a00
+tdx call: 3
+########## issuing SEAMCALL TDH_MEM_SEPT_ADD ----------------------------------------
+########## 0467 SEAMCALL TDH_MEM_SEPT_ADD SEAMRET status: 0 SUCCESS -----------------
+com->tdmr_next_avl_p pa:0x4003f000
+63 com->sreq.secPages[page_idx].raw: 0x4003f000
+Address 0x7fffe6d59a08
+tdx call: 3
+########## issuing SEAMCALL TDH_MEM_SEPT_ADD ----------------------------------------
+########## 0468 SEAMCALL TDH_MEM_SEPT_ADD SEAMRET status: 0 SUCCESS -----------------
+
+Run td: 0
+tdx call: 0
+########## issuing SEAMCALL TDH_VP_ENTER ----------------------------------------
+
+########## VMLAUNCH TD 0 launched ----------------------------------
+lp khole tot ref count: 2
+lp: 0 khole idx: 7 ref count:1 hkid+pa with active mapping: 8000042003000
+lp: 0 khole idx: 18 ref count:1 hkid+pa with active mapping: 8000042003000
+lp: 0 khole idx: 94 ref count:0 hkid+pa with active mapping: 8000040000000
+lp: 0 khole idx: 95 ref count:0 hkid+pa with active mapping: 8400040001000
+lp: 0 khole idx: 96 ref count:0 hkid+pa with active mapping: 8400040002000
+lp: 0 khole idx: 97 ref count:0 hkid+pa with active mapping: 8400040003000
+lp: 0 khole idx: 98 ref count:0 hkid+pa with active mapping: 8400040004000
+lp: 0 khole idx: 99 ref count:0 hkid+pa with active mapping: 8400040005000
+lp: 0 khole idx: 100 ref count:0 hkid+pa with active mapping: 8400040006000
+lp: 0 khole idx: 104 ref count:0 hkid+pa with active mapping: 8400040007000
+lp: 0 khole idx: 105 ref count:0 hkid+pa with active mapping: 8400040008000
+lp: 0 khole idx: 106 ref count:0 hkid+pa with active mapping: 8400040009000
+lp: 0 khole idx: 107 ref count:0 hkid+pa with active mapping: 840004000a000
+lp: 0 khole idx: 108 ref count:0 hkid+pa with active mapping: 840004000b000
+lp: 0 khole idx: 109 ref count:0 hkid+pa with active mapping: 840004000c000
+lp khole tot ref count: 0
+lp: 1 khole idx: 94 ref count:0 hkid+pa with active mapping: 800004001e000
+lp: 1 khole idx: 95 ref count:0 hkid+pa with active mapping: 880004001f000
+lp: 1 khole idx: 96 ref count:0 hkid+pa with active mapping: 8800040020000
+lp: 1 khole idx: 97 ref count:0 hkid+pa with active mapping: 8800040021000
+lp: 1 khole idx: 98 ref count:0 hkid+pa with active mapping: 8800040022000
+lp: 1 khole idx: 99 ref count:0 hkid+pa with active mapping: 8800040023000
+lp: 1 khole idx: 100 ref count:0 hkid+pa with active mapping: 8800040024000
+lp: 1 khole idx: 104 ref count:0 hkid+pa with active mapping: 8800040025000
+lp: 1 khole idx: 105 ref count:0 hkid+pa with active mapping: 8800040026000
+lp: 1 khole idx: 106 ref count:0 hkid+pa with active mapping: 8800040027000
+lp: 1 khole idx: 107 ref count:0 hkid+pa with active mapping: 8800040028000
+lp: 1 khole idx: 108 ref count:0 hkid+pa with active mapping: 8800040029000
+lp: 1 khole idx: 109 ref count:0 hkid+pa with active mapping: 880004002a000
+lp khole tot ref count: 0
+lp: 2 khole idx: 95 ref count:0 hkid+pa with active mapping: 8400040001000
+lp: 2 khole idx: 96 ref count:0 hkid+pa with active mapping: 8400040002000
+lp: 2 khole idx: 97 ref count:0 hkid+pa with active mapping: 8400040003000
+lp: 2 khole idx: 98 ref count:0 hkid+pa with active mapping: 8400040004000
+lp: 2 khole idx: 99 ref count:0 hkid+pa with active mapping: 8400040005000
+lp: 2 khole idx: 100 ref count:0 hkid+pa with active mapping: 8400040006000
+lp khole tot ref count: 0
+
+Run td: 1
+tdx call: 0
+########## issuing SEAMCALL TDH_VP_ENTER ----------------------------------------
+
+########## VMLAUNCH TD 1 launched ----------------------------------
+lp khole tot ref count: 2
+lp: 0 khole idx: 7 ref count:1 hkid+pa with active mapping: 8000042003000
+lp: 0 khole idx: 18 ref count:1 hkid+pa with active mapping: 8000042003000
+lp: 0 khole idx: 94 ref count:0 hkid+pa with active mapping: 8000040000000
+lp: 0 khole idx: 95 ref count:0 hkid+pa with active mapping: 8400040001000
+lp: 0 khole idx: 96 ref count:0 hkid+pa with active mapping: 8400040002000
+lp: 0 khole idx: 97 ref count:0 hkid+pa with active mapping: 8400040003000
+lp: 0 khole idx: 98 ref count:0 hkid+pa with active mapping: 8400040004000
+lp: 0 khole idx: 99 ref count:0 hkid+pa with active mapping: 8400040005000
+lp: 0 khole idx: 100 ref count:0 hkid+pa with active mapping: 8400040006000
+lp: 0 khole idx: 104 ref count:0 hkid+pa with active mapping: 8400040007000
+lp: 0 khole idx: 105 ref count:0 hkid+pa with active mapping: 8400040008000
+lp: 0 khole idx: 106 ref count:0 hkid+pa with active mapping: 8400040009000
+lp: 0 khole idx: 107 ref count:0 hkid+pa with active mapping: 840004000a000
+lp: 0 khole idx: 108 ref count:0 hkid+pa with active mapping: 840004000b000
+lp: 0 khole idx: 109 ref count:0 hkid+pa with active mapping: 840004000c000
+lp khole tot ref count: 2
+lp: 1 khole idx: 2 ref count:1 hkid+pa with active mapping: 8000042003000
+lp: 1 khole idx: 13 ref count:1 hkid+pa with active mapping: 8000042003000
+lp: 1 khole idx: 94 ref count:0 hkid+pa with active mapping: 800004001e000
+lp: 1 khole idx: 95 ref count:0 hkid+pa with active mapping: 880004001f000
+lp: 1 khole idx: 96 ref count:0 hkid+pa with active mapping: 8800040020000
+lp: 1 khole idx: 97 ref count:0 hkid+pa with active mapping: 8800040021000
+lp: 1 khole idx: 98 ref count:0 hkid+pa with active mapping: 8800040022000
+lp: 1 khole idx: 99 ref count:0 hkid+pa with active mapping: 8800040023000
+lp: 1 khole idx: 100 ref count:0 hkid+pa with active mapping: 8800040024000
+lp: 1 khole idx: 104 ref count:0 hkid+pa with active mapping: 8800040025000
+lp: 1 khole idx: 105 ref count:0 hkid+pa with active mapping: 8800040026000
+lp: 1 khole idx: 106 ref count:0 hkid+pa with active mapping: 8800040027000
+lp: 1 khole idx: 107 ref count:0 hkid+pa with active mapping: 8800040028000
+lp: 1 khole idx: 108 ref count:0 hkid+pa with active mapping: 8800040029000
+lp: 1 khole idx: 109 ref count:0 hkid+pa with active mapping: 880004002a000
+lp khole tot ref count: 0
+lp: 2 khole idx: 95 ref count:0 hkid+pa with active mapping: 8400040001000
+lp: 2 khole idx: 96 ref count:0 hkid+pa with active mapping: 8400040002000
+lp: 2 khole idx: 97 ref count:0 hkid+pa with active mapping: 8400040003000
+lp: 2 khole idx: 98 ref count:0 hkid+pa with active mapping: 8400040004000
+lp: 2 khole idx: 99 ref count:0 hkid+pa with active mapping: 8400040005000
+lp: 2 khole idx: 100 ref count:0 hkid+pa with active mapping: 8400040006000
+lp khole tot ref count: 0
+tdx call: 11
+########## issuing SEAMCALL TDH_MNG_RD ----------------------------------------
+########## 0469 SEAMCALL TDH_MNG_RD SEAMRET status: 0 SUCCESS -----------------
+RDX: 8010000000000001
+R8: 0

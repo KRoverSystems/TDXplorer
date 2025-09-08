@@ -1,0 +1,102 @@
+
+#include <linux/kvm.h>
+#include <stdlib.h>
+#include <string.h>
+
+#include "analyzer.h"
+#include "vmm_agent.h"
+#include "state.h"
+#include "defs.h"
+
+extern struct comArea *com;
+
+void analyzer_function(){
+
+    struct kvm_regs regs;
+    ulong ret, page_pa;
+    ulong cur_td = TD_0;
+	ulong gpa = (1UL << 48);
+
+    init_tdx_module();
+    create_td(TD_0, LP_0, TD_GPA_RANGE, TD_INITIAL_PAGE_COUNT);
+    create_td(TD_1, LP_1, TD_GPA_RANGE, TD_INITIAL_PAGE_COUNT);
+
+    com->sreq.td_epml5_pa = com->td[cur_td].tdcs_eptp_root;
+	com->sreq.td_epml4_pa = 0;
+	com->sreq.td_epdpt_pa = 0;
+	com->sreq.td_epd_pa = 0;
+	com->sreq.td_ept_pa = 0;
+
+	/*case-I-L4-----------------------------------------------------------------START*/
+	/*start_se();
+	com->sreq.updated_sept_page = com->td[cur_td].tdcs_eptp_root;
+	LOG("com->sreq.td_epml5_pa: 0x%lx\n", com->sreq.updated_sept_page);
+    page_pa = reserve_and_get_tdmr_next_avl_pa(TD_0, com->td[TD_0].hkid, TD_0);
+	LOG("SEPT page added, ePML4 page pa: 0x%lx\n", page_pa);
+	com->sreq.new_sept_pa = page_pa;
+	com->sreq.current_lp = LP_2;
+	com->sreq.sept_level = SEPT_LVL_4;
+    tdh_mem_sept_add(LP_2, gpa, SEPT_LVL_4, com->td[TD_0].tdr, page_pa); */  
+	/*case-I-L4-------------------------------------------------------------------END*/
+
+	/*case-I-L3-----------------------------------------------------------------START*/
+	page_pa = reserve_and_get_tdmr_next_avl_pa(TD_0, com->td[TD_0].hkid, TD_0);
+	com->sreq.td_epml4_pa = page_pa;
+	LOG("SEPT page, adding ePML4 page, pa: 0x%lx\n", com->sreq.td_epml4_pa);
+	add_a_new_sept_custom(cur_td, LP_2, SEPT_LVL_4, gpa); //add an epml4 page
+
+	start_se();
+	com->sreq.updated_sept_page = com->sreq.td_epml4_pa;
+	com->sreq.current_lp = LP_2;
+	com->sreq.sept_level = 3;
+	LOG("SEPT page, adding ePDPT page, pa: 0x%lx\n", com->tdmr_next_avl_pa);
+	tdh_mem_sept_add(LP_2, gpa, SEPT_LVL_3, com->td[TD_0].tdr, page_pa);  //add an epdpt page
+	/*case-I-L3-------------------------------------------------------------------END*/
+
+	/*case-I-L4-----------------------------------------------------------------START*/
+	/*page_pa = reserve_and_get_tdmr_next_avl_pa(TD_0, com->td[TD_0].hkid, TD_0);
+	com->sreq.td_epml4_pa = page_pa;
+	LOG("SEPT page, adding ePML4 page, pa: 0x%lx\n", com->sreq.td_epml4_pa);
+	tdh_mem_sept_add(LP_2, gpa, SEPT_LVL_4, com->td[TD_0].tdr, page_pa); //add an epml4 page
+
+	page_pa = reserve_and_get_tdmr_next_avl_pa(TD_0, com->td[TD_0].hkid, TD_0);
+	com->sreq.td_epdpt_pa = page_pa;
+	LOG("SEPT page, adding ePDPT page, pa: 0x%lx\n", com->sreq.td_epdpt_pa);
+	tdh_mem_sept_add(LP_2, gpa, SEPT_LVL_3, com->td[TD_0].tdr, page_pa); //add an epdpt page
+
+	start_se();
+	page_pa = reserve_and_get_tdmr_next_avl_pa(TD_0, com->td[TD_0].hkid, TD_0);
+	com->sreq.updated_sept_page = page_pa;
+	com->sreq.current_lp = LP_2;
+	com->sreq.sept_level = SEPT_LVL_2;
+	LOG("SEPT page, adding ePD page, pa: 0x%lx\n", com->tdmr_next_avl_pa);
+	tdh_mem_sept_add(LP_2, gpa, SEPT_LVL_2, com->td[TD_0].tdr, page_pa); */	//add an epd page
+	/*case-I-L4-------------------------------------------------------------------END*/
+
+	/*case-I-L4-----------------------------------------------------------------START*/
+	/*page_pa = reserve_and_get_tdmr_next_avl_pa(TD_0, com->td[TD_0].hkid, TD_0);
+	com->sreq.td_epml4_pa = page_pa;
+	LOG("SEPT page, adding ePML4 page, pa: 0x%lx\n", com->sreq.td_epml4_pa);
+	tdh_mem_sept_add(LP_2, gpa, SEPT_LVL_4, com->td[TD_0].tdr, page_pa); //add an epml4 page
+
+	page_pa = reserve_and_get_tdmr_next_avl_pa(TD_0, com->td[TD_0].hkid, TD_0);
+	com->sreq.td_epdpt_pa = page_pa;
+	LOG("SEPT page, adding ePDPT page, pa: 0x%lx\n", com->sreq.td_epdpt_pa);
+	tdh_mem_sept_add(LP_2, gpa, SEPT_LVL_3, com->td[TD_0].tdr, page_pa); //add an epdpt page
+
+	page_pa = reserve_and_get_tdmr_next_avl_pa(TD_0, com->td[TD_0].hkid, TD_0);
+	com->sreq.td_epd_pa = page_pa;
+	LOG("SEPT page, adding ePD page, pa: 0x%lx\n", com->sreq.td_epd_pa);
+	tdh_mem_sept_add(LP_2, gpa, SEPT_LVL_2, com->td[TD_0].tdr, page_pa); //add an epd page
+	
+	start_se();
+	page_pa = reserve_and_get_tdmr_next_avl_pa(TD_0, com->td[TD_0].hkid, TD_0);
+	com->sreq.updated_sept_page = com->sreq.td_epd_pa;
+	com->sreq.current_lp = LP_2;
+	com->sreq.sept_level = SEPT_LVL_1;
+	LOG("SEPT page, adding ePT page, pa: 0x%lx\n", page_pa);
+	tdh_mem_sept_add(LP_2, gpa, SEPT_LVL_1, com->td[TD_0].tdr, page_pa);*/
+	/*case-I-L4-------------------------------------------------------------------END*/
+
+    exit(0);
+}

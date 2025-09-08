@@ -1,0 +1,47 @@
+1.TD creation with RDX (Key ID == 33)
+2025-04-08T16:05:47.934441+08:00 DXH-104-059 kernel: kernel_agent: __pgtable_l5_enabled val: 0
+2025-04-08T16:05:47.934444+08:00 DXH-104-059 kernel: kernel_agent: pgdir_shift val: 39
+2025-04-08T16:05:47.934447+08:00 DXH-104-059 kernel: kernel_agent: tdx_global_hkid: 32
+2025-04-08T16:05:47.934449+08:00 DXH-104-059 kernel: kernel_agent: __seamcall address: ffffffff9bafa910
+2025-04-08T16:05:47.934451+08:00 DXH-104-059 kernel: kernel_agent: __seamcall_ret address: ffffffff9bafa970
+2025-04-08T16:05:47.934453+08:00 DXH-104-059 kernel: kernel_agent: __seamcall_saved_ret address: ffffffff9bafa9e0
+2025-04-08T16:05:47.934455+08:00 DXH-104-059 kernel: kernel_agent: tdx_vm_ioctl adress: ffffffffc0d04e40
+2025-04-08T16:05:47.934457+08:00 DXH-104-059 kernel: kernel_agent: tdx_vcpu_ioctl adress: ffffffffc0d04ff0
+2025-04-08T16:05:47.959057+08:00 DXH-104-059 kernel: kernel_agent: KProbe: registration successful
+2025-04-08T16:05:47.959082+08:00 DXH-104-059 kernel: kernel_agent: vmm_agent loaded
+2025-04-08T16:05:55.063455+08:00 DXH-104-059 kernel: kernel_agent: hooked  tdx_vm_ioctl() 
+2025-04-08T16:05:55.063484+08:00 DXH-104-059 kernel: kernel_agent: ioctl: KVM_TDX_CAPABILITIES
+2025-04-08T16:05:55.063487+08:00 DXH-104-059 kernel: 
+2025-04-08T16:05:55.063490+08:00 DXH-104-059 kernel: kernel_agent: hooked  tdx_vm_ioctl() 
+2025-04-08T16:05:55.063492+08:00 DXH-104-059 kernel: kernel_agent: ioctl: KVM_TDX_CAPABILITIES
+2025-04-08T16:05:55.063494+08:00 DXH-104-059 kernel: 
+2025-04-08T16:05:55.063496+08:00 DXH-104-059 kernel: kernel_agent: hooked  tdx_vm_ioctl() 
+2025-04-08T16:05:55.063498+08:00 DXH-104-059 kernel: kernel_agent: ioctl: KVM_TDX_CAPABILITIES
+2025-04-08T16:05:55.063500+08:00 DXH-104-059 kernel: 
+2025-04-08T16:05:55.070446+08:00 DXH-104-059 kernel: kernel_agent: hooked  tdx_vm_ioctl() 
+2025-04-08T16:05:55.070471+08:00 DXH-104-059 kernel: kernel_agent: ioctl: KVM_TDX_INIT_VM
+2025-04-08T16:05:55.070474+08:00 DXH-104-059 kernel: 
+2025-04-08T16:05:55.070476+08:00 DXH-104-059 kernel: kernel_agent: kvm __seamcall(): TDH_MNG_CREATE ------------------------------------ 
+2025-04-08T16:05:55.070478+08:00 DXH-104-059 kernel: kernel_agent: RCX: to add tdr page pa: 0x19aa91000
+2025-04-08T16:05:55.070480+08:00 DXH-104-059 kernel: kernel_agent: RDX: td hkid: 33
+//Above TD creation suceeds on server
+
+2.Issuing TDH_MNG_CREATE with invalid RDX: 0x8000
+//
+2025-04-01T19:43:17.783394+08:00 DXH-104-059 kernel: kernel_agent: kvm __seamcall(): TDH_MNG_CREATE ------------------------------------ 
+2025-04-01T19:43:17.783396+08:00 DXH-104-059 kernel: kernel_agent: RCX: to add tdr page pa: 0x27b771000
+2025-04-01T19:43:17.783397+08:00 DXH-104-059 kernel: kernel_agent: RDX: td hkid: 33
+2025-04-01T19:43:17.783399+08:00 DXH-104-059 kernel: kernel_agent: Modified RDX: td hkid: 32768
+2025-04-01T19:43:17.783401+08:00 DXH-104-059 kernel: kernel_agent: last seamcall:0x9
+//Module's return code logged by VMM
+2025-04-01T19:43:17.785325+08:00 DXH-104-059 kernel: ---[ end trace 0000000000000000 ]---
+2025-04-01T19:43:17.785328+08:00 DXH-104-059 kernel: SEAMCALL (0x0000000000000009) failed: 0xc000010000000002
+
+3.Using Module's keyID for a TD
+2025-04-01T21:05:50.369198+08:00 DXH-104-059 kernel: kernel_agent: kvm __seamcall(): TDH_MNG_CREATE ------------------------------------ 
+2025-04-01T21:05:50.369200+08:00 DXH-104-059 kernel: kernel_agent: RCX: to add tdr page pa: 0x283722000
+2025-04-01T21:05:50.369202+08:00 DXH-104-059 kernel: kernel_agent: RDX: td hkid: 33
+2025-04-01T21:05:50.369204+08:00 DXH-104-059 kernel: kernel_agent: Modified RDX: td hkid: 32
+2025-04-01T21:05:50.369205+08:00 DXH-104-059 kernel: kernel_agent: last seamcall:0x9
+//Module's return code logged by VMM
+2025-04-01T21:05:50.369208+08:00 DXH-104-059 kernel: SEAMCALL (0x0000000000000009) failed: 0xc000082000000000

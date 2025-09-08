@@ -1,0 +1,36 @@
+2025-06-28T12:56:35.424768+00:00 tdx-guest kernel: kernel_agent: TD_AGENT------------------------
+2025-06-28T12:56:35.424867+00:00 tdx-guest kernel: kernel_agent: TDG_VM_RD-------------------------
+2025-06-28T12:56:35.424871+00:00 tdx-guest kernel: kernel_agent: tdcall leaf version: 0x10000
+2025-06-28T12:56:35.424875+00:00 tdx-guest kernel: kernel_agent: rcx: 0x0
+2025-06-28T12:56:35.424878+00:00 tdx-guest kernel: kernel_agent: field id: 0xffffffffffffffff
+2025-06-28T12:56:35.424879+00:00 tdx-guest kernel: kernel_agent: TDCALL RET: 0xc0b00000000
+2025-06-28T12:56:35.424881+00:00 tdx-guest kernel: kernel_agent: RDX: 0x8010000300000020
+2025-06-28T12:56:35.424882+00:00 tdx-guest kernel: kernel_agent: R8: contents if successful 0x0
+
+2025-06-28T12:57:38.230950+00:00 tdx-guest kernel: kernel_agent: TD_AGENT------------------------
+2025-06-28T12:57:38.231022+00:00 tdx-guest kernel: kernel_agent: TDG_VM_RD-------------------------
+2025-06-28T12:57:38.231026+00:00 tdx-guest kernel: kernel_agent: tdcall leaf version: 0x10000
+2025-06-28T12:57:38.231028+00:00 tdx-guest kernel: kernel_agent: rcx: 0x0
+2025-06-28T12:57:38.231031+00:00 tdx-guest kernel: kernel_agent: field id: 0x8010000300000020
+2025-06-28T12:57:38.231034+00:00 tdx-guest kernel: kernel_agent: TDCALL RET: 0x0
+2025-06-28T12:57:38.231035+00:00 tdx-guest kernel: kernel_agent: RDX: 0x8010000300000021
+2025-06-28T12:57:38.231037+00:00 tdx-guest kernel: kernel_agent: R8: contents if successful 0xd21d7d3500d8e414
+
+2025-06-28T13:01:53.406862+00:00 tdx-guest kernel: Exiting module
+2025-06-28T13:01:55.624745+00:00 tdx-guest kernel: kernel_agent: TD_AGENT------------------------
+2025-06-28T13:01:55.624814+00:00 tdx-guest kernel: kernel_agent: TDG_VM_RD-------------------------
+2025-06-28T13:01:55.624818+00:00 tdx-guest kernel: kernel_agent: tdcall leaf version: 0x0
+2025-06-28T13:01:55.624822+00:00 tdx-guest kernel: kernel_agent: rcx: 0x0
+2025-06-28T13:01:55.624825+00:00 tdx-guest kernel: kernel_agent: field id: 0xffffffffffffffff
+2025-06-28T13:01:55.624826+00:00 tdx-guest kernel: kernel_agent: TDCALL RET: 0xc0000c0000000000
+2025-06-28T13:01:55.624828+00:00 tdx-guest kernel: kernel_agent: RDX: 0xffffffffffffffff
+2025-06-28T13:01:55.624829+00:00 tdx-guest kernel: kernel_agent: R8: contents if successful 0x0
+
+2025-06-28T13:05:44.967876+00:00 tdx-guest kernel: kernel_agent: TD_AGENT------------------------
+2025-06-28T13:05:44.967947+00:00 tdx-guest kernel: kernel_agent: TDG_VM_RD-------------------------
+2025-06-28T13:05:44.967951+00:00 tdx-guest kernel: kernel_agent: tdcall leaf version: 0x2
+2025-06-28T13:05:44.967953+00:00 tdx-guest kernel: kernel_agent: rcx: 0x0
+2025-06-28T13:05:44.967956+00:00 tdx-guest kernel: kernel_agent: field id: 0xffffffffffffffff
+2025-06-28T13:05:44.967958+00:00 tdx-guest kernel: kernel_agent: TDCALL RET: 0xc0000c0000000000
+2025-06-28T13:05:44.967960+00:00 tdx-guest kernel: kernel_agent: RDX: 0xffffffffffffffff
+2025-06-28T13:05:44.967962+00:00 tdx-guest kernel: kernel_agent: R8: contents if successful 0x0

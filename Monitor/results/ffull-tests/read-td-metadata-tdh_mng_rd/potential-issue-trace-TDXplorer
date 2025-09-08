@@ -1,0 +1,62 @@
+field -1
+########## 0469 SEAMCALL TDH_MNG_RD SEAMRET status: c0b00000000 FAIL -----------------
+rdx: 8010000000000001 
+r8: 0
+
+field 0
+########## 0469 SEAMCALL TDH_MNG_RD SEAMRET status: c0000c0000000000 FAIL -----------------
+rdx: ffffffffffffffff 
+r8: 0 
+
+field 1
+########## 0469 SEAMCALL TDH_MNG_RD SEAMRET status: 0 SUCCESS -----------------
+RDX: 8010000200000002
+R8: 0
+
+field 2
+########## 0469 SEAMCALL TDH_MNG_RD SEAMRET status: 0 SUCCESS -----------------
+RDX: 8010000300000004
+R8: 6
+
+field 3
+########## 0469 SEAMCALL TDH_MNG_RD SEAMRET status: c0000c0000000000 FAIL -----------------
+rdx: ffffffffffffffff 
+r8: 0
+
+field 4
+########## 0469 SEAMCALL TDH_MNG_RD SEAMRET status: 0 SUCCESS -----------------
+RDX: 8010000200000005
+R8: 21
+
+field 5
+########## 0469 SEAMCALL TDH_MNG_RD SEAMRET status: 0 SUCCESS -----------------
+RDX: 8010000300000010
+R8: 1
+
+field 6
+########## 0469 SEAMCALL TDH_MNG_RD SEAMRET status: c0000c0000000000 FAIL -----------------
+rdx: ffffffffffffffff 
+r8: 0
+
+field 7
+########## 0469 SEAMCALL TDH_MNG_RD SEAMRET status: c0000c0000000000 FAIL -----------------
+rdx: ffffffffffffffff 
+r8: 0 
+
+field 8
+########## 0469 SEAMCALL TDH_MNG_RD SEAMRET status: c0000c0000000000 FAIL -----------------
+rdx: ffffffffffffffff 
+r8: 0
+
+field 0x8010000200000002; // num tdcx
+########## 0469 SEAMCALL TDH_MNG_RD SEAMRET status: 0 SUCCESS -----------------
+RDX: 8010000300000004
+R8: 6
+
+
+field 0x1110000000000003; //gpaw
+########## 0469 SEAMCALL TDH_MNG_RD SEAMRET status: 0 SUCCESS -----------------
+RDX: 1110000300000004
+R8: 1
+
+

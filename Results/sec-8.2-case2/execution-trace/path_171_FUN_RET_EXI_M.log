@@ -1,0 +1,2039 @@
+starting a new path: 171
+bPath_explore2: 1
+bkp_pg_count 2
+idx 1 seam_pg_va: 0xffffa00300020000
+restoring : 0x7fffe7c54000 to : 0xffffa00300020000 bkp_pg_count 1
+idx 0 seam_pg_va: 0xffffa0010003f000
+restoring : 0x7fffe7c53000 to : 0xffffa0010003f000 bkp_pg_count 0
+key hole pages restored : 0
+non key hole pages restored : 2
+
+ins:0 rip:0xffffa00000009b30 in:REP nop %edx
+
+ins:1 rip:0xffffa00000009b34 in:push %rbp
+ seam_va: 0xffffa0010003fdb0 seam_pg_va: 0xffffa0010003f000
+next backp idx: 0 backing up on to: 0x7fffe7c53000
+BackupPg Constructor: seam_pg_va = 0xffffa0010003f000
+map size: 1
+dispatching for NIE
+rax: 40004000 rbx: 40004000 rcx: 2e rdx: ffffffffff000 rdi: 8400040004000 
+rsi: 1 r8: ffffa0010003fea0 r9: 0 r10: ffffa0010003ff8f r11: 0 
+r12: 21 r13: ffffa0010003fea0 r14: 4 r15: 1000000000000 rip: ffffa00000009b35 
+rsp: ffffa0010003fdb0 rbp: ffffa0010003fe50 rflgs: 106 
+here1
+here3
+here4
+
+ins:2 rip:0xffffa00000009b35 in:mov %rsp,%rbp
+dispatching for NIE
+rax: 40004000 rbx: 40004000 rcx: 2e rdx: ffffffffff000 rdi: 8400040004000 
+rsi: 1 r8: ffffa0010003fea0 r9: 0 r10: ffffa0010003ff8f r11: 0 
+r12: 21 r13: ffffa0010003fea0 r14: 4 r15: 1000000000000 rip: ffffa00000009b38 
+rsp: ffffa0010003fdb0 rbp: ffffa0010003fdb0 rflgs: 106 
+here1
+here3
+here4
+
+ins:3 rip:0xffffa00000009b38 in:and $0xfffffff0,%rsp
+dispatching for NIE
+rax: 40004000 rbx: 40004000 rcx: 2e rdx: ffffffffff000 rdi: 8400040004000 
+rsi: 1 r8: ffffa0010003fea0 r9: 0 r10: ffffa0010003ff8f r11: 0 
+r12: 21 r13: ffffa0010003fea0 r14: 4 r15: 1000000000000 rip: ffffa00000009b3c 
+rsp: ffffa0010003fdb0 rbp: ffffa0010003fdb0 rflgs: 182 
+here1
+here3
+here4
+
+ins:4 rip:0xffffa00000009b3c in:mov $0x1,%edx
+dispatching for NIE
+rax: 40004000 rbx: 40004000 rcx: 2e rdx: 1 rdi: 8400040004000 
+rsi: 1 r8: ffffa0010003fea0 r9: 0 r10: ffffa0010003ff8f r11: 0 
+r12: 21 r13: ffffa0010003fea0 r14: 4 r15: 1000000000000 rip: ffffa00000009b41 
+rsp: ffffa0010003fdb0 rbp: ffffa0010003fdb0 rflgs: 182 
+here1
+here3
+here4
+
+ins:5 rip:0xffffa00000009b41 in:call 0xfffffaaf(%rip)
+rsp_at_dispatchCall: ffffa0010003fdb0
+rip at call0: ffffa00000009b46
+rax: 40004000 rbx: 40004000 rcx: 2e rdx: 1 rdi: 8400040004000 
+rsi: 1 r8: ffffa0010003fea0 r9: 0 r10: ffffa0010003ff8f r11: 0 
+r12: 21 r13: ffffa0010003fea0 r14: 4 r15: 1000000000000 rip: ffffa000000095f0 
+rsp: ffffa0010003fda8 rbp: ffffa0010003fdb0 rflgs: 182 
+here1
+here3
+here4
+
+ins:6 rip:0xffffa000000095f0 in:push %rbp
+ seam_va: 0xffffa0010003fda0 seam_pg_va: 0xffffa0010003f000
+already backed up
+dispatching for NIE
+rax: 40004000 rbx: 40004000 rcx: 2e rdx: 1 rdi: 8400040004000 
+rsi: 1 r8: ffffa0010003fea0 r9: 0 r10: ffffa0010003ff8f r11: 0 
+r12: 21 r13: ffffa0010003fea0 r14: 4 r15: 1000000000000 rip: ffffa000000095f1 
+rsp: ffffa0010003fda0 rbp: ffffa0010003fdb0 rflgs: 182 
+here1
+here3
+here4
+
+ins:7 rip:0xffffa000000095f1 in:mov %rsp,%rbp
+dispatching for NIE
+rax: 40004000 rbx: 40004000 rcx: 2e rdx: 1 rdi: 8400040004000 
+rsi: 1 r8: ffffa0010003fea0 r9: 0 r10: ffffa0010003ff8f r11: 0 
+r12: 21 r13: ffffa0010003fea0 r14: 4 r15: 1000000000000 rip: ffffa000000095f4 
+rsp: ffffa0010003fda0 rbp: ffffa0010003fda0 rflgs: 182 
+here1
+here3
+here4
+
+ins:8 rip:0xffffa000000095f4 in:push %r15
+ seam_va: 0xffffa0010003fd98 seam_pg_va: 0xffffa0010003f000
+already backed up
+dispatching for NIE
+rax: 40004000 rbx: 40004000 rcx: 2e rdx: 1 rdi: 8400040004000 
+rsi: 1 r8: ffffa0010003fea0 r9: 0 r10: ffffa0010003ff8f r11: 0 
+r12: 21 r13: ffffa0010003fea0 r14: 4 r15: 1000000000000 rip: ffffa000000095f6 
+rsp: ffffa0010003fd98 rbp: ffffa0010003fda0 rflgs: 182 
+here1
+here3
+here4
+
+ins:9 rip:0xffffa000000095f6 in:push %r14
+ seam_va: 0xffffa0010003fd90 seam_pg_va: 0xffffa0010003f000
+already backed up
+dispatching for NIE
+rax: 40004000 rbx: 40004000 rcx: 2e rdx: 1 rdi: 8400040004000 
+rsi: 1 r8: ffffa0010003fea0 r9: 0 r10: ffffa0010003ff8f r11: 0 
+r12: 21 r13: ffffa0010003fea0 r14: 4 r15: 1000000000000 rip: ffffa000000095f8 
+rsp: ffffa0010003fd90 rbp: ffffa0010003fda0 rflgs: 182 
+here1
+here3
+here4
+
+ins:10 rip:0xffffa000000095f8 in:push %r13
+ seam_va: 0xffffa0010003fd88 seam_pg_va: 0xffffa0010003f000
+already backed up
+dispatching for NIE
+rax: 40004000 rbx: 40004000 rcx: 2e rdx: 1 rdi: 8400040004000 
+rsi: 1 r8: ffffa0010003fea0 r9: 0 r10: ffffa0010003ff8f r11: 0 
+r12: 21 r13: ffffa0010003fea0 r14: 4 r15: 1000000000000 rip: ffffa000000095fa 
+rsp: ffffa0010003fd88 rbp: ffffa0010003fda0 rflgs: 182 
+here1
+here3
+here4
+
+ins:11 rip:0xffffa000000095fa in:push %r12
+ seam_va: 0xffffa0010003fd80 seam_pg_va: 0xffffa0010003f000
+already backed up
+dispatching for NIE
+rax: 40004000 rbx: 40004000 rcx: 2e rdx: 1 rdi: 8400040004000 
+rsi: 1 r8: ffffa0010003fea0 r9: 0 r10: ffffa0010003ff8f r11: 0 
+r12: 21 r13: ffffa0010003fea0 r14: 4 r15: 1000000000000 rip: ffffa000000095fc 
+rsp: ffffa0010003fd80 rbp: ffffa0010003fda0 rflgs: 182 
+here1
+here3
+here4
+
+ins:12 rip:0xffffa000000095fc in:push %rbx
+ seam_va: 0xffffa0010003fd78 seam_pg_va: 0xffffa0010003f000
+already backed up
+dispatching for NIE
+rax: 40004000 rbx: 40004000 rcx: 2e rdx: 1 rdi: 8400040004000 
+rsi: 1 r8: ffffa0010003fea0 r9: 0 r10: ffffa0010003ff8f r11: 0 
+r12: 21 r13: ffffa0010003fea0 r14: 4 r15: 1000000000000 rip: ffffa000000095fd 
+rsp: ffffa0010003fd78 rbp: ffffa0010003fda0 rflgs: 182 
+here1
+here3
+here4
+
+ins:13 rip:0xffffa000000095fd in:and $0xfffffff0,%rsp
+dispatching for NIE
+rax: 40004000 rbx: 40004000 rcx: 2e rdx: 1 rdi: 8400040004000 
+rsi: 1 r8: ffffa0010003fea0 r9: 0 r10: ffffa0010003ff8f r11: 0 
+r12: 21 r13: ffffa0010003fea0 r14: 4 r15: 1000000000000 rip: ffffa00000009601 
+rsp: ffffa0010003fd70 rbp: ffffa0010003fda0 rflgs: 182 
+here1
+here3
+here4
+
+ins:14 rip:0xffffa00000009601 in:sub $0x50,%rsp
+dispatching for NIE
+rax: 40004000 rbx: 40004000 rcx: 2e rdx: 1 rdi: 8400040004000 
+rsi: 1 r8: ffffa0010003fea0 r9: 0 r10: ffffa0010003ff8f r11: 0 
+r12: 21 r13: ffffa0010003fea0 r14: 4 r15: 1000000000000 rip: ffffa00000009605 
+rsp: ffffa0010003fd20 rbp: ffffa0010003fda0 rflgs: 182 
+here1
+here3
+here4
+
+ins:15 rip:0xffffa00000009605 in:mov %rdi,%r11
+dispatching for NIE
+rax: 40004000 rbx: 40004000 rcx: 2e rdx: 1 rdi: 8400040004000 
+rsi: 1 r8: ffffa0010003fea0 r9: 0 r10: ffffa0010003ff8f r11: 8400040004000 
+r12: 21 r13: ffffa0010003fea0 r14: 4 r15: 1000000000000 rip: ffffa00000009608 
+rsp: ffffa0010003fd20 rbp: ffffa0010003fda0 rflgs: 182 
+here1
+here3
+here4
+
+ins:16 rip:0xffffa00000009608 in:mov $0xf6e,%rbx
+dispatching for NIE
+rax: 40004000 rbx: ffffa00300020000 rcx: 2e rdx: 1 rdi: 8400040004000 
+rsi: 1 r8: ffffa0010003fea0 r9: 0 r10: ffffa0010003ff8f r11: 8400040004000 
+r12: 21 r13: ffffa0010003fea0 r14: 4 r15: 1000000000000 rip: ffffa00000009611 
+rsp: ffffa0010003fd20 rbp: ffffa0010003fda0 rflgs: 182 
+here1
+here3
+here4
+
+ins:17 rip:0xffffa00000009611 in:cmp $0x1,%esi
+dispatching for NIE
+rax: 40004000 rbx: ffffa00300020000 rcx: 2e rdx: 1 rdi: 8400040004000 
+rsi: 1 r8: ffffa0010003fea0 r9: 0 r10: ffffa0010003ff8f r11: 8400040004000 
+r12: 21 r13: ffffa0010003fea0 r14: 4 r15: 1000000000000 rip: ffffa00000009614 
+rsp: ffffa0010003fd20 rbp: ffffa0010003fda0 rflgs: 146 
+here1
+here3
+here4
+
+ins:18 rip:0xffffa00000009614 in:setz %r13b
+dispatching for NIE
+rax: 40004000 rbx: ffffa00300020000 rcx: 2e rdx: 1 rdi: 8400040004000 
+rsi: 1 r8: ffffa0010003fea0 r9: 0 r10: ffffa0010003ff8f r11: 8400040004000 
+r12: 21 r13: ffffa0010003fe01 r14: 4 r15: 1000000000000 rip: ffffa00000009618 
+rsp: ffffa0010003fd20 rbp: ffffa0010003fda0 rflgs: 146 
+here1
+here3
+here4
+
+ins:19 rip:0xffffa00000009618 in:mov %rdi,%r15
+dispatching for NIE
+rax: 40004000 rbx: ffffa00300020000 rcx: 2e rdx: 1 rdi: 8400040004000 
+rsi: 1 r8: ffffa0010003fea0 r9: 0 r10: ffffa0010003ff8f r11: 8400040004000 
+r12: 21 r13: ffffa0010003fe01 r14: 4 r15: 8400040004000 rip: ffffa0000000961b 
+rsp: ffffa0010003fd20 rbp: ffffa0010003fda0 rflgs: 146 
+here1
+here3
+here4
+
+ins:20 rip:0xffffa0000000961b in:and $0xfffff000,%r15
+dispatching for NIE
+rax: 40004000 rbx: ffffa00300020000 rcx: 2e rdx: 1 rdi: 8400040004000 
+rsi: 1 r8: ffffa0010003fea0 r9: 0 r10: ffffa0010003ff8f r11: 8400040004000 
+r12: 21 r13: ffffa0010003fe01 r14: 4 r15: 8400040004000 rip: ffffa00000009622 
+rsp: ffffa0010003fd20 rbp: ffffa0010003fda0 rflgs: 106 
+here1
+here3
+here4
+
+ins:21 rip:0xffffa00000009622 in:mov %rdi,%rax
+dispatching for NIE
+rax: 8400040004000 rbx: ffffa00300020000 rcx: 2e rdx: 1 rdi: 8400040004000 
+rsi: 1 r8: ffffa0010003fea0 r9: 0 r10: ffffa0010003ff8f r11: 8400040004000 
+r12: 21 r13: ffffa0010003fe01 r14: 4 r15: 8400040004000 rip: ffffa00000009625 
+rsp: ffffa0010003fd20 rbp: ffffa0010003fda0 rflgs: 106 
+here1
+here3
+here4
+
+ins:22 rip:0xffffa00000009625 in:shr $0x20,%rax
+dispatching for NIE
+rax: 84000 rbx: ffffa00300020000 rcx: 2e rdx: 1 rdi: 8400040004000 
+rsi: 1 r8: ffffa0010003fea0 r9: 0 r10: ffffa0010003ff8f r11: 8400040004000 
+r12: 21 r13: ffffa0010003fe01 r14: 4 r15: 8400040004000 rip: ffffa00000009629 
+rsp: ffffa0010003fd20 rbp: ffffa0010003fda0 rflgs: 106 
+here1
+here3
+here4
+
+ins:23 rip:0xffffa00000009629 in:mov %r11d,%ecx
+dispatching for NIE
+rax: 84000 rbx: ffffa00300020000 rcx: 40004000 rdx: 1 rdi: 8400040004000 
+rsi: 1 r8: ffffa0010003fea0 r9: 0 r10: ffffa0010003ff8f r11: 8400040004000 
+r12: 21 r13: ffffa0010003fe01 r14: 4 r15: 8400040004000 rip: ffffa0000000962c 
+rsp: ffffa0010003fd20 rbp: ffffa0010003fda0 rflgs: 106 
+here1
+here3
+here4
+
+ins:24 rip:0xffffa0000000962c in:shr $0x10,%ecx
+dispatching for NIE
+rax: 84000 rbx: ffffa00300020000 rcx: 4000 rdx: 1 rdi: 8400040004000 
+rsi: 1 r8: ffffa0010003fea0 r9: 0 r10: ffffa0010003ff8f r11: 8400040004000 
+r12: 21 r13: ffffa0010003fe01 r14: 4 r15: 8400040004000 rip: ffffa0000000962f 
+rsp: ffffa0010003fd20 rbp: ffffa0010003fda0 rflgs: 106 
+here1
+here3
+here4
+
+ins:25 rip:0xffffa0000000962f in:xor %eax,%ecx
+dispatching for NIE
+rax: 84000 rbx: ffffa00300020000 rcx: 80000 rdx: 1 rdi: 8400040004000 
+rsi: 1 r8: ffffa0010003fea0 r9: 0 r10: ffffa0010003ff8f r11: 8400040004000 
+r12: 21 r13: ffffa0010003fe01 r14: 4 r15: 8400040004000 rip: ffffa00000009631 
+rsp: ffffa0010003fd20 rbp: ffffa0010003fda0 rflgs: 106 
+here1
+here3
+here4
+
+ins:26 rip:0xffffa00000009631 in:mov %rdi,%r12
+dispatching for NIE
+rax: 84000 rbx: ffffa00300020000 rcx: 80000 rdx: 1 rdi: 8400040004000 
+rsi: 1 r8: ffffa0010003fea0 r9: 0 r10: ffffa0010003ff8f r11: 8400040004000 
+r12: 8400040004000 r13: ffffa0010003fe01 r14: 4 r15: 8400040004000 rip: ffffa00000009634 
+rsp: ffffa0010003fd20 rbp: ffffa0010003fda0 rflgs: 106 
+here1
+here3
+here4
+
+ins:27 rip:0xffffa00000009634 in:shr $0x30,%r12
+dispatching for NIE
+rax: 84000 rbx: ffffa00300020000 rcx: 80000 rdx: 1 rdi: 8400040004000 
+rsi: 1 r8: ffffa0010003fea0 r9: 0 r10: ffffa0010003ff8f r11: 8400040004000 
+r12: 8 r13: ffffa0010003fe01 r14: 4 r15: 8400040004000 rip: ffffa00000009638 
+rsp: ffffa0010003fd20 rbp: ffffa0010003fda0 rflgs: 102 
+here1
+here3
+here4
+
+ins:28 rip:0xffffa00000009638 in:xor %ecx,%r12d
+dispatching for NIE
+rax: 84000 rbx: ffffa00300020000 rcx: 80000 rdx: 1 rdi: 8400040004000 
+rsi: 1 r8: ffffa0010003fea0 r9: 0 r10: ffffa0010003ff8f r11: 8400040004000 
+r12: 80008 r13: ffffa0010003fe01 r14: 4 r15: 8400040004000 rip: ffffa0000000963b 
+rsp: ffffa0010003fd20 rbp: ffffa0010003fda0 rflgs: 102 
+here1
+here3
+here4
+
+ins:29 rip:0xffffa0000000963b in:and $0x7f,%r12d
+dispatching for NIE
+rax: 84000 rbx: ffffa00300020000 rcx: 80000 rdx: 1 rdi: 8400040004000 
+rsi: 1 r8: ffffa0010003fea0 r9: 0 r10: ffffa0010003ff8f r11: 8400040004000 
+r12: 8 r13: ffffa0010003fe01 r14: 4 r15: 8400040004000 rip: ffffa0000000963f 
+rsp: ffffa0010003fd20 rbp: ffffa0010003fda0 rflgs: 102 
+here1
+here3
+here4
+
+ins:30 rip:0xffffa0000000963f in:movzx 0xe62(%rbx,%r12,2),%r14d
+dispatching for NIE
+rax: 84000 rbx: ffffa00300020000 rcx: 80000 rdx: 1 rdi: 8400040004000 
+rsi: 1 r8: ffffa0010003fea0 r9: 0 r10: ffffa0010003ff8f r11: 8400040004000 
+r12: 8 r13: ffffa0010003fe01 r14: 2a r15: 8400040004000 rip: ffffa00000009648 
+rsp: ffffa0010003fd20 rbp: ffffa0010003fda0 rflgs: 102 
+here1
+here3
+here4
+
+ins:31 rip:0xffffa00000009648 in:cmp $0xff,%r14w
+dispatching for NIE
+rax: 84000 rbx: ffffa00300020000 rcx: 80000 rdx: 1 rdi: 8400040004000 
+rsi: 1 r8: ffffa0010003fea0 r9: 0 r10: ffffa0010003ff8f r11: 8400040004000 
+r12: 8 r13: ffffa0010003fe01 r14: 2a r15: 8400040004000 rip: ffffa0000000964d 
+rsp: ffffa0010003fd20 rbp: ffffa0010003fda0 rflgs: 117 
+here1
+here3
+here4
+
+ins:32 rip:0xffffa0000000964d in:jnz 0x23(%rip)
+updateJCCDecision 
+rax: 84000 rbx: ffffa00300020000 rcx: 80000 rdx: 1 rdi: 8400040004000 
+rsi: 1 r8: ffffa0010003fea0 r9: 0 r10: ffffa0010003ff8f r11: 8400040004000 
+r12: 8 r13: ffffa0010003fe01 r14: 2a r15: 8400040004000 rip: ffffa00000009670 
+rsp: ffffa0010003fd20 rbp: ffffa0010003fda0 rflgs: 117 
+here1
+here3
+here4
+
+ins:33 rip:0xffffa00000009670 in:movzx %r14w,%eax
+dispatching for NIE
+rax: 2a rbx: ffffa00300020000 rcx: 80000 rdx: 1 rdi: 8400040004000 
+rsi: 1 r8: ffffa0010003fea0 r9: 0 r10: ffffa0010003ff8f r11: 8400040004000 
+r12: 8 r13: ffffa0010003fe01 r14: 2a r15: 8400040004000 rip: ffffa00000009674 
+rsp: ffffa0010003fd20 rbp: ffffa0010003fda0 rflgs: 117 
+here1
+here3
+here4
+
+ins:34 rip:0xffffa00000009674 in:lea 0x0(%rax,%rax,4),%rax
+dispatching for NIE
+rax: d2 rbx: ffffa00300020000 rcx: 80000 rdx: 1 rdi: 8400040004000 
+rsi: 1 r8: ffffa0010003fea0 r9: 0 r10: ffffa0010003ff8f r11: 8400040004000 
+r12: 8 r13: ffffa0010003fe01 r14: 2a r15: 8400040004000 rip: ffffa00000009678 
+rsp: ffffa0010003fd20 rbp: ffffa0010003fda0 rflgs: 117 
+here1
+here3
+here4
+
+ins:35 rip:0xffffa00000009678 in:lea 0x0(%rax,%rax,4),%rax
+dispatching for NIE
+rax: 41a rbx: ffffa00300020000 rcx: 80000 rdx: 1 rdi: 8400040004000 
+rsi: 1 r8: ffffa0010003fea0 r9: 0 r10: ffffa0010003ff8f r11: 8400040004000 
+r12: 8 r13: ffffa0010003fe01 r14: 2a r15: 8400040004000 rip: ffffa0000000967c 
+rsp: ffffa0010003fd20 rbp: ffffa0010003fda0 rflgs: 117 
+here1
+here3
+here4
+
+ins:36 rip:0xffffa0000000967c in:cmp %r15,0x1e2(%rbx,%rax,1)
+sym mem ...
+dispatching for SIE
+ok3
+src : pa_42
+
+dst : 8400040004000 dst sz: 0x8
+dst aft sign extend : 8400040004000
+rax: 41a rbx: ffffa00300020000 rcx: 80000 rdx: 1 rdi: 8400040004000 
+rsi: 1 r8: ffffa0010003fea0 r9: 0 r10: ffffa0010003ff8f r11: 8400040004000 
+r12: 8 r13: ffffa0010003fe01 r14: 2a r15: 8400040004000 rip: ffffa00000009684 
+rsp: ffffa0010003fd20 rbp: ffffa0010003fda0 rflgs: 117 
+here1
+here3
+here4
+
+ins:37 rip:0xffffa00000009684 in:jnz 0xffffffdc(%rip)
+updateJCCDecision 
+debug_log c_BranchInsn : rip :0xffffa00000009684  insn count: 26
+branches ffffa00000009660 ffffa00000009686
+New_constraint:LNot(Distinct(Sub(pa_42,0x8400040004000)))
+BtoTake ffffa00000009686
+debug_log Sym branch in path explore: bExecute: 0
+rax: 41a rbx: ffffa00300020000 rcx: 80000 rdx: 1 rdi: 8400040004000 
+rsi: 1 r8: ffffa0010003fea0 r9: 0 r10: ffffa0010003ff8f r11: 8400040004000 
+r12: 8 r13: ffffa0010003fe01 r14: 2a r15: 8400040004000 rip: ffffa00000009686 
+rsp: ffffa0010003fd20 rbp: ffffa0010003fda0 rflgs: 157 
+here1
+here3
+here4
+
+ins:38 rip:0xffffa00000009686 in:cmp %r13b,0x1f1(%rbx,%rax,1)
+dispatching for NIE
+rax: 41a rbx: ffffa00300020000 rcx: 80000 rdx: 1 rdi: 8400040004000 
+rsi: 1 r8: ffffa0010003fea0 r9: 0 r10: ffffa0010003ff8f r11: 8400040004000 
+r12: 8 r13: ffffa0010003fe01 r14: 2a r15: 8400040004000 rip: ffffa0000000968e 
+rsp: ffffa0010003fd20 rbp: ffffa0010003fda0 rflgs: 197 
+here1
+here3
+here4
+
+ins:39 rip:0xffffa0000000968e in:jnz 0xffffffd2(%rip)
+updateJCCDecision 
+rax: 41a rbx: ffffa00300020000 rcx: 80000 rdx: 1 rdi: 8400040004000 
+rsi: 1 r8: ffffa0010003fea0 r9: 0 r10: ffffa0010003ff8f r11: 8400040004000 
+r12: 8 r13: ffffa0010003fe01 r14: 2a r15: 8400040004000 rip: ffffa00000009660 
+rsp: ffffa0010003fd20 rbp: ffffa0010003fda0 rflgs: 197 
+here1
+here3
+here4
+
+ins:40 rip:0xffffa00000009660 in:movzx 0x1ee(%rbx,%rax,1),%r14d
+dispatching for NIE
+rax: 41a rbx: ffffa00300020000 rcx: 80000 rdx: 1 rdi: 8400040004000 
+rsi: 1 r8: ffffa0010003fea0 r9: 0 r10: ffffa0010003ff8f r11: 8400040004000 
+r12: 8 r13: ffffa0010003fe01 r14: 1b r15: 8400040004000 rip: ffffa00000009669 
+rsp: ffffa0010003fd20 rbp: ffffa0010003fda0 rflgs: 197 
+here1
+here3
+here4
+
+ins:41 rip:0xffffa00000009669 in:cmp $0xff,%r14w
+dispatching for NIE
+rax: 41a rbx: ffffa00300020000 rcx: 80000 rdx: 1 rdi: 8400040004000 
+rsi: 1 r8: ffffa0010003fea0 r9: 0 r10: ffffa0010003ff8f r11: 8400040004000 
+r12: 8 r13: ffffa0010003fe01 r14: 1b r15: 8400040004000 rip: ffffa0000000966e 
+rsp: ffffa0010003fd20 rbp: ffffa0010003fda0 rflgs: 113 
+here1
+here3
+here4
+
+ins:42 rip:0xffffa0000000966e in:jz 0x2d(%rip)
+updateJCCDecision 
+rax: 41a rbx: ffffa00300020000 rcx: 80000 rdx: 1 rdi: 8400040004000 
+rsi: 1 r8: ffffa0010003fea0 r9: 0 r10: ffffa0010003ff8f r11: 8400040004000 
+r12: 8 r13: ffffa0010003fe01 r14: 1b r15: 8400040004000 rip: ffffa00000009670 
+rsp: ffffa0010003fd20 rbp: ffffa0010003fda0 rflgs: 113 
+here1
+here3
+here4
+
+ins:43 rip:0xffffa00000009670 in:movzx %r14w,%eax
+dispatching for NIE
+rax: 1b rbx: ffffa00300020000 rcx: 80000 rdx: 1 rdi: 8400040004000 
+rsi: 1 r8: ffffa0010003fea0 r9: 0 r10: ffffa0010003ff8f r11: 8400040004000 
+r12: 8 r13: ffffa0010003fe01 r14: 1b r15: 8400040004000 rip: ffffa00000009674 
+rsp: ffffa0010003fd20 rbp: ffffa0010003fda0 rflgs: 113 
+here1
+here3
+here4
+
+ins:44 rip:0xffffa00000009674 in:lea 0x0(%rax,%rax,4),%rax
+dispatching for NIE
+rax: 87 rbx: ffffa00300020000 rcx: 80000 rdx: 1 rdi: 8400040004000 
+rsi: 1 r8: ffffa0010003fea0 r9: 0 r10: ffffa0010003ff8f r11: 8400040004000 
+r12: 8 r13: ffffa0010003fe01 r14: 1b r15: 8400040004000 rip: ffffa00000009678 
+rsp: ffffa0010003fd20 rbp: ffffa0010003fda0 rflgs: 113 
+here1
+here3
+here4
+
+ins:45 rip:0xffffa00000009678 in:lea 0x0(%rax,%rax,4),%rax
+dispatching for NIE
+rax: 2a3 rbx: ffffa00300020000 rcx: 80000 rdx: 1 rdi: 8400040004000 
+rsi: 1 r8: ffffa0010003fea0 r9: 0 r10: ffffa0010003ff8f r11: 8400040004000 
+r12: 8 r13: ffffa0010003fe01 r14: 1b r15: 8400040004000 rip: ffffa0000000967c 
+rsp: ffffa0010003fd20 rbp: ffffa0010003fda0 rflgs: 113 
+here1
+here3
+here4
+
+ins:46 rip:0xffffa0000000967c in:cmp %r15,0x1e2(%rbx,%rax,1)
+sym mem ...
+dispatching for SIE
+ok3
+src : pa_27
+
+dst : 8400040004000 dst sz: 0x8
+dst aft sign extend : 8400040004000
+rax: 2a3 rbx: ffffa00300020000 rcx: 80000 rdx: 1 rdi: 8400040004000 
+rsi: 1 r8: ffffa0010003fea0 r9: 0 r10: ffffa0010003ff8f r11: 8400040004000 
+r12: 8 r13: ffffa0010003fe01 r14: 1b r15: 8400040004000 rip: ffffa00000009684 
+rsp: ffffa0010003fd20 rbp: ffffa0010003fda0 rflgs: 113 
+here1
+here3
+here4
+
+ins:47 rip:0xffffa00000009684 in:jnz 0xffffffdc(%rip)
+updateJCCDecision 
+debug_log c_BranchInsn : rip :0xffffa00000009684  insn count: 30
+branches ffffa00000009660 ffffa00000009686
+New_constraint:Distinct(Sub(pa_27,0x8400040004000))
+BtoTake ffffa00000009660
+debug_log Sym branch in path explore: bExecute: 1
+rax: 2a3 rbx: ffffa00300020000 rcx: 80000 rdx: 1 rdi: 8400040004000 
+rsi: 1 r8: ffffa0010003fea0 r9: 0 r10: ffffa0010003ff8f r11: 8400040004000 
+r12: 8 r13: ffffa0010003fe01 r14: 1b r15: 8400040004000 rip: ffffa00000009660 
+rsp: ffffa0010003fd20 rbp: ffffa0010003fda0 rflgs: 113 
+here1
+here3
+here4
+
+ins:48 rip:0xffffa00000009660 in:movzx 0x1ee(%rbx,%rax,1),%r14d
+dispatching for NIE
+rax: 2a3 rbx: ffffa00300020000 rcx: 80000 rdx: 1 rdi: 8400040004000 
+rsi: 1 r8: ffffa0010003fea0 r9: 0 r10: ffffa0010003ff8f r11: 8400040004000 
+r12: 8 r13: ffffa0010003fe01 r14: 1a r15: 8400040004000 rip: ffffa00000009669 
+rsp: ffffa0010003fd20 rbp: ffffa0010003fda0 rflgs: 113 
+here1
+here3
+here4
+
+ins:49 rip:0xffffa00000009669 in:cmp $0xff,%r14w
+dispatching for NIE
+rax: 2a3 rbx: ffffa00300020000 rcx: 80000 rdx: 1 rdi: 8400040004000 
+rsi: 1 r8: ffffa0010003fea0 r9: 0 r10: ffffa0010003ff8f r11: 8400040004000 
+r12: 8 r13: ffffa0010003fe01 r14: 1a r15: 8400040004000 rip: ffffa0000000966e 
+rsp: ffffa0010003fd20 rbp: ffffa0010003fda0 rflgs: 117 
+here1
+here3
+here4
+
+ins:50 rip:0xffffa0000000966e in:jz 0x2d(%rip)
+updateJCCDecision 
+rax: 2a3 rbx: ffffa00300020000 rcx: 80000 rdx: 1 rdi: 8400040004000 
+rsi: 1 r8: ffffa0010003fea0 r9: 0 r10: ffffa0010003ff8f r11: 8400040004000 
+r12: 8 r13: ffffa0010003fe01 r14: 1a r15: 8400040004000 rip: ffffa00000009670 
+rsp: ffffa0010003fd20 rbp: ffffa0010003fda0 rflgs: 117 
+here1
+here3
+here4
+
+ins:51 rip:0xffffa00000009670 in:movzx %r14w,%eax
+dispatching for NIE
+rax: 1a rbx: ffffa00300020000 rcx: 80000 rdx: 1 rdi: 8400040004000 
+rsi: 1 r8: ffffa0010003fea0 r9: 0 r10: ffffa0010003ff8f r11: 8400040004000 
+r12: 8 r13: ffffa0010003fe01 r14: 1a r15: 8400040004000 rip: ffffa00000009674 
+rsp: ffffa0010003fd20 rbp: ffffa0010003fda0 rflgs: 117 
+here1
+here3
+here4
+
+ins:52 rip:0xffffa00000009674 in:lea 0x0(%rax,%rax,4),%rax
+dispatching for NIE
+rax: 82 rbx: ffffa00300020000 rcx: 80000 rdx: 1 rdi: 8400040004000 
+rsi: 1 r8: ffffa0010003fea0 r9: 0 r10: ffffa0010003ff8f r11: 8400040004000 
+r12: 8 r13: ffffa0010003fe01 r14: 1a r15: 8400040004000 rip: ffffa00000009678 
+rsp: ffffa0010003fd20 rbp: ffffa0010003fda0 rflgs: 117 
+here1
+here3
+here4
+
+ins:53 rip:0xffffa00000009678 in:lea 0x0(%rax,%rax,4),%rax
+dispatching for NIE
+rax: 28a rbx: ffffa00300020000 rcx: 80000 rdx: 1 rdi: 8400040004000 
+rsi: 1 r8: ffffa0010003fea0 r9: 0 r10: ffffa0010003ff8f r11: 8400040004000 
+r12: 8 r13: ffffa0010003fe01 r14: 1a r15: 8400040004000 rip: ffffa0000000967c 
+rsp: ffffa0010003fd20 rbp: ffffa0010003fda0 rflgs: 117 
+here1
+here3
+here4
+
+ins:54 rip:0xffffa0000000967c in:cmp %r15,0x1e2(%rbx,%rax,1)
+sym mem ...
+dispatching for SIE
+ok3
+src : pa_26
+
+dst : 8400040004000 dst sz: 0x8
+dst aft sign extend : 8400040004000
+rax: 28a rbx: ffffa00300020000 rcx: 80000 rdx: 1 rdi: 8400040004000 
+rsi: 1 r8: ffffa0010003fea0 r9: 0 r10: ffffa0010003ff8f r11: 8400040004000 
+r12: 8 r13: ffffa0010003fe01 r14: 1a r15: 8400040004000 rip: ffffa00000009684 
+rsp: ffffa0010003fd20 rbp: ffffa0010003fda0 rflgs: 117 
+here1
+here3
+here4
+
+ins:55 rip:0xffffa00000009684 in:jnz 0xffffffdc(%rip)
+updateJCCDecision 
+debug_log c_BranchInsn : rip :0xffffa00000009684  insn count: 38
+branches ffffa00000009660 ffffa00000009686
+New_constraint:Distinct(Sub(pa_26,0x8400040004000))
+BtoTake ffffa00000009660
+debug_log Sym branch in path explore: bExecute: 1
+rax: 28a rbx: ffffa00300020000 rcx: 80000 rdx: 1 rdi: 8400040004000 
+rsi: 1 r8: ffffa0010003fea0 r9: 0 r10: ffffa0010003ff8f r11: 8400040004000 
+r12: 8 r13: ffffa0010003fe01 r14: 1a r15: 8400040004000 rip: ffffa00000009660 
+rsp: ffffa0010003fd20 rbp: ffffa0010003fda0 rflgs: 117 
+here1
+here3
+here4
+
+ins:56 rip:0xffffa00000009660 in:movzx 0x1ee(%rbx,%rax,1),%r14d
+dispatching for NIE
+rax: 28a rbx: ffffa00300020000 rcx: 80000 rdx: 1 rdi: 8400040004000 
+rsi: 1 r8: ffffa0010003fea0 r9: 0 r10: ffffa0010003ff8f r11: 8400040004000 
+r12: 8 r13: ffffa0010003fe01 r14: 19 r15: 8400040004000 rip: ffffa00000009669 
+rsp: ffffa0010003fd20 rbp: ffffa0010003fda0 rflgs: 117 
+here1
+here3
+here4
+
+ins:57 rip:0xffffa00000009669 in:cmp $0xff,%r14w
+dispatching for NIE
+rax: 28a rbx: ffffa00300020000 rcx: 80000 rdx: 1 rdi: 8400040004000 
+rsi: 1 r8: ffffa0010003fea0 r9: 0 r10: ffffa0010003ff8f r11: 8400040004000 
+r12: 8 r13: ffffa0010003fe01 r14: 19 r15: 8400040004000 rip: ffffa0000000966e 
+rsp: ffffa0010003fd20 rbp: ffffa0010003fda0 rflgs: 113 
+here1
+here3
+here4
+
+ins:58 rip:0xffffa0000000966e in:jz 0x2d(%rip)
+updateJCCDecision 
+rax: 28a rbx: ffffa00300020000 rcx: 80000 rdx: 1 rdi: 8400040004000 
+rsi: 1 r8: ffffa0010003fea0 r9: 0 r10: ffffa0010003ff8f r11: 8400040004000 
+r12: 8 r13: ffffa0010003fe01 r14: 19 r15: 8400040004000 rip: ffffa00000009670 
+rsp: ffffa0010003fd20 rbp: ffffa0010003fda0 rflgs: 113 
+here1
+here3
+here4
+
+ins:59 rip:0xffffa00000009670 in:movzx %r14w,%eax
+dispatching for NIE
+rax: 19 rbx: ffffa00300020000 rcx: 80000 rdx: 1 rdi: 8400040004000 
+rsi: 1 r8: ffffa0010003fea0 r9: 0 r10: ffffa0010003ff8f r11: 8400040004000 
+r12: 8 r13: ffffa0010003fe01 r14: 19 r15: 8400040004000 rip: ffffa00000009674 
+rsp: ffffa0010003fd20 rbp: ffffa0010003fda0 rflgs: 113 
+here1
+here3
+here4
+
+ins:60 rip:0xffffa00000009674 in:lea 0x0(%rax,%rax,4),%rax
+dispatching for NIE
+rax: 7d rbx: ffffa00300020000 rcx: 80000 rdx: 1 rdi: 8400040004000 
+rsi: 1 r8: ffffa0010003fea0 r9: 0 r10: ffffa0010003ff8f r11: 8400040004000 
+r12: 8 r13: ffffa0010003fe01 r14: 19 r15: 8400040004000 rip: ffffa00000009678 
+rsp: ffffa0010003fd20 rbp: ffffa0010003fda0 rflgs: 113 
+here1
+here3
+here4
+
+ins:61 rip:0xffffa00000009678 in:lea 0x0(%rax,%rax,4),%rax
+dispatching for NIE
+rax: 271 rbx: ffffa00300020000 rcx: 80000 rdx: 1 rdi: 8400040004000 
+rsi: 1 r8: ffffa0010003fea0 r9: 0 r10: ffffa0010003ff8f r11: 8400040004000 
+r12: 8 r13: ffffa0010003fe01 r14: 19 r15: 8400040004000 rip: ffffa0000000967c 
+rsp: ffffa0010003fd20 rbp: ffffa0010003fda0 rflgs: 113 
+here1
+here3
+here4
+
+ins:62 rip:0xffffa0000000967c in:cmp %r15,0x1e2(%rbx,%rax,1)
+sym mem ...
+dispatching for SIE
+ok3
+src : pa_25
+
+dst : 8400040004000 dst sz: 0x8
+dst aft sign extend : 8400040004000
+rax: 271 rbx: ffffa00300020000 rcx: 80000 rdx: 1 rdi: 8400040004000 
+rsi: 1 r8: ffffa0010003fea0 r9: 0 r10: ffffa0010003ff8f r11: 8400040004000 
+r12: 8 r13: ffffa0010003fe01 r14: 19 r15: 8400040004000 rip: ffffa00000009684 
+rsp: ffffa0010003fd20 rbp: ffffa0010003fda0 rflgs: 113 
+here1
+here3
+here4
+
+ins:63 rip:0xffffa00000009684 in:jnz 0xffffffdc(%rip)
+updateJCCDecision 
+debug_log c_BranchInsn : rip :0xffffa00000009684  insn count: 40
+branches ffffa00000009660 ffffa00000009686
+New_constraint:Distinct(Sub(pa_25,0x8400040004000))
+BtoTake ffffa00000009660
+debug_log Sym branch in path explore: bExecute: 1
+rax: 271 rbx: ffffa00300020000 rcx: 80000 rdx: 1 rdi: 8400040004000 
+rsi: 1 r8: ffffa0010003fea0 r9: 0 r10: ffffa0010003ff8f r11: 8400040004000 
+r12: 8 r13: ffffa0010003fe01 r14: 19 r15: 8400040004000 rip: ffffa00000009660 
+rsp: ffffa0010003fd20 rbp: ffffa0010003fda0 rflgs: 113 
+here1
+here3
+here4
+
+ins:64 rip:0xffffa00000009660 in:movzx 0x1ee(%rbx,%rax,1),%r14d
+dispatching for NIE
+rax: 271 rbx: ffffa00300020000 rcx: 80000 rdx: 1 rdi: 8400040004000 
+rsi: 1 r8: ffffa0010003fea0 r9: 0 r10: ffffa0010003ff8f r11: 8400040004000 
+r12: 8 r13: ffffa0010003fe01 r14: 18 r15: 8400040004000 rip: ffffa00000009669 
+rsp: ffffa0010003fd20 rbp: ffffa0010003fda0 rflgs: 113 
+here1
+here3
+here4
+
+ins:65 rip:0xffffa00000009669 in:cmp $0xff,%r14w
+dispatching for NIE
+rax: 271 rbx: ffffa00300020000 rcx: 80000 rdx: 1 rdi: 8400040004000 
+rsi: 1 r8: ffffa0010003fea0 r9: 0 r10: ffffa0010003ff8f r11: 8400040004000 
+r12: 8 r13: ffffa0010003fe01 r14: 18 r15: 8400040004000 rip: ffffa0000000966e 
+rsp: ffffa0010003fd20 rbp: ffffa0010003fda0 rflgs: 113 
+here1
+here3
+here4
+
+ins:66 rip:0xffffa0000000966e in:jz 0x2d(%rip)
+updateJCCDecision 
+rax: 271 rbx: ffffa00300020000 rcx: 80000 rdx: 1 rdi: 8400040004000 
+rsi: 1 r8: ffffa0010003fea0 r9: 0 r10: ffffa0010003ff8f r11: 8400040004000 
+r12: 8 r13: ffffa0010003fe01 r14: 18 r15: 8400040004000 rip: ffffa00000009670 
+rsp: ffffa0010003fd20 rbp: ffffa0010003fda0 rflgs: 113 
+here1
+here3
+here4
+
+ins:67 rip:0xffffa00000009670 in:movzx %r14w,%eax
+dispatching for NIE
+rax: 18 rbx: ffffa00300020000 rcx: 80000 rdx: 1 rdi: 8400040004000 
+rsi: 1 r8: ffffa0010003fea0 r9: 0 r10: ffffa0010003ff8f r11: 8400040004000 
+r12: 8 r13: ffffa0010003fe01 r14: 18 r15: 8400040004000 rip: ffffa00000009674 
+rsp: ffffa0010003fd20 rbp: ffffa0010003fda0 rflgs: 113 
+here1
+here3
+here4
+
+ins:68 rip:0xffffa00000009674 in:lea 0x0(%rax,%rax,4),%rax
+dispatching for NIE
+rax: 78 rbx: ffffa00300020000 rcx: 80000 rdx: 1 rdi: 8400040004000 
+rsi: 1 r8: ffffa0010003fea0 r9: 0 r10: ffffa0010003ff8f r11: 8400040004000 
+r12: 8 r13: ffffa0010003fe01 r14: 18 r15: 8400040004000 rip: ffffa00000009678 
+rsp: ffffa0010003fd20 rbp: ffffa0010003fda0 rflgs: 113 
+here1
+here3
+here4
+
+ins:69 rip:0xffffa00000009678 in:lea 0x0(%rax,%rax,4),%rax
+dispatching for NIE
+rax: 258 rbx: ffffa00300020000 rcx: 80000 rdx: 1 rdi: 8400040004000 
+rsi: 1 r8: ffffa0010003fea0 r9: 0 r10: ffffa0010003ff8f r11: 8400040004000 
+r12: 8 r13: ffffa0010003fe01 r14: 18 r15: 8400040004000 rip: ffffa0000000967c 
+rsp: ffffa0010003fd20 rbp: ffffa0010003fda0 rflgs: 113 
+here1
+here3
+here4
+
+ins:70 rip:0xffffa0000000967c in:cmp %r15,0x1e2(%rbx,%rax,1)
+sym mem ...
+dispatching for SIE
+ok3
+src : pa_24
+
+dst : 8400040004000 dst sz: 0x8
+dst aft sign extend : 8400040004000
+rax: 258 rbx: ffffa00300020000 rcx: 80000 rdx: 1 rdi: 8400040004000 
+rsi: 1 r8: ffffa0010003fea0 r9: 0 r10: ffffa0010003ff8f r11: 8400040004000 
+r12: 8 r13: ffffa0010003fe01 r14: 18 r15: 8400040004000 rip: ffffa00000009684 
+rsp: ffffa0010003fd20 rbp: ffffa0010003fda0 rflgs: 113 
+here1
+here3
+here4
+
+ins:71 rip:0xffffa00000009684 in:jnz 0xffffffdc(%rip)
+updateJCCDecision 
+debug_log c_BranchInsn : rip :0xffffa00000009684  insn count: 48
+branches ffffa00000009660 ffffa00000009686
+New_constraint:Distinct(Sub(pa_24,0x8400040004000))
+BtoTake ffffa00000009660
+debug_log Sym branch in path explore: bExecute: 1
+rax: 258 rbx: ffffa00300020000 rcx: 80000 rdx: 1 rdi: 8400040004000 
+rsi: 1 r8: ffffa0010003fea0 r9: 0 r10: ffffa0010003ff8f r11: 8400040004000 
+r12: 8 r13: ffffa0010003fe01 r14: 18 r15: 8400040004000 rip: ffffa00000009660 
+rsp: ffffa0010003fd20 rbp: ffffa0010003fda0 rflgs: 113 
+here1
+here3
+here4
+
+ins:72 rip:0xffffa00000009660 in:movzx 0x1ee(%rbx,%rax,1),%r14d
+dispatching for NIE
+rax: 258 rbx: ffffa00300020000 rcx: 80000 rdx: 1 rdi: 8400040004000 
+rsi: 1 r8: ffffa0010003fea0 r9: 0 r10: ffffa0010003ff8f r11: 8400040004000 
+r12: 8 r13: ffffa0010003fe01 r14: 17 r15: 8400040004000 rip: ffffa00000009669 
+rsp: ffffa0010003fd20 rbp: ffffa0010003fda0 rflgs: 113 
+here1
+here3
+here4
+
+ins:73 rip:0xffffa00000009669 in:cmp $0xff,%r14w
+dispatching for NIE
+rax: 258 rbx: ffffa00300020000 rcx: 80000 rdx: 1 rdi: 8400040004000 
+rsi: 1 r8: ffffa0010003fea0 r9: 0 r10: ffffa0010003ff8f r11: 8400040004000 
+r12: 8 r13: ffffa0010003fe01 r14: 17 r15: 8400040004000 rip: ffffa0000000966e 
+rsp: ffffa0010003fd20 rbp: ffffa0010003fda0 rflgs: 117 
+here1
+here3
+here4
+
+ins:74 rip:0xffffa0000000966e in:jz 0x2d(%rip)
+updateJCCDecision 
+rax: 258 rbx: ffffa00300020000 rcx: 80000 rdx: 1 rdi: 8400040004000 
+rsi: 1 r8: ffffa0010003fea0 r9: 0 r10: ffffa0010003ff8f r11: 8400040004000 
+r12: 8 r13: ffffa0010003fe01 r14: 17 r15: 8400040004000 rip: ffffa00000009670 
+rsp: ffffa0010003fd20 rbp: ffffa0010003fda0 rflgs: 117 
+here1
+here3
+here4
+
+ins:75 rip:0xffffa00000009670 in:movzx %r14w,%eax
+dispatching for NIE
+rax: 17 rbx: ffffa00300020000 rcx: 80000 rdx: 1 rdi: 8400040004000 
+rsi: 1 r8: ffffa0010003fea0 r9: 0 r10: ffffa0010003ff8f r11: 8400040004000 
+r12: 8 r13: ffffa0010003fe01 r14: 17 r15: 8400040004000 rip: ffffa00000009674 
+rsp: ffffa0010003fd20 rbp: ffffa0010003fda0 rflgs: 117 
+here1
+here3
+here4
+
+ins:76 rip:0xffffa00000009674 in:lea 0x0(%rax,%rax,4),%rax
+dispatching for NIE
+rax: 73 rbx: ffffa00300020000 rcx: 80000 rdx: 1 rdi: 8400040004000 
+rsi: 1 r8: ffffa0010003fea0 r9: 0 r10: ffffa0010003ff8f r11: 8400040004000 
+r12: 8 r13: ffffa0010003fe01 r14: 17 r15: 8400040004000 rip: ffffa00000009678 
+rsp: ffffa0010003fd20 rbp: ffffa0010003fda0 rflgs: 117 
+here1
+here3
+here4
+
+ins:77 rip:0xffffa00000009678 in:lea 0x0(%rax,%rax,4),%rax
+dispatching for NIE
+rax: 23f rbx: ffffa00300020000 rcx: 80000 rdx: 1 rdi: 8400040004000 
+rsi: 1 r8: ffffa0010003fea0 r9: 0 r10: ffffa0010003ff8f r11: 8400040004000 
+r12: 8 r13: ffffa0010003fe01 r14: 17 r15: 8400040004000 rip: ffffa0000000967c 
+rsp: ffffa0010003fd20 rbp: ffffa0010003fda0 rflgs: 117 
+here1
+here3
+here4
+
+ins:78 rip:0xffffa0000000967c in:cmp %r15,0x1e2(%rbx,%rax,1)
+sym mem ...
+dispatching for SIE
+ok3
+src : pa_23
+
+dst : 8400040004000 dst sz: 0x8
+dst aft sign extend : 8400040004000
+rax: 23f rbx: ffffa00300020000 rcx: 80000 rdx: 1 rdi: 8400040004000 
+rsi: 1 r8: ffffa0010003fea0 r9: 0 r10: ffffa0010003ff8f r11: 8400040004000 
+r12: 8 r13: ffffa0010003fe01 r14: 17 r15: 8400040004000 rip: ffffa00000009684 
+rsp: ffffa0010003fd20 rbp: ffffa0010003fda0 rflgs: 117 
+here1
+here3
+here4
+
+ins:79 rip:0xffffa00000009684 in:jnz 0xffffffdc(%rip)
+updateJCCDecision 
+debug_log c_BranchInsn : rip :0xffffa00000009684  insn count: 50
+branches ffffa00000009660 ffffa00000009686
+New_constraint:LNot(Distinct(Sub(pa_23,0x8400040004000)))
+BtoTake ffffa00000009686
+debug_log Sym branch in path explore: bExecute: 0
+rax: 23f rbx: ffffa00300020000 rcx: 80000 rdx: 1 rdi: 8400040004000 
+rsi: 1 r8: ffffa0010003fea0 r9: 0 r10: ffffa0010003ff8f r11: 8400040004000 
+r12: 8 r13: ffffa0010003fe01 r14: 17 r15: 8400040004000 rip: ffffa00000009686 
+rsp: ffffa0010003fd20 rbp: ffffa0010003fda0 rflgs: 157 
+here1
+here3
+here4
+
+ins:80 rip:0xffffa00000009686 in:cmp %r13b,0x1f1(%rbx,%rax,1)
+dispatching for NIE
+rax: 23f rbx: ffffa00300020000 rcx: 80000 rdx: 1 rdi: 8400040004000 
+rsi: 1 r8: ffffa0010003fea0 r9: 0 r10: ffffa0010003ff8f r11: 8400040004000 
+r12: 8 r13: ffffa0010003fe01 r14: 17 r15: 8400040004000 rip: ffffa0000000968e 
+rsp: ffffa0010003fd20 rbp: ffffa0010003fda0 rflgs: 146 
+here1
+here3
+here4
+
+ins:81 rip:0xffffa0000000968e in:jnz 0xffffffd2(%rip)
+updateJCCDecision 
+rax: 23f rbx: ffffa00300020000 rcx: 80000 rdx: 1 rdi: 8400040004000 
+rsi: 1 r8: ffffa0010003fea0 r9: 0 r10: ffffa0010003ff8f r11: 8400040004000 
+r12: 8 r13: ffffa0010003fe01 r14: 17 r15: 8400040004000 rip: ffffa00000009690 
+rsp: ffffa0010003fd20 rbp: ffffa0010003fda0 rflgs: 146 
+here1
+here3
+here4
+
+ins:82 rip:0xffffa00000009690 in:cmp %dl,0x1f2(%rbx,%rax,1)
+dispatching for NIE
+rax: 23f rbx: ffffa00300020000 rcx: 80000 rdx: 1 rdi: 8400040004000 
+rsi: 1 r8: ffffa0010003fea0 r9: 0 r10: ffffa0010003ff8f r11: 8400040004000 
+r12: 8 r13: ffffa0010003fe01 r14: 17 r15: 8400040004000 rip: ffffa00000009697 
+rsp: ffffa0010003fd20 rbp: ffffa0010003fda0 rflgs: 146 
+here1
+here3
+here4
+
+ins:83 rip:0xffffa00000009697 in:jnz 0xffffffc9(%rip)
+updateJCCDecision 
+rax: 23f rbx: ffffa00300020000 rcx: 80000 rdx: 1 rdi: 8400040004000 
+rsi: 1 r8: ffffa0010003fea0 r9: 0 r10: ffffa0010003ff8f r11: 8400040004000 
+r12: 8 r13: ffffa0010003fe01 r14: 17 r15: 8400040004000 rip: ffffa00000009699 
+rsp: ffffa0010003fd20 rbp: ffffa0010003fda0 rflgs: 146 
+here1
+here3
+here4
+
+ins:84 rip:0xffffa00000009699 in:jmp 0x7(%rip)
+rax: 23f rbx: ffffa00300020000 rcx: 80000 rdx: 1 rdi: 8400040004000 
+rsi: 1 r8: ffffa0010003fea0 r9: 0 r10: ffffa0010003ff8f r11: 8400040004000 
+r12: 8 r13: ffffa0010003fe01 r14: 17 r15: 8400040004000 rip: ffffa000000096a0 
+rsp: ffffa0010003fd20 rbp: ffffa0010003fda0 rflgs: 146 
+here1
+here3
+here4
+
+ins:85 rip:0xffffa000000096a0 in:add $0x1,0xf66(%rbx)
+ seam_va: 0xffffa00300020f66 seam_pg_va: 0xffffa00300020000
+next backp idx: 1 backing up on to: 0x7fffe7c54000
+BackupPg Constructor: seam_pg_va = 0xffffa00300020000
+map size: 2
+dispatching for NIE
+rax: 23f rbx: ffffa00300020000 rcx: 80000 rdx: 1 rdi: 8400040004000 
+rsi: 1 r8: ffffa0010003fea0 r9: 0 r10: ffffa0010003ff8f r11: 8400040004000 
+r12: 8 r13: ffffa0010003fe01 r14: 17 r15: 8400040004000 rip: ffffa000000096a8 
+rsp: ffffa0010003fd20 rbp: ffffa0010003fda0 rflgs: 106 
+here1
+here3
+here4
+
+ins:86 rip:0xffffa000000096a8 in:jz 0x103(%rip)
+updateJCCDecision 
+rax: 23f rbx: ffffa00300020000 rcx: 80000 rdx: 1 rdi: 8400040004000 
+rsi: 1 r8: ffffa0010003fea0 r9: 0 r10: ffffa0010003ff8f r11: 8400040004000 
+r12: 8 r13: ffffa0010003fe01 r14: 17 r15: 8400040004000 rip: ffffa000000096ae 
+rsp: ffffa0010003fd20 rbp: ffffa0010003fda0 rflgs: 106 
+here1
+here3
+here4
+
+ins:87 rip:0xffffa000000096ae in:cmp $0xff,%r14w
+dispatching for NIE
+rax: 23f rbx: ffffa00300020000 rcx: 80000 rdx: 1 rdi: 8400040004000 
+rsi: 1 r8: ffffa0010003fea0 r9: 0 r10: ffffa0010003ff8f r11: 8400040004000 
+r12: 8 r13: ffffa0010003fe01 r14: 17 r15: 8400040004000 rip: ffffa000000096b3 
+rsp: ffffa0010003fd20 rbp: ffffa0010003fda0 rflgs: 117 
+here1
+here3
+here4
+
+ins:88 rip:0xffffa000000096b3 in:jz 0x121(%rip)
+updateJCCDecision 
+rax: 23f rbx: ffffa00300020000 rcx: 80000 rdx: 1 rdi: 8400040004000 
+rsi: 1 r8: ffffa0010003fea0 r9: 0 r10: ffffa0010003ff8f r11: 8400040004000 
+r12: 8 r13: ffffa0010003fe01 r14: 17 r15: 8400040004000 rip: ffffa000000096b9 
+rsp: ffffa0010003fd20 rbp: ffffa0010003fda0 rflgs: 117 
+here1
+here3
+here4
+
+ins:89 rip:0xffffa000000096b9 in:movzx %r14w,%r15d
+dispatching for NIE
+rax: 23f rbx: ffffa00300020000 rcx: 80000 rdx: 1 rdi: 8400040004000 
+rsi: 1 r8: ffffa0010003fea0 r9: 0 r10: ffffa0010003ff8f r11: 8400040004000 
+r12: 8 r13: ffffa0010003fe01 r14: 17 r15: 17 rip: ffffa000000096bd 
+rsp: ffffa0010003fd20 rbp: ffffa0010003fda0 rflgs: 117 
+here1
+here3
+here4
+
+ins:90 rip:0xffffa000000096bd in:lea 0x0(%r15,%r15,4),%rax
+dispatching for NIE
+rax: 73 rbx: ffffa00300020000 rcx: 80000 rdx: 1 rdi: 8400040004000 
+rsi: 1 r8: ffffa0010003fea0 r9: 0 r10: ffffa0010003ff8f r11: 8400040004000 
+r12: 8 r13: ffffa0010003fe01 r14: 17 r15: 17 rip: ffffa000000096c1 
+rsp: ffffa0010003fd20 rbp: ffffa0010003fda0 rflgs: 117 
+here1
+here3
+here4
+
+ins:91 rip:0xffffa000000096c1 in:lea 0x0(%rax,%rax,4),%rax
+dispatching for NIE
+rax: 23f rbx: ffffa00300020000 rcx: 80000 rdx: 1 rdi: 8400040004000 
+rsi: 1 r8: ffffa0010003fea0 r9: 0 r10: ffffa0010003ff8f r11: 8400040004000 
+r12: 8 r13: ffffa0010003fe01 r14: 17 r15: 17 rip: ffffa000000096c5 
+rsp: ffffa0010003fd20 rbp: ffffa0010003fda0 rflgs: 117 
+here1
+here3
+here4
+
+ins:92 rip:0xffffa000000096c5 in:cmp $0x2,0x1f0(%rbx,%rax,1)
+dispatching for NIE
+rax: 23f rbx: ffffa00300020000 rcx: 80000 rdx: 1 rdi: 8400040004000 
+rsi: 1 r8: ffffa0010003fea0 r9: 0 r10: ffffa0010003ff8f r11: 8400040004000 
+r12: 8 r13: ffffa0010003fe01 r14: 17 r15: 17 rip: ffffa000000096cd 
+rsp: ffffa0010003fd20 rbp: ffffa0010003fda0 rflgs: 146 
+here1
+here3
+here4
+
+ins:93 rip:0xffffa000000096cd in:jnz 0x6e(%rip)
+updateJCCDecision 
+rax: 23f rbx: ffffa00300020000 rcx: 80000 rdx: 1 rdi: 8400040004000 
+rsi: 1 r8: ffffa0010003fea0 r9: 0 r10: ffffa0010003ff8f r11: 8400040004000 
+r12: 8 r13: ffffa0010003fe01 r14: 17 r15: 17 rip: ffffa000000096cf 
+rsp: ffffa0010003fd20 rbp: ffffa0010003fda0 rflgs: 146 
+here1
+here3
+here4
+
+ins:94 rip:0xffffa000000096cf in:movzx 0x1ea(%rbx,%rax,1),%edx
+dispatching for NIE
+rax: 23f rbx: ffffa00300020000 rcx: 80000 rdx: 18 rdi: 8400040004000 
+rsi: 1 r8: ffffa0010003fea0 r9: 0 r10: ffffa0010003ff8f r11: 8400040004000 
+r12: 8 r13: ffffa0010003fe01 r14: 17 r15: 17 rip: ffffa000000096d7 
+rsp: ffffa0010003fd20 rbp: ffffa0010003fda0 rflgs: 146 
+here1
+here3
+here4
+
+ins:95 rip:0xffffa000000096d7 in:movzx 0x1ec(%rbx,%rax,1),%ecx
+dispatching for NIE
+rax: 23f rbx: ffffa00300020000 rcx: 16 rdx: 18 rdi: 8400040004000 
+rsi: 1 r8: ffffa0010003fea0 r9: 0 r10: ffffa0010003ff8f r11: 8400040004000 
+r12: 8 r13: ffffa0010003fe01 r14: 17 r15: 17 rip: ffffa000000096df 
+rsp: ffffa0010003fd20 rbp: ffffa0010003fda0 rflgs: 146 
+here1
+here3
+here4
+
+ins:96 rip:0xffffa000000096df in:cmp %r14w,0xf62(%rbx)
+dispatching for NIE
+rax: 23f rbx: ffffa00300020000 rcx: 16 rdx: 18 rdi: 8400040004000 
+rsi: 1 r8: ffffa0010003fea0 r9: 0 r10: ffffa0010003ff8f r11: 8400040004000 
+r12: 8 r13: ffffa0010003fe01 r14: 17 r15: 17 rip: ffffa000000096e7 
+rsp: ffffa0010003fd20 rbp: ffffa0010003fda0 rflgs: 197 
+here1
+here3
+here4
+
+ins:97 rip:0xffffa000000096e7 in:jz 0x99(%rip)
+updateJCCDecision 
+rax: 23f rbx: ffffa00300020000 rcx: 16 rdx: 18 rdi: 8400040004000 
+rsi: 1 r8: ffffa0010003fea0 r9: 0 r10: ffffa0010003ff8f r11: 8400040004000 
+r12: 8 r13: ffffa0010003fe01 r14: 17 r15: 17 rip: ffffa000000096ed 
+rsp: ffffa0010003fd20 rbp: ffffa0010003fda0 rflgs: 197 
+here1
+here3
+here4
+
+ins:98 rip:0xffffa000000096ed in:cmp %r14w,0xf64(%rbx)
+dispatching for NIE
+rax: 23f rbx: ffffa00300020000 rcx: 16 rdx: 18 rdi: 8400040004000 
+rsi: 1 r8: ffffa0010003fea0 r9: 0 r10: ffffa0010003ff8f r11: 8400040004000 
+r12: 8 r13: ffffa0010003fe01 r14: 17 r15: 17 rip: ffffa000000096f5 
+rsp: ffffa0010003fd20 rbp: ffffa0010003fda0 rflgs: 193 
+here1
+here3
+here4
+
+ins:99 rip:0xffffa000000096f5 in:jz 0xa0(%rip)
+updateJCCDecision 
+rax: 23f rbx: ffffa00300020000 rcx: 16 rdx: 18 rdi: 8400040004000 
+rsi: 1 r8: ffffa0010003fea0 r9: 0 r10: ffffa0010003ff8f r11: 8400040004000 
+r12: 8 r13: ffffa0010003fe01 r14: 17 r15: 17 rip: ffffa000000096fb 
+rsp: ffffa0010003fd20 rbp: ffffa0010003fda0 rflgs: 193 
+here1
+here3
+here4
+
+ins:100 rip:0xffffa000000096fb in:cmp $0xff,%cx
+dispatching for NIE
+rax: 23f rbx: ffffa00300020000 rcx: 16 rdx: 18 rdi: 8400040004000 
+rsi: 1 r8: ffffa0010003fea0 r9: 0 r10: ffffa0010003ff8f r11: 8400040004000 
+r12: 8 r13: ffffa0010003fe01 r14: 17 r15: 17 rip: ffffa000000096ff 
+rsp: ffffa0010003fd20 rbp: ffffa0010003fda0 rflgs: 117 
+here1
+here3
+here4
+
+ins:101 rip:0xffffa000000096ff in:jz 0x15(%rip)
+updateJCCDecision 
+rax: 23f rbx: ffffa00300020000 rcx: 16 rdx: 18 rdi: 8400040004000 
+rsi: 1 r8: ffffa0010003fea0 r9: 0 r10: ffffa0010003ff8f r11: 8400040004000 
+r12: 8 r13: ffffa0010003fe01 r14: 17 r15: 17 rip: ffffa00000009701 
+rsp: ffffa0010003fd20 rbp: ffffa0010003fda0 rflgs: 117 
+here1
+here3
+here4
+
+ins:102 rip:0xffffa00000009701 in:movzx %cx,%esi
+dispatching for NIE
+rax: 23f rbx: ffffa00300020000 rcx: 16 rdx: 18 rdi: 8400040004000 
+rsi: 16 r8: ffffa0010003fea0 r9: 0 r10: ffffa0010003ff8f r11: 8400040004000 
+r12: 8 r13: ffffa0010003fe01 r14: 17 r15: 17 rip: ffffa00000009704 
+rsp: ffffa0010003fd20 rbp: ffffa0010003fda0 rflgs: 117 
+here1
+here3
+here4
+
+ins:103 rip:0xffffa00000009704 in:lea 0x0(%rsi,%rsi,4),%rsi
+dispatching for NIE
+rax: 23f rbx: ffffa00300020000 rcx: 16 rdx: 18 rdi: 8400040004000 
+rsi: 6e r8: ffffa0010003fea0 r9: 0 r10: ffffa0010003ff8f r11: 8400040004000 
+r12: 8 r13: ffffa0010003fe01 r14: 17 r15: 17 rip: ffffa00000009708 
+rsp: ffffa0010003fd20 rbp: ffffa0010003fda0 rflgs: 117 
+here1
+here3
+here4
+
+ins:104 rip:0xffffa00000009708 in:lea 0x0(%rsi,%rsi,4),%rsi
+dispatching for NIE
+rax: 23f rbx: ffffa00300020000 rcx: 16 rdx: 18 rdi: 8400040004000 
+rsi: 226 r8: ffffa0010003fea0 r9: 0 r10: ffffa0010003ff8f r11: 8400040004000 
+r12: 8 r13: ffffa0010003fe01 r14: 17 r15: 17 rip: ffffa0000000970c 
+rsp: ffffa0010003fd20 rbp: ffffa0010003fda0 rflgs: 117 
+here1
+here3
+here4
+
+ins:105 rip:0xffffa0000000970c in:mov %dx,0x1ea(%rbx,%rsi,1)
+ seam_va: 0xffffa00300020410 seam_pg_va: 0xffffa00300020000
+already backed up
+dispatching for NIE
+rax: 23f rbx: ffffa00300020000 rcx: 16 rdx: 18 rdi: 8400040004000 
+rsi: 226 r8: ffffa0010003fea0 r9: 0 r10: ffffa0010003ff8f r11: 8400040004000 
+r12: 8 r13: ffffa0010003fe01 r14: 17 r15: 17 rip: ffffa00000009714 
+rsp: ffffa0010003fd20 rbp: ffffa0010003fda0 rflgs: 117 
+here1
+here3
+here4
+
+ins:106 rip:0xffffa00000009714 in:lea 0x0(%rbx,%rax,1),%rsi
+dispatching for NIE
+rax: 23f rbx: ffffa00300020000 rcx: 16 rdx: 18 rdi: 8400040004000 
+rsi: ffffa0030002023f r8: ffffa0010003fea0 r9: 0 r10: ffffa0010003ff8f r11: 8400040004000 
+r12: 8 r13: ffffa0010003fe01 r14: 17 r15: 17 rip: ffffa00000009718 
+rsp: ffffa0010003fd20 rbp: ffffa0010003fda0 rflgs: 117 
+here1
+here3
+here4
+
+ins:107 rip:0xffffa00000009718 in:add $0x1f0,%rsi
+dispatching for NIE
+rax: 23f rbx: ffffa00300020000 rcx: 16 rdx: 18 rdi: 8400040004000 
+rsi: ffffa0030002042f r8: ffffa0010003fea0 r9: 0 r10: ffffa0010003ff8f r11: 8400040004000 
+r12: 8 r13: ffffa0010003fe01 r14: 17 r15: 17 rip: ffffa0000000971f 
+rsp: ffffa0010003fd20 rbp: ffffa0010003fda0 rflgs: 182 
+here1
+here3
+here4
+
+ins:108 rip:0xffffa0000000971f in:cmp $0xff,%dx
+dispatching for NIE
+rax: 23f rbx: ffffa00300020000 rcx: 16 rdx: 18 rdi: 8400040004000 
+rsi: ffffa0030002042f r8: ffffa0010003fea0 r9: 0 r10: ffffa0010003ff8f r11: 8400040004000 
+r12: 8 r13: ffffa0010003fe01 r14: 17 r15: 17 rip: ffffa00000009723 
+rsp: ffffa0010003fd20 rbp: ffffa0010003fda0 rflgs: 113 
+here1
+here3
+here4
+
+ins:109 rip:0xffffa00000009723 in:jz 0x15(%rip)
+updateJCCDecision 
+rax: 23f rbx: ffffa00300020000 rcx: 16 rdx: 18 rdi: 8400040004000 
+rsi: ffffa0030002042f r8: ffffa0010003fea0 r9: 0 r10: ffffa0010003ff8f r11: 8400040004000 
+r12: 8 r13: ffffa0010003fe01 r14: 17 r15: 17 rip: ffffa00000009725 
+rsp: ffffa0010003fd20 rbp: ffffa0010003fda0 rflgs: 113 
+here1
+here3
+here4
+
+ins:110 rip:0xffffa00000009725 in:movzx %dx,%edx
+dispatching for NIE
+rax: 23f rbx: ffffa00300020000 rcx: 16 rdx: 18 rdi: 8400040004000 
+rsi: ffffa0030002042f r8: ffffa0010003fea0 r9: 0 r10: ffffa0010003ff8f r11: 8400040004000 
+r12: 8 r13: ffffa0010003fe01 r14: 17 r15: 17 rip: ffffa00000009728 
+rsp: ffffa0010003fd20 rbp: ffffa0010003fda0 rflgs: 113 
+here1
+here3
+here4
+
+ins:111 rip:0xffffa00000009728 in:lea 0x0(%rdx,%rdx,4),%rdx
+dispatching for NIE
+rax: 23f rbx: ffffa00300020000 rcx: 16 rdx: 78 rdi: 8400040004000 
+rsi: ffffa0030002042f r8: ffffa0010003fea0 r9: 0 r10: ffffa0010003ff8f r11: 8400040004000 
+r12: 8 r13: ffffa0010003fe01 r14: 17 r15: 17 rip: ffffa0000000972c 
+rsp: ffffa0010003fd20 rbp: ffffa0010003fda0 rflgs: 113 
+here1
+here3
+here4
+
+ins:112 rip:0xffffa0000000972c in:lea 0x0(%rdx,%rdx,4),%rdx
+dispatching for NIE
+rax: 23f rbx: ffffa00300020000 rcx: 16 rdx: 258 rdi: 8400040004000 
+rsi: ffffa0030002042f r8: ffffa0010003fea0 r9: 0 r10: ffffa0010003ff8f r11: 8400040004000 
+r12: 8 r13: ffffa0010003fe01 r14: 17 r15: 17 rip: ffffa00000009730 
+rsp: ffffa0010003fd20 rbp: ffffa0010003fda0 rflgs: 113 
+here1
+here3
+here4
+
+ins:113 rip:0xffffa00000009730 in:mov %cx,0x1ec(%rbx,%rdx,1)
+ seam_va: 0xffffa00300020444 seam_pg_va: 0xffffa00300020000
+already backed up
+dispatching for NIE
+rax: 23f rbx: ffffa00300020000 rcx: 16 rdx: 258 rdi: 8400040004000 
+rsi: ffffa0030002042f r8: ffffa0010003fea0 r9: 0 r10: ffffa0010003ff8f r11: 8400040004000 
+r12: 8 r13: ffffa0010003fe01 r14: 17 r15: 17 rip: ffffa00000009738 
+rsp: ffffa0010003fd20 rbp: ffffa0010003fda0 rflgs: 113 
+here1
+here3
+here4
+
+ins:114 rip:0xffffa00000009738 in:mov $0x1,(%rsi)
+ seam_va: 0xffffa0030002042f seam_pg_va: 0xffffa00300020000
+already backed up
+dispatching for NIE
+rax: 23f rbx: ffffa00300020000 rcx: 16 rdx: 258 rdi: 8400040004000 
+rsi: ffffa0030002042f r8: ffffa0010003fea0 r9: 0 r10: ffffa0010003ff8f r11: 8400040004000 
+r12: 8 r13: ffffa0010003fe01 r14: 17 r15: 17 rip: ffffa0000000973b 
+rsp: ffffa0010003fd20 rbp: ffffa0010003fda0 rflgs: 113 
+here1
+here3
+here4
+
+ins:115 rip:0xffffa0000000973b in:add $0x1,0x1f3(%rbx,%rax,1)
+sym mem ...
+ seam_va: 0xffffa00300020432 seam_pg_va: 0xffffa00300020000
+already backed up
+dispatching for SIE
+ok3
+rax: 23f rbx: ffffa00300020000 rcx: 16 rdx: 258 rdi: 8400040004000 
+rsi: ffffa0030002042f r8: ffffa0010003fea0 r9: 0 r10: ffffa0010003ff8f r11: 8400040004000 
+r12: 8 r13: ffffa0010003fe01 r14: 17 r15: 17 rip: ffffa00000009744 
+rsp: ffffa0010003fd20 rbp: ffffa0010003fda0 rflgs: 113 
+here1
+here3
+here4
+
+ins:116 rip:0xffffa00000009744 in:jz 0x397(%rip)
+updateJCCDecision 
+debug_log c_BranchInsn : rip :0xffffa00000009744  insn count: 75
+branches ffffa00000009adb ffffa0000000974a
+New_constraint:LNot(Equal(Add(r_23,0x1)))
+BtoTake ffffa0000000974a
+debug_log Sym branch in path explore: bExecute: 0
+rax: 23f rbx: ffffa00300020000 rcx: 16 rdx: 258 rdi: 8400040004000 
+rsi: ffffa0030002042f r8: ffffa0010003fea0 r9: 0 r10: ffffa0010003ff8f r11: 8400040004000 
+r12: 8 r13: ffffa0010003fe01 r14: 17 r15: 17 rip: ffffa0000000974a 
+rsp: ffffa0010003fd20 rbp: ffffa0010003fda0 rflgs: 113 
+here1
+here3
+here4
+
+ins:117 rip:0xffffa0000000974a in:lfence 
+dispatching for NIE
+rax: 23f rbx: ffffa00300020000 rcx: 16 rdx: 258 rdi: 8400040004000 
+rsi: ffffa0030002042f r8: ffffa0010003fea0 r9: 0 r10: ffffa0010003ff8f r11: 8400040004000 
+r12: 8 r13: ffffa0010003fe01 r14: 17 r15: 17 rip: ffffa0000000974d 
+rsp: ffffa0010003fd20 rbp: ffffa0010003fda0 rflgs: 113 
+here1
+here3
+here4
+
+ins:118 rip:0xffffa0000000974d in:mov $0xf7e,%rax
+dispatching for NIE
+rax: ffffa003ffff0000 rbx: ffffa00300020000 rcx: 16 rdx: 258 rdi: 8400040004000 
+rsi: ffffa0030002042f r8: ffffa0010003fea0 r9: 0 r10: ffffa0010003ff8f r11: 8400040004000 
+r12: 8 r13: ffffa0010003fe01 r14: 17 r15: 17 rip: ffffa00000009756 
+rsp: ffffa0010003fd20 rbp: ffffa0010003fda0 rflgs: 113 
+here1
+here3
+here4
+
+ins:119 rip:0xffffa00000009756 in:mov 0x114(%rbx),%ecx
+dispatching for NIE
+rax: ffffa003ffff0000 rbx: ffffa00300020000 rcx: 0 rdx: 258 rdi: 8400040004000 
+rsi: ffffa0030002042f r8: ffffa0010003fea0 r9: 0 r10: ffffa0010003ff8f r11: 8400040004000 
+r12: 8 r13: ffffa0010003fe01 r14: 17 r15: 17 rip: ffffa0000000975c 
+rsp: ffffa0010003fd20 rbp: ffffa0010003fda0 rflgs: 113 
+here1
+here3
+here4
+
+ins:120 rip:0xffffa0000000975c in:shl/sal $0x7,%rcx
+dispatching for NIE
+rax: ffffa003ffff0000 rbx: ffffa00300020000 rcx: 0 rdx: 258 rdi: 8400040004000 
+rsi: ffffa0030002042f r8: ffffa0010003fea0 r9: 0 r10: ffffa0010003ff8f r11: 8400040004000 
+r12: 8 r13: ffffa0010003fe01 r14: 17 r15: 17 rip: ffffa00000009760 
+rsp: ffffa0010003fd20 rbp: ffffa0010003fda0 rflgs: 146 
+here1
+here3
+here4
+
+ins:121 rip:0xffffa00000009760 in:add %r15,%rcx
+dispatching for NIE
+rax: ffffa003ffff0000 rbx: ffffa00300020000 rcx: 17 rdx: 258 rdi: 8400040004000 
+rsi: ffffa0030002042f r8: ffffa0010003fea0 r9: 0 r10: ffffa0010003ff8f r11: 8400040004000 
+r12: 8 r13: ffffa0010003fe01 r14: 17 r15: 17 rip: ffffa00000009763 
+rsp: ffffa0010003fd20 rbp: ffffa0010003fda0 rflgs: 106 
+here1
+here3
+here4
+
+ins:122 rip:0xffffa00000009763 in:shl/sal $0xc,%rcx
+dispatching for NIE
+rax: ffffa003ffff0000 rbx: ffffa00300020000 rcx: 17000 rdx: 258 rdi: 8400040004000 
+rsi: ffffa0030002042f r8: ffffa0010003fea0 r9: 0 r10: ffffa0010003ff8f r11: 8400040004000 
+r12: 8 r13: ffffa0010003fe01 r14: 17 r15: 17 rip: ffffa00000009767 
+rsp: ffffa0010003fd20 rbp: ffffa0010003fda0 rflgs: 106 
+here1
+here3
+here4
+
+ins:123 rip:0xffffa00000009767 in:add 0x838(%rax),%rcx
+dispatching for NIE
+rax: ffffa003ffff0000 rbx: ffffa00300020000 rcx: ffffa00200017000 rdx: 258 rdi: 8400040004000 
+rsi: ffffa0030002042f r8: ffffa0010003fea0 r9: 0 r10: ffffa0010003ff8f r11: 8400040004000 
+r12: 8 r13: ffffa0010003fe01 r14: 17 r15: 17 rip: ffffa0000000976e 
+rsp: ffffa0010003fd20 rbp: ffffa0010003fda0 rflgs: 186 
+here1
+here3
+here4
+
+ins:124 rip:0xffffa0000000976e in:and $0xfff,%r11d
+dispatching for NIE
+rax: ffffa003ffff0000 rbx: ffffa00300020000 rcx: ffffa00200017000 rdx: 258 rdi: 8400040004000 
+rsi: ffffa0030002042f r8: ffffa0010003fea0 r9: 0 r10: ffffa0010003ff8f r11: 0 
+r12: 8 r13: ffffa0010003fe01 r14: 17 r15: 17 rip: ffffa00000009775 
+rsp: ffffa0010003fd20 rbp: ffffa0010003fda0 rflgs: 146 
+here1
+here3
+here4
+
+ins:125 rip:0xffffa00000009775 in:or %rcx,%r11
+dispatching for NIE
+rax: ffffa003ffff0000 rbx: ffffa00300020000 rcx: ffffa00200017000 rdx: 258 rdi: 8400040004000 
+rsi: ffffa0030002042f r8: ffffa0010003fea0 r9: 0 r10: ffffa0010003ff8f r11: ffffa00200017000 
+r12: 8 r13: ffffa0010003fe01 r14: 17 r15: 17 rip: ffffa00000009778 
+rsp: ffffa0010003fd20 rbp: ffffa0010003fda0 rflgs: 186 
+here1
+here3
+here4
+
+ins:126 rip:0xffffa00000009778 in:mov %r11,%rax
+dispatching for NIE
+rax: ffffa00200017000 rbx: ffffa00300020000 rcx: ffffa00200017000 rdx: 258 rdi: 8400040004000 
+rsi: ffffa0030002042f r8: ffffa0010003fea0 r9: 0 r10: ffffa0010003ff8f r11: ffffa00200017000 
+r12: 8 r13: ffffa0010003fe01 r14: 17 r15: 17 rip: ffffa0000000977b 
+rsp: ffffa0010003fd20 rbp: ffffa0010003fda0 rflgs: 186 
+here1
+here3
+here4
+
+ins:127 rip:0xffffa0000000977b in:jmp 0x335(%rip)
+rax: ffffa00200017000 rbx: ffffa00300020000 rcx: ffffa00200017000 rdx: 258 rdi: 8400040004000 
+rsi: ffffa0030002042f r8: ffffa0010003fea0 r9: 0 r10: ffffa0010003ff8f r11: ffffa00200017000 
+r12: 8 r13: ffffa0010003fe01 r14: 17 r15: 17 rip: ffffa00000009ab0 
+rsp: ffffa0010003fd20 rbp: ffffa0010003fda0 rflgs: 186 
+here1
+here3
+here4
+
+ins:128 rip:0xffffa00000009ab0 in:lea 0xffffffd8(%rbp),%rsp
+dispatching for NIE
+rax: ffffa00200017000 rbx: ffffa00300020000 rcx: ffffa00200017000 rdx: 258 rdi: 8400040004000 
+rsi: ffffa0030002042f r8: ffffa0010003fea0 r9: 0 r10: ffffa0010003ff8f r11: ffffa00200017000 
+r12: 8 r13: ffffa0010003fe01 r14: 17 r15: 17 rip: ffffa00000009ab4 
+rsp: ffffa0010003fd78 rbp: ffffa0010003fda0 rflgs: 186 
+here1
+here3
+here4
+
+ins:129 rip:0xffffa00000009ab4 in:pop %rbx
+dispatching for NIE
+rax: ffffa00200017000 rbx: 40004000 rcx: ffffa00200017000 rdx: 258 rdi: 8400040004000 
+rsi: ffffa0030002042f r8: ffffa0010003fea0 r9: 0 r10: ffffa0010003ff8f r11: ffffa00200017000 
+r12: 8 r13: ffffa0010003fe01 r14: 17 r15: 17 rip: ffffa00000009ab5 
+rsp: ffffa0010003fd80 rbp: ffffa0010003fda0 rflgs: 186 
+here1
+here3
+here4
+
+ins:130 rip:0xffffa00000009ab5 in:pop %r12
+dispatching for NIE
+rax: ffffa00200017000 rbx: 40004000 rcx: ffffa00200017000 rdx: 258 rdi: 8400040004000 
+rsi: ffffa0030002042f r8: ffffa0010003fea0 r9: 0 r10: ffffa0010003ff8f r11: ffffa00200017000 
+r12: 21 r13: ffffa0010003fe01 r14: 17 r15: 17 rip: ffffa00000009ab7 
+rsp: ffffa0010003fd88 rbp: ffffa0010003fda0 rflgs: 186 
+here1
+here3
+here4
+
+ins:131 rip:0xffffa00000009ab7 in:pop %r13
+dispatching for NIE
+rax: ffffa00200017000 rbx: 40004000 rcx: ffffa00200017000 rdx: 258 rdi: 8400040004000 
+rsi: ffffa0030002042f r8: ffffa0010003fea0 r9: 0 r10: ffffa0010003ff8f r11: ffffa00200017000 
+r12: 21 r13: ffffa0010003fea0 r14: 17 r15: 17 rip: ffffa00000009ab9 
+rsp: ffffa0010003fd90 rbp: ffffa0010003fda0 rflgs: 186 
+here1
+here3
+here4
+
+ins:132 rip:0xffffa00000009ab9 in:pop %r14
+dispatching for NIE
+rax: ffffa00200017000 rbx: 40004000 rcx: ffffa00200017000 rdx: 258 rdi: 8400040004000 
+rsi: ffffa0030002042f r8: ffffa0010003fea0 r9: 0 r10: ffffa0010003ff8f r11: ffffa00200017000 
+r12: 21 r13: ffffa0010003fea0 r14: 4 r15: 17 rip: ffffa00000009abb 
+rsp: ffffa0010003fd98 rbp: ffffa0010003fda0 rflgs: 186 
+here1
+here3
+here4
+
+ins:133 rip:0xffffa00000009abb in:pop %r15
+dispatching for NIE
+rax: ffffa00200017000 rbx: 40004000 rcx: ffffa00200017000 rdx: 258 rdi: 8400040004000 
+rsi: ffffa0030002042f r8: ffffa0010003fea0 r9: 0 r10: ffffa0010003ff8f r11: ffffa00200017000 
+r12: 21 r13: ffffa0010003fea0 r14: 4 r15: 1000000000000 rip: ffffa00000009abd 
+rsp: ffffa0010003fda0 rbp: ffffa0010003fda0 rflgs: 186 
+here1
+here3
+here4
+
+ins:134 rip:0xffffa00000009abd in:pop %rbp
+dispatching for NIE
+rax: ffffa00200017000 rbx: 40004000 rcx: ffffa00200017000 rdx: 258 rdi: 8400040004000 
+rsi: ffffa0030002042f r8: ffffa0010003fea0 r9: 0 r10: ffffa0010003ff8f r11: ffffa00200017000 
+r12: 21 r13: ffffa0010003fea0 r14: 4 r15: 1000000000000 rip: ffffa00000009abe 
+rsp: ffffa0010003fda8 rbp: ffffa0010003fdb0 rflgs: 186 
+here1
+here3
+here4
+
+ins:135 rip:0xffffa00000009abe in:ret near (%rsp)
+rsp_at_dispatchRET: ffffa0010003fda8
+rax: ffffa00200017000 rbx: 40004000 rcx: ffffa00200017000 rdx: 258 rdi: 8400040004000 
+rsi: ffffa0030002042f r8: ffffa0010003fea0 r9: 0 r10: ffffa0010003ff8f r11: ffffa00200017000 
+r12: 21 r13: ffffa0010003fea0 r14: 4 r15: 1000000000000 rip: ffffa00000009b46 
+rsp: ffffa0010003fdb0 rbp: ffffa0010003fdb0 rflgs: 186 
+here1
+here3
+here4
+
+ins:136 rip:0xffffa00000009b46 in:mov %rbp,%rsp
+dispatching for NIE
+rax: ffffa00200017000 rbx: 40004000 rcx: ffffa00200017000 rdx: 258 rdi: 8400040004000 
+rsi: ffffa0030002042f r8: ffffa0010003fea0 r9: 0 r10: ffffa0010003ff8f r11: ffffa00200017000 
+r12: 21 r13: ffffa0010003fea0 r14: 4 r15: 1000000000000 rip: ffffa00000009b49 
+rsp: ffffa0010003fdb0 rbp: ffffa0010003fdb0 rflgs: 186 
+here1
+here3
+here4
+
+ins:137 rip:0xffffa00000009b49 in:pop %rbp
+dispatching for NIE
+rax: ffffa00200017000 rbx: 40004000 rcx: ffffa00200017000 rdx: 258 rdi: 8400040004000 
+rsi: ffffa0030002042f r8: ffffa0010003fea0 r9: 0 r10: ffffa0010003ff8f r11: ffffa00200017000 
+r12: 21 r13: ffffa0010003fea0 r14: 4 r15: 1000000000000 rip: ffffa00000009b4a 
+rsp: ffffa0010003fdb8 rbp: ffffa0010003fe50 rflgs: 186 
+here1
+here3
+here4
+
+ins:138 rip:0xffffa00000009b4a in:ret near (%rsp)
+rsp_at_dispatchRET: ffffa0010003fdb8
+rax: ffffa00200017000 rbx: 40004000 rcx: ffffa00200017000 rdx: 258 rdi: 8400040004000 
+rsi: ffffa0030002042f r8: ffffa0010003fea0 r9: 0 r10: ffffa0010003ff8f r11: ffffa00200017000 
+r12: 21 r13: ffffa0010003fea0 r14: 4 r15: 1000000000000 rip: ffffa00000008ed3 
+rsp: ffffa0010003fdc0 rbp: ffffa0010003fe50 rflgs: 186 
+here1
+at map_pa_ret():0x
+
+##End of cur path
+
+path constraints : 
+Current path constraint: 
+Distinct(Sub(pa_24,0x8400040004000))
+Distinct(Sub(pa_26,0x8400040004000))
+LNot(Distinct(Sub(pa_23,0x8400040004000)))
+Distinct(Sub(pa_27,0x8400040004000))
+LNot(Distinct(Sub(pa_42,0x8400040004000)))
+Distinct(Sub(pa_25,0x8400040004000))
+LNot(Equal(Add(r_23,0x1)))
+
+at path end handler
+
+End of cur path ....
+
+path constraints : 
+hkid_pa_mapped: 0x0
+keyid_pa_in: 0x8400040004000
+
+End of cur path .... AT FUNCTION RET: EXISTING MAPPING
+existing keyhole mapping used for keyid+pa
+-------------------khole idx: 0
+Expression to evaluate: Equal(Sub(r_0,r_0))
+initial expr: r_0	end expr: r_0	is_ref_c_unmodified: 1
+OK: no increase in ref count
+-------------------khole idx: 1
+Expression to evaluate: Equal(Sub(r_1,r_1))
+initial expr: r_1	end expr: r_1	is_ref_c_unmodified: 1
+OK: no increase in ref count
+-------------------khole idx: 2
+Expression to evaluate: Equal(Sub(r_2,r_2))
+initial expr: r_2	end expr: r_2	is_ref_c_unmodified: 1
+OK: no increase in ref count
+-------------------khole idx: 3
+Expression to evaluate: Equal(Sub(r_3,r_3))
+initial expr: r_3	end expr: r_3	is_ref_c_unmodified: 1
+OK: no increase in ref count
+-------------------khole idx: 4
+Expression to evaluate: Equal(Sub(r_4,r_4))
+initial expr: r_4	end expr: r_4	is_ref_c_unmodified: 1
+OK: no increase in ref count
+-------------------khole idx: 5
+Expression to evaluate: Equal(Sub(r_5,r_5))
+initial expr: r_5	end expr: r_5	is_ref_c_unmodified: 1
+OK: no increase in ref count
+-------------------khole idx: 6
+Expression to evaluate: Equal(Sub(r_6,r_6))
+initial expr: r_6	end expr: r_6	is_ref_c_unmodified: 1
+OK: no increase in ref count
+-------------------khole idx: 7
+Expression to evaluate: Equal(Sub(r_7,r_7))
+initial expr: r_7	end expr: r_7	is_ref_c_unmodified: 1
+OK: no increase in ref count
+-------------------khole idx: 8
+Expression to evaluate: Equal(Sub(r_8,r_8))
+initial expr: r_8	end expr: r_8	is_ref_c_unmodified: 1
+OK: no increase in ref count
+-------------------khole idx: 9
+Expression to evaluate: Equal(Sub(r_9,r_9))
+initial expr: r_9	end expr: r_9	is_ref_c_unmodified: 1
+OK: no increase in ref count
+-------------------khole idx: 10
+Expression to evaluate: Equal(Sub(r_10,r_10))
+initial expr: r_10	end expr: r_10	is_ref_c_unmodified: 1
+OK: no increase in ref count
+-------------------khole idx: 11
+Expression to evaluate: Equal(Sub(r_11,r_11))
+initial expr: r_11	end expr: r_11	is_ref_c_unmodified: 1
+OK: no increase in ref count
+-------------------khole idx: 12
+Expression to evaluate: Equal(Sub(r_12,r_12))
+initial expr: r_12	end expr: r_12	is_ref_c_unmodified: 1
+OK: no increase in ref count
+-------------------khole idx: 13
+Expression to evaluate: Equal(Sub(r_13,r_13))
+initial expr: r_13	end expr: r_13	is_ref_c_unmodified: 1
+OK: no increase in ref count
+-------------------khole idx: 14
+Expression to evaluate: Equal(Sub(r_14,r_14))
+initial expr: r_14	end expr: r_14	is_ref_c_unmodified: 1
+OK: no increase in ref count
+-------------------khole idx: 15
+Expression to evaluate: Equal(Sub(r_15,r_15))
+initial expr: r_15	end expr: r_15	is_ref_c_unmodified: 1
+OK: no increase in ref count
+-------------------khole idx: 16
+Expression to evaluate: Equal(Sub(r_16,r_16))
+initial expr: r_16	end expr: r_16	is_ref_c_unmodified: 1
+OK: no increase in ref count
+-------------------khole idx: 17
+Expression to evaluate: Equal(Sub(r_17,r_17))
+initial expr: r_17	end expr: r_17	is_ref_c_unmodified: 1
+OK: no increase in ref count
+-------------------khole idx: 18
+Expression to evaluate: Equal(Sub(r_18,r_18))
+initial expr: r_18	end expr: r_18	is_ref_c_unmodified: 1
+OK: no increase in ref count
+-------------------khole idx: 19
+Expression to evaluate: Equal(Sub(r_19,r_19))
+initial expr: r_19	end expr: r_19	is_ref_c_unmodified: 1
+OK: no increase in ref count
+-------------------khole idx: 20
+Expression to evaluate: Equal(Sub(r_20,r_20))
+initial expr: r_20	end expr: r_20	is_ref_c_unmodified: 1
+OK: no increase in ref count
+-------------------khole idx: 21
+Expression to evaluate: Equal(Sub(r_21,r_21))
+initial expr: r_21	end expr: r_21	is_ref_c_unmodified: 1
+OK: no increase in ref count
+-------------------khole idx: 22
+Expression to evaluate: Equal(Sub(r_22,r_22))
+initial expr: r_22	end expr: r_22	is_ref_c_unmodified: 1
+OK: no increase in ref count
+-------------------khole idx: 23
+Expression to evaluate: Equal(Sub(r_23,Add(r_23,0x1)))
+initial expr: r_23	end expr: Add(r_23,0x1)	is_ref_c_unmodified: 0
+Expression to evaluate: Equal(Sub(Add(r_23,0x1),Add(r_23,0x1)))
+OK: correct increase in ref count
+-------------------khole idx: 24
+Expression to evaluate: Equal(Sub(r_24,r_24))
+initial expr: r_24	end expr: r_24	is_ref_c_unmodified: 1
+OK: no increase in ref count
+-------------------khole idx: 25
+Expression to evaluate: Equal(Sub(r_25,r_25))
+initial expr: r_25	end expr: r_25	is_ref_c_unmodified: 1
+OK: no increase in ref count
+-------------------khole idx: 26
+Expression to evaluate: Equal(Sub(r_26,r_26))
+initial expr: r_26	end expr: r_26	is_ref_c_unmodified: 1
+OK: no increase in ref count
+-------------------khole idx: 27
+Expression to evaluate: Equal(Sub(r_27,r_27))
+initial expr: r_27	end expr: r_27	is_ref_c_unmodified: 1
+OK: no increase in ref count
+-------------------khole idx: 28
+Expression to evaluate: Equal(Sub(r_28,r_28))
+initial expr: r_28	end expr: r_28	is_ref_c_unmodified: 1
+OK: no increase in ref count
+-------------------khole idx: 29
+Expression to evaluate: Equal(Sub(r_29,r_29))
+initial expr: r_29	end expr: r_29	is_ref_c_unmodified: 1
+OK: no increase in ref count
+-------------------khole idx: 30
+Expression to evaluate: Equal(Sub(r_30,r_30))
+initial expr: r_30	end expr: r_30	is_ref_c_unmodified: 1
+OK: no increase in ref count
+-------------------khole idx: 31
+Expression to evaluate: Equal(Sub(r_31,r_31))
+initial expr: r_31	end expr: r_31	is_ref_c_unmodified: 1
+OK: no increase in ref count
+-------------------khole idx: 32
+Expression to evaluate: Equal(Sub(r_32,r_32))
+initial expr: r_32	end expr: r_32	is_ref_c_unmodified: 1
+OK: no increase in ref count
+-------------------khole idx: 33
+Expression to evaluate: Equal(Sub(r_33,r_33))
+initial expr: r_33	end expr: r_33	is_ref_c_unmodified: 1
+OK: no increase in ref count
+-------------------khole idx: 34
+Expression to evaluate: Equal(Sub(r_34,r_34))
+initial expr: r_34	end expr: r_34	is_ref_c_unmodified: 1
+OK: no increase in ref count
+-------------------khole idx: 35
+Expression to evaluate: Equal(Sub(r_35,r_35))
+initial expr: r_35	end expr: r_35	is_ref_c_unmodified: 1
+OK: no increase in ref count
+-------------------khole idx: 36
+Expression to evaluate: Equal(Sub(r_36,r_36))
+initial expr: r_36	end expr: r_36	is_ref_c_unmodified: 1
+OK: no increase in ref count
+-------------------khole idx: 37
+Expression to evaluate: Equal(Sub(r_37,r_37))
+initial expr: r_37	end expr: r_37	is_ref_c_unmodified: 1
+OK: no increase in ref count
+-------------------khole idx: 38
+Expression to evaluate: Equal(Sub(r_38,r_38))
+initial expr: r_38	end expr: r_38	is_ref_c_unmodified: 1
+OK: no increase in ref count
+-------------------khole idx: 39
+Expression to evaluate: Equal(Sub(r_39,r_39))
+initial expr: r_39	end expr: r_39	is_ref_c_unmodified: 1
+OK: no increase in ref count
+-------------------khole idx: 40
+Expression to evaluate: Equal(Sub(r_40,r_40))
+initial expr: r_40	end expr: r_40	is_ref_c_unmodified: 1
+OK: no increase in ref count
+-------------------khole idx: 41
+Expression to evaluate: Equal(Sub(r_41,r_41))
+initial expr: r_41	end expr: r_41	is_ref_c_unmodified: 1
+OK: no increase in ref count
+-------------------khole idx: 42
+Expression to evaluate: Equal(Sub(r_42,r_42))
+initial expr: r_42	end expr: r_42	is_ref_c_unmodified: 1
+OK: no increase in ref count
+-------------------khole idx: 43
+Expression to evaluate: Equal(Sub(r_43,r_43))
+initial expr: r_43	end expr: r_43	is_ref_c_unmodified: 1
+OK: no increase in ref count
+-------------------khole idx: 44
+Expression to evaluate: Equal(Sub(r_44,r_44))
+initial expr: r_44	end expr: r_44	is_ref_c_unmodified: 1
+OK: no increase in ref count
+-------------------khole idx: 45
+Expression to evaluate: Equal(Sub(r_45,r_45))
+initial expr: r_45	end expr: r_45	is_ref_c_unmodified: 1
+OK: no increase in ref count
+-------------------khole idx: 46
+Expression to evaluate: Equal(Sub(r_46,r_46))
+initial expr: r_46	end expr: r_46	is_ref_c_unmodified: 1
+OK: no increase in ref count
+-------------------khole idx: 47
+Expression to evaluate: Equal(Sub(r_47,r_47))
+initial expr: r_47	end expr: r_47	is_ref_c_unmodified: 1
+OK: no increase in ref count
+-------------------khole idx: 48
+Expression to evaluate: Equal(Sub(r_48,r_48))
+initial expr: r_48	end expr: r_48	is_ref_c_unmodified: 1
+OK: no increase in ref count
+-------------------khole idx: 49
+Expression to evaluate: Equal(Sub(r_49,r_49))
+initial expr: r_49	end expr: r_49	is_ref_c_unmodified: 1
+OK: no increase in ref count
+-------------------khole idx: 50
+Expression to evaluate: Equal(Sub(r_50,r_50))
+initial expr: r_50	end expr: r_50	is_ref_c_unmodified: 1
+OK: no increase in ref count
+-------------------khole idx: 51
+Expression to evaluate: Equal(Sub(r_51,r_51))
+initial expr: r_51	end expr: r_51	is_ref_c_unmodified: 1
+OK: no increase in ref count
+-------------------khole idx: 52
+Expression to evaluate: Equal(Sub(r_52,r_52))
+initial expr: r_52	end expr: r_52	is_ref_c_unmodified: 1
+OK: no increase in ref count
+-------------------khole idx: 53
+Expression to evaluate: Equal(Sub(r_53,r_53))
+initial expr: r_53	end expr: r_53	is_ref_c_unmodified: 1
+OK: no increase in ref count
+-------------------khole idx: 54
+Expression to evaluate: Equal(Sub(r_54,r_54))
+initial expr: r_54	end expr: r_54	is_ref_c_unmodified: 1
+OK: no increase in ref count
+-------------------khole idx: 55
+Expression to evaluate: Equal(Sub(r_55,r_55))
+initial expr: r_55	end expr: r_55	is_ref_c_unmodified: 1
+OK: no increase in ref count
+-------------------khole idx: 56
+Expression to evaluate: Equal(Sub(r_56,r_56))
+initial expr: r_56	end expr: r_56	is_ref_c_unmodified: 1
+OK: no increase in ref count
+-------------------khole idx: 57
+Expression to evaluate: Equal(Sub(r_57,r_57))
+initial expr: r_57	end expr: r_57	is_ref_c_unmodified: 1
+OK: no increase in ref count
+-------------------khole idx: 58
+Expression to evaluate: Equal(Sub(r_58,r_58))
+initial expr: r_58	end expr: r_58	is_ref_c_unmodified: 1
+OK: no increase in ref count
+-------------------khole idx: 59
+Expression to evaluate: Equal(Sub(r_59,r_59))
+initial expr: r_59	end expr: r_59	is_ref_c_unmodified: 1
+OK: no increase in ref count
+-------------------khole idx: 60
+Expression to evaluate: Equal(Sub(r_60,r_60))
+initial expr: r_60	end expr: r_60	is_ref_c_unmodified: 1
+OK: no increase in ref count
+-------------------khole idx: 61
+Expression to evaluate: Equal(Sub(r_61,r_61))
+initial expr: r_61	end expr: r_61	is_ref_c_unmodified: 1
+OK: no increase in ref count
+-------------------khole idx: 62
+Expression to evaluate: Equal(Sub(r_62,r_62))
+initial expr: r_62	end expr: r_62	is_ref_c_unmodified: 1
+OK: no increase in ref count
+-------------------khole idx: 63
+Expression to evaluate: Equal(Sub(r_63,r_63))
+initial expr: r_63	end expr: r_63	is_ref_c_unmodified: 1
+OK: no increase in ref count
+-------------------khole idx: 64
+Expression to evaluate: Equal(Sub(r_64,r_64))
+initial expr: r_64	end expr: r_64	is_ref_c_unmodified: 1
+OK: no increase in ref count
+-------------------khole idx: 65
+Expression to evaluate: Equal(Sub(r_65,r_65))
+initial expr: r_65	end expr: r_65	is_ref_c_unmodified: 1
+OK: no increase in ref count
+-------------------khole idx: 66
+Expression to evaluate: Equal(Sub(r_66,r_66))
+initial expr: r_66	end expr: r_66	is_ref_c_unmodified: 1
+OK: no increase in ref count
+-------------------khole idx: 67
+Expression to evaluate: Equal(Sub(r_67,r_67))
+initial expr: r_67	end expr: r_67	is_ref_c_unmodified: 1
+OK: no increase in ref count
+-------------------khole idx: 68
+Expression to evaluate: Equal(Sub(r_68,r_68))
+initial expr: r_68	end expr: r_68	is_ref_c_unmodified: 1
+OK: no increase in ref count
+-------------------khole idx: 69
+Expression to evaluate: Equal(Sub(r_69,r_69))
+initial expr: r_69	end expr: r_69	is_ref_c_unmodified: 1
+OK: no increase in ref count
+-------------------khole idx: 70
+Expression to evaluate: Equal(Sub(r_70,r_70))
+initial expr: r_70	end expr: r_70	is_ref_c_unmodified: 1
+OK: no increase in ref count
+-------------------khole idx: 71
+Expression to evaluate: Equal(Sub(r_71,r_71))
+initial expr: r_71	end expr: r_71	is_ref_c_unmodified: 1
+OK: no increase in ref count
+-------------------khole idx: 72
+Expression to evaluate: Equal(Sub(r_72,r_72))
+initial expr: r_72	end expr: r_72	is_ref_c_unmodified: 1
+OK: no increase in ref count
+-------------------khole idx: 73
+Expression to evaluate: Equal(Sub(r_73,r_73))
+initial expr: r_73	end expr: r_73	is_ref_c_unmodified: 1
+OK: no increase in ref count
+-------------------khole idx: 74
+Expression to evaluate: Equal(Sub(r_74,r_74))
+initial expr: r_74	end expr: r_74	is_ref_c_unmodified: 1
+OK: no increase in ref count
+-------------------khole idx: 75
+Expression to evaluate: Equal(Sub(r_75,r_75))
+initial expr: r_75	end expr: r_75	is_ref_c_unmodified: 1
+OK: no increase in ref count
+-------------------khole idx: 76
+Expression to evaluate: Equal(Sub(r_76,r_76))
+initial expr: r_76	end expr: r_76	is_ref_c_unmodified: 1
+OK: no increase in ref count
+-------------------khole idx: 77
+Expression to evaluate: Equal(Sub(r_77,r_77))
+initial expr: r_77	end expr: r_77	is_ref_c_unmodified: 1
+OK: no increase in ref count
+-------------------khole idx: 78
+Expression to evaluate: Equal(Sub(r_78,r_78))
+initial expr: r_78	end expr: r_78	is_ref_c_unmodified: 1
+OK: no increase in ref count
+-------------------khole idx: 79
+Expression to evaluate: Equal(Sub(r_79,r_79))
+initial expr: r_79	end expr: r_79	is_ref_c_unmodified: 1
+OK: no increase in ref count
+-------------------khole idx: 80
+Expression to evaluate: Equal(Sub(r_80,r_80))
+initial expr: r_80	end expr: r_80	is_ref_c_unmodified: 1
+OK: no increase in ref count
+-------------------khole idx: 81
+Expression to evaluate: Equal(Sub(r_81,r_81))
+initial expr: r_81	end expr: r_81	is_ref_c_unmodified: 1
+OK: no increase in ref count
+-------------------khole idx: 82
+Expression to evaluate: Equal(Sub(r_82,r_82))
+initial expr: r_82	end expr: r_82	is_ref_c_unmodified: 1
+OK: no increase in ref count
+-------------------khole idx: 83
+Expression to evaluate: Equal(Sub(r_83,r_83))
+initial expr: r_83	end expr: r_83	is_ref_c_unmodified: 1
+OK: no increase in ref count
+-------------------khole idx: 84
+Expression to evaluate: Equal(Sub(r_84,r_84))
+initial expr: r_84	end expr: r_84	is_ref_c_unmodified: 1
+OK: no increase in ref count
+-------------------khole idx: 85
+Expression to evaluate: Equal(Sub(r_85,r_85))
+initial expr: r_85	end expr: r_85	is_ref_c_unmodified: 1
+OK: no increase in ref count
+-------------------khole idx: 86
+Expression to evaluate: Equal(Sub(r_86,r_86))
+initial expr: r_86	end expr: r_86	is_ref_c_unmodified: 1
+OK: no increase in ref count
+-------------------khole idx: 87
+Expression to evaluate: Equal(Sub(r_87,r_87))
+initial expr: r_87	end expr: r_87	is_ref_c_unmodified: 1
+OK: no increase in ref count
+-------------------khole idx: 88
+Expression to evaluate: Equal(Sub(r_88,r_88))
+initial expr: r_88	end expr: r_88	is_ref_c_unmodified: 1
+OK: no increase in ref count
+-------------------khole idx: 89
+Expression to evaluate: Equal(Sub(r_89,r_89))
+initial expr: r_89	end expr: r_89	is_ref_c_unmodified: 1
+OK: no increase in ref count
+-------------------khole idx: 90
+Expression to evaluate: Equal(Sub(r_90,r_90))
+initial expr: r_90	end expr: r_90	is_ref_c_unmodified: 1
+OK: no increase in ref count
+-------------------khole idx: 91
+Expression to evaluate: Equal(Sub(r_91,r_91))
+initial expr: r_91	end expr: r_91	is_ref_c_unmodified: 1
+OK: no increase in ref count
+-------------------khole idx: 92
+Expression to evaluate: Equal(Sub(r_92,r_92))
+initial expr: r_92	end expr: r_92	is_ref_c_unmodified: 1
+OK: no increase in ref count
+-------------------khole idx: 93
+Expression to evaluate: Equal(Sub(r_93,r_93))
+initial expr: r_93	end expr: r_93	is_ref_c_unmodified: 1
+OK: no increase in ref count
+-------------------khole idx: 94
+Expression to evaluate: Equal(Sub(r_94,r_94))
+initial expr: r_94	end expr: r_94	is_ref_c_unmodified: 1
+OK: no increase in ref count
+-------------------khole idx: 95
+Expression to evaluate: Equal(Sub(r_95,r_95))
+initial expr: r_95	end expr: r_95	is_ref_c_unmodified: 1
+OK: no increase in ref count
+-------------------khole idx: 96
+Expression to evaluate: Equal(Sub(r_96,r_96))
+initial expr: r_96	end expr: r_96	is_ref_c_unmodified: 1
+OK: no increase in ref count
+-------------------khole idx: 97
+Expression to evaluate: Equal(Sub(r_97,r_97))
+initial expr: r_97	end expr: r_97	is_ref_c_unmodified: 1
+OK: no increase in ref count
+-------------------khole idx: 98
+Expression to evaluate: Equal(Sub(r_98,r_98))
+initial expr: r_98	end expr: r_98	is_ref_c_unmodified: 1
+OK: no increase in ref count
+-------------------khole idx: 99
+Expression to evaluate: Equal(Sub(r_99,r_99))
+initial expr: r_99	end expr: r_99	is_ref_c_unmodified: 1
+OK: no increase in ref count
+-------------------khole idx: 100
+Expression to evaluate: Equal(Sub(r_100,r_100))
+initial expr: r_100	end expr: r_100	is_ref_c_unmodified: 1
+OK: no increase in ref count
+-------------------khole idx: 101
+Expression to evaluate: Equal(Sub(r_101,r_101))
+initial expr: r_101	end expr: r_101	is_ref_c_unmodified: 1
+OK: no increase in ref count
+-------------------khole idx: 102
+Expression to evaluate: Equal(Sub(r_102,r_102))
+initial expr: r_102	end expr: r_102	is_ref_c_unmodified: 1
+OK: no increase in ref count
+-------------------khole idx: 103
+Expression to evaluate: Equal(Sub(r_103,r_103))
+initial expr: r_103	end expr: r_103	is_ref_c_unmodified: 1
+OK: no increase in ref count
+-------------------khole idx: 104
+Expression to evaluate: Equal(Sub(r_104,r_104))
+initial expr: r_104	end expr: r_104	is_ref_c_unmodified: 1
+OK: no increase in ref count
+-------------------khole idx: 105
+Expression to evaluate: Equal(Sub(r_105,r_105))
+initial expr: r_105	end expr: r_105	is_ref_c_unmodified: 1
+OK: no increase in ref count
+-------------------khole idx: 106
+Expression to evaluate: Equal(Sub(r_106,r_106))
+initial expr: r_106	end expr: r_106	is_ref_c_unmodified: 1
+OK: no increase in ref count
+-------------------khole idx: 107
+Expression to evaluate: Equal(Sub(r_107,r_107))
+initial expr: r_107	end expr: r_107	is_ref_c_unmodified: 1
+OK: no increase in ref count
+-------------------khole idx: 108
+Expression to evaluate: Equal(Sub(r_108,r_108))
+initial expr: r_108	end expr: r_108	is_ref_c_unmodified: 1
+OK: no increase in ref count
+-------------------khole idx: 109
+Expression to evaluate: Equal(Sub(r_109,r_109))
+initial expr: r_109	end expr: r_109	is_ref_c_unmodified: 1
+OK: no increase in ref count
+-------------------khole idx: 110
+Expression to evaluate: Equal(Sub(r_110,r_110))
+initial expr: r_110	end expr: r_110	is_ref_c_unmodified: 1
+OK: no increase in ref count
+-------------------khole idx: 111
+Expression to evaluate: Equal(Sub(r_111,r_111))
+initial expr: r_111	end expr: r_111	is_ref_c_unmodified: 1
+OK: no increase in ref count
+-------------------khole idx: 112
+Expression to evaluate: Equal(Sub(r_112,r_112))
+initial expr: r_112	end expr: r_112	is_ref_c_unmodified: 1
+OK: no increase in ref count
+-------------------khole idx: 113
+Expression to evaluate: Equal(Sub(r_113,r_113))
+initial expr: r_113	end expr: r_113	is_ref_c_unmodified: 1
+OK: no increase in ref count
+-------------------khole idx: 114
+Expression to evaluate: Equal(Sub(r_114,r_114))
+initial expr: r_114	end expr: r_114	is_ref_c_unmodified: 1
+OK: no increase in ref count
+-------------------khole idx: 115
+Expression to evaluate: Equal(Sub(r_115,r_115))
+initial expr: r_115	end expr: r_115	is_ref_c_unmodified: 1
+OK: no increase in ref count
+-------------------khole idx: 116
+Expression to evaluate: Equal(Sub(r_116,r_116))
+initial expr: r_116	end expr: r_116	is_ref_c_unmodified: 1
+OK: no increase in ref count
+-------------------khole idx: 117
+Expression to evaluate: Equal(Sub(r_117,r_117))
+initial expr: r_117	end expr: r_117	is_ref_c_unmodified: 1
+OK: no increase in ref count
+-------------------khole idx: 118
+Expression to evaluate: Equal(Sub(r_118,r_118))
+initial expr: r_118	end expr: r_118	is_ref_c_unmodified: 1
+OK: no increase in ref count
+-------------------khole idx: 119
+Expression to evaluate: Equal(Sub(r_119,r_119))
+initial expr: r_119	end expr: r_119	is_ref_c_unmodified: 1
+OK: no increase in ref count
+-------------------khole idx: 120
+Expression to evaluate: Equal(Sub(r_120,r_120))
+initial expr: r_120	end expr: r_120	is_ref_c_unmodified: 1
+OK: no increase in ref count
+-------------------khole idx: 121
+Expression to evaluate: Equal(Sub(r_121,r_121))
+initial expr: r_121	end expr: r_121	is_ref_c_unmodified: 1
+OK: no increase in ref count
+-------------------khole idx: 122
+Expression to evaluate: Equal(Sub(r_122,r_122))
+initial expr: r_122	end expr: r_122	is_ref_c_unmodified: 1
+OK: no increase in ref count
+-------------------khole idx: 123
+Expression to evaluate: Equal(Sub(r_123,r_123))
+initial expr: r_123	end expr: r_123	is_ref_c_unmodified: 1
+OK: no increase in ref count
+-------------------khole idx: 124
+Expression to evaluate: Equal(Sub(r_124,r_124))
+initial expr: r_124	end expr: r_124	is_ref_c_unmodified: 1
+OK: no increase in ref count
+-------------------khole idx: 125
+Expression to evaluate: Equal(Sub(r_125,r_125))
+initial expr: r_125	end expr: r_125	is_ref_c_unmodified: 1
+OK: no increase in ref count
+-------------------khole idx: 126
+Expression to evaluate: Equal(Sub(r_126,r_126))
+initial expr: r_126	end expr: r_126	is_ref_c_unmodified: 1
+OK: no increase in ref count
+-------------------khole idx: 127
+Expression to evaluate: Equal(Sub(r_127,r_127))
+initial expr: r_127	end expr: r_127	is_ref_c_unmodified: 1
+OK: no increase in ref count
+OK: correct keyhole has been incremented
+expected_va: 0xffffa00200017000 returned va: 0xffffa00200017000
+OK: returned va does match the expected
+here3
+here4
+
+Ending Current path -----------------------------------------
+ins count : 139
+sie_count : 7
+nie_count : 103
+cumilative khole accesses : 0
+cumilative non khole accesses : 67242
+

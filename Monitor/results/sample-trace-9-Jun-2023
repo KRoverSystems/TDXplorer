@@ -1,0 +1,6 @@
+rm -f seam_manager build/seam_agent.img.o build/payload.o build/seam_agent.o build/seam_agent.img
+cc -Wall -Wextra -O2 -I include -m64 -ffreestanding -fno-pic -c -o build/seam_agent.o seamAgent/seam_agent.c
+ld -T seamAgent/agent.ld build/seam_agent.o -o build/seam_agent.img
+ld -b binary -r build/seam_agent.img -o build/seam_agent.img.o
+ld -T seamAgent/payload.ld -o build/payload.o
+cc -O2 -fno-stack-protector -I include seamManager/state.c seamManager/file_read.c seamManager/seam_manager.c seamManager/instrument.c npLoader/np_loader.c npLoader/data_read.c npLoader/np_elf64.c build/payload.o -o seam_manager

@@ -1,0 +1,1919 @@
+starting Monitor
+doing sanity checks
+size of struct comArea: 0x5bbdd4
+cpuid movdir64b support: 0
+cpuid serialize support: 0
+cpuid xgetbv support: 0
+sanity checks done
+seam manager's va for seam env pa: 0x7fffe57ca000
+doing 64-bit specifics ...
+aft setup GDT base:ffff900000000000 lim:0x2f
+preliminary seam environment prep done
+loading p-seamloder
+load p-seamldr successful ...
+fusing tdx sw PDPT with agent PML4, pml4 idx: 96
+fusing tdx sw PDPT with agent PML4, pml4 idx: 352
+executing Monitor/SEAM environment process
+installing tdx module
+
+########## issuing SEAMCALL SEAMLDR_INSTALL 
+########## CALL_COUNT: 0000 SEAMCALL SEAMLDR_INSTALL return code: 0
+rax:0x0 rcx:0x1200000 rdx:0x0
+r8:0x0 r9:0x0 r10:0x0 r11:0x0 
+
+########## issuing SEAMCALL SEAMLDR_INSTALL 
+########## CALL_COUNT: 0001 SEAMCALL SEAMLDR_INSTALL return code: 0
+rax:0x0 rcx:0x1200000 rdx:0x0
+r8:0x0 r9:0x0 r10:0x0 r11:0x0 
+
+########## issuing SEAMCALL SEAMLDR_INSTALL 
+########## CALL_COUNT: 0002 SEAMCALL SEAMLDR_INSTALL return code: 0
+rax:0x0 rcx:0x1200000 rdx:0x0
+r8:0x0 r9:0x0 r10:0x0 r11:0x0 
+
+########## issuing SEAMCALL SEAMLDR_INSTALL 
+########## CALL_COUNT: 0003 SEAMCALL SEAMLDR_INSTALL return code: 0
+rax:0x0 rcx:0x1200000 rdx:0x0
+r8:0x0 r9:0x0 r10:0x0 r11:0x0 
+
+install tdx module epilogue
+fusing tdx sw PDPT with agent PML4, pml4 idx: 64
+fusing tdx sw PDPT with agent PML4, pml4 idx: 320
+com->khole_data.khole_rgn_base:0xffffa00200000000
+com->khole_data.khole_rgn_size:0x200000
+com->khole_data.khole_edit_rgn_size: 1000
+lp:0 com->lp_khole_state[lp].khole_edit_rgn_pa: 5cef000
+lp:1 com->lp_khole_state[lp].khole_edit_rgn_pa: 5cef400
+lp:2 com->lp_khole_state[lp].khole_edit_rgn_pa: 5cef800
+lp:3 com->lp_khole_state[lp].khole_edit_rgn_pa: 5cefc00
+max physical address width: 39 bits
+com->max_pa_bit_below_hkid: 39
+seam_manager's wait for interpreter's PT update: START
+seam_manager's wait for interpreter's PT update: END
+init_tdx_module
+
+########## issuing SEAMCALL TDH_SYS_INIT 
+########## CALL_COUNT: 0004 SEAMCALL TDH_SYS_INIT return code: 0
+rax:0x0 rcx:0x0 rdx:0x0
+r8:0x0 r9:0x0 r10:0x0 r11:0x9110000300000010 
+
+########## issuing SEAMCALL TDH_SYS_LP_INIT 
+########## CALL_COUNT: 0005 SEAMCALL TDH_SYS_LP_INIT return code: 0
+rax:0x0 rcx:0x0 rdx:0x0
+r8:0x0 r9:0x55555555fda0 r10:0x7ffff7b052a0 r11:0x9110000300000010 
+
+########## issuing SEAMCALL TDH_SYS_LP_INIT 
+########## CALL_COUNT: 0006 SEAMCALL TDH_SYS_LP_INIT return code: 0
+rax:0x0 rcx:0x0 rdx:0x0
+r8:0x0 r9:0x55555555fda0 r10:0x7ffff7b052a0 r11:0x9110000300000010 
+
+########## issuing SEAMCALL TDH_SYS_LP_INIT 
+########## CALL_COUNT: 0007 SEAMCALL TDH_SYS_LP_INIT return code: 0
+rax:0x0 rcx:0x0 rdx:0x0
+r8:0x0 r9:0x55555555fda0 r10:0x7ffff7b052a0 r11:0x9110000300000010 
+
+########## issuing SEAMCALL TDH_SYS_LP_INIT 
+########## CALL_COUNT: 0008 SEAMCALL TDH_SYS_LP_INIT return code: 0
+rax:0x0 rcx:0x0 rdx:0x0
+r8:0x0 r9:0x55555555fda0 r10:0x7ffff7b052a0 r11:0x9110000300000010 
+
+########## issuing SEAMCALL TDH_SYS_CONFIG 
+########## CALL_COUNT: 0009 SEAMCALL TDH_SYS_CONFIG return code: 0
+rax:0x0 rcx:0x1200000 rdx:0x1
+r8:0x20 r9:0x7fffffffdf30 r10:0x7fffffffde60 r11:0xec25d87454a0f600 
+
+########## issuing SEAMCALL TDH_SYS_KEY_CONFIG 
+########## CALL_COUNT: 0010 SEAMCALL TDH_SYS_KEY_CONFIG return code: 0
+rax:0x0 rcx:0x5cfb000 rdx:0x20
+r8:0x0 r9:0x0 r10:0x800ff8 r11:0x7fffffffdeb0 
+
+########## issuing SEAMCALL TDH_SYS_TDMR_INIT 
+########## CALL_COUNT: 0011 SEAMCALL TDH_SYS_TDMR_INIT return code: 0
+rax:0x0 rcx:0x40000000 rdx:0x40000000
+r8:0x0 r9:0x0 r10:0x800ff8 r11:0x7fffffffdeb0 
+
+########## issuing SEAMCALL TDH_SYS_TDMR_INIT 
+########## CALL_COUNT: 0012 SEAMCALL TDH_SYS_TDMR_INIT return code: 0
+rax:0x0 rcx:0x40000000 rdx:0x40000000
+r8:0x0 r9:0x0 r10:0x800ff8 r11:0x7fffffffdeb0 
+
+########## issuing SEAMCALL TDH_SYS_TDMR_INIT 
+########## CALL_COUNT: 0013 SEAMCALL TDH_SYS_TDMR_INIT return code: 0
+rax:0x0 rcx:0x40000000 rdx:0x40000000
+r8:0x0 r9:0x0 r10:0x800ff8 r11:0x7fffffffdeb0 
+
+########## issuing SEAMCALL TDH_SYS_TDMR_INIT 
+########## CALL_COUNT: 0014 SEAMCALL TDH_SYS_TDMR_INIT return code: 0
+rax:0x0 rcx:0x40000000 rdx:0x40000000
+r8:0x0 r9:0x0 r10:0x800ff8 r11:0x7fffffffdeb0 
+
+########## issuing SEAMCALL TDH_SYS_TDMR_INIT 
+########## CALL_COUNT: 0015 SEAMCALL TDH_SYS_TDMR_INIT return code: 0
+rax:0x0 rcx:0x40000000 rdx:0x40000000
+r8:0x0 r9:0x0 r10:0x800ff8 r11:0x7fffffffdeb0 
+
+########## issuing SEAMCALL TDH_SYS_TDMR_INIT 
+########## CALL_COUNT: 0016 SEAMCALL TDH_SYS_TDMR_INIT return code: 0
+rax:0x0 rcx:0x40000000 rdx:0x40000000
+r8:0x0 r9:0x0 r10:0x800ff8 r11:0x7fffffffdeb0 
+
+########## issuing SEAMCALL TDH_SYS_TDMR_INIT 
+########## CALL_COUNT: 0017 SEAMCALL TDH_SYS_TDMR_INIT return code: 0
+rax:0x0 rcx:0x40000000 rdx:0x40000000
+r8:0x0 r9:0x0 r10:0x800ff8 r11:0x7fffffffdeb0 
+
+########## issuing SEAMCALL TDH_SYS_TDMR_INIT 
+########## CALL_COUNT: 0018 SEAMCALL TDH_SYS_TDMR_INIT return code: 0
+rax:0x0 rcx:0x40000000 rdx:0x40000000
+r8:0x0 r9:0x0 r10:0x800ff8 r11:0x7fffffffdeb0 
+
+########## issuing SEAMCALL TDH_SYS_TDMR_INIT 
+########## CALL_COUNT: 0019 SEAMCALL TDH_SYS_TDMR_INIT return code: 0
+rax:0x0 rcx:0x40000000 rdx:0x40000000
+r8:0x0 r9:0x0 r10:0x800ff8 r11:0x7fffffffdeb0 
+
+########## issuing SEAMCALL TDH_SYS_TDMR_INIT 
+########## CALL_COUNT: 0020 SEAMCALL TDH_SYS_TDMR_INIT return code: 0
+rax:0x0 rcx:0x40000000 rdx:0x40000000
+r8:0x0 r9:0x0 r10:0x800ff8 r11:0x7fffffffdeb0 
+
+########## issuing SEAMCALL TDH_SYS_TDMR_INIT 
+########## CALL_COUNT: 0021 SEAMCALL TDH_SYS_TDMR_INIT return code: 0
+rax:0x0 rcx:0x40000000 rdx:0x40000000
+r8:0x0 r9:0x0 r10:0x800ff8 r11:0x7fffffffdeb0 
+
+########## issuing SEAMCALL TDH_SYS_TDMR_INIT 
+########## CALL_COUNT: 0022 SEAMCALL TDH_SYS_TDMR_INIT return code: 0
+rax:0x0 rcx:0x40000000 rdx:0x40000000
+r8:0x0 r9:0x0 r10:0x800ff8 r11:0x7fffffffdeb0 
+
+########## issuing SEAMCALL TDH_SYS_TDMR_INIT 
+########## CALL_COUNT: 0023 SEAMCALL TDH_SYS_TDMR_INIT return code: 0
+rax:0x0 rcx:0x40000000 rdx:0x40000000
+r8:0x0 r9:0x0 r10:0x800ff8 r11:0x7fffffffdeb0 
+
+########## issuing SEAMCALL TDH_SYS_TDMR_INIT 
+########## CALL_COUNT: 0024 SEAMCALL TDH_SYS_TDMR_INIT return code: 0
+rax:0x0 rcx:0x40000000 rdx:0x40000000
+r8:0x0 r9:0x0 r10:0x800ff8 r11:0x7fffffffdeb0 
+
+########## issuing SEAMCALL TDH_SYS_TDMR_INIT 
+########## CALL_COUNT: 0025 SEAMCALL TDH_SYS_TDMR_INIT return code: 0
+rax:0x0 rcx:0x40000000 rdx:0x40000000
+r8:0x0 r9:0x0 r10:0x800ff8 r11:0x7fffffffdeb0 
+
+########## issuing SEAMCALL TDH_SYS_TDMR_INIT 
+########## CALL_COUNT: 0026 SEAMCALL TDH_SYS_TDMR_INIT return code: 0
+rax:0x0 rcx:0x40000000 rdx:0x40000000
+r8:0x0 r9:0x0 r10:0x800ff8 r11:0x7fffffffdeb0 
+
+########## issuing SEAMCALL TDH_SYS_TDMR_INIT 
+########## CALL_COUNT: 0027 SEAMCALL TDH_SYS_TDMR_INIT return code: 0
+rax:0x0 rcx:0x40000000 rdx:0x40000000
+r8:0x0 r9:0x0 r10:0x800ff8 r11:0x7fffffffdeb0 
+
+########## issuing SEAMCALL TDH_SYS_TDMR_INIT 
+########## CALL_COUNT: 0028 SEAMCALL TDH_SYS_TDMR_INIT return code: 0
+rax:0x0 rcx:0x40000000 rdx:0x40000000
+r8:0x0 r9:0x0 r10:0x800ff8 r11:0x7fffffffdeb0 
+
+########## issuing SEAMCALL TDH_SYS_TDMR_INIT 
+########## CALL_COUNT: 0029 SEAMCALL TDH_SYS_TDMR_INIT return code: 0
+rax:0x0 rcx:0x40000000 rdx:0x40000000
+r8:0x0 r9:0x0 r10:0x800ff8 r11:0x7fffffffdeb0 
+
+########## issuing SEAMCALL TDH_SYS_TDMR_INIT 
+########## CALL_COUNT: 0030 SEAMCALL TDH_SYS_TDMR_INIT return code: 0
+rax:0x0 rcx:0x40000000 rdx:0x40000000
+r8:0x0 r9:0x0 r10:0x800ff8 r11:0x7fffffffdeb0 
+
+########## issuing SEAMCALL TDH_SYS_TDMR_INIT 
+########## CALL_COUNT: 0031 SEAMCALL TDH_SYS_TDMR_INIT return code: 0
+rax:0x0 rcx:0x40000000 rdx:0x40000000
+r8:0x0 r9:0x0 r10:0x800ff8 r11:0x7fffffffdeb0 
+
+########## issuing SEAMCALL TDH_SYS_TDMR_INIT 
+########## CALL_COUNT: 0032 SEAMCALL TDH_SYS_TDMR_INIT return code: 0
+rax:0x0 rcx:0x40000000 rdx:0x40000000
+r8:0x0 r9:0x0 r10:0x800ff8 r11:0x7fffffffdeb0 
+
+########## issuing SEAMCALL TDH_SYS_TDMR_INIT 
+########## CALL_COUNT: 0033 SEAMCALL TDH_SYS_TDMR_INIT return code: 0
+rax:0x0 rcx:0x40000000 rdx:0x40000000
+r8:0x0 r9:0x0 r10:0x800ff8 r11:0x7fffffffdeb0 
+
+########## issuing SEAMCALL TDH_SYS_TDMR_INIT 
+########## CALL_COUNT: 0034 SEAMCALL TDH_SYS_TDMR_INIT return code: 0
+rax:0x0 rcx:0x40000000 rdx:0x40000000
+r8:0x0 r9:0x0 r10:0x800ff8 r11:0x7fffffffdeb0 
+
+########## issuing SEAMCALL TDH_SYS_TDMR_INIT 
+########## CALL_COUNT: 0035 SEAMCALL TDH_SYS_TDMR_INIT return code: 0
+rax:0x0 rcx:0x40000000 rdx:0x40000000
+r8:0x0 r9:0x0 r10:0x800ff8 r11:0x7fffffffdeb0 
+
+########## issuing SEAMCALL TDH_SYS_TDMR_INIT 
+########## CALL_COUNT: 0036 SEAMCALL TDH_SYS_TDMR_INIT return code: 0
+rax:0x0 rcx:0x40000000 rdx:0x40000000
+r8:0x0 r9:0x0 r10:0x800ff8 r11:0x7fffffffdeb0 
+
+########## issuing SEAMCALL TDH_SYS_TDMR_INIT 
+########## CALL_COUNT: 0037 SEAMCALL TDH_SYS_TDMR_INIT return code: 0
+rax:0x0 rcx:0x40000000 rdx:0x40000000
+r8:0x0 r9:0x0 r10:0x800ff8 r11:0x7fffffffdeb0 
+
+########## issuing SEAMCALL TDH_SYS_TDMR_INIT 
+########## CALL_COUNT: 0038 SEAMCALL TDH_SYS_TDMR_INIT return code: 0
+rax:0x0 rcx:0x40000000 rdx:0x40000000
+r8:0x0 r9:0x0 r10:0x800ff8 r11:0x7fffffffdeb0 
+
+########## issuing SEAMCALL TDH_SYS_TDMR_INIT 
+########## CALL_COUNT: 0039 SEAMCALL TDH_SYS_TDMR_INIT return code: 0
+rax:0x0 rcx:0x40000000 rdx:0x40000000
+r8:0x0 r9:0x0 r10:0x800ff8 r11:0x7fffffffdeb0 
+
+########## issuing SEAMCALL TDH_SYS_TDMR_INIT 
+########## CALL_COUNT: 0040 SEAMCALL TDH_SYS_TDMR_INIT return code: 0
+rax:0x0 rcx:0x40000000 rdx:0x40000000
+r8:0x0 r9:0x0 r10:0x800ff8 r11:0x7fffffffdeb0 
+
+########## issuing SEAMCALL TDH_SYS_TDMR_INIT 
+########## CALL_COUNT: 0041 SEAMCALL TDH_SYS_TDMR_INIT return code: 0
+rax:0x0 rcx:0x40000000 rdx:0x40000000
+r8:0x0 r9:0x0 r10:0x800ff8 r11:0x7fffffffdeb0 
+
+########## issuing SEAMCALL TDH_SYS_TDMR_INIT 
+########## CALL_COUNT: 0042 SEAMCALL TDH_SYS_TDMR_INIT return code: 0
+rax:0x0 rcx:0x40000000 rdx:0x40000000
+r8:0x0 r9:0x0 r10:0x800ff8 r11:0x7fffffffdeb0 
+
+########## issuing SEAMCALL TDH_SYS_TDMR_INIT 
+########## CALL_COUNT: 0043 SEAMCALL TDH_SYS_TDMR_INIT return code: 0
+rax:0x0 rcx:0x40000000 rdx:0x40000000
+r8:0x0 r9:0x0 r10:0x800ff8 r11:0x7fffffffdeb0 
+
+########## issuing SEAMCALL TDH_SYS_TDMR_INIT 
+########## CALL_COUNT: 0044 SEAMCALL TDH_SYS_TDMR_INIT return code: 0
+rax:0x0 rcx:0x40000000 rdx:0x40000000
+r8:0x0 r9:0x0 r10:0x800ff8 r11:0x7fffffffdeb0 
+
+########## issuing SEAMCALL TDH_SYS_TDMR_INIT 
+########## CALL_COUNT: 0045 SEAMCALL TDH_SYS_TDMR_INIT return code: 0
+rax:0x0 rcx:0x40000000 rdx:0x40000000
+r8:0x0 r9:0x0 r10:0x800ff8 r11:0x7fffffffdeb0 
+
+########## issuing SEAMCALL TDH_SYS_TDMR_INIT 
+########## CALL_COUNT: 0046 SEAMCALL TDH_SYS_TDMR_INIT return code: 0
+rax:0x0 rcx:0x40000000 rdx:0x40000000
+r8:0x0 r9:0x0 r10:0x800ff8 r11:0x7fffffffdeb0 
+
+########## issuing SEAMCALL TDH_SYS_TDMR_INIT 
+########## CALL_COUNT: 0047 SEAMCALL TDH_SYS_TDMR_INIT return code: 0
+rax:0x0 rcx:0x40000000 rdx:0x40000000
+r8:0x0 r9:0x0 r10:0x800ff8 r11:0x7fffffffdeb0 
+
+########## issuing SEAMCALL TDH_SYS_TDMR_INIT 
+########## CALL_COUNT: 0048 SEAMCALL TDH_SYS_TDMR_INIT return code: 0
+rax:0x0 rcx:0x40000000 rdx:0x40000000
+r8:0x0 r9:0x0 r10:0x800ff8 r11:0x7fffffffdeb0 
+
+########## issuing SEAMCALL TDH_SYS_TDMR_INIT 
+########## CALL_COUNT: 0049 SEAMCALL TDH_SYS_TDMR_INIT return code: 0
+rax:0x0 rcx:0x40000000 rdx:0x40000000
+r8:0x0 r9:0x0 r10:0x800ff8 r11:0x7fffffffdeb0 
+
+########## issuing SEAMCALL TDH_SYS_TDMR_INIT 
+########## CALL_COUNT: 0050 SEAMCALL TDH_SYS_TDMR_INIT return code: 0
+rax:0x0 rcx:0x40000000 rdx:0x40000000
+r8:0x0 r9:0x0 r10:0x800ff8 r11:0x7fffffffdeb0 
+
+########## issuing SEAMCALL TDH_SYS_TDMR_INIT 
+########## CALL_COUNT: 0051 SEAMCALL TDH_SYS_TDMR_INIT return code: 0
+rax:0x0 rcx:0x40000000 rdx:0x40000000
+r8:0x0 r9:0x0 r10:0x800ff8 r11:0x7fffffffdeb0 
+
+########## issuing SEAMCALL TDH_SYS_TDMR_INIT 
+########## CALL_COUNT: 0052 SEAMCALL TDH_SYS_TDMR_INIT return code: 0
+rax:0x0 rcx:0x40000000 rdx:0x40000000
+r8:0x0 r9:0x0 r10:0x800ff8 r11:0x7fffffffdeb0 
+
+########## issuing SEAMCALL TDH_SYS_TDMR_INIT 
+########## CALL_COUNT: 0053 SEAMCALL TDH_SYS_TDMR_INIT return code: 0
+rax:0x0 rcx:0x40000000 rdx:0x40000000
+r8:0x0 r9:0x0 r10:0x800ff8 r11:0x7fffffffdeb0 
+
+########## issuing SEAMCALL TDH_SYS_TDMR_INIT 
+########## CALL_COUNT: 0054 SEAMCALL TDH_SYS_TDMR_INIT return code: 0
+rax:0x0 rcx:0x40000000 rdx:0x40000000
+r8:0x0 r9:0x0 r10:0x800ff8 r11:0x7fffffffdeb0 
+
+########## issuing SEAMCALL TDH_SYS_TDMR_INIT 
+########## CALL_COUNT: 0055 SEAMCALL TDH_SYS_TDMR_INIT return code: 0
+rax:0x0 rcx:0x40000000 rdx:0x40000000
+r8:0x0 r9:0x0 r10:0x800ff8 r11:0x7fffffffdeb0 
+
+########## issuing SEAMCALL TDH_SYS_TDMR_INIT 
+########## CALL_COUNT: 0056 SEAMCALL TDH_SYS_TDMR_INIT return code: 0
+rax:0x0 rcx:0x40000000 rdx:0x40000000
+r8:0x0 r9:0x0 r10:0x800ff8 r11:0x7fffffffdeb0 
+
+########## issuing SEAMCALL TDH_SYS_TDMR_INIT 
+########## CALL_COUNT: 0057 SEAMCALL TDH_SYS_TDMR_INIT return code: 0
+rax:0x0 rcx:0x40000000 rdx:0x40000000
+r8:0x0 r9:0x0 r10:0x800ff8 r11:0x7fffffffdeb0 
+
+########## issuing SEAMCALL TDH_SYS_TDMR_INIT 
+########## CALL_COUNT: 0058 SEAMCALL TDH_SYS_TDMR_INIT return code: 0
+rax:0x0 rcx:0x40000000 rdx:0x40000000
+r8:0x0 r9:0x0 r10:0x800ff8 r11:0x7fffffffdeb0 
+
+########## issuing SEAMCALL TDH_SYS_TDMR_INIT 
+########## CALL_COUNT: 0059 SEAMCALL TDH_SYS_TDMR_INIT return code: 0
+rax:0x0 rcx:0x40000000 rdx:0x40000000
+r8:0x0 r9:0x0 r10:0x800ff8 r11:0x7fffffffdeb0 
+
+########## issuing SEAMCALL TDH_SYS_TDMR_INIT 
+########## CALL_COUNT: 0060 SEAMCALL TDH_SYS_TDMR_INIT return code: 0
+rax:0x0 rcx:0x40000000 rdx:0x40000000
+r8:0x0 r9:0x0 r10:0x800ff8 r11:0x7fffffffdeb0 
+
+########## issuing SEAMCALL TDH_SYS_TDMR_INIT 
+########## CALL_COUNT: 0061 SEAMCALL TDH_SYS_TDMR_INIT return code: 0
+rax:0x0 rcx:0x40000000 rdx:0x40000000
+r8:0x0 r9:0x0 r10:0x800ff8 r11:0x7fffffffdeb0 
+
+########## issuing SEAMCALL TDH_SYS_TDMR_INIT 
+########## CALL_COUNT: 0062 SEAMCALL TDH_SYS_TDMR_INIT return code: 0
+rax:0x0 rcx:0x40000000 rdx:0x40000000
+r8:0x0 r9:0x0 r10:0x800ff8 r11:0x7fffffffdeb0 
+
+########## issuing SEAMCALL TDH_SYS_TDMR_INIT 
+########## CALL_COUNT: 0063 SEAMCALL TDH_SYS_TDMR_INIT return code: 0
+rax:0x0 rcx:0x40000000 rdx:0x40000000
+r8:0x0 r9:0x0 r10:0x800ff8 r11:0x7fffffffdeb0 
+
+########## issuing SEAMCALL TDH_SYS_TDMR_INIT 
+########## CALL_COUNT: 0064 SEAMCALL TDH_SYS_TDMR_INIT return code: 0
+rax:0x0 rcx:0x40000000 rdx:0x40000000
+r8:0x0 r9:0x0 r10:0x800ff8 r11:0x7fffffffdeb0 
+
+########## issuing SEAMCALL TDH_SYS_TDMR_INIT 
+########## CALL_COUNT: 0065 SEAMCALL TDH_SYS_TDMR_INIT return code: 0
+rax:0x0 rcx:0x40000000 rdx:0x40000000
+r8:0x0 r9:0x0 r10:0x800ff8 r11:0x7fffffffdeb0 
+
+########## issuing SEAMCALL TDH_SYS_TDMR_INIT 
+########## CALL_COUNT: 0066 SEAMCALL TDH_SYS_TDMR_INIT return code: 0
+rax:0x0 rcx:0x40000000 rdx:0x40000000
+r8:0x0 r9:0x0 r10:0x800ff8 r11:0x7fffffffdeb0 
+
+########## issuing SEAMCALL TDH_SYS_TDMR_INIT 
+########## CALL_COUNT: 0067 SEAMCALL TDH_SYS_TDMR_INIT return code: 0
+rax:0x0 rcx:0x40000000 rdx:0x40000000
+r8:0x0 r9:0x0 r10:0x800ff8 r11:0x7fffffffdeb0 
+
+########## issuing SEAMCALL TDH_SYS_TDMR_INIT 
+########## CALL_COUNT: 0068 SEAMCALL TDH_SYS_TDMR_INIT return code: 0
+rax:0x0 rcx:0x40000000 rdx:0x40000000
+r8:0x0 r9:0x0 r10:0x800ff8 r11:0x7fffffffdeb0 
+
+########## issuing SEAMCALL TDH_SYS_TDMR_INIT 
+########## CALL_COUNT: 0069 SEAMCALL TDH_SYS_TDMR_INIT return code: 0
+rax:0x0 rcx:0x40000000 rdx:0x40000000
+r8:0x0 r9:0x0 r10:0x800ff8 r11:0x7fffffffdeb0 
+
+########## issuing SEAMCALL TDH_SYS_TDMR_INIT 
+########## CALL_COUNT: 0070 SEAMCALL TDH_SYS_TDMR_INIT return code: 0
+rax:0x0 rcx:0x40000000 rdx:0x40000000
+r8:0x0 r9:0x0 r10:0x800ff8 r11:0x7fffffffdeb0 
+
+########## issuing SEAMCALL TDH_SYS_TDMR_INIT 
+########## CALL_COUNT: 0071 SEAMCALL TDH_SYS_TDMR_INIT return code: 0
+rax:0x0 rcx:0x40000000 rdx:0x40000000
+r8:0x0 r9:0x0 r10:0x800ff8 r11:0x7fffffffdeb0 
+
+########## issuing SEAMCALL TDH_SYS_TDMR_INIT 
+########## CALL_COUNT: 0072 SEAMCALL TDH_SYS_TDMR_INIT return code: 0
+rax:0x0 rcx:0x40000000 rdx:0x40000000
+r8:0x0 r9:0x0 r10:0x800ff8 r11:0x7fffffffdeb0 
+
+########## issuing SEAMCALL TDH_SYS_TDMR_INIT 
+########## CALL_COUNT: 0073 SEAMCALL TDH_SYS_TDMR_INIT return code: 0
+rax:0x0 rcx:0x40000000 rdx:0x40000000
+r8:0x0 r9:0x0 r10:0x800ff8 r11:0x7fffffffdeb0 
+
+########## issuing SEAMCALL TDH_SYS_TDMR_INIT 
+########## CALL_COUNT: 0074 SEAMCALL TDH_SYS_TDMR_INIT return code: 0
+rax:0x0 rcx:0x40000000 rdx:0x40000000
+r8:0x0 r9:0x0 r10:0x800ff8 r11:0x7fffffffdeb0 
+
+########## issuing SEAMCALL TDH_SYS_TDMR_INIT 
+########## CALL_COUNT: 0075 SEAMCALL TDH_SYS_TDMR_INIT return code: 0
+rax:0x0 rcx:0x40000000 rdx:0x40000000
+r8:0x0 r9:0x0 r10:0x800ff8 r11:0x7fffffffdeb0 
+
+########## issuing SEAMCALL TDH_SYS_TDMR_INIT 
+########## CALL_COUNT: 0076 SEAMCALL TDH_SYS_TDMR_INIT return code: 0
+rax:0x0 rcx:0x40000000 rdx:0x40000000
+r8:0x0 r9:0x0 r10:0x800ff8 r11:0x7fffffffdeb0 
+
+########## issuing SEAMCALL TDH_SYS_TDMR_INIT 
+########## CALL_COUNT: 0077 SEAMCALL TDH_SYS_TDMR_INIT return code: 0
+rax:0x0 rcx:0x40000000 rdx:0x40000000
+r8:0x0 r9:0x0 r10:0x800ff8 r11:0x7fffffffdeb0 
+
+########## issuing SEAMCALL TDH_SYS_TDMR_INIT 
+########## CALL_COUNT: 0078 SEAMCALL TDH_SYS_TDMR_INIT return code: 0
+rax:0x0 rcx:0x40000000 rdx:0x40000000
+r8:0x0 r9:0x0 r10:0x800ff8 r11:0x7fffffffdeb0 
+
+########## issuing SEAMCALL TDH_SYS_TDMR_INIT 
+########## CALL_COUNT: 0079 SEAMCALL TDH_SYS_TDMR_INIT return code: 0
+rax:0x0 rcx:0x40000000 rdx:0x40000000
+r8:0x0 r9:0x0 r10:0x800ff8 r11:0x7fffffffdeb0 
+
+########## issuing SEAMCALL TDH_SYS_TDMR_INIT 
+########## CALL_COUNT: 0080 SEAMCALL TDH_SYS_TDMR_INIT return code: 0
+rax:0x0 rcx:0x40000000 rdx:0x40000000
+r8:0x0 r9:0x0 r10:0x800ff8 r11:0x7fffffffdeb0 
+
+########## issuing SEAMCALL TDH_SYS_TDMR_INIT 
+########## CALL_COUNT: 0081 SEAMCALL TDH_SYS_TDMR_INIT return code: 0
+rax:0x0 rcx:0x40000000 rdx:0x40000000
+r8:0x0 r9:0x0 r10:0x800ff8 r11:0x7fffffffdeb0 
+
+########## issuing SEAMCALL TDH_SYS_TDMR_INIT 
+########## CALL_COUNT: 0082 SEAMCALL TDH_SYS_TDMR_INIT return code: 0
+rax:0x0 rcx:0x40000000 rdx:0x40000000
+r8:0x0 r9:0x0 r10:0x800ff8 r11:0x7fffffffdeb0 
+
+########## issuing SEAMCALL TDH_SYS_TDMR_INIT 
+########## CALL_COUNT: 0083 SEAMCALL TDH_SYS_TDMR_INIT return code: 0
+rax:0x0 rcx:0x40000000 rdx:0x40000000
+r8:0x0 r9:0x0 r10:0x800ff8 r11:0x7fffffffdeb0 
+
+########## issuing SEAMCALL TDH_SYS_TDMR_INIT 
+########## CALL_COUNT: 0084 SEAMCALL TDH_SYS_TDMR_INIT return code: 0
+rax:0x0 rcx:0x40000000 rdx:0x40000000
+r8:0x0 r9:0x0 r10:0x800ff8 r11:0x7fffffffdeb0 
+
+########## issuing SEAMCALL TDH_SYS_TDMR_INIT 
+########## CALL_COUNT: 0085 SEAMCALL TDH_SYS_TDMR_INIT return code: 0
+rax:0x0 rcx:0x40000000 rdx:0x40000000
+r8:0x0 r9:0x0 r10:0x800ff8 r11:0x7fffffffdeb0 
+
+########## issuing SEAMCALL TDH_SYS_TDMR_INIT 
+########## CALL_COUNT: 0086 SEAMCALL TDH_SYS_TDMR_INIT return code: 0
+rax:0x0 rcx:0x40000000 rdx:0x40000000
+r8:0x0 r9:0x0 r10:0x800ff8 r11:0x7fffffffdeb0 
+
+########## issuing SEAMCALL TDH_SYS_TDMR_INIT 
+########## CALL_COUNT: 0087 SEAMCALL TDH_SYS_TDMR_INIT return code: 0
+rax:0x0 rcx:0x40000000 rdx:0x40000000
+r8:0x0 r9:0x0 r10:0x800ff8 r11:0x7fffffffdeb0 
+
+########## issuing SEAMCALL TDH_SYS_TDMR_INIT 
+########## CALL_COUNT: 0088 SEAMCALL TDH_SYS_TDMR_INIT return code: 0
+rax:0x0 rcx:0x40000000 rdx:0x40000000
+r8:0x0 r9:0x0 r10:0x800ff8 r11:0x7fffffffdeb0 
+
+########## issuing SEAMCALL TDH_SYS_TDMR_INIT 
+########## CALL_COUNT: 0089 SEAMCALL TDH_SYS_TDMR_INIT return code: 0
+rax:0x0 rcx:0x40000000 rdx:0x40000000
+r8:0x0 r9:0x0 r10:0x800ff8 r11:0x7fffffffdeb0 
+
+########## issuing SEAMCALL TDH_SYS_TDMR_INIT 
+########## CALL_COUNT: 0090 SEAMCALL TDH_SYS_TDMR_INIT return code: 0
+rax:0x0 rcx:0x40000000 rdx:0x40000000
+r8:0x0 r9:0x0 r10:0x800ff8 r11:0x7fffffffdeb0 
+
+########## issuing SEAMCALL TDH_SYS_TDMR_INIT 
+########## CALL_COUNT: 0091 SEAMCALL TDH_SYS_TDMR_INIT return code: 0
+rax:0x0 rcx:0x40000000 rdx:0x40000000
+r8:0x0 r9:0x0 r10:0x800ff8 r11:0x7fffffffdeb0 
+
+########## issuing SEAMCALL TDH_SYS_TDMR_INIT 
+########## CALL_COUNT: 0092 SEAMCALL TDH_SYS_TDMR_INIT return code: 0
+rax:0x0 rcx:0x40000000 rdx:0x40000000
+r8:0x0 r9:0x0 r10:0x800ff8 r11:0x7fffffffdeb0 
+
+########## issuing SEAMCALL TDH_SYS_TDMR_INIT 
+########## CALL_COUNT: 0093 SEAMCALL TDH_SYS_TDMR_INIT return code: 0
+rax:0x0 rcx:0x40000000 rdx:0x40000000
+r8:0x0 r9:0x0 r10:0x800ff8 r11:0x7fffffffdeb0 
+
+########## issuing SEAMCALL TDH_SYS_TDMR_INIT 
+########## CALL_COUNT: 0094 SEAMCALL TDH_SYS_TDMR_INIT return code: 0
+rax:0x0 rcx:0x40000000 rdx:0x40000000
+r8:0x0 r9:0x0 r10:0x800ff8 r11:0x7fffffffdeb0 
+
+########## issuing SEAMCALL TDH_SYS_TDMR_INIT 
+########## CALL_COUNT: 0095 SEAMCALL TDH_SYS_TDMR_INIT return code: 0
+rax:0x0 rcx:0x40000000 rdx:0x40000000
+r8:0x0 r9:0x0 r10:0x800ff8 r11:0x7fffffffdeb0 
+
+########## issuing SEAMCALL TDH_SYS_TDMR_INIT 
+########## CALL_COUNT: 0096 SEAMCALL TDH_SYS_TDMR_INIT return code: 0
+rax:0x0 rcx:0x40000000 rdx:0x40000000
+r8:0x0 r9:0x0 r10:0x800ff8 r11:0x7fffffffdeb0 
+
+########## issuing SEAMCALL TDH_SYS_TDMR_INIT 
+########## CALL_COUNT: 0097 SEAMCALL TDH_SYS_TDMR_INIT return code: 0
+rax:0x0 rcx:0x40000000 rdx:0x40000000
+r8:0x0 r9:0x0 r10:0x800ff8 r11:0x7fffffffdeb0 
+
+########## issuing SEAMCALL TDH_SYS_TDMR_INIT 
+########## CALL_COUNT: 0098 SEAMCALL TDH_SYS_TDMR_INIT return code: 0
+rax:0x0 rcx:0x40000000 rdx:0x40000000
+r8:0x0 r9:0x0 r10:0x800ff8 r11:0x7fffffffdeb0 
+
+########## issuing SEAMCALL TDH_SYS_TDMR_INIT 
+########## CALL_COUNT: 0099 SEAMCALL TDH_SYS_TDMR_INIT return code: 0
+rax:0x0 rcx:0x40000000 rdx:0x40000000
+r8:0x0 r9:0x0 r10:0x800ff8 r11:0x7fffffffdeb0 
+
+########## issuing SEAMCALL TDH_SYS_TDMR_INIT 
+########## CALL_COUNT: 0100 SEAMCALL TDH_SYS_TDMR_INIT return code: 0
+rax:0x0 rcx:0x40000000 rdx:0x40000000
+r8:0x0 r9:0x0 r10:0x800ff8 r11:0x7fffffffdeb0 
+
+########## issuing SEAMCALL TDH_SYS_TDMR_INIT 
+########## CALL_COUNT: 0101 SEAMCALL TDH_SYS_TDMR_INIT return code: 0
+rax:0x0 rcx:0x40000000 rdx:0x40000000
+r8:0x0 r9:0x0 r10:0x800ff8 r11:0x7fffffffdeb0 
+
+########## issuing SEAMCALL TDH_SYS_TDMR_INIT 
+########## CALL_COUNT: 0102 SEAMCALL TDH_SYS_TDMR_INIT return code: 0
+rax:0x0 rcx:0x40000000 rdx:0x40000000
+r8:0x0 r9:0x0 r10:0x800ff8 r11:0x7fffffffdeb0 
+
+########## issuing SEAMCALL TDH_SYS_TDMR_INIT 
+########## CALL_COUNT: 0103 SEAMCALL TDH_SYS_TDMR_INIT return code: 0
+rax:0x0 rcx:0x40000000 rdx:0x40000000
+r8:0x0 r9:0x0 r10:0x800ff8 r11:0x7fffffffdeb0 
+
+########## issuing SEAMCALL TDH_SYS_TDMR_INIT 
+########## CALL_COUNT: 0104 SEAMCALL TDH_SYS_TDMR_INIT return code: 0
+rax:0x0 rcx:0x40000000 rdx:0x40000000
+r8:0x0 r9:0x0 r10:0x800ff8 r11:0x7fffffffdeb0 
+
+########## issuing SEAMCALL TDH_SYS_TDMR_INIT 
+########## CALL_COUNT: 0105 SEAMCALL TDH_SYS_TDMR_INIT return code: 0
+rax:0x0 rcx:0x40000000 rdx:0x40000000
+r8:0x0 r9:0x0 r10:0x800ff8 r11:0x7fffffffdeb0 
+
+########## issuing SEAMCALL TDH_SYS_TDMR_INIT 
+########## CALL_COUNT: 0106 SEAMCALL TDH_SYS_TDMR_INIT return code: 0
+rax:0x0 rcx:0x40000000 rdx:0x40000000
+r8:0x0 r9:0x0 r10:0x800ff8 r11:0x7fffffffdeb0 
+
+########## issuing SEAMCALL TDH_SYS_TDMR_INIT 
+########## CALL_COUNT: 0107 SEAMCALL TDH_SYS_TDMR_INIT return code: 0
+rax:0x0 rcx:0x40000000 rdx:0x40000000
+r8:0x0 r9:0x0 r10:0x800ff8 r11:0x7fffffffdeb0 
+
+########## issuing SEAMCALL TDH_SYS_TDMR_INIT 
+########## CALL_COUNT: 0108 SEAMCALL TDH_SYS_TDMR_INIT return code: 0
+rax:0x0 rcx:0x40000000 rdx:0x40000000
+r8:0x0 r9:0x0 r10:0x800ff8 r11:0x7fffffffdeb0 
+
+########## issuing SEAMCALL TDH_SYS_TDMR_INIT 
+########## CALL_COUNT: 0109 SEAMCALL TDH_SYS_TDMR_INIT return code: 0
+rax:0x0 rcx:0x40000000 rdx:0x40000000
+r8:0x0 r9:0x0 r10:0x800ff8 r11:0x7fffffffdeb0 
+
+########## issuing SEAMCALL TDH_SYS_TDMR_INIT 
+########## CALL_COUNT: 0110 SEAMCALL TDH_SYS_TDMR_INIT return code: 0
+rax:0x0 rcx:0x40000000 rdx:0x40000000
+r8:0x0 r9:0x0 r10:0x800ff8 r11:0x7fffffffdeb0 
+
+########## issuing SEAMCALL TDH_SYS_TDMR_INIT 
+########## CALL_COUNT: 0111 SEAMCALL TDH_SYS_TDMR_INIT return code: 0
+rax:0x0 rcx:0x40000000 rdx:0x40000000
+r8:0x0 r9:0x0 r10:0x800ff8 r11:0x7fffffffdeb0 
+
+########## issuing SEAMCALL TDH_SYS_TDMR_INIT 
+########## CALL_COUNT: 0112 SEAMCALL TDH_SYS_TDMR_INIT return code: 0
+rax:0x0 rcx:0x40000000 rdx:0x40000000
+r8:0x0 r9:0x0 r10:0x800ff8 r11:0x7fffffffdeb0 
+
+########## issuing SEAMCALL TDH_SYS_TDMR_INIT 
+########## CALL_COUNT: 0113 SEAMCALL TDH_SYS_TDMR_INIT return code: 0
+rax:0x0 rcx:0x40000000 rdx:0x40000000
+r8:0x0 r9:0x0 r10:0x800ff8 r11:0x7fffffffdeb0 
+
+########## issuing SEAMCALL TDH_SYS_TDMR_INIT 
+########## CALL_COUNT: 0114 SEAMCALL TDH_SYS_TDMR_INIT return code: 0
+rax:0x0 rcx:0x40000000 rdx:0x40000000
+r8:0x0 r9:0x0 r10:0x800ff8 r11:0x7fffffffdeb0 
+
+########## issuing SEAMCALL TDH_SYS_TDMR_INIT 
+########## CALL_COUNT: 0115 SEAMCALL TDH_SYS_TDMR_INIT return code: 0
+rax:0x0 rcx:0x40000000 rdx:0x40000000
+r8:0x0 r9:0x0 r10:0x800ff8 r11:0x7fffffffdeb0 
+
+########## issuing SEAMCALL TDH_SYS_TDMR_INIT 
+########## CALL_COUNT: 0116 SEAMCALL TDH_SYS_TDMR_INIT return code: 0
+rax:0x0 rcx:0x40000000 rdx:0x40000000
+r8:0x0 r9:0x0 r10:0x800ff8 r11:0x7fffffffdeb0 
+
+########## issuing SEAMCALL TDH_SYS_TDMR_INIT 
+########## CALL_COUNT: 0117 SEAMCALL TDH_SYS_TDMR_INIT return code: 0
+rax:0x0 rcx:0x40000000 rdx:0x40000000
+r8:0x0 r9:0x0 r10:0x800ff8 r11:0x7fffffffdeb0 
+
+########## issuing SEAMCALL TDH_SYS_TDMR_INIT 
+########## CALL_COUNT: 0118 SEAMCALL TDH_SYS_TDMR_INIT return code: 0
+rax:0x0 rcx:0x40000000 rdx:0x40000000
+r8:0x0 r9:0x0 r10:0x800ff8 r11:0x7fffffffdeb0 
+
+########## issuing SEAMCALL TDH_SYS_TDMR_INIT 
+########## CALL_COUNT: 0119 SEAMCALL TDH_SYS_TDMR_INIT return code: 0
+rax:0x0 rcx:0x40000000 rdx:0x40000000
+r8:0x0 r9:0x0 r10:0x800ff8 r11:0x7fffffffdeb0 
+
+########## issuing SEAMCALL TDH_SYS_TDMR_INIT 
+########## CALL_COUNT: 0120 SEAMCALL TDH_SYS_TDMR_INIT return code: 0
+rax:0x0 rcx:0x40000000 rdx:0x40000000
+r8:0x0 r9:0x0 r10:0x800ff8 r11:0x7fffffffdeb0 
+
+########## issuing SEAMCALL TDH_SYS_TDMR_INIT 
+########## CALL_COUNT: 0121 SEAMCALL TDH_SYS_TDMR_INIT return code: 0
+rax:0x0 rcx:0x40000000 rdx:0x40000000
+r8:0x0 r9:0x0 r10:0x800ff8 r11:0x7fffffffdeb0 
+
+########## issuing SEAMCALL TDH_SYS_TDMR_INIT 
+########## CALL_COUNT: 0122 SEAMCALL TDH_SYS_TDMR_INIT return code: 0
+rax:0x0 rcx:0x40000000 rdx:0x40000000
+r8:0x0 r9:0x0 r10:0x800ff8 r11:0x7fffffffdeb0 
+
+########## issuing SEAMCALL TDH_SYS_TDMR_INIT 
+########## CALL_COUNT: 0123 SEAMCALL TDH_SYS_TDMR_INIT return code: 0
+rax:0x0 rcx:0x40000000 rdx:0x40000000
+r8:0x0 r9:0x0 r10:0x800ff8 r11:0x7fffffffdeb0 
+
+########## issuing SEAMCALL TDH_SYS_TDMR_INIT 
+########## CALL_COUNT: 0124 SEAMCALL TDH_SYS_TDMR_INIT return code: 0
+rax:0x0 rcx:0x40000000 rdx:0x40000000
+r8:0x0 r9:0x0 r10:0x800ff8 r11:0x7fffffffdeb0 
+
+########## issuing SEAMCALL TDH_SYS_TDMR_INIT 
+########## CALL_COUNT: 0125 SEAMCALL TDH_SYS_TDMR_INIT return code: 0
+rax:0x0 rcx:0x40000000 rdx:0x40000000
+r8:0x0 r9:0x0 r10:0x800ff8 r11:0x7fffffffdeb0 
+
+########## issuing SEAMCALL TDH_SYS_TDMR_INIT 
+########## CALL_COUNT: 0126 SEAMCALL TDH_SYS_TDMR_INIT return code: 0
+rax:0x0 rcx:0x40000000 rdx:0x40000000
+r8:0x0 r9:0x0 r10:0x800ff8 r11:0x7fffffffdeb0 
+
+########## issuing SEAMCALL TDH_SYS_TDMR_INIT 
+########## CALL_COUNT: 0127 SEAMCALL TDH_SYS_TDMR_INIT return code: 0
+rax:0x0 rcx:0x40000000 rdx:0x40000000
+r8:0x0 r9:0x0 r10:0x800ff8 r11:0x7fffffffdeb0 
+
+########## issuing SEAMCALL TDH_SYS_TDMR_INIT 
+########## CALL_COUNT: 0128 SEAMCALL TDH_SYS_TDMR_INIT return code: 0
+rax:0x0 rcx:0x40000000 rdx:0x40000000
+r8:0x0 r9:0x0 r10:0x800ff8 r11:0x7fffffffdeb0 
+
+########## issuing SEAMCALL TDH_SYS_TDMR_INIT 
+########## CALL_COUNT: 0129 SEAMCALL TDH_SYS_TDMR_INIT return code: 0
+rax:0x0 rcx:0x40000000 rdx:0x40000000
+r8:0x0 r9:0x0 r10:0x800ff8 r11:0x7fffffffdeb0 
+
+########## issuing SEAMCALL TDH_SYS_TDMR_INIT 
+########## CALL_COUNT: 0130 SEAMCALL TDH_SYS_TDMR_INIT return code: 0
+rax:0x0 rcx:0x40000000 rdx:0x40000000
+r8:0x0 r9:0x0 r10:0x800ff8 r11:0x7fffffffdeb0 
+
+########## issuing SEAMCALL TDH_SYS_TDMR_INIT 
+########## CALL_COUNT: 0131 SEAMCALL TDH_SYS_TDMR_INIT return code: 0
+rax:0x0 rcx:0x40000000 rdx:0x40000000
+r8:0x0 r9:0x0 r10:0x800ff8 r11:0x7fffffffdeb0 
+
+########## issuing SEAMCALL TDH_SYS_TDMR_INIT 
+########## CALL_COUNT: 0132 SEAMCALL TDH_SYS_TDMR_INIT return code: 0
+rax:0x0 rcx:0x40000000 rdx:0x40000000
+r8:0x0 r9:0x0 r10:0x800ff8 r11:0x7fffffffdeb0 
+
+########## issuing SEAMCALL TDH_SYS_TDMR_INIT 
+########## CALL_COUNT: 0133 SEAMCALL TDH_SYS_TDMR_INIT return code: 0
+rax:0x0 rcx:0x40000000 rdx:0x40000000
+r8:0x0 r9:0x0 r10:0x800ff8 r11:0x7fffffffdeb0 
+
+########## issuing SEAMCALL TDH_SYS_TDMR_INIT 
+########## CALL_COUNT: 0134 SEAMCALL TDH_SYS_TDMR_INIT return code: 0
+rax:0x0 rcx:0x40000000 rdx:0x40000000
+r8:0x0 r9:0x0 r10:0x800ff8 r11:0x7fffffffdeb0 
+
+########## issuing SEAMCALL TDH_SYS_TDMR_INIT 
+########## CALL_COUNT: 0135 SEAMCALL TDH_SYS_TDMR_INIT return code: 0
+rax:0x0 rcx:0x40000000 rdx:0x40000000
+r8:0x0 r9:0x0 r10:0x800ff8 r11:0x7fffffffdeb0 
+
+########## issuing SEAMCALL TDH_SYS_TDMR_INIT 
+########## CALL_COUNT: 0136 SEAMCALL TDH_SYS_TDMR_INIT return code: 0
+rax:0x0 rcx:0x40000000 rdx:0x40000000
+r8:0x0 r9:0x0 r10:0x800ff8 r11:0x7fffffffdeb0 
+
+########## issuing SEAMCALL TDH_SYS_TDMR_INIT 
+########## CALL_COUNT: 0137 SEAMCALL TDH_SYS_TDMR_INIT return code: 0
+rax:0x0 rcx:0x40000000 rdx:0x40000000
+r8:0x0 r9:0x0 r10:0x800ff8 r11:0x7fffffffdeb0 
+
+########## issuing SEAMCALL TDH_SYS_TDMR_INIT 
+########## CALL_COUNT: 0138 SEAMCALL TDH_SYS_TDMR_INIT return code: 0
+rax:0x0 rcx:0x40000000 rdx:0x40000000
+r8:0x0 r9:0x0 r10:0x800ff8 r11:0x7fffffffdeb0 
+
+########## issuing SEAMCALL TDH_SYS_TDMR_INIT 
+########## CALL_COUNT: 0139 SEAMCALL TDH_SYS_TDMR_INIT return code: 0
+rax:0x0 rcx:0x40000000 rdx:0x40000000
+r8:0x0 r9:0x0 r10:0x800ff8 r11:0x7fffffffdeb0 
+
+########## issuing SEAMCALL TDH_SYS_TDMR_INIT 
+########## CALL_COUNT: 0140 SEAMCALL TDH_SYS_TDMR_INIT return code: 0
+rax:0x0 rcx:0x40000000 rdx:0x40000000
+r8:0x0 r9:0x0 r10:0x800ff8 r11:0x7fffffffdeb0 
+
+########## issuing SEAMCALL TDH_SYS_TDMR_INIT 
+########## CALL_COUNT: 0141 SEAMCALL TDH_SYS_TDMR_INIT return code: 0
+rax:0x0 rcx:0x40000000 rdx:0x40000000
+r8:0x0 r9:0x0 r10:0x800ff8 r11:0x7fffffffdeb0 
+
+########## issuing SEAMCALL TDH_SYS_TDMR_INIT 
+########## CALL_COUNT: 0142 SEAMCALL TDH_SYS_TDMR_INIT return code: 0
+rax:0x0 rcx:0x40000000 rdx:0x40000000
+r8:0x0 r9:0x0 r10:0x800ff8 r11:0x7fffffffdeb0 
+
+########## issuing SEAMCALL TDH_SYS_TDMR_INIT 
+########## CALL_COUNT: 0143 SEAMCALL TDH_SYS_TDMR_INIT return code: 0
+rax:0x0 rcx:0x40000000 rdx:0x40000000
+r8:0x0 r9:0x0 r10:0x800ff8 r11:0x7fffffffdeb0 
+
+########## issuing SEAMCALL TDH_SYS_TDMR_INIT 
+########## CALL_COUNT: 0144 SEAMCALL TDH_SYS_TDMR_INIT return code: 0
+rax:0x0 rcx:0x40000000 rdx:0x40000000
+r8:0x0 r9:0x0 r10:0x800ff8 r11:0x7fffffffdeb0 
+
+########## issuing SEAMCALL TDH_SYS_TDMR_INIT 
+########## CALL_COUNT: 0145 SEAMCALL TDH_SYS_TDMR_INIT return code: 0
+rax:0x0 rcx:0x40000000 rdx:0x40000000
+r8:0x0 r9:0x0 r10:0x800ff8 r11:0x7fffffffdeb0 
+
+########## issuing SEAMCALL TDH_SYS_TDMR_INIT 
+########## CALL_COUNT: 0146 SEAMCALL TDH_SYS_TDMR_INIT return code: 0
+rax:0x0 rcx:0x40000000 rdx:0x40000000
+r8:0x0 r9:0x0 r10:0x800ff8 r11:0x7fffffffdeb0 
+
+########## issuing SEAMCALL TDH_SYS_TDMR_INIT 
+########## CALL_COUNT: 0147 SEAMCALL TDH_SYS_TDMR_INIT return code: 0
+rax:0x0 rcx:0x40000000 rdx:0x40000000
+r8:0x0 r9:0x0 r10:0x800ff8 r11:0x7fffffffdeb0 
+
+########## issuing SEAMCALL TDH_SYS_TDMR_INIT 
+########## CALL_COUNT: 0148 SEAMCALL TDH_SYS_TDMR_INIT return code: 0
+rax:0x0 rcx:0x40000000 rdx:0x40000000
+r8:0x0 r9:0x0 r10:0x800ff8 r11:0x7fffffffdeb0 
+
+########## issuing SEAMCALL TDH_SYS_TDMR_INIT 
+########## CALL_COUNT: 0149 SEAMCALL TDH_SYS_TDMR_INIT return code: 0
+rax:0x0 rcx:0x40000000 rdx:0x40000000
+r8:0x0 r9:0x0 r10:0x800ff8 r11:0x7fffffffdeb0 
+
+########## issuing SEAMCALL TDH_SYS_TDMR_INIT 
+########## CALL_COUNT: 0150 SEAMCALL TDH_SYS_TDMR_INIT return code: 0
+rax:0x0 rcx:0x40000000 rdx:0x40000000
+r8:0x0 r9:0x0 r10:0x800ff8 r11:0x7fffffffdeb0 
+
+########## issuing SEAMCALL TDH_SYS_TDMR_INIT 
+########## CALL_COUNT: 0151 SEAMCALL TDH_SYS_TDMR_INIT return code: 0
+rax:0x0 rcx:0x40000000 rdx:0x40000000
+r8:0x0 r9:0x0 r10:0x800ff8 r11:0x7fffffffdeb0 
+
+########## issuing SEAMCALL TDH_SYS_TDMR_INIT 
+########## CALL_COUNT: 0152 SEAMCALL TDH_SYS_TDMR_INIT return code: 0
+rax:0x0 rcx:0x40000000 rdx:0x40000000
+r8:0x0 r9:0x0 r10:0x800ff8 r11:0x7fffffffdeb0 
+
+########## issuing SEAMCALL TDH_SYS_TDMR_INIT 
+########## CALL_COUNT: 0153 SEAMCALL TDH_SYS_TDMR_INIT return code: 0
+rax:0x0 rcx:0x40000000 rdx:0x40000000
+r8:0x0 r9:0x0 r10:0x800ff8 r11:0x7fffffffdeb0 
+
+########## issuing SEAMCALL TDH_SYS_TDMR_INIT 
+########## CALL_COUNT: 0154 SEAMCALL TDH_SYS_TDMR_INIT return code: 0
+rax:0x0 rcx:0x40000000 rdx:0x40000000
+r8:0x0 r9:0x0 r10:0x800ff8 r11:0x7fffffffdeb0 
+
+########## issuing SEAMCALL TDH_SYS_TDMR_INIT 
+########## CALL_COUNT: 0155 SEAMCALL TDH_SYS_TDMR_INIT return code: 0
+rax:0x0 rcx:0x40000000 rdx:0x40000000
+r8:0x0 r9:0x0 r10:0x800ff8 r11:0x7fffffffdeb0 
+
+########## issuing SEAMCALL TDH_SYS_TDMR_INIT 
+########## CALL_COUNT: 0156 SEAMCALL TDH_SYS_TDMR_INIT return code: 0
+rax:0x0 rcx:0x40000000 rdx:0x40000000
+r8:0x0 r9:0x0 r10:0x800ff8 r11:0x7fffffffdeb0 
+
+########## issuing SEAMCALL TDH_SYS_TDMR_INIT 
+########## CALL_COUNT: 0157 SEAMCALL TDH_SYS_TDMR_INIT return code: 0
+rax:0x0 rcx:0x40000000 rdx:0x40000000
+r8:0x0 r9:0x0 r10:0x800ff8 r11:0x7fffffffdeb0 
+
+########## issuing SEAMCALL TDH_SYS_TDMR_INIT 
+########## CALL_COUNT: 0158 SEAMCALL TDH_SYS_TDMR_INIT return code: 0
+rax:0x0 rcx:0x40000000 rdx:0x40000000
+r8:0x0 r9:0x0 r10:0x800ff8 r11:0x7fffffffdeb0 
+
+########## issuing SEAMCALL TDH_SYS_TDMR_INIT 
+########## CALL_COUNT: 0159 SEAMCALL TDH_SYS_TDMR_INIT return code: 0
+rax:0x0 rcx:0x40000000 rdx:0x40000000
+r8:0x0 r9:0x0 r10:0x800ff8 r11:0x7fffffffdeb0 
+
+########## issuing SEAMCALL TDH_SYS_TDMR_INIT 
+########## CALL_COUNT: 0160 SEAMCALL TDH_SYS_TDMR_INIT return code: 0
+rax:0x0 rcx:0x40000000 rdx:0x40000000
+r8:0x0 r9:0x0 r10:0x800ff8 r11:0x7fffffffdeb0 
+
+########## issuing SEAMCALL TDH_SYS_TDMR_INIT 
+########## CALL_COUNT: 0161 SEAMCALL TDH_SYS_TDMR_INIT return code: 0
+rax:0x0 rcx:0x40000000 rdx:0x40000000
+r8:0x0 r9:0x0 r10:0x800ff8 r11:0x7fffffffdeb0 
+
+########## issuing SEAMCALL TDH_SYS_TDMR_INIT 
+########## CALL_COUNT: 0162 SEAMCALL TDH_SYS_TDMR_INIT return code: 0
+rax:0x0 rcx:0x40000000 rdx:0x40000000
+r8:0x0 r9:0x0 r10:0x800ff8 r11:0x7fffffffdeb0 
+
+########## issuing SEAMCALL TDH_SYS_TDMR_INIT 
+########## CALL_COUNT: 0163 SEAMCALL TDH_SYS_TDMR_INIT return code: 0
+rax:0x0 rcx:0x40000000 rdx:0x40000000
+r8:0x0 r9:0x0 r10:0x800ff8 r11:0x7fffffffdeb0 
+
+########## issuing SEAMCALL TDH_SYS_TDMR_INIT 
+########## CALL_COUNT: 0164 SEAMCALL TDH_SYS_TDMR_INIT return code: 0
+rax:0x0 rcx:0x40000000 rdx:0x40000000
+r8:0x0 r9:0x0 r10:0x800ff8 r11:0x7fffffffdeb0 
+
+########## issuing SEAMCALL TDH_SYS_TDMR_INIT 
+########## CALL_COUNT: 0165 SEAMCALL TDH_SYS_TDMR_INIT return code: 0
+rax:0x0 rcx:0x40000000 rdx:0x40000000
+r8:0x0 r9:0x0 r10:0x800ff8 r11:0x7fffffffdeb0 
+
+########## issuing SEAMCALL TDH_SYS_TDMR_INIT 
+########## CALL_COUNT: 0166 SEAMCALL TDH_SYS_TDMR_INIT return code: 0
+rax:0x0 rcx:0x40000000 rdx:0x40000000
+r8:0x0 r9:0x0 r10:0x800ff8 r11:0x7fffffffdeb0 
+
+########## issuing SEAMCALL TDH_SYS_TDMR_INIT 
+########## CALL_COUNT: 0167 SEAMCALL TDH_SYS_TDMR_INIT return code: 0
+rax:0x0 rcx:0x40000000 rdx:0x40000000
+r8:0x0 r9:0x0 r10:0x800ff8 r11:0x7fffffffdeb0 
+
+########## issuing SEAMCALL TDH_SYS_TDMR_INIT 
+########## CALL_COUNT: 0168 SEAMCALL TDH_SYS_TDMR_INIT return code: 0
+rax:0x0 rcx:0x40000000 rdx:0x40000000
+r8:0x0 r9:0x0 r10:0x800ff8 r11:0x7fffffffdeb0 
+
+########## issuing SEAMCALL TDH_SYS_TDMR_INIT 
+########## CALL_COUNT: 0169 SEAMCALL TDH_SYS_TDMR_INIT return code: 0
+rax:0x0 rcx:0x40000000 rdx:0x40000000
+r8:0x0 r9:0x0 r10:0x800ff8 r11:0x7fffffffdeb0 
+
+########## issuing SEAMCALL TDH_SYS_TDMR_INIT 
+########## CALL_COUNT: 0170 SEAMCALL TDH_SYS_TDMR_INIT return code: 0
+rax:0x0 rcx:0x40000000 rdx:0x40000000
+r8:0x0 r9:0x0 r10:0x800ff8 r11:0x7fffffffdeb0 
+
+########## issuing SEAMCALL TDH_SYS_TDMR_INIT 
+########## CALL_COUNT: 0171 SEAMCALL TDH_SYS_TDMR_INIT return code: 0
+rax:0x0 rcx:0x40000000 rdx:0x40000000
+r8:0x0 r9:0x0 r10:0x800ff8 r11:0x7fffffffdeb0 
+
+########## issuing SEAMCALL TDH_SYS_TDMR_INIT 
+########## CALL_COUNT: 0172 SEAMCALL TDH_SYS_TDMR_INIT return code: 0
+rax:0x0 rcx:0x40000000 rdx:0x40000000
+r8:0x0 r9:0x0 r10:0x800ff8 r11:0x7fffffffdeb0 
+
+########## issuing SEAMCALL TDH_SYS_TDMR_INIT 
+########## CALL_COUNT: 0173 SEAMCALL TDH_SYS_TDMR_INIT return code: 0
+rax:0x0 rcx:0x40000000 rdx:0x40000000
+r8:0x0 r9:0x0 r10:0x800ff8 r11:0x7fffffffdeb0 
+
+########## issuing SEAMCALL TDH_SYS_TDMR_INIT 
+########## CALL_COUNT: 0174 SEAMCALL TDH_SYS_TDMR_INIT return code: 0
+rax:0x0 rcx:0x40000000 rdx:0x40000000
+r8:0x0 r9:0x0 r10:0x800ff8 r11:0x7fffffffdeb0 
+
+########## issuing SEAMCALL TDH_SYS_TDMR_INIT 
+########## CALL_COUNT: 0175 SEAMCALL TDH_SYS_TDMR_INIT return code: 0
+rax:0x0 rcx:0x40000000 rdx:0x40000000
+r8:0x0 r9:0x0 r10:0x800ff8 r11:0x7fffffffdeb0 
+
+########## issuing SEAMCALL TDH_SYS_TDMR_INIT 
+########## CALL_COUNT: 0176 SEAMCALL TDH_SYS_TDMR_INIT return code: 0
+rax:0x0 rcx:0x40000000 rdx:0x40000000
+r8:0x0 r9:0x0 r10:0x800ff8 r11:0x7fffffffdeb0 
+
+########## issuing SEAMCALL TDH_SYS_TDMR_INIT 
+########## CALL_COUNT: 0177 SEAMCALL TDH_SYS_TDMR_INIT return code: 0
+rax:0x0 rcx:0x40000000 rdx:0x40000000
+r8:0x0 r9:0x0 r10:0x800ff8 r11:0x7fffffffdeb0 
+
+########## issuing SEAMCALL TDH_SYS_TDMR_INIT 
+########## CALL_COUNT: 0178 SEAMCALL TDH_SYS_TDMR_INIT return code: 0
+rax:0x0 rcx:0x40000000 rdx:0x40000000
+r8:0x0 r9:0x0 r10:0x800ff8 r11:0x7fffffffdeb0 
+
+########## issuing SEAMCALL TDH_SYS_TDMR_INIT 
+########## CALL_COUNT: 0179 SEAMCALL TDH_SYS_TDMR_INIT return code: 0
+rax:0x0 rcx:0x40000000 rdx:0x40000000
+r8:0x0 r9:0x0 r10:0x800ff8 r11:0x7fffffffdeb0 
+
+########## issuing SEAMCALL TDH_SYS_TDMR_INIT 
+########## CALL_COUNT: 0180 SEAMCALL TDH_SYS_TDMR_INIT return code: 0
+rax:0x0 rcx:0x40000000 rdx:0x40000000
+r8:0x0 r9:0x0 r10:0x800ff8 r11:0x7fffffffdeb0 
+
+########## issuing SEAMCALL TDH_SYS_TDMR_INIT 
+########## CALL_COUNT: 0181 SEAMCALL TDH_SYS_TDMR_INIT return code: 0
+rax:0x0 rcx:0x40000000 rdx:0x40000000
+r8:0x0 r9:0x0 r10:0x800ff8 r11:0x7fffffffdeb0 
+
+########## issuing SEAMCALL TDH_SYS_TDMR_INIT 
+########## CALL_COUNT: 0182 SEAMCALL TDH_SYS_TDMR_INIT return code: 0
+rax:0x0 rcx:0x40000000 rdx:0x40000000
+r8:0x0 r9:0x0 r10:0x800ff8 r11:0x7fffffffdeb0 
+
+########## issuing SEAMCALL TDH_SYS_TDMR_INIT 
+########## CALL_COUNT: 0183 SEAMCALL TDH_SYS_TDMR_INIT return code: 0
+rax:0x0 rcx:0x40000000 rdx:0x40000000
+r8:0x0 r9:0x0 r10:0x800ff8 r11:0x7fffffffdeb0 
+
+########## issuing SEAMCALL TDH_SYS_TDMR_INIT 
+########## CALL_COUNT: 0184 SEAMCALL TDH_SYS_TDMR_INIT return code: 0
+rax:0x0 rcx:0x40000000 rdx:0x40000000
+r8:0x0 r9:0x0 r10:0x800ff8 r11:0x7fffffffdeb0 
+
+########## issuing SEAMCALL TDH_SYS_TDMR_INIT 
+########## CALL_COUNT: 0185 SEAMCALL TDH_SYS_TDMR_INIT return code: 0
+rax:0x0 rcx:0x40000000 rdx:0x40000000
+r8:0x0 r9:0x0 r10:0x800ff8 r11:0x7fffffffdeb0 
+
+########## issuing SEAMCALL TDH_SYS_TDMR_INIT 
+########## CALL_COUNT: 0186 SEAMCALL TDH_SYS_TDMR_INIT return code: 0
+rax:0x0 rcx:0x40000000 rdx:0x40000000
+r8:0x0 r9:0x0 r10:0x800ff8 r11:0x7fffffffdeb0 
+
+########## issuing SEAMCALL TDH_SYS_TDMR_INIT 
+########## CALL_COUNT: 0187 SEAMCALL TDH_SYS_TDMR_INIT return code: 0
+rax:0x0 rcx:0x40000000 rdx:0x40000000
+r8:0x0 r9:0x0 r10:0x800ff8 r11:0x7fffffffdeb0 
+
+########## issuing SEAMCALL TDH_SYS_TDMR_INIT 
+########## CALL_COUNT: 0188 SEAMCALL TDH_SYS_TDMR_INIT return code: 0
+rax:0x0 rcx:0x40000000 rdx:0x40000000
+r8:0x0 r9:0x0 r10:0x800ff8 r11:0x7fffffffdeb0 
+
+########## issuing SEAMCALL TDH_SYS_TDMR_INIT 
+########## CALL_COUNT: 0189 SEAMCALL TDH_SYS_TDMR_INIT return code: 0
+rax:0x0 rcx:0x40000000 rdx:0x40000000
+r8:0x0 r9:0x0 r10:0x800ff8 r11:0x7fffffffdeb0 
+
+########## issuing SEAMCALL TDH_SYS_TDMR_INIT 
+########## CALL_COUNT: 0190 SEAMCALL TDH_SYS_TDMR_INIT return code: 0
+rax:0x0 rcx:0x40000000 rdx:0x40000000
+r8:0x0 r9:0x0 r10:0x800ff8 r11:0x7fffffffdeb0 
+
+########## issuing SEAMCALL TDH_SYS_TDMR_INIT 
+########## CALL_COUNT: 0191 SEAMCALL TDH_SYS_TDMR_INIT return code: 0
+rax:0x0 rcx:0x40000000 rdx:0x40000000
+r8:0x0 r9:0x0 r10:0x800ff8 r11:0x7fffffffdeb0 
+
+########## issuing SEAMCALL TDH_SYS_TDMR_INIT 
+########## CALL_COUNT: 0192 SEAMCALL TDH_SYS_TDMR_INIT return code: 0
+rax:0x0 rcx:0x40000000 rdx:0x40000000
+r8:0x0 r9:0x0 r10:0x800ff8 r11:0x7fffffffdeb0 
+
+########## issuing SEAMCALL TDH_SYS_TDMR_INIT 
+########## CALL_COUNT: 0193 SEAMCALL TDH_SYS_TDMR_INIT return code: 0
+rax:0x0 rcx:0x40000000 rdx:0x40000000
+r8:0x0 r9:0x0 r10:0x800ff8 r11:0x7fffffffdeb0 
+
+########## issuing SEAMCALL TDH_SYS_TDMR_INIT 
+########## CALL_COUNT: 0194 SEAMCALL TDH_SYS_TDMR_INIT return code: 0
+rax:0x0 rcx:0x40000000 rdx:0x40000000
+r8:0x0 r9:0x0 r10:0x800ff8 r11:0x7fffffffdeb0 
+
+########## issuing SEAMCALL TDH_SYS_TDMR_INIT 
+########## CALL_COUNT: 0195 SEAMCALL TDH_SYS_TDMR_INIT return code: 0
+rax:0x0 rcx:0x40000000 rdx:0x40000000
+r8:0x0 r9:0x0 r10:0x800ff8 r11:0x7fffffffdeb0 
+
+########## issuing SEAMCALL TDH_SYS_TDMR_INIT 
+########## CALL_COUNT: 0196 SEAMCALL TDH_SYS_TDMR_INIT return code: 0
+rax:0x0 rcx:0x40000000 rdx:0x40000000
+r8:0x0 r9:0x0 r10:0x800ff8 r11:0x7fffffffdeb0 
+
+########## issuing SEAMCALL TDH_SYS_TDMR_INIT 
+########## CALL_COUNT: 0197 SEAMCALL TDH_SYS_TDMR_INIT return code: 0
+rax:0x0 rcx:0x40000000 rdx:0x40000000
+r8:0x0 r9:0x0 r10:0x800ff8 r11:0x7fffffffdeb0 
+
+########## issuing SEAMCALL TDH_SYS_TDMR_INIT 
+########## CALL_COUNT: 0198 SEAMCALL TDH_SYS_TDMR_INIT return code: 0
+rax:0x0 rcx:0x40000000 rdx:0x40000000
+r8:0x0 r9:0x0 r10:0x800ff8 r11:0x7fffffffdeb0 
+
+########## issuing SEAMCALL TDH_SYS_TDMR_INIT 
+########## CALL_COUNT: 0199 SEAMCALL TDH_SYS_TDMR_INIT return code: 0
+rax:0x0 rcx:0x40000000 rdx:0x40000000
+r8:0x0 r9:0x0 r10:0x800ff8 r11:0x7fffffffdeb0 
+
+########## issuing SEAMCALL TDH_SYS_TDMR_INIT 
+########## CALL_COUNT: 0200 SEAMCALL TDH_SYS_TDMR_INIT return code: 0
+rax:0x0 rcx:0x40000000 rdx:0x40000000
+r8:0x0 r9:0x0 r10:0x800ff8 r11:0x7fffffffdeb0 
+
+########## issuing SEAMCALL TDH_SYS_TDMR_INIT 
+########## CALL_COUNT: 0201 SEAMCALL TDH_SYS_TDMR_INIT return code: 0
+rax:0x0 rcx:0x40000000 rdx:0x40000000
+r8:0x0 r9:0x0 r10:0x800ff8 r11:0x7fffffffdeb0 
+
+########## issuing SEAMCALL TDH_SYS_TDMR_INIT 
+########## CALL_COUNT: 0202 SEAMCALL TDH_SYS_TDMR_INIT return code: 0
+rax:0x0 rcx:0x40000000 rdx:0x40000000
+r8:0x0 r9:0x0 r10:0x800ff8 r11:0x7fffffffdeb0 
+
+########## issuing SEAMCALL TDH_SYS_TDMR_INIT 
+########## CALL_COUNT: 0203 SEAMCALL TDH_SYS_TDMR_INIT return code: 0
+rax:0x0 rcx:0x40000000 rdx:0x40000000
+r8:0x0 r9:0x0 r10:0x800ff8 r11:0x7fffffffdeb0 
+
+########## issuing SEAMCALL TDH_SYS_TDMR_INIT 
+########## CALL_COUNT: 0204 SEAMCALL TDH_SYS_TDMR_INIT return code: 0
+rax:0x0 rcx:0x40000000 rdx:0x40000000
+r8:0x0 r9:0x0 r10:0x800ff8 r11:0x7fffffffdeb0 
+
+########## issuing SEAMCALL TDH_SYS_TDMR_INIT 
+########## CALL_COUNT: 0205 SEAMCALL TDH_SYS_TDMR_INIT return code: 0
+rax:0x0 rcx:0x40000000 rdx:0x40000000
+r8:0x0 r9:0x0 r10:0x800ff8 r11:0x7fffffffdeb0 
+
+########## issuing SEAMCALL TDH_SYS_TDMR_INIT 
+########## CALL_COUNT: 0206 SEAMCALL TDH_SYS_TDMR_INIT return code: 0
+rax:0x0 rcx:0x40000000 rdx:0x40000000
+r8:0x0 r9:0x0 r10:0x800ff8 r11:0x7fffffffdeb0 
+
+########## issuing SEAMCALL TDH_SYS_TDMR_INIT 
+########## CALL_COUNT: 0207 SEAMCALL TDH_SYS_TDMR_INIT return code: 0
+rax:0x0 rcx:0x40000000 rdx:0x40000000
+r8:0x0 r9:0x0 r10:0x800ff8 r11:0x7fffffffdeb0 
+
+########## issuing SEAMCALL TDH_SYS_TDMR_INIT 
+########## CALL_COUNT: 0208 SEAMCALL TDH_SYS_TDMR_INIT return code: 0
+rax:0x0 rcx:0x40000000 rdx:0x40000000
+r8:0x0 r9:0x0 r10:0x800ff8 r11:0x7fffffffdeb0 
+
+########## issuing SEAMCALL TDH_SYS_TDMR_INIT 
+########## CALL_COUNT: 0209 SEAMCALL TDH_SYS_TDMR_INIT return code: 0
+rax:0x0 rcx:0x40000000 rdx:0x40000000
+r8:0x0 r9:0x0 r10:0x800ff8 r11:0x7fffffffdeb0 
+
+########## issuing SEAMCALL TDH_SYS_TDMR_INIT 
+########## CALL_COUNT: 0210 SEAMCALL TDH_SYS_TDMR_INIT return code: 0
+rax:0x0 rcx:0x40000000 rdx:0x40000000
+r8:0x0 r9:0x0 r10:0x800ff8 r11:0x7fffffffdeb0 
+
+########## issuing SEAMCALL TDH_SYS_TDMR_INIT 
+########## CALL_COUNT: 0211 SEAMCALL TDH_SYS_TDMR_INIT return code: 0
+rax:0x0 rcx:0x40000000 rdx:0x40000000
+r8:0x0 r9:0x0 r10:0x800ff8 r11:0x7fffffffdeb0 
+
+########## issuing SEAMCALL TDH_SYS_TDMR_INIT 
+########## CALL_COUNT: 0212 SEAMCALL TDH_SYS_TDMR_INIT return code: 0
+rax:0x0 rcx:0x40000000 rdx:0x40000000
+r8:0x0 r9:0x0 r10:0x800ff8 r11:0x7fffffffdeb0 
+
+########## issuing SEAMCALL TDH_SYS_TDMR_INIT 
+########## CALL_COUNT: 0213 SEAMCALL TDH_SYS_TDMR_INIT return code: 0
+rax:0x0 rcx:0x40000000 rdx:0x40000000
+r8:0x0 r9:0x0 r10:0x800ff8 r11:0x7fffffffdeb0 
+
+########## issuing SEAMCALL TDH_SYS_TDMR_INIT 
+########## CALL_COUNT: 0214 SEAMCALL TDH_SYS_TDMR_INIT return code: 0
+rax:0x0 rcx:0x40000000 rdx:0x40000000
+r8:0x0 r9:0x0 r10:0x800ff8 r11:0x7fffffffdeb0 
+
+########## issuing SEAMCALL TDH_SYS_TDMR_INIT 
+########## CALL_COUNT: 0215 SEAMCALL TDH_SYS_TDMR_INIT return code: 0
+rax:0x0 rcx:0x40000000 rdx:0x40000000
+r8:0x0 r9:0x0 r10:0x800ff8 r11:0x7fffffffdeb0 
+
+########## issuing SEAMCALL TDH_SYS_TDMR_INIT 
+########## CALL_COUNT: 0216 SEAMCALL TDH_SYS_TDMR_INIT return code: 0
+rax:0x0 rcx:0x40000000 rdx:0x40000000
+r8:0x0 r9:0x0 r10:0x800ff8 r11:0x7fffffffdeb0 
+
+########## issuing SEAMCALL TDH_SYS_TDMR_INIT 
+########## CALL_COUNT: 0217 SEAMCALL TDH_SYS_TDMR_INIT return code: 0
+rax:0x0 rcx:0x40000000 rdx:0x40000000
+r8:0x0 r9:0x0 r10:0x800ff8 r11:0x7fffffffdeb0 
+
+########## issuing SEAMCALL TDH_SYS_TDMR_INIT 
+########## CALL_COUNT: 0218 SEAMCALL TDH_SYS_TDMR_INIT return code: 0
+rax:0x0 rcx:0x40000000 rdx:0x40000000
+r8:0x0 r9:0x0 r10:0x800ff8 r11:0x7fffffffdeb0 
+
+########## issuing SEAMCALL TDH_SYS_TDMR_INIT 
+########## CALL_COUNT: 0219 SEAMCALL TDH_SYS_TDMR_INIT return code: 0
+rax:0x0 rcx:0x40000000 rdx:0x40000000
+r8:0x0 r9:0x0 r10:0x800ff8 r11:0x7fffffffdeb0 
+
+########## issuing SEAMCALL TDH_SYS_TDMR_INIT 
+########## CALL_COUNT: 0220 SEAMCALL TDH_SYS_TDMR_INIT return code: 0
+rax:0x0 rcx:0x40000000 rdx:0x40000000
+r8:0x0 r9:0x0 r10:0x800ff8 r11:0x7fffffffdeb0 
+
+########## issuing SEAMCALL TDH_SYS_TDMR_INIT 
+########## CALL_COUNT: 0221 SEAMCALL TDH_SYS_TDMR_INIT return code: 0
+rax:0x0 rcx:0x40000000 rdx:0x40000000
+r8:0x0 r9:0x0 r10:0x800ff8 r11:0x7fffffffdeb0 
+
+########## issuing SEAMCALL TDH_SYS_TDMR_INIT 
+########## CALL_COUNT: 0222 SEAMCALL TDH_SYS_TDMR_INIT return code: 0
+rax:0x0 rcx:0x40000000 rdx:0x40000000
+r8:0x0 r9:0x0 r10:0x800ff8 r11:0x7fffffffdeb0 
+
+########## issuing SEAMCALL TDH_SYS_TDMR_INIT 
+########## CALL_COUNT: 0223 SEAMCALL TDH_SYS_TDMR_INIT return code: 0
+rax:0x0 rcx:0x40000000 rdx:0x40000000
+r8:0x0 r9:0x0 r10:0x800ff8 r11:0x7fffffffdeb0 
+
+########## issuing SEAMCALL TDH_SYS_TDMR_INIT 
+########## CALL_COUNT: 0224 SEAMCALL TDH_SYS_TDMR_INIT return code: 0
+rax:0x0 rcx:0x40000000 rdx:0x40000000
+r8:0x0 r9:0x0 r10:0x800ff8 r11:0x7fffffffdeb0 
+
+########## issuing SEAMCALL TDH_SYS_TDMR_INIT 
+########## CALL_COUNT: 0225 SEAMCALL TDH_SYS_TDMR_INIT return code: 0
+rax:0x0 rcx:0x40000000 rdx:0x40000000
+r8:0x0 r9:0x0 r10:0x800ff8 r11:0x7fffffffdeb0 
+
+########## issuing SEAMCALL TDH_SYS_TDMR_INIT 
+########## CALL_COUNT: 0226 SEAMCALL TDH_SYS_TDMR_INIT return code: 0
+rax:0x0 rcx:0x40000000 rdx:0x40000000
+r8:0x0 r9:0x0 r10:0x800ff8 r11:0x7fffffffdeb0 
+
+########## issuing SEAMCALL TDH_SYS_TDMR_INIT 
+########## CALL_COUNT: 0227 SEAMCALL TDH_SYS_TDMR_INIT return code: 0
+rax:0x0 rcx:0x40000000 rdx:0x40000000
+r8:0x0 r9:0x0 r10:0x800ff8 r11:0x7fffffffdeb0 
+
+########## issuing SEAMCALL TDH_SYS_TDMR_INIT 
+########## CALL_COUNT: 0228 SEAMCALL TDH_SYS_TDMR_INIT return code: 0
+rax:0x0 rcx:0x40000000 rdx:0x40000000
+r8:0x0 r9:0x0 r10:0x800ff8 r11:0x7fffffffdeb0 
+
+########## issuing SEAMCALL TDH_SYS_TDMR_INIT 
+########## CALL_COUNT: 0229 SEAMCALL TDH_SYS_TDMR_INIT return code: 0
+rax:0x0 rcx:0x40000000 rdx:0x40000000
+r8:0x0 r9:0x0 r10:0x800ff8 r11:0x7fffffffdeb0 
+
+########## issuing SEAMCALL TDH_SYS_TDMR_INIT 
+########## CALL_COUNT: 0230 SEAMCALL TDH_SYS_TDMR_INIT return code: 0
+rax:0x0 rcx:0x40000000 rdx:0x40000000
+r8:0x0 r9:0x0 r10:0x800ff8 r11:0x7fffffffdeb0 
+
+########## issuing SEAMCALL TDH_SYS_TDMR_INIT 
+########## CALL_COUNT: 0231 SEAMCALL TDH_SYS_TDMR_INIT return code: 0
+rax:0x0 rcx:0x40000000 rdx:0x40000000
+r8:0x0 r9:0x0 r10:0x800ff8 r11:0x7fffffffdeb0 
+
+########## issuing SEAMCALL TDH_SYS_TDMR_INIT 
+########## CALL_COUNT: 0232 SEAMCALL TDH_SYS_TDMR_INIT return code: 0
+rax:0x0 rcx:0x40000000 rdx:0x40000000
+r8:0x0 r9:0x0 r10:0x800ff8 r11:0x7fffffffdeb0 
+
+########## issuing SEAMCALL TDH_SYS_TDMR_INIT 
+########## CALL_COUNT: 0233 SEAMCALL TDH_SYS_TDMR_INIT return code: 0
+rax:0x0 rcx:0x40000000 rdx:0x40000000
+r8:0x0 r9:0x0 r10:0x800ff8 r11:0x7fffffffdeb0 
+
+########## issuing SEAMCALL TDH_SYS_TDMR_INIT 
+########## CALL_COUNT: 0234 SEAMCALL TDH_SYS_TDMR_INIT return code: 0
+rax:0x0 rcx:0x40000000 rdx:0x40000000
+r8:0x0 r9:0x0 r10:0x800ff8 r11:0x7fffffffdeb0 
+
+########## issuing SEAMCALL TDH_SYS_TDMR_INIT 
+########## CALL_COUNT: 0235 SEAMCALL TDH_SYS_TDMR_INIT return code: 0
+rax:0x0 rcx:0x40000000 rdx:0x40000000
+r8:0x0 r9:0x0 r10:0x800ff8 r11:0x7fffffffdeb0 
+
+########## issuing SEAMCALL TDH_SYS_TDMR_INIT 
+########## CALL_COUNT: 0236 SEAMCALL TDH_SYS_TDMR_INIT return code: 0
+rax:0x0 rcx:0x40000000 rdx:0x40000000
+r8:0x0 r9:0x0 r10:0x800ff8 r11:0x7fffffffdeb0 
+
+########## issuing SEAMCALL TDH_SYS_TDMR_INIT 
+########## CALL_COUNT: 0237 SEAMCALL TDH_SYS_TDMR_INIT return code: 0
+rax:0x0 rcx:0x40000000 rdx:0x40000000
+r8:0x0 r9:0x0 r10:0x800ff8 r11:0x7fffffffdeb0 
+
+########## issuing SEAMCALL TDH_SYS_TDMR_INIT 
+########## CALL_COUNT: 0238 SEAMCALL TDH_SYS_TDMR_INIT return code: 0
+rax:0x0 rcx:0x40000000 rdx:0x40000000
+r8:0x0 r9:0x0 r10:0x800ff8 r11:0x7fffffffdeb0 
+
+########## issuing SEAMCALL TDH_SYS_TDMR_INIT 
+########## CALL_COUNT: 0239 SEAMCALL TDH_SYS_TDMR_INIT return code: 0
+rax:0x0 rcx:0x40000000 rdx:0x40000000
+r8:0x0 r9:0x0 r10:0x800ff8 r11:0x7fffffffdeb0 
+
+########## issuing SEAMCALL TDH_SYS_TDMR_INIT 
+########## CALL_COUNT: 0240 SEAMCALL TDH_SYS_TDMR_INIT return code: 0
+rax:0x0 rcx:0x40000000 rdx:0x40000000
+r8:0x0 r9:0x0 r10:0x800ff8 r11:0x7fffffffdeb0 
+
+########## issuing SEAMCALL TDH_SYS_TDMR_INIT 
+########## CALL_COUNT: 0241 SEAMCALL TDH_SYS_TDMR_INIT return code: 0
+rax:0x0 rcx:0x40000000 rdx:0x40000000
+r8:0x0 r9:0x0 r10:0x800ff8 r11:0x7fffffffdeb0 
+
+########## issuing SEAMCALL TDH_SYS_TDMR_INIT 
+########## CALL_COUNT: 0242 SEAMCALL TDH_SYS_TDMR_INIT return code: 0
+rax:0x0 rcx:0x40000000 rdx:0x40000000
+r8:0x0 r9:0x0 r10:0x800ff8 r11:0x7fffffffdeb0 
+
+########## issuing SEAMCALL TDH_SYS_TDMR_INIT 
+########## CALL_COUNT: 0243 SEAMCALL TDH_SYS_TDMR_INIT return code: 0
+rax:0x0 rcx:0x40000000 rdx:0x40000000
+r8:0x0 r9:0x0 r10:0x800ff8 r11:0x7fffffffdeb0 
+
+########## issuing SEAMCALL TDH_SYS_TDMR_INIT 
+########## CALL_COUNT: 0244 SEAMCALL TDH_SYS_TDMR_INIT return code: 0
+rax:0x0 rcx:0x40000000 rdx:0x40000000
+r8:0x0 r9:0x0 r10:0x800ff8 r11:0x7fffffffdeb0 
+
+########## issuing SEAMCALL TDH_SYS_TDMR_INIT 
+########## CALL_COUNT: 0245 SEAMCALL TDH_SYS_TDMR_INIT return code: 0
+rax:0x0 rcx:0x40000000 rdx:0x40000000
+r8:0x0 r9:0x0 r10:0x800ff8 r11:0x7fffffffdeb0 
+
+########## issuing SEAMCALL TDH_SYS_TDMR_INIT 
+########## CALL_COUNT: 0246 SEAMCALL TDH_SYS_TDMR_INIT return code: 0
+rax:0x0 rcx:0x40000000 rdx:0x40000000
+r8:0x0 r9:0x0 r10:0x800ff8 r11:0x7fffffffdeb0 
+
+########## issuing SEAMCALL TDH_SYS_TDMR_INIT 
+########## CALL_COUNT: 0247 SEAMCALL TDH_SYS_TDMR_INIT return code: 0
+rax:0x0 rcx:0x40000000 rdx:0x40000000
+r8:0x0 r9:0x0 r10:0x800ff8 r11:0x7fffffffdeb0 
+
+########## issuing SEAMCALL TDH_SYS_TDMR_INIT 
+########## CALL_COUNT: 0248 SEAMCALL TDH_SYS_TDMR_INIT return code: 0
+rax:0x0 rcx:0x40000000 rdx:0x40000000
+r8:0x0 r9:0x0 r10:0x800ff8 r11:0x7fffffffdeb0 
+
+########## issuing SEAMCALL TDH_SYS_TDMR_INIT 
+########## CALL_COUNT: 0249 SEAMCALL TDH_SYS_TDMR_INIT return code: 0
+rax:0x0 rcx:0x40000000 rdx:0x40000000
+r8:0x0 r9:0x0 r10:0x800ff8 r11:0x7fffffffdeb0 
+
+########## issuing SEAMCALL TDH_SYS_TDMR_INIT 
+########## CALL_COUNT: 0250 SEAMCALL TDH_SYS_TDMR_INIT return code: 0
+rax:0x0 rcx:0x40000000 rdx:0x40000000
+r8:0x0 r9:0x0 r10:0x800ff8 r11:0x7fffffffdeb0 
+
+########## issuing SEAMCALL TDH_SYS_TDMR_INIT 
+########## CALL_COUNT: 0251 SEAMCALL TDH_SYS_TDMR_INIT return code: 0
+rax:0x0 rcx:0x40000000 rdx:0x40000000
+r8:0x0 r9:0x0 r10:0x800ff8 r11:0x7fffffffdeb0 
+
+########## issuing SEAMCALL TDH_SYS_TDMR_INIT 
+########## CALL_COUNT: 0252 SEAMCALL TDH_SYS_TDMR_INIT return code: 0
+rax:0x0 rcx:0x40000000 rdx:0x40000000
+r8:0x0 r9:0x0 r10:0x800ff8 r11:0x7fffffffdeb0 
+
+########## issuing SEAMCALL TDH_SYS_TDMR_INIT 
+########## CALL_COUNT: 0253 SEAMCALL TDH_SYS_TDMR_INIT return code: 0
+rax:0x0 rcx:0x40000000 rdx:0x40000000
+r8:0x0 r9:0x0 r10:0x800ff8 r11:0x7fffffffdeb0 
+
+########## issuing SEAMCALL TDH_SYS_TDMR_INIT 
+########## CALL_COUNT: 0254 SEAMCALL TDH_SYS_TDMR_INIT return code: 0
+rax:0x0 rcx:0x40000000 rdx:0x40000000
+r8:0x0 r9:0x0 r10:0x800ff8 r11:0x7fffffffdeb0 
+
+########## issuing SEAMCALL TDH_SYS_TDMR_INIT 
+########## CALL_COUNT: 0255 SEAMCALL TDH_SYS_TDMR_INIT return code: 0
+rax:0x0 rcx:0x40000000 rdx:0x40000000
+r8:0x0 r9:0x0 r10:0x800ff8 r11:0x7fffffffdeb0 
+
+########## issuing SEAMCALL TDH_SYS_TDMR_INIT 
+########## CALL_COUNT: 0256 SEAMCALL TDH_SYS_TDMR_INIT return code: 0
+rax:0x0 rcx:0x40000000 rdx:0x40000000
+r8:0x0 r9:0x0 r10:0x800ff8 r11:0x7fffffffdeb0 
+
+########## issuing SEAMCALL TDH_SYS_TDMR_INIT 
+########## CALL_COUNT: 0257 SEAMCALL TDH_SYS_TDMR_INIT return code: 0
+rax:0x0 rcx:0x40000000 rdx:0x40000000
+r8:0x0 r9:0x0 r10:0x800ff8 r11:0x7fffffffdeb0 
+
+########## issuing SEAMCALL TDH_SYS_TDMR_INIT 
+########## CALL_COUNT: 0258 SEAMCALL TDH_SYS_TDMR_INIT return code: 0
+rax:0x0 rcx:0x40000000 rdx:0x40000000
+r8:0x0 r9:0x0 r10:0x800ff8 r11:0x7fffffffdeb0 
+
+########## issuing SEAMCALL TDH_SYS_TDMR_INIT 
+########## CALL_COUNT: 0259 SEAMCALL TDH_SYS_TDMR_INIT return code: 0
+rax:0x0 rcx:0x40000000 rdx:0x40000000
+r8:0x0 r9:0x0 r10:0x800ff8 r11:0x7fffffffdeb0 
+
+########## issuing SEAMCALL TDH_SYS_TDMR_INIT 
+########## CALL_COUNT: 0260 SEAMCALL TDH_SYS_TDMR_INIT return code: 0
+rax:0x0 rcx:0x40000000 rdx:0x40000000
+r8:0x0 r9:0x0 r10:0x800ff8 r11:0x7fffffffdeb0 
+
+########## issuing SEAMCALL TDH_SYS_TDMR_INIT 
+########## CALL_COUNT: 0261 SEAMCALL TDH_SYS_TDMR_INIT return code: 0
+rax:0x0 rcx:0x40000000 rdx:0x40000000
+r8:0x0 r9:0x0 r10:0x800ff8 r11:0x7fffffffdeb0 
+
+########## issuing SEAMCALL TDH_SYS_TDMR_INIT 
+########## CALL_COUNT: 0262 SEAMCALL TDH_SYS_TDMR_INIT return code: 0
+rax:0x0 rcx:0x40000000 rdx:0x40000000
+r8:0x0 r9:0x0 r10:0x800ff8 r11:0x7fffffffdeb0 
+
+########## issuing SEAMCALL TDH_SYS_TDMR_INIT 
+########## CALL_COUNT: 0263 SEAMCALL TDH_SYS_TDMR_INIT return code: 0
+rax:0x0 rcx:0x40000000 rdx:0x40000000
+r8:0x0 r9:0x0 r10:0x800ff8 r11:0x7fffffffdeb0 
+
+########## issuing SEAMCALL TDH_SYS_TDMR_INIT 
+########## CALL_COUNT: 0264 SEAMCALL TDH_SYS_TDMR_INIT return code: 0
+rax:0x0 rcx:0x40000000 rdx:0x40000000
+r8:0x0 r9:0x0 r10:0x800ff8 r11:0x7fffffffdeb0 
+
+########## issuing SEAMCALL TDH_SYS_TDMR_INIT 
+########## CALL_COUNT: 0265 SEAMCALL TDH_SYS_TDMR_INIT return code: 0
+rax:0x0 rcx:0x40000000 rdx:0x40000000
+r8:0x0 r9:0x0 r10:0x800ff8 r11:0x7fffffffdeb0 
+
+########## issuing SEAMCALL TDH_SYS_TDMR_INIT 
+########## CALL_COUNT: 0266 SEAMCALL TDH_SYS_TDMR_INIT return code: 0
+rax:0x0 rcx:0x40000000 rdx:0x80000000
+r8:0x0 r9:0x0 r10:0x800ff8 r11:0x7fffffffdeb0 
+
+########## issuing SEAMCALL TDH_MNG_CREATE 
+########## CALL_COUNT: 0267 SEAMCALL TDH_MNG_CREATE return code: 0
+rax:0x0 rcx:0x40000000 rdx:0x21
+r8:0x555555560ec7 r9:0x55555555d367 r10:0x7fffffffde00 r11:0x555555555ed6 
+
+########## issuing SEAMCALL TDH_MNG_KEY_CONFIG 
+########## CALL_COUNT: 0268 SEAMCALL TDH_MNG_KEY_CONFIG return code: 0
+rax:0x0 rcx:0x40000000 rdx:0x21
+r8:0x555555560ec7 r9:0x55555555d367 r10:0x7fffffffde00 r11:0x555555555ed6 
+
+########## issuing SEAMCALL TDH_MNG_ADDCX 
+########## CALL_COUNT: 0269 SEAMCALL TDH_MNG_ADDCX return code: 0
+rax:0x0 rcx:0x40001000 rdx:0x40000000
+r8:0x555555560ec7 r9:0x55555555d367 r10:0x7fffffffde00 r11:0x555555555ed6 
+
+########## issuing SEAMCALL TDH_MNG_ADDCX 
+########## CALL_COUNT: 0270 SEAMCALL TDH_MNG_ADDCX return code: 0
+rax:0x0 rcx:0x40002000 rdx:0x40000000
+r8:0x555555560ec7 r9:0x55555555d367 r10:0x7fffffffde00 r11:0x555555555ed6 
+
+########## issuing SEAMCALL TDH_MNG_ADDCX 
+########## CALL_COUNT: 0271 SEAMCALL TDH_MNG_ADDCX return code: 0
+rax:0x0 rcx:0x40003000 rdx:0x40000000
+r8:0x555555560ec7 r9:0x55555555d367 r10:0x7fffffffde00 r11:0x555555555ed6 
+
+########## issuing SEAMCALL TDH_MNG_ADDCX 
+########## CALL_COUNT: 0272 SEAMCALL TDH_MNG_ADDCX return code: 0
+rax:0x0 rcx:0x40004000 rdx:0x40000000
+r8:0x555555560ec7 r9:0x55555555d367 r10:0x7fffffffde00 r11:0x555555555ed6 
+
+########## issuing SEAMCALL TDH_MNG_ADDCX 
+########## CALL_COUNT: 0273 SEAMCALL TDH_MNG_ADDCX return code: 0
+rax:0x0 rcx:0x40005000 rdx:0x40000000
+r8:0x555555560ec7 r9:0x55555555d367 r10:0x7fffffffde00 r11:0x555555555ed6 
+
+########## issuing SEAMCALL TDH_MNG_ADDCX 
+########## CALL_COUNT: 0274 SEAMCALL TDH_MNG_ADDCX return code: 0
+rax:0x0 rcx:0x40006000 rdx:0x40000000
+r8:0x555555560ec7 r9:0x55555555d367 r10:0x7fffffffde00 r11:0x555555555ed6 
+
+########## issuing SEAMCALL TDH_SYS_INFO 
+########## CALL_COUNT: 0275 SEAMCALL TDH_SYS_INFO return code: 0
+rax:0x0 rcx:0x1200000 rdx:0x400
+r8:0x1201000 r9:0x20 r10:0x7fffffffde00 r11:0x555555555ed6 
+
+########## issuing SEAMCALL TDH_MNG_INIT 
+########## CALL_COUNT: 0276 SEAMCALL TDH_MNG_INIT return code: 0
+rax:0x0 rcx:0x0 rdx:0x1202000
+r8:0x0 r9:0x0 r10:0x0 r11:0x0 
+
+########## issuing SEAMCALL TDH_VP_CREATE 
+########## CALL_COUNT: 0277 SEAMCALL TDH_VP_CREATE return code: 0
+rax:0x0 rcx:0x40007000 rdx:0x40000000
+r8:0x0 r9:0x0 r10:0x800ff8 r11:0x4 
+
+########## issuing SEAMCALL TDH_VP_ADDCX 
+########## CALL_COUNT: 0278 SEAMCALL TDH_VP_ADDCX return code: 0
+rax:0x0 rcx:0x40008000 rdx:0x40007000
+r8:0x0 r9:0x0 r10:0x800ff8 r11:0x4 
+
+########## issuing SEAMCALL TDH_VP_ADDCX 
+########## CALL_COUNT: 0279 SEAMCALL TDH_VP_ADDCX return code: 0
+rax:0x0 rcx:0x40009000 rdx:0x40007000
+r8:0x0 r9:0x0 r10:0x800ff8 r11:0x4 
+
+########## issuing SEAMCALL TDH_VP_ADDCX 
+########## CALL_COUNT: 0280 SEAMCALL TDH_VP_ADDCX return code: 0
+rax:0x0 rcx:0x4000a000 rdx:0x40007000
+r8:0x0 r9:0x0 r10:0x800ff8 r11:0x4 
+
+########## issuing SEAMCALL TDH_VP_ADDCX 
+########## CALL_COUNT: 0281 SEAMCALL TDH_VP_ADDCX return code: 0
+rax:0x0 rcx:0x4000b000 rdx:0x40007000
+r8:0x0 r9:0x0 r10:0x800ff8 r11:0x4 
+
+########## issuing SEAMCALL TDH_VP_ADDCX 
+########## CALL_COUNT: 0282 SEAMCALL TDH_VP_ADDCX return code: 0
+rax:0x0 rcx:0x4000c000 rdx:0x40007000
+r8:0x0 r9:0x0 r10:0x800ff8 r11:0x4 
+
+########## issuing SEAMCALL TDH_VP_ADDCX 
+########## CALL_COUNT: 0283 SEAMCALL TDH_VP_ADDCX return code: 0
+rax:0x0 rcx:0x4000d000 rdx:0x40007000
+r8:0x0 r9:0x0 r10:0x800ff8 r11:0x4 
+
+########## issuing SEAMCALL TDH_VP_ADDCX 
+########## CALL_COUNT: 0284 SEAMCALL TDH_VP_ADDCX return code: 0
+rax:0x0 rcx:0x4000e000 rdx:0x40007000
+r8:0x0 r9:0x0 r10:0x800ff8 r11:0x4 
+
+########## issuing SEAMCALL TDH_VP_ADDCX 
+########## CALL_COUNT: 0285 SEAMCALL TDH_VP_ADDCX return code: 0
+rax:0x0 rcx:0x4000f000 rdx:0x40007000
+r8:0x0 r9:0x0 r10:0x800ff8 r11:0x4 
+
+########## issuing SEAMCALL TDH_VP_ADDCX 
+########## CALL_COUNT: 0286 SEAMCALL TDH_VP_ADDCX return code: 0
+rax:0x0 rcx:0x40010000 rdx:0x40007000
+r8:0x0 r9:0x0 r10:0x800ff8 r11:0x4 
+
+########## issuing SEAMCALL TDH_VP_ADDCX 
+########## CALL_COUNT: 0287 SEAMCALL TDH_VP_ADDCX return code: 0
+rax:0x0 rcx:0x40011000 rdx:0x40007000
+r8:0x0 r9:0x0 r10:0x800ff8 r11:0x4 
+
+########## issuing SEAMCALL TDH_VP_ADDCX 
+########## CALL_COUNT: 0288 SEAMCALL TDH_VP_ADDCX return code: 0
+rax:0x0 rcx:0x40012000 rdx:0x40007000
+r8:0x0 r9:0x0 r10:0x800ff8 r11:0x4 
+
+########## issuing SEAMCALL TDH_VP_ADDCX 
+########## CALL_COUNT: 0289 SEAMCALL TDH_VP_ADDCX return code: 0
+rax:0x0 rcx:0x40013000 rdx:0x40007000
+r8:0x0 r9:0x0 r10:0x800ff8 r11:0x4 
+
+########## issuing SEAMCALL TDH_VP_ADDCX 
+########## CALL_COUNT: 0290 SEAMCALL TDH_VP_ADDCX return code: 0
+rax:0x0 rcx:0x40014000 rdx:0x40007000
+r8:0x0 r9:0x0 r10:0x800ff8 r11:0x4 
+
+########## issuing SEAMCALL TDH_VP_ADDCX 
+########## CALL_COUNT: 0291 SEAMCALL TDH_VP_ADDCX return code: 0
+rax:0x0 rcx:0x40015000 rdx:0x40007000
+r8:0x0 r9:0x0 r10:0x800ff8 r11:0x4 
+
+########## issuing SEAMCALL TDH_VP_INIT 
+########## CALL_COUNT: 0292 SEAMCALL TDH_VP_INIT return code: 0
+rax:0x0 rcx:0x40007000 rdx:0x0
+r8:0x0 r9:0x0 r10:0x800ff8 r11:0x4 
+
+########## issuing SEAMCALL TDH_MEM_SEPT_ADD 
+########## CALL_COUNT: 0293 SEAMCALL TDH_MEM_SEPT_ADD return code: 0
+rax:0x0 rcx:0x0 rdx:0x0
+r8:0xffffffffffffffff r9:0xffffffffffffffff r10:0xffffffffffffffff r11:0xffffffffffffffff 
+
+########## issuing SEAMCALL TDH_MEM_SEPT_ADD 
+########## CALL_COUNT: 0294 SEAMCALL TDH_MEM_SEPT_ADD return code: 0
+rax:0x0 rcx:0x0 rdx:0x0
+r8:0xffffffffffffffff r9:0xffffffffffffffff r10:0xffffffffffffffff r11:0xffffffffffffffff 
+
+########## issuing SEAMCALL TDH_MEM_SEPT_ADD 
+########## CALL_COUNT: 0295 SEAMCALL TDH_MEM_SEPT_ADD return code: 0
+rax:0x0 rcx:0x0 rdx:0x0
+r8:0xffffffffffffffff r9:0xffffffffffffffff r10:0xffffffffffffffff r11:0xffffffffffffffff 
+
+########## issuing SEAMCALL TDH_MEM_SEPT_ADD 
+########## CALL_COUNT: 0296 SEAMCALL TDH_MEM_SEPT_ADD return code: 0
+rax:0x0 rcx:0x0 rdx:0x0
+r8:0xffffffffffffffff r9:0xffffffffffffffff r10:0xffffffffffffffff r11:0xffffffffffffffff 
+
+########## issuing SEAMCALL TDH_MEM_PAGE_ADD 
+########## CALL_COUNT: 0297 SEAMCALL TDH_MEM_PAGE_ADD return code: 0
+rax:0x0 rcx:0x0 rdx:0x0
+r8:0x4001a000 r9:0x1202000 r10:0xffffffffffffffff r11:0xffffffffffffffff 
+
+########## issuing SEAMCALL TDH_MEM_PAGE_ADD 
+########## CALL_COUNT: 0298 SEAMCALL TDH_MEM_PAGE_ADD return code: 0
+rax:0x0 rcx:0x0 rdx:0x0
+r8:0x4001b000 r9:0x1202000 r10:0xffffffffffffffff r11:0xffffffffffffffff 
+
+########## issuing SEAMCALL TDH_MEM_PAGE_ADD 
+########## CALL_COUNT: 0299 SEAMCALL TDH_MEM_PAGE_ADD return code: 0
+rax:0x0 rcx:0x0 rdx:0x0
+r8:0x4001c000 r9:0x1202000 r10:0xffffffffffffffff r11:0xffffffffffffffff 
+
+########## issuing SEAMCALL TDH_MEM_PAGE_ADD 
+########## CALL_COUNT: 0300 SEAMCALL TDH_MEM_PAGE_ADD return code: 0
+rax:0x0 rcx:0x0 rdx:0x0
+r8:0x4001d000 r9:0x1202000 r10:0xffffffffffffffff r11:0xffffffffffffffff 
+
+########## issuing SEAMCALL TDH_MR_EXTEND 
+########## CALL_COUNT: 0301 SEAMCALL TDH_MR_EXTEND return code: 0
+rax:0x0 rcx:0x0 rdx:0x0
+r8:0x4001d000 r9:0x1202000 r10:0xffffffffffffffff r11:0xffffffffffffffff 
+
+########## issuing SEAMCALL TDH_MR_EXTEND 
+########## CALL_COUNT: 0302 SEAMCALL TDH_MR_EXTEND return code: 0
+rax:0x0 rcx:0x0 rdx:0x0
+r8:0x4001d000 r9:0x1202000 r10:0xffffffffffffffff r11:0xffffffffffffffff 
+
+########## issuing SEAMCALL TDH_MR_EXTEND 
+########## CALL_COUNT: 0303 SEAMCALL TDH_MR_EXTEND return code: 0
+rax:0x0 rcx:0x0 rdx:0x0
+r8:0x4001d000 r9:0x1202000 r10:0xffffffffffffffff r11:0xffffffffffffffff 
+
+########## issuing SEAMCALL TDH_MR_EXTEND 
+########## CALL_COUNT: 0304 SEAMCALL TDH_MR_EXTEND return code: 0
+rax:0x0 rcx:0x0 rdx:0x0
+r8:0x4001d000 r9:0x1202000 r10:0xffffffffffffffff r11:0xffffffffffffffff 
+
+########## issuing SEAMCALL TDH_MR_EXTEND 
+########## CALL_COUNT: 0305 SEAMCALL TDH_MR_EXTEND return code: 0
+rax:0x0 rcx:0x0 rdx:0x0
+r8:0x4001d000 r9:0x1202000 r10:0xffffffffffffffff r11:0xffffffffffffffff 
+
+########## issuing SEAMCALL TDH_MR_EXTEND 
+########## CALL_COUNT: 0306 SEAMCALL TDH_MR_EXTEND return code: 0
+rax:0x0 rcx:0x0 rdx:0x0
+r8:0x4001d000 r9:0x1202000 r10:0xffffffffffffffff r11:0xffffffffffffffff 
+
+########## issuing SEAMCALL TDH_MR_EXTEND 
+########## CALL_COUNT: 0307 SEAMCALL TDH_MR_EXTEND return code: 0
+rax:0x0 rcx:0x0 rdx:0x0
+r8:0x4001d000 r9:0x1202000 r10:0xffffffffffffffff r11:0xffffffffffffffff 
+
+########## issuing SEAMCALL TDH_MR_EXTEND 
+########## CALL_COUNT: 0308 SEAMCALL TDH_MR_EXTEND return code: 0
+rax:0x0 rcx:0x0 rdx:0x0
+r8:0x4001d000 r9:0x1202000 r10:0xffffffffffffffff r11:0xffffffffffffffff 
+
+########## issuing SEAMCALL TDH_MR_EXTEND 
+########## CALL_COUNT: 0309 SEAMCALL TDH_MR_EXTEND return code: 0
+rax:0x0 rcx:0x0 rdx:0x0
+r8:0x4001d000 r9:0x1202000 r10:0xffffffffffffffff r11:0xffffffffffffffff 
+
+########## issuing SEAMCALL TDH_MR_EXTEND 
+########## CALL_COUNT: 0310 SEAMCALL TDH_MR_EXTEND return code: 0
+rax:0x0 rcx:0x0 rdx:0x0
+r8:0x4001d000 r9:0x1202000 r10:0xffffffffffffffff r11:0xffffffffffffffff 
+
+########## issuing SEAMCALL TDH_MR_EXTEND 
+########## CALL_COUNT: 0311 SEAMCALL TDH_MR_EXTEND return code: 0
+rax:0x0 rcx:0x0 rdx:0x0
+r8:0x4001d000 r9:0x1202000 r10:0xffffffffffffffff r11:0xffffffffffffffff 
+
+########## issuing SEAMCALL TDH_MR_EXTEND 
+########## CALL_COUNT: 0312 SEAMCALL TDH_MR_EXTEND return code: 0
+rax:0x0 rcx:0x0 rdx:0x0
+r8:0x4001d000 r9:0x1202000 r10:0xffffffffffffffff r11:0xffffffffffffffff 
+
+########## issuing SEAMCALL TDH_MR_EXTEND 
+########## CALL_COUNT: 0313 SEAMCALL TDH_MR_EXTEND return code: 0
+rax:0x0 rcx:0x0 rdx:0x0
+r8:0x4001d000 r9:0x1202000 r10:0xffffffffffffffff r11:0xffffffffffffffff 
+
+########## issuing SEAMCALL TDH_MR_EXTEND 
+########## CALL_COUNT: 0314 SEAMCALL TDH_MR_EXTEND return code: 0
+rax:0x0 rcx:0x0 rdx:0x0
+r8:0x4001d000 r9:0x1202000 r10:0xffffffffffffffff r11:0xffffffffffffffff 
+
+########## issuing SEAMCALL TDH_MR_EXTEND 
+########## CALL_COUNT: 0315 SEAMCALL TDH_MR_EXTEND return code: 0
+rax:0x0 rcx:0x0 rdx:0x0
+r8:0x4001d000 r9:0x1202000 r10:0xffffffffffffffff r11:0xffffffffffffffff 
+
+########## issuing SEAMCALL TDH_MR_EXTEND 
+########## CALL_COUNT: 0316 SEAMCALL TDH_MR_EXTEND return code: 0
+rax:0x0 rcx:0x0 rdx:0x0
+r8:0x4001d000 r9:0x1202000 r10:0xffffffffffffffff r11:0xffffffffffffffff 
+
+########## issuing SEAMCALL TDH_MR_EXTEND 
+########## CALL_COUNT: 0317 SEAMCALL TDH_MR_EXTEND return code: 0
+rax:0x0 rcx:0x0 rdx:0x0
+r8:0x4001d000 r9:0x1202000 r10:0xffffffffffffffff r11:0xffffffffffffffff 
+
+########## issuing SEAMCALL TDH_MR_EXTEND 
+########## CALL_COUNT: 0318 SEAMCALL TDH_MR_EXTEND return code: 0
+rax:0x0 rcx:0x0 rdx:0x0
+r8:0x4001d000 r9:0x1202000 r10:0xffffffffffffffff r11:0xffffffffffffffff 
+
+########## issuing SEAMCALL TDH_MR_EXTEND 
+########## CALL_COUNT: 0319 SEAMCALL TDH_MR_EXTEND return code: 0
+rax:0x0 rcx:0x0 rdx:0x0
+r8:0x4001d000 r9:0x1202000 r10:0xffffffffffffffff r11:0xffffffffffffffff 
+
+########## issuing SEAMCALL TDH_MR_EXTEND 
+########## CALL_COUNT: 0320 SEAMCALL TDH_MR_EXTEND return code: 0
+rax:0x0 rcx:0x0 rdx:0x0
+r8:0x4001d000 r9:0x1202000 r10:0xffffffffffffffff r11:0xffffffffffffffff 
+
+########## issuing SEAMCALL TDH_MR_EXTEND 
+########## CALL_COUNT: 0321 SEAMCALL TDH_MR_EXTEND return code: 0
+rax:0x0 rcx:0x0 rdx:0x0
+r8:0x4001d000 r9:0x1202000 r10:0xffffffffffffffff r11:0xffffffffffffffff 
+
+########## issuing SEAMCALL TDH_MR_EXTEND 
+########## CALL_COUNT: 0322 SEAMCALL TDH_MR_EXTEND return code: 0
+rax:0x0 rcx:0x0 rdx:0x0
+r8:0x4001d000 r9:0x1202000 r10:0xffffffffffffffff r11:0xffffffffffffffff 
+
+########## issuing SEAMCALL TDH_MR_EXTEND 
+########## CALL_COUNT: 0323 SEAMCALL TDH_MR_EXTEND return code: 0
+rax:0x0 rcx:0x0 rdx:0x0
+r8:0x4001d000 r9:0x1202000 r10:0xffffffffffffffff r11:0xffffffffffffffff 
+
+########## issuing SEAMCALL TDH_MR_EXTEND 
+########## CALL_COUNT: 0324 SEAMCALL TDH_MR_EXTEND return code: 0
+rax:0x0 rcx:0x0 rdx:0x0
+r8:0x4001d000 r9:0x1202000 r10:0xffffffffffffffff r11:0xffffffffffffffff 
+
+########## issuing SEAMCALL TDH_MR_EXTEND 
+########## CALL_COUNT: 0325 SEAMCALL TDH_MR_EXTEND return code: 0
+rax:0x0 rcx:0x0 rdx:0x0
+r8:0x4001d000 r9:0x1202000 r10:0xffffffffffffffff r11:0xffffffffffffffff 
+
+########## issuing SEAMCALL TDH_MR_EXTEND 
+########## CALL_COUNT: 0326 SEAMCALL TDH_MR_EXTEND return code: 0
+rax:0x0 rcx:0x0 rdx:0x0
+r8:0x4001d000 r9:0x1202000 r10:0xffffffffffffffff r11:0xffffffffffffffff 
+
+########## issuing SEAMCALL TDH_MR_EXTEND 
+########## CALL_COUNT: 0327 SEAMCALL TDH_MR_EXTEND return code: 0
+rax:0x0 rcx:0x0 rdx:0x0
+r8:0x4001d000 r9:0x1202000 r10:0xffffffffffffffff r11:0xffffffffffffffff 
+
+########## issuing SEAMCALL TDH_MR_EXTEND 
+########## CALL_COUNT: 0328 SEAMCALL TDH_MR_EXTEND return code: 0
+rax:0x0 rcx:0x0 rdx:0x0
+r8:0x4001d000 r9:0x1202000 r10:0xffffffffffffffff r11:0xffffffffffffffff 
+
+########## issuing SEAMCALL TDH_MR_EXTEND 
+########## CALL_COUNT: 0329 SEAMCALL TDH_MR_EXTEND return code: 0
+rax:0x0 rcx:0x0 rdx:0x0
+r8:0x4001d000 r9:0x1202000 r10:0xffffffffffffffff r11:0xffffffffffffffff 
+
+########## issuing SEAMCALL TDH_MR_EXTEND 
+########## CALL_COUNT: 0330 SEAMCALL TDH_MR_EXTEND return code: 0
+rax:0x0 rcx:0x0 rdx:0x0
+r8:0x4001d000 r9:0x1202000 r10:0xffffffffffffffff r11:0xffffffffffffffff 
+
+########## issuing SEAMCALL TDH_MR_EXTEND 
+########## CALL_COUNT: 0331 SEAMCALL TDH_MR_EXTEND return code: 0
+rax:0x0 rcx:0x0 rdx:0x0
+r8:0x4001d000 r9:0x1202000 r10:0xffffffffffffffff r11:0xffffffffffffffff 
+
+########## issuing SEAMCALL TDH_MR_EXTEND 
+########## CALL_COUNT: 0332 SEAMCALL TDH_MR_EXTEND return code: 0
+rax:0x0 rcx:0x0 rdx:0x0
+r8:0x4001d000 r9:0x1202000 r10:0xffffffffffffffff r11:0xffffffffffffffff 
+
+########## issuing SEAMCALL TDH_MR_EXTEND 
+########## CALL_COUNT: 0333 SEAMCALL TDH_MR_EXTEND return code: 0
+rax:0x0 rcx:0x0 rdx:0x0
+r8:0x4001d000 r9:0x1202000 r10:0xffffffffffffffff r11:0xffffffffffffffff 
+
+########## issuing SEAMCALL TDH_MR_EXTEND 
+########## CALL_COUNT: 0334 SEAMCALL TDH_MR_EXTEND return code: 0
+rax:0x0 rcx:0x0 rdx:0x0
+r8:0x4001d000 r9:0x1202000 r10:0xffffffffffffffff r11:0xffffffffffffffff 
+
+########## issuing SEAMCALL TDH_MR_EXTEND 
+########## CALL_COUNT: 0335 SEAMCALL TDH_MR_EXTEND return code: 0
+rax:0x0 rcx:0x0 rdx:0x0
+r8:0x4001d000 r9:0x1202000 r10:0xffffffffffffffff r11:0xffffffffffffffff 
+
+########## issuing SEAMCALL TDH_MR_EXTEND 
+########## CALL_COUNT: 0336 SEAMCALL TDH_MR_EXTEND return code: 0
+rax:0x0 rcx:0x0 rdx:0x0
+r8:0x4001d000 r9:0x1202000 r10:0xffffffffffffffff r11:0xffffffffffffffff 
+
+########## issuing SEAMCALL TDH_MR_EXTEND 
+########## CALL_COUNT: 0337 SEAMCALL TDH_MR_EXTEND return code: 0
+rax:0x0 rcx:0x0 rdx:0x0
+r8:0x4001d000 r9:0x1202000 r10:0xffffffffffffffff r11:0xffffffffffffffff 
+
+########## issuing SEAMCALL TDH_MR_EXTEND 
+########## CALL_COUNT: 0338 SEAMCALL TDH_MR_EXTEND return code: 0
+rax:0x0 rcx:0x0 rdx:0x0
+r8:0x4001d000 r9:0x1202000 r10:0xffffffffffffffff r11:0xffffffffffffffff 
+
+########## issuing SEAMCALL TDH_MR_EXTEND 
+########## CALL_COUNT: 0339 SEAMCALL TDH_MR_EXTEND return code: 0
+rax:0x0 rcx:0x0 rdx:0x0
+r8:0x4001d000 r9:0x1202000 r10:0xffffffffffffffff r11:0xffffffffffffffff 
+
+########## issuing SEAMCALL TDH_MR_EXTEND 
+########## CALL_COUNT: 0340 SEAMCALL TDH_MR_EXTEND return code: 0
+rax:0x0 rcx:0x0 rdx:0x0
+r8:0x4001d000 r9:0x1202000 r10:0xffffffffffffffff r11:0xffffffffffffffff 
+
+########## issuing SEAMCALL TDH_MR_EXTEND 
+########## CALL_COUNT: 0341 SEAMCALL TDH_MR_EXTEND return code: 0
+rax:0x0 rcx:0x0 rdx:0x0
+r8:0x4001d000 r9:0x1202000 r10:0xffffffffffffffff r11:0xffffffffffffffff 
+
+########## issuing SEAMCALL TDH_MR_EXTEND 
+########## CALL_COUNT: 0342 SEAMCALL TDH_MR_EXTEND return code: 0
+rax:0x0 rcx:0x0 rdx:0x0
+r8:0x4001d000 r9:0x1202000 r10:0xffffffffffffffff r11:0xffffffffffffffff 
+
+########## issuing SEAMCALL TDH_MR_EXTEND 
+########## CALL_COUNT: 0343 SEAMCALL TDH_MR_EXTEND return code: 0
+rax:0x0 rcx:0x0 rdx:0x0
+r8:0x4001d000 r9:0x1202000 r10:0xffffffffffffffff r11:0xffffffffffffffff 
+
+########## issuing SEAMCALL TDH_MR_EXTEND 
+########## CALL_COUNT: 0344 SEAMCALL TDH_MR_EXTEND return code: 0
+rax:0x0 rcx:0x0 rdx:0x0
+r8:0x4001d000 r9:0x1202000 r10:0xffffffffffffffff r11:0xffffffffffffffff 
+
+########## issuing SEAMCALL TDH_MR_EXTEND 
+########## CALL_COUNT: 0345 SEAMCALL TDH_MR_EXTEND return code: 0
+rax:0x0 rcx:0x0 rdx:0x0
+r8:0x4001d000 r9:0x1202000 r10:0xffffffffffffffff r11:0xffffffffffffffff 
+
+########## issuing SEAMCALL TDH_MR_EXTEND 
+########## CALL_COUNT: 0346 SEAMCALL TDH_MR_EXTEND return code: 0
+rax:0x0 rcx:0x0 rdx:0x0
+r8:0x4001d000 r9:0x1202000 r10:0xffffffffffffffff r11:0xffffffffffffffff 
+
+########## issuing SEAMCALL TDH_MR_EXTEND 
+########## CALL_COUNT: 0347 SEAMCALL TDH_MR_EXTEND return code: 0
+rax:0x0 rcx:0x0 rdx:0x0
+r8:0x4001d000 r9:0x1202000 r10:0xffffffffffffffff r11:0xffffffffffffffff 
+
+########## issuing SEAMCALL TDH_MR_EXTEND 
+########## CALL_COUNT: 0348 SEAMCALL TDH_MR_EXTEND return code: 0
+rax:0x0 rcx:0x0 rdx:0x0
+r8:0x4001d000 r9:0x1202000 r10:0xffffffffffffffff r11:0xffffffffffffffff 
+
+########## issuing SEAMCALL TDH_MR_EXTEND 
+########## CALL_COUNT: 0349 SEAMCALL TDH_MR_EXTEND return code: 0
+rax:0x0 rcx:0x0 rdx:0x0
+r8:0x4001d000 r9:0x1202000 r10:0xffffffffffffffff r11:0xffffffffffffffff 
+
+########## issuing SEAMCALL TDH_MR_EXTEND 
+########## CALL_COUNT: 0350 SEAMCALL TDH_MR_EXTEND return code: 0
+rax:0x0 rcx:0x0 rdx:0x0
+r8:0x4001d000 r9:0x1202000 r10:0xffffffffffffffff r11:0xffffffffffffffff 
+
+########## issuing SEAMCALL TDH_MR_EXTEND 
+########## CALL_COUNT: 0351 SEAMCALL TDH_MR_EXTEND return code: 0
+rax:0x0 rcx:0x0 rdx:0x0
+r8:0x4001d000 r9:0x1202000 r10:0xffffffffffffffff r11:0xffffffffffffffff 
+
+########## issuing SEAMCALL TDH_MR_EXTEND 
+########## CALL_COUNT: 0352 SEAMCALL TDH_MR_EXTEND return code: 0
+rax:0x0 rcx:0x0 rdx:0x0
+r8:0x4001d000 r9:0x1202000 r10:0xffffffffffffffff r11:0xffffffffffffffff 
+
+########## issuing SEAMCALL TDH_MR_EXTEND 
+########## CALL_COUNT: 0353 SEAMCALL TDH_MR_EXTEND return code: 0
+rax:0x0 rcx:0x0 rdx:0x0
+r8:0x4001d000 r9:0x1202000 r10:0xffffffffffffffff r11:0xffffffffffffffff 
+
+########## issuing SEAMCALL TDH_MR_EXTEND 
+########## CALL_COUNT: 0354 SEAMCALL TDH_MR_EXTEND return code: 0
+rax:0x0 rcx:0x0 rdx:0x0
+r8:0x4001d000 r9:0x1202000 r10:0xffffffffffffffff r11:0xffffffffffffffff 
+
+########## issuing SEAMCALL TDH_MR_EXTEND 
+########## CALL_COUNT: 0355 SEAMCALL TDH_MR_EXTEND return code: 0
+rax:0x0 rcx:0x0 rdx:0x0
+r8:0x4001d000 r9:0x1202000 r10:0xffffffffffffffff r11:0xffffffffffffffff 
+
+########## issuing SEAMCALL TDH_MR_EXTEND 
+########## CALL_COUNT: 0356 SEAMCALL TDH_MR_EXTEND return code: 0
+rax:0x0 rcx:0x0 rdx:0x0
+r8:0x4001d000 r9:0x1202000 r10:0xffffffffffffffff r11:0xffffffffffffffff 
+
+########## issuing SEAMCALL TDH_MR_EXTEND 
+########## CALL_COUNT: 0357 SEAMCALL TDH_MR_EXTEND return code: 0
+rax:0x0 rcx:0x0 rdx:0x0
+r8:0x4001d000 r9:0x1202000 r10:0xffffffffffffffff r11:0xffffffffffffffff 
+
+########## issuing SEAMCALL TDH_MR_EXTEND 
+########## CALL_COUNT: 0358 SEAMCALL TDH_MR_EXTEND return code: 0
+rax:0x0 rcx:0x0 rdx:0x0
+r8:0x4001d000 r9:0x1202000 r10:0xffffffffffffffff r11:0xffffffffffffffff 
+
+########## issuing SEAMCALL TDH_MR_EXTEND 
+########## CALL_COUNT: 0359 SEAMCALL TDH_MR_EXTEND return code: 0
+rax:0x0 rcx:0x0 rdx:0x0
+r8:0x4001d000 r9:0x1202000 r10:0xffffffffffffffff r11:0xffffffffffffffff 
+
+########## issuing SEAMCALL TDH_MR_EXTEND 
+########## CALL_COUNT: 0360 SEAMCALL TDH_MR_EXTEND return code: 0
+rax:0x0 rcx:0x0 rdx:0x0
+r8:0x4001d000 r9:0x1202000 r10:0xffffffffffffffff r11:0xffffffffffffffff 
+
+########## issuing SEAMCALL TDH_MR_EXTEND 
+########## CALL_COUNT: 0361 SEAMCALL TDH_MR_EXTEND return code: 0
+rax:0x0 rcx:0x0 rdx:0x0
+r8:0x4001d000 r9:0x1202000 r10:0xffffffffffffffff r11:0xffffffffffffffff 
+
+########## issuing SEAMCALL TDH_MR_EXTEND 
+########## CALL_COUNT: 0362 SEAMCALL TDH_MR_EXTEND return code: 0
+rax:0x0 rcx:0x0 rdx:0x0
+r8:0x4001d000 r9:0x1202000 r10:0xffffffffffffffff r11:0xffffffffffffffff 
+
+########## issuing SEAMCALL TDH_MR_EXTEND 
+########## CALL_COUNT: 0363 SEAMCALL TDH_MR_EXTEND return code: 0
+rax:0x0 rcx:0x0 rdx:0x0
+r8:0x4001d000 r9:0x1202000 r10:0xffffffffffffffff r11:0xffffffffffffffff 
+
+########## issuing SEAMCALL TDH_MR_EXTEND 
+########## CALL_COUNT: 0364 SEAMCALL TDH_MR_EXTEND return code: 0
+rax:0x0 rcx:0x0 rdx:0x0
+r8:0x4001d000 r9:0x1202000 r10:0xffffffffffffffff r11:0xffffffffffffffff 
+
+########## issuing SEAMCALL TDH_MR_FINALIZE 
+########## CALL_COUNT: 0365 SEAMCALL TDH_MR_FINALIZE return code: 0
+rax:0x0 rcx:0x40000000 rdx:0x40000000
+r8:0x4001d000 r9:0x1202000 r10:0xffffffffffffffff r11:0xffffffffffffffff 
+
+########## issuing SEAMCALL TDH_MNG_CREATE 
+########## CALL_COUNT: 0366 SEAMCALL TDH_MNG_CREATE return code: 0
+rax:0x0 rcx:0x4001e000 rdx:0x22
+r8:0x4001d000 r9:0x1202000 r10:0xffffffffffffffff r11:0xffffffffffffffff 
+
+########## issuing SEAMCALL TDH_MNG_KEY_CONFIG 
+########## CALL_COUNT: 0367 SEAMCALL TDH_MNG_KEY_CONFIG return code: 0
+rax:0x0 rcx:0x4001e000 rdx:0x22
+r8:0x4001d000 r9:0x1202000 r10:0xffffffffffffffff r11:0xffffffffffffffff 
+
+########## issuing SEAMCALL TDH_MNG_ADDCX 
+########## CALL_COUNT: 0368 SEAMCALL TDH_MNG_ADDCX return code: 0
+rax:0x0 rcx:0x4001f000 rdx:0x4001e000
+r8:0x4001d000 r9:0x1202000 r10:0xffffffffffffffff r11:0xffffffffffffffff 
+
+########## issuing SEAMCALL TDH_MNG_ADDCX 
+########## CALL_COUNT: 0369 SEAMCALL TDH_MNG_ADDCX return code: 0
+rax:0x0 rcx:0x40020000 rdx:0x4001e000
+r8:0x4001d000 r9:0x1202000 r10:0xffffffffffffffff r11:0xffffffffffffffff 
+
+########## issuing SEAMCALL TDH_MNG_ADDCX 
+########## CALL_COUNT: 0370 SEAMCALL TDH_MNG_ADDCX return code: 0
+rax:0x0 rcx:0x40021000 rdx:0x4001e000
+r8:0x4001d000 r9:0x1202000 r10:0xffffffffffffffff r11:0xffffffffffffffff 
+
+########## issuing SEAMCALL TDH_MNG_ADDCX 
+########## CALL_COUNT: 0371 SEAMCALL TDH_MNG_ADDCX return code: 0
+rax:0x0 rcx:0x40022000 rdx:0x4001e000
+r8:0x4001d000 r9:0x1202000 r10:0xffffffffffffffff r11:0xffffffffffffffff 
+
+########## issuing SEAMCALL TDH_MNG_ADDCX 
+########## CALL_COUNT: 0372 SEAMCALL TDH_MNG_ADDCX return code: 0
+rax:0x0 rcx:0x40023000 rdx:0x4001e000
+r8:0x4001d000 r9:0x1202000 r10:0xffffffffffffffff r11:0xffffffffffffffff 
+
+########## issuing SEAMCALL TDH_MNG_ADDCX 
+########## CALL_COUNT: 0373 SEAMCALL TDH_MNG_ADDCX return code: 0
+rax:0x0 rcx:0x40024000 rdx:0x4001e000
+r8:0x4001d000 r9:0x1202000 r10:0xffffffffffffffff r11:0xffffffffffffffff 
+
+########## issuing SEAMCALL TDH_SYS_INFO 
+########## CALL_COUNT: 0374 SEAMCALL TDH_SYS_INFO return code: 0
+rax:0x0 rcx:0x1200000 rdx:0x400
+r8:0x1201000 r9:0x20 r10:0xffffffffffffffff r11:0xffffffffffffffff 
+
+########## issuing SEAMCALL TDH_MNG_INIT 
+########## CALL_COUNT: 0375 SEAMCALL TDH_MNG_INIT return code: 0
+rax:0x0 rcx:0x0 rdx:0x1202000
+r8:0x0 r9:0x0 r10:0x0 r11:0x0 
+
+########## issuing SEAMCALL TDH_SERVTD_PREBIND 
+########## CALL_COUNT: 0376 SEAMCALL TDH_SERVTD_PREBIND return code: 0
+rax:0x0 rcx:0x4001e000 rdx:0x1203000
+r8:0x0 r9:0x0 r10:0x7ff00000001 r11:0x0 
+prebind test done ending execution

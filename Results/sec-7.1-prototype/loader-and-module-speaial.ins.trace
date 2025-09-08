@@ -1,0 +1,1002 @@
+starting Monitor
+doing sanity checks
+size of struct comArea: 0x5bbdd4
+cpuid movdir64b support: 0
+cpuid serialize support: 0
+cpuid xgetbv support: 0
+sanity checks done
+seam manager's va for seam env pa: 0x7fffe57ca000
+doing 64-bit specifics ...
+aft setup GDT base:ffff900000000000 lim:0x2f
+preliminary seam environment prep done
+loading p-seamloder
+load p-seamldr successful ...
+INS rdmsr	found sp ins count:0 >> offset:0x5c5	va:0xffffb000000005c5	size:0x2
+INS rdmsr	found sp ins count:1 >> offset:0x5d2	va:0xffffb000000005d2	size:0x2
+INS rdmsr	found sp ins count:2 >> offset:0x5dc	va:0xffffb000000005dc	size:0x2
+INS rdmsr	found sp ins count:3 >> offset:0x5e6	va:0xffffb000000005e6	size:0x2
+INS rdmsr	found sp ins count:4 >> offset:0x5ef	va:0xffffb000000005ef	size:0x2
+INS rdmsr	found sp ins count:5 >> offset:0x5f9	va:0xffffb000000005f9	size:0x2
+INS rdmsr	found sp ins count:6 >> offset:0x609	va:0xffffb00000000609	size:0x2
+INS rdmsr	found sp ins count:7 >> offset:0x61c	va:0xffffb0000000061c	size:0x2
+INS rdmsr	found sp ins count:8 >> offset:0x62c	va:0xffffb0000000062c	size:0x2
+INS rdmsr	found sp ins count:9 >> offset:0x6c1	va:0xffffb000000006c1	size:0x2
+INS rdmsr	found sp ins count:10 >> offset:0x6d7	va:0xffffb000000006d7	size:0x2
+INS cpuid	found sp ins count:11 >> offset:0x857	va:0xffffb00000000857	size:0x2
+INS cpuid	found sp ins count:12 >> offset:0x8a7	va:0xffffb000000008a7	size:0x2
+INS cpuid	found sp ins count:13 >> offset:0x8d4	va:0xffffb000000008d4	size:0x2
+INS wrmsr	found sp ins count:14 >> offset:0xb6c	va:0xffffb00000000b6c	size:0x2
+INS wrmsr	found sp ins count:15 >> offset:0xc6b	va:0xffffb00000000c6b	size:0x2
+vmread operands op0:rax op1:0x8 rsp
+INS vmread	found sp ins count:16 >> offset:0xe0c	va:0xffffb00000000e0c	size:0x5
+vmread operands op0:rax op1:0x10 rsp
+INS vmread	found sp ins count:17 >> offset:0xe33	va:0xffffb00000000e33	size:0x5
+vmwrite operand op0:rax operand op01:rcx
+INS vmwrite	found sp ins count:18 >> offset:0xe5c	va:0xffffb00000000e5c	size:0x3
+vmread operands op0:rax op1:0x10 rsp
+INS vmread	found sp ins count:19 >> offset:0xe79	va:0xffffb00000000e79	size:0x5
+vmwrite operand op0:rax operand op01:rcx
+INS vmwrite	found sp ins count:20 >> offset:0xeac	va:0xffffb00000000eac	size:0x3
+vmread operands op0:rax op1:0x10 rsp
+INS vmread	found sp ins count:21 >> offset:0xec9	va:0xffffb00000000ec9	size:0x5
+vmread operands op0:rax op1:0x8 rsp
+INS vmread	found sp ins count:22 >> offset:0xee8	va:0xffffb00000000ee8	size:0x5
+vmread operands op0:rax op1:0x0 rsp
+INS vmread	found sp ins count:23 >> offset:0xf07	va:0xffffb00000000f07	size:0x4
+vmwrite operand op0:rcx operand op01:rax
+INS vmwrite	found sp ins count:24 >> offset:0xf50	va:0xffffb00000000f50	size:0x3
+rdgsbase operand op0:rbx detected
+INS rdgsbase	found sp ins count:25 >> offset:0x1bff	va:0xffffb00000001bff	size:0x5
+rdfsbase operand op0:rax detected
+INS rdfsbase	found sp ins count:26 >> offset:0x1cd8	va:0xffffb00000001cd8	size:0x5
+rdrand operand op0:rcx detected
+INS rdrand	found sp ins count:27 >> offset:0x1cef	va:0xffffb00000001cef	size:0x4
+vmwrite operand op0:rbx operand op01:rax
+INS vmwrite	found sp ins count:28 >> offset:0x1d13	va:0xffffb00000001d13	size:0x3
+INS rdmsr	found sp ins count:29 >> offset:0x1d6e	va:0xffffb00000001d6e	size:0x2
+INS rdmsr	found sp ins count:30 >> offset:0x1d8b	va:0xffffb00000001d8b	size:0x2
+INS rdmsr	found sp ins count:31 >> offset:0x1db8	va:0xffffb00000001db8	size:0x2
+INS rdmsr	found sp ins count:32 >> offset:0x1dc9	va:0xffffb00000001dc9	size:0x2
+INS vmclear	found sp ins count:33 >> offset:0x1ff9	va:0xffffb00000001ff9	size:0x9
+rdrand operand op0:rbx detected
+INS rdrand	found sp ins count:34 >> offset:0x2723	va:0xffffb00000002723	size:0x4
+INS rdmsr	found sp ins count:35 >> offset:0x307e	va:0xffffb0000000307e	size:0x2
+INS seamret	found sp ins count:36 >> offset:0x33f4	va:0xffffb000000033f4	size:0x4
+fusing tdx sw PDPT with agent PML4, pml4 idx: 96
+fusing tdx sw PDPT with agent PML4, pml4 idx: 352
+executing Monitor/SEAM environment process
+
+installing tdx module
+
+########## issuing SEAMCALL SEAMLDR_INSTALL 
+########## CALL_COUNT: 0000 SEAMCALL SEAMLDR_INSTALL return code: 0
+rax:0x0 rcx:0x1200000 rdx:0x0
+r8:0x0 r9:0x0 r10:0x0 r11:0x0 
+
+########## issuing SEAMCALL SEAMLDR_INSTALL 
+########## CALL_COUNT: 0001 SEAMCALL SEAMLDR_INSTALL return code: 0
+rax:0x0 rcx:0x1200000 rdx:0x0
+r8:0x0 r9:0x0 r10:0x0 r11:0x0 
+
+########## issuing SEAMCALL SEAMLDR_INSTALL 
+########## CALL_COUNT: 0002 SEAMCALL SEAMLDR_INSTALL return code: 0
+rax:0x0 rcx:0x1200000 rdx:0x0
+r8:0x0 r9:0x0 r10:0x0 r11:0x0 
+
+########## issuing SEAMCALL SEAMLDR_INSTALL 
+########## CALL_COUNT: 0003 SEAMCALL SEAMLDR_INSTALL return code: 0
+rax:0x0 rcx:0x1200000 rdx:0x0
+r8:0x0 r9:0x0 r10:0x0 r11:0x0 
+
+install tdx module epilogue
+fusing tdx sw PDPT with agent PML4, pml4 idx: 64
+fusing tdx sw PDPT with agent PML4, pml4 idx: 320
+movdir64b operands op0:0x0(rdi) op1:rsi
+INS movdir64b	found sp ins count:0 >> offset:0x460	va:0xffffa00000000460	size:0x5
+vmread operands op0:rax op1:0x8 rdi
+INS vmread	found sp ins count:1 >> offset:0x8a0	va:0xffffa000000008a0	size:0x4
+vmread operands op0:rax op1:0x18 rbx
+INS vmread	found sp ins count:2 >> offset:0x8bb	va:0xffffa000000008bb	size:0x4
+vmread operands op0:rax op1:0x28 rbx
+INS vmread	found sp ins count:3 >> offset:0x8d6	va:0xffffa000000008d6	size:0x4
+vmread operands op0:rax op1:0x38 rbx
+INS vmread	found sp ins count:4 >> offset:0x8f1	va:0xffffa000000008f1	size:0x4
+vmread operands op0:rax op1:0x48 rbx
+INS vmread	found sp ins count:5 >> offset:0x90c	va:0xffffa0000000090c	size:0x4
+vmread operands op0:rax op1:0x58 rbx
+INS vmread	found sp ins count:6 >> offset:0x927	va:0xffffa00000000927	size:0x4
+vmread operands op0:rax op1:0x68 rbx
+INS vmread	found sp ins count:7 >> offset:0x942	va:0xffffa00000000942	size:0x4
+vmread operands op0:rax op1:0x78 rbx
+INS vmread	found sp ins count:8 >> offset:0x95d	va:0xffffa0000000095d	size:0x4
+vmread operands op0:rax op1:0x88 rbx
+INS vmread	found sp ins count:9 >> offset:0x97b	va:0xffffa0000000097b	size:0x7
+vmread operands op0:rax op1:0x98 rbx
+INS vmread	found sp ins count:10 >> offset:0x99c	va:0xffffa0000000099c	size:0x7
+vmread operands op0:rax op1:0xa8 rbx
+INS vmread	found sp ins count:11 >> offset:0x9bd	va:0xffffa000000009bd	size:0x7
+vmread operands op0:rax op1:0xb8 rbx
+INS vmread	found sp ins count:12 >> offset:0x9de	va:0xffffa000000009de	size:0x7
+vmread operands op0:rax op1:0xc8 rbx
+INS vmread	found sp ins count:13 >> offset:0x9ff	va:0xffffa000000009ff	size:0x7
+vmread operands op0:rax op1:0xd8 rbx
+INS vmread	found sp ins count:14 >> offset:0xa20	va:0xffffa00000000a20	size:0x7
+vmwrite operand op0:rax operand op01:rcx
+INS vmwrite	found sp ins count:15 >> offset:0xb83	va:0xffffa00000000b83	size:0x3
+vmwrite operand op0:rax operand op01:rcx
+INS vmwrite	found sp ins count:16 >> offset:0xba4	va:0xffffa00000000ba4	size:0x3
+vmwrite operand op0:rax operand op01:rcx
+INS vmwrite	found sp ins count:17 >> offset:0xbbd	va:0xffffa00000000bbd	size:0x3
+vmwrite operand op0:rax operand op01:rcx
+INS vmwrite	found sp ins count:18 >> offset:0xbd3	va:0xffffa00000000bd3	size:0x3
+vmwrite operand op0:rax operand op01:rcx
+INS vmwrite	found sp ins count:19 >> offset:0xbe9	va:0xffffa00000000be9	size:0x3
+vmwrite operand op0:rax operand op01:rcx
+INS vmwrite	found sp ins count:20 >> offset:0xbff	va:0xffffa00000000bff	size:0x3
+vmwrite operand op0:rax operand op01:rcx
+INS vmwrite	found sp ins count:21 >> offset:0xc15	va:0xffffa00000000c15	size:0x3
+vmwrite operand op0:rax operand op01:rcx
+INS vmwrite	found sp ins count:22 >> offset:0xc3c	va:0xffffa00000000c3c	size:0x3
+vmwrite operand op0:rax operand op01:rcx
+INS vmwrite	found sp ins count:23 >> offset:0xc52	va:0xffffa00000000c52	size:0x3
+vmwrite operand op0:rax operand op01:rcx
+INS vmwrite	found sp ins count:24 >> offset:0xc6c	va:0xffffa00000000c6c	size:0x3
+vmwrite operand op0:rax operand op01:rcx
+INS vmwrite	found sp ins count:25 >> offset:0xd50	va:0xffffa00000000d50	size:0x3
+vmwrite operand op0:rax operand op01:rcx
+INS vmwrite	found sp ins count:26 >> offset:0xd65	va:0xffffa00000000d65	size:0x3
+vmwrite operand op0:rax operand op01:rcx
+INS vmwrite	found sp ins count:27 >> offset:0xd7a	va:0xffffa00000000d7a	size:0x3
+vmwrite operand op0:rax operand op01:rsi
+INS vmwrite	found sp ins count:28 >> offset:0xde8	va:0xffffa00000000de8	size:0x3
+vmwrite operand op0:rax operand op01:rsi
+INS vmwrite	found sp ins count:29 >> offset:0xe03	va:0xffffa00000000e03	size:0x3
+vmwrite operand op0:rax operand op01:rsi
+INS vmwrite	found sp ins count:30 >> offset:0xe1e	va:0xffffa00000000e1e	size:0x3
+vmwrite operand op0:rax operand op01:rsi
+INS vmwrite	found sp ins count:31 >> offset:0xe39	va:0xffffa00000000e39	size:0x3
+vmwrite operand op0:rax operand op01:rsi
+INS vmwrite	found sp ins count:32 >> offset:0xe54	va:0xffffa00000000e54	size:0x3
+vmwrite operand op0:rax operand op01:rsi
+INS vmwrite	found sp ins count:33 >> offset:0xe6f	va:0xffffa00000000e6f	size:0x3
+vmwrite operand op0:rax operand op01:rsi
+INS vmwrite	found sp ins count:34 >> offset:0xe8a	va:0xffffa00000000e8a	size:0x3
+vmwrite operand op0:rax operand op01:rsi
+INS vmwrite	found sp ins count:35 >> offset:0xea5	va:0xffffa00000000ea5	size:0x3
+vmwrite operand op0:rax operand op01:rsi
+INS vmwrite	found sp ins count:36 >> offset:0xec0	va:0xffffa00000000ec0	size:0x3
+vmwrite operand op0:rax operand op01:rsi
+INS vmwrite	found sp ins count:37 >> offset:0xedb	va:0xffffa00000000edb	size:0x3
+vmwrite operand op0:rax operand op01:rsi
+INS vmwrite	found sp ins count:38 >> offset:0xef6	va:0xffffa00000000ef6	size:0x3
+vmwrite operand op0:rax operand op01:rsi
+INS vmwrite	found sp ins count:39 >> offset:0xf11	va:0xffffa00000000f11	size:0x3
+vmwrite operand op0:rax operand op01:rsi
+INS vmwrite	found sp ins count:40 >> offset:0xf2c	va:0xffffa00000000f2c	size:0x3
+vmwrite operand op0:rax operand op01:rsi
+INS vmwrite	found sp ins count:41 >> offset:0xf47	va:0xffffa00000000f47	size:0x3
+vmwrite operand op0:rax operand op01:rcx
+INS vmwrite	found sp ins count:42 >> offset:0xf69	va:0xffffa00000000f69	size:0x3
+vmwrite operand op0:rax operand op01:rcx
+INS vmwrite	found sp ins count:43 >> offset:0xf82	va:0xffffa00000000f82	size:0x3
+vmwrite operand op0:rax operand op01:rcx
+INS vmwrite	found sp ins count:44 >> offset:0xf9b	va:0xffffa00000000f9b	size:0x3
+vmwrite operand op0:rax operand op01:rcx
+INS vmwrite	found sp ins count:45 >> offset:0xfb4	va:0xffffa00000000fb4	size:0x3
+vmwrite operand op0:rax operand op01:rsi
+INS vmwrite	found sp ins count:46 >> offset:0x1159	va:0xffffa00000001159	size:0x3
+vmwrite operand op0:rax operand op01:rsi
+INS vmwrite	found sp ins count:47 >> offset:0x119c	va:0xffffa0000000119c	size:0x3
+vmwrite operand op0:rax operand op01:rcx
+INS vmwrite	found sp ins count:48 >> offset:0x12c9	va:0xffffa000000012c9	size:0x3
+vmwrite operand op0:rax operand op01:rcx
+INS vmwrite	found sp ins count:49 >> offset:0x12fa	va:0xffffa000000012fa	size:0x3
+vmwrite operand op0:rcx operand op01:rax
+INS vmwrite	found sp ins count:50 >> offset:0x1322	va:0xffffa00000001322	size:0x3
+vmwrite operand op0:r13 operand op01:rax
+INS vmwrite	found sp ins count:51 >> offset:0x133b	va:0xffffa0000000133b	size:0x4
+vmwrite operand op0:r12 operand op01:rax
+INS vmwrite	found sp ins count:52 >> offset:0x1351	va:0xffffa00000001351	size:0x4
+vmwrite operand op0:r11 operand op01:rax
+INS vmwrite	found sp ins count:53 >> offset:0x1369	va:0xffffa00000001369	size:0x4
+vmwrite operand op0:rax operand op01:rcx
+INS vmwrite	found sp ins count:54 >> offset:0x1388	va:0xffffa00000001388	size:0x3
+vmwrite operand op0:rax operand op01:rcx
+INS vmwrite	found sp ins count:55 >> offset:0x13a1	va:0xffffa000000013a1	size:0x3
+vmwrite operand op0:rax operand op01:rcx
+INS vmwrite	found sp ins count:56 >> offset:0x13f3	va:0xffffa000000013f3	size:0x3
+vmwrite operand op0:rax operand op01:rcx
+INS vmwrite	found sp ins count:57 >> offset:0x1413	va:0xffffa00000001413	size:0x3
+vmwrite operand op0:rax operand op01:rcx
+INS vmwrite	found sp ins count:58 >> offset:0x1436	va:0xffffa00000001436	size:0x3
+vmwrite operand op0:rax operand op01:rcx
+INS vmwrite	found sp ins count:59 >> offset:0x1460	va:0xffffa00000001460	size:0x3
+vmwrite operand op0:rax operand op01:rcx
+INS vmwrite	found sp ins count:60 >> offset:0x148a	va:0xffffa0000000148a	size:0x3
+vmwrite operand op0:rax operand op01:rcx
+INS vmwrite	found sp ins count:61 >> offset:0x14a3	va:0xffffa000000014a3	size:0x3
+vmwrite operand op0:rax operand op01:rcx
+INS vmwrite	found sp ins count:62 >> offset:0x151d	va:0xffffa0000000151d	size:0x3
+vmwrite operand op0:rax operand op01:rcx
+INS vmwrite	found sp ins count:63 >> offset:0x1556	va:0xffffa00000001556	size:0x3
+vmwrite operand op0:rcx operand op01:rax
+INS vmwrite	found sp ins count:64 >> offset:0x1606	va:0xffffa00000001606	size:0x3
+vmread operands op0:rax op1:0x58 rsp
+INS vmread	found sp ins count:65 >> offset:0x1820	va:0xffffa00000001820	size:0x5
+vmread operands op0:rax op1:0x58 rsp
+INS vmread	found sp ins count:66 >> offset:0x1840	va:0xffffa00000001840	size:0x5
+vmread operands op0:rax op1:0x58 rsp
+INS vmread	found sp ins count:67 >> offset:0x1860	va:0xffffa00000001860	size:0x5
+vmread operands op0:rax op1:0x58 rsp
+INS vmread	found sp ins count:68 >> offset:0x1880	va:0xffffa00000001880	size:0x5
+vmwrite operand op0:rax operand op01:rcx
+INS vmwrite	found sp ins count:69 >> offset:0x18c4	va:0xffffa000000018c4	size:0x3
+INS pconfig	found sp ins count:70 >> offset:0x1d85	va:0xffffa00000001d85	size:0x3
+movdir64b operands op0:0x0(rdi) op1:rsi
+INS movdir64b	found sp ins count:71 >> offset:0x1e80	va:0xffffa00000001e80	size:0x5
+vmread operands op0:rax op1:0x38 rsp
+INS vmread	found sp ins count:72 >> offset:0x3462	va:0xffffa00000003462	size:0x5
+vmread operands op0:rax op1:0x0 rsp
+INS vmread	found sp ins count:73 >> offset:0x3b73	va:0xffffa00000003b73	size:0x4
+vmread operands op0:rax op1:0x8 rsp
+INS vmread	found sp ins count:74 >> offset:0x3c17	va:0xffffa00000003c17	size:0x5
+vmwrite operand op0:rax operand op01:rcx
+INS vmwrite	found sp ins count:75 >> offset:0x3c95	va:0xffffa00000003c95	size:0x3
+vmwrite operand op0:rax operand op01:rcx
+INS vmwrite	found sp ins count:76 >> offset:0x3ca9	va:0xffffa00000003ca9	size:0x3
+vmwrite operand op0:rax operand op01:rcx
+INS vmwrite	found sp ins count:77 >> offset:0x3cbe	va:0xffffa00000003cbe	size:0x3
+vmwrite operand op0:rax operand op01:rcx
+INS vmwrite	found sp ins count:78 >> offset:0x3cd3	va:0xffffa00000003cd3	size:0x3
+vmread operands op0:rbx op1:0x0 rsp
+INS vmread	found sp ins count:79 >> offset:0x3ce1	va:0xffffa00000003ce1	size:0x4
+vmwrite operand op0:rax operand op01:rbx
+INS vmwrite	found sp ins count:80 >> offset:0x3cf8	va:0xffffa00000003cf8	size:0x3
+vmread operands op0:rax op1:0x10 rsp
+INS vmread	found sp ins count:81 >> offset:0x3db3	va:0xffffa00000003db3	size:0x5
+vmwrite operand op0:rax operand op01:rcx
+INS vmwrite	found sp ins count:82 >> offset:0x3e07	va:0xffffa00000003e07	size:0x3
+vmread operands op0:rax op1:0x8 rsp
+INS vmread	found sp ins count:83 >> offset:0x3e1c	va:0xffffa00000003e1c	size:0x5
+vmwrite operand op0:rax operand op01:rcx
+INS vmwrite	found sp ins count:84 >> offset:0x3e35	va:0xffffa00000003e35	size:0x3
+vmread operands op0:rax op1:0x8 rsp
+INS vmread	found sp ins count:85 >> offset:0x3e47	va:0xffffa00000003e47	size:0x5
+vmwrite operand op0:rax operand op01:rcx
+INS vmwrite	found sp ins count:86 >> offset:0x3e5c	va:0xffffa00000003e5c	size:0x3
+vmwrite operand op0:rax operand op01:rcx
+INS vmwrite	found sp ins count:87 >> offset:0x3e74	va:0xffffa00000003e74	size:0x3
+vmread operands op0:rax op1:0x10 rsp
+INS vmread	found sp ins count:88 >> offset:0x3fb8	va:0xffffa00000003fb8	size:0x5
+vmread operands op0:rbx op1:0x8 rsp
+INS vmread	found sp ins count:89 >> offset:0x4012	va:0xffffa00000004012	size:0x5
+vmwrite operand op0:rax operand op01:rbx
+INS vmwrite	found sp ins count:90 >> offset:0x402a	va:0xffffa0000000402a	size:0x3
+vmread operands op0:rax op1:0x0 rsp
+INS vmread	found sp ins count:91 >> offset:0x41e0	va:0xffffa000000041e0	size:0x4
+INS wrmsr	found sp ins count:92 >> offset:0x4587	va:0xffffa00000004587	size:0x2
+INS rdmsr	found sp ins count:93 >> offset:0x458e	va:0xffffa0000000458e	size:0x2
+INS wrmsr	found sp ins count:94 >> offset:0x4599	va:0xffffa00000004599	size:0x2
+rdrand operand op0:rax detected
+INS rdrand	found sp ins count:95 >> offset:0x45a4	va:0xffffa000000045a4	size:0x4
+INS wrmsr	found sp ins count:96 >> offset:0x464b	va:0xffffa0000000464b	size:0x2
+vmread operands op0:rax op1:0x10 rsp
+INS vmread	found sp ins count:97 >> offset:0x4683	va:0xffffa00000004683	size:0x5
+vmread operands op0:rax op1:0x8 rsp
+INS vmread	found sp ins count:98 >> offset:0x4693	va:0xffffa00000004693	size:0x5
+vmread operands op0:rax op1:0x0 rsp
+INS vmread	found sp ins count:99 >> offset:0x46a3	va:0xffffa000000046a3	size:0x4
+vmwrite operand op0:rcx operand op01:rax
+INS vmwrite	found sp ins count:100 >> offset:0x4715	va:0xffffa00000004715	size:0x3
+vmread operands op0:rax op1:0x8 rsp
+INS vmread	found sp ins count:101 >> offset:0x477c	va:0xffffa0000000477c	size:0x5
+vmread operands op0:rax op1:0x10 rsp
+INS vmread	found sp ins count:102 >> offset:0x4790	va:0xffffa00000004790	size:0x5
+vmwrite operand op0:rax operand op01:rcx
+INS vmwrite	found sp ins count:103 >> offset:0x47b7	va:0xffffa000000047b7	size:0x3
+vmread operands op0:rax op1:0x10 rsp
+INS vmread	found sp ins count:104 >> offset:0x47c5	va:0xffffa000000047c5	size:0x5
+vmwrite operand op0:rax operand op01:rcx
+INS vmwrite	found sp ins count:105 >> offset:0x47e9	va:0xffffa000000047e9	size:0x3
+vmread operands op0:rax op1:0x0 rsp
+INS vmread	found sp ins count:106 >> offset:0x48c3	va:0xffffa000000048c3	size:0x4
+vmwrite operand op0:rax operand op01:rcx
+INS vmwrite	found sp ins count:107 >> offset:0x48e3	va:0xffffa000000048e3	size:0x3
+INS vmclear	found sp ins count:108 >> offset:0x4e43	va:0xffffa00000004e43	size:0x5
+INS vmclear	found sp ins count:109 >> offset:0x4ec3	va:0xffffa00000004ec3	size:0x5
+rdseed operand op0:rsi detected
+INS rdseed	found sp ins count:110 >> offset:0x53bf	va:0xffffa000000053bf	size:0x4
+vmread operands op0:rax op1:0x20 rsp
+INS vmread	found sp ins count:111 >> offset:0x5823	va:0xffffa00000005823	size:0x5
+vmread operands op0:rax op1:0x18 rsp
+INS vmread	found sp ins count:112 >> offset:0x5854	va:0xffffa00000005854	size:0x5
+vmread operands op0:rax op1:0x10 rsp
+INS vmread	found sp ins count:113 >> offset:0x589b	va:0xffffa0000000589b	size:0x5
+vmread operands op0:rax op1:0x8 rsp
+INS vmread	found sp ins count:114 >> offset:0x58ab	va:0xffffa000000058ab	size:0x5
+vmread operands op0:rax op1:0x0 rsp
+INS vmread	found sp ins count:115 >> offset:0x58bb	va:0xffffa000000058bb	size:0x4
+vmread operands op0:rax op1:0x10 rsp
+INS vmread	found sp ins count:116 >> offset:0x5983	va:0xffffa00000005983	size:0x5
+vmwrite operand op0:rax operand op01:rcx
+INS vmwrite	found sp ins count:117 >> offset:0x599c	va:0xffffa0000000599c	size:0x3
+vmread operands op0:rax op1:0x8 rsp
+INS vmread	found sp ins count:118 >> offset:0x59b7	va:0xffffa000000059b7	size:0x5
+vmwrite operand op0:rax operand op01:rcx
+INS vmwrite	found sp ins count:119 >> offset:0x59d0	va:0xffffa000000059d0	size:0x3
+vmwrite operand op0:rax operand op01:rcx
+INS vmwrite	found sp ins count:120 >> offset:0x59ec	va:0xffffa000000059ec	size:0x3
+vmwrite operand op0:rax operand op01:rcx
+INS vmwrite	found sp ins count:121 >> offset:0x5a00	va:0xffffa00000005a00	size:0x3
+vmwrite operand op0:rax operand op01:rcx
+INS vmwrite	found sp ins count:122 >> offset:0x5a14	va:0xffffa00000005a14	size:0x3
+vmread operands op0:rax op1:0x0 rsp
+INS vmread	found sp ins count:123 >> offset:0x5afb	va:0xffffa00000005afb	size:0x4
+vmwrite operand op0:rax operand op01:rcx
+INS vmwrite	found sp ins count:124 >> offset:0x5b6c	va:0xffffa00000005b6c	size:0x3
+vmwrite operand op0:rax operand op01:rcx
+INS vmwrite	found sp ins count:125 >> offset:0x5b7e	va:0xffffa00000005b7e	size:0x3
+vmwrite operand op0:rsi operand op01:rcx
+INS vmwrite	found sp ins count:126 >> offset:0x604b	va:0xffffa0000000604b	size:0x3
+INS invept	found sp ins count:127 >> offset:0x6230	va:0xffffa00000006230	size:0x8
+movdir64b operands op0:0x0(rdi) op1:rsi
+INS movdir64b	found sp ins count:128 >> offset:0x6d7b	va:0xffffa00000006d7b	size:0x5
+movdir64b operands op0:0x0(rdi) op1:rsi
+INS movdir64b	found sp ins count:129 >> offset:0x6eb7	va:0xffffa00000006eb7	size:0x5
+movdir64b operands op0:0x0(rdi) op1:rsi
+INS movdir64b	found sp ins count:130 >> offset:0x6fe7	va:0xffffa00000006fe7	size:0x5
+vmread operands op0:rax op1:0x58 rsp
+INS vmread	found sp ins count:131 >> offset:0xce62	va:0xffffa0000000ce62	size:0x5
+vmread operands op0:rax op1:0x50 rsp
+INS vmread	found sp ins count:132 >> offset:0xce7b	va:0xffffa0000000ce7b	size:0x5
+operand op0:0x58 rsp
+INS vmptrld	found sp ins count:133 >> offset:0xced3	va:0xffffa0000000ced3	size:0x5
+vmread operands op0:rax op1:0x58 rsp
+INS vmread	found sp ins count:134 >> offset:0xcef1	va:0xffffa0000000cef1	size:0x5
+vmread operands op0:rax op1:0x58 rsp
+INS vmread	found sp ins count:135 >> offset:0xcfc1	va:0xffffa0000000cfc1	size:0x5
+vmread operands op0:rax op1:0x50 rsp
+INS vmread	found sp ins count:136 >> offset:0xcfda	va:0xffffa0000000cfda	size:0x5
+operand op0:0x58 rsp
+INS vmptrld	found sp ins count:137 >> offset:0xd17b	va:0xffffa0000000d17b	size:0x5
+vmread operands op0:rdx op1:0x38 rsp
+INS vmread	found sp ins count:138 >> offset:0xd18e	va:0xffffa0000000d18e	size:0x5
+vmwrite operand op0:r13 operand op01:r11
+INS vmwrite	found sp ins count:139 >> offset:0xd5bc	va:0xffffa0000000d5bc	size:0x4
+vmwrite operand op0:rax operand op01:rcx
+INS vmwrite	found sp ins count:140 >> offset:0xd7f3	va:0xffffa0000000d7f3	size:0x3
+vmwrite operand op0:rbx operand op01:rax
+INS vmwrite	found sp ins count:141 >> offset:0xd805	va:0xffffa0000000d805	size:0x3
+vmread operands op0:rax op1:0x68 rsp
+INS vmread	found sp ins count:142 >> offset:0xd8c7	va:0xffffa0000000d8c7	size:0x5
+vmwrite operand op0:rcx operand op01:rax
+INS vmwrite	found sp ins count:143 >> offset:0xda1a	va:0xffffa0000000da1a	size:0x3
+vmwrite operand op0:rbx operand op01:rax
+INS vmwrite	found sp ins count:144 >> offset:0xda2c	va:0xffffa0000000da2c	size:0x3
+vmread operands op0:rax op1:0x68 rsp
+INS vmread	found sp ins count:145 >> offset:0xda6d	va:0xffffa0000000da6d	size:0x5
+vmread operands op0:rax op1:0x68 rsp
+INS vmread	found sp ins count:146 >> offset:0xdb6b	va:0xffffa0000000db6b	size:0x5
+vmread operands op0:rax op1:0x60 rsp
+INS vmread	found sp ins count:147 >> offset:0xdb7f	va:0xffffa0000000db7f	size:0x5
+vmread operands op0:rax op1:0x58 rsp
+INS vmread	found sp ins count:148 >> offset:0xdb93	va:0xffffa0000000db93	size:0x5
+vmwrite operand op0:rax operand op01:rcx
+INS vmwrite	found sp ins count:149 >> offset:0xdc66	va:0xffffa0000000dc66	size:0x3
+vmwrite operand op0:rbx operand op01:rax
+INS vmwrite	found sp ins count:150 >> offset:0xdc78	va:0xffffa0000000dc78	size:0x3
+vmwrite operand op0:rcx operand op01:rax
+INS vmwrite	found sp ins count:151 >> offset:0xdd0c	va:0xffffa0000000dd0c	size:0x3
+vmwrite operand op0:rbx operand op01:rax
+INS vmwrite	found sp ins count:152 >> offset:0xdd1e	va:0xffffa0000000dd1e	size:0x3
+vmread operands op0:rax op1:0x68 rsp
+INS vmread	found sp ins count:153 >> offset:0xdd75	va:0xffffa0000000dd75	size:0x5
+vmread operands op0:rax op1:0x68 rsp
+INS vmread	found sp ins count:154 >> offset:0xded4	va:0xffffa0000000ded4	size:0x5
+vmread operands op0:rax op1:0x60 rsp
+INS vmread	found sp ins count:155 >> offset:0xdee8	va:0xffffa0000000dee8	size:0x5
+vmread operands op0:rax op1:0x58 rsp
+INS vmread	found sp ins count:156 >> offset:0xdefc	va:0xffffa0000000defc	size:0x5
+vmread operands op0:rax op1:0x60 rsp
+INS vmread	found sp ins count:157 >> offset:0xe0d8	va:0xffffa0000000e0d8	size:0x5
+vmread operands op0:rax op1:0x68 rsp
+INS vmread	found sp ins count:158 >> offset:0xe102	va:0xffffa0000000e102	size:0x5
+operand op0:0x68 rsp
+INS vmptrld	found sp ins count:159 >> offset:0xe2d7	va:0xffffa0000000e2d7	size:0x5
+vmwrite operand op0:rax operand op01:rcx
+INS vmwrite	found sp ins count:160 >> offset:0xe30a	va:0xffffa0000000e30a	size:0x3
+vmwrite operand op0:rax operand op01:rcx
+INS vmwrite	found sp ins count:161 >> offset:0xe32d	va:0xffffa0000000e32d	size:0x3
+INS xgetbv	found sp ins count:162 >> offset:0xfb8f	va:0xffffa0000000fb8f	size:0x3
+INS cpuid	found sp ins count:163 >> offset:0xfbae	va:0xffffa0000000fbae	size:0x2
+vmread operands op0:rbx op1:0x28 rsp
+INS vmread	found sp ins count:164 >> offset:0xfdf1	va:0xffffa0000000fdf1	size:0x5
+vmwrite operand op0:rax operand op01:rbx
+INS vmwrite	found sp ins count:165 >> offset:0xfe0f	va:0xffffa0000000fe0f	size:0x3
+vmwrite operand op0:rax operand op01:rcx
+INS vmwrite	found sp ins count:166 >> offset:0xfe26	va:0xffffa0000000fe26	size:0x3
+vmwrite operand op0:rax operand op01:rcx
+INS vmwrite	found sp ins count:167 >> offset:0xfe3a	va:0xffffa0000000fe3a	size:0x3
+vmread operands op0:rax op1:0x28 rsp
+INS vmread	found sp ins count:168 >> offset:0x10013	va:0xffffa00000010013	size:0x5
+operand op0:0x28 rsp
+INS vmptrld	found sp ins count:169 >> offset:0x10152	va:0xffffa00000010152	size:0x5
+vmread operands op0:rax op1:0x0 rsp
+INS vmread	found sp ins count:170 >> offset:0x1016e	va:0xffffa0000001016e	size:0x4
+vmread operands op0:rbx op1:0x28 rsp
+INS vmread	found sp ins count:171 >> offset:0x101e6	va:0xffffa000000101e6	size:0x5
+vmwrite operand op0:rax operand op01:rbx
+INS vmwrite	found sp ins count:172 >> offset:0x101ff	va:0xffffa000000101ff	size:0x3
+vmread operands op0:rbx op1:0x28 rsp
+INS vmread	found sp ins count:173 >> offset:0x102cf	va:0xffffa000000102cf	size:0x5
+vmwrite operand op0:rax operand op01:rbx
+INS vmwrite	found sp ins count:174 >> offset:0x102ed	va:0xffffa000000102ed	size:0x3
+vmwrite operand op0:rax operand op01:rcx
+INS vmwrite	found sp ins count:175 >> offset:0x10304	va:0xffffa00000010304	size:0x3
+vmwrite operand op0:rax operand op01:rcx
+INS vmwrite	found sp ins count:176 >> offset:0x10318	va:0xffffa00000010318	size:0x3
+INS wrmsr	found sp ins count:177 >> offset:0x10549	va:0xffffa00000010549	size:0x2
+vmread operands op0:rax op1:0x0 rsp
+INS vmread	found sp ins count:178 >> offset:0x10625	va:0xffffa00000010625	size:0x4
+vmread operands op0:rax op1:0x28 rsp
+INS vmread	found sp ins count:179 >> offset:0x106d2	va:0xffffa000000106d2	size:0x5
+vmread operands op0:rax op1:0x20 rsp
+INS vmread	found sp ins count:180 >> offset:0x106e6	va:0xffffa000000106e6	size:0x5
+vmread operands op0:rbx op1:0x28 rsp
+INS vmread	found sp ins count:181 >> offset:0x10736	va:0xffffa00000010736	size:0x5
+vmwrite operand op0:rax operand op01:rbx
+INS vmwrite	found sp ins count:182 >> offset:0x10754	va:0xffffa00000010754	size:0x3
+vmwrite operand op0:rax operand op01:rcx
+INS vmwrite	found sp ins count:183 >> offset:0x1076b	va:0xffffa0000001076b	size:0x3
+vmwrite operand op0:rax operand op01:rcx
+INS vmwrite	found sp ins count:184 >> offset:0x1077f	va:0xffffa0000001077f	size:0x3
+operand op0:0x28 rsp
+INS vmptrld	found sp ins count:185 >> offset:0x10b9d	va:0xffffa00000010b9d	size:0x5
+INS rdmsr	found sp ins count:186 >> offset:0x10f20	va:0xffffa00000010f20	size:0x2
+INS wrmsr	found sp ins count:187 >> offset:0x10f4b	va:0xffffa00000010f4b	size:0x2
+vmread operands op0:rax op1:0x0 r15
+INS vmread	found sp ins count:188 >> offset:0x10f60	va:0xffffa00000010f60	size:0x4
+vmread operands op0:rax op1:0x0 r8
+INS vmread	found sp ins count:189 >> offset:0x10f92	va:0xffffa00000010f92	size:0x4
+vmread operands op0:rax op1:0x0 r12
+INS vmread	found sp ins count:190 >> offset:0x10fa5	va:0xffffa00000010fa5	size:0x5
+vmread operands op0:rax op1:0x10 rsp
+INS vmread	found sp ins count:191 >> offset:0x110b2	va:0xffffa000000110b2	size:0x5
+vmread operands op0:r14 op1:0x18 rsp
+INS vmread	found sp ins count:192 >> offset:0x11112	va:0xffffa00000011112	size:0x6
+vmwrite operand op0:rax operand op01:r14
+INS vmwrite	found sp ins count:193 >> offset:0x1112c	va:0xffffa0000001112c	size:0x4
+vmwrite operand op0:rax operand op01:rcx
+INS vmwrite	found sp ins count:194 >> offset:0x11148	va:0xffffa00000011148	size:0x3
+vmread operands op0:rax op1:0x18 rsp
+INS vmread	found sp ins count:195 >> offset:0x11163	va:0xffffa00000011163	size:0x5
+vmwrite operand op0:rax operand op01:rcx
+INS vmwrite	found sp ins count:196 >> offset:0x1117c	va:0xffffa0000001117c	size:0x3
+vmread operands op0:rax op1:0x18 rsp
+INS vmread	found sp ins count:197 >> offset:0x1118e	va:0xffffa0000001118e	size:0x5
+vmwrite operand op0:rax operand op01:rcx
+INS vmwrite	found sp ins count:198 >> offset:0x111a7	va:0xffffa000000111a7	size:0x3
+vmread operands op0:rbx op1:0x38 rsp
+INS vmread	found sp ins count:199 >> offset:0x114ec	va:0xffffa000000114ec	size:0x5
+vmwrite operand op0:rax operand op01:rbx
+INS vmwrite	found sp ins count:200 >> offset:0x1150a	va:0xffffa0000001150a	size:0x3
+vmwrite operand op0:rax operand op01:rcx
+INS vmwrite	found sp ins count:201 >> offset:0x11521	va:0xffffa00000011521	size:0x3
+vmread operands op0:rbx op1:0x38 rsp
+INS vmread	found sp ins count:202 >> offset:0x117d2	va:0xffffa000000117d2	size:0x5
+vmwrite operand op0:rax operand op01:rbx
+INS vmwrite	found sp ins count:203 >> offset:0x117f0	va:0xffffa000000117f0	size:0x3
+vmwrite operand op0:rax operand op01:rcx
+INS vmwrite	found sp ins count:204 >> offset:0x11807	va:0xffffa00000011807	size:0x3
+vmwrite operand op0:rax operand op01:rcx
+INS vmwrite	found sp ins count:205 >> offset:0x1181b	va:0xffffa0000001181b	size:0x3
+vmread operands op0:rbx op1:0x38 rsp
+INS vmread	found sp ins count:206 >> offset:0x11876	va:0xffffa00000011876	size:0x5
+vmwrite operand op0:rax operand op01:rbx
+INS vmwrite	found sp ins count:207 >> offset:0x11894	va:0xffffa00000011894	size:0x3
+vmwrite operand op0:rax operand op01:rcx
+INS vmwrite	found sp ins count:208 >> offset:0x118ab	va:0xffffa000000118ab	size:0x3
+vmwrite operand op0:rax operand op01:rcx
+INS vmwrite	found sp ins count:209 >> offset:0x118bf	va:0xffffa000000118bf	size:0x3
+vmread operands op0:rbx op1:0x18 rsp
+INS vmread	found sp ins count:210 >> offset:0x1192c	va:0xffffa0000001192c	size:0x5
+vmwrite operand op0:rax operand op01:rbx
+INS vmwrite	found sp ins count:211 >> offset:0x11945	va:0xffffa00000011945	size:0x3
+operand op0:0x38 rsp
+INS vmptrld	found sp ins count:212 >> offset:0x119e9	va:0xffffa000000119e9	size:0x5
+vmread operands op0:rax op1:0x0 rsp
+INS vmread	found sp ins count:213 >> offset:0x11a05	va:0xffffa00000011a05	size:0x4
+vmread operands op0:rbx op1:0x10 rsp
+INS vmread	found sp ins count:214 >> offset:0x11a36	va:0xffffa00000011a36	size:0x5
+vmwrite operand op0:rax operand op01:rbx
+INS vmwrite	found sp ins count:215 >> offset:0x11a4f	va:0xffffa00000011a4f	size:0x3
+vmread operands op0:rax op1:0x38 rsp
+INS vmread	found sp ins count:216 >> offset:0x11a9f	va:0xffffa00000011a9f	size:0x5
+INS wrmsr	found sp ins count:217 >> offset:0x11ae3	va:0xffffa00000011ae3	size:0x2
+vmread operands op0:rax op1:0x18 rsp
+INS vmread	found sp ins count:218 >> offset:0x11e5c	va:0xffffa00000011e5c	size:0x5
+INS cpuid	found sp ins count:219 >> offset:0x11ea7	va:0xffffa00000011ea7	size:0x2
+vmread operands op0:rax op1:0x18 rsp
+INS vmread	found sp ins count:220 >> offset:0x11eb3	va:0xffffa00000011eb3	size:0x5
+vmread operands op0:rax op1:0x10 rsp
+INS vmread	found sp ins count:221 >> offset:0x11ec7	va:0xffffa00000011ec7	size:0x5
+INS rdmsr	found sp ins count:222 >> offset:0x11f0a	va:0xffffa00000011f0a	size:0x2
+vmread operands op0:rax op1:0x18 rsp
+INS vmread	found sp ins count:223 >> offset:0x11f1e	va:0xffffa00000011f1e	size:0x5
+movdir64b operands op0:0x0(rdi) op1:rsi
+INS movdir64b	found sp ins count:224 >> offset:0x12407	va:0xffffa00000012407	size:0x5
+INS rdmsr	found sp ins count:225 >> offset:0x1245d	va:0xffffa0000001245d	size:0x2
+movdir64b operands op0:0x0(rdi) op1:rsi
+INS movdir64b	found sp ins count:226 >> offset:0x12524	va:0xffffa00000012524	size:0x5
+INS invept	found sp ins count:227 >> offset:0x12b4a	va:0xffffa00000012b4a	size:0x7
+vmread operands op0:rbx op1:0x8 rsp
+INS vmread	found sp ins count:228 >> offset:0x12f53	va:0xffffa00000012f53	size:0x5
+vmwrite operand op0:rax operand op01:rbx
+INS vmwrite	found sp ins count:229 >> offset:0x12f6d	va:0xffffa00000012f6d	size:0x3
+vmwrite operand op0:rax operand op01:rcx
+INS vmwrite	found sp ins count:230 >> offset:0x12f80	va:0xffffa00000012f80	size:0x3
+vmwrite operand op0:rax operand op01:rcx
+INS vmwrite	found sp ins count:231 >> offset:0x12f90	va:0xffffa00000012f90	size:0x3
+INS invvpid	found sp ins count:232 >> offset:0x130e7	va:0xffffa000000130e7	size:0x7
+INS invvpid	found sp ins count:233 >> offset:0x13227	va:0xffffa00000013227	size:0x7
+INS rdmsr	found sp ins count:234 >> offset:0x13286	va:0xffffa00000013286	size:0x2
+INS wrmsr	found sp ins count:235 >> offset:0x13cb5	va:0xffffa00000013cb5	size:0x2
+vmread operands op0:rax op1:0x18 rsp
+INS vmread	found sp ins count:236 >> offset:0x13ccf	va:0xffffa00000013ccf	size:0x5
+vmwrite operand op0:rax operand op01:rcx
+INS vmwrite	found sp ins count:237 >> offset:0x13d4e	va:0xffffa00000013d4e	size:0x3
+vmread operands op0:rax op1:0x18 rsp
+INS vmread	found sp ins count:238 >> offset:0x13d76	va:0xffffa00000013d76	size:0x5
+vmwrite operand op0:rax operand op01:rcx
+INS vmwrite	found sp ins count:239 >> offset:0x13de9	va:0xffffa00000013de9	size:0x3
+vmread operands op0:rax op1:0x10 rsp
+INS vmread	found sp ins count:240 >> offset:0x13dfb	va:0xffffa00000013dfb	size:0x5
+vmread operands op0:rbx op1:0x8 rsp
+INS vmread	found sp ins count:241 >> offset:0x13e21	va:0xffffa00000013e21	size:0x5
+vmwrite operand op0:rcx operand op01:rbx
+INS vmwrite	found sp ins count:242 >> offset:0x13e4f	va:0xffffa00000013e4f	size:0x3
+vmread operands op0:rax op1:0x0 rsp
+INS vmread	found sp ins count:243 >> offset:0x14147	va:0xffffa00000014147	size:0x4
+INS rdmsr	found sp ins count:244 >> offset:0x141b8	va:0xffffa000000141b8	size:0x2
+INS rdmsr	found sp ins count:245 >> offset:0x1465c	va:0xffffa0000001465c	size:0x2
+INS seamops	found sp ins count:246 >> offset:0x14707	va:0xffffa00000014707	size:0x4
+vmread operands op0:rbx op1:0x8 rsp
+INS vmread	found sp ins count:247 >> offset:0x14ca0	va:0xffffa00000014ca0	size:0x5
+vmwrite operand op0:rax operand op01:rbx
+INS vmwrite	found sp ins count:248 >> offset:0x14cbe	va:0xffffa00000014cbe	size:0x3
+vmwrite operand op0:rax operand op01:rcx
+INS vmwrite	found sp ins count:249 >> offset:0x14cd5	va:0xffffa00000014cd5	size:0x3
+vmwrite operand op0:rax operand op01:rcx
+INS vmwrite	found sp ins count:250 >> offset:0x14ce9	va:0xffffa00000014ce9	size:0x3
+vmread operands op0:rax op1:0x0 rsp
+INS vmread	found sp ins count:251 >> offset:0x14dbf	va:0xffffa00000014dbf	size:0x4
+vmread operands op0:rax op1:0x8 rsp
+INS vmread	found sp ins count:252 >> offset:0x14ea8	va:0xffffa00000014ea8	size:0x5
+vmread operands op0:rax op1:0x10 rsp
+INS vmread	found sp ins count:253 >> offset:0x14ed1	va:0xffffa00000014ed1	size:0x5
+vmwrite operand op0:rax operand op01:rcx
+INS vmwrite	found sp ins count:254 >> offset:0x14f01	va:0xffffa00000014f01	size:0x3
+vmread operands op0:rbx op1:0x10 rsp
+INS vmread	found sp ins count:255 >> offset:0x14faf	va:0xffffa00000014faf	size:0x5
+vmwrite operand op0:rax operand op01:rbx
+INS vmwrite	found sp ins count:256 >> offset:0x14fcd	va:0xffffa00000014fcd	size:0x3
+vmwrite operand op0:rax operand op01:rcx
+INS vmwrite	found sp ins count:257 >> offset:0x14fe4	va:0xffffa00000014fe4	size:0x3
+vmwrite operand op0:rax operand op01:rcx
+INS vmwrite	found sp ins count:258 >> offset:0x14ff8	va:0xffffa00000014ff8	size:0x3
+vmwrite operand op0:rax operand op01:rcx
+INS vmwrite	found sp ins count:259 >> offset:0x150d7	va:0xffffa000000150d7	size:0x3
+vmwrite operand op0:rax operand op01:rcx
+INS vmwrite	found sp ins count:260 >> offset:0x150eb	va:0xffffa000000150eb	size:0x3
+vmread operands op0:rax op1:0x18 rsp
+INS vmread	found sp ins count:261 >> offset:0x1511b	va:0xffffa0000001511b	size:0x5
+vmread operands op0:rax op1:0x10 rsp
+INS vmread	found sp ins count:262 >> offset:0x1512f	va:0xffffa0000001512f	size:0x5
+vmread operands op0:rax op1:0x8 rsp
+INS vmread	found sp ins count:263 >> offset:0x15143	va:0xffffa00000015143	size:0x5
+vmwrite operand op0:rax operand op01:rcx
+INS vmwrite	found sp ins count:264 >> offset:0x15189	va:0xffffa00000015189	size:0x3
+vmread operands op0:rbx op1:0x18 rsp
+INS vmread	found sp ins count:265 >> offset:0x1519b	va:0xffffa0000001519b	size:0x5
+vmwrite operand op0:rax operand op01:rbx
+INS vmwrite	found sp ins count:266 >> offset:0x151b5	va:0xffffa000000151b5	size:0x3
+vmwrite operand op0:rax operand op01:rcx
+INS vmwrite	found sp ins count:267 >> offset:0x15382	va:0xffffa00000015382	size:0x3
+vmread operands op0:rbx op1:0x8 rsp
+INS vmread	found sp ins count:268 >> offset:0x1539e	va:0xffffa0000001539e	size:0x5
+vmwrite operand op0:rax operand op01:rbx
+INS vmwrite	found sp ins count:269 >> offset:0x153b3	va:0xffffa000000153b3	size:0x3
+INS invept	found sp ins count:270 >> offset:0x16325	va:0xffffa00000016325	size:0xa
+vmread operands op0:r15 op1:0x20 rsp
+INS vmread	found sp ins count:271 >> offset:0x16464	va:0xffffa00000016464	size:0x6
+vmwrite operand op0:rax operand op01:r15
+INS vmwrite	found sp ins count:272 >> offset:0x1647e	va:0xffffa0000001647e	size:0x4
+vmread operands op0:rax op1:0x28 rsp
+INS vmread	found sp ins count:273 >> offset:0x16491	va:0xffffa00000016491	size:0x5
+vmread operands op0:rax op1:0x18 rsp
+INS vmread	found sp ins count:274 >> offset:0x16516	va:0xffffa00000016516	size:0x5
+vmread operands op0:rax op1:0x8 rsp
+INS vmread	found sp ins count:275 >> offset:0x165c5	va:0xffffa000000165c5	size:0x5
+INS seamops	found sp ins count:276 >> offset:0x16786	va:0xffffa00000016786	size:0x4
+vmread operands op0:rax op1:0x38 rsp
+INS vmread	found sp ins count:277 >> offset:0x168a5	va:0xffffa000000168a5	size:0x5
+operand op0:0x50 rsp
+INS vmptrld	found sp ins count:278 >> offset:0x16966	va:0xffffa00000016966	size:0x5
+INS invept	found sp ins count:279 >> offset:0x16a96	va:0xffffa00000016a96	size:0x7
+vmwrite operand op0:rax operand op01:rcx
+INS vmwrite	found sp ins count:280 >> offset:0x16af1	va:0xffffa00000016af1	size:0x3
+vmwrite operand op0:rax operand op01:rcx
+INS vmwrite	found sp ins count:281 >> offset:0x16b0a	va:0xffffa00000016b0a	size:0x3
+vmwrite operand op0:rax operand op01:rcx
+INS vmwrite	found sp ins count:282 >> offset:0x16b23	va:0xffffa00000016b23	size:0x3
+vmwrite operand op0:rax operand op01:rcx
+INS vmwrite	found sp ins count:283 >> offset:0x16b3c	va:0xffffa00000016b3c	size:0x3
+vmwrite operand op0:rax operand op01:rcx
+INS vmwrite	found sp ins count:284 >> offset:0x16b55	va:0xffffa00000016b55	size:0x3
+vmwrite operand op0:rax operand op01:rcx
+INS vmwrite	found sp ins count:285 >> offset:0x16b89	va:0xffffa00000016b89	size:0x3
+INS invvpid	found sp ins count:286 >> offset:0x16bc5	va:0xffffa00000016bc5	size:0x7
+INS invvpid	found sp ins count:287 >> offset:0x16bef	va:0xffffa00000016bef	size:0x7
+INS rdmsr	found sp ins count:288 >> offset:0x16d1b	va:0xffffa00000016d1b	size:0x2
+operand op0:0x110 rsp
+INS vmptrld	found sp ins count:289 >> offset:0x16d96	va:0xffffa00000016d96	size:0x8
+operand op0:0x110 rsp
+INS vmptrld	found sp ins count:290 >> offset:0x1702d	va:0xffffa0000001702d	size:0x8
+INS rdmsr	found sp ins count:291 >> offset:0x170d2	va:0xffffa000000170d2	size:0x2
+INS rdmsr	found sp ins count:292 >> offset:0x17153	va:0xffffa00000017153	size:0x2
+vmread operands op0:rax op1:0x78 rsp
+INS vmread	found sp ins count:293 >> offset:0x17192	va:0xffffa00000017192	size:0x5
+vmread operands op0:rax op1:0x70 rsp
+INS vmread	found sp ins count:294 >> offset:0x171a6	va:0xffffa000000171a6	size:0x5
+vmread operands op0:rax op1:0x68 rsp
+INS vmread	found sp ins count:295 >> offset:0x171ba	va:0xffffa000000171ba	size:0x5
+vmread operands op0:rax op1:0x110 rsp
+INS vmread	found sp ins count:296 >> offset:0x17692	va:0xffffa00000017692	size:0x8
+vmread operands op0:rax op1:0x108 rsp
+INS vmread	found sp ins count:297 >> offset:0x176bb	va:0xffffa000000176bb	size:0x8
+vmread operands op0:rax op1:0x108 rsp
+INS vmread	found sp ins count:298 >> offset:0x176db	va:0xffffa000000176db	size:0x8
+vmread operands op0:rax op1:0x108 rsp
+INS vmread	found sp ins count:299 >> offset:0x176fa	va:0xffffa000000176fa	size:0x8
+vmread operands op0:rax op1:0x100 rsp
+INS vmread	found sp ins count:300 >> offset:0x17719	va:0xffffa00000017719	size:0x8
+vmread operands op0:rax op1:0xf0 rsp
+INS vmread	found sp ins count:301 >> offset:0x17772	va:0xffffa00000017772	size:0x8
+vmread operands op0:rax op1:0xf8 rsp
+INS vmread	found sp ins count:302 >> offset:0x17789	va:0xffffa00000017789	size:0x8
+vmread operands op0:rax op1:0xe0 rsp
+INS vmread	found sp ins count:303 >> offset:0x177db	va:0xffffa000000177db	size:0x8
+vmread operands op0:rax op1:0xe8 rsp
+INS vmread	found sp ins count:304 >> offset:0x177f2	va:0xffffa000000177f2	size:0x8
+vmread operands op0:rax op1:0xd8 rsp
+INS vmread	found sp ins count:305 >> offset:0x1783c	va:0xffffa0000001783c	size:0x8
+vmread operands op0:rax op1:0xd0 rsp
+INS vmread	found sp ins count:306 >> offset:0x17853	va:0xffffa00000017853	size:0x8
+operand op0:0x110 rsp
+INS vmptrld	found sp ins count:307 >> offset:0x178d6	va:0xffffa000000178d6	size:0x8
+INS invept	found sp ins count:308 >> offset:0x17a34	va:0xffffa00000017a34	size:0xb
+INS wrmsr	found sp ins count:309 >> offset:0x17a87	va:0xffffa00000017a87	size:0x2
+vmread operands op0:rbx op1:0x110 rsp
+INS vmread	found sp ins count:310 >> offset:0x17cad	va:0xffffa00000017cad	size:0x8
+vmwrite operand op0:rax operand op01:rbx
+INS vmwrite	found sp ins count:311 >> offset:0x17ccf	va:0xffffa00000017ccf	size:0x3
+vmread operands op0:rbx op1:0x110 rsp
+INS vmread	found sp ins count:312 >> offset:0x17de0	va:0xffffa00000017de0	size:0x8
+vmwrite operand op0:rax operand op01:rbx
+INS vmwrite	found sp ins count:313 >> offset:0x17e02	va:0xffffa00000017e02	size:0x3
+vmread operands op0:rbx op1:0x60 rsp
+INS vmread	found sp ins count:314 >> offset:0x17e1c	va:0xffffa00000017e1c	size:0x5
+vmwrite operand op0:rcx operand op01:rbx
+INS vmwrite	found sp ins count:315 >> offset:0x17e4b	va:0xffffa00000017e4b	size:0x3
+vmwrite operand op0:rax operand op01:rcx
+INS vmwrite	found sp ins count:316 >> offset:0x17ebb	va:0xffffa00000017ebb	size:0x3
+vmread operands op0:rax op1:0x20 r14
+INS vmread	found sp ins count:317 >> offset:0x186eb	va:0xffffa000000186eb	size:0x5
+vmread operands op0:rax op1:0x80 r14
+INS vmread	found sp ins count:318 >> offset:0x186ff	va:0xffffa000000186ff	size:0x8
+vmread operands op0:rax op1:0x88 r14
+INS vmread	found sp ins count:319 >> offset:0x18716	va:0xffffa00000018716	size:0x8
+vmread operands op0:rax op1:0x90 r14
+INS vmread	found sp ins count:320 >> offset:0x1872d	va:0xffffa0000001872d	size:0x8
+vmread operands op0:rax op1:0x10 rsp
+INS vmread	found sp ins count:321 >> offset:0x1874d	va:0xffffa0000001874d	size:0x5
+INS rdmsr	found sp ins count:322 >> offset:0x18bad	va:0xffffa00000018bad	size:0x2
+INS rdmsr	found sp ins count:323 >> offset:0x18bc5	va:0xffffa00000018bc5	size:0x2
+INS xgetbv	found sp ins count:324 >> offset:0x18be5	va:0xffffa00000018be5	size:0x3
+INS rdmsr	found sp ins count:325 >> offset:0x18c35	va:0xffffa00000018c35	size:0x2
+INS rdmsr	found sp ins count:326 >> offset:0x18c75	va:0xffffa00000018c75	size:0x2
+INS rdmsr	found sp ins count:327 >> offset:0x18c97	va:0xffffa00000018c97	size:0x2
+INS rdmsr	found sp ins count:328 >> offset:0x18caf	va:0xffffa00000018caf	size:0x2
+INS rdmsr	found sp ins count:329 >> offset:0x18cc7	va:0xffffa00000018cc7	size:0x2
+INS rdmsr	found sp ins count:330 >> offset:0x18cdf	va:0xffffa00000018cdf	size:0x2
+INS rdmsr	found sp ins count:331 >> offset:0x18cf7	va:0xffffa00000018cf7	size:0x2
+INS rdmsr	found sp ins count:332 >> offset:0x18d0f	va:0xffffa00000018d0f	size:0x2
+INS rdmsr	found sp ins count:333 >> offset:0x18d27	va:0xffffa00000018d27	size:0x2
+INS wrmsr	found sp ins count:334 >> offset:0x18d7a	va:0xffffa00000018d7a	size:0x2
+operand op0:0x28 rsp
+INS vmptrld	found sp ins count:335 >> offset:0x18e31	va:0xffffa00000018e31	size:0x5
+INS wrmsr	found sp ins count:336 >> offset:0x18ece	va:0xffffa00000018ece	size:0x2
+INS wrmsr	found sp ins count:337 >> offset:0x18ef8	va:0xffffa00000018ef8	size:0x2
+INS wrmsr	found sp ins count:338 >> offset:0x18f11	va:0xffffa00000018f11	size:0x2
+INS wrmsr	found sp ins count:339 >> offset:0x18f68	va:0xffffa00000018f68	size:0x2
+INS wrmsr	found sp ins count:340 >> offset:0x18f8a	va:0xffffa00000018f8a	size:0x2
+INS wrmsr	found sp ins count:341 >> offset:0x18fa3	va:0xffffa00000018fa3	size:0x2
+INS wrmsr	found sp ins count:342 >> offset:0x18fbc	va:0xffffa00000018fbc	size:0x2
+INS wrmsr	found sp ins count:343 >> offset:0x18fd5	va:0xffffa00000018fd5	size:0x2
+INS wrmsr	found sp ins count:344 >> offset:0x18fee	va:0xffffa00000018fee	size:0x2
+INS wrmsr	found sp ins count:345 >> offset:0x19007	va:0xffffa00000019007	size:0x2
+INS wrmsr	found sp ins count:346 >> offset:0x19020	va:0xffffa00000019020	size:0x2
+INS wrmsr	found sp ins count:347 >> offset:0x19039	va:0xffffa00000019039	size:0x2
+INS wrmsr	found sp ins count:348 >> offset:0x19052	va:0xffffa00000019052	size:0x2
+INS wrmsr	found sp ins count:349 >> offset:0x1906b	va:0xffffa0000001906b	size:0x2
+INS rdmsr	found sp ins count:350 >> offset:0x19072	va:0xffffa00000019072	size:0x2
+INS wrmsr	found sp ins count:351 >> offset:0x19079	va:0xffffa00000019079	size:0x2
+INS wrmsr	found sp ins count:352 >> offset:0x1909c	va:0xffffa0000001909c	size:0x2
+INS wrmsr	found sp ins count:353 >> offset:0x190b5	va:0xffffa000000190b5	size:0x2
+INS wrmsr	found sp ins count:354 >> offset:0x190ce	va:0xffffa000000190ce	size:0x2
+INS wrmsr	found sp ins count:355 >> offset:0x190e7	va:0xffffa000000190e7	size:0x2
+INS wrmsr	found sp ins count:356 >> offset:0x19100	va:0xffffa00000019100	size:0x2
+INS wrmsr	found sp ins count:357 >> offset:0x1911f	va:0xffffa0000001911f	size:0x2
+INS wrmsr	found sp ins count:358 >> offset:0x19138	va:0xffffa00000019138	size:0x2
+INS wrmsr	found sp ins count:359 >> offset:0x19153	va:0xffffa00000019153	size:0x2
+INS wrmsr	found sp ins count:360 >> offset:0x19170	va:0xffffa00000019170	size:0x2
+vmread operands op0:rbx op1:0x28 rsp
+INS vmread	found sp ins count:361 >> offset:0x19177	va:0xffffa00000019177	size:0x5
+vmwrite operand op0:rax operand op01:rbx
+INS vmwrite	found sp ins count:362 >> offset:0x19195	va:0xffffa00000019195	size:0x3
+vmwrite operand op0:rax operand op01:rcx
+INS vmwrite	found sp ins count:363 >> offset:0x191b3	va:0xffffa000000191b3	size:0x3
+vmwrite operand op0:rax operand op01:rcx
+INS vmwrite	found sp ins count:364 >> offset:0x191d1	va:0xffffa000000191d1	size:0x3
+vmwrite operand op0:rax operand op01:rcx
+INS vmwrite	found sp ins count:365 >> offset:0x191f0	va:0xffffa000000191f0	size:0x3
+vmwrite operand op0:rax operand op01:rcx
+INS vmwrite	found sp ins count:366 >> offset:0x19207	va:0xffffa00000019207	size:0x3
+INS rdmsr	found sp ins count:367 >> offset:0x1924d	va:0xffffa0000001924d	size:0x2
+INS rdmsr	found sp ins count:368 >> offset:0x19276	va:0xffffa00000019276	size:0x2
+INS rdmsr	found sp ins count:369 >> offset:0x192c6	va:0xffffa000000192c6	size:0x2
+INS rdmsr	found sp ins count:370 >> offset:0x192f3	va:0xffffa000000192f3	size:0x2
+INS rdmsr	found sp ins count:371 >> offset:0x1930d	va:0xffffa0000001930d	size:0x2
+INS rdmsr	found sp ins count:372 >> offset:0x19332	va:0xffffa00000019332	size:0x2
+INS rdmsr	found sp ins count:373 >> offset:0x1934a	va:0xffffa0000001934a	size:0x2
+INS rdmsr	found sp ins count:374 >> offset:0x19362	va:0xffffa00000019362	size:0x2
+INS rdmsr	found sp ins count:375 >> offset:0x19388	va:0xffffa00000019388	size:0x2
+INS rdmsr	found sp ins count:376 >> offset:0x193a0	va:0xffffa000000193a0	size:0x2
+INS rdmsr	found sp ins count:377 >> offset:0x193b8	va:0xffffa000000193b8	size:0x2
+INS rdmsr	found sp ins count:378 >> offset:0x193d0	va:0xffffa000000193d0	size:0x2
+INS rdmsr	found sp ins count:379 >> offset:0x193e8	va:0xffffa000000193e8	size:0x2
+vmread operands op0:rax op1:0x80 rsp
+INS vmread	found sp ins count:380 >> offset:0x19517	va:0xffffa00000019517	size:0x8
+vmread operands op0:rax op1:0x78 rsp
+INS vmread	found sp ins count:381 >> offset:0x1952e	va:0xffffa0000001952e	size:0x5
+vmread operands op0:rax op1:0x70 rsp
+INS vmread	found sp ins count:382 >> offset:0x19542	va:0xffffa00000019542	size:0x5
+vmread operands op0:rax op1:0x68 rsp
+INS vmread	found sp ins count:383 >> offset:0x19556	va:0xffffa00000019556	size:0x5
+vmread operands op0:rax op1:0x60 rsp
+INS vmread	found sp ins count:384 >> offset:0x1956a	va:0xffffa0000001956a	size:0x5
+vmread operands op0:rax op1:0x58 rsp
+INS vmread	found sp ins count:385 >> offset:0x1957e	va:0xffffa0000001957e	size:0x5
+vmread operands op0:rax op1:0x50 rsp
+INS vmread	found sp ins count:386 >> offset:0x19592	va:0xffffa00000019592	size:0x5
+vmread operands op0:rax op1:0x90 rsp
+INS vmread	found sp ins count:387 >> offset:0x19774	va:0xffffa00000019774	size:0x8
+vmread operands op0:rax op1:0x90 rsp
+INS vmread	found sp ins count:388 >> offset:0x19793	va:0xffffa00000019793	size:0x8
+vmread operands op0:rax op1:0x90 rsp
+INS vmread	found sp ins count:389 >> offset:0x197b2	va:0xffffa000000197b2	size:0x8
+vmread operands op0:rax op1:0x88 rsp
+INS vmread	found sp ins count:390 >> offset:0x197d1	va:0xffffa000000197d1	size:0x8
+operand op0:0x98 rsp
+INS vmptrld	found sp ins count:391 >> offset:0x198a3	va:0xffffa000000198a3	size:0x8
+vmwrite operand op0:rax operand op01:rcx
+INS vmwrite	found sp ins count:392 >> offset:0x198de	va:0xffffa000000198de	size:0x3
+vmread operands op0:rax op1:0x10 rsp
+INS vmread	found sp ins count:393 >> offset:0x19b3c	va:0xffffa00000019b3c	size:0x5
+vmread operands op0:rax op1:0x8 rsp
+INS vmread	found sp ins count:394 >> offset:0x19b4c	va:0xffffa00000019b4c	size:0x5
+vmread operands op0:rax op1:0x10 rsp
+INS vmread	found sp ins count:395 >> offset:0x19bfe	va:0xffffa00000019bfe	size:0x5
+INS rdmsr	found sp ins count:396 >> offset:0x19cc7	va:0xffffa00000019cc7	size:0x2
+vmread operands op0:rbx op1:0x18 rsp
+INS vmread	found sp ins count:397 >> offset:0x19d20	va:0xffffa00000019d20	size:0x5
+vmwrite operand op0:rax operand op01:rbx
+INS vmwrite	found sp ins count:398 >> offset:0x19d39	va:0xffffa00000019d39	size:0x3
+vmread operands op0:rax op1:0x8 rsp
+INS vmread	found sp ins count:399 >> offset:0x19d8c	va:0xffffa00000019d8c	size:0x5
+vmread operands op0:rax op1:0x18 rsp
+INS vmread	found sp ins count:400 >> offset:0x19da0	va:0xffffa00000019da0	size:0x5
+vmread operands op0:r14 op1:0x18 rsp
+INS vmread	found sp ins count:401 >> offset:0x19e31	va:0xffffa00000019e31	size:0x6
+vmwrite operand op0:rax operand op01:r14
+INS vmwrite	found sp ins count:402 >> offset:0x19e4b	va:0xffffa00000019e4b	size:0x4
+vmread operands op0:rax op1:0x18 rsp
+INS vmread	found sp ins count:403 >> offset:0x19f10	va:0xffffa00000019f10	size:0x5
+vmwrite operand op0:rbx operand op01:rax
+INS vmwrite	found sp ins count:404 >> offset:0x19fc8	va:0xffffa00000019fc8	size:0x3
+vmread operands op0:rax op1:0x10 rsp
+INS vmread	found sp ins count:405 >> offset:0x1a07b	va:0xffffa0000001a07b	size:0x5
+vmread operands op0:rax op1:0x8 rsp
+INS vmread	found sp ins count:406 >> offset:0x1a20b	va:0xffffa0000001a20b	size:0x5
+rdgsbase operand op0:r14 detected
+INS rdgsbase	found sp ins count:407 >> offset:0x1a2f5	va:0xffffa0000001a2f5	size:0x5
+vmread operands op0:rax op1:0x10 rsp
+INS vmread	found sp ins count:408 >> offset:0x1a30d	va:0xffffa0000001a30d	size:0x5
+INS rdmsr	found sp ins count:409 >> offset:0x1a38f	va:0xffffa0000001a38f	size:0x2
+INS wrmsr	found sp ins count:410 >> offset:0x1a3b3	va:0xffffa0000001a3b3	size:0x2
+vmread operands op0:rax op1:0x8 rsp
+INS vmread	found sp ins count:411 >> offset:0x1a3ba	va:0xffffa0000001a3ba	size:0x5
+INS wrmsr	found sp ins count:412 >> offset:0x1a3e8	va:0xffffa0000001a3e8	size:0x2
+INS rdmsr	found sp ins count:413 >> offset:0x1a403	va:0xffffa0000001a403	size:0x2
+INS rdmsr	found sp ins count:414 >> offset:0x1a41e	va:0xffffa0000001a41e	size:0x2
+INS wrmsr	found sp ins count:415 >> offset:0x1a43b	va:0xffffa0000001a43b	size:0x2
+INS wrmsr	found sp ins count:416 >> offset:0x1ae53	va:0xffffa0000001ae53	size:0x2
+rdfsbase operand op0:rcx detected
+INS rdfsbase	found sp ins count:417 >> offset:0x1af0f	va:0xffffa0000001af0f	size:0x5
+INS wrmsr	found sp ins count:418 >> offset:0x1b02d	va:0xffffa0000001b02d	size:0x2
+movdir64b operands op0:0x0(rdi) op1:rsi
+INS movdir64b	found sp ins count:419 >> offset:0x1bb07	va:0xffffa0000001bb07	size:0x5
+vmread operands op0:rax op1:0x1c0 rsp
+INS vmread	found sp ins count:420 >> offset:0x1bcab	va:0xffffa0000001bcab	size:0x8
+INS rdmsr	found sp ins count:421 >> offset:0x1bcc2	va:0xffffa0000001bcc2	size:0x2
+movdir64b operands op0:0x0(rdi) op1:rsi
+INS movdir64b	found sp ins count:422 >> offset:0x1bdbd	va:0xffffa0000001bdbd	size:0x5
+movdir64b operands op0:0x0(rdi) op1:rsi
+INS movdir64b	found sp ins count:423 >> offset:0x1c6a4	va:0xffffa0000001c6a4	size:0x5
+movdir64b operands op0:0x0(rdi) op1:rsi
+INS movdir64b	found sp ins count:424 >> offset:0x1c801	va:0xffffa0000001c801	size:0x5
+movdir64b operands op0:0x0(rdi) op1:rsi
+INS movdir64b	found sp ins count:425 >> offset:0x1d704	va:0xffffa0000001d704	size:0x5
+INS rdmsr	found sp ins count:426 >> offset:0x1d977	va:0xffffa0000001d977	size:0x2
+INS rdmsr	found sp ins count:427 >> offset:0x1d98e	va:0xffffa0000001d98e	size:0x2
+INS rdmsr	found sp ins count:428 >> offset:0x1d9c2	va:0xffffa0000001d9c2	size:0x2
+INS rdmsr	found sp ins count:429 >> offset:0x1da04	va:0xffffa0000001da04	size:0x2
+INS wrmsr	found sp ins count:430 >> offset:0x1da24	va:0xffffa0000001da24	size:0x2
+INS rdmsr	found sp ins count:431 >> offset:0x1da2e	va:0xffffa0000001da2e	size:0x2
+INS rdmsr	found sp ins count:432 >> offset:0x1da52	va:0xffffa0000001da52	size:0x2
+INS rdmsr	found sp ins count:433 >> offset:0x1da88	va:0xffffa0000001da88	size:0x2
+INS rdmsr	found sp ins count:434 >> offset:0x1da9f	va:0xffffa0000001da9f	size:0x2
+INS rdmsr	found sp ins count:435 >> offset:0x1dab6	va:0xffffa0000001dab6	size:0x2
+INS rdmsr	found sp ins count:436 >> offset:0x1dacd	va:0xffffa0000001dacd	size:0x2
+INS rdmsr	found sp ins count:437 >> offset:0x1db44	va:0xffffa0000001db44	size:0x2
+INS rdmsr	found sp ins count:438 >> offset:0x1db91	va:0xffffa0000001db91	size:0x2
+INS rdmsr	found sp ins count:439 >> offset:0x1dba8	va:0xffffa0000001dba8	size:0x2
+INS wrmsr	found sp ins count:440 >> offset:0x1dc7c	va:0xffffa0000001dc7c	size:0x2
+INS seamops	found sp ins count:441 >> offset:0x1dc99	va:0xffffa0000001dc99	size:0x4
+INS seamops	found sp ins count:442 >> offset:0x1dd3e	va:0xffffa0000001dd3e	size:0x4
+rdrand operand op0:rax detected
+INS rdrand	found sp ins count:443 >> offset:0x1ddcd	va:0xffffa0000001ddcd	size:0x4
+vmwrite operand op0:rbx operand op01:rax
+INS vmwrite	found sp ins count:444 >> offset:0x1de37	va:0xffffa0000001de37	size:0x3
+INS rdmsr	found sp ins count:445 >> offset:0x1dfad	va:0xffffa0000001dfad	size:0x2
+INS rdmsr	found sp ins count:446 >> offset:0x1dfd4	va:0xffffa0000001dfd4	size:0x2
+vmread operands op0:rax op1:0xb0 rsp
+INS vmread	found sp ins count:447 >> offset:0x1e9fe	va:0xffffa0000001e9fe	size:0x8
+INS rdmsr	found sp ins count:448 >> offset:0x1ea15	va:0xffffa0000001ea15	size:0x2
+vmread operands op0:rax op1:0xb0 rsp
+INS vmread	found sp ins count:449 >> offset:0x1ece5	va:0xffffa0000001ece5	size:0x8
+INS rdmsr	found sp ins count:450 >> offset:0x1ecfc	va:0xffffa0000001ecfc	size:0x2
+operand op0:0x68 rsp
+INS vmptrld	found sp ins count:451 >> offset:0x20395	va:0xffffa00000020395	size:0x5
+INS rdmsr	found sp ins count:452 >> offset:0x204ed	va:0xffffa000000204ed	size:0x2
+operand op0:0x68 rsp
+INS vmptrld	found sp ins count:453 >> offset:0x20625	va:0xffffa00000020625	size:0x5
+operand op0:0x68 rsp
+INS vmptrld	found sp ins count:454 >> offset:0x20671	va:0xffffa00000020671	size:0x5
+INS invept	found sp ins count:455 >> offset:0x20ada	va:0xffffa00000020ada	size:0x6
+INS seamops	found sp ins count:456 >> offset:0x20aec	va:0xffffa00000020aec	size:0x4
+vmwrite operand op0:rax operand op01:rcx
+INS vmwrite	found sp ins count:457 >> offset:0x20b5f	va:0xffffa00000020b5f	size:0x3
+operand op0:0xa8 rsp
+INS vmptrld	found sp ins count:458 >> offset:0x229d9	va:0xffffa000000229d9	size:0x8
+INS wrmsr	found sp ins count:459 >> offset:0x2331b	va:0xffffa0000002331b	size:0x2
+vmread operands op0:rsi op1:0x18 rsp
+INS vmread	found sp ins count:460 >> offset:0x2332d	va:0xffffa0000002332d	size:0x5
+INS rdmsr	found sp ins count:461 >> offset:0x2333d	va:0xffffa0000002333d	size:0x2
+vmread operands op0:rax op1:0x180 rsp
+INS vmread	found sp ins count:462 >> offset:0x24237	va:0xffffa00000024237	size:0x8
+INS rdmsr	found sp ins count:463 >> offset:0x2424e	va:0xffffa0000002424e	size:0x2
+movdir64b operands op0:0x0(rdi) op1:rsi
+INS movdir64b	found sp ins count:464 >> offset:0x24497	va:0xffffa00000024497	size:0x5
+vmread operands op0:rax op1:0x180 rsp
+INS vmread	found sp ins count:465 >> offset:0x244d7	va:0xffffa000000244d7	size:0x8
+INS rdmsr	found sp ins count:466 >> offset:0x244ee	va:0xffffa000000244ee	size:0x2
+movdir64b operands op0:0x0(rdi) op1:rsi
+INS movdir64b	found sp ins count:467 >> offset:0x2492f	va:0xffffa0000002492f	size:0x5
+movdir64b operands op0:0x0(rdi) op1:rsi
+INS movdir64b	found sp ins count:468 >> offset:0x24af4	va:0xffffa00000024af4	size:0x5
+INS rdmsr	found sp ins count:469 >> offset:0x25bc4	va:0xffffa00000025bc4	size:0x2
+INS rdmsr	found sp ins count:470 >> offset:0x25f4e	va:0xffffa00000025f4e	size:0x2
+INS invept	found sp ins count:471 >> offset:0x268b0	va:0xffffa000000268b0	size:0x7
+movdir64b operands op0:0x0(rdi) op1:rsi
+INS movdir64b	found sp ins count:472 >> offset:0x26b64	va:0xffffa00000026b64	size:0x5
+movdir64b operands op0:0x0(rdi) op1:rsi
+INS movdir64b	found sp ins count:473 >> offset:0x26be1	va:0xffffa00000026be1	size:0x5
+movdir64b operands op0:0x0(rdi) op1:rsi
+INS movdir64b	found sp ins count:474 >> offset:0x26c69	va:0xffffa00000026c69	size:0x5
+vmread operands op0:rax op1:0x8 rsp
+INS vmread	found sp ins count:475 >> offset:0x28bae	va:0xffffa00000028bae	size:0x5
+vmread operands op0:r14 op1:0x0 rsp
+INS vmread	found sp ins count:476 >> offset:0x28c07	va:0xffffa00000028c07	size:0x5
+vmwrite operand op0:rax operand op01:r14
+INS vmwrite	found sp ins count:477 >> offset:0x28c32	va:0xffffa00000028c32	size:0x4
+INS wrmsr	found sp ins count:478 >> offset:0x28dfa	va:0xffffa00000028dfa	size:0x2
+operand op0:0x18 rsp
+INS vmptrld	found sp ins count:479 >> offset:0x28edb	va:0xffffa00000028edb	size:0x5
+vmread operands op0:rax op1:0x10 rsp
+INS vmread	found sp ins count:480 >> offset:0x28efa	va:0xffffa00000028efa	size:0x5
+vmwrite operand op0:rax operand op01:rcx
+INS vmwrite	found sp ins count:481 >> offset:0x28f2b	va:0xffffa00000028f2b	size:0x3
+operand op0:0x18 rsp
+INS vmptrld	found sp ins count:482 >> offset:0x28f85	va:0xffffa00000028f85	size:0x5
+vmread operands op0:rax op1:0x20 rsp
+INS vmread	found sp ins count:483 >> offset:0x29070	va:0xffffa00000029070	size:0x5
+vmread operands op0:rax op1:0x18 rsp
+INS vmread	found sp ins count:484 >> offset:0x29093	va:0xffffa00000029093	size:0x5
+vmread operands op0:rax op1:0x28 rsp
+INS vmread	found sp ins count:485 >> offset:0x291bc	va:0xffffa000000291bc	size:0x5
+vmread operands op0:rax op1:0x168 rsp
+INS vmread	found sp ins count:486 >> offset:0x2a741	va:0xffffa0000002a741	size:0x8
+INS rdmsr	found sp ins count:487 >> offset:0x2a758	va:0xffffa0000002a758	size:0x2
+vmread operands op0:rax op1:0xa8 rsp
+INS vmread	found sp ins count:488 >> offset:0x2c75f	va:0xffffa0000002c75f	size:0x8
+INS rdmsr	found sp ins count:489 >> offset:0x2c772	va:0xffffa0000002c772	size:0x2
+vmread operands op0:rax op1:0x120 rsp
+INS vmread	found sp ins count:490 >> offset:0x2e030	va:0xffffa0000002e030	size:0x8
+INS rdmsr	found sp ins count:491 >> offset:0x2e047	va:0xffffa0000002e047	size:0x2
+INS rdmsr	found sp ins count:492 >> offset:0x2ed6c	va:0xffffa0000002ed6c	size:0x2
+vmread operands op0:rax op1:0xc8 rsp
+INS vmread	found sp ins count:493 >> offset:0x2f644	va:0xffffa0000002f644	size:0x8
+INS rdmsr	found sp ins count:494 >> offset:0x2f657	va:0xffffa0000002f657	size:0x2
+vmread operands op0:rax op1:0x98 rsp
+INS vmread	found sp ins count:495 >> offset:0x2fe75	va:0xffffa0000002fe75	size:0x8
+INS rdmsr	found sp ins count:496 >> offset:0x2fe8c	va:0xffffa0000002fe8c	size:0x2
+vmread operands op0:rax op1:0xd8 rsp
+INS vmread	found sp ins count:497 >> offset:0x30d63	va:0xffffa00000030d63	size:0x8
+INS rdmsr	found sp ins count:498 >> offset:0x30d76	va:0xffffa00000030d76	size:0x2
+vmread operands op0:rax op1:0x98 rsp
+INS vmread	found sp ins count:499 >> offset:0x31335	va:0xffffa00000031335	size:0x8
+INS rdmsr	found sp ins count:500 >> offset:0x3134c	va:0xffffa0000003134c	size:0x2
+movdir64b operands op0:0x0(rdi) op1:rsi
+INS movdir64b	found sp ins count:501 >> offset:0x31914	va:0xffffa00000031914	size:0x5
+operand op0:0xf0 rsp
+INS vmptrld	found sp ins count:502 >> offset:0x31c00	va:0xffffa00000031c00	size:0x8
+operand op0:0xd8 rsp
+INS vmptrld	found sp ins count:503 >> offset:0x324b9	va:0xffffa000000324b9	size:0x8
+vmread operands op0:rax op1:0xd8 rsp
+INS vmread	found sp ins count:504 >> offset:0x32527	va:0xffffa00000032527	size:0x8
+INS rdmsr	found sp ins count:505 >> offset:0x3253a	va:0xffffa0000003253a	size:0x2
+operand op0:0x100 rsp
+INS vmptrld	found sp ins count:506 >> offset:0x32903	va:0xffffa00000032903	size:0x8
+vmread operands op0:rax op1:0xb8 rsp
+INS vmread	found sp ins count:507 >> offset:0x336a4	va:0xffffa000000336a4	size:0x8
+INS rdmsr	found sp ins count:508 >> offset:0x336b7	va:0xffffa000000336b7	size:0x2
+operand op0:0xd8 rsp
+INS vmptrld	found sp ins count:509 >> offset:0x33c11	va:0xffffa00000033c11	size:0x8
+operand op0:0xd8 rsp
+INS vmptrld	found sp ins count:510 >> offset:0x34410	va:0xffffa00000034410	size:0x8
+vmread operands op0:rax op1:0xd8 rsp
+INS vmread	found sp ins count:511 >> offset:0x3449d	va:0xffffa0000003449d	size:0x8
+INS rdmsr	found sp ins count:512 >> offset:0x344b0	va:0xffffa000000344b0	size:0x2
+INS vmresume	found sp ins count:513 >> offset:0x3566f	va:0xffffa0000003566f	size:0x3
+INS vmlaunch	found sp ins count:514 >> offset:0x3567c	va:0xffffa0000003567c	size:0x3
+INS seamret	found sp ins count:515 >> offset:0x357dc	va:0xffffa000000357dc	size:0x4
+INS cpuid	found sp ins count:516 >> offset:0x41d98	va:0xffffa00000041d98	size:0x2
+INS cpuid	found sp ins count:517 >> offset:0x41dca	va:0xffffa00000041dca	size:0x2
+INS cpuid	found sp ins count:518 >> offset:0x41e0a	va:0xffffa00000041e0a	size:0x2
+INS cpuid	found sp ins count:519 >> offset:0x41ea8	va:0xffffa00000041ea8	size:0x2
+INS cpuid	found sp ins count:520 >> offset:0x41ed3	va:0xffffa00000041ed3	size:0x2
+INS cpuid	found sp ins count:521 >> offset:0x41ee8	va:0xffffa00000041ee8	size:0x2
+INS cpuid	found sp ins count:522 >> offset:0x41f12	va:0xffffa00000041f12	size:0x2
+INS cpuid	found sp ins count:523 >> offset:0x41f34	va:0xffffa00000041f34	size:0x2
+
+
+printing spcial instruction, done
+
+
+
+//comments for AEC 
+Each line starts with "INS " prints the extracted special instructions.
+
+p-seam-loader's special instructions : see the first 37 lines starting with "INS " 
+tdx-module's special instructions : see the remaining 526 lines starting with "INS "

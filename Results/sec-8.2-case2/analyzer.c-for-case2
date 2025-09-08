@@ -1,0 +1,63 @@
+#include <linux/kvm.h>
+#include <stdlib.h>
+#include <string.h>
+
+#include "analyzer.h"
+#include "vmm_agent.h"
+#include "state.h"
+#include "defs.h"
+
+extern struct comArea *com;
+
+void analyzer_function(){
+
+    struct kvm_regs regs;
+    ulong ret, page_pa;
+
+	init_tdx_module();
+	create_td(TD_0, LP_0, TD_GPA_RANGE, TD_INITIAL_PAGE_COUNT);
+	create_td(TD_1, LP_1, TD_GPA_RANGE, TD_INITIAL_PAGE_COUNT);
+
+	com->td_owner_for_next_tdxcall = TD_0;
+    ulong gpa = 1UL << 48;
+    ulong sept_pa;
+    sept_pa = reserve_and_get_tdmr_next_avl_pa(TD_0, com->td[TD_0].hkid, TD_0);
+    tdh_mem_sept_add(LP_2, gpa, SEPT_LVL_4, com->td[TD_0].tdr, sept_pa);
+    sept_pa = reserve_and_get_tdmr_next_avl_pa(TD_0, com->td[TD_0].hkid, TD_0);
+    tdh_mem_sept_add(LP_2, gpa, SEPT_LVL_3, com->td[TD_0].tdr, sept_pa);
+    sept_pa = reserve_and_get_tdmr_next_avl_pa(TD_0, com->td[TD_0].hkid, TD_0);
+    tdh_mem_sept_add(LP_2, gpa, SEPT_LVL_2, com->td[TD_0].tdr, sept_pa);
+    sept_pa = reserve_and_get_tdmr_next_avl_pa(TD_0, com->td[TD_0].hkid, TD_0);
+    tdh_mem_sept_add(LP_2, gpa, SEPT_LVL_1, com->td[TD_0].tdr, sept_pa);
+
+    run_td(TD_0, com->td[TD_0].vcpu_associated_lp);
+	com->sreq.td_num_on_lp[com->td[TD_0].vcpu_associated_lp] = TD_0;
+	com->sreq.td_running = 1;
+	run_td(TD_1, com->td[TD_1].vcpu_associated_lp);
+	com->sreq.td_num_on_lp[com->td[TD_1].vcpu_associated_lp] = TD_1;
+
+	memset((void *)&regs, 0, sizeof(struct kvm_regs));
+	com->td_owner_for_next_tdxcall = TD_0;
+	regs.rcx = gpa;
+	regs.rdx = com->td[TD_0].tdr;
+	regs.r8 = reserve_and_get_tdmr_next_avl_pa(TD_0, com->td[TD_0].hkid, TD_0);
+	regs.rax = TDH_MEM_PAGE_AUG;
+	do_seamcall(LP_2, &regs);
+
+	ulong dr_adr = (LINEAR_BASE_CODE_REGION | TDX_MODULE_ADR_MASK) + 0x9540;
+	set_debug_bp(dr_adr, DEBUG_DR0, DB_CONDITION_INS_EXEC, DB_LENGTH_1_BYTE);
+	fill_khole_refs(LP_0);
+	com->sreq.khole_state_seam_va = com->lp_khole_state[LP_0].khole_state_seam_va;
+
+	com->td_owner_for_next_tdxcall = TD_0;
+	com->sreq.td_owner_for_next_tdxcall = TD_0;
+    page_pa = reserve_and_get_tdmr_next_avl_pa(TD_0, com->td[TD_0].hkid, TD_0);
+    ret = tdh_mem_sept_add(LP_2, (1UL << 48), SEPT_LVL_4, com->td[TD_0].tdr, page_pa);
+    memset((void *)&regs, 0, sizeof(struct kvm_regs));
+    com->td_owner_for_next_tdxcall = TD_0;
+    regs.rax = TDG_MEM_PAGE_ATTR_RD;
+    regs.rcx = gpa;;
+    do_tdcall(LP_0, &regs);
+
+    exit(0);
+}

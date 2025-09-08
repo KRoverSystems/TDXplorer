@@ -1,0 +1,14 @@
+
+field id : -1
+2025-06-28T10:41:58.300808+00:00 tdx-guest kernel: kernel_agent: TD_AGENT------------------------
+2025-06-28T10:41:58.300878+00:00 tdx-guest kernel: kernel_agent: TDG_SYS_RD-------------------------
+2025-06-28T10:41:58.300884+00:00 tdx-guest kernel: kernel_agent: TDCALL RET: c0b00000000
+2025-06-28T10:41:58.300886+00:00 tdx-guest kernel: kernel_agent: RDX: 800000200000000
+2025-06-28T10:41:58.300889+00:00 tdx-guest kernel: kernel_agent: R8: contents if successful 0
+
+field id : 800000200000000
+2025-06-28T10:45:22.427721+00:00 tdx-guest kernel: kernel_agent: TD_AGENT------------------------
+2025-06-28T10:45:22.427782+00:00 tdx-guest kernel: kernel_agent: TDG_SYS_RD-------------------------
+2025-06-28T10:45:22.427786+00:00 tdx-guest kernel: kernel_agent: TDCALL RET: 0x0
+2025-06-28T10:45:22.427788+00:00 tdx-guest kernel: kernel_agent: RDX: 0x800000100000003
+2025-06-28T10:45:22.427790+00:00 tdx-guest kernel: kernel_agent: R8: contents if successful 0x8086

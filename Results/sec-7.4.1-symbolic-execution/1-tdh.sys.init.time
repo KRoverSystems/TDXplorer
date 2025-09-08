@@ -1,0 +1,38 @@
+starting Monitor
+doing sanity checks
+size of struct comArea: 0x5bbdd4
+cpuid movdir64b support: 0
+cpuid serialize support: 0
+cpuid xgetbv support: 0
+sanity checks done
+seam manager's va for seam env pa: 0x7fffe57cb000
+doing 64-bit specifics ...
+aft setup GDT base:ffff900000000000 lim:0x2f
+preliminary seam environment prep done
+loading p-seamloder
+load p-seamldr successful ...
+fusing tdx sw PDPT with agent PML4, pml4 idx: 96
+fusing tdx sw PDPT with agent PML4, pml4 idx: 352
+
+at beginAnalysis
+rip:0xffffa0000003568d
+TDH_SYS_INIT
+setExecProfileSinglePath
+SE: at start of processFuncyion
+EvalCondition
+Symbolic branch, resolved to be : 1
+----------bExecute: 1
+Equal(And(rcx,rcx))
+
+s Ending seeded SE path  -----------------------------------------
+Current path constraint: 
+Equal(And(rcx,rcx))
+t0:22380554979192 t1:22380624498690 total time:69519498
+ending analsis at interpreter's analyzer function
+
+
+//comments for AEC 
+Total time in cpu cycles: 69519498
+cpu clock : 2 GHz 
+total time in ms: 34.75 ms 
+time per ins: 0.026 ms 

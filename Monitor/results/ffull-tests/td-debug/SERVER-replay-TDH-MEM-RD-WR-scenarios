@@ -1,0 +1,174 @@
+Issue TDH.MEM.RD while the TD is non debug
+server log
+2025-06-18T17:23:00.714655+08:00 DXH-104-059 kernel: kernel_agent: TD_FINALIZED
+2025-06-18T17:23:00.717650+08:00 DXH-104-059 kernel: kernel_agent: scall 12 RET: 0xc000060500000000
+2025-06-18T17:23:00.717675+08:00 DXH-104-059 kernel: kernel_agent: return rcx: 0x0
+2025-06-18T17:23:00.717678+08:00 DXH-104-059 kernel: kernel_agent: return rdx: 0x0
+2025-06-18T17:23:00.717680+08:00 DXH-104-059 kernel: kernel_agent: return r8: 0x0
+
+errror code: 0xc000060500000000  TDX_TD_NON_DEBUG
+
+Now create the TD again with debug on
+
+Then run TDH.MEM.WR, TDH.MEM.WR followed by TDH.MEM.RD
+
+server log
+2025-06-18T21:26:51.064343+08:00 DXH-104-059 kernel: kernel_agent: hooked  tdx_vm_ioctl() 
+2025-06-18T21:26:51.064370+08:00 DXH-104-059 kernel: kernel_agent: ioctl: KVM_TDX_CAPABILITIES
+2025-06-18T21:26:51.064373+08:00 DXH-104-059 kernel: 
+2025-06-18T21:26:51.064375+08:00 DXH-104-059 kernel: kernel_agent: hooked  tdx_vm_ioctl() 
+2025-06-18T21:26:51.064377+08:00 DXH-104-059 kernel: kernel_agent: ioctl: KVM_TDX_CAPABILITIES
+2025-06-18T21:26:51.064379+08:00 DXH-104-059 kernel: 
+2025-06-18T21:26:51.064380+08:00 DXH-104-059 kernel: kernel_agent: hooked  tdx_vm_ioctl() 
+2025-06-18T21:26:51.064381+08:00 DXH-104-059 kernel: kernel_agent: ioctl: KVM_TDX_CAPABILITIES
+2025-06-18T21:26:51.064383+08:00 DXH-104-059 kernel: 
+2025-06-18T21:26:51.071335+08:00 DXH-104-059 kernel: kernel_agent: hooked  tdx_vm_ioctl() 
+2025-06-18T21:26:51.071360+08:00 DXH-104-059 kernel: kernel_agent: ioctl: KVM_TDX_INIT_VM
+2025-06-18T21:26:51.071363+08:00 DXH-104-059 kernel: 
+2025-06-18T21:26:51.071365+08:00 DXH-104-059 kernel: kernel_agent: td_params struct pa: 1964ce400
+2025-06-18T21:26:51.071367+08:00 DXH-104-059 kernel: kernel_agent: RDX: TD_PARAMS_STRUCT pa: 0x1964ce400
+2025-06-18T21:26:51.071368+08:00 DXH-104-059 kernel: kernel_agent: TD_PARAMS_STRUCT va: 0xffff90edd64ce400
+2025-06-18T21:26:51.071369+08:00 DXH-104-059 kernel: kernel_agent: TD_PARAMS.attributes bfr: 10000000
+2025-06-18T21:26:51.071371+08:00 DXH-104-059 kernel: kernel_agent: TD_PARAMS.attributes aft: 10000001
+2025-06-18T21:26:51.071373+08:00 DXH-104-059 kernel: kernel_agent: td debug enabled in td params of TDH.MNG.INIT
+2025-06-18T21:26:51.211358+08:00 DXH-104-059 kernel: kernel_agent: hooked  tdx_vcpu_ioctl() 
+2025-06-18T21:26:51.211385+08:00 DXH-104-059 kernel: kernel_agent: ioctl: KVM_TDX_INIT_VCPU
+2025-06-18T21:26:51.211388+08:00 DXH-104-059 kernel: 
+2025-06-18T21:26:51.211390+08:00 DXH-104-059 kernel: kernel_agent: hooked  tdx_vcpu_ioctl() 
+2025-06-18T21:26:51.211391+08:00 DXH-104-059 kernel: kernel_agent: ioctl: KVM_TDX_INIT_VCPU
+2025-06-18T21:26:51.211393+08:00 DXH-104-059 kernel: 
+2025-06-18T21:26:51.211394+08:00 DXH-104-059 kernel: kernel_agent: hooked  tdx_vcpu_ioctl() 
+2025-06-18T21:26:51.211396+08:00 DXH-104-059 kernel: kernel_agent: ioctl: KVM_TDX_INIT_VCPU
+2025-06-18T21:26:51.211397+08:00 DXH-104-059 kernel: 
+2025-06-18T21:26:51.211399+08:00 DXH-104-059 kernel: kernel_agent: hooked  tdx_vcpu_ioctl() 
+2025-06-18T21:26:51.211401+08:00 DXH-104-059 kernel: kernel_agent: ioctl: KVM_TDX_INIT_VCPU
+2025-06-18T21:26:51.211402+08:00 DXH-104-059 kernel: 
+2025-06-18T21:26:51.211415+08:00 DXH-104-059 kernel: kernel_agent: hooked  tdx_vcpu_ioctl() 
+2025-06-18T21:26:51.211416+08:00 DXH-104-059 kernel: kernel_agent: ioctl: KVM_TDX_INIT_VCPU
+2025-06-18T21:26:51.211417+08:00 DXH-104-059 kernel: 
+2025-06-18T21:26:51.212369+08:00 DXH-104-059 kernel: kernel_agent: hooked  tdx_vcpu_ioctl() 
+2025-06-18T21:26:51.212394+08:00 DXH-104-059 kernel: kernel_agent: ioctl: KVM_TDX_INIT_VCPU
+2025-06-18T21:26:51.212397+08:00 DXH-104-059 kernel: 
+2025-06-18T21:26:51.212399+08:00 DXH-104-059 kernel: kernel_agent: hooked  tdx_vcpu_ioctl() 
+2025-06-18T21:26:51.212401+08:00 DXH-104-059 kernel: kernel_agent: ioctl: KVM_TDX_INIT_VCPU
+2025-06-18T21:26:51.212402+08:00 DXH-104-059 kernel: 
+2025-06-18T21:26:51.212404+08:00 DXH-104-059 kernel: kernel_agent: hooked  tdx_vcpu_ioctl() 
+2025-06-18T21:26:51.212405+08:00 DXH-104-059 kernel: kernel_agent: ioctl: KVM_TDX_INIT_VCPU
+2025-06-18T21:26:51.212406+08:00 DXH-104-059 kernel: 
+2025-06-18T21:26:51.212408+08:00 DXH-104-059 kernel: kernel_agent: hooked  tdx_vcpu_ioctl() 
+2025-06-18T21:26:51.212410+08:00 DXH-104-059 kernel: kernel_agent: ioctl: KVM_TDX_INIT_VCPU
+2025-06-18T21:26:51.212411+08:00 DXH-104-059 kernel: 
+2025-06-18T21:26:51.212423+08:00 DXH-104-059 kernel: kernel_agent: hooked  tdx_vcpu_ioctl() 
+2025-06-18T21:26:51.212425+08:00 DXH-104-059 kernel: kernel_agent: ioctl: KVM_TDX_INIT_VCPU
+2025-06-18T21:26:51.212426+08:00 DXH-104-059 kernel: 
+2025-06-18T21:26:51.213342+08:00 DXH-104-059 kernel: kernel_agent: hooked  tdx_vcpu_ioctl() 
+2025-06-18T21:26:51.213367+08:00 DXH-104-059 kernel: kernel_agent: ioctl: KVM_TDX_INIT_VCPU
+2025-06-18T21:26:51.213370+08:00 DXH-104-059 kernel: 
+2025-06-18T21:26:51.213372+08:00 DXH-104-059 kernel: kernel_agent: hooked  tdx_vcpu_ioctl() 
+2025-06-18T21:26:51.213374+08:00 DXH-104-059 kernel: kernel_agent: ioctl: KVM_TDX_INIT_VCPU
+2025-06-18T21:26:51.213375+08:00 DXH-104-059 kernel: 
+2025-06-18T21:26:51.213377+08:00 DXH-104-059 kernel: kernel_agent: hooked  tdx_vcpu_ioctl() 
+2025-06-18T21:26:51.213378+08:00 DXH-104-059 kernel: kernel_agent: ioctl: KVM_TDX_INIT_VCPU
+2025-06-18T21:26:51.213380+08:00 DXH-104-059 kernel: 
+2025-06-18T21:26:51.213382+08:00 DXH-104-059 kernel: kernel_agent: hooked  tdx_vcpu_ioctl() 
+2025-06-18T21:26:51.213384+08:00 DXH-104-059 kernel: kernel_agent: ioctl: KVM_TDX_INIT_VCPU
+2025-06-18T21:26:51.213385+08:00 DXH-104-059 kernel: 
+2025-06-18T21:26:51.213397+08:00 DXH-104-059 kernel: kernel_agent: hooked  tdx_vcpu_ioctl() 
+2025-06-18T21:26:51.213398+08:00 DXH-104-059 kernel: kernel_agent: ioctl: KVM_TDX_INIT_VCPU
+2025-06-18T21:26:51.213400+08:00 DXH-104-059 kernel: 
+2025-06-18T21:26:51.214356+08:00 DXH-104-059 kernel: kernel_agent: hooked  tdx_vcpu_ioctl() 
+2025-06-18T21:26:51.214381+08:00 DXH-104-059 kernel: kernel_agent: ioctl: KVM_TDX_INIT_VCPU
+2025-06-18T21:26:51.214384+08:00 DXH-104-059 kernel: 
+2025-06-18T21:26:51.214395+08:00 DXH-104-059 kernel: kernel_agent: tdr_pa: 13b4e5000
+2025-06-18T21:26:51.226326+08:00 DXH-104-059 kernel: kernel_agent: hooked  tdx_vm_ioctl() 
+2025-06-18T21:26:51.226351+08:00 DXH-104-059 kernel: kernel_agent: ioctl: KVM_TDX_EXTEND_MEMORY
+2025-06-18T21:26:51.226354+08:00 DXH-104-059 kernel: 
+2025-06-18T21:26:51.315326+08:00 DXH-104-059 kernel: kernel_agent: hooked  tdx_vm_ioctl() 
+2025-06-18T21:26:51.315352+08:00 DXH-104-059 kernel: kernel_agent: ioctl: KVM_TDX_FINALIZE_VM
+2025-06-18T21:26:51.315355+08:00 DXH-104-059 kernel: 
+2025-06-18T21:26:51.315357+08:00 DXH-104-059 kernel: kernel_agent: TD_FINALIZED
+2025-06-18T21:26:51.321338+08:00 DXH-104-059 kernel: kernel_agent: MEM_WR addr: ffc00000
+2025-06-18T21:26:51.321363+08:00 DXH-104-059 kernel: kernel_agent: MEM_WR val: beecbeec
+2025-06-18T21:26:51.321366+08:00 DXH-104-059 kernel: kernel_agent: scall TDH.MEM.WR 1 RET: 0x0
+2025-06-18T21:26:51.321368+08:00 DXH-104-059 kernel: kernel_agent: return rcx: 0x0
+2025-06-18T21:26:51.321371+08:00 DXH-104-059 kernel: kernel_agent: return rdx: 0x0
+2025-06-18T21:26:51.321372+08:00 DXH-104-059 kernel: kernel_agent: return r8: 0x0
+2025-06-18T21:26:51.321374+08:00 DXH-104-059 kernel: 
+2025-06-18T21:26:51.322372+08:00 DXH-104-059 kernel: kernel_agent: MEM_WR addr: ffc00000
+2025-06-18T21:26:51.322398+08:00 DXH-104-059 kernel: kernel_agent: MEM_WR val: beedbeed
+2025-06-18T21:26:51.322400+08:00 DXH-104-059 kernel: kernel_agent: scall TDH.MEM.WR 2 RET: 0x0
+2025-06-18T21:26:51.322402+08:00 DXH-104-059 kernel: kernel_agent: return rcx: 0x0
+2025-06-18T21:26:51.322405+08:00 DXH-104-059 kernel: kernel_agent: return rdx: 0x0
+2025-06-18T21:26:51.322407+08:00 DXH-104-059 kernel: kernel_agent: return r8: 0xbeecbeec
+2025-06-18T21:26:51.322408+08:00 DXH-104-059 kernel: 
+2025-06-18T21:26:51.323385+08:00 DXH-104-059 kernel: kernel_agent: MEM_RD addr: ffc00000
+2025-06-18T21:26:51.323410+08:00 DXH-104-059 kernel: kernel_agent: scall TDH.MEM.RD 2 RET: 0x0
+2025-06-18T21:26:51.323412+08:00 DXH-104-059 kernel: kernel_agent: return rcx: 0x0
+2025-06-18T21:26:51.323414+08:00 DXH-104-059 kernel: kernel_agent: return rdx: 0x0
+2025-06-18T21:26:51.323417+08:00 DXH-104-059 kernel: kernel_agent: return r8: 0xbeedbeed
+2025-06-18T21:26:51.323419+08:00 DXH-104-059 kernel: 
+
+
+
+######### in TDXplorer, LOG
+
+...
+...
+########## VMLAUNCH TD 1 launched ----------------------------------
+lp khole tot ref count: 2
+lp: 0 khole idx: 7 ref count:1 hkid+pa with active mapping: 8000042003000
+lp: 0 khole idx: 18 ref count:1 hkid+pa with active mapping: 8000042003000
+lp: 0 khole idx: 94 ref count:0 hkid+pa with active mapping: 8000040000000
+lp: 0 khole idx: 95 ref count:0 hkid+pa with active mapping: 8400040001000
+lp: 0 khole idx: 96 ref count:0 hkid+pa with active mapping: 8400040002000
+lp: 0 khole idx: 97 ref count:0 hkid+pa with active mapping: 8400040003000
+lp: 0 khole idx: 98 ref count:0 hkid+pa with active mapping: 8400040004000
+lp: 0 khole idx: 99 ref count:0 hkid+pa with active mapping: 8400040005000
+lp: 0 khole idx: 100 ref count:0 hkid+pa with active mapping: 8400040006000
+lp: 0 khole idx: 104 ref count:0 hkid+pa with active mapping: 8400040007000
+lp: 0 khole idx: 105 ref count:0 hkid+pa with active mapping: 8400040008000
+lp: 0 khole idx: 106 ref count:0 hkid+pa with active mapping: 8400040009000
+lp: 0 khole idx: 107 ref count:0 hkid+pa with active mapping: 840004000a000
+lp: 0 khole idx: 108 ref count:0 hkid+pa with active mapping: 840004000b000
+lp: 0 khole idx: 109 ref count:0 hkid+pa with active mapping: 840004000c000
+lp khole tot ref count: 2
+lp: 1 khole idx: 2 ref count:1 hkid+pa with active mapping: 8000042003000
+lp: 1 khole idx: 13 ref count:1 hkid+pa with active mapping: 8000042003000
+lp: 1 khole idx: 94 ref count:0 hkid+pa with active mapping: 800004001e000
+lp: 1 khole idx: 95 ref count:0 hkid+pa with active mapping: 880004001f000
+lp: 1 khole idx: 96 ref count:0 hkid+pa with active mapping: 8800040020000
+lp: 1 khole idx: 97 ref count:0 hkid+pa with active mapping: 8800040021000
+lp: 1 khole idx: 98 ref count:0 hkid+pa with active mapping: 8800040022000
+lp: 1 khole idx: 99 ref count:0 hkid+pa with active mapping: 8800040023000
+lp: 1 khole idx: 100 ref count:0 hkid+pa with active mapping: 8800040024000
+lp: 1 khole idx: 104 ref count:0 hkid+pa with active mapping: 8800040025000
+lp: 1 khole idx: 105 ref count:0 hkid+pa with active mapping: 8800040026000
+lp: 1 khole idx: 106 ref count:0 hkid+pa with active mapping: 8800040027000
+lp: 1 khole idx: 107 ref count:0 hkid+pa with active mapping: 8800040028000
+lp: 1 khole idx: 108 ref count:0 hkid+pa with active mapping: 8800040029000
+lp: 1 khole idx: 109 ref count:0 hkid+pa with active mapping: 880004002a000
+lp khole tot ref count: 0
+lp: 2 khole idx: 95 ref count:0 hkid+pa with active mapping: 8400040001000
+lp: 2 khole idx: 96 ref count:0 hkid+pa with active mapping: 8400040002000
+lp: 2 khole idx: 97 ref count:0 hkid+pa with active mapping: 8400040003000
+lp: 2 khole idx: 98 ref count:0 hkid+pa with active mapping: 8400040004000
+lp: 2 khole idx: 99 ref count:0 hkid+pa with active mapping: 8400040005000
+lp: 2 khole idx: 100 ref count:0 hkid+pa with active mapping: 8400040006000
+lp khole tot ref count: 0
+
+rcx: 1000 rdx: 40000000  r8: beecbeec
+tdx call: 14
+########## issuing SEAMCALL TDH_MEM_WR ----------------------------------------
+########## 0469 SEAMCALL TDH_MEM_WR SEAMRET status: 0 SUCCESS -----------------
+RDX : 0
+RDX: 0
+R8: 1
+
+rcx: 1000 rdx: 40000000  r8: 0
+tdx call: 12
+########## issuing SEAMCALL TDH_MEM_RD ----------------------------------------
+########## 0470 SEAMCALL TDH_MEM_RD SEAMRET status: 0 SUCCESS -----------------
+RDX : 0
+RDX: 0
+R8: beecbeec
+
