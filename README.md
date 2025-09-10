@@ -33,7 +33,7 @@ TDXplorer must overcome challenges unique to the Intel TDX Module:
 
 ## TDXplorer Architecture
 
-![TDXplorer Architecture](TDXplorer-arch.png)
+![TDXplorer Architecture](tdxplorer-arch.png)
 
 **Components:**
 - **SEAM Environment**  
